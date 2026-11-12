@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueSeasonFinishScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.lineup)
-    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
-    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.FALJMPELHIO)
-    pub FALJMPELHIO: bool,
     // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.scene)
     pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
     // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.NLEOMLNOKCC)
     pub NLEOMLNOKCC: ::protobuf::MessageField<super::GKHGFCBMLBL::GKHGFCBMLBL>,
+    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.lineup)
+    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.FALJMPELHIO)
+    pub FALJMPELHIO: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueSeasonFinishScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,16 +55,6 @@ impl SyncRogueSeasonFinishScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
-            "lineup",
-            |m: &SyncRogueSeasonFinishScNotify| { &m.lineup },
-            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.lineup },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FALJMPELHIO",
-            |m: &SyncRogueSeasonFinishScNotify| { &m.FALJMPELHIO },
-            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.FALJMPELHIO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
             "scene",
             |m: &SyncRogueSeasonFinishScNotify| { &m.scene },
@@ -74,6 +64,16 @@ impl SyncRogueSeasonFinishScNotify {
             "NLEOMLNOKCC",
             |m: &SyncRogueSeasonFinishScNotify| { &m.NLEOMLNOKCC },
             |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.NLEOMLNOKCC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
+            "lineup",
+            |m: &SyncRogueSeasonFinishScNotify| { &m.lineup },
+            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.lineup },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FALJMPELHIO",
+            |m: &SyncRogueSeasonFinishScNotify| { &m.FALJMPELHIO },
+            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.FALJMPELHIO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueSeasonFinishScNotify>(
             "SyncRogueSeasonFinishScNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for SyncRogueSeasonFinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
-                },
-                56 => {
-                    self.FALJMPELHIO = is.read_bool()?;
-                },
-                98 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                122 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NLEOMLNOKCC)?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                },
+                120 => {
+                    self.FALJMPELHIO = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,6 +117,14 @@ impl ::protobuf::Message for SyncRogueSeasonFinishScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.scene.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.NLEOMLNOKCC.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -124,31 +132,23 @@ impl ::protobuf::Message for SyncRogueSeasonFinishScNotify {
         if self.FALJMPELHIO != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.scene.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.NLEOMLNOKCC.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if self.FALJMPELHIO != false {
-            os.write_bool(7, self.FALJMPELHIO)?;
-        }
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if let Some(v) = self.NLEOMLNOKCC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        if let Some(v) = self.lineup.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if self.FALJMPELHIO != false {
+            os.write_bool(15, self.FALJMPELHIO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for SyncRogueSeasonFinishScNotify {
     }
 
     fn clear(&mut self) {
-        self.lineup.clear();
-        self.FALJMPELHIO = false;
         self.scene.clear();
         self.NLEOMLNOKCC.clear();
+        self.lineup.clear();
+        self.FALJMPELHIO = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueSeasonFinishScNotify {
         static instance: SyncRogueSeasonFinishScNotify = SyncRogueSeasonFinishScNotify {
-            lineup: ::protobuf::MessageField::none(),
-            FALJMPELHIO: false,
             scene: ::protobuf::MessageField::none(),
             NLEOMLNOKCC: ::protobuf::MessageField::none(),
+            lineup: ::protobuf::MessageField::none(),
+            FALJMPELHIO: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -206,11 +206,10 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueSeasonFinishScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SyncRogueSeasonFinishScNotify.proto\x1a\x11GKHGFCBMLBL.proto\x1a\x10L\
     ineupInfo.proto\x1a\x0fSceneInfo.proto\"\xb8\x01\n\x1dSyncRogueSeasonFin\
-    ishScNotify\x12#\n\x06lineup\x18\x05\x20\x01(\x0b2\x0b.LineupInfoR\x06li\
-    neup\x12\x20\n\x0bFALJMPELHIO\x18\x07\x20\x01(\x08R\x0bFALJMPELHIO\x12\
-    \x20\n\x05scene\x18\x0c\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12.\n\x0bNL\
-    EOMLNOKCC\x18\x0f\x20\x01(\x0b2\x0c.GKHGFCBMLBLR\x0bNLEOMLNOKCCb\x06prot\
-    o3\
+    ishScNotify\x12\x20\n\x05scene\x18\t\x20\x01(\x0b2\n.SceneInfoR\x05scene\
+    \x12.\n\x0bNLEOMLNOKCC\x18\r\x20\x01(\x0b2\x0c.GKHGFCBMLBLR\x0bNLEOMLNOK\
+    CC\x12#\n\x06lineup\x18\x0e\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12\
+    \x20\n\x0bFALJMPELHIO\x18\x0f\x20\x01(\x08R\x0bFALJMPELHIOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

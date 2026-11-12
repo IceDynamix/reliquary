@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CEDCMIMKJHK {
     // message fields
-    // @@protoc_insertion_point(field:CEDCMIMKJHK.FEBKMOCOJLE)
-    pub FEBKMOCOJLE: bool,
+    // @@protoc_insertion_point(field:CEDCMIMKJHK.toggle_on)
+    pub toggle_on: bool,
     // @@protoc_insertion_point(field:CEDCMIMKJHK.avatar_id)
     pub avatar_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl CEDCMIMKJHK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FEBKMOCOJLE",
-            |m: &CEDCMIMKJHK| { &m.FEBKMOCOJLE },
-            |m: &mut CEDCMIMKJHK| { &mut m.FEBKMOCOJLE },
+            "toggle_on",
+            |m: &CEDCMIMKJHK| { &m.toggle_on },
+            |m: &mut CEDCMIMKJHK| { &mut m.toggle_on },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for CEDCMIMKJHK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.FEBKMOCOJLE = is.read_bool()?;
+                96 => {
+                    self.toggle_on = is.read_bool()?;
                 },
-                56 => {
+                120 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for CEDCMIMKJHK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FEBKMOCOJLE != false {
+        if self.toggle_on != false {
             my_size += 1 + 1;
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for CEDCMIMKJHK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FEBKMOCOJLE != false {
-            os.write_bool(4, self.FEBKMOCOJLE)?;
+        if self.toggle_on != false {
+            os.write_bool(12, self.toggle_on)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(7, self.avatar_id)?;
+            os.write_uint32(15, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for CEDCMIMKJHK {
     }
 
     fn clear(&mut self) {
-        self.FEBKMOCOJLE = false;
+        self.toggle_on = false;
         self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CEDCMIMKJHK {
         static instance: CEDCMIMKJHK = CEDCMIMKJHK {
-            FEBKMOCOJLE: false,
+            toggle_on: false,
             avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for CEDCMIMKJHK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CEDCMIMKJHK.proto\"L\n\x0bCEDCMIMKJHK\x12\x20\n\x0bFEBKMOCOJLE\x18\
-    \x04\x20\x01(\x08R\x0bFEBKMOCOJLE\x12\x1b\n\tavatar_id\x18\x07\x20\x01(\
-    \rR\x08avatarIdb\x06proto3\
+    \n\x11CEDCMIMKJHK.proto\"G\n\x0bCEDCMIMKJHK\x12\x1b\n\ttoggle_on\x18\x0c\
+    \x20\x01(\x08R\x08toggleOn\x12\x1b\n\tavatar_id\x18\x0f\x20\x01(\rR\x08a\
+    vatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

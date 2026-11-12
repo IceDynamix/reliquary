@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DrinkMakerCheersMakeDrinkCsReq {
     // message fields
+    // @@protoc_insertion_point(field:DrinkMakerCheersMakeDrinkCsReq.PCPIHPDOIGI)
+    pub PCPIHPDOIGI: bool,
     // @@protoc_insertion_point(field:DrinkMakerCheersMakeDrinkCsReq.MJJMPMCCNJH)
     pub MJJMPMCCNJH: u32,
     // @@protoc_insertion_point(field:DrinkMakerCheersMakeDrinkCsReq.AGCBLNPHFCI)
     pub AGCBLNPHFCI: ::protobuf::MessageField<super::DFJPGILAAON::DFJPGILAAON>,
-    // @@protoc_insertion_point(field:DrinkMakerCheersMakeDrinkCsReq.PCPIHPDOIGI)
-    pub PCPIHPDOIGI: bool,
     // @@protoc_insertion_point(field:DrinkMakerCheersMakeDrinkCsReq.group_id)
     pub group_id: u32,
     // special fields
@@ -56,6 +56,11 @@ impl DrinkMakerCheersMakeDrinkCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PCPIHPDOIGI",
+            |m: &DrinkMakerCheersMakeDrinkCsReq| { &m.PCPIHPDOIGI },
+            |m: &mut DrinkMakerCheersMakeDrinkCsReq| { &mut m.PCPIHPDOIGI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MJJMPMCCNJH",
             |m: &DrinkMakerCheersMakeDrinkCsReq| { &m.MJJMPMCCNJH },
             |m: &mut DrinkMakerCheersMakeDrinkCsReq| { &mut m.MJJMPMCCNJH },
@@ -64,11 +69,6 @@ impl DrinkMakerCheersMakeDrinkCsReq {
             "AGCBLNPHFCI",
             |m: &DrinkMakerCheersMakeDrinkCsReq| { &m.AGCBLNPHFCI },
             |m: &mut DrinkMakerCheersMakeDrinkCsReq| { &mut m.AGCBLNPHFCI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PCPIHPDOIGI",
-            |m: &DrinkMakerCheersMakeDrinkCsReq| { &m.PCPIHPDOIGI },
-            |m: &mut DrinkMakerCheersMakeDrinkCsReq| { &mut m.PCPIHPDOIGI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for DrinkMakerCheersMakeDrinkCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                24 => {
+                    self.PCPIHPDOIGI = is.read_bool()?;
+                },
                 32 => {
                     self.MJJMPMCCNJH = is.read_uint32()?;
                 },
                 42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AGCBLNPHFCI)?;
                 },
-                80 => {
-                    self.PCPIHPDOIGI = is.read_bool()?;
-                },
-                88 => {
+                48 => {
                     self.group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -117,6 +117,9 @@ impl ::protobuf::Message for DrinkMakerCheersMakeDrinkCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.PCPIHPDOIGI != false {
+            my_size += 1 + 1;
+        }
         if self.MJJMPMCCNJH != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.MJJMPMCCNJH);
         }
@@ -124,11 +127,8 @@ impl ::protobuf::Message for DrinkMakerCheersMakeDrinkCsReq {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.PCPIHPDOIGI != false {
-            my_size += 1 + 1;
-        }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for DrinkMakerCheersMakeDrinkCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.PCPIHPDOIGI != false {
+            os.write_bool(3, self.PCPIHPDOIGI)?;
+        }
         if self.MJJMPMCCNJH != 0 {
             os.write_uint32(4, self.MJJMPMCCNJH)?;
         }
         if let Some(v) = self.AGCBLNPHFCI.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        if self.PCPIHPDOIGI != false {
-            os.write_bool(10, self.PCPIHPDOIGI)?;
-        }
         if self.group_id != 0 {
-            os.write_uint32(11, self.group_id)?;
+            os.write_uint32(6, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for DrinkMakerCheersMakeDrinkCsReq {
     }
 
     fn clear(&mut self) {
+        self.PCPIHPDOIGI = false;
         self.MJJMPMCCNJH = 0;
         self.AGCBLNPHFCI.clear();
-        self.PCPIHPDOIGI = false;
         self.group_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DrinkMakerCheersMakeDrinkCsReq {
         static instance: DrinkMakerCheersMakeDrinkCsReq = DrinkMakerCheersMakeDrinkCsReq {
+            PCPIHPDOIGI: false,
             MJJMPMCCNJH: 0,
             AGCBLNPHFCI: ::protobuf::MessageField::none(),
-            PCPIHPDOIGI: false,
             group_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for DrinkMakerCheersMakeDrinkCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$DrinkMakerCheersMakeDrinkCsReq.proto\x1a\x11DFJPGILAAON.proto\"\xaf\
-    \x01\n\x1eDrinkMakerCheersMakeDrinkCsReq\x12\x20\n\x0bMJJMPMCCNJH\x18\
-    \x04\x20\x01(\rR\x0bMJJMPMCCNJH\x12.\n\x0bAGCBLNPHFCI\x18\x05\x20\x01(\
-    \x0b2\x0c.DFJPGILAAONR\x0bAGCBLNPHFCI\x12\x20\n\x0bPCPIHPDOIGI\x18\n\x20\
-    \x01(\x08R\x0bPCPIHPDOIGI\x12\x19\n\x08group_id\x18\x0b\x20\x01(\rR\x07g\
-    roupIdb\x06proto3\
+    \x01\n\x1eDrinkMakerCheersMakeDrinkCsReq\x12\x20\n\x0bPCPIHPDOIGI\x18\
+    \x03\x20\x01(\x08R\x0bPCPIHPDOIGI\x12\x20\n\x0bMJJMPMCCNJH\x18\x04\x20\
+    \x01(\rR\x0bMJJMPMCCNJH\x12.\n\x0bAGCBLNPHFCI\x18\x05\x20\x01(\x0b2\x0c.\
+    DFJPGILAAONR\x0bAGCBLNPHFCI\x12\x19\n\x08group_id\x18\x06\x20\x01(\rR\
+    \x07groupIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -45,7 +45,7 @@ impl FMOEINGLFGG {
         ::std::default::Default::default()
     }
 
-    // .FODAGGODIJM OGOCOFPHIIK = 1;
+    // .FODAGGODIJM OGOCOFPHIIK = 7;
 
     pub fn OGOCOFPHIIK(&self) -> &super::FODAGGODIJM::FODAGGODIJM {
         match self.MMCGBGDJIPN {
@@ -94,7 +94,7 @@ impl FMOEINGLFGG {
         }
     }
 
-    // .PGLBKDELHJK FLKIEILIBJA = 4;
+    // .PGLBKDELHJK FLKIEILIBJA = 11;
 
     pub fn FLKIEILIBJA(&self) -> &super::PGLBKDELHJK::PGLBKDELHJK {
         match self.MMCGBGDJIPN {
@@ -179,10 +179,10 @@ impl ::protobuf::Message for FMOEINGLFGG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                58 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(fmoeinglfgg::MMCGBGDJIPN::OGOCOFPHIIK(is.read_message()?));
                 },
-                34 => {
+                90 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(fmoeinglfgg::MMCGBGDJIPN::FLKIEILIBJA(is.read_message()?));
                 },
                 tag => {
@@ -218,10 +218,10 @@ impl ::protobuf::Message for FMOEINGLFGG {
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
                 &fmoeinglfgg::MMCGBGDJIPN::OGOCOFPHIIK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
                 &fmoeinglfgg::MMCGBGDJIPN::FLKIEILIBJA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
             };
         }
@@ -305,8 +305,8 @@ pub mod fmoeinglfgg {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FMOEINGLFGG.proto\x1a\x11FODAGGODIJM.proto\x1a\x11PGLBKDELHJK.prot\
-    o\"\x80\x01\n\x0bFMOEINGLFGG\x120\n\x0bOGOCOFPHIIK\x18\x01\x20\x01(\x0b2\
-    \x0c.FODAGGODIJMH\0R\x0bOGOCOFPHIIK\x120\n\x0bFLKIEILIBJA\x18\x04\x20\
+    o\"\x80\x01\n\x0bFMOEINGLFGG\x120\n\x0bOGOCOFPHIIK\x18\x07\x20\x01(\x0b2\
+    \x0c.FODAGGODIJMH\0R\x0bOGOCOFPHIIK\x120\n\x0bFLKIEILIBJA\x18\x0b\x20\
     \x01(\x0b2\x0c.PGLBKDELHJKH\0R\x0bFLKIEILIBJAB\r\n\x0bMMCGBGDJIPNb\x06pr\
     oto3\
 ";

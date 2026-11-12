@@ -28,10 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetNpcStatusScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetNpcStatusScRsp.npc_status_list)
-    pub npc_status_list: ::std::vec::Vec<super::NpcStatus::NpcStatus>,
+    // @@protoc_insertion_point(field:GetNpcStatusScRsp.IGECEKJICBO)
+    pub IGECEKJICBO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetNpcStatusScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetNpcStatusScRsp.BNGBJPNOLAL)
+    pub BNGBJPNOLAL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetNpcStatusScRsp.npc_status_list)
+    pub npc_status_list: ::std::vec::Vec<super::NpcStatus::NpcStatus>,
     // special fields
     // @@protoc_insertion_point(special_field:GetNpcStatusScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,17 +53,27 @@ impl GetNpcStatusScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "npc_status_list",
-            |m: &GetNpcStatusScRsp| { &m.npc_status_list },
-            |m: &mut GetNpcStatusScRsp| { &mut m.npc_status_list },
+            "IGECEKJICBO",
+            |m: &GetNpcStatusScRsp| { &m.IGECEKJICBO },
+            |m: &mut GetNpcStatusScRsp| { &mut m.IGECEKJICBO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetNpcStatusScRsp| { &m.retcode },
             |m: &mut GetNpcStatusScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BNGBJPNOLAL",
+            |m: &GetNpcStatusScRsp| { &m.BNGBJPNOLAL },
+            |m: &mut GetNpcStatusScRsp| { &mut m.BNGBJPNOLAL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "npc_status_list",
+            |m: &GetNpcStatusScRsp| { &m.npc_status_list },
+            |m: &mut GetNpcStatusScRsp| { &mut m.npc_status_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetNpcStatusScRsp>(
             "GetNpcStatusScRsp",
@@ -79,11 +93,23 @@ impl ::protobuf::Message for GetNpcStatusScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.npc_status_list.push(is.read_message()?);
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IGECEKJICBO)?;
                 },
-                32 => {
+                16 => {
+                    self.IGECEKJICBO.push(is.read_uint32()?);
+                },
+                24 => {
                     self.retcode = is.read_uint32()?;
+                },
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BNGBJPNOLAL)?;
+                },
+                56 => {
+                    self.BNGBJPNOLAL.push(is.read_uint32()?);
+                },
+                74 => {
+                    self.npc_status_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +123,29 @@ impl ::protobuf::Message for GetNpcStatusScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.IGECEKJICBO);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.BNGBJPNOLAL);
         for value in &self.npc_status_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.npc_status_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
+        os.write_repeated_packed_uint32(2, &self.IGECEKJICBO)?;
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
+        os.write_repeated_packed_uint32(7, &self.BNGBJPNOLAL)?;
+        for v in &self.npc_status_list {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +163,19 @@ impl ::protobuf::Message for GetNpcStatusScRsp {
     }
 
     fn clear(&mut self) {
-        self.npc_status_list.clear();
+        self.IGECEKJICBO.clear();
         self.retcode = 0;
+        self.BNGBJPNOLAL.clear();
+        self.npc_status_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetNpcStatusScRsp {
         static instance: GetNpcStatusScRsp = GetNpcStatusScRsp {
-            npc_status_list: ::std::vec::Vec::new(),
+            IGECEKJICBO: ::std::vec::Vec::new(),
             retcode: 0,
+            BNGBJPNOLAL: ::std::vec::Vec::new(),
+            npc_status_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for GetNpcStatusScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GetNpcStatusScRsp.proto\x1a\x0fNpcStatus.proto\"a\n\x11GetNpcStatu\
-    sScRsp\x122\n\x0fnpc_status_list\x18\x01\x20\x03(\x0b2\n.NpcStatusR\rnpc\
-    StatusList\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcodeb\x06proto\
-    3\
+    \n\x17GetNpcStatusScRsp.proto\x1a\x0fNpcStatus.proto\"\xa5\x01\n\x11GetN\
+    pcStatusScRsp\x12\x20\n\x0bIGECEKJICBO\x18\x02\x20\x03(\rR\x0bIGECEKJICB\
+    O\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bBNGBJ\
+    PNOLAL\x18\x07\x20\x03(\rR\x0bBNGBJPNOLAL\x122\n\x0fnpc_status_list\x18\
+    \t\x20\x03(\x0b2\n.NpcStatusR\rnpcStatusListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

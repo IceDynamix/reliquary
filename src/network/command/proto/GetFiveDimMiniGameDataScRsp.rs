@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFiveDimMiniGameDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFiveDimMiniGameDataScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetFiveDimMiniGameDataScRsp.content_package_list)
     pub content_package_list: ::std::vec::Vec<super::IKHLECEJHPO::IKHLECEJHPO>,
+    // @@protoc_insertion_point(field:GetFiveDimMiniGameDataScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetFiveDimMiniGameDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetFiveDimMiniGameDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetFiveDimMiniGameDataScRsp| { &m.retcode },
-            |m: &mut GetFiveDimMiniGameDataScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "content_package_list",
             |m: &GetFiveDimMiniGameDataScRsp| { &m.content_package_list },
             |m: &mut GetFiveDimMiniGameDataScRsp| { &mut m.content_package_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetFiveDimMiniGameDataScRsp| { &m.retcode },
+            |m: &mut GetFiveDimMiniGameDataScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFiveDimMiniGameDataScRsp>(
             "GetFiveDimMiniGameDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetFiveDimMiniGameDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                106 => {
+                42 => {
                     self.content_package_list.push(is.read_message()?);
+                },
+                48 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetFiveDimMiniGameDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
         for value in &self.content_package_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
-        }
         for v in &self.content_package_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetFiveDimMiniGameDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.content_package_list.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFiveDimMiniGameDataScRsp {
         static instance: GetFiveDimMiniGameDataScRsp = GetFiveDimMiniGameDataScRsp {
-            retcode: 0,
             content_package_list: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetFiveDimMiniGameDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GetFiveDimMiniGameDataScRsp.proto\x1a\x11IKHLECEJHPO.proto\"w\n\x1bGe\
-    tFiveDimMiniGameDataScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07re\
-    tcode\x12>\n\x14content_package_list\x18\r\x20\x03(\x0b2\x0c.IKHLECEJHPO\
-    R\x12contentPackageListb\x06proto3\
+    tFiveDimMiniGameDataScRsp\x12>\n\x14content_package_list\x18\x05\x20\x03\
+    (\x0b2\x0c.IKHLECEJHPOR\x12contentPackageList\x12\x18\n\x07retcode\x18\
+    \x06\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

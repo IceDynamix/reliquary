@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AHKDPCIIELA {
     // message fields
-    // @@protoc_insertion_point(field:AHKDPCIIELA.role_star)
-    pub role_star: u32,
-    // @@protoc_insertion_point(field:AHKDPCIIELA.LOGHLGKIFEN)
-    pub LOGHLGKIFEN: u32,
     // @@protoc_insertion_point(field:AHKDPCIIELA.monster_id)
     pub monster_id: u32,
     // @@protoc_insertion_point(field:AHKDPCIIELA.IMDKLKONINF)
     pub IMDKLKONINF: u32,
+    // @@protoc_insertion_point(field:AHKDPCIIELA.role_star)
+    pub role_star: u32,
+    // @@protoc_insertion_point(field:AHKDPCIIELA.LOGHLGKIFEN)
+    pub LOGHLGKIFEN: u32,
     // @@protoc_insertion_point(field:AHKDPCIIELA.MIPDAFDLJPB)
     pub MIPDAFDLJPB: u32,
     // special fields
@@ -58,16 +58,6 @@ impl AHKDPCIIELA {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "role_star",
-            |m: &AHKDPCIIELA| { &m.role_star },
-            |m: &mut AHKDPCIIELA| { &mut m.role_star },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOGHLGKIFEN",
-            |m: &AHKDPCIIELA| { &m.LOGHLGKIFEN },
-            |m: &mut AHKDPCIIELA| { &mut m.LOGHLGKIFEN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "monster_id",
             |m: &AHKDPCIIELA| { &m.monster_id },
             |m: &mut AHKDPCIIELA| { &mut m.monster_id },
@@ -76,6 +66,16 @@ impl AHKDPCIIELA {
             "IMDKLKONINF",
             |m: &AHKDPCIIELA| { &m.IMDKLKONINF },
             |m: &mut AHKDPCIIELA| { &mut m.IMDKLKONINF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "role_star",
+            |m: &AHKDPCIIELA| { &m.role_star },
+            |m: &mut AHKDPCIIELA| { &mut m.role_star },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LOGHLGKIFEN",
+            |m: &AHKDPCIIELA| { &m.LOGHLGKIFEN },
+            |m: &mut AHKDPCIIELA| { &mut m.LOGHLGKIFEN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MIPDAFDLJPB",
@@ -101,18 +101,18 @@ impl ::protobuf::Message for AHKDPCIIELA {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.role_star = is.read_uint32()?;
-                },
-                16 => {
-                    self.LOGHLGKIFEN = is.read_uint32()?;
-                },
-                32 => {
                     self.monster_id = is.read_uint32()?;
                 },
-                72 => {
+                24 => {
                     self.IMDKLKONINF = is.read_uint32()?;
                 },
-                96 => {
+                48 => {
+                    self.role_star = is.read_uint32()?;
+                },
+                80 => {
+                    self.LOGHLGKIFEN = is.read_uint32()?;
+                },
+                104 => {
                     self.MIPDAFDLJPB = is.read_uint32()?;
                 },
                 tag => {
@@ -127,20 +127,20 @@ impl ::protobuf::Message for AHKDPCIIELA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.role_star != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.role_star);
-        }
-        if self.LOGHLGKIFEN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.LOGHLGKIFEN);
-        }
         if self.monster_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.monster_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.monster_id);
         }
         if self.IMDKLKONINF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IMDKLKONINF);
+            my_size += ::protobuf::rt::uint32_size(3, self.IMDKLKONINF);
+        }
+        if self.role_star != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.role_star);
+        }
+        if self.LOGHLGKIFEN != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.LOGHLGKIFEN);
         }
         if self.MIPDAFDLJPB != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MIPDAFDLJPB);
+            my_size += ::protobuf::rt::uint32_size(13, self.MIPDAFDLJPB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for AHKDPCIIELA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.role_star != 0 {
-            os.write_uint32(1, self.role_star)?;
-        }
-        if self.LOGHLGKIFEN != 0 {
-            os.write_uint32(2, self.LOGHLGKIFEN)?;
-        }
         if self.monster_id != 0 {
-            os.write_uint32(4, self.monster_id)?;
+            os.write_uint32(1, self.monster_id)?;
         }
         if self.IMDKLKONINF != 0 {
-            os.write_uint32(9, self.IMDKLKONINF)?;
+            os.write_uint32(3, self.IMDKLKONINF)?;
+        }
+        if self.role_star != 0 {
+            os.write_uint32(6, self.role_star)?;
+        }
+        if self.LOGHLGKIFEN != 0 {
+            os.write_uint32(10, self.LOGHLGKIFEN)?;
         }
         if self.MIPDAFDLJPB != 0 {
-            os.write_uint32(12, self.MIPDAFDLJPB)?;
+            os.write_uint32(13, self.MIPDAFDLJPB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,20 +180,20 @@ impl ::protobuf::Message for AHKDPCIIELA {
     }
 
     fn clear(&mut self) {
-        self.role_star = 0;
-        self.LOGHLGKIFEN = 0;
         self.monster_id = 0;
         self.IMDKLKONINF = 0;
+        self.role_star = 0;
+        self.LOGHLGKIFEN = 0;
         self.MIPDAFDLJPB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AHKDPCIIELA {
         static instance: AHKDPCIIELA = AHKDPCIIELA {
-            role_star: 0,
-            LOGHLGKIFEN: 0,
             monster_id: 0,
             IMDKLKONINF: 0,
+            role_star: 0,
+            LOGHLGKIFEN: 0,
             MIPDAFDLJPB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for AHKDPCIIELA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AHKDPCIIELA.proto\"\xaf\x01\n\x0bAHKDPCIIELA\x12\x1b\n\trole_star\
-    \x18\x01\x20\x01(\rR\x08roleStar\x12\x20\n\x0bLOGHLGKIFEN\x18\x02\x20\
-    \x01(\rR\x0bLOGHLGKIFEN\x12\x1d\n\nmonster_id\x18\x04\x20\x01(\rR\tmonst\
-    erId\x12\x20\n\x0bIMDKLKONINF\x18\t\x20\x01(\rR\x0bIMDKLKONINF\x12\x20\n\
-    \x0bMIPDAFDLJPB\x18\x0c\x20\x01(\rR\x0bMIPDAFDLJPBb\x06proto3\
+    \n\x11AHKDPCIIELA.proto\"\xaf\x01\n\x0bAHKDPCIIELA\x12\x1d\n\nmonster_id\
+    \x18\x01\x20\x01(\rR\tmonsterId\x12\x20\n\x0bIMDKLKONINF\x18\x03\x20\x01\
+    (\rR\x0bIMDKLKONINF\x12\x1b\n\trole_star\x18\x06\x20\x01(\rR\x08roleStar\
+    \x12\x20\n\x0bLOGHLGKIFEN\x18\n\x20\x01(\rR\x0bLOGHLGKIFEN\x12\x20\n\x0b\
+    MIPDAFDLJPB\x18\r\x20\x01(\rR\x0bMIPDAFDLJPBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

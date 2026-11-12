@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SocialPlayGetOnlineRoomDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SocialPlayGetOnlineRoomDataScRsp.DJMHHMMABJL)
-    pub DJMHHMMABJL: ::protobuf::MessageField<super::POBLGKIGINE::POBLGKIGINE>,
-    // @@protoc_insertion_point(field:SocialPlayGetOnlineRoomDataScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SocialPlayGetOnlineRoomDataScRsp.OJPDDAOJJKC)
     pub OJPDDAOJJKC: bool,
+    // @@protoc_insertion_point(field:SocialPlayGetOnlineRoomDataScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:SocialPlayGetOnlineRoomDataScRsp.DJMHHMMABJL)
+    pub DJMHHMMABJL: ::protobuf::MessageField<super::POBLGKIGINE::POBLGKIGINE>,
     // special fields
     // @@protoc_insertion_point(special_field:SocialPlayGetOnlineRoomDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl SocialPlayGetOnlineRoomDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::POBLGKIGINE::POBLGKIGINE>(
-            "DJMHHMMABJL",
-            |m: &SocialPlayGetOnlineRoomDataScRsp| { &m.DJMHHMMABJL },
-            |m: &mut SocialPlayGetOnlineRoomDataScRsp| { &mut m.DJMHHMMABJL },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OJPDDAOJJKC",
+            |m: &SocialPlayGetOnlineRoomDataScRsp| { &m.OJPDDAOJJKC },
+            |m: &mut SocialPlayGetOnlineRoomDataScRsp| { &mut m.OJPDDAOJJKC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SocialPlayGetOnlineRoomDataScRsp| { &m.retcode },
             |m: &mut SocialPlayGetOnlineRoomDataScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OJPDDAOJJKC",
-            |m: &SocialPlayGetOnlineRoomDataScRsp| { &m.OJPDDAOJJKC },
-            |m: &mut SocialPlayGetOnlineRoomDataScRsp| { &mut m.OJPDDAOJJKC },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::POBLGKIGINE::POBLGKIGINE>(
+            "DJMHHMMABJL",
+            |m: &SocialPlayGetOnlineRoomDataScRsp| { &m.DJMHHMMABJL },
+            |m: &mut SocialPlayGetOnlineRoomDataScRsp| { &mut m.DJMHHMMABJL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SocialPlayGetOnlineRoomDataScRsp>(
             "SocialPlayGetOnlineRoomDataScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SocialPlayGetOnlineRoomDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DJMHHMMABJL)?;
+                8 => {
+                    self.OJPDDAOJJKC = is.read_bool()?;
                 },
-                96 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
-                    self.OJPDDAOJJKC = is.read_bool()?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DJMHHMMABJL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for SocialPlayGetOnlineRoomDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.OJPDDAOJJKC != false {
+            my_size += 1 + 1;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
         if let Some(v) = self.DJMHHMMABJL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
-        }
-        if self.OJPDDAOJJKC != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SocialPlayGetOnlineRoomDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DJMHHMMABJL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if self.OJPDDAOJJKC != false {
+            os.write_bool(1, self.OJPDDAOJJKC)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
-        if self.OJPDDAOJJKC != false {
-            os.write_bool(14, self.OJPDDAOJJKC)?;
+        if let Some(v) = self.DJMHHMMABJL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SocialPlayGetOnlineRoomDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.DJMHHMMABJL.clear();
-        self.retcode = 0;
         self.OJPDDAOJJKC = false;
+        self.retcode = 0;
+        self.DJMHHMMABJL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SocialPlayGetOnlineRoomDataScRsp {
         static instance: SocialPlayGetOnlineRoomDataScRsp = SocialPlayGetOnlineRoomDataScRsp {
-            DJMHHMMABJL: ::protobuf::MessageField::none(),
-            retcode: 0,
             OJPDDAOJJKC: false,
+            retcode: 0,
+            DJMHHMMABJL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for SocialPlayGetOnlineRoomDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&SocialPlayGetOnlineRoomDataScRsp.proto\x1a\x11POBLGKIGINE.proto\"\x8e\
-    \x01\n\x20SocialPlayGetOnlineRoomDataScRsp\x12.\n\x0bDJMHHMMABJL\x18\x07\
-    \x20\x01(\x0b2\x0c.POBLGKIGINER\x0bDJMHHMMABJL\x12\x18\n\x07retcode\x18\
-    \x0c\x20\x01(\rR\x07retcode\x12\x20\n\x0bOJPDDAOJJKC\x18\x0e\x20\x01(\
-    \x08R\x0bOJPDDAOJJKCb\x06proto3\
+    \x01\n\x20SocialPlayGetOnlineRoomDataScRsp\x12\x20\n\x0bOJPDDAOJJKC\x18\
+    \x01\x20\x01(\x08R\x0bOJPDDAOJJKC\x12\x18\n\x07retcode\x18\x04\x20\x01(\
+    \rR\x07retcode\x12.\n\x0bDJMHHMMABJL\x18\x0f\x20\x01(\x0b2\x0c.POBLGKIGI\
+    NER\x0bDJMHHMMABJLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

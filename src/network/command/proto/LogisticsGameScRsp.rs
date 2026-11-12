@@ -93,13 +93,13 @@ impl ::protobuf::Message for LogisticsGameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                26 => {
                     self.ALOOPKCJFEA.push(is.read_message()?);
                 },
                 40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                56 => {
+                64 => {
                     self.event_id = is.read_uint32()?;
                 },
                 104 => {
@@ -125,7 +125,7 @@ impl ::protobuf::Message for LogisticsGameScRsp {
             my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.event_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.event_id);
         }
         if self.CNCJKGEDEII != false {
             my_size += 1 + 1;
@@ -137,13 +137,13 @@ impl ::protobuf::Message for LogisticsGameScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.ALOOPKCJFEA {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         if self.retcode != 0 {
             os.write_uint32(5, self.retcode)?;
         }
         if self.event_id != 0 {
-            os.write_uint32(7, self.event_id)?;
+            os.write_uint32(8, self.event_id)?;
         }
         if self.CNCJKGEDEII != false {
             os.write_bool(13, self.CNCJKGEDEII)?;
@@ -203,9 +203,9 @@ impl ::protobuf::reflect::ProtobufValue for LogisticsGameScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18LogisticsGameScRsp.proto\x1a\x11BOLCGIOGIBP.proto\"\x9b\x01\n\x12L\
-    ogisticsGameScRsp\x12.\n\x0bALOOPKCJFEA\x18\x01\x20\x03(\x0b2\x0c.BOLCGI\
+    ogisticsGameScRsp\x12.\n\x0bALOOPKCJFEA\x18\x03\x20\x03(\x0b2\x0c.BOLCGI\
     OGIBPR\x0bALOOPKCJFEA\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcod\
-    e\x12\x19\n\x08event_id\x18\x07\x20\x01(\rR\x07eventId\x12\x20\n\x0bCNCJ\
+    e\x12\x19\n\x08event_id\x18\x08\x20\x01(\rR\x07eventId\x12\x20\n\x0bCNCJ\
     KGEDEII\x18\r\x20\x01(\x08R\x0bCNCJKGEDEIIb\x06proto3\
 ";
 

@@ -30,12 +30,12 @@ pub struct LNPGBGDPIIK {
     // message fields
     // @@protoc_insertion_point(field:LNPGBGDPIIK.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:LNPGBGDPIIK.IFIGFODOPBB)
+    pub IFIGFODOPBB: bool,
     // @@protoc_insertion_point(field:LNPGBGDPIIK.IOJFGBDPPHI)
     pub IOJFGBDPPHI: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:LNPGBGDPIIK.DDLADFJMEEC)
     pub DDLADFJMEEC: ::protobuf::MessageField<super::OCBPJLLLJGO::OCBPJLLLJGO>,
-    // @@protoc_insertion_point(field:LNPGBGDPIIK.IFIGFODOPBB)
-    pub IFIGFODOPBB: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LNPGBGDPIIK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,6 +60,11 @@ impl LNPGBGDPIIK {
             |m: &LNPGBGDPIIK| { &m.cost_data },
             |m: &mut LNPGBGDPIIK| { &mut m.cost_data },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFIGFODOPBB",
+            |m: &LNPGBGDPIIK| { &m.IFIGFODOPBB },
+            |m: &mut LNPGBGDPIIK| { &mut m.IFIGFODOPBB },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "IOJFGBDPPHI",
             |m: &LNPGBGDPIIK| { &m.IOJFGBDPPHI },
@@ -69,11 +74,6 @@ impl LNPGBGDPIIK {
             "DDLADFJMEEC",
             |m: &LNPGBGDPIIK| { &m.DDLADFJMEEC },
             |m: &mut LNPGBGDPIIK| { &mut m.DDLADFJMEEC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFIGFODOPBB",
-            |m: &LNPGBGDPIIK| { &m.IFIGFODOPBB },
-            |m: &mut LNPGBGDPIIK| { &mut m.IFIGFODOPBB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LNPGBGDPIIK>(
             "LNPGBGDPIIK",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for LNPGBGDPIIK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                50 => {
+                64 => {
+                    self.IFIGFODOPBB = is.read_bool()?;
+                },
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IOJFGBDPPHI)?;
                 },
-                74 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DDLADFJMEEC)?;
-                },
-                112 => {
-                    self.IFIGFODOPBB = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,6 +121,9 @@ impl ::protobuf::Message for LNPGBGDPIIK {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.IFIGFODOPBB != false {
+            my_size += 1 + 1;
+        }
         if let Some(v) = self.IOJFGBDPPHI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -128,9 +131,6 @@ impl ::protobuf::Message for LNPGBGDPIIK {
         if let Some(v) = self.DDLADFJMEEC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.IFIGFODOPBB != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -139,16 +139,16 @@ impl ::protobuf::Message for LNPGBGDPIIK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        if let Some(v) = self.IOJFGBDPPHI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if let Some(v) = self.DDLADFJMEEC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.IFIGFODOPBB != false {
-            os.write_bool(14, self.IFIGFODOPBB)?;
+            os.write_bool(8, self.IFIGFODOPBB)?;
+        }
+        if let Some(v) = self.IOJFGBDPPHI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if let Some(v) = self.DDLADFJMEEC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,18 +168,18 @@ impl ::protobuf::Message for LNPGBGDPIIK {
 
     fn clear(&mut self) {
         self.cost_data.clear();
+        self.IFIGFODOPBB = false;
         self.IOJFGBDPPHI.clear();
         self.DDLADFJMEEC.clear();
-        self.IFIGFODOPBB = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LNPGBGDPIIK {
         static instance: LNPGBGDPIIK = LNPGBGDPIIK {
             cost_data: ::protobuf::MessageField::none(),
+            IFIGFODOPBB: false,
             IOJFGBDPPHI: ::protobuf::MessageField::none(),
             DDLADFJMEEC: ::protobuf::MessageField::none(),
-            IFIGFODOPBB: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,11 +205,11 @@ impl ::protobuf::reflect::ProtobufValue for LNPGBGDPIIK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LNPGBGDPIIK.proto\x1a\x12ItemCostData.proto\x1a\x11OCBPJLLLJGO.pro\
-    to\"\xbc\x01\n\x0bLNPGBGDPIIK\x12*\n\tcost_data\x18\x03\x20\x01(\x0b2\r.\
-    ItemCostDataR\x08costData\x12/\n\x0bIOJFGBDPPHI\x18\x06\x20\x01(\x0b2\r.\
-    ItemCostDataR\x0bIOJFGBDPPHI\x12.\n\x0bDDLADFJMEEC\x18\t\x20\x01(\x0b2\
-    \x0c.OCBPJLLLJGOR\x0bDDLADFJMEEC\x12\x20\n\x0bIFIGFODOPBB\x18\x0e\x20\
-    \x01(\x08R\x0bIFIGFODOPBBb\x06proto3\
+    to\"\xbc\x01\n\x0bLNPGBGDPIIK\x12*\n\tcost_data\x18\x01\x20\x01(\x0b2\r.\
+    ItemCostDataR\x08costData\x12\x20\n\x0bIFIGFODOPBB\x18\x08\x20\x01(\x08R\
+    \x0bIFIGFODOPBB\x12/\n\x0bIOJFGBDPPHI\x18\x0c\x20\x01(\x0b2\r.ItemCostDa\
+    taR\x0bIOJFGBDPPHI\x12.\n\x0bDDLADFJMEEC\x18\x0f\x20\x01(\x0b2\x0c.OCBPJ\
+    LLLJGOR\x0bDDLADFJMEECb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

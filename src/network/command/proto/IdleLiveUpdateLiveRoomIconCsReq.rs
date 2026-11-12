@@ -45,31 +45,6 @@ impl IdleLiveUpdateLiveRoomIconCsReq {
         ::std::default::Default::default()
     }
 
-    // uint32 AJIMPLLIFIE = 3;
-
-    pub fn AJIMPLLIFIE(&self) -> u32 {
-        match self.MMCGBGDJIPN {
-            ::std::option::Option::Some(idle_live_update_live_room_icon_cs_req::MMCGBGDJIPN::AJIMPLLIFIE(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_AJIMPLLIFIE(&mut self) {
-        self.MMCGBGDJIPN = ::std::option::Option::None;
-    }
-
-    pub fn has_AJIMPLLIFIE(&self) -> bool {
-        match self.MMCGBGDJIPN {
-            ::std::option::Option::Some(idle_live_update_live_room_icon_cs_req::MMCGBGDJIPN::AJIMPLLIFIE(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_AJIMPLLIFIE(&mut self, v: u32) {
-        self.MMCGBGDJIPN = ::std::option::Option::Some(idle_live_update_live_room_icon_cs_req::MMCGBGDJIPN::AJIMPLLIFIE(v))
-    }
-
     // string title = 4;
 
     pub fn title(&self) -> &str {
@@ -119,20 +94,45 @@ impl IdleLiveUpdateLiveRoomIconCsReq {
         }
     }
 
+    // uint32 AJIMPLLIFIE = 8;
+
+    pub fn AJIMPLLIFIE(&self) -> u32 {
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(idle_live_update_live_room_icon_cs_req::MMCGBGDJIPN::AJIMPLLIFIE(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_AJIMPLLIFIE(&mut self) {
+        self.MMCGBGDJIPN = ::std::option::Option::None;
+    }
+
+    pub fn has_AJIMPLLIFIE(&self) -> bool {
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(idle_live_update_live_room_icon_cs_req::MMCGBGDJIPN::AJIMPLLIFIE(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_AJIMPLLIFIE(&mut self, v: u32) {
+        self.MMCGBGDJIPN = ::std::option::Option::Some(idle_live_update_live_room_icon_cs_req::MMCGBGDJIPN::AJIMPLLIFIE(v))
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "AJIMPLLIFIE",
-            IdleLiveUpdateLiveRoomIconCsReq::has_AJIMPLLIFIE,
-            IdleLiveUpdateLiveRoomIconCsReq::AJIMPLLIFIE,
-            IdleLiveUpdateLiveRoomIconCsReq::set_AJIMPLLIFIE,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_deref_has_get_set_simpler_accessor::<_, _>(
             "title",
             IdleLiveUpdateLiveRoomIconCsReq::has_title,
             IdleLiveUpdateLiveRoomIconCsReq::title,
             IdleLiveUpdateLiveRoomIconCsReq::set_title,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "AJIMPLLIFIE",
+            IdleLiveUpdateLiveRoomIconCsReq::has_AJIMPLLIFIE,
+            IdleLiveUpdateLiveRoomIconCsReq::AJIMPLLIFIE,
+            IdleLiveUpdateLiveRoomIconCsReq::set_AJIMPLLIFIE,
         ));
         oneofs.push(idle_live_update_live_room_icon_cs_req::MMCGBGDJIPN::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IdleLiveUpdateLiveRoomIconCsReq>(
@@ -153,11 +153,11 @@ impl ::protobuf::Message for IdleLiveUpdateLiveRoomIconCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.MMCGBGDJIPN = ::std::option::Option::Some(idle_live_update_live_room_icon_cs_req::MMCGBGDJIPN::AJIMPLLIFIE(is.read_uint32()?));
-                },
                 34 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(idle_live_update_live_room_icon_cs_req::MMCGBGDJIPN::Title(is.read_string()?));
+                },
+                64 => {
+                    self.MMCGBGDJIPN = ::std::option::Option::Some(idle_live_update_live_room_icon_cs_req::MMCGBGDJIPN::AJIMPLLIFIE(is.read_uint32()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -173,11 +173,11 @@ impl ::protobuf::Message for IdleLiveUpdateLiveRoomIconCsReq {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
-                &idle_live_update_live_room_icon_cs_req::MMCGBGDJIPN::AJIMPLLIFIE(v) => {
-                    my_size += ::protobuf::rt::uint32_size(3, v);
-                },
                 &idle_live_update_live_room_icon_cs_req::MMCGBGDJIPN::Title(ref v) => {
                     my_size += ::protobuf::rt::string_size(4, &v);
+                },
+                &idle_live_update_live_room_icon_cs_req::MMCGBGDJIPN::AJIMPLLIFIE(v) => {
+                    my_size += ::protobuf::rt::uint32_size(8, v);
                 },
             };
         }
@@ -189,11 +189,11 @@ impl ::protobuf::Message for IdleLiveUpdateLiveRoomIconCsReq {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
-                &idle_live_update_live_room_icon_cs_req::MMCGBGDJIPN::AJIMPLLIFIE(v) => {
-                    os.write_uint32(3, v)?;
-                },
                 &idle_live_update_live_room_icon_cs_req::MMCGBGDJIPN::Title(ref v) => {
                     os.write_string(4, v)?;
+                },
+                &idle_live_update_live_room_icon_cs_req::MMCGBGDJIPN::AJIMPLLIFIE(v) => {
+                    os.write_uint32(8, v)?;
                 },
             };
         }
@@ -252,10 +252,10 @@ pub mod idle_live_update_live_room_icon_cs_req {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:IdleLiveUpdateLiveRoomIconCsReq.MMCGBGDJIPN)
     pub enum MMCGBGDJIPN {
-        // @@protoc_insertion_point(oneof_field:IdleLiveUpdateLiveRoomIconCsReq.AJIMPLLIFIE)
-        AJIMPLLIFIE(u32),
         // @@protoc_insertion_point(oneof_field:IdleLiveUpdateLiveRoomIconCsReq.title)
         Title(::std::string::String),
+        // @@protoc_insertion_point(oneof_field:IdleLiveUpdateLiveRoomIconCsReq.AJIMPLLIFIE)
+        AJIMPLLIFIE(u32),
     }
 
     impl ::protobuf::Oneof for MMCGBGDJIPN {
@@ -277,8 +277,8 @@ pub mod idle_live_update_live_room_icon_cs_req {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%IdleLiveUpdateLiveRoomIconCsReq.proto\"l\n\x1fIdleLiveUpdateLiveRoomI\
-    conCsReq\x12\"\n\x0bAJIMPLLIFIE\x18\x03\x20\x01(\rH\0R\x0bAJIMPLLIFIE\
-    \x12\x16\n\x05title\x18\x04\x20\x01(\tH\0R\x05titleB\r\n\x0bMMCGBGDJIPNb\
+    conCsReq\x12\x16\n\x05title\x18\x04\x20\x01(\tH\0R\x05title\x12\"\n\x0bA\
+    JIMPLLIFIE\x18\x08\x20\x01(\rH\0R\x0bAJIMPLLIFIEB\r\n\x0bMMCGBGDJIPNb\
     \x06proto3\
 ";
 

@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum APLPBLOMALB {
     // @@protoc_insertion_point(enum_value:APLPBLOMALB.APLPBLOMALB_NLCDGIPGFDJ)
     APLPBLOMALB_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:APLPBLOMALB.APLPBLOMALB_IJGMNNHKFCB)
-    APLPBLOMALB_IJGMNNHKFCB = 7173,
     // @@protoc_insertion_point(enum_value:APLPBLOMALB.APLPBLOMALB_BFFPGPBJENK)
-    APLPBLOMALB_BFFPGPBJENK = 7180,
+    APLPBLOMALB_BFFPGPBJENK = 7177,
+    // @@protoc_insertion_point(enum_value:APLPBLOMALB.APLPBLOMALB_IJGMNNHKFCB)
+    APLPBLOMALB_IJGMNNHKFCB = 7176,
     // @@protoc_insertion_point(enum_value:APLPBLOMALB.APLPBLOMALB_EJBNBFIIBGM)
-    APLPBLOMALB_EJBNBFIIBGM = 7172,
+    APLPBLOMALB_EJBNBFIIBGM = 7173,
 }
 
 impl ::protobuf::Enum for APLPBLOMALB {
@@ -47,9 +47,9 @@ impl ::protobuf::Enum for APLPBLOMALB {
     fn from_i32(value: i32) -> ::std::option::Option<APLPBLOMALB> {
         match value {
             0 => ::std::option::Option::Some(APLPBLOMALB::APLPBLOMALB_NLCDGIPGFDJ),
-            7173 => ::std::option::Option::Some(APLPBLOMALB::APLPBLOMALB_IJGMNNHKFCB),
-            7180 => ::std::option::Option::Some(APLPBLOMALB::APLPBLOMALB_BFFPGPBJENK),
-            7172 => ::std::option::Option::Some(APLPBLOMALB::APLPBLOMALB_EJBNBFIIBGM),
+            7177 => ::std::option::Option::Some(APLPBLOMALB::APLPBLOMALB_BFFPGPBJENK),
+            7176 => ::std::option::Option::Some(APLPBLOMALB::APLPBLOMALB_IJGMNNHKFCB),
+            7173 => ::std::option::Option::Some(APLPBLOMALB::APLPBLOMALB_EJBNBFIIBGM),
             _ => ::std::option::Option::None
         }
     }
@@ -57,8 +57,8 @@ impl ::protobuf::Enum for APLPBLOMALB {
     fn from_str(str: &str) -> ::std::option::Option<APLPBLOMALB> {
         match str {
             "APLPBLOMALB_NLCDGIPGFDJ" => ::std::option::Option::Some(APLPBLOMALB::APLPBLOMALB_NLCDGIPGFDJ),
-            "APLPBLOMALB_IJGMNNHKFCB" => ::std::option::Option::Some(APLPBLOMALB::APLPBLOMALB_IJGMNNHKFCB),
             "APLPBLOMALB_BFFPGPBJENK" => ::std::option::Option::Some(APLPBLOMALB::APLPBLOMALB_BFFPGPBJENK),
+            "APLPBLOMALB_IJGMNNHKFCB" => ::std::option::Option::Some(APLPBLOMALB::APLPBLOMALB_IJGMNNHKFCB),
             "APLPBLOMALB_EJBNBFIIBGM" => ::std::option::Option::Some(APLPBLOMALB::APLPBLOMALB_EJBNBFIIBGM),
             _ => ::std::option::Option::None
         }
@@ -66,8 +66,8 @@ impl ::protobuf::Enum for APLPBLOMALB {
 
     const VALUES: &'static [APLPBLOMALB] = &[
         APLPBLOMALB::APLPBLOMALB_NLCDGIPGFDJ,
-        APLPBLOMALB::APLPBLOMALB_IJGMNNHKFCB,
         APLPBLOMALB::APLPBLOMALB_BFFPGPBJENK,
+        APLPBLOMALB::APLPBLOMALB_IJGMNNHKFCB,
         APLPBLOMALB::APLPBLOMALB_EJBNBFIIBGM,
     ];
 }
@@ -81,8 +81,8 @@ impl ::protobuf::EnumFull for APLPBLOMALB {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             APLPBLOMALB::APLPBLOMALB_NLCDGIPGFDJ => 0,
-            APLPBLOMALB::APLPBLOMALB_IJGMNNHKFCB => 1,
-            APLPBLOMALB::APLPBLOMALB_BFFPGPBJENK => 2,
+            APLPBLOMALB::APLPBLOMALB_BFFPGPBJENK => 1,
+            APLPBLOMALB::APLPBLOMALB_IJGMNNHKFCB => 2,
             APLPBLOMALB::APLPBLOMALB_EJBNBFIIBGM => 3,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -103,9 +103,9 @@ impl APLPBLOMALB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11APLPBLOMALB.proto*\x84\x01\n\x0bAPLPBLOMALB\x12\x1b\n\x17APLPBLOMA\
-    LB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17APLPBLOMALB_IJGMNNHKFCB\x10\x858\x12\
-    \x1c\n\x17APLPBLOMALB_BFFPGPBJENK\x10\x8c8\x12\x1c\n\x17APLPBLOMALB_EJBN\
-    BFIIBGM\x10\x848b\x06proto3\
+    LB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17APLPBLOMALB_BFFPGPBJENK\x10\x898\x12\
+    \x1c\n\x17APLPBLOMALB_IJGMNNHKFCB\x10\x888\x12\x1c\n\x17APLPBLOMALB_EJBN\
+    BFIIBGM\x10\x858b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

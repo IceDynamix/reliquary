@@ -79,7 +79,7 @@ impl ::protobuf::Message for StarFightDataChangeNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KDKKNFGPNAB)?;
                 },
                 80 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for StarFightDataChangeNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.KDKKNFGPNAB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.group_id != 0 {
             os.write_uint32(10, self.group_id)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for StarFightDataChangeNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fStarFightDataChangeNotify.proto\x1a\x11JFGCABMMKAB.proto\"f\n\x19S\
-    tarFightDataChangeNotify\x12.\n\x0bKDKKNFGPNAB\x18\x05\x20\x01(\x0b2\x0c\
+    tarFightDataChangeNotify\x12.\n\x0bKDKKNFGPNAB\x18\x08\x20\x01(\x0b2\x0c\
     .JFGCABMMKABR\x0bKDKKNFGPNAB\x12\x19\n\x08group_id\x18\n\x20\x01(\rR\x07\
     groupIdb\x06proto3\
 ";

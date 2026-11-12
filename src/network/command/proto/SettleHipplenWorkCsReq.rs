@@ -45,56 +45,7 @@ impl SettleHipplenWorkCsReq {
         ::std::default::Default::default()
     }
 
-    // .GCNJGJMPLHM MLLNOGKNHNL = 5;
-
-    pub fn MLLNOGKNHNL(&self) -> &super::GCNJGJMPLHM::GCNJGJMPLHM {
-        match self.NEBNJDMFELO {
-            ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(ref v)) => v,
-            _ => <super::GCNJGJMPLHM::GCNJGJMPLHM as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_MLLNOGKNHNL(&mut self) {
-        self.NEBNJDMFELO = ::std::option::Option::None;
-    }
-
-    pub fn has_MLLNOGKNHNL(&self) -> bool {
-        match self.NEBNJDMFELO {
-            ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_MLLNOGKNHNL(&mut self, v: super::GCNJGJMPLHM::GCNJGJMPLHM) {
-        self.NEBNJDMFELO = ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_MLLNOGKNHNL(&mut self) -> &mut super::GCNJGJMPLHM::GCNJGJMPLHM {
-        if let ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(_)) = self.NEBNJDMFELO {
-        } else {
-            self.NEBNJDMFELO = ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(super::GCNJGJMPLHM::GCNJGJMPLHM::new()));
-        }
-        match self.NEBNJDMFELO {
-            ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_MLLNOGKNHNL(&mut self) -> super::GCNJGJMPLHM::GCNJGJMPLHM {
-        if self.has_MLLNOGKNHNL() {
-            match self.NEBNJDMFELO.take() {
-                ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::GCNJGJMPLHM::GCNJGJMPLHM::new()
-        }
-    }
-
-    // .LODMLDKMPPL ENCBGPOIFCM = 11;
+    // .LODMLDKMPPL ENCBGPOIFCM = 2;
 
     pub fn ENCBGPOIFCM(&self) -> &super::LODMLDKMPPL::LODMLDKMPPL {
         match self.NEBNJDMFELO {
@@ -143,7 +94,7 @@ impl SettleHipplenWorkCsReq {
         }
     }
 
-    // .OHHHCKCFPIG ECKIMBNDOME = 12;
+    // .OHHHCKCFPIG ECKIMBNDOME = 6;
 
     pub fn ECKIMBNDOME(&self) -> &super::OHHHCKCFPIG::OHHHCKCFPIG {
         match self.NEBNJDMFELO {
@@ -192,7 +143,56 @@ impl SettleHipplenWorkCsReq {
         }
     }
 
-    // .HBMGNLFKMMK HBGCOIAGDIG = 14;
+    // .GCNJGJMPLHM MLLNOGKNHNL = 7;
+
+    pub fn MLLNOGKNHNL(&self) -> &super::GCNJGJMPLHM::GCNJGJMPLHM {
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(ref v)) => v,
+            _ => <super::GCNJGJMPLHM::GCNJGJMPLHM as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_MLLNOGKNHNL(&mut self) {
+        self.NEBNJDMFELO = ::std::option::Option::None;
+    }
+
+    pub fn has_MLLNOGKNHNL(&self) -> bool {
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_MLLNOGKNHNL(&mut self, v: super::GCNJGJMPLHM::GCNJGJMPLHM) {
+        self.NEBNJDMFELO = ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_MLLNOGKNHNL(&mut self) -> &mut super::GCNJGJMPLHM::GCNJGJMPLHM {
+        if let ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(_)) = self.NEBNJDMFELO {
+        } else {
+            self.NEBNJDMFELO = ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(super::GCNJGJMPLHM::GCNJGJMPLHM::new()));
+        }
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_MLLNOGKNHNL(&mut self) -> super::GCNJGJMPLHM::GCNJGJMPLHM {
+        if self.has_MLLNOGKNHNL() {
+            match self.NEBNJDMFELO.take() {
+                ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::GCNJGJMPLHM::GCNJGJMPLHM::new()
+        }
+    }
+
+    // .HBMGNLFKMMK HBGCOIAGDIG = 10;
 
     pub fn HBGCOIAGDIG(&self) -> &super::HBMGNLFKMMK::HBMGNLFKMMK {
         match self.NEBNJDMFELO {
@@ -244,13 +244,6 @@ impl SettleHipplenWorkCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GCNJGJMPLHM::GCNJGJMPLHM>(
-            "MLLNOGKNHNL",
-            SettleHipplenWorkCsReq::has_MLLNOGKNHNL,
-            SettleHipplenWorkCsReq::MLLNOGKNHNL,
-            SettleHipplenWorkCsReq::mut_MLLNOGKNHNL,
-            SettleHipplenWorkCsReq::set_MLLNOGKNHNL,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LODMLDKMPPL::LODMLDKMPPL>(
             "ENCBGPOIFCM",
             SettleHipplenWorkCsReq::has_ENCBGPOIFCM,
@@ -264,6 +257,13 @@ impl SettleHipplenWorkCsReq {
             SettleHipplenWorkCsReq::ECKIMBNDOME,
             SettleHipplenWorkCsReq::mut_ECKIMBNDOME,
             SettleHipplenWorkCsReq::set_ECKIMBNDOME,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GCNJGJMPLHM::GCNJGJMPLHM>(
+            "MLLNOGKNHNL",
+            SettleHipplenWorkCsReq::has_MLLNOGKNHNL,
+            SettleHipplenWorkCsReq::MLLNOGKNHNL,
+            SettleHipplenWorkCsReq::mut_MLLNOGKNHNL,
+            SettleHipplenWorkCsReq::set_MLLNOGKNHNL,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HBMGNLFKMMK::HBMGNLFKMMK>(
             "HBGCOIAGDIG",
@@ -291,16 +291,16 @@ impl ::protobuf::Message for SettleHipplenWorkCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.NEBNJDMFELO = ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(is.read_message()?));
-                },
-                90 => {
+                18 => {
                     self.NEBNJDMFELO = ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::ENCBGPOIFCM(is.read_message()?));
                 },
-                98 => {
+                50 => {
                     self.NEBNJDMFELO = ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::ECKIMBNDOME(is.read_message()?));
                 },
-                114 => {
+                58 => {
+                    self.NEBNJDMFELO = ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(is.read_message()?));
+                },
+                82 => {
                     self.NEBNJDMFELO = ::std::option::Option::Some(settle_hipplen_work_cs_req::NEBNJDMFELO::HBGCOIAGDIG(is.read_message()?));
                 },
                 tag => {
@@ -317,15 +317,15 @@ impl ::protobuf::Message for SettleHipplenWorkCsReq {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.NEBNJDMFELO {
             match v {
-                &settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
                 &settle_hipplen_work_cs_req::NEBNJDMFELO::ENCBGPOIFCM(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &settle_hipplen_work_cs_req::NEBNJDMFELO::ECKIMBNDOME(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -343,17 +343,17 @@ impl ::protobuf::Message for SettleHipplenWorkCsReq {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.NEBNJDMFELO {
             match v {
-                &settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-                },
                 &settle_hipplen_work_cs_req::NEBNJDMFELO::ENCBGPOIFCM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &settle_hipplen_work_cs_req::NEBNJDMFELO::ECKIMBNDOME(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                },
+                &settle_hipplen_work_cs_req::NEBNJDMFELO::MLLNOGKNHNL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
                 &settle_hipplen_work_cs_req::NEBNJDMFELO::HBGCOIAGDIG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
             };
         }
@@ -414,12 +414,12 @@ pub mod settle_hipplen_work_cs_req {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:SettleHipplenWorkCsReq.NEBNJDMFELO)
     pub enum NEBNJDMFELO {
-        // @@protoc_insertion_point(oneof_field:SettleHipplenWorkCsReq.MLLNOGKNHNL)
-        MLLNOGKNHNL(super::super::GCNJGJMPLHM::GCNJGJMPLHM),
         // @@protoc_insertion_point(oneof_field:SettleHipplenWorkCsReq.ENCBGPOIFCM)
         ENCBGPOIFCM(super::super::LODMLDKMPPL::LODMLDKMPPL),
         // @@protoc_insertion_point(oneof_field:SettleHipplenWorkCsReq.ECKIMBNDOME)
         ECKIMBNDOME(super::super::OHHHCKCFPIG::OHHHCKCFPIG),
+        // @@protoc_insertion_point(oneof_field:SettleHipplenWorkCsReq.MLLNOGKNHNL)
+        MLLNOGKNHNL(super::super::GCNJGJMPLHM::GCNJGJMPLHM),
         // @@protoc_insertion_point(oneof_field:SettleHipplenWorkCsReq.HBGCOIAGDIG)
         HBGCOIAGDIG(super::super::HBMGNLFKMMK::HBMGNLFKMMK),
     }
@@ -444,12 +444,12 @@ pub mod settle_hipplen_work_cs_req {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSettleHipplenWorkCsReq.proto\x1a\x11GCNJGJMPLHM.proto\x1a\x11HBMGN\
     LFKMMK.proto\x1a\x11LODMLDKMPPL.proto\x1a\x11OHHHCKCFPIG.proto\"\xef\x01\
-    \n\x16SettleHipplenWorkCsReq\x120\n\x0bMLLNOGKNHNL\x18\x05\x20\x01(\x0b2\
-    \x0c.GCNJGJMPLHMH\0R\x0bMLLNOGKNHNL\x120\n\x0bENCBGPOIFCM\x18\x0b\x20\
-    \x01(\x0b2\x0c.LODMLDKMPPLH\0R\x0bENCBGPOIFCM\x120\n\x0bECKIMBNDOME\x18\
-    \x0c\x20\x01(\x0b2\x0c.OHHHCKCFPIGH\0R\x0bECKIMBNDOME\x120\n\x0bHBGCOIAG\
-    DIG\x18\x0e\x20\x01(\x0b2\x0c.HBMGNLFKMMKH\0R\x0bHBGCOIAGDIGB\r\n\x0bNEB\
-    NJDMFELOb\x06proto3\
+    \n\x16SettleHipplenWorkCsReq\x120\n\x0bENCBGPOIFCM\x18\x02\x20\x01(\x0b2\
+    \x0c.LODMLDKMPPLH\0R\x0bENCBGPOIFCM\x120\n\x0bECKIMBNDOME\x18\x06\x20\
+    \x01(\x0b2\x0c.OHHHCKCFPIGH\0R\x0bECKIMBNDOME\x120\n\x0bMLLNOGKNHNL\x18\
+    \x07\x20\x01(\x0b2\x0c.GCNJGJMPLHMH\0R\x0bMLLNOGKNHNL\x120\n\x0bHBGCOIAG\
+    DIG\x18\n\x20\x01(\x0b2\x0c.HBMGNLFKMMKH\0R\x0bHBGCOIAGDIGB\r\n\x0bNEBNJ\
+    DMFELOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

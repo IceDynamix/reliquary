@@ -32,6 +32,8 @@ pub struct HGLDJBNCABP {
     pub page_type: u32,
     // @@protoc_insertion_point(field:HGLDJBNCABP.JDJHFJKPLCN)
     pub JDJHFJKPLCN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HGLDJBNCABP.LEEDAHHKCPE)
+    pub LEEDAHHKCPE: i64,
     // special fields
     // @@protoc_insertion_point(special_field:HGLDJBNCABP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +51,7 @@ impl HGLDJBNCABP {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "page_type",
@@ -60,6 +62,11 @@ impl HGLDJBNCABP {
             "JDJHFJKPLCN",
             |m: &HGLDJBNCABP| { &m.JDJHFJKPLCN },
             |m: &mut HGLDJBNCABP| { &mut m.JDJHFJKPLCN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LEEDAHHKCPE",
+            |m: &HGLDJBNCABP| { &m.LEEDAHHKCPE },
+            |m: &mut HGLDJBNCABP| { &mut m.LEEDAHHKCPE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HGLDJBNCABP>(
             "HGLDJBNCABP",
@@ -88,6 +95,9 @@ impl ::protobuf::Message for HGLDJBNCABP {
                 16 => {
                     self.JDJHFJKPLCN.push(is.read_uint32()?);
                 },
+                24 => {
+                    self.LEEDAHHKCPE = is.read_int64()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -104,6 +114,9 @@ impl ::protobuf::Message for HGLDJBNCABP {
             my_size += ::protobuf::rt::uint32_size(1, self.page_type);
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.JDJHFJKPLCN);
+        if self.LEEDAHHKCPE != 0 {
+            my_size += ::protobuf::rt::int64_size(3, self.LEEDAHHKCPE);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -114,6 +127,9 @@ impl ::protobuf::Message for HGLDJBNCABP {
             os.write_uint32(1, self.page_type)?;
         }
         os.write_repeated_packed_uint32(2, &self.JDJHFJKPLCN)?;
+        if self.LEEDAHHKCPE != 0 {
+            os.write_int64(3, self.LEEDAHHKCPE)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,6 +149,7 @@ impl ::protobuf::Message for HGLDJBNCABP {
     fn clear(&mut self) {
         self.page_type = 0;
         self.JDJHFJKPLCN.clear();
+        self.LEEDAHHKCPE = 0;
         self.special_fields.clear();
     }
 
@@ -140,6 +157,7 @@ impl ::protobuf::Message for HGLDJBNCABP {
         static instance: HGLDJBNCABP = HGLDJBNCABP {
             page_type: 0,
             JDJHFJKPLCN: ::std::vec::Vec::new(),
+            LEEDAHHKCPE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for HGLDJBNCABP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HGLDJBNCABP.proto\"L\n\x0bHGLDJBNCABP\x12\x1b\n\tpage_type\x18\x01\
+    \n\x11HGLDJBNCABP.proto\"n\n\x0bHGLDJBNCABP\x12\x1b\n\tpage_type\x18\x01\
     \x20\x01(\rR\x08pageType\x12\x20\n\x0bJDJHFJKPLCN\x18\x02\x20\x03(\rR\
-    \x0bJDJHFJKPLCNb\x06proto3\
+    \x0bJDJHFJKPLCN\x12\x20\n\x0bLEEDAHHKCPE\x18\x03\x20\x01(\x03R\x0bLEEDAH\
+    HKCPEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

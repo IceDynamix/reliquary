@@ -86,13 +86,13 @@ impl ::protobuf::Message for EEFDJLPDCFO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                88 => {
                     self.PBEPLKMNAKF = is.read_uint32()?;
                 },
-                32 => {
+                96 => {
                     self.DPJLMFBADMM = is.read_uint32()?;
                 },
-                80 => {
+                112 => {
                     self.EMLBKOKEAOH = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for EEFDJLPDCFO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PBEPLKMNAKF != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.PBEPLKMNAKF);
+            my_size += ::protobuf::rt::uint32_size(11, self.PBEPLKMNAKF);
         }
         if self.DPJLMFBADMM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DPJLMFBADMM);
+            my_size += ::protobuf::rt::uint32_size(12, self.DPJLMFBADMM);
         }
         if self.EMLBKOKEAOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.EMLBKOKEAOH);
+            my_size += ::protobuf::rt::uint32_size(14, self.EMLBKOKEAOH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for EEFDJLPDCFO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PBEPLKMNAKF != 0 {
-            os.write_uint32(2, self.PBEPLKMNAKF)?;
+            os.write_uint32(11, self.PBEPLKMNAKF)?;
         }
         if self.DPJLMFBADMM != 0 {
-            os.write_uint32(4, self.DPJLMFBADMM)?;
+            os.write_uint32(12, self.DPJLMFBADMM)?;
         }
         if self.EMLBKOKEAOH != 0 {
-            os.write_uint32(10, self.EMLBKOKEAOH)?;
+            os.write_uint32(14, self.EMLBKOKEAOH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for EEFDJLPDCFO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EEFDJLPDCFO.proto\"s\n\x0bEEFDJLPDCFO\x12\x20\n\x0bPBEPLKMNAKF\x18\
-    \x02\x20\x01(\rR\x0bPBEPLKMNAKF\x12\x20\n\x0bDPJLMFBADMM\x18\x04\x20\x01\
-    (\rR\x0bDPJLMFBADMM\x12\x20\n\x0bEMLBKOKEAOH\x18\n\x20\x01(\rR\x0bEMLBKO\
-    KEAOHb\x06proto3\
+    \x0b\x20\x01(\rR\x0bPBEPLKMNAKF\x12\x20\n\x0bDPJLMFBADMM\x18\x0c\x20\x01\
+    (\rR\x0bDPJLMFBADMM\x12\x20\n\x0bEMLBKOKEAOH\x18\x0e\x20\x01(\rR\x0bEMLB\
+    KOKEAOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

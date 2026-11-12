@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BPENENIMEFE {
     // message fields
+    // @@protoc_insertion_point(field:BPENENIMEFE.quest_id)
+    pub quest_id: u32,
     // @@protoc_insertion_point(field:BPENENIMEFE.IJJDEHIPOEL)
     pub IJJDEHIPOEL: bool,
     // @@protoc_insertion_point(field:BPENENIMEFE.GHBBCIIPHKJ)
-    pub GHBBCIIPHKJ: ::protobuf::MessageField<super::H_1253c083::H_1253c083>,
-    // @@protoc_insertion_point(field:BPENENIMEFE.quest_id)
-    pub quest_id: u32,
+    pub GHBBCIIPHKJ: ::protobuf::MessageField<super::H_a2f38409::H_a2f38409>,
     // special fields
     // @@protoc_insertion_point(special_field:BPENENIMEFE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl BPENENIMEFE {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "quest_id",
+            |m: &BPENENIMEFE| { &m.quest_id },
+            |m: &mut BPENENIMEFE| { &mut m.quest_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IJJDEHIPOEL",
             |m: &BPENENIMEFE| { &m.IJJDEHIPOEL },
             |m: &mut BPENENIMEFE| { &mut m.IJJDEHIPOEL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_1253c083::H_1253c083>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_a2f38409::H_a2f38409>(
             "GHBBCIIPHKJ",
             |m: &BPENENIMEFE| { &m.GHBBCIIPHKJ },
             |m: &mut BPENENIMEFE| { &mut m.GHBBCIIPHKJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "quest_id",
-            |m: &BPENENIMEFE| { &m.quest_id },
-            |m: &mut BPENENIMEFE| { &mut m.quest_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BPENENIMEFE>(
             "BPENENIMEFE",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for BPENENIMEFE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                48 => {
+                    self.quest_id = is.read_uint32()?;
+                },
+                72 => {
                     self.IJJDEHIPOEL = is.read_bool()?;
                 },
-                58 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GHBBCIIPHKJ)?;
-                },
-                96 => {
-                    self.quest_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,6 +107,9 @@ impl ::protobuf::Message for BPENENIMEFE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.quest_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.quest_id);
+        }
         if self.IJJDEHIPOEL != false {
             my_size += 1 + 1;
         }
@@ -114,23 +117,20 @@ impl ::protobuf::Message for BPENENIMEFE {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.quest_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.quest_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.quest_id != 0 {
+            os.write_uint32(6, self.quest_id)?;
+        }
         if self.IJJDEHIPOEL != false {
-            os.write_bool(5, self.IJJDEHIPOEL)?;
+            os.write_bool(9, self.IJJDEHIPOEL)?;
         }
         if let Some(v) = self.GHBBCIIPHKJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if self.quest_id != 0 {
-            os.write_uint32(12, self.quest_id)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for BPENENIMEFE {
     }
 
     fn clear(&mut self) {
+        self.quest_id = 0;
         self.IJJDEHIPOEL = false;
         self.GHBBCIIPHKJ.clear();
-        self.quest_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BPENENIMEFE {
         static instance: BPENENIMEFE = BPENENIMEFE {
+            quest_id: 0,
             IJJDEHIPOEL: false,
             GHBBCIIPHKJ: ::protobuf::MessageField::none(),
-            quest_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for BPENENIMEFE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BPENENIMEFE.proto\x1a\x10H_1253c083.proto\"y\n\x0bBPENENIMEFE\x12\
-    \x20\n\x0bIJJDEHIPOEL\x18\x05\x20\x01(\x08R\x0bIJJDEHIPOEL\x12-\n\x0bGHB\
-    BCIIPHKJ\x18\x07\x20\x01(\x0b2\x0b.H_1253c083R\x0bGHBBCIIPHKJ\x12\x19\n\
-    \x08quest_id\x18\x0c\x20\x01(\rR\x07questIdb\x06proto3\
+    \n\x11BPENENIMEFE.proto\x1a\x10H_a2f38409.proto\"y\n\x0bBPENENIMEFE\x12\
+    \x19\n\x08quest_id\x18\x06\x20\x01(\rR\x07questId\x12\x20\n\x0bIJJDEHIPO\
+    EL\x18\t\x20\x01(\x08R\x0bIJJDEHIPOEL\x12-\n\x0bGHBBCIIPHKJ\x18\r\x20\
+    \x01(\x0b2\x0b.H_a2f38409R\x0bGHBBCIIPHKJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::H_1253c083::file_descriptor().clone());
+            deps.push(super::H_a2f38409::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BPENENIMEFE::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

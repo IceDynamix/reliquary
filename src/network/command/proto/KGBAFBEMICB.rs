@@ -79,7 +79,7 @@ impl ::protobuf::Message for KGBAFBEMICB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.AACGBEBGDPE = is.read_uint32()?;
                 },
                 96 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for KGBAFBEMICB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AACGBEBGDPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.AACGBEBGDPE);
+            my_size += ::protobuf::rt::uint32_size(1, self.AACGBEBGDPE);
         }
         if self.MNDCIBFEJOP != false {
             my_size += 1 + 1;
@@ -110,7 +110,7 @@ impl ::protobuf::Message for KGBAFBEMICB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AACGBEBGDPE != 0 {
-            os.write_uint32(3, self.AACGBEBGDPE)?;
+            os.write_uint32(1, self.AACGBEBGDPE)?;
         }
         if self.MNDCIBFEJOP != false {
             os.write_bool(12, self.MNDCIBFEJOP)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for KGBAFBEMICB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KGBAFBEMICB.proto\"Q\n\x0bKGBAFBEMICB\x12\x20\n\x0bAACGBEBGDPE\x18\
-    \x03\x20\x01(\rR\x0bAACGBEBGDPE\x12\x20\n\x0bMNDCIBFEJOP\x18\x0c\x20\x01\
+    \x01\x20\x01(\rR\x0bAACGBEBGDPE\x12\x20\n\x0bMNDCIBFEJOP\x18\x0c\x20\x01\
     (\x08R\x0bMNDCIBFEJOPb\x06proto3\
 ";
 

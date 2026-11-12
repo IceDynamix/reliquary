@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OKIPFIENKIF {
     // message fields
-    // @@protoc_insertion_point(field:OKIPFIENKIF.DGKLOCJHKNH)
-    pub DGKLOCJHKNH: ::std::vec::Vec<super::JFJDMGOMJOF::JFJDMGOMJOF>,
-    // @@protoc_insertion_point(field:OKIPFIENKIF.OPMGDNNAEJF)
-    pub OPMGDNNAEJF: ::protobuf::MessageField<super::DFLIHGGNBDB::DFLIHGGNBDB>,
-    // @@protoc_insertion_point(field:OKIPFIENKIF.EAFFACCBAAA)
-    pub EAFFACCBAAA: u32,
     // @@protoc_insertion_point(field:OKIPFIENKIF.GGCMCDDGEIB)
     pub GGCMCDDGEIB: ::protobuf::MessageField<super::DFLIHGGNBDB::DFLIHGGNBDB>,
+    // @@protoc_insertion_point(field:OKIPFIENKIF.OPMGDNNAEJF)
+    pub OPMGDNNAEJF: ::protobuf::MessageField<super::DFLIHGGNBDB::DFLIHGGNBDB>,
+    // @@protoc_insertion_point(field:OKIPFIENKIF.DGKLOCJHKNH)
+    pub DGKLOCJHKNH: ::std::vec::Vec<super::JFJDMGOMJOF::JFJDMGOMJOF>,
+    // @@protoc_insertion_point(field:OKIPFIENKIF.EAFFACCBAAA)
+    pub EAFFACCBAAA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OKIPFIENKIF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl OKIPFIENKIF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DGKLOCJHKNH",
-            |m: &OKIPFIENKIF| { &m.DGKLOCJHKNH },
-            |m: &mut OKIPFIENKIF| { &mut m.DGKLOCJHKNH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFLIHGGNBDB::DFLIHGGNBDB>(
+            "GGCMCDDGEIB",
+            |m: &OKIPFIENKIF| { &m.GGCMCDDGEIB },
+            |m: &mut OKIPFIENKIF| { &mut m.GGCMCDDGEIB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFLIHGGNBDB::DFLIHGGNBDB>(
             "OPMGDNNAEJF",
             |m: &OKIPFIENKIF| { &m.OPMGDNNAEJF },
             |m: &mut OKIPFIENKIF| { &mut m.OPMGDNNAEJF },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DGKLOCJHKNH",
+            |m: &OKIPFIENKIF| { &m.DGKLOCJHKNH },
+            |m: &mut OKIPFIENKIF| { &mut m.DGKLOCJHKNH },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EAFFACCBAAA",
             |m: &OKIPFIENKIF| { &m.EAFFACCBAAA },
             |m: &mut OKIPFIENKIF| { &mut m.EAFFACCBAAA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFLIHGGNBDB::DFLIHGGNBDB>(
-            "GGCMCDDGEIB",
-            |m: &OKIPFIENKIF| { &m.GGCMCDDGEIB },
-            |m: &mut OKIPFIENKIF| { &mut m.GGCMCDDGEIB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OKIPFIENKIF>(
             "OKIPFIENKIF",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for OKIPFIENKIF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.DGKLOCJHKNH.push(is.read_message()?);
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GGCMCDDGEIB)?;
                 },
-                42 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPMGDNNAEJF)?;
                 },
-                48 => {
-                    self.EAFFACCBAAA = is.read_uint32()?;
+                90 => {
+                    self.DGKLOCJHKNH.push(is.read_message()?);
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GGCMCDDGEIB)?;
+                104 => {
+                    self.EAFFACCBAAA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,20 +117,20 @@ impl ::protobuf::Message for OKIPFIENKIF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DGKLOCJHKNH {
-            let len = value.compute_size();
+        if let Some(v) = self.GGCMCDDGEIB.as_ref() {
+            let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        }
         if let Some(v) = self.OPMGDNNAEJF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.EAFFACCBAAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.EAFFACCBAAA);
-        }
-        if let Some(v) = self.GGCMCDDGEIB.as_ref() {
-            let len = v.compute_size();
+        for value in &self.DGKLOCJHKNH {
+            let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.EAFFACCBAAA != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.EAFFACCBAAA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,17 +138,17 @@ impl ::protobuf::Message for OKIPFIENKIF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DGKLOCJHKNH {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
-        if let Some(v) = self.OPMGDNNAEJF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if self.EAFFACCBAAA != 0 {
-            os.write_uint32(6, self.EAFFACCBAAA)?;
-        }
         if let Some(v) = self.GGCMCDDGEIB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if let Some(v) = self.OPMGDNNAEJF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        for v in &self.DGKLOCJHKNH {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        if self.EAFFACCBAAA != 0 {
+            os.write_uint32(13, self.EAFFACCBAAA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for OKIPFIENKIF {
     }
 
     fn clear(&mut self) {
-        self.DGKLOCJHKNH.clear();
-        self.OPMGDNNAEJF.clear();
-        self.EAFFACCBAAA = 0;
         self.GGCMCDDGEIB.clear();
+        self.OPMGDNNAEJF.clear();
+        self.DGKLOCJHKNH.clear();
+        self.EAFFACCBAAA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OKIPFIENKIF {
         static instance: OKIPFIENKIF = OKIPFIENKIF {
-            DGKLOCJHKNH: ::std::vec::Vec::new(),
-            OPMGDNNAEJF: ::protobuf::MessageField::none(),
-            EAFFACCBAAA: 0,
             GGCMCDDGEIB: ::protobuf::MessageField::none(),
+            OPMGDNNAEJF: ::protobuf::MessageField::none(),
+            DGKLOCJHKNH: ::std::vec::Vec::new(),
+            EAFFACCBAAA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,11 +205,11 @@ impl ::protobuf::reflect::ProtobufValue for OKIPFIENKIF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OKIPFIENKIF.proto\x1a\x11DFLIHGGNBDB.proto\x1a\x11JFJDMGOMJOF.prot\
-    o\"\xbf\x01\n\x0bOKIPFIENKIF\x12.\n\x0bDGKLOCJHKNH\x18\x03\x20\x03(\x0b2\
-    \x0c.JFJDMGOMJOFR\x0bDGKLOCJHKNH\x12.\n\x0bOPMGDNNAEJF\x18\x05\x20\x01(\
-    \x0b2\x0c.DFLIHGGNBDBR\x0bOPMGDNNAEJF\x12\x20\n\x0bEAFFACCBAAA\x18\x06\
-    \x20\x01(\rR\x0bEAFFACCBAAA\x12.\n\x0bGGCMCDDGEIB\x18\r\x20\x01(\x0b2\
-    \x0c.DFLIHGGNBDBR\x0bGGCMCDDGEIBb\x06proto3\
+    o\"\xbf\x01\n\x0bOKIPFIENKIF\x12.\n\x0bGGCMCDDGEIB\x18\x04\x20\x01(\x0b2\
+    \x0c.DFLIHGGNBDBR\x0bGGCMCDDGEIB\x12.\n\x0bOPMGDNNAEJF\x18\n\x20\x01(\
+    \x0b2\x0c.DFLIHGGNBDBR\x0bOPMGDNNAEJF\x12.\n\x0bDGKLOCJHKNH\x18\x0b\x20\
+    \x03(\x0b2\x0c.JFJDMGOMJOFR\x0bDGKLOCJHKNH\x12\x20\n\x0bEAFFACCBAAA\x18\
+    \r\x20\x01(\rR\x0bEAFFACCBAAAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

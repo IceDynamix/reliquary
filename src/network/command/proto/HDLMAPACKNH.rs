@@ -82,7 +82,7 @@ impl ::protobuf::Message for HDLMAPACKNH {
                 8 => {
                     self.GOCFOJJIAHL = is.read_uint32()?;
                 },
-                64 => {
+                112 => {
                     self.DIDBBOCNHBJ = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for HDLMAPACKNH {
             my_size += ::protobuf::rt::uint32_size(1, self.GOCFOJJIAHL);
         }
         if self.DIDBBOCNHBJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DIDBBOCNHBJ);
+            my_size += ::protobuf::rt::uint32_size(14, self.DIDBBOCNHBJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for HDLMAPACKNH {
             os.write_uint32(1, self.GOCFOJJIAHL)?;
         }
         if self.DIDBBOCNHBJ != 0 {
-            os.write_uint32(8, self.DIDBBOCNHBJ)?;
+            os.write_uint32(14, self.DIDBBOCNHBJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for HDLMAPACKNH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HDLMAPACKNH.proto\"Q\n\x0bHDLMAPACKNH\x12\x20\n\x0bGOCFOJJIAHL\x18\
-    \x01\x20\x01(\rR\x0bGOCFOJJIAHL\x12\x20\n\x0bDIDBBOCNHBJ\x18\x08\x20\x01\
+    \x01\x20\x01(\rR\x0bGOCFOJJIAHL\x12\x20\n\x0bDIDBBOCNHBJ\x18\x0e\x20\x01\
     (\rR\x0bDIDBBOCNHBJb\x06proto3\
 ";
 

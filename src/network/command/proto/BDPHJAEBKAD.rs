@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BDPHJAEBKAD {
     // message fields
-    // @@protoc_insertion_point(field:BDPHJAEBKAD.NFGNOCBCKID)
-    pub NFGNOCBCKID: u32,
     // @@protoc_insertion_point(field:BDPHJAEBKAD.battle_target_list)
     pub battle_target_list: ::std::vec::Vec<super::RogueAdventureRoomGameplayWolfGunTarget::RogueAdventureRoomGameplayWolfGunTarget>,
+    // @@protoc_insertion_point(field:BDPHJAEBKAD.NFGNOCBCKID)
+    pub NFGNOCBCKID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BDPHJAEBKAD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl BDPHJAEBKAD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NFGNOCBCKID",
-            |m: &BDPHJAEBKAD| { &m.NFGNOCBCKID },
-            |m: &mut BDPHJAEBKAD| { &mut m.NFGNOCBCKID },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "battle_target_list",
             |m: &BDPHJAEBKAD| { &m.battle_target_list },
             |m: &mut BDPHJAEBKAD| { &mut m.battle_target_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NFGNOCBCKID",
+            |m: &BDPHJAEBKAD| { &m.NFGNOCBCKID },
+            |m: &mut BDPHJAEBKAD| { &mut m.NFGNOCBCKID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BDPHJAEBKAD>(
             "BDPHJAEBKAD",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BDPHJAEBKAD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.NFGNOCBCKID = is.read_uint32()?;
-                },
-                98 => {
+                26 => {
                     self.battle_target_list.push(is.read_message()?);
+                },
+                72 => {
+                    self.NFGNOCBCKID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for BDPHJAEBKAD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NFGNOCBCKID != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.NFGNOCBCKID);
-        }
         for value in &self.battle_target_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.NFGNOCBCKID != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.NFGNOCBCKID);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NFGNOCBCKID != 0 {
-            os.write_uint32(5, self.NFGNOCBCKID)?;
-        }
         for v in &self.battle_target_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
+        if self.NFGNOCBCKID != 0 {
+            os.write_uint32(9, self.NFGNOCBCKID)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for BDPHJAEBKAD {
     }
 
     fn clear(&mut self) {
-        self.NFGNOCBCKID = 0;
         self.battle_target_list.clear();
+        self.NFGNOCBCKID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BDPHJAEBKAD {
         static instance: BDPHJAEBKAD = BDPHJAEBKAD {
-            NFGNOCBCKID: 0,
             battle_target_list: ::std::vec::Vec::new(),
+            NFGNOCBCKID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for BDPHJAEBKAD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BDPHJAEBKAD.proto\x1a-RogueAdventureRoomGameplayWolfGunTarget.prot\
-    o\"\x87\x01\n\x0bBDPHJAEBKAD\x12\x20\n\x0bNFGNOCBCKID\x18\x05\x20\x01(\r\
-    R\x0bNFGNOCBCKID\x12V\n\x12battle_target_list\x18\x0c\x20\x03(\x0b2(.Rog\
-    ueAdventureRoomGameplayWolfGunTargetR\x10battleTargetListb\x06proto3\
+    o\"\x87\x01\n\x0bBDPHJAEBKAD\x12V\n\x12battle_target_list\x18\x03\x20\
+    \x03(\x0b2(.RogueAdventureRoomGameplayWolfGunTargetR\x10battleTargetList\
+    \x12\x20\n\x0bNFGNOCBCKID\x18\t\x20\x01(\rR\x0bNFGNOCBCKIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

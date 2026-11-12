@@ -94,48 +94,48 @@ impl JFCPFBLKJAB {
         }
     }
 
-    // .DNPDLODGAHA LCMADDIMION = 11;
+    // .DNPDLODGAHA box_relic = 11;
 
-    pub fn LCMADDIMION(&self) -> &super::DNPDLODGAHA::DNPDLODGAHA {
+    pub fn box_relic(&self) -> &super::DNPDLODGAHA::DNPDLODGAHA {
         match self.PONFIKAJHFD {
-            ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::LCMADDIMION(ref v)) => v,
+            ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::BoxRelic(ref v)) => v,
             _ => <super::DNPDLODGAHA::DNPDLODGAHA as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_LCMADDIMION(&mut self) {
+    pub fn clear_box_relic(&mut self) {
         self.PONFIKAJHFD = ::std::option::Option::None;
     }
 
-    pub fn has_LCMADDIMION(&self) -> bool {
+    pub fn has_box_relic(&self) -> bool {
         match self.PONFIKAJHFD {
-            ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::LCMADDIMION(..)) => true,
+            ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::BoxRelic(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_LCMADDIMION(&mut self, v: super::DNPDLODGAHA::DNPDLODGAHA) {
-        self.PONFIKAJHFD = ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::LCMADDIMION(v))
+    pub fn set_box_relic(&mut self, v: super::DNPDLODGAHA::DNPDLODGAHA) {
+        self.PONFIKAJHFD = ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::BoxRelic(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_LCMADDIMION(&mut self) -> &mut super::DNPDLODGAHA::DNPDLODGAHA {
-        if let ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::LCMADDIMION(_)) = self.PONFIKAJHFD {
+    pub fn mut_box_relic(&mut self) -> &mut super::DNPDLODGAHA::DNPDLODGAHA {
+        if let ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::BoxRelic(_)) = self.PONFIKAJHFD {
         } else {
-            self.PONFIKAJHFD = ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::LCMADDIMION(super::DNPDLODGAHA::DNPDLODGAHA::new()));
+            self.PONFIKAJHFD = ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::BoxRelic(super::DNPDLODGAHA::DNPDLODGAHA::new()));
         }
         match self.PONFIKAJHFD {
-            ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::LCMADDIMION(ref mut v)) => v,
+            ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::BoxRelic(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_LCMADDIMION(&mut self) -> super::DNPDLODGAHA::DNPDLODGAHA {
-        if self.has_LCMADDIMION() {
+    pub fn take_box_relic(&mut self) -> super::DNPDLODGAHA::DNPDLODGAHA {
+        if self.has_box_relic() {
             match self.PONFIKAJHFD.take() {
-                ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::LCMADDIMION(v)) => v,
+                ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::BoxRelic(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -301,11 +301,11 @@ impl JFCPFBLKJAB {
             JFCPFBLKJAB::set_lineup,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DNPDLODGAHA::DNPDLODGAHA>(
-            "LCMADDIMION",
-            JFCPFBLKJAB::has_LCMADDIMION,
-            JFCPFBLKJAB::LCMADDIMION,
-            JFCPFBLKJAB::mut_LCMADDIMION,
-            JFCPFBLKJAB::set_LCMADDIMION,
+            "box_relic",
+            JFCPFBLKJAB::has_box_relic,
+            JFCPFBLKJAB::box_relic,
+            JFCPFBLKJAB::mut_box_relic,
+            JFCPFBLKJAB::set_box_relic,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DPKPGPPHHBM::DPKPGPPHHBM>(
             "PAGPNOKLNOM",
@@ -351,7 +351,7 @@ impl ::protobuf::Message for JFCPFBLKJAB {
                     self.PONFIKAJHFD = ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::Lineup(is.read_message()?));
                 },
                 90 => {
-                    self.PONFIKAJHFD = ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::LCMADDIMION(is.read_message()?));
+                    self.PONFIKAJHFD = ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::BoxRelic(is.read_message()?));
                 },
                 98 => {
                     self.PONFIKAJHFD = ::std::option::Option::Some(jfcpfblkjab::PONFIKAJHFD::PAGPNOKLNOM(is.read_message()?));
@@ -380,7 +380,7 @@ impl ::protobuf::Message for JFCPFBLKJAB {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &jfcpfblkjab::PONFIKAJHFD::LCMADDIMION(ref v) => {
+                &jfcpfblkjab::PONFIKAJHFD::BoxRelic(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -409,7 +409,7 @@ impl ::protobuf::Message for JFCPFBLKJAB {
                 &jfcpfblkjab::PONFIKAJHFD::Lineup(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
-                &jfcpfblkjab::PONFIKAJHFD::LCMADDIMION(ref v) => {
+                &jfcpfblkjab::PONFIKAJHFD::BoxRelic(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
                 &jfcpfblkjab::PONFIKAJHFD::PAGPNOKLNOM(ref v) => {
@@ -483,8 +483,8 @@ pub mod jfcpfblkjab {
     pub enum PONFIKAJHFD {
         // @@protoc_insertion_point(oneof_field:JFCPFBLKJAB.lineup)
         Lineup(super::super::IJJKHFPLLIF::IJJKHFPLLIF),
-        // @@protoc_insertion_point(oneof_field:JFCPFBLKJAB.LCMADDIMION)
-        LCMADDIMION(super::super::DNPDLODGAHA::DNPDLODGAHA),
+        // @@protoc_insertion_point(oneof_field:JFCPFBLKJAB.box_relic)
+        BoxRelic(super::super::DNPDLODGAHA::DNPDLODGAHA),
         // @@protoc_insertion_point(oneof_field:JFCPFBLKJAB.PAGPNOKLNOM)
         PAGPNOKLNOM(super::super::DPKPGPPHHBM::DPKPGPPHHBM),
         // @@protoc_insertion_point(oneof_field:JFCPFBLKJAB.BEGAIBBJHHD)
@@ -513,13 +513,13 @@ pub mod jfcpfblkjab {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JFCPFBLKJAB.proto\x1a\x11DNPDLODGAHA.proto\x1a\x11DPKPGPPHHBM.prot\
     o\x1a\x11EIICHLNCAKK.proto\x1a\x11IJJKHFPLLIF.proto\x1a\x11IOFKKOEJFHI.p\
-    roto\"\x8c\x02\n\x0bJFCPFBLKJAB\x12&\n\x06lineup\x18\n\x20\x01(\x0b2\x0c\
-    .IJJKHFPLLIFH\0R\x06lineup\x120\n\x0bLCMADDIMION\x18\x0b\x20\x01(\x0b2\
-    \x0c.DNPDLODGAHAH\0R\x0bLCMADDIMION\x120\n\x0bPAGPNOKLNOM\x18\x0c\x20\
-    \x01(\x0b2\x0c.DPKPGPPHHBMH\0R\x0bPAGPNOKLNOM\x120\n\x0bBEGAIBBJHHD\x18\
-    \r\x20\x01(\x0b2\x0c.EIICHLNCAKKH\0R\x0bBEGAIBBJHHD\x120\n\x0bHCAAHIGINO\
-    M\x18\x0e\x20\x01(\x0b2\x0c.IOFKKOEJFHIH\0R\x0bHCAAHIGINOMB\r\n\x0bPONFI\
-    KAJHFDb\x06proto3\
+    roto\"\x87\x02\n\x0bJFCPFBLKJAB\x12&\n\x06lineup\x18\n\x20\x01(\x0b2\x0c\
+    .IJJKHFPLLIFH\0R\x06lineup\x12+\n\tbox_relic\x18\x0b\x20\x01(\x0b2\x0c.D\
+    NPDLODGAHAH\0R\x08boxRelic\x120\n\x0bPAGPNOKLNOM\x18\x0c\x20\x01(\x0b2\
+    \x0c.DPKPGPPHHBMH\0R\x0bPAGPNOKLNOM\x120\n\x0bBEGAIBBJHHD\x18\r\x20\x01(\
+    \x0b2\x0c.EIICHLNCAKKH\0R\x0bBEGAIBBJHHD\x120\n\x0bHCAAHIGINOM\x18\x0e\
+    \x20\x01(\x0b2\x0c.IOFKKOEJFHIH\0R\x0bHCAAHIGINOMB\r\n\x0bPONFIKAJHFDb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetFriendMarkScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetFriendMarkScRsp.uid)
-    pub uid: u32,
     // @@protoc_insertion_point(field:SetFriendMarkScRsp.BIJJOJNJHDO)
     pub BIJJOJNJHDO: bool,
+    // @@protoc_insertion_point(field:SetFriendMarkScRsp.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:SetFriendMarkScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -54,14 +54,14 @@ impl SetFriendMarkScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &SetFriendMarkScRsp| { &m.uid },
-            |m: &mut SetFriendMarkScRsp| { &mut m.uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BIJJOJNJHDO",
             |m: &SetFriendMarkScRsp| { &m.BIJJOJNJHDO },
             |m: &mut SetFriendMarkScRsp| { &mut m.BIJJOJNJHDO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uid",
+            |m: &SetFriendMarkScRsp| { &m.uid },
+            |m: &mut SetFriendMarkScRsp| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SetFriendMarkScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                64 => {
+                    self.BIJJOJNJHDO = is.read_bool()?;
+                },
+                72 => {
                     self.uid = is.read_uint32()?;
                 },
                 80 => {
-                    self.BIJJOJNJHDO = is.read_bool()?;
-                },
-                88 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SetFriendMarkScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.uid);
-        }
         if self.BIJJOJNJHDO != false {
             my_size += 1 + 1;
         }
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.uid);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SetFriendMarkScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.uid != 0 {
-            os.write_uint32(5, self.uid)?;
-        }
         if self.BIJJOJNJHDO != false {
-            os.write_bool(10, self.BIJJOJNJHDO)?;
+            os.write_bool(8, self.BIJJOJNJHDO)?;
+        }
+        if self.uid != 0 {
+            os.write_uint32(9, self.uid)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for SetFriendMarkScRsp {
     }
 
     fn clear(&mut self) {
-        self.uid = 0;
         self.BIJJOJNJHDO = false;
+        self.uid = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetFriendMarkScRsp {
         static instance: SetFriendMarkScRsp = SetFriendMarkScRsp {
-            uid: 0,
             BIJJOJNJHDO: false,
+            uid: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for SetFriendMarkScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18SetFriendMarkScRsp.proto\"b\n\x12SetFriendMarkScRsp\x12\x10\n\x03u\
-    id\x18\x05\x20\x01(\rR\x03uid\x12\x20\n\x0bBIJJOJNJHDO\x18\n\x20\x01(\
-    \x08R\x0bBIJJOJNJHDO\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\
-    b\x06proto3\
+    \n\x18SetFriendMarkScRsp.proto\"b\n\x12SetFriendMarkScRsp\x12\x20\n\x0bB\
+    IJJOJNJHDO\x18\x08\x20\x01(\x08R\x0bBIJJOJNJHDO\x12\x10\n\x03uid\x18\t\
+    \x20\x01(\rR\x03uid\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

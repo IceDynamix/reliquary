@@ -43,7 +43,7 @@ pub struct DBCBMJKOBPJ {
     // @@protoc_insertion_point(field:DBCBMJKOBPJ.EEIPNLJNJAL)
     pub EEIPNLJNJAL: ::std::vec::Vec<super::BattleAvatar::BattleAvatar>,
     // @@protoc_insertion_point(field:DBCBMJKOBPJ.PMCEKILFBIO)
-    pub PMCEKILFBIO: ::protobuf::MessageField<super::H_f8ce37f4::H_f8ce37f4>,
+    pub PMCEKILFBIO: ::protobuf::MessageField<super::H_63defa27::H_63defa27>,
     // @@protoc_insertion_point(field:DBCBMJKOBPJ.DFABBGKGDEI)
     pub DFABBGKGDEI: ::protobuf::MessageField<super::KIAICMELIMM::KIAICMELIMM>,
     // @@protoc_insertion_point(field:DBCBMJKOBPJ.battle_rogue_magic_info)
@@ -54,6 +54,8 @@ pub struct DBCBMJKOBPJ {
     pub EIGMKOJOEEI: ::protobuf::MessageField<super::OJCBOMCCPDB::OJCBOMCCPDB>,
     // @@protoc_insertion_point(field:DBCBMJKOBPJ.PJOJCJNLAAP)
     pub PJOJCJNLAAP: ::protobuf::MessageField<super::GLIBGKGGEJL::GLIBGKGGEJL>,
+    // @@protoc_insertion_point(field:DBCBMJKOBPJ.FFMMNDGMKMO)
+    pub FFMMNDGMKMO: ::std::vec::Vec<super::BattleAvatar::BattleAvatar>,
     // special fields
     // @@protoc_insertion_point(special_field:DBCBMJKOBPJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -71,7 +73,7 @@ impl DBCBMJKOBPJ {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(13);
+        let mut fields = ::std::vec::Vec::with_capacity(14);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
@@ -108,7 +110,7 @@ impl DBCBMJKOBPJ {
             |m: &DBCBMJKOBPJ| { &m.EEIPNLJNJAL },
             |m: &mut DBCBMJKOBPJ| { &mut m.EEIPNLJNJAL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_f8ce37f4::H_f8ce37f4>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_63defa27::H_63defa27>(
             "PMCEKILFBIO",
             |m: &DBCBMJKOBPJ| { &m.PMCEKILFBIO },
             |m: &mut DBCBMJKOBPJ| { &mut m.PMCEKILFBIO },
@@ -137,6 +139,11 @@ impl DBCBMJKOBPJ {
             "PJOJCJNLAAP",
             |m: &DBCBMJKOBPJ| { &m.PJOJCJNLAAP },
             |m: &mut DBCBMJKOBPJ| { &mut m.PJOJCJNLAAP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FFMMNDGMKMO",
+            |m: &DBCBMJKOBPJ| { &m.FFMMNDGMKMO },
+            |m: &mut DBCBMJKOBPJ| { &mut m.FFMMNDGMKMO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DBCBMJKOBPJ>(
             "DBCBMJKOBPJ",
@@ -207,6 +214,9 @@ impl ::protobuf::Message for DBCBMJKOBPJ {
                 138 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PJOJCJNLAAP)?;
                 },
+                146 => {
+                    self.FFMMNDGMKMO.push(is.read_message()?);
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -273,6 +283,10 @@ impl ::protobuf::Message for DBCBMJKOBPJ {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.FFMMNDGMKMO {
+            let len = value.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -325,6 +339,9 @@ impl ::protobuf::Message for DBCBMJKOBPJ {
         if let Some(v) = self.PJOJCJNLAAP.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(17, v, os)?;
         }
+        for v in &self.FFMMNDGMKMO {
+            ::protobuf::rt::write_message_field_with_cached_size(18, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -355,6 +372,7 @@ impl ::protobuf::Message for DBCBMJKOBPJ {
         self.LDPLAOHNLAP.clear();
         self.EIGMKOJOEEI.clear();
         self.PJOJCJNLAAP.clear();
+        self.FFMMNDGMKMO.clear();
         self.special_fields.clear();
     }
 
@@ -385,8 +403,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DBCBMJKOBPJ.proto\x1a\x12BattleAvatar.proto\x1a\x10BattleBuff.prot\
     o\x1a\x17BattleMonsterWave.proto\x1a\x1aBattleRogueMagicInfo.proto\x1a\
     \x16BattleTargetList.proto\x1a\x11EDCFKACPFNB.proto\x1a\x11GLIBGKGGEJL.p\
-    roto\x1a\x10H_f8ce37f4.proto\x1a\x11KIAICMELIMM.proto\x1a\x11OJCBOMCCPDB\
-    .proto\x1a\x11PKPFAHEBJIO.proto\"\x90\x06\n\x0bDBCBMJKOBPJ\x12.\n\x0bava\
+    roto\x1a\x10H_63defa27.proto\x1a\x11KIAICMELIMM.proto\x1a\x11OJCBOMCCPDB\
+    .proto\x1a\x11PKPFAHEBJIO.proto\"\xc1\x06\n\x0bDBCBMJKOBPJ\x12.\n\x0bava\
     tar_list\x18\x01\x20\x03(\x0b2\r.BattleAvatarR\navatarList\x12>\n\x11mon\
     ster_wave_list\x18\x02\x20\x03(\x0b2\x12.BattleMonsterWaveR\x0fmonsterWa\
     veList\x12(\n\tbuff_list\x18\x03\x20\x03(\x0b2\x0b.BattleBuffR\x08buffLi\
@@ -395,13 +413,14 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     R\x10battleTargetInfo\x12.\n\x0bFGOAKDCBIOE\x18\n\x20\x01(\x0b2\x0c.EDCF\
     KACPFNBR\x0bFGOAKDCBIOE\x12/\n\x0bEEIPNLJNJAL\x18\x0b\x20\x03(\x0b2\r.Ba\
     ttleAvatarR\x0bEEIPNLJNJAL\x12-\n\x0bPMCEKILFBIO\x18\x0c\x20\x01(\x0b2\
-    \x0b.H_f8ce37f4R\x0bPMCEKILFBIO\x12.\n\x0bDFABBGKGDEI\x18\r\x20\x01(\x0b\
+    \x0b.H_63defa27R\x0bPMCEKILFBIO\x12.\n\x0bDFABBGKGDEI\x18\r\x20\x01(\x0b\
     2\x0c.KIAICMELIMMR\x0bDFABBGKGDEI\x12L\n\x17battle_rogue_magic_info\x18\
     \x0e\x20\x01(\x0b2\x15.BattleRogueMagicInfoR\x14battleRogueMagicInfo\x12\
     .\n\x0bLDPLAOHNLAP\x18\x0f\x20\x01(\x0b2\x0c.PKPFAHEBJIOR\x0bLDPLAOHNLAP\
     \x12.\n\x0bEIGMKOJOEEI\x18\x10\x20\x01(\x0b2\x0c.OJCBOMCCPDBR\x0bEIGMKOJ\
     OEEI\x12.\n\x0bPJOJCJNLAAP\x18\x11\x20\x01(\x0b2\x0c.GLIBGKGGEJLR\x0bPJO\
-    JCJNLAAP\x1aV\n\x15BattleTargetInfoEntry\x12\x10\n\x03key\x18\x01\x20\
+    JCJNLAAP\x12/\n\x0bFFMMNDGMKMO\x18\x12\x20\x03(\x0b2\r.BattleAvatarR\x0b\
+    FFMMNDGMKMO\x1aV\n\x15BattleTargetInfoEntry\x12\x10\n\x03key\x18\x01\x20\
     \x01(\rR\x03key\x12'\n\x05value\x18\x02\x20\x01(\x0b2\x11.BattleTargetLi\
     stR\x05value:\x028\x01b\x06proto3\
 ";
@@ -428,7 +447,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::BattleTargetList::file_descriptor().clone());
             deps.push(super::EDCFKACPFNB::file_descriptor().clone());
             deps.push(super::GLIBGKGGEJL::file_descriptor().clone());
-            deps.push(super::H_f8ce37f4::file_descriptor().clone());
+            deps.push(super::H_63defa27::file_descriptor().clone());
             deps.push(super::KIAICMELIMM::file_descriptor().clone());
             deps.push(super::OJCBOMCCPDB::file_descriptor().clone());
             deps.push(super::PKPFAHEBJIO::file_descriptor().clone());

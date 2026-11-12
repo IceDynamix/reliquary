@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DeleteSocialEventServerCacheScRsp {
     // message fields
-    // @@protoc_insertion_point(field:DeleteSocialEventServerCacheScRsp.FHAIOBNLADG)
-    pub FHAIOBNLADG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:DeleteSocialEventServerCacheScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:DeleteSocialEventServerCacheScRsp.FHAIOBNLADG)
+    pub FHAIOBNLADG: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:DeleteSocialEventServerCacheScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl DeleteSocialEventServerCacheScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FHAIOBNLADG",
-            |m: &DeleteSocialEventServerCacheScRsp| { &m.FHAIOBNLADG },
-            |m: &mut DeleteSocialEventServerCacheScRsp| { &mut m.FHAIOBNLADG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &DeleteSocialEventServerCacheScRsp| { &m.retcode },
             |m: &mut DeleteSocialEventServerCacheScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FHAIOBNLADG",
+            |m: &DeleteSocialEventServerCacheScRsp| { &m.FHAIOBNLADG },
+            |m: &mut DeleteSocialEventServerCacheScRsp| { &mut m.FHAIOBNLADG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DeleteSocialEventServerCacheScRsp>(
             "DeleteSocialEventServerCacheScRsp",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for DeleteSocialEventServerCacheScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                32 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.FHAIOBNLADG)?;
                 },
-                56 => {
+                104 => {
                     self.FHAIOBNLADG.push(is.read_uint32()?);
-                },
-                88 => {
-                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for DeleteSocialEventServerCacheScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.FHAIOBNLADG);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.FHAIOBNLADG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.FHAIOBNLADG)?;
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
+        os.write_repeated_packed_uint32(13, &self.FHAIOBNLADG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for DeleteSocialEventServerCacheScRsp {
     }
 
     fn clear(&mut self) {
-        self.FHAIOBNLADG.clear();
         self.retcode = 0;
+        self.FHAIOBNLADG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DeleteSocialEventServerCacheScRsp {
         static instance: DeleteSocialEventServerCacheScRsp = DeleteSocialEventServerCacheScRsp {
-            FHAIOBNLADG: ::std::vec::Vec::new(),
             retcode: 0,
+            FHAIOBNLADG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for DeleteSocialEventServerCacheScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'DeleteSocialEventServerCacheScRsp.proto\"_\n!DeleteSocialEventServerC\
-    acheScRsp\x12\x20\n\x0bFHAIOBNLADG\x18\x07\x20\x03(\rR\x0bFHAIOBNLADG\
-    \x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
+    acheScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\
+    \x0bFHAIOBNLADG\x18\r\x20\x03(\rR\x0bFHAIOBNLADGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

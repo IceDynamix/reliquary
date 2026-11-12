@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RebattleByClientCsNotify {
     // message fields
-    // @@protoc_insertion_point(field:RebattleByClientCsNotify.NKDAAAGPCDB)
-    pub NKDAAAGPCDB: ::protobuf::EnumOrUnknown<super::RebattleType::RebattleType>,
     // @@protoc_insertion_point(field:RebattleByClientCsNotify.stt)
     pub stt: ::protobuf::MessageField<super::BattleStatistics::BattleStatistics>,
+    // @@protoc_insertion_point(field:RebattleByClientCsNotify.NKDAAAGPCDB)
+    pub NKDAAAGPCDB: ::protobuf::EnumOrUnknown<super::RebattleType::RebattleType>,
     // special fields
     // @@protoc_insertion_point(special_field:RebattleByClientCsNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RebattleByClientCsNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NKDAAAGPCDB",
-            |m: &RebattleByClientCsNotify| { &m.NKDAAAGPCDB },
-            |m: &mut RebattleByClientCsNotify| { &mut m.NKDAAAGPCDB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleStatistics::BattleStatistics>(
             "stt",
             |m: &RebattleByClientCsNotify| { &m.stt },
             |m: &mut RebattleByClientCsNotify| { &mut m.stt },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NKDAAAGPCDB",
+            |m: &RebattleByClientCsNotify| { &m.NKDAAAGPCDB },
+            |m: &mut RebattleByClientCsNotify| { &mut m.NKDAAAGPCDB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RebattleByClientCsNotify>(
             "RebattleByClientCsNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.NKDAAAGPCDB = is.read_enum_or_unknown()?;
-                },
-                50 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
+                },
+                88 => {
+                    self.NKDAAAGPCDB = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NKDAAAGPCDB != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::RebattleType_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(5, self.NKDAAAGPCDB.value());
-        }
         if let Some(v) = self.stt.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.NKDAAAGPCDB != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::RebattleType_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(11, self.NKDAAAGPCDB.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NKDAAAGPCDB != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::RebattleType_NLCDGIPGFDJ) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.NKDAAAGPCDB))?;
-        }
         if let Some(v) = self.stt.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if self.NKDAAAGPCDB != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::RebattleType_NLCDGIPGFDJ) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.NKDAAAGPCDB))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     }
 
     fn clear(&mut self) {
-        self.NKDAAAGPCDB = ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::RebattleType_NLCDGIPGFDJ);
         self.stt.clear();
+        self.NKDAAAGPCDB = ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::RebattleType_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RebattleByClientCsNotify {
         static instance: RebattleByClientCsNotify = RebattleByClientCsNotify {
-            NKDAAAGPCDB: ::protobuf::EnumOrUnknown::from_i32(0),
             stt: ::protobuf::MessageField::none(),
+            NKDAAAGPCDB: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for RebattleByClientCsNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRebattleByClientCsNotify.proto\x1a\x16BattleStatistics.proto\x1a\
-    \x12RebattleType.proto\"p\n\x18RebattleByClientCsNotify\x12/\n\x0bNKDAAA\
-    GPCDB\x18\x05\x20\x01(\x0e2\r.RebattleTypeR\x0bNKDAAAGPCDB\x12#\n\x03stt\
-    \x18\x06\x20\x01(\x0b2\x11.BattleStatisticsR\x03sttb\x06proto3\
+    \x12RebattleType.proto\"p\n\x18RebattleByClientCsNotify\x12#\n\x03stt\
+    \x18\x07\x20\x01(\x0b2\x11.BattleStatisticsR\x03stt\x12/\n\x0bNKDAAAGPCD\
+    B\x18\x0b\x20\x01(\x0e2\r.RebattleTypeR\x0bNKDAAAGPCDBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

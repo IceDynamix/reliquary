@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PPLKBFMCGLD {
     // message fields
-    // @@protoc_insertion_point(field:PPLKBFMCGLD.FOOMIPJJKOG)
-    pub FOOMIPJJKOG: ::std::vec::Vec<super::IDBCDHIOKEG::IDBCDHIOKEG>,
     // @@protoc_insertion_point(field:PPLKBFMCGLD.BPGBEEOHPLJ)
     pub BPGBEEOHPLJ: u32,
+    // @@protoc_insertion_point(field:PPLKBFMCGLD.FOOMIPJJKOG)
+    pub FOOMIPJJKOG: ::std::vec::Vec<super::IDBCDHIOKEG::IDBCDHIOKEG>,
     // special fields
     // @@protoc_insertion_point(special_field:PPLKBFMCGLD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl PPLKBFMCGLD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FOOMIPJJKOG",
-            |m: &PPLKBFMCGLD| { &m.FOOMIPJJKOG },
-            |m: &mut PPLKBFMCGLD| { &mut m.FOOMIPJJKOG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BPGBEEOHPLJ",
             |m: &PPLKBFMCGLD| { &m.BPGBEEOHPLJ },
             |m: &mut PPLKBFMCGLD| { &mut m.BPGBEEOHPLJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FOOMIPJJKOG",
+            |m: &PPLKBFMCGLD| { &m.FOOMIPJJKOG },
+            |m: &mut PPLKBFMCGLD| { &mut m.FOOMIPJJKOG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PPLKBFMCGLD>(
             "PPLKBFMCGLD",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PPLKBFMCGLD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.FOOMIPJJKOG.push(is.read_message()?);
-                },
-                16 => {
+                8 => {
                     self.BPGBEEOHPLJ = is.read_uint32()?;
+                },
+                122 => {
+                    self.FOOMIPJJKOG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for PPLKBFMCGLD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.BPGBEEOHPLJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.BPGBEEOHPLJ);
+        }
         for value in &self.FOOMIPJJKOG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.BPGBEEOHPLJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.BPGBEEOHPLJ);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FOOMIPJJKOG {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         if self.BPGBEEOHPLJ != 0 {
-            os.write_uint32(2, self.BPGBEEOHPLJ)?;
+            os.write_uint32(1, self.BPGBEEOHPLJ)?;
         }
+        for v in &self.FOOMIPJJKOG {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for PPLKBFMCGLD {
     }
 
     fn clear(&mut self) {
-        self.FOOMIPJJKOG.clear();
         self.BPGBEEOHPLJ = 0;
+        self.FOOMIPJJKOG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PPLKBFMCGLD {
         static instance: PPLKBFMCGLD = PPLKBFMCGLD {
-            FOOMIPJJKOG: ::std::vec::Vec::new(),
             BPGBEEOHPLJ: 0,
+            FOOMIPJJKOG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for PPLKBFMCGLD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PPLKBFMCGLD.proto\x1a\x11IDBCDHIOKEG.proto\"_\n\x0bPPLKBFMCGLD\x12\
-    .\n\x0bFOOMIPJJKOG\x18\x01\x20\x03(\x0b2\x0c.IDBCDHIOKEGR\x0bFOOMIPJJKOG\
-    \x12\x20\n\x0bBPGBEEOHPLJ\x18\x02\x20\x01(\rR\x0bBPGBEEOHPLJb\x06proto3\
+    \x20\n\x0bBPGBEEOHPLJ\x18\x01\x20\x01(\rR\x0bBPGBEEOHPLJ\x12.\n\x0bFOOMI\
+    PJJKOG\x18\x0f\x20\x03(\x0b2\x0c.IDBCDHIOKEGR\x0bFOOMIPJJKOGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BBIPCFPDEJN {
     // message fields
-    // @@protoc_insertion_point(field:BBIPCFPDEJN.GLANPLEGMPG)
-    pub GLANPLEGMPG: u64,
     // @@protoc_insertion_point(field:BBIPCFPDEJN.reason)
     pub reason: ::protobuf::EnumOrUnknown<super::CDABMABJFII::CDABMABJFII>,
+    // @@protoc_insertion_point(field:BBIPCFPDEJN.GLANPLEGMPG)
+    pub GLANPLEGMPG: u64,
     // special fields
     // @@protoc_insertion_point(special_field:BBIPCFPDEJN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl BBIPCFPDEJN {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLANPLEGMPG",
-            |m: &BBIPCFPDEJN| { &m.GLANPLEGMPG },
-            |m: &mut BBIPCFPDEJN| { &mut m.GLANPLEGMPG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reason",
             |m: &BBIPCFPDEJN| { &m.reason },
             |m: &mut BBIPCFPDEJN| { &mut m.reason },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GLANPLEGMPG",
+            |m: &BBIPCFPDEJN| { &m.GLANPLEGMPG },
+            |m: &mut BBIPCFPDEJN| { &mut m.GLANPLEGMPG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BBIPCFPDEJN>(
             "BBIPCFPDEJN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BBIPCFPDEJN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.GLANPLEGMPG = is.read_uint64()?;
-                },
-                120 => {
+                40 => {
                     self.reason = is.read_enum_or_unknown()?;
+                },
+                48 => {
+                    self.GLANPLEGMPG = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for BBIPCFPDEJN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GLANPLEGMPG != 0 {
-            my_size += ::protobuf::rt::uint64_size(14, self.GLANPLEGMPG);
-        }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::CDABMABJFII::CDABMABJFII::CDABMABJFII_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(15, self.reason.value());
+            my_size += ::protobuf::rt::int32_size(5, self.reason.value());
+        }
+        if self.GLANPLEGMPG != 0 {
+            my_size += ::protobuf::rt::uint64_size(6, self.GLANPLEGMPG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for BBIPCFPDEJN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GLANPLEGMPG != 0 {
-            os.write_uint64(14, self.GLANPLEGMPG)?;
-        }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::CDABMABJFII::CDABMABJFII::CDABMABJFII_NLCDGIPGFDJ) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+        }
+        if self.GLANPLEGMPG != 0 {
+            os.write_uint64(6, self.GLANPLEGMPG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for BBIPCFPDEJN {
     }
 
     fn clear(&mut self) {
-        self.GLANPLEGMPG = 0;
         self.reason = ::protobuf::EnumOrUnknown::new(super::CDABMABJFII::CDABMABJFII::CDABMABJFII_NLCDGIPGFDJ);
+        self.GLANPLEGMPG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BBIPCFPDEJN {
         static instance: BBIPCFPDEJN = BBIPCFPDEJN {
-            GLANPLEGMPG: 0,
             reason: ::protobuf::EnumOrUnknown::from_i32(0),
+            GLANPLEGMPG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for BBIPCFPDEJN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BBIPCFPDEJN.proto\x1a\x11CDABMABJFII.proto\"U\n\x0bBBIPCFPDEJN\x12\
-    \x20\n\x0bGLANPLEGMPG\x18\x0e\x20\x01(\x04R\x0bGLANPLEGMPG\x12$\n\x06rea\
-    son\x18\x0f\x20\x01(\x0e2\x0c.CDABMABJFIIR\x06reasonb\x06proto3\
+    $\n\x06reason\x18\x05\x20\x01(\x0e2\x0c.CDABMABJFIIR\x06reason\x12\x20\n\
+    \x0bGLANPLEGMPG\x18\x06\x20\x01(\x04R\x0bGLANPLEGMPGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

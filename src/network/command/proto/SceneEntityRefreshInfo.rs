@@ -45,7 +45,32 @@ impl SceneEntityRefreshInfo {
         ::std::default::Default::default()
     }
 
-    // uint32 BEEANADAHPL = 2;
+    // uint32 delete_entity = 4;
+
+    pub fn delete_entity(&self) -> u32 {
+        match self.refresh_type {
+            ::std::option::Option::Some(scene_entity_refresh_info::Refresh_type::DeleteEntity(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_delete_entity(&mut self) {
+        self.refresh_type = ::std::option::Option::None;
+    }
+
+    pub fn has_delete_entity(&self) -> bool {
+        match self.refresh_type {
+            ::std::option::Option::Some(scene_entity_refresh_info::Refresh_type::DeleteEntity(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_delete_entity(&mut self, v: u32) {
+        self.refresh_type = ::std::option::Option::Some(scene_entity_refresh_info::Refresh_type::DeleteEntity(v))
+    }
+
+    // uint32 BEEANADAHPL = 11;
 
     pub fn BEEANADAHPL(&self) -> u32 {
         match self.refresh_type {
@@ -70,7 +95,7 @@ impl SceneEntityRefreshInfo {
         self.refresh_type = ::std::option::Option::Some(scene_entity_refresh_info::Refresh_type::BEEANADAHPL(v))
     }
 
-    // .SceneEntityInfo add_entity = 9;
+    // .SceneEntityInfo add_entity = 13;
 
     pub fn add_entity(&self) -> &super::SceneEntityInfo::SceneEntityInfo {
         match self.refresh_type {
@@ -119,34 +144,15 @@ impl SceneEntityRefreshInfo {
         }
     }
 
-    // uint32 delete_entity = 14;
-
-    pub fn delete_entity(&self) -> u32 {
-        match self.refresh_type {
-            ::std::option::Option::Some(scene_entity_refresh_info::Refresh_type::DeleteEntity(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_delete_entity(&mut self) {
-        self.refresh_type = ::std::option::Option::None;
-    }
-
-    pub fn has_delete_entity(&self) -> bool {
-        match self.refresh_type {
-            ::std::option::Option::Some(scene_entity_refresh_info::Refresh_type::DeleteEntity(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_delete_entity(&mut self, v: u32) {
-        self.refresh_type = ::std::option::Option::Some(scene_entity_refresh_info::Refresh_type::DeleteEntity(v))
-    }
-
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "delete_entity",
+            SceneEntityRefreshInfo::has_delete_entity,
+            SceneEntityRefreshInfo::delete_entity,
+            SceneEntityRefreshInfo::set_delete_entity,
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "BEEANADAHPL",
             SceneEntityRefreshInfo::has_BEEANADAHPL,
@@ -159,12 +165,6 @@ impl SceneEntityRefreshInfo {
             SceneEntityRefreshInfo::add_entity,
             SceneEntityRefreshInfo::mut_add_entity,
             SceneEntityRefreshInfo::set_add_entity,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "delete_entity",
-            SceneEntityRefreshInfo::has_delete_entity,
-            SceneEntityRefreshInfo::delete_entity,
-            SceneEntityRefreshInfo::set_delete_entity,
         ));
         oneofs.push(scene_entity_refresh_info::Refresh_type::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneEntityRefreshInfo>(
@@ -185,14 +185,14 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                32 => {
+                    self.refresh_type = ::std::option::Option::Some(scene_entity_refresh_info::Refresh_type::DeleteEntity(is.read_uint32()?));
+                },
+                88 => {
                     self.refresh_type = ::std::option::Option::Some(scene_entity_refresh_info::Refresh_type::BEEANADAHPL(is.read_uint32()?));
                 },
-                74 => {
+                106 => {
                     self.refresh_type = ::std::option::Option::Some(scene_entity_refresh_info::Refresh_type::AddEntity(is.read_message()?));
-                },
-                112 => {
-                    self.refresh_type = ::std::option::Option::Some(scene_entity_refresh_info::Refresh_type::DeleteEntity(is.read_uint32()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -208,15 +208,15 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.refresh_type {
             match v {
+                &scene_entity_refresh_info::Refresh_type::DeleteEntity(v) => {
+                    my_size += ::protobuf::rt::uint32_size(4, v);
+                },
                 &scene_entity_refresh_info::Refresh_type::BEEANADAHPL(v) => {
-                    my_size += ::protobuf::rt::uint32_size(2, v);
+                    my_size += ::protobuf::rt::uint32_size(11, v);
                 },
                 &scene_entity_refresh_info::Refresh_type::AddEntity(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &scene_entity_refresh_info::Refresh_type::DeleteEntity(v) => {
-                    my_size += ::protobuf::rt::uint32_size(14, v);
                 },
             };
         }
@@ -228,14 +228,14 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.refresh_type {
             match v {
+                &scene_entity_refresh_info::Refresh_type::DeleteEntity(v) => {
+                    os.write_uint32(4, v)?;
+                },
                 &scene_entity_refresh_info::Refresh_type::BEEANADAHPL(v) => {
-                    os.write_uint32(2, v)?;
+                    os.write_uint32(11, v)?;
                 },
                 &scene_entity_refresh_info::Refresh_type::AddEntity(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-                },
-                &scene_entity_refresh_info::Refresh_type::DeleteEntity(v) => {
-                    os.write_uint32(14, v)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
             };
         }
@@ -295,12 +295,12 @@ pub mod scene_entity_refresh_info {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:SceneEntityRefreshInfo.refresh_type)
     pub enum Refresh_type {
+        // @@protoc_insertion_point(oneof_field:SceneEntityRefreshInfo.delete_entity)
+        DeleteEntity(u32),
         // @@protoc_insertion_point(oneof_field:SceneEntityRefreshInfo.BEEANADAHPL)
         BEEANADAHPL(u32),
         // @@protoc_insertion_point(oneof_field:SceneEntityRefreshInfo.add_entity)
         AddEntity(super::super::SceneEntityInfo::SceneEntityInfo),
-        // @@protoc_insertion_point(oneof_field:SceneEntityRefreshInfo.delete_entity)
-        DeleteEntity(u32),
     }
 
     impl ::protobuf::Oneof for Refresh_type {
@@ -322,10 +322,10 @@ pub mod scene_entity_refresh_info {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSceneEntityRefreshInfo.proto\x1a\x15SceneEntityInfo.proto\"\xa6\
-    \x01\n\x16SceneEntityRefreshInfo\x12\"\n\x0bBEEANADAHPL\x18\x02\x20\x01(\
-    \rH\0R\x0bBEEANADAHPL\x121\n\nadd_entity\x18\t\x20\x01(\x0b2\x10.SceneEn\
-    tityInfoH\0R\taddEntity\x12%\n\rdelete_entity\x18\x0e\x20\x01(\rH\0R\x0c\
-    deleteEntityB\x0e\n\x0crefresh_typeb\x06proto3\
+    \x01\n\x16SceneEntityRefreshInfo\x12%\n\rdelete_entity\x18\x04\x20\x01(\
+    \rH\0R\x0cdeleteEntity\x12\"\n\x0bBEEANADAHPL\x18\x0b\x20\x01(\rH\0R\x0b\
+    BEEANADAHPL\x121\n\nadd_entity\x18\r\x20\x01(\x0b2\x10.SceneEntityInfoH\
+    \0R\taddEntityB\x0e\n\x0crefresh_typeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

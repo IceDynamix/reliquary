@@ -86,13 +86,13 @@ impl ::protobuf::Message for OBEBKODGODB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                24 => {
                     self.EPFHBGNGBBK = is.read_uint32()?;
                 },
-                80 => {
+                88 => {
                     self.BNEFLBPCPOI = is.read_uint32()?;
                 },
-                112 => {
+                120 => {
                     self.EMPDMDNDLHE = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for OBEBKODGODB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EPFHBGNGBBK != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.EPFHBGNGBBK);
+            my_size += ::protobuf::rt::uint32_size(3, self.EPFHBGNGBBK);
         }
         if self.BNEFLBPCPOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.BNEFLBPCPOI);
+            my_size += ::protobuf::rt::uint32_size(11, self.BNEFLBPCPOI);
         }
         if self.EMPDMDNDLHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.EMPDMDNDLHE);
+            my_size += ::protobuf::rt::uint32_size(15, self.EMPDMDNDLHE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for OBEBKODGODB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EPFHBGNGBBK != 0 {
-            os.write_uint32(4, self.EPFHBGNGBBK)?;
+            os.write_uint32(3, self.EPFHBGNGBBK)?;
         }
         if self.BNEFLBPCPOI != 0 {
-            os.write_uint32(10, self.BNEFLBPCPOI)?;
+            os.write_uint32(11, self.BNEFLBPCPOI)?;
         }
         if self.EMPDMDNDLHE != 0 {
-            os.write_uint32(14, self.EMPDMDNDLHE)?;
+            os.write_uint32(15, self.EMPDMDNDLHE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for OBEBKODGODB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OBEBKODGODB.proto\"s\n\x0bOBEBKODGODB\x12\x20\n\x0bEPFHBGNGBBK\x18\
-    \x04\x20\x01(\rR\x0bEPFHBGNGBBK\x12\x20\n\x0bBNEFLBPCPOI\x18\n\x20\x01(\
-    \rR\x0bBNEFLBPCPOI\x12\x20\n\x0bEMPDMDNDLHE\x18\x0e\x20\x01(\rR\x0bEMPDM\
-    DNDLHEb\x06proto3\
+    \x03\x20\x01(\rR\x0bEPFHBGNGBBK\x12\x20\n\x0bBNEFLBPCPOI\x18\x0b\x20\x01\
+    (\rR\x0bBNEFLBPCPOI\x12\x20\n\x0bEMPDMDNDLHE\x18\x0f\x20\x01(\rR\x0bEMPD\
+    MDNDLHEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

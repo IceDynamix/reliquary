@@ -82,7 +82,7 @@ impl ::protobuf::Message for AcceptMainMissionScRsp {
                 8 => {
                     self.main_mission_id = is.read_uint32()?;
                 },
-                16 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for AcceptMainMissionScRsp {
             my_size += ::protobuf::rt::uint32_size(1, self.main_mission_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for AcceptMainMissionScRsp {
             os.write_uint32(1, self.main_mission_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for AcceptMainMissionScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cAcceptMainMissionScRsp.proto\"Z\n\x16AcceptMainMissionScRsp\x12&\n\
     \x0fmain_mission_id\x18\x01\x20\x01(\rR\rmainMissionId\x12\x18\n\x07retc\
-    ode\x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
+    ode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

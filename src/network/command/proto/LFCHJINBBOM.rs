@@ -29,18 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum LFCHJINBBOM {
     // @@protoc_insertion_point(enum_value:LFCHJINBBOM.LFCHJINBBOM_NLCDGIPGFDJ)
     LFCHJINBBOM_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:LFCHJINBBOM.LFCHJINBBOM_FKKCJJFDEJM)
-    LFCHJINBBOM_FKKCJJFDEJM = 10037,
-    // @@protoc_insertion_point(enum_value:LFCHJINBBOM.LFCHJINBBOM_LDGIGOMCNCI)
-    LFCHJINBBOM_LDGIGOMCNCI = 10050,
-    // @@protoc_insertion_point(enum_value:LFCHJINBBOM.LFCHJINBBOM_JDMDHBFDKAA)
-    LFCHJINBBOM_JDMDHBFDKAA = 10043,
-    // @@protoc_insertion_point(enum_value:LFCHJINBBOM.LFCHJINBBOM_IAHAELBFPHE)
-    LFCHJINBBOM_IAHAELBFPHE = 10059,
-    // @@protoc_insertion_point(enum_value:LFCHJINBBOM.LFCHJINBBOM_KGCGKANFEBC)
-    LFCHJINBBOM_KGCGKANFEBC = 10038,
     // @@protoc_insertion_point(enum_value:LFCHJINBBOM.LFCHJINBBOM_CKOMDHCLDLI)
-    LFCHJINBBOM_CKOMDHCLDLI = 10033,
+    LFCHJINBBOM_CKOMDHCLDLI = 10058,
+    // @@protoc_insertion_point(enum_value:LFCHJINBBOM.LFCHJINBBOM_KGCGKANFEBC)
+    LFCHJINBBOM_KGCGKANFEBC = 10052,
+    // @@protoc_insertion_point(enum_value:LFCHJINBBOM.LFCHJINBBOM_IAHAELBFPHE)
+    LFCHJINBBOM_IAHAELBFPHE = 10039,
+    // @@protoc_insertion_point(enum_value:LFCHJINBBOM.LFCHJINBBOM_JDMDHBFDKAA)
+    LFCHJINBBOM_JDMDHBFDKAA = 10046,
 }
 
 impl ::protobuf::Enum for LFCHJINBBOM {
@@ -53,12 +49,10 @@ impl ::protobuf::Enum for LFCHJINBBOM {
     fn from_i32(value: i32) -> ::std::option::Option<LFCHJINBBOM> {
         match value {
             0 => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_NLCDGIPGFDJ),
-            10037 => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_FKKCJJFDEJM),
-            10050 => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_LDGIGOMCNCI),
-            10043 => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_JDMDHBFDKAA),
-            10059 => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_IAHAELBFPHE),
-            10038 => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_KGCGKANFEBC),
-            10033 => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_CKOMDHCLDLI),
+            10058 => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_CKOMDHCLDLI),
+            10052 => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_KGCGKANFEBC),
+            10039 => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_IAHAELBFPHE),
+            10046 => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_JDMDHBFDKAA),
             _ => ::std::option::Option::None
         }
     }
@@ -66,24 +60,20 @@ impl ::protobuf::Enum for LFCHJINBBOM {
     fn from_str(str: &str) -> ::std::option::Option<LFCHJINBBOM> {
         match str {
             "LFCHJINBBOM_NLCDGIPGFDJ" => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_NLCDGIPGFDJ),
-            "LFCHJINBBOM_FKKCJJFDEJM" => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_FKKCJJFDEJM),
-            "LFCHJINBBOM_LDGIGOMCNCI" => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_LDGIGOMCNCI),
-            "LFCHJINBBOM_JDMDHBFDKAA" => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_JDMDHBFDKAA),
-            "LFCHJINBBOM_IAHAELBFPHE" => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_IAHAELBFPHE),
-            "LFCHJINBBOM_KGCGKANFEBC" => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_KGCGKANFEBC),
             "LFCHJINBBOM_CKOMDHCLDLI" => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_CKOMDHCLDLI),
+            "LFCHJINBBOM_KGCGKANFEBC" => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_KGCGKANFEBC),
+            "LFCHJINBBOM_IAHAELBFPHE" => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_IAHAELBFPHE),
+            "LFCHJINBBOM_JDMDHBFDKAA" => ::std::option::Option::Some(LFCHJINBBOM::LFCHJINBBOM_JDMDHBFDKAA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [LFCHJINBBOM] = &[
         LFCHJINBBOM::LFCHJINBBOM_NLCDGIPGFDJ,
-        LFCHJINBBOM::LFCHJINBBOM_FKKCJJFDEJM,
-        LFCHJINBBOM::LFCHJINBBOM_LDGIGOMCNCI,
-        LFCHJINBBOM::LFCHJINBBOM_JDMDHBFDKAA,
-        LFCHJINBBOM::LFCHJINBBOM_IAHAELBFPHE,
-        LFCHJINBBOM::LFCHJINBBOM_KGCGKANFEBC,
         LFCHJINBBOM::LFCHJINBBOM_CKOMDHCLDLI,
+        LFCHJINBBOM::LFCHJINBBOM_KGCGKANFEBC,
+        LFCHJINBBOM::LFCHJINBBOM_IAHAELBFPHE,
+        LFCHJINBBOM::LFCHJINBBOM_JDMDHBFDKAA,
     ];
 }
 
@@ -96,12 +86,10 @@ impl ::protobuf::EnumFull for LFCHJINBBOM {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             LFCHJINBBOM::LFCHJINBBOM_NLCDGIPGFDJ => 0,
-            LFCHJINBBOM::LFCHJINBBOM_FKKCJJFDEJM => 1,
-            LFCHJINBBOM::LFCHJINBBOM_LDGIGOMCNCI => 2,
-            LFCHJINBBOM::LFCHJINBBOM_JDMDHBFDKAA => 3,
-            LFCHJINBBOM::LFCHJINBBOM_IAHAELBFPHE => 4,
-            LFCHJINBBOM::LFCHJINBBOM_KGCGKANFEBC => 5,
-            LFCHJINBBOM::LFCHJINBBOM_CKOMDHCLDLI => 6,
+            LFCHJINBBOM::LFCHJINBBOM_CKOMDHCLDLI => 1,
+            LFCHJINBBOM::LFCHJINBBOM_KGCGKANFEBC => 2,
+            LFCHJINBBOM::LFCHJINBBOM_IAHAELBFPHE => 3,
+            LFCHJINBBOM::LFCHJINBBOM_JDMDHBFDKAA => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -120,12 +108,11 @@ impl LFCHJINBBOM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LFCHJINBBOM.proto*\xde\x01\n\x0bLFCHJINBBOM\x12\x1b\n\x17LFCHJINBB\
-    OM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LFCHJINBBOM_FKKCJJFDEJM\x10\xb5N\x12\
-    \x1c\n\x17LFCHJINBBOM_LDGIGOMCNCI\x10\xc2N\x12\x1c\n\x17LFCHJINBBOM_JDMD\
-    HBFDKAA\x10\xbbN\x12\x1c\n\x17LFCHJINBBOM_IAHAELBFPHE\x10\xcbN\x12\x1c\n\
-    \x17LFCHJINBBOM_KGCGKANFEBC\x10\xb6N\x12\x1c\n\x17LFCHJINBBOM_CKOMDHCLDL\
-    I\x10\xb1Nb\x06proto3\
+    \n\x11LFCHJINBBOM.proto*\xa2\x01\n\x0bLFCHJINBBOM\x12\x1b\n\x17LFCHJINBB\
+    OM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LFCHJINBBOM_CKOMDHCLDLI\x10\xcaN\x12\
+    \x1c\n\x17LFCHJINBBOM_KGCGKANFEBC\x10\xc4N\x12\x1c\n\x17LFCHJINBBOM_IAHA\
+    ELBFPHE\x10\xb7N\x12\x1c\n\x17LFCHJINBBOM_JDMDHBFDKAA\x10\xbeNb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JOFHMCJPBCE {
     // message fields
-    // @@protoc_insertion_point(field:JOFHMCJPBCE.PCPDHEIEJFO)
-    pub PCPDHEIEJFO: u32,
     // @@protoc_insertion_point(field:JOFHMCJPBCE.count)
     pub count: u32,
+    // @@protoc_insertion_point(field:JOFHMCJPBCE.PCPDHEIEJFO)
+    pub PCPDHEIEJFO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JOFHMCJPBCE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl JOFHMCJPBCE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PCPDHEIEJFO",
-            |m: &JOFHMCJPBCE| { &m.PCPDHEIEJFO },
-            |m: &mut JOFHMCJPBCE| { &mut m.PCPDHEIEJFO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "count",
             |m: &JOFHMCJPBCE| { &m.count },
             |m: &mut JOFHMCJPBCE| { &mut m.count },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PCPDHEIEJFO",
+            |m: &JOFHMCJPBCE| { &m.PCPDHEIEJFO },
+            |m: &mut JOFHMCJPBCE| { &mut m.PCPDHEIEJFO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JOFHMCJPBCE>(
             "JOFHMCJPBCE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for JOFHMCJPBCE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.PCPDHEIEJFO = is.read_uint32()?;
-                },
-                48 => {
+                80 => {
                     self.count = is.read_uint32()?;
+                },
+                112 => {
+                    self.PCPDHEIEJFO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for JOFHMCJPBCE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PCPDHEIEJFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.PCPDHEIEJFO);
-        }
         if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.count);
+            my_size += ::protobuf::rt::uint32_size(10, self.count);
+        }
+        if self.PCPDHEIEJFO != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.PCPDHEIEJFO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for JOFHMCJPBCE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PCPDHEIEJFO != 0 {
-            os.write_uint32(4, self.PCPDHEIEJFO)?;
-        }
         if self.count != 0 {
-            os.write_uint32(6, self.count)?;
+            os.write_uint32(10, self.count)?;
+        }
+        if self.PCPDHEIEJFO != 0 {
+            os.write_uint32(14, self.PCPDHEIEJFO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for JOFHMCJPBCE {
     }
 
     fn clear(&mut self) {
-        self.PCPDHEIEJFO = 0;
         self.count = 0;
+        self.PCPDHEIEJFO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JOFHMCJPBCE {
         static instance: JOFHMCJPBCE = JOFHMCJPBCE {
-            PCPDHEIEJFO: 0,
             count: 0,
+            PCPDHEIEJFO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for JOFHMCJPBCE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JOFHMCJPBCE.proto\"E\n\x0bJOFHMCJPBCE\x12\x20\n\x0bPCPDHEIEJFO\x18\
-    \x04\x20\x01(\rR\x0bPCPDHEIEJFO\x12\x14\n\x05count\x18\x06\x20\x01(\rR\
-    \x05countb\x06proto3\
+    \n\x11JOFHMCJPBCE.proto\"E\n\x0bJOFHMCJPBCE\x12\x14\n\x05count\x18\n\x20\
+    \x01(\rR\x05count\x12\x20\n\x0bPCPDHEIEJFO\x18\x0e\x20\x01(\rR\x0bPCPDHE\
+    IEJFOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

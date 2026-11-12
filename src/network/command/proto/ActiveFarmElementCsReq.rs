@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ActiveFarmElementCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ActiveFarmElementCsReq.entity_id)
-    pub entity_id: u32,
     // @@protoc_insertion_point(field:ActiveFarmElementCsReq.HECCOBFBJFI)
     pub HECCOBFBJFI: u32,
+    // @@protoc_insertion_point(field:ActiveFarmElementCsReq.entity_id)
+    pub entity_id: u32,
     // @@protoc_insertion_point(field:ActiveFarmElementCsReq.world_level)
     pub world_level: u32,
     // special fields
@@ -54,14 +54,14 @@ impl ActiveFarmElementCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "entity_id",
-            |m: &ActiveFarmElementCsReq| { &m.entity_id },
-            |m: &mut ActiveFarmElementCsReq| { &mut m.entity_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HECCOBFBJFI",
             |m: &ActiveFarmElementCsReq| { &m.HECCOBFBJFI },
             |m: &mut ActiveFarmElementCsReq| { &mut m.HECCOBFBJFI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "entity_id",
+            |m: &ActiveFarmElementCsReq| { &m.entity_id },
+            |m: &mut ActiveFarmElementCsReq| { &mut m.entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "world_level",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for ActiveFarmElementCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.entity_id = is.read_uint32()?;
-                },
-                104 => {
+                72 => {
                     self.HECCOBFBJFI = is.read_uint32()?;
                 },
-                112 => {
+                80 => {
+                    self.entity_id = is.read_uint32()?;
+                },
+                120 => {
                     self.world_level = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ActiveFarmElementCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.entity_id);
-        }
         if self.HECCOBFBJFI != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.HECCOBFBJFI);
+            my_size += ::protobuf::rt::uint32_size(9, self.HECCOBFBJFI);
+        }
+        if self.entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.entity_id);
         }
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(15, self.world_level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ActiveFarmElementCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.entity_id != 0 {
-            os.write_uint32(2, self.entity_id)?;
-        }
         if self.HECCOBFBJFI != 0 {
-            os.write_uint32(13, self.HECCOBFBJFI)?;
+            os.write_uint32(9, self.HECCOBFBJFI)?;
+        }
+        if self.entity_id != 0 {
+            os.write_uint32(10, self.entity_id)?;
         }
         if self.world_level != 0 {
-            os.write_uint32(14, self.world_level)?;
+            os.write_uint32(15, self.world_level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for ActiveFarmElementCsReq {
     }
 
     fn clear(&mut self) {
-        self.entity_id = 0;
         self.HECCOBFBJFI = 0;
+        self.entity_id = 0;
         self.world_level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ActiveFarmElementCsReq {
         static instance: ActiveFarmElementCsReq = ActiveFarmElementCsReq {
-            entity_id: 0,
             HECCOBFBJFI: 0,
+            entity_id: 0,
             world_level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for ActiveFarmElementCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cActiveFarmElementCsReq.proto\"x\n\x16ActiveFarmElementCsReq\x12\
-    \x1b\n\tentity_id\x18\x02\x20\x01(\rR\x08entityId\x12\x20\n\x0bHECCOBFBJ\
-    FI\x18\r\x20\x01(\rR\x0bHECCOBFBJFI\x12\x1f\n\x0bworld_level\x18\x0e\x20\
+    \x20\n\x0bHECCOBFBJFI\x18\t\x20\x01(\rR\x0bHECCOBFBJFI\x12\x1b\n\tentity\
+    _id\x18\n\x20\x01(\rR\x08entityId\x12\x1f\n\x0bworld_level\x18\x0f\x20\
     \x01(\rR\nworldLevelb\x06proto3\
 ";
 

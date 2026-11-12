@@ -30,10 +30,10 @@ pub struct LuckyKoiInfoList {
     // message fields
     // @@protoc_insertion_point(field:LuckyKoiInfoList.LHAPDMPPOMP)
     pub LHAPDMPPOMP: ::std::string::String,
-    // @@protoc_insertion_point(field:LuckyKoiInfoList.head_icon)
-    pub head_icon: u32,
     // @@protoc_insertion_point(field:LuckyKoiInfoList.ELBEDNGJKDD)
     pub ELBEDNGJKDD: ::std::string::String,
+    // @@protoc_insertion_point(field:LuckyKoiInfoList.head_icon)
+    pub head_icon: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LuckyKoiInfoList.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl LuckyKoiInfoList {
             |m: &mut LuckyKoiInfoList| { &mut m.LHAPDMPPOMP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "head_icon",
-            |m: &LuckyKoiInfoList| { &m.head_icon },
-            |m: &mut LuckyKoiInfoList| { &mut m.head_icon },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ELBEDNGJKDD",
             |m: &LuckyKoiInfoList| { &m.ELBEDNGJKDD },
             |m: &mut LuckyKoiInfoList| { &mut m.ELBEDNGJKDD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "head_icon",
+            |m: &LuckyKoiInfoList| { &m.head_icon },
+            |m: &mut LuckyKoiInfoList| { &mut m.head_icon },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LuckyKoiInfoList>(
             "LuckyKoiInfoList",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LuckyKoiInfoList {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                66 => {
                     self.LHAPDMPPOMP = is.read_string()?;
                 },
-                64 => {
-                    self.head_icon = is.read_uint32()?;
-                },
-                122 => {
+                74 => {
                     self.ELBEDNGJKDD = is.read_string()?;
+                },
+                120 => {
+                    self.head_icon = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for LuckyKoiInfoList {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.LHAPDMPPOMP.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.LHAPDMPPOMP);
-        }
-        if self.head_icon != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.head_icon);
+            my_size += ::protobuf::rt::string_size(8, &self.LHAPDMPPOMP);
         }
         if !self.ELBEDNGJKDD.is_empty() {
-            my_size += ::protobuf::rt::string_size(15, &self.ELBEDNGJKDD);
+            my_size += ::protobuf::rt::string_size(9, &self.ELBEDNGJKDD);
+        }
+        if self.head_icon != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.head_icon);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for LuckyKoiInfoList {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.LHAPDMPPOMP.is_empty() {
-            os.write_string(4, &self.LHAPDMPPOMP)?;
-        }
-        if self.head_icon != 0 {
-            os.write_uint32(8, self.head_icon)?;
+            os.write_string(8, &self.LHAPDMPPOMP)?;
         }
         if !self.ELBEDNGJKDD.is_empty() {
-            os.write_string(15, &self.ELBEDNGJKDD)?;
+            os.write_string(9, &self.ELBEDNGJKDD)?;
+        }
+        if self.head_icon != 0 {
+            os.write_uint32(15, self.head_icon)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for LuckyKoiInfoList {
 
     fn clear(&mut self) {
         self.LHAPDMPPOMP.clear();
-        self.head_icon = 0;
         self.ELBEDNGJKDD.clear();
+        self.head_icon = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LuckyKoiInfoList {
         static instance: LuckyKoiInfoList = LuckyKoiInfoList {
             LHAPDMPPOMP: ::std::string::String::new(),
-            head_icon: 0,
             ELBEDNGJKDD: ::std::string::String::new(),
+            head_icon: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for LuckyKoiInfoList {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16LuckyKoiInfoList.proto\"s\n\x10LuckyKoiInfoList\x12\x20\n\x0bLHAPD\
-    MPPOMP\x18\x04\x20\x01(\tR\x0bLHAPDMPPOMP\x12\x1b\n\thead_icon\x18\x08\
-    \x20\x01(\rR\x08headIcon\x12\x20\n\x0bELBEDNGJKDD\x18\x0f\x20\x01(\tR\
-    \x0bELBEDNGJKDDb\x06proto3\
+    MPPOMP\x18\x08\x20\x01(\tR\x0bLHAPDMPPOMP\x12\x20\n\x0bELBEDNGJKDD\x18\t\
+    \x20\x01(\tR\x0bELBEDNGJKDD\x12\x1b\n\thead_icon\x18\x0f\x20\x01(\rR\x08\
+    headIconb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

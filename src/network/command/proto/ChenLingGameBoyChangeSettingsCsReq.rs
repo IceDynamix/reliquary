@@ -72,7 +72,7 @@ impl ::protobuf::Message for ChenLingGameBoyChangeSettingsCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                80 => {
                     self.EBAFPOLLJIA = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for ChenLingGameBoyChangeSettingsCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EBAFPOLLJIA != false {
-            os.write_bool(2, self.EBAFPOLLJIA)?;
+            os.write_bool(10, self.EBAFPOLLJIA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for ChenLingGameBoyChangeSettingsCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(ChenLingGameBoyChangeSettingsCsReq.proto\"F\n\"ChenLingGameBoyChangeS\
-    ettingsCsReq\x12\x20\n\x0bEBAFPOLLJIA\x18\x02\x20\x01(\x08R\x0bEBAFPOLLJ\
-    IAb\x06proto3\
+    ettingsCsReq\x12\x20\n\x0bEBAFPOLLJIA\x18\n\x20\x01(\x08R\x0bEBAFPOLLJIA\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

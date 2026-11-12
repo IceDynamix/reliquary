@@ -93,16 +93,16 @@ impl ::protobuf::Message for OMNMBANDCBA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                16 => {
                     self.JFIGNBBLCIM = is.read_uint32()?;
                 },
-                56 => {
+                24 => {
                     self.LIAGGDDILGO = is.read_int32()?;
                 },
-                90 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                122 => {
+                114 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -130,10 +130,10 @@ impl ::protobuf::Message for OMNMBANDCBA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JFIGNBBLCIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.JFIGNBBLCIM);
+            my_size += ::protobuf::rt::uint32_size(2, self.JFIGNBBLCIM);
         }
         if self.LIAGGDDILGO != 0 {
-            my_size += ::protobuf::rt::int32_size(7, self.LIAGGDDILGO);
+            my_size += ::protobuf::rt::int32_size(3, self.LIAGGDDILGO);
         }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
@@ -152,19 +152,19 @@ impl ::protobuf::Message for OMNMBANDCBA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JFIGNBBLCIM != 0 {
-            os.write_uint32(4, self.JFIGNBBLCIM)?;
+            os.write_uint32(2, self.JFIGNBBLCIM)?;
         }
         if self.LIAGGDDILGO != 0 {
-            os.write_int32(7, self.LIAGGDDILGO)?;
+            os.write_int32(3, self.LIAGGDDILGO)?;
         }
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         for (k, v) in &self.PILABDDEKII {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
-            os.write_raw_varint32(122)?; // Tag.
+            os.write_raw_varint32(114)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_bool(2, *v)?;
@@ -218,10 +218,10 @@ impl ::protobuf::reflect::ProtobufValue for OMNMBANDCBA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OMNMBANDCBA.proto\x1a\x12ItemCostData.proto\"\xfe\x01\n\x0bOMNMBAN\
-    DCBA\x12\x20\n\x0bJFIGNBBLCIM\x18\x04\x20\x01(\rR\x0bJFIGNBBLCIM\x12\x20\
-    \n\x0bLIAGGDDILGO\x18\x07\x20\x01(\x05R\x0bLIAGGDDILGO\x12*\n\tcost_data\
-    \x18\x0b\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12?\n\x0bPILABDDEKII\
-    \x18\x0f\x20\x03(\x0b2\x1d.OMNMBANDCBA.PILABDDEKIIEntryR\x0bPILABDDEKII\
+    DCBA\x12\x20\n\x0bJFIGNBBLCIM\x18\x02\x20\x01(\rR\x0bJFIGNBBLCIM\x12\x20\
+    \n\x0bLIAGGDDILGO\x18\x03\x20\x01(\x05R\x0bLIAGGDDILGO\x12*\n\tcost_data\
+    \x18\x0c\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12?\n\x0bPILABDDEKII\
+    \x18\x0e\x20\x03(\x0b2\x1d.OMNMBANDCBA.PILABDDEKIIEntryR\x0bPILABDDEKII\
     \x1a>\n\x10PILABDDEKIIEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\
     \x12\x14\n\x05value\x18\x02\x20\x01(\x08R\x05value:\x028\x01b\x06proto3\
 ";

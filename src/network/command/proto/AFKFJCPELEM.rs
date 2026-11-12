@@ -79,10 +79,10 @@ impl ::protobuf::Message for AFKFJCPELEM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                16 => {
                     self.NGPBPFKGNLI = is.read_uint32()?;
                 },
-                88 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for AFKFJCPELEM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NGPBPFKGNLI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.NGPBPFKGNLI);
+            my_size += ::protobuf::rt::uint32_size(2, self.NGPBPFKGNLI);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for AFKFJCPELEM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NGPBPFKGNLI != 0 {
-            os.write_uint32(4, self.NGPBPFKGNLI)?;
+            os.write_uint32(2, self.NGPBPFKGNLI)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for AFKFJCPELEM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AFKFJCPELEM.proto\"I\n\x0bAFKFJCPELEM\x12\x20\n\x0bNGPBPFKGNLI\x18\
-    \x04\x20\x01(\rR\x0bNGPBPFKGNLI\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\
+    \x02\x20\x01(\rR\x0bNGPBPFKGNLI\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\
     \x07retcodeb\x06proto3\
 ";
 

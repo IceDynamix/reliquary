@@ -32,16 +32,16 @@ pub struct NHDGNBKBNDB {
     pub GIFJODBPLPJ: i32,
     // @@protoc_insertion_point(field:NHDGNBKBNDB.unique_id)
     pub unique_id: u32,
-    // @@protoc_insertion_point(field:NHDGNBKBNDB.GGMPEGMEHPD)
-    pub GGMPEGMEHPD: ::protobuf::MessageField<super::JJNHIKIGKJC::JJNHIKIGKJC>,
-    // @@protoc_insertion_point(field:NHDGNBKBNDB.OEEIPJDNMOK)
-    pub OEEIPJDNMOK: i32,
-    // @@protoc_insertion_point(field:NHDGNBKBNDB.LLEOGLLHCLK)
-    pub LLEOGLLHCLK: u32,
-    // @@protoc_insertion_point(field:NHDGNBKBNDB.exp)
-    pub exp: u32,
     // @@protoc_insertion_point(field:NHDGNBKBNDB.FGECDDFBFOJ)
     pub FGECDDFBFOJ: u32,
+    // @@protoc_insertion_point(field:NHDGNBKBNDB.exp)
+    pub exp: u32,
+    // @@protoc_insertion_point(field:NHDGNBKBNDB.LLEOGLLHCLK)
+    pub LLEOGLLHCLK: u32,
+    // @@protoc_insertion_point(field:NHDGNBKBNDB.OEEIPJDNMOK)
+    pub OEEIPJDNMOK: i32,
+    // @@protoc_insertion_point(field:NHDGNBKBNDB.GGMPEGMEHPD)
+    pub GGMPEGMEHPD: ::protobuf::MessageField<super::JJNHIKIGKJC::JJNHIKIGKJC>,
     // special fields
     // @@protoc_insertion_point(special_field:NHDGNBKBNDB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -71,20 +71,10 @@ impl NHDGNBKBNDB {
             |m: &NHDGNBKBNDB| { &m.unique_id },
             |m: &mut NHDGNBKBNDB| { &mut m.unique_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JJNHIKIGKJC::JJNHIKIGKJC>(
-            "GGMPEGMEHPD",
-            |m: &NHDGNBKBNDB| { &m.GGMPEGMEHPD },
-            |m: &mut NHDGNBKBNDB| { &mut m.GGMPEGMEHPD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OEEIPJDNMOK",
-            |m: &NHDGNBKBNDB| { &m.OEEIPJDNMOK },
-            |m: &mut NHDGNBKBNDB| { &mut m.OEEIPJDNMOK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LLEOGLLHCLK",
-            |m: &NHDGNBKBNDB| { &m.LLEOGLLHCLK },
-            |m: &mut NHDGNBKBNDB| { &mut m.LLEOGLLHCLK },
+            "FGECDDFBFOJ",
+            |m: &NHDGNBKBNDB| { &m.FGECDDFBFOJ },
+            |m: &mut NHDGNBKBNDB| { &mut m.FGECDDFBFOJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exp",
@@ -92,9 +82,19 @@ impl NHDGNBKBNDB {
             |m: &mut NHDGNBKBNDB| { &mut m.exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FGECDDFBFOJ",
-            |m: &NHDGNBKBNDB| { &m.FGECDDFBFOJ },
-            |m: &mut NHDGNBKBNDB| { &mut m.FGECDDFBFOJ },
+            "LLEOGLLHCLK",
+            |m: &NHDGNBKBNDB| { &m.LLEOGLLHCLK },
+            |m: &mut NHDGNBKBNDB| { &mut m.LLEOGLLHCLK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OEEIPJDNMOK",
+            |m: &NHDGNBKBNDB| { &m.OEEIPJDNMOK },
+            |m: &mut NHDGNBKBNDB| { &mut m.OEEIPJDNMOK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JJNHIKIGKJC::JJNHIKIGKJC>(
+            "GGMPEGMEHPD",
+            |m: &NHDGNBKBNDB| { &m.GGMPEGMEHPD },
+            |m: &mut NHDGNBKBNDB| { &mut m.GGMPEGMEHPD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NHDGNBKBNDB>(
             "NHDGNBKBNDB",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for NHDGNBKBNDB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                16 => {
                     self.GIFJODBPLPJ = is.read_int32()?;
                 },
-                32 => {
+                24 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GGMPEGMEHPD)?;
+                40 => {
+                    self.FGECDDFBFOJ = is.read_uint32()?;
                 },
                 64 => {
-                    self.OEEIPJDNMOK = is.read_int32()?;
-                },
-                80 => {
-                    self.LLEOGLLHCLK = is.read_uint32()?;
-                },
-                88 => {
                     self.exp = is.read_uint32()?;
                 },
-                120 => {
-                    self.FGECDDFBFOJ = is.read_uint32()?;
+                72 => {
+                    self.LLEOGLLHCLK = is.read_uint32()?;
+                },
+                104 => {
+                    self.OEEIPJDNMOK = is.read_int32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GGMPEGMEHPD)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -148,26 +148,26 @@ impl ::protobuf::Message for NHDGNBKBNDB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GIFJODBPLPJ != 0 {
-            my_size += ::protobuf::rt::int32_size(3, self.GIFJODBPLPJ);
+            my_size += ::protobuf::rt::int32_size(2, self.GIFJODBPLPJ);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.unique_id);
+        }
+        if self.FGECDDFBFOJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.FGECDDFBFOJ);
+        }
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.exp);
+        }
+        if self.LLEOGLLHCLK != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.LLEOGLLHCLK);
+        }
+        if self.OEEIPJDNMOK != 0 {
+            my_size += ::protobuf::rt::int32_size(13, self.OEEIPJDNMOK);
         }
         if let Some(v) = self.GGMPEGMEHPD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.OEEIPJDNMOK != 0 {
-            my_size += ::protobuf::rt::int32_size(8, self.OEEIPJDNMOK);
-        }
-        if self.LLEOGLLHCLK != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LLEOGLLHCLK);
-        }
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.exp);
-        }
-        if self.FGECDDFBFOJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.FGECDDFBFOJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -176,25 +176,25 @@ impl ::protobuf::Message for NHDGNBKBNDB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GIFJODBPLPJ != 0 {
-            os.write_int32(3, self.GIFJODBPLPJ)?;
+            os.write_int32(2, self.GIFJODBPLPJ)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(4, self.unique_id)?;
-        }
-        if let Some(v) = self.GGMPEGMEHPD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if self.OEEIPJDNMOK != 0 {
-            os.write_int32(8, self.OEEIPJDNMOK)?;
-        }
-        if self.LLEOGLLHCLK != 0 {
-            os.write_uint32(10, self.LLEOGLLHCLK)?;
-        }
-        if self.exp != 0 {
-            os.write_uint32(11, self.exp)?;
+            os.write_uint32(3, self.unique_id)?;
         }
         if self.FGECDDFBFOJ != 0 {
-            os.write_uint32(15, self.FGECDDFBFOJ)?;
+            os.write_uint32(5, self.FGECDDFBFOJ)?;
+        }
+        if self.exp != 0 {
+            os.write_uint32(8, self.exp)?;
+        }
+        if self.LLEOGLLHCLK != 0 {
+            os.write_uint32(9, self.LLEOGLLHCLK)?;
+        }
+        if self.OEEIPJDNMOK != 0 {
+            os.write_int32(13, self.OEEIPJDNMOK)?;
+        }
+        if let Some(v) = self.GGMPEGMEHPD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -215,11 +215,11 @@ impl ::protobuf::Message for NHDGNBKBNDB {
     fn clear(&mut self) {
         self.GIFJODBPLPJ = 0;
         self.unique_id = 0;
-        self.GGMPEGMEHPD.clear();
-        self.OEEIPJDNMOK = 0;
-        self.LLEOGLLHCLK = 0;
-        self.exp = 0;
         self.FGECDDFBFOJ = 0;
+        self.exp = 0;
+        self.LLEOGLLHCLK = 0;
+        self.OEEIPJDNMOK = 0;
+        self.GGMPEGMEHPD.clear();
         self.special_fields.clear();
     }
 
@@ -227,11 +227,11 @@ impl ::protobuf::Message for NHDGNBKBNDB {
         static instance: NHDGNBKBNDB = NHDGNBKBNDB {
             GIFJODBPLPJ: 0,
             unique_id: 0,
-            GGMPEGMEHPD: ::protobuf::MessageField::none(),
-            OEEIPJDNMOK: 0,
-            LLEOGLLHCLK: 0,
-            exp: 0,
             FGECDDFBFOJ: 0,
+            exp: 0,
+            LLEOGLLHCLK: 0,
+            OEEIPJDNMOK: 0,
+            GGMPEGMEHPD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,13 +257,12 @@ impl ::protobuf::reflect::ProtobufValue for NHDGNBKBNDB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NHDGNBKBNDB.proto\x1a\x11JJNHIKIGKJC.proto\"\xf4\x01\n\x0bNHDGNBKB\
-    NDB\x12\x20\n\x0bGIFJODBPLPJ\x18\x03\x20\x01(\x05R\x0bGIFJODBPLPJ\x12\
-    \x1b\n\tunique_id\x18\x04\x20\x01(\rR\x08uniqueId\x12.\n\x0bGGMPEGMEHPD\
-    \x18\x06\x20\x01(\x0b2\x0c.JJNHIKIGKJCR\x0bGGMPEGMEHPD\x12\x20\n\x0bOEEI\
-    PJDNMOK\x18\x08\x20\x01(\x05R\x0bOEEIPJDNMOK\x12\x20\n\x0bLLEOGLLHCLK\
-    \x18\n\x20\x01(\rR\x0bLLEOGLLHCLK\x12\x10\n\x03exp\x18\x0b\x20\x01(\rR\
-    \x03exp\x12\x20\n\x0bFGECDDFBFOJ\x18\x0f\x20\x01(\rR\x0bFGECDDFBFOJb\x06\
-    proto3\
+    NDB\x12\x20\n\x0bGIFJODBPLPJ\x18\x02\x20\x01(\x05R\x0bGIFJODBPLPJ\x12\
+    \x1b\n\tunique_id\x18\x03\x20\x01(\rR\x08uniqueId\x12\x20\n\x0bFGECDDFBF\
+    OJ\x18\x05\x20\x01(\rR\x0bFGECDDFBFOJ\x12\x10\n\x03exp\x18\x08\x20\x01(\
+    \rR\x03exp\x12\x20\n\x0bLLEOGLLHCLK\x18\t\x20\x01(\rR\x0bLLEOGLLHCLK\x12\
+    \x20\n\x0bOEEIPJDNMOK\x18\r\x20\x01(\x05R\x0bOEEIPJDNMOK\x12.\n\x0bGGMPE\
+    GMEHPD\x18\x0e\x20\x01(\x0b2\x0c.JJNHIKIGKJCR\x0bGGMPEGMEHPDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

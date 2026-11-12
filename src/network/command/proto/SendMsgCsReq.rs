@@ -92,10 +92,10 @@ impl ::protobuf::Message for SendMsgCsReq {
                 8 => {
                     self.target_list.push(is.read_uint32()?);
                 },
-                50 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.message_datas)?;
                 },
-                96 => {
+                48 => {
                     self.chat_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for SendMsgCsReq {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.chat_type != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::ChatType_None) {
-            my_size += ::protobuf::rt::int32_size(12, self.chat_type.value());
+            my_size += ::protobuf::rt::int32_size(6, self.chat_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,10 +126,10 @@ impl ::protobuf::Message for SendMsgCsReq {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         os.write_repeated_packed_uint32(1, &self.target_list)?;
         if let Some(v) = self.message_datas.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.chat_type != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::ChatType_None) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.chat_type))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.chat_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for SendMsgCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12SendMsgCsReq.proto\x1a\x0eChatType.proto\x1a\x15MessageChatData.pr\
     oto\"\x8e\x01\n\x0cSendMsgCsReq\x12\x1f\n\x0btarget_list\x18\x01\x20\x03\
-    (\rR\ntargetList\x125\n\rmessage_datas\x18\x06\x20\x01(\x0b2\x10.Message\
-    ChatDataR\x0cmessageDatas\x12&\n\tchat_type\x18\x0c\x20\x01(\x0e2\t.Chat\
+    (\rR\ntargetList\x125\n\rmessage_datas\x18\x04\x20\x01(\x0b2\x10.Message\
+    ChatDataR\x0cmessageDatas\x12&\n\tchat_type\x18\x06\x20\x01(\x0e2\t.Chat\
     TypeR\x08chatTypeb\x06proto3\
 ";
 

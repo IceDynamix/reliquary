@@ -28,8 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NBGDEFLFLMI {
     // message fields
-    // @@protoc_insertion_point(field:NBGDEFLFLMI.H_e211619c)
-    pub H_e211619c: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:NBGDEFLFLMI.DHLBEFLOOPM)
+    pub DHLBEFLOOPM: ::std::vec::Vec<super::BCCONKJHDJL::BCCONKJHDJL>,
+    // @@protoc_insertion_point(field:NBGDEFLFLMI.H_7250b503)
+    pub H_7250b503: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:NBGDEFLFLMI.OPPFPECOBEF)
+    pub OPPFPECOBEF: ::protobuf::MessageField<super::BCCONKJHDJL::BCCONKJHDJL>,
     // @@protoc_insertion_point(field:NBGDEFLFLMI.role_id)
     pub role_id: u32,
     // special fields
@@ -49,12 +53,22 @@ impl NBGDEFLFLMI {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_e211619c",
-            |m: &NBGDEFLFLMI| { &m.H_e211619c },
-            |m: &mut NBGDEFLFLMI| { &mut m.H_e211619c },
+            "DHLBEFLOOPM",
+            |m: &NBGDEFLFLMI| { &m.DHLBEFLOOPM },
+            |m: &mut NBGDEFLFLMI| { &mut m.DHLBEFLOOPM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "H_7250b503",
+            |m: &NBGDEFLFLMI| { &m.H_7250b503 },
+            |m: &mut NBGDEFLFLMI| { &mut m.H_7250b503 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BCCONKJHDJL::BCCONKJHDJL>(
+            "OPPFPECOBEF",
+            |m: &NBGDEFLFLMI| { &m.OPPFPECOBEF },
+            |m: &mut NBGDEFLFLMI| { &mut m.OPPFPECOBEF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "role_id",
@@ -79,13 +93,19 @@ impl ::protobuf::Message for NBGDEFLFLMI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.H_e211619c)?;
+                50 => {
+                    self.DHLBEFLOOPM.push(is.read_message()?);
                 },
-                24 => {
-                    self.H_e211619c.push(is.read_uint32()?);
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.H_7250b503)?;
                 },
-                40 => {
+                88 => {
+                    self.H_7250b503.push(is.read_uint32()?);
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPPFPECOBEF)?;
+                },
+                120 => {
                     self.role_id = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +120,17 @@ impl ::protobuf::Message for NBGDEFLFLMI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.H_e211619c);
+        for value in &self.DHLBEFLOOPM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.H_7250b503);
+        if let Some(v) = self.OPPFPECOBEF.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if self.role_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.role_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.role_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +138,15 @@ impl ::protobuf::Message for NBGDEFLFLMI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.H_e211619c)?;
+        for v in &self.DHLBEFLOOPM {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        os.write_repeated_packed_uint32(11, &self.H_7250b503)?;
+        if let Some(v) = self.OPPFPECOBEF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
         if self.role_id != 0 {
-            os.write_uint32(5, self.role_id)?;
+            os.write_uint32(15, self.role_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -131,14 +165,18 @@ impl ::protobuf::Message for NBGDEFLFLMI {
     }
 
     fn clear(&mut self) {
-        self.H_e211619c.clear();
+        self.DHLBEFLOOPM.clear();
+        self.H_7250b503.clear();
+        self.OPPFPECOBEF.clear();
         self.role_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NBGDEFLFLMI {
         static instance: NBGDEFLFLMI = NBGDEFLFLMI {
-            H_e211619c: ::std::vec::Vec::new(),
+            DHLBEFLOOPM: ::std::vec::Vec::new(),
+            H_7250b503: ::std::vec::Vec::new(),
+            OPPFPECOBEF: ::protobuf::MessageField::none(),
             role_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -164,9 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for NBGDEFLFLMI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NBGDEFLFLMI.proto\"E\n\x0bNBGDEFLFLMI\x12\x1d\n\nH_e211619c\x18\
-    \x03\x20\x03(\rR\tHE211619c\x12\x17\n\x07role_id\x18\x05\x20\x01(\rR\x06\
-    roleIdb\x06proto3\
+    \n\x11NBGDEFLFLMI.proto\x1a\x11BCCONKJHDJL.proto\"\xa5\x01\n\x0bNBGDEFLF\
+    LMI\x12.\n\x0bDHLBEFLOOPM\x18\x06\x20\x03(\x0b2\x0c.BCCONKJHDJLR\x0bDHLB\
+    EFLOOPM\x12\x1d\n\nH_7250b503\x18\x0b\x20\x03(\rR\tH7250b503\x12.\n\x0bO\
+    PPFPECOBEF\x18\r\x20\x01(\x0b2\x0c.BCCONKJHDJLR\x0bOPPFPECOBEF\x12\x17\n\
+    \x07role_id\x18\x0f\x20\x01(\rR\x06roleIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -183,7 +223,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::BCCONKJHDJL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(NBGDEFLFLMI::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

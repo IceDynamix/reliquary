@@ -30,10 +30,10 @@ pub struct NJHFBDDHCEN {
     // message fields
     // @@protoc_insertion_point(field:NJHFBDDHCEN.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:NJHFBDDHCEN.H_a45cd9b1)
+    pub H_a45cd9b1: u32,
     // @@protoc_insertion_point(field:NJHFBDDHCEN.LHGIFDNPIDE)
     pub LHGIFDNPIDE: bool,
-    // @@protoc_insertion_point(field:NJHFBDDHCEN.H_603b4ee2)
-    pub H_603b4ee2: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NJHFBDDHCEN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl NJHFBDDHCEN {
             |m: &mut NJHFBDDHCEN| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "H_a45cd9b1",
+            |m: &NJHFBDDHCEN| { &m.H_a45cd9b1 },
+            |m: &mut NJHFBDDHCEN| { &mut m.H_a45cd9b1 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LHGIFDNPIDE",
             |m: &NJHFBDDHCEN| { &m.LHGIFDNPIDE },
             |m: &mut NJHFBDDHCEN| { &mut m.LHGIFDNPIDE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "H_603b4ee2",
-            |m: &NJHFBDDHCEN| { &m.H_603b4ee2 },
-            |m: &mut NJHFBDDHCEN| { &mut m.H_603b4ee2 },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NJHFBDDHCEN>(
             "NJHFBDDHCEN",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for NJHFBDDHCEN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                64 => {
                     self.level = is.read_uint32()?;
+                },
+                72 => {
+                    self.H_a45cd9b1 = is.read_uint32()?;
                 },
                 88 => {
                     self.LHGIFDNPIDE = is.read_bool()?;
-                },
-                104 => {
-                    self.H_603b4ee2 = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for NJHFBDDHCEN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.level);
+            my_size += ::protobuf::rt::uint32_size(8, self.level);
+        }
+        if self.H_a45cd9b1 != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.H_a45cd9b1);
         }
         if self.LHGIFDNPIDE != false {
             my_size += 1 + 1;
-        }
-        if self.H_603b4ee2 != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.H_603b4ee2);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for NJHFBDDHCEN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(7, self.level)?;
+            os.write_uint32(8, self.level)?;
+        }
+        if self.H_a45cd9b1 != 0 {
+            os.write_uint32(9, self.H_a45cd9b1)?;
         }
         if self.LHGIFDNPIDE != false {
             os.write_bool(11, self.LHGIFDNPIDE)?;
-        }
-        if self.H_603b4ee2 != 0 {
-            os.write_uint32(13, self.H_603b4ee2)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for NJHFBDDHCEN {
 
     fn clear(&mut self) {
         self.level = 0;
+        self.H_a45cd9b1 = 0;
         self.LHGIFDNPIDE = false;
-        self.H_603b4ee2 = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NJHFBDDHCEN {
         static instance: NJHFBDDHCEN = NJHFBDDHCEN {
             level: 0,
+            H_a45cd9b1: 0,
             LHGIFDNPIDE: false,
-            H_603b4ee2: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for NJHFBDDHCEN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NJHFBDDHCEN.proto\"d\n\x0bNJHFBDDHCEN\x12\x14\n\x05level\x18\x07\
-    \x20\x01(\rR\x05level\x12\x20\n\x0bLHGIFDNPIDE\x18\x0b\x20\x01(\x08R\x0b\
-    LHGIFDNPIDE\x12\x1d\n\nH_603b4ee2\x18\r\x20\x01(\rR\tH603b4ee2b\x06proto\
+    \n\x11NJHFBDDHCEN.proto\"d\n\x0bNJHFBDDHCEN\x12\x14\n\x05level\x18\x08\
+    \x20\x01(\rR\x05level\x12\x1d\n\nH_a45cd9b1\x18\t\x20\x01(\rR\tHA45cd9b1\
+    \x12\x20\n\x0bLHGIFDNPIDE\x18\x0b\x20\x01(\x08R\x0bLHGIFDNPIDEb\x06proto\
     3\
 ";
 

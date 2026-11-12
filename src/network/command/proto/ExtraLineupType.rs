@@ -63,10 +63,12 @@ pub enum ExtraLineupType {
     ExtraLineupType_LineupMagicRogue = 17,
     // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_LineupFate)
     ExtraLineupType_LineupFate = 18,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.H_51164a5f)
-    H_51164a5f = 19,
-    // @@protoc_insertion_point(enum_value:ExtraLineupType.DMHILEFFPFL_PFDNAOJIDEP)
-    DMHILEFFPFL_PFDNAOJIDEP = 20,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.H_66f3d5f0)
+    H_66f3d5f0 = 19,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_PFDNAOJIDEP)
+    ExtraLineupType_PFDNAOJIDEP = 20,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.ExtraLineupType_OGCOPOIMJIM)
+    ExtraLineupType_OGCOPOIMJIM = 21,
 }
 
 impl ::protobuf::Enum for ExtraLineupType {
@@ -96,8 +98,9 @@ impl ::protobuf::Enum for ExtraLineupType {
             16 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupArcadeRogue),
             17 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupMagicRogue),
             18 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupFate),
-            19 => ::std::option::Option::Some(ExtraLineupType::H_51164a5f),
-            20 => ::std::option::Option::Some(ExtraLineupType::DMHILEFFPFL_PFDNAOJIDEP),
+            19 => ::std::option::Option::Some(ExtraLineupType::H_66f3d5f0),
+            20 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_PFDNAOJIDEP),
+            21 => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_OGCOPOIMJIM),
             _ => ::std::option::Option::None
         }
     }
@@ -122,8 +125,9 @@ impl ::protobuf::Enum for ExtraLineupType {
             "ExtraLineupType_LineupArcadeRogue" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupArcadeRogue),
             "ExtraLineupType_LineupMagicRogue" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupMagicRogue),
             "ExtraLineupType_LineupFate" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_LineupFate),
-            "H_51164a5f" => ::std::option::Option::Some(ExtraLineupType::H_51164a5f),
-            "DMHILEFFPFL_PFDNAOJIDEP" => ::std::option::Option::Some(ExtraLineupType::DMHILEFFPFL_PFDNAOJIDEP),
+            "H_66f3d5f0" => ::std::option::Option::Some(ExtraLineupType::H_66f3d5f0),
+            "ExtraLineupType_PFDNAOJIDEP" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_PFDNAOJIDEP),
+            "ExtraLineupType_OGCOPOIMJIM" => ::std::option::Option::Some(ExtraLineupType::ExtraLineupType_OGCOPOIMJIM),
             _ => ::std::option::Option::None
         }
     }
@@ -147,8 +151,9 @@ impl ::protobuf::Enum for ExtraLineupType {
         ExtraLineupType::ExtraLineupType_LineupArcadeRogue,
         ExtraLineupType::ExtraLineupType_LineupMagicRogue,
         ExtraLineupType::ExtraLineupType_LineupFate,
-        ExtraLineupType::H_51164a5f,
-        ExtraLineupType::DMHILEFFPFL_PFDNAOJIDEP,
+        ExtraLineupType::H_66f3d5f0,
+        ExtraLineupType::ExtraLineupType_PFDNAOJIDEP,
+        ExtraLineupType::ExtraLineupType_OGCOPOIMJIM,
     ];
 }
 
@@ -178,8 +183,9 @@ impl ::protobuf::EnumFull for ExtraLineupType {
             ExtraLineupType::ExtraLineupType_LineupArcadeRogue => 15,
             ExtraLineupType::ExtraLineupType_LineupMagicRogue => 16,
             ExtraLineupType::ExtraLineupType_LineupFate => 17,
-            ExtraLineupType::H_51164a5f => 18,
-            ExtraLineupType::DMHILEFFPFL_PFDNAOJIDEP => 19,
+            ExtraLineupType::H_66f3d5f0 => 18,
+            ExtraLineupType::ExtraLineupType_PFDNAOJIDEP => 19,
+            ExtraLineupType::ExtraLineupType_OGCOPOIMJIM => 20,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -198,7 +204,7 @@ impl ExtraLineupType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15ExtraLineupType.proto*\xde\x05\n\x0fExtraLineupType\x12\x1e\n\x1aE\
+    \n\x15ExtraLineupType.proto*\x83\x06\n\x0fExtraLineupType\x12\x1e\n\x1aE\
     xtraLineupType_LineupNone\x10\0\x12#\n\x1fExtraLineupType_LineupChalleng\
     e\x10\x01\x12\x1f\n\x1bExtraLineupType_LineupRogue\x10\x02\x12$\n\x20Ext\
     raLineupType_LineupChallenge2\x10\x03\x12$\n\x20ExtraLineupType_LineupCh\
@@ -211,8 +217,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     ExtraLineupType_LineupTournRogue\x10\x0e\x12$\n\x20ExtraLineupType_Lineu\
     pRelicRogue\x10\x0f\x12%\n!ExtraLineupType_LineupArcadeRogue\x10\x10\x12\
     $\n\x20ExtraLineupType_LineupMagicRogue\x10\x11\x12\x1e\n\x1aExtraLineup\
-    Type_LineupFate\x10\x12\x12\x0e\n\nH_51164a5f\x10\x13\x12\x1b\n\x17DMHIL\
-    EFFPFL_PFDNAOJIDEP\x10\x14b\x06proto3\
+    Type_LineupFate\x10\x12\x12\x0e\n\nH_66f3d5f0\x10\x13\x12\x1f\n\x1bExtra\
+    LineupType_PFDNAOJIDEP\x10\x14\x12\x1f\n\x1bExtraLineupType_OGCOPOIMJIM\
+    \x10\x15b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

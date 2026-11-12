@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KPOFAPDKBJA {
     // message fields
-    // @@protoc_insertion_point(field:KPOFAPDKBJA.PNNCEGEMAPP)
-    pub PNNCEGEMAPP: u32,
     // @@protoc_insertion_point(field:KPOFAPDKBJA.FBJLLMGOPHO)
     pub FBJLLMGOPHO: u32,
+    // @@protoc_insertion_point(field:KPOFAPDKBJA.LGIPILAKIKB)
+    pub LGIPILAKIKB: u32,
+    // @@protoc_insertion_point(field:KPOFAPDKBJA.PNNCEGEMAPP)
+    pub PNNCEGEMAPP: u32,
     // @@protoc_insertion_point(field:KPOFAPDKBJA.DAEMEBCKHIK)
     pub DAEMEBCKHIK: u32,
     // @@protoc_insertion_point(field:KPOFAPDKBJA.PGACPPNAFFF)
     pub PGACPPNAFFF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:KPOFAPDKBJA.LGIPILAKIKB)
-    pub LGIPILAKIKB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KPOFAPDKBJA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,19 @@ impl KPOFAPDKBJA {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PNNCEGEMAPP",
-            |m: &KPOFAPDKBJA| { &m.PNNCEGEMAPP },
-            |m: &mut KPOFAPDKBJA| { &mut m.PNNCEGEMAPP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FBJLLMGOPHO",
             |m: &KPOFAPDKBJA| { &m.FBJLLMGOPHO },
             |m: &mut KPOFAPDKBJA| { &mut m.FBJLLMGOPHO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LGIPILAKIKB",
+            |m: &KPOFAPDKBJA| { &m.LGIPILAKIKB },
+            |m: &mut KPOFAPDKBJA| { &mut m.LGIPILAKIKB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PNNCEGEMAPP",
+            |m: &KPOFAPDKBJA| { &m.PNNCEGEMAPP },
+            |m: &mut KPOFAPDKBJA| { &mut m.PNNCEGEMAPP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DAEMEBCKHIK",
@@ -76,11 +81,6 @@ impl KPOFAPDKBJA {
             "PGACPPNAFFF",
             |m: &KPOFAPDKBJA| { &m.PGACPPNAFFF },
             |m: &mut KPOFAPDKBJA| { &mut m.PGACPPNAFFF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGIPILAKIKB",
-            |m: &KPOFAPDKBJA| { &m.LGIPILAKIKB },
-            |m: &mut KPOFAPDKBJA| { &mut m.LGIPILAKIKB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KPOFAPDKBJA>(
             "KPOFAPDKBJA",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for KPOFAPDKBJA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.PNNCEGEMAPP = is.read_uint32()?;
-                },
-                24 => {
+                32 => {
                     self.FBJLLMGOPHO = is.read_uint32()?;
                 },
-                48 => {
-                    self.DAEMEBCKHIK = is.read_uint32()?;
+                56 => {
+                    self.LGIPILAKIKB = is.read_uint32()?;
                 },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PGACPPNAFFF)?;
+                72 => {
+                    self.PNNCEGEMAPP = is.read_uint32()?;
                 },
                 88 => {
-                    self.PGACPPNAFFF.push(is.read_uint32()?);
+                    self.DAEMEBCKHIK = is.read_uint32()?;
+                },
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PGACPPNAFFF)?;
                 },
                 104 => {
-                    self.LGIPILAKIKB = is.read_uint32()?;
+                    self.PGACPPNAFFF.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,38 +130,38 @@ impl ::protobuf::Message for KPOFAPDKBJA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PNNCEGEMAPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.PNNCEGEMAPP);
-        }
         if self.FBJLLMGOPHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.FBJLLMGOPHO);
+            my_size += ::protobuf::rt::uint32_size(4, self.FBJLLMGOPHO);
+        }
+        if self.LGIPILAKIKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.LGIPILAKIKB);
+        }
+        if self.PNNCEGEMAPP != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.PNNCEGEMAPP);
         }
         if self.DAEMEBCKHIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DAEMEBCKHIK);
+            my_size += ::protobuf::rt::uint32_size(11, self.DAEMEBCKHIK);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.PGACPPNAFFF);
-        if self.LGIPILAKIKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LGIPILAKIKB);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.PGACPPNAFFF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PNNCEGEMAPP != 0 {
-            os.write_uint32(2, self.PNNCEGEMAPP)?;
-        }
         if self.FBJLLMGOPHO != 0 {
-            os.write_uint32(3, self.FBJLLMGOPHO)?;
+            os.write_uint32(4, self.FBJLLMGOPHO)?;
+        }
+        if self.LGIPILAKIKB != 0 {
+            os.write_uint32(7, self.LGIPILAKIKB)?;
+        }
+        if self.PNNCEGEMAPP != 0 {
+            os.write_uint32(9, self.PNNCEGEMAPP)?;
         }
         if self.DAEMEBCKHIK != 0 {
-            os.write_uint32(6, self.DAEMEBCKHIK)?;
+            os.write_uint32(11, self.DAEMEBCKHIK)?;
         }
-        os.write_repeated_packed_uint32(11, &self.PGACPPNAFFF)?;
-        if self.LGIPILAKIKB != 0 {
-            os.write_uint32(13, self.LGIPILAKIKB)?;
-        }
+        os.write_repeated_packed_uint32(13, &self.PGACPPNAFFF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -179,21 +179,21 @@ impl ::protobuf::Message for KPOFAPDKBJA {
     }
 
     fn clear(&mut self) {
-        self.PNNCEGEMAPP = 0;
         self.FBJLLMGOPHO = 0;
+        self.LGIPILAKIKB = 0;
+        self.PNNCEGEMAPP = 0;
         self.DAEMEBCKHIK = 0;
         self.PGACPPNAFFF.clear();
-        self.LGIPILAKIKB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KPOFAPDKBJA {
         static instance: KPOFAPDKBJA = KPOFAPDKBJA {
-            PNNCEGEMAPP: 0,
             FBJLLMGOPHO: 0,
+            LGIPILAKIKB: 0,
+            PNNCEGEMAPP: 0,
             DAEMEBCKHIK: 0,
             PGACPPNAFFF: ::std::vec::Vec::new(),
-            LGIPILAKIKB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -218,11 +218,11 @@ impl ::protobuf::reflect::ProtobufValue for KPOFAPDKBJA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KPOFAPDKBJA.proto\"\xb7\x01\n\x0bKPOFAPDKBJA\x12\x20\n\x0bPNNCEGEM\
-    APP\x18\x02\x20\x01(\rR\x0bPNNCEGEMAPP\x12\x20\n\x0bFBJLLMGOPHO\x18\x03\
-    \x20\x01(\rR\x0bFBJLLMGOPHO\x12\x20\n\x0bDAEMEBCKHIK\x18\x06\x20\x01(\rR\
-    \x0bDAEMEBCKHIK\x12\x20\n\x0bPGACPPNAFFF\x18\x0b\x20\x03(\rR\x0bPGACPPNA\
-    FFF\x12\x20\n\x0bLGIPILAKIKB\x18\r\x20\x01(\rR\x0bLGIPILAKIKBb\x06proto3\
+    \n\x11KPOFAPDKBJA.proto\"\xb7\x01\n\x0bKPOFAPDKBJA\x12\x20\n\x0bFBJLLMGO\
+    PHO\x18\x04\x20\x01(\rR\x0bFBJLLMGOPHO\x12\x20\n\x0bLGIPILAKIKB\x18\x07\
+    \x20\x01(\rR\x0bLGIPILAKIKB\x12\x20\n\x0bPNNCEGEMAPP\x18\t\x20\x01(\rR\
+    \x0bPNNCEGEMAPP\x12\x20\n\x0bDAEMEBCKHIK\x18\x0b\x20\x01(\rR\x0bDAEMEBCK\
+    HIK\x12\x20\n\x0bPGACPPNAFFF\x18\r\x20\x03(\rR\x0bPGACPPNAFFFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

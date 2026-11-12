@@ -30,12 +30,12 @@ pub struct CABCPFKAOPP {
     // message fields
     // @@protoc_insertion_point(field:CABCPFKAOPP.GCDGGBLOJIC)
     pub GCDGGBLOJIC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:CABCPFKAOPP.OEKIFIKBMFI)
-    pub OEKIFIKBMFI: u32,
-    // @@protoc_insertion_point(field:CABCPFKAOPP.NFPADEPIKML)
-    pub NFPADEPIKML: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CABCPFKAOPP.KDIDDHIDNCG)
     pub KDIDDHIDNCG: u32,
+    // @@protoc_insertion_point(field:CABCPFKAOPP.NFPADEPIKML)
+    pub NFPADEPIKML: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:CABCPFKAOPP.OEKIFIKBMFI)
+    pub OEKIFIKBMFI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CABCPFKAOPP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,9 +61,9 @@ impl CABCPFKAOPP {
             |m: &mut CABCPFKAOPP| { &mut m.GCDGGBLOJIC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OEKIFIKBMFI",
-            |m: &CABCPFKAOPP| { &m.OEKIFIKBMFI },
-            |m: &mut CABCPFKAOPP| { &mut m.OEKIFIKBMFI },
+            "KDIDDHIDNCG",
+            |m: &CABCPFKAOPP| { &m.KDIDDHIDNCG },
+            |m: &mut CABCPFKAOPP| { &mut m.KDIDDHIDNCG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NFPADEPIKML",
@@ -71,9 +71,9 @@ impl CABCPFKAOPP {
             |m: &mut CABCPFKAOPP| { &mut m.NFPADEPIKML },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KDIDDHIDNCG",
-            |m: &CABCPFKAOPP| { &m.KDIDDHIDNCG },
-            |m: &mut CABCPFKAOPP| { &mut m.KDIDDHIDNCG },
+            "OEKIFIKBMFI",
+            |m: &CABCPFKAOPP| { &m.OEKIFIKBMFI },
+            |m: &mut CABCPFKAOPP| { &mut m.OEKIFIKBMFI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CABCPFKAOPP>(
             "CABCPFKAOPP",
@@ -99,17 +99,17 @@ impl ::protobuf::Message for CABCPFKAOPP {
                 8 => {
                     self.GCDGGBLOJIC.push(is.read_uint32()?);
                 },
-                40 => {
-                    self.OEKIFIKBMFI = is.read_uint32()?;
+                32 => {
+                    self.KDIDDHIDNCG = is.read_uint32()?;
                 },
-                82 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.NFPADEPIKML)?;
                 },
-                80 => {
+                64 => {
                     self.NFPADEPIKML.push(is.read_uint32()?);
                 },
-                112 => {
-                    self.KDIDDHIDNCG = is.read_uint32()?;
+                104 => {
+                    self.OEKIFIKBMFI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -124,12 +124,12 @@ impl ::protobuf::Message for CABCPFKAOPP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.GCDGGBLOJIC);
-        if self.OEKIFIKBMFI != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.OEKIFIKBMFI);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.NFPADEPIKML);
         if self.KDIDDHIDNCG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.KDIDDHIDNCG);
+            my_size += ::protobuf::rt::uint32_size(4, self.KDIDDHIDNCG);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.NFPADEPIKML);
+        if self.OEKIFIKBMFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.OEKIFIKBMFI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,12 +138,12 @@ impl ::protobuf::Message for CABCPFKAOPP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         os.write_repeated_packed_uint32(1, &self.GCDGGBLOJIC)?;
-        if self.OEKIFIKBMFI != 0 {
-            os.write_uint32(5, self.OEKIFIKBMFI)?;
-        }
-        os.write_repeated_packed_uint32(10, &self.NFPADEPIKML)?;
         if self.KDIDDHIDNCG != 0 {
-            os.write_uint32(14, self.KDIDDHIDNCG)?;
+            os.write_uint32(4, self.KDIDDHIDNCG)?;
+        }
+        os.write_repeated_packed_uint32(8, &self.NFPADEPIKML)?;
+        if self.OEKIFIKBMFI != 0 {
+            os.write_uint32(13, self.OEKIFIKBMFI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,18 +163,18 @@ impl ::protobuf::Message for CABCPFKAOPP {
 
     fn clear(&mut self) {
         self.GCDGGBLOJIC.clear();
-        self.OEKIFIKBMFI = 0;
-        self.NFPADEPIKML.clear();
         self.KDIDDHIDNCG = 0;
+        self.NFPADEPIKML.clear();
+        self.OEKIFIKBMFI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CABCPFKAOPP {
         static instance: CABCPFKAOPP = CABCPFKAOPP {
             GCDGGBLOJIC: ::std::vec::Vec::new(),
-            OEKIFIKBMFI: 0,
-            NFPADEPIKML: ::std::vec::Vec::new(),
             KDIDDHIDNCG: 0,
+            NFPADEPIKML: ::std::vec::Vec::new(),
+            OEKIFIKBMFI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for CABCPFKAOPP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CABCPFKAOPP.proto\"\x95\x01\n\x0bCABCPFKAOPP\x12\x20\n\x0bGCDGGBLO\
-    JIC\x18\x01\x20\x03(\rR\x0bGCDGGBLOJIC\x12\x20\n\x0bOEKIFIKBMFI\x18\x05\
-    \x20\x01(\rR\x0bOEKIFIKBMFI\x12\x20\n\x0bNFPADEPIKML\x18\n\x20\x03(\rR\
-    \x0bNFPADEPIKML\x12\x20\n\x0bKDIDDHIDNCG\x18\x0e\x20\x01(\rR\x0bKDIDDHID\
-    NCGb\x06proto3\
+    JIC\x18\x01\x20\x03(\rR\x0bGCDGGBLOJIC\x12\x20\n\x0bKDIDDHIDNCG\x18\x04\
+    \x20\x01(\rR\x0bKDIDDHIDNCG\x12\x20\n\x0bNFPADEPIKML\x18\x08\x20\x03(\rR\
+    \x0bNFPADEPIKML\x12\x20\n\x0bOEKIFIKBMFI\x18\r\x20\x01(\rR\x0bOEKIFIKBMF\
+    Ib\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

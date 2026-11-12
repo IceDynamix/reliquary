@@ -45,7 +45,7 @@ impl UpdatePlayWithPsnOnlySettingCsReq {
         ::std::default::Default::default()
     }
 
-    // .IBCDDGKNICG ICKNLCPNHCD = 1028;
+    // .IBCDDGKNICG ICKNLCPNHCD = 209;
 
     pub fn ICKNLCPNHCD(&self) -> &super::IBCDDGKNICG::IBCDDGKNICG {
         match self.JNLIJAABGFF {
@@ -94,7 +94,7 @@ impl UpdatePlayWithPsnOnlySettingCsReq {
         }
     }
 
-    // .EAFHBODFEKM LOMPGELJCLM = 1713;
+    // .EAFHBODFEKM LOMPGELJCLM = 1193;
 
     pub fn LOMPGELJCLM(&self) -> &super::EAFHBODFEKM::EAFHBODFEKM {
         match self.JNLIJAABGFF {
@@ -179,10 +179,10 @@ impl ::protobuf::Message for UpdatePlayWithPsnOnlySettingCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8226 => {
+                1674 => {
                     self.JNLIJAABGFF = ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::JNLIJAABGFF::ICKNLCPNHCD(is.read_message()?));
                 },
-                13706 => {
+                9546 => {
                     self.JNLIJAABGFF = ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::JNLIJAABGFF::LOMPGELJCLM(is.read_message()?));
                 },
                 tag => {
@@ -218,10 +218,10 @@ impl ::protobuf::Message for UpdatePlayWithPsnOnlySettingCsReq {
         if let ::std::option::Option::Some(ref v) = self.JNLIJAABGFF {
             match v {
                 &update_play_with_psn_only_setting_cs_req::JNLIJAABGFF::ICKNLCPNHCD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1028, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(209, v, os)?;
                 },
                 &update_play_with_psn_only_setting_cs_req::JNLIJAABGFF::LOMPGELJCLM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1713, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1193, v, os)?;
                 },
             };
         }
@@ -306,8 +306,8 @@ pub mod update_play_with_psn_only_setting_cs_req {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'UpdatePlayWithPsnOnlySettingCsReq.proto\x1a\x11EAFHBODFEKM.proto\x1a\
     \x11IBCDDGKNICG.proto\"\x98\x01\n!UpdatePlayWithPsnOnlySettingCsReq\x121\
-    \n\x0bICKNLCPNHCD\x18\x84\x08\x20\x01(\x0b2\x0c.IBCDDGKNICGH\0R\x0bICKNL\
-    CPNHCD\x121\n\x0bLOMPGELJCLM\x18\xb1\r\x20\x01(\x0b2\x0c.EAFHBODFEKMH\0R\
+    \n\x0bICKNLCPNHCD\x18\xd1\x01\x20\x01(\x0b2\x0c.IBCDDGKNICGH\0R\x0bICKNL\
+    CPNHCD\x121\n\x0bLOMPGELJCLM\x18\xa9\t\x20\x01(\x0b2\x0c.EAFHBODFEKMH\0R\
     \x0bLOMPGELJCLMB\r\n\x0bJNLIJAABGFFb\x06proto3\
 ";
 

@@ -79,10 +79,10 @@ impl ::protobuf::Message for QuitTreasureDungeonCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                8 => {
                     self.EICEKDBENKM = is.read_uint32()?;
                 },
-                120 => {
+                48 => {
                     self.KEAAGAIAHLA = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for QuitTreasureDungeonCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EICEKDBENKM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.EICEKDBENKM);
+            my_size += ::protobuf::rt::uint32_size(1, self.EICEKDBENKM);
         }
         if self.KEAAGAIAHLA != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for QuitTreasureDungeonCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EICEKDBENKM != 0 {
-            os.write_uint32(2, self.EICEKDBENKM)?;
+            os.write_uint32(1, self.EICEKDBENKM)?;
         }
         if self.KEAAGAIAHLA != false {
-            os.write_bool(15, self.KEAAGAIAHLA)?;
+            os.write_bool(6, self.KEAAGAIAHLA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for QuitTreasureDungeonCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eQuitTreasureDungeonCsReq.proto\"^\n\x18QuitTreasureDungeonCsReq\
-    \x12\x20\n\x0bEICEKDBENKM\x18\x02\x20\x01(\rR\x0bEICEKDBENKM\x12\x20\n\
-    \x0bKEAAGAIAHLA\x18\x0f\x20\x01(\x08R\x0bKEAAGAIAHLAb\x06proto3\
+    \x12\x20\n\x0bEICEKDBENKM\x18\x01\x20\x01(\rR\x0bEICEKDBENKM\x12\x20\n\
+    \x0bKEAAGAIAHLA\x18\x06\x20\x01(\x08R\x0bKEAAGAIAHLAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

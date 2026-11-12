@@ -79,10 +79,10 @@ impl ::protobuf::Message for CMBGLKEMOGF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
                     self.CGBJOAJEMKN = is.read_enum_or_unknown()?;
                 },
-                34 => {
+                42 => {
                     self.POJGKJENENA.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for CMBGLKEMOGF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CGBJOAJEMKN != ::protobuf::EnumOrUnknown::new(super::HENPKNCKGGI::HENPKNCKGGI::HENPKNCKGGI_CDCCIOFMCGN) {
-            my_size += ::protobuf::rt::int32_size(1, self.CGBJOAJEMKN.value());
+            my_size += ::protobuf::rt::int32_size(4, self.CGBJOAJEMKN.value());
         }
         for value in &self.POJGKJENENA {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for CMBGLKEMOGF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CGBJOAJEMKN != ::protobuf::EnumOrUnknown::new(super::HENPKNCKGGI::HENPKNCKGGI::HENPKNCKGGI_CDCCIOFMCGN) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.CGBJOAJEMKN))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.CGBJOAJEMKN))?;
         }
         for v in &self.POJGKJENENA {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for CMBGLKEMOGF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CMBGLKEMOGF.proto\x1a\x11EPFJLNKPEPK.proto\x1a\x11HENPKNCKGGI.prot\
-    o\"m\n\x0bCMBGLKEMOGF\x12.\n\x0bCGBJOAJEMKN\x18\x01\x20\x01(\x0e2\x0c.HE\
-    NPKNCKGGIR\x0bCGBJOAJEMKN\x12.\n\x0bPOJGKJENENA\x18\x04\x20\x03(\x0b2\
+    o\"m\n\x0bCMBGLKEMOGF\x12.\n\x0bCGBJOAJEMKN\x18\x04\x20\x01(\x0e2\x0c.HE\
+    NPKNCKGGIR\x0bCGBJOAJEMKN\x12.\n\x0bPOJGKJENENA\x18\x05\x20\x03(\x0b2\
     \x0c.EPFJLNKPEPKR\x0bPOJGKJENENAb\x06proto3\
 ";
 

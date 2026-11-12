@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FavourArchiveScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FavourArchiveScRsp.BAAGDILLLME)
-    pub BAAGDILLLME: u32,
     // @@protoc_insertion_point(field:FavourArchiveScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:FavourArchiveScRsp.IECKKCHJMLP)
     pub IECKKCHJMLP: bool,
+    // @@protoc_insertion_point(field:FavourArchiveScRsp.BAAGDILLLME)
+    pub BAAGDILLLME: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FavourArchiveScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl FavourArchiveScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BAAGDILLLME",
-            |m: &FavourArchiveScRsp| { &m.BAAGDILLLME },
-            |m: &mut FavourArchiveScRsp| { &mut m.BAAGDILLLME },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &FavourArchiveScRsp| { &m.retcode },
             |m: &mut FavourArchiveScRsp| { &mut m.retcode },
@@ -67,6 +62,11 @@ impl FavourArchiveScRsp {
             "IECKKCHJMLP",
             |m: &FavourArchiveScRsp| { &m.IECKKCHJMLP },
             |m: &mut FavourArchiveScRsp| { &mut m.IECKKCHJMLP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BAAGDILLLME",
+            |m: &FavourArchiveScRsp| { &m.BAAGDILLLME },
+            |m: &mut FavourArchiveScRsp| { &mut m.BAAGDILLLME },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FavourArchiveScRsp>(
             "FavourArchiveScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FavourArchiveScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.BAAGDILLLME = is.read_uint32()?;
-                },
-                16 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
                 80 => {
                     self.IECKKCHJMLP = is.read_bool()?;
+                },
+                120 => {
+                    self.BAAGDILLLME = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for FavourArchiveScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BAAGDILLLME != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.BAAGDILLLME);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         if self.IECKKCHJMLP != false {
             my_size += 1 + 1;
+        }
+        if self.BAAGDILLLME != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.BAAGDILLLME);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for FavourArchiveScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BAAGDILLLME != 0 {
-            os.write_uint32(1, self.BAAGDILLLME)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         if self.IECKKCHJMLP != false {
             os.write_bool(10, self.IECKKCHJMLP)?;
+        }
+        if self.BAAGDILLLME != 0 {
+            os.write_uint32(15, self.BAAGDILLLME)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for FavourArchiveScRsp {
     }
 
     fn clear(&mut self) {
-        self.BAAGDILLLME = 0;
         self.retcode = 0;
         self.IECKKCHJMLP = false;
+        self.BAAGDILLLME = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FavourArchiveScRsp {
         static instance: FavourArchiveScRsp = FavourArchiveScRsp {
-            BAAGDILLLME: 0,
             retcode: 0,
             IECKKCHJMLP: false,
+            BAAGDILLLME: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for FavourArchiveScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18FavourArchiveScRsp.proto\"r\n\x12FavourArchiveScRsp\x12\x20\n\x0bB\
-    AAGDILLLME\x18\x01\x20\x01(\rR\x0bBAAGDILLLME\x12\x18\n\x07retcode\x18\
-    \x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bIECKKCHJMLP\x18\n\x20\x01(\x08R\
-    \x0bIECKKCHJMLPb\x06proto3\
+    \n\x18FavourArchiveScRsp.proto\"r\n\x12FavourArchiveScRsp\x12\x18\n\x07r\
+    etcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\x0bIECKKCHJMLP\x18\n\x20\
+    \x01(\x08R\x0bIECKKCHJMLP\x12\x20\n\x0bBAAGDILLLME\x18\x0f\x20\x01(\rR\
+    \x0bBAAGDILLLMEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

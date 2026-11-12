@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IHGANLCNHBD {
     // message fields
+    // @@protoc_insertion_point(field:IHGANLCNHBD.KKIOBDHKPPK)
+    pub KKIOBDHKPPK: u32,
     // @@protoc_insertion_point(field:IHGANLCNHBD.augment_id)
     pub augment_id: u32,
     // @@protoc_insertion_point(field:IHGANLCNHBD.FEGDEOEHLFD)
     pub FEGDEOEHLFD: u32,
-    // @@protoc_insertion_point(field:IHGANLCNHBD.KKIOBDHKPPK)
-    pub KKIOBDHKPPK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IHGANLCNHBD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl IHGANLCNHBD {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KKIOBDHKPPK",
+            |m: &IHGANLCNHBD| { &m.KKIOBDHKPPK },
+            |m: &mut IHGANLCNHBD| { &mut m.KKIOBDHKPPK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "augment_id",
             |m: &IHGANLCNHBD| { &m.augment_id },
             |m: &mut IHGANLCNHBD| { &mut m.augment_id },
@@ -62,11 +67,6 @@ impl IHGANLCNHBD {
             "FEGDEOEHLFD",
             |m: &IHGANLCNHBD| { &m.FEGDEOEHLFD },
             |m: &mut IHGANLCNHBD| { &mut m.FEGDEOEHLFD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KKIOBDHKPPK",
-            |m: &IHGANLCNHBD| { &m.KKIOBDHKPPK },
-            |m: &mut IHGANLCNHBD| { &mut m.KKIOBDHKPPK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IHGANLCNHBD>(
             "IHGANLCNHBD",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for IHGANLCNHBD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                48 => {
+                    self.KKIOBDHKPPK = is.read_uint32()?;
+                },
+                88 => {
                     self.augment_id = is.read_uint32()?;
                 },
-                96 => {
+                104 => {
                     self.FEGDEOEHLFD = is.read_uint32()?;
-                },
-                112 => {
-                    self.KKIOBDHKPPK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for IHGANLCNHBD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.KKIOBDHKPPK != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.KKIOBDHKPPK);
+        }
         if self.augment_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.augment_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.augment_id);
         }
         if self.FEGDEOEHLFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FEGDEOEHLFD);
-        }
-        if self.KKIOBDHKPPK != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.KKIOBDHKPPK);
+            my_size += ::protobuf::rt::uint32_size(13, self.FEGDEOEHLFD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for IHGANLCNHBD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.KKIOBDHKPPK != 0 {
+            os.write_uint32(6, self.KKIOBDHKPPK)?;
+        }
         if self.augment_id != 0 {
-            os.write_uint32(8, self.augment_id)?;
+            os.write_uint32(11, self.augment_id)?;
         }
         if self.FEGDEOEHLFD != 0 {
-            os.write_uint32(12, self.FEGDEOEHLFD)?;
-        }
-        if self.KKIOBDHKPPK != 0 {
-            os.write_uint32(14, self.KKIOBDHKPPK)?;
+            os.write_uint32(13, self.FEGDEOEHLFD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for IHGANLCNHBD {
     }
 
     fn clear(&mut self) {
+        self.KKIOBDHKPPK = 0;
         self.augment_id = 0;
         self.FEGDEOEHLFD = 0;
-        self.KKIOBDHKPPK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IHGANLCNHBD {
         static instance: IHGANLCNHBD = IHGANLCNHBD {
+            KKIOBDHKPPK: 0,
             augment_id: 0,
             FEGDEOEHLFD: 0,
-            KKIOBDHKPPK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for IHGANLCNHBD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IHGANLCNHBD.proto\"p\n\x0bIHGANLCNHBD\x12\x1d\n\naugment_id\x18\
-    \x08\x20\x01(\rR\taugmentId\x12\x20\n\x0bFEGDEOEHLFD\x18\x0c\x20\x01(\rR\
-    \x0bFEGDEOEHLFD\x12\x20\n\x0bKKIOBDHKPPK\x18\x0e\x20\x01(\rR\x0bKKIOBDHK\
-    PPKb\x06proto3\
+    \n\x11IHGANLCNHBD.proto\"p\n\x0bIHGANLCNHBD\x12\x20\n\x0bKKIOBDHKPPK\x18\
+    \x06\x20\x01(\rR\x0bKKIOBDHKPPK\x12\x1d\n\naugment_id\x18\x0b\x20\x01(\r\
+    R\taugmentId\x12\x20\n\x0bFEGDEOEHLFD\x18\r\x20\x01(\rR\x0bFEGDEOEHLFDb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

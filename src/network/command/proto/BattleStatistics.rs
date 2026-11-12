@@ -75,7 +75,7 @@ pub struct BattleStatistics {
     // @@protoc_insertion_point(field:BattleStatistics.LGKAKIEEOMG)
     pub LGKAKIEEOMG: ::std::vec::Vec<super::MKICACCMBOF::MKICACCMBOF>,
     // @@protoc_insertion_point(field:BattleStatistics.PMCEKILFBIO)
-    pub PMCEKILFBIO: ::protobuf::MessageField<super::H_f8ce37f4::H_f8ce37f4>,
+    pub PMCEKILFBIO: ::protobuf::MessageField<super::H_63defa27::H_63defa27>,
     // @@protoc_insertion_point(field:BattleStatistics.DOAFGHLAICM)
     pub DOAFGHLAICM: ::protobuf::MessageField<super::OJEANLINGCJ::OJEANLINGCJ>,
     // @@protoc_insertion_point(field:BattleStatistics.ADGBAKBCOKF)
@@ -250,7 +250,7 @@ impl BattleStatistics {
             |m: &BattleStatistics| { &m.LGKAKIEEOMG },
             |m: &mut BattleStatistics| { &mut m.LGKAKIEEOMG },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_f8ce37f4::H_f8ce37f4>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_63defa27::H_63defa27>(
             "PMCEKILFBIO",
             |m: &BattleStatistics| { &m.PMCEKILFBIO },
             |m: &mut BattleStatistics| { &mut m.PMCEKILFBIO },
@@ -942,7 +942,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     EventBattleInfo.proto\x1a\x16BattleTargetList.proto\x1a\x11CDMPJODLBEE.p\
     roto\x1a\x11CKOKAGGLKHG.proto\x1a\x11EANJJJPKIPJ.proto\x1a\x11FAHGFCIJHF\
     K.proto\x1a\x11FMEKABDGCEC.proto\x1a\x11GBJMLKNLEPD.proto\x1a\x11HDKEPPD\
-    IDIH.proto\x1a\x10H_f8ce37f4.proto\x1a\x11KNBMAPNNDJL.proto\x1a\x11MGMJO\
+    IDIH.proto\x1a\x10H_63defa27.proto\x1a\x11KNBMAPNNDJL.proto\x1a\x11MGMJO\
     PHJCNL.proto\x1a\x11MKICACCMBOF.proto\x1a\x17MonsterBattleInfo.proto\x1a\
     \x11NHPAECJCOCG.proto\x1a\x11OHDHNDMJFAP.proto\x1a\x11OJEANLINGCJ.proto\
     \x1a\x14StatisticEvent.proto\"\x9c\x11\n\x10BattleStatistics\x12,\n\x12t\
@@ -970,7 +970,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     le_target_info\x18\x1c\x20\x03(\x0b2'.BattleStatistics.BattleTargetInfoE\
     ntryR\x10battleTargetInfo\x12.\n\x0bLGKAKIEEOMG\x18\x1d\x20\x03(\x0b2\
     \x0c.MKICACCMBOFR\x0bLGKAKIEEOMG\x12-\n\x0bPMCEKILFBIO\x18\x1e\x20\x01(\
-    \x0b2\x0b.H_f8ce37f4R\x0bPMCEKILFBIO\x12.\n\x0bDOAFGHLAICM\x18\x1f\x20\
+    \x0b2\x0b.H_63defa27R\x0bPMCEKILFBIO\x12.\n\x0bDOAFGHLAICM\x18\x1f\x20\
     \x01(\x0b2\x0c.OJEANLINGCJR\x0bDOAFGHLAICM\x12\x20\n\x0bADGBAKBCOKF\x18\
     \x20\x20\x01(\x08R\x0bADGBAKBCOKF\x12.\n\x0bDCMAHKHAFEH\x18!\x20\x03(\
     \x0b2\x0c.BMKIIODBMJFR\x0bDCMAHKHAFEH\x12.\n\x0bAIOKGNBLMDI\x18\"\x20\
@@ -1027,7 +1027,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::FMEKABDGCEC::file_descriptor().clone());
             deps.push(super::GBJMLKNLEPD::file_descriptor().clone());
             deps.push(super::HDKEPPDIDIH::file_descriptor().clone());
-            deps.push(super::H_f8ce37f4::file_descriptor().clone());
+            deps.push(super::H_63defa27::file_descriptor().clone());
             deps.push(super::KNBMAPNNDJL::file_descriptor().clone());
             deps.push(super::MGMJOPHJCNL::file_descriptor().clone());
             deps.push(super::MKICACCMBOF::file_descriptor().clone());

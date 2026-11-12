@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JCDNAGMDELF {
     // message fields
-    // @@protoc_insertion_point(field:JCDNAGMDELF.ANEGIMPIEHL)
-    pub ANEGIMPIEHL: ::std::string::String,
     // @@protoc_insertion_point(field:JCDNAGMDELF.PAIPJMKCCEH)
     pub PAIPJMKCCEH: u32,
     // @@protoc_insertion_point(field:JCDNAGMDELF.HPCIKHIBFHD)
     pub HPCIKHIBFHD: u32,
+    // @@protoc_insertion_point(field:JCDNAGMDELF.ANEGIMPIEHL)
+    pub ANEGIMPIEHL: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:JCDNAGMDELF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl JCDNAGMDELF {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ANEGIMPIEHL",
-            |m: &JCDNAGMDELF| { &m.ANEGIMPIEHL },
-            |m: &mut JCDNAGMDELF| { &mut m.ANEGIMPIEHL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PAIPJMKCCEH",
             |m: &JCDNAGMDELF| { &m.PAIPJMKCCEH },
             |m: &mut JCDNAGMDELF| { &mut m.PAIPJMKCCEH },
@@ -67,6 +62,11 @@ impl JCDNAGMDELF {
             "HPCIKHIBFHD",
             |m: &JCDNAGMDELF| { &m.HPCIKHIBFHD },
             |m: &mut JCDNAGMDELF| { &mut m.HPCIKHIBFHD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ANEGIMPIEHL",
+            |m: &JCDNAGMDELF| { &m.ANEGIMPIEHL },
+            |m: &mut JCDNAGMDELF| { &mut m.ANEGIMPIEHL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JCDNAGMDELF>(
             "JCDNAGMDELF",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for JCDNAGMDELF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.ANEGIMPIEHL = is.read_string()?;
-                },
-                80 => {
+                32 => {
                     self.PAIPJMKCCEH = is.read_uint32()?;
                 },
-                120 => {
+                40 => {
                     self.HPCIKHIBFHD = is.read_uint32()?;
+                },
+                74 => {
+                    self.ANEGIMPIEHL = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for JCDNAGMDELF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.ANEGIMPIEHL.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.ANEGIMPIEHL);
-        }
         if self.PAIPJMKCCEH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.PAIPJMKCCEH);
+            my_size += ::protobuf::rt::uint32_size(4, self.PAIPJMKCCEH);
         }
         if self.HPCIKHIBFHD != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.HPCIKHIBFHD);
+            my_size += ::protobuf::rt::uint32_size(5, self.HPCIKHIBFHD);
+        }
+        if !self.ANEGIMPIEHL.is_empty() {
+            my_size += ::protobuf::rt::string_size(9, &self.ANEGIMPIEHL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for JCDNAGMDELF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.ANEGIMPIEHL.is_empty() {
-            os.write_string(7, &self.ANEGIMPIEHL)?;
-        }
         if self.PAIPJMKCCEH != 0 {
-            os.write_uint32(10, self.PAIPJMKCCEH)?;
+            os.write_uint32(4, self.PAIPJMKCCEH)?;
         }
         if self.HPCIKHIBFHD != 0 {
-            os.write_uint32(15, self.HPCIKHIBFHD)?;
+            os.write_uint32(5, self.HPCIKHIBFHD)?;
+        }
+        if !self.ANEGIMPIEHL.is_empty() {
+            os.write_string(9, &self.ANEGIMPIEHL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for JCDNAGMDELF {
     }
 
     fn clear(&mut self) {
-        self.ANEGIMPIEHL.clear();
         self.PAIPJMKCCEH = 0;
         self.HPCIKHIBFHD = 0;
+        self.ANEGIMPIEHL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JCDNAGMDELF {
         static instance: JCDNAGMDELF = JCDNAGMDELF {
-            ANEGIMPIEHL: ::std::string::String::new(),
             PAIPJMKCCEH: 0,
             HPCIKHIBFHD: 0,
+            ANEGIMPIEHL: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for JCDNAGMDELF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JCDNAGMDELF.proto\"s\n\x0bJCDNAGMDELF\x12\x20\n\x0bANEGIMPIEHL\x18\
-    \x07\x20\x01(\tR\x0bANEGIMPIEHL\x12\x20\n\x0bPAIPJMKCCEH\x18\n\x20\x01(\
-    \rR\x0bPAIPJMKCCEH\x12\x20\n\x0bHPCIKHIBFHD\x18\x0f\x20\x01(\rR\x0bHPCIK\
-    HIBFHDb\x06proto3\
+    \n\x11JCDNAGMDELF.proto\"s\n\x0bJCDNAGMDELF\x12\x20\n\x0bPAIPJMKCCEH\x18\
+    \x04\x20\x01(\rR\x0bPAIPJMKCCEH\x12\x20\n\x0bHPCIKHIBFHD\x18\x05\x20\x01\
+    (\rR\x0bHPCIKHIBFHD\x12\x20\n\x0bANEGIMPIEHL\x18\t\x20\x01(\tR\x0bANEGIM\
+    PIEHLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

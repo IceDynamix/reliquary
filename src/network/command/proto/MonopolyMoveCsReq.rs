@@ -79,10 +79,10 @@ impl ::protobuf::Message for MonopolyMoveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                64 => {
                     self.AHNGICEEADK = is.read_uint32()?;
                 },
-                80 => {
+                72 => {
                     self.CPFGHPCBFOF = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for MonopolyMoveCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AHNGICEEADK != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.AHNGICEEADK);
+            my_size += ::protobuf::rt::uint32_size(8, self.AHNGICEEADK);
         }
         if self.CPFGHPCBFOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CPFGHPCBFOF);
+            my_size += ::protobuf::rt::uint32_size(9, self.CPFGHPCBFOF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MonopolyMoveCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AHNGICEEADK != 0 {
-            os.write_uint32(1, self.AHNGICEEADK)?;
+            os.write_uint32(8, self.AHNGICEEADK)?;
         }
         if self.CPFGHPCBFOF != 0 {
-            os.write_uint32(10, self.CPFGHPCBFOF)?;
+            os.write_uint32(9, self.CPFGHPCBFOF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyMoveCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17MonopolyMoveCsReq.proto\"W\n\x11MonopolyMoveCsReq\x12\x20\n\x0bAHN\
-    GICEEADK\x18\x01\x20\x01(\rR\x0bAHNGICEEADK\x12\x20\n\x0bCPFGHPCBFOF\x18\
-    \n\x20\x01(\rR\x0bCPFGHPCBFOFb\x06proto3\
+    GICEEADK\x18\x08\x20\x01(\rR\x0bAHNGICEEADK\x12\x20\n\x0bCPFGHPCBFOF\x18\
+    \t\x20\x01(\rR\x0bCPFGHPCBFOFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TechTreeChangeNodeStateCsRsp {
     // message fields
+    // @@protoc_insertion_point(field:TechTreeChangeNodeStateCsRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:TechTreeChangeNodeStateCsRsp.CDMFHNGEFCN)
     pub CDMFHNGEFCN: u32,
     // @@protoc_insertion_point(field:TechTreeChangeNodeStateCsRsp.op_type)
     pub op_type: ::protobuf::EnumOrUnknown<super::OEDABANAJEK::OEDABANAJEK>,
-    // @@protoc_insertion_point(field:TechTreeChangeNodeStateCsRsp.retcode)
-    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TechTreeChangeNodeStateCsRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl TechTreeChangeNodeStateCsRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &TechTreeChangeNodeStateCsRsp| { &m.retcode },
+            |m: &mut TechTreeChangeNodeStateCsRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CDMFHNGEFCN",
             |m: &TechTreeChangeNodeStateCsRsp| { &m.CDMFHNGEFCN },
             |m: &mut TechTreeChangeNodeStateCsRsp| { &mut m.CDMFHNGEFCN },
@@ -62,11 +67,6 @@ impl TechTreeChangeNodeStateCsRsp {
             "op_type",
             |m: &TechTreeChangeNodeStateCsRsp| { &m.op_type },
             |m: &mut TechTreeChangeNodeStateCsRsp| { &mut m.op_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TechTreeChangeNodeStateCsRsp| { &m.retcode },
-            |m: &mut TechTreeChangeNodeStateCsRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TechTreeChangeNodeStateCsRsp>(
             "TechTreeChangeNodeStateCsRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for TechTreeChangeNodeStateCsRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                16 => {
+                    self.retcode = is.read_uint32()?;
+                },
                 32 => {
                     self.CDMFHNGEFCN = is.read_uint32()?;
                 },
                 56 => {
                     self.op_type = is.read_enum_or_unknown()?;
-                },
-                112 => {
-                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for TechTreeChangeNodeStateCsRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
         if self.CDMFHNGEFCN != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.CDMFHNGEFCN);
         }
         if self.op_type != ::protobuf::EnumOrUnknown::new(super::OEDABANAJEK::OEDABANAJEK::OEDABANAJEK_NLCDGIPGFDJ) {
             my_size += ::protobuf::rt::int32_size(7, self.op_type.value());
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for TechTreeChangeNodeStateCsRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
+        }
         if self.CDMFHNGEFCN != 0 {
             os.write_uint32(4, self.CDMFHNGEFCN)?;
         }
         if self.op_type != ::protobuf::EnumOrUnknown::new(super::OEDABANAJEK::OEDABANAJEK::OEDABANAJEK_NLCDGIPGFDJ) {
             os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.op_type))?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for TechTreeChangeNodeStateCsRsp {
     }
 
     fn clear(&mut self) {
+        self.retcode = 0;
         self.CDMFHNGEFCN = 0;
         self.op_type = ::protobuf::EnumOrUnknown::new(super::OEDABANAJEK::OEDABANAJEK::OEDABANAJEK_NLCDGIPGFDJ);
-        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TechTreeChangeNodeStateCsRsp {
         static instance: TechTreeChangeNodeStateCsRsp = TechTreeChangeNodeStateCsRsp {
+            retcode: 0,
             CDMFHNGEFCN: 0,
             op_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for TechTreeChangeNodeStateCsRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TechTreeChangeNodeStateCsRsp.proto\x1a\x11OEDABANAJEK.proto\"\x81\
-    \x01\n\x1cTechTreeChangeNodeStateCsRsp\x12\x20\n\x0bCDMFHNGEFCN\x18\x04\
-    \x20\x01(\rR\x0bCDMFHNGEFCN\x12%\n\x07op_type\x18\x07\x20\x01(\x0e2\x0c.\
-    OEDABANAJEKR\x06opType\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retco\
-    deb\x06proto3\
+    \x01\n\x1cTechTreeChangeNodeStateCsRsp\x12\x18\n\x07retcode\x18\x02\x20\
+    \x01(\rR\x07retcode\x12\x20\n\x0bCDMFHNGEFCN\x18\x04\x20\x01(\rR\x0bCDMF\
+    HNGEFCN\x12%\n\x07op_type\x18\x07\x20\x01(\x0e2\x0c.OEDABANAJEKR\x06opTy\
+    peb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

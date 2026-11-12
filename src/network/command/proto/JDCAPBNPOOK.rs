@@ -63,6 +63,22 @@ pub enum JDCAPBNPOOK {
     JDCAPBNPOOK_DICKKDIAEND = 112,
     // @@protoc_insertion_point(enum_value:JDCAPBNPOOK.JDCAPBNPOOK_LKPOOOLNAJC)
     JDCAPBNPOOK_LKPOOOLNAJC = 113,
+    // @@protoc_insertion_point(enum_value:JDCAPBNPOOK.JDCAPBNPOOK_CLKHDBBDHFJ)
+    JDCAPBNPOOK_CLKHDBBDHFJ = 201,
+    // @@protoc_insertion_point(enum_value:JDCAPBNPOOK.JDCAPBNPOOK_DECONIENEJG)
+    JDCAPBNPOOK_DECONIENEJG = 202,
+    // @@protoc_insertion_point(enum_value:JDCAPBNPOOK.JDCAPBNPOOK_IJBCFCMIJNK)
+    JDCAPBNPOOK_IJBCFCMIJNK = 203,
+    // @@protoc_insertion_point(enum_value:JDCAPBNPOOK.JDCAPBNPOOK_DJGAKCGLDLP)
+    JDCAPBNPOOK_DJGAKCGLDLP = 204,
+    // @@protoc_insertion_point(enum_value:JDCAPBNPOOK.JDCAPBNPOOK_CBNLALMEPAA)
+    JDCAPBNPOOK_CBNLALMEPAA = 205,
+    // @@protoc_insertion_point(enum_value:JDCAPBNPOOK.JDCAPBNPOOK_NCMIMINMBDM)
+    JDCAPBNPOOK_NCMIMINMBDM = 206,
+    // @@protoc_insertion_point(enum_value:JDCAPBNPOOK.JDCAPBNPOOK_LPMLNCOJHDB)
+    JDCAPBNPOOK_LPMLNCOJHDB = 207,
+    // @@protoc_insertion_point(enum_value:JDCAPBNPOOK.JDCAPBNPOOK_GIKNCJMJLFE)
+    JDCAPBNPOOK_GIKNCJMJLFE = 208,
 }
 
 impl ::protobuf::Enum for JDCAPBNPOOK {
@@ -92,6 +108,14 @@ impl ::protobuf::Enum for JDCAPBNPOOK {
             111 => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_MDBHGMDBJGK),
             112 => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_DICKKDIAEND),
             113 => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_LKPOOOLNAJC),
+            201 => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_CLKHDBBDHFJ),
+            202 => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_DECONIENEJG),
+            203 => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_IJBCFCMIJNK),
+            204 => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_DJGAKCGLDLP),
+            205 => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_CBNLALMEPAA),
+            206 => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_NCMIMINMBDM),
+            207 => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_LPMLNCOJHDB),
+            208 => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_GIKNCJMJLFE),
             _ => ::std::option::Option::None
         }
     }
@@ -116,6 +140,14 @@ impl ::protobuf::Enum for JDCAPBNPOOK {
             "JDCAPBNPOOK_MDBHGMDBJGK" => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_MDBHGMDBJGK),
             "JDCAPBNPOOK_DICKKDIAEND" => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_DICKKDIAEND),
             "JDCAPBNPOOK_LKPOOOLNAJC" => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_LKPOOOLNAJC),
+            "JDCAPBNPOOK_CLKHDBBDHFJ" => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_CLKHDBBDHFJ),
+            "JDCAPBNPOOK_DECONIENEJG" => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_DECONIENEJG),
+            "JDCAPBNPOOK_IJBCFCMIJNK" => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_IJBCFCMIJNK),
+            "JDCAPBNPOOK_DJGAKCGLDLP" => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_DJGAKCGLDLP),
+            "JDCAPBNPOOK_CBNLALMEPAA" => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_CBNLALMEPAA),
+            "JDCAPBNPOOK_NCMIMINMBDM" => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_NCMIMINMBDM),
+            "JDCAPBNPOOK_LPMLNCOJHDB" => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_LPMLNCOJHDB),
+            "JDCAPBNPOOK_GIKNCJMJLFE" => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_GIKNCJMJLFE),
             _ => ::std::option::Option::None
         }
     }
@@ -139,6 +171,14 @@ impl ::protobuf::Enum for JDCAPBNPOOK {
         JDCAPBNPOOK::JDCAPBNPOOK_MDBHGMDBJGK,
         JDCAPBNPOOK::JDCAPBNPOOK_DICKKDIAEND,
         JDCAPBNPOOK::JDCAPBNPOOK_LKPOOOLNAJC,
+        JDCAPBNPOOK::JDCAPBNPOOK_CLKHDBBDHFJ,
+        JDCAPBNPOOK::JDCAPBNPOOK_DECONIENEJG,
+        JDCAPBNPOOK::JDCAPBNPOOK_IJBCFCMIJNK,
+        JDCAPBNPOOK::JDCAPBNPOOK_DJGAKCGLDLP,
+        JDCAPBNPOOK::JDCAPBNPOOK_CBNLALMEPAA,
+        JDCAPBNPOOK::JDCAPBNPOOK_NCMIMINMBDM,
+        JDCAPBNPOOK::JDCAPBNPOOK_LPMLNCOJHDB,
+        JDCAPBNPOOK::JDCAPBNPOOK_GIKNCJMJLFE,
     ];
 }
 
@@ -168,6 +208,14 @@ impl ::protobuf::EnumFull for JDCAPBNPOOK {
             JDCAPBNPOOK::JDCAPBNPOOK_MDBHGMDBJGK => 15,
             JDCAPBNPOOK::JDCAPBNPOOK_DICKKDIAEND => 16,
             JDCAPBNPOOK::JDCAPBNPOOK_LKPOOOLNAJC => 17,
+            JDCAPBNPOOK::JDCAPBNPOOK_CLKHDBBDHFJ => 18,
+            JDCAPBNPOOK::JDCAPBNPOOK_DECONIENEJG => 19,
+            JDCAPBNPOOK::JDCAPBNPOOK_IJBCFCMIJNK => 20,
+            JDCAPBNPOOK::JDCAPBNPOOK_DJGAKCGLDLP => 21,
+            JDCAPBNPOOK::JDCAPBNPOOK_CBNLALMEPAA => 22,
+            JDCAPBNPOOK::JDCAPBNPOOK_NCMIMINMBDM => 23,
+            JDCAPBNPOOK::JDCAPBNPOOK_LPMLNCOJHDB => 24,
+            JDCAPBNPOOK::JDCAPBNPOOK_GIKNCJMJLFE => 25,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -186,7 +234,7 @@ impl JDCAPBNPOOK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JDCAPBNPOOK.proto*\x97\x04\n\x0bJDCAPBNPOOK\x12\x1b\n\x17JDCAPBNPO\
+    \n\x11JDCAPBNPOOK.proto*\x87\x06\n\x0bJDCAPBNPOOK\x12\x1b\n\x17JDCAPBNPO\
     OK_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17JDCAPBNPOOK_ENPLACDLJGA\x10\x01\x12\
     \x1b\n\x17JDCAPBNPOOK_NMEEOHMGPKD\x10\x02\x12\x1b\n\x17JDCAPBNPOOK_OMKPE\
     NOHLII\x10\x04\x12\x1b\n\x17JDCAPBNPOOK_AOIGFLELHHH\x10\x05\x12\x1b\n\
@@ -197,7 +245,13 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x10k\x12\x1b\n\x17JDCAPBNPOOK_GGMPEGMEHPD\x10l\x12\x1b\n\x17JDCAPBNPOOK\
     _FIFGENNKDBE\x10m\x12\x1b\n\x17JDCAPBNPOOK_ONPNOPLOAGH\x10n\x12\x1b\n\
     \x17JDCAPBNPOOK_MDBHGMDBJGK\x10o\x12\x1b\n\x17JDCAPBNPOOK_DICKKDIAEND\
-    \x10p\x12\x1b\n\x17JDCAPBNPOOK_LKPOOOLNAJC\x10qb\x06proto3\
+    \x10p\x12\x1b\n\x17JDCAPBNPOOK_LKPOOOLNAJC\x10q\x12\x1c\n\x17JDCAPBNPOOK\
+    _CLKHDBBDHFJ\x10\xc9\x01\x12\x1c\n\x17JDCAPBNPOOK_DECONIENEJG\x10\xca\
+    \x01\x12\x1c\n\x17JDCAPBNPOOK_IJBCFCMIJNK\x10\xcb\x01\x12\x1c\n\x17JDCAP\
+    BNPOOK_DJGAKCGLDLP\x10\xcc\x01\x12\x1c\n\x17JDCAPBNPOOK_CBNLALMEPAA\x10\
+    \xcd\x01\x12\x1c\n\x17JDCAPBNPOOK_NCMIMINMBDM\x10\xce\x01\x12\x1c\n\x17J\
+    DCAPBNPOOK_LPMLNCOJHDB\x10\xcf\x01\x12\x1c\n\x17JDCAPBNPOOK_GIKNCJMJLFE\
+    \x10\xd0\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

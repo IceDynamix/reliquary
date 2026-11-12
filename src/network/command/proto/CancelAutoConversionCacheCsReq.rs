@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CancelAutoConversionCacheCsReq {
     // message fields
+    // @@protoc_insertion_point(field:CancelAutoConversionCacheCsReq.JALHKMEOOPN)
+    pub JALHKMEOOPN: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CancelAutoConversionCacheCsReq.OKFMBDEECCH)
     pub OKFMBDEECCH: ::std::vec::Vec<::std::string::String>,
     // @@protoc_insertion_point(field:CancelAutoConversionCacheCsReq.type)
     pub type_: ::protobuf::EnumOrUnknown<super::BMHIHBHECKD::BMHIHBHECKD>,
-    // @@protoc_insertion_point(field:CancelAutoConversionCacheCsReq.JALHKMEOOPN)
-    pub JALHKMEOOPN: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:CancelAutoConversionCacheCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl CancelAutoConversionCacheCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JALHKMEOOPN",
+            |m: &CancelAutoConversionCacheCsReq| { &m.JALHKMEOOPN },
+            |m: &mut CancelAutoConversionCacheCsReq| { &mut m.JALHKMEOOPN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OKFMBDEECCH",
             |m: &CancelAutoConversionCacheCsReq| { &m.OKFMBDEECCH },
             |m: &mut CancelAutoConversionCacheCsReq| { &mut m.OKFMBDEECCH },
@@ -62,11 +67,6 @@ impl CancelAutoConversionCacheCsReq {
             "type",
             |m: &CancelAutoConversionCacheCsReq| { &m.type_ },
             |m: &mut CancelAutoConversionCacheCsReq| { &mut m.type_ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JALHKMEOOPN",
-            |m: &CancelAutoConversionCacheCsReq| { &m.JALHKMEOOPN },
-            |m: &mut CancelAutoConversionCacheCsReq| { &mut m.JALHKMEOOPN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CancelAutoConversionCacheCsReq>(
             "CancelAutoConversionCacheCsReq",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for CancelAutoConversionCacheCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.OKFMBDEECCH.push(is.read_string()?);
-                },
-                16 => {
-                    self.type_ = is.read_enum_or_unknown()?;
-                },
-                106 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.JALHKMEOOPN)?;
                 },
-                104 => {
+                72 => {
                     self.JALHKMEOOPN.push(is.read_uint32()?);
+                },
+                82 => {
+                    self.OKFMBDEECCH.push(is.read_string()?);
+                },
+                112 => {
+                    self.type_ = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,26 +110,26 @@ impl ::protobuf::Message for CancelAutoConversionCacheCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.JALHKMEOOPN);
         for value in &self.OKFMBDEECCH {
-            my_size += ::protobuf::rt::string_size(1, &value);
+            my_size += ::protobuf::rt::string_size(10, &value);
         };
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::BMHIHBHECKD::BMHIHBHECKD::BMHIHBHECKD_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(2, self.type_.value());
+            my_size += ::protobuf::rt::int32_size(14, self.type_.value());
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.JALHKMEOOPN);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(9, &self.JALHKMEOOPN)?;
         for v in &self.OKFMBDEECCH {
-            os.write_string(1, &v)?;
+            os.write_string(10, &v)?;
         };
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::BMHIHBHECKD::BMHIHBHECKD::BMHIHBHECKD_NLCDGIPGFDJ) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
-        os.write_repeated_packed_uint32(13, &self.JALHKMEOOPN)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,17 +147,17 @@ impl ::protobuf::Message for CancelAutoConversionCacheCsReq {
     }
 
     fn clear(&mut self) {
+        self.JALHKMEOOPN.clear();
         self.OKFMBDEECCH.clear();
         self.type_ = ::protobuf::EnumOrUnknown::new(super::BMHIHBHECKD::BMHIHBHECKD::BMHIHBHECKD_NLCDGIPGFDJ);
-        self.JALHKMEOOPN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CancelAutoConversionCacheCsReq {
         static instance: CancelAutoConversionCacheCsReq = CancelAutoConversionCacheCsReq {
+            JALHKMEOOPN: ::std::vec::Vec::new(),
             OKFMBDEECCH: ::std::vec::Vec::new(),
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
-            JALHKMEOOPN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for CancelAutoConversionCacheCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$CancelAutoConversionCacheCsReq.proto\x1a\x11BMHIHBHECKD.proto\"\x86\
-    \x01\n\x1eCancelAutoConversionCacheCsReq\x12\x20\n\x0bOKFMBDEECCH\x18\
-    \x01\x20\x03(\tR\x0bOKFMBDEECCH\x12\x20\n\x04type\x18\x02\x20\x01(\x0e2\
-    \x0c.BMHIHBHECKDR\x04type\x12\x20\n\x0bJALHKMEOOPN\x18\r\x20\x03(\rR\x0b\
-    JALHKMEOOPNb\x06proto3\
+    \x01\n\x1eCancelAutoConversionCacheCsReq\x12\x20\n\x0bJALHKMEOOPN\x18\t\
+    \x20\x03(\rR\x0bJALHKMEOOPN\x12\x20\n\x0bOKFMBDEECCH\x18\n\x20\x03(\tR\
+    \x0bOKFMBDEECCH\x12\x20\n\x04type\x18\x0e\x20\x01(\x0e2\x0c.BMHIHBHECKDR\
+    \x04typeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

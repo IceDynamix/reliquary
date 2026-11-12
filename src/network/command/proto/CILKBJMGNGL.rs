@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CILKBJMGNGL {
     // message fields
+    // @@protoc_insertion_point(field:CILKBJMGNGL.IHJKLHGMKBI)
+    pub IHJKLHGMKBI: ::protobuf::MessageField<super::DFGAIOOGPPA::DFGAIOOGPPA>,
+    // @@protoc_insertion_point(field:CILKBJMGNGL.GJGFCCKEMFD)
+    pub GJGFCCKEMFD: ::std::vec::Vec<super::ONMFMINNBEB::ONMFMINNBEB>,
     // @@protoc_insertion_point(field:CILKBJMGNGL.OBBKBNDGOAI)
     pub OBBKBNDGOAI: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CILKBJMGNGL.story_info)
     pub story_info: ::protobuf::MessageField<super::GNPFDBACMIH::GNPFDBACMIH>,
-    // @@protoc_insertion_point(field:CILKBJMGNGL.IHJKLHGMKBI)
-    pub IHJKLHGMKBI: ::protobuf::MessageField<super::DFGAIOOGPPA::DFGAIOOGPPA>,
-    // @@protoc_insertion_point(field:CILKBJMGNGL.HIILDALHIMD)
-    pub HIILDALHIMD: ::std::vec::Vec<super::LGFOKKPICEH::LGFOKKPICEH>,
     // @@protoc_insertion_point(field:CILKBJMGNGL.DANNIDIPFAL)
     pub DANNIDIPFAL: ::std::vec::Vec<super::IFCNLKPPPHK::IFCNLKPPPHK>,
+    // @@protoc_insertion_point(field:CILKBJMGNGL.HIILDALHIMD)
+    pub HIILDALHIMD: ::std::vec::Vec<super::LGFOKKPICEH::LGFOKKPICEH>,
     // @@protoc_insertion_point(field:CILKBJMGNGL.JJIEDDMALPE)
     pub JJIEDDMALPE: ::std::vec::Vec<super::NMOMMMGHMOA::NMOMMMGHMOA>,
-    // @@protoc_insertion_point(field:CILKBJMGNGL.GJGFCCKEMFD)
-    pub GJGFCCKEMFD: ::std::vec::Vec<super::ONMFMINNBEB::ONMFMINNBEB>,
     // special fields
     // @@protoc_insertion_point(special_field:CILKBJMGNGL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,6 +61,16 @@ impl CILKBJMGNGL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFGAIOOGPPA::DFGAIOOGPPA>(
+            "IHJKLHGMKBI",
+            |m: &CILKBJMGNGL| { &m.IHJKLHGMKBI },
+            |m: &mut CILKBJMGNGL| { &mut m.IHJKLHGMKBI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GJGFCCKEMFD",
+            |m: &CILKBJMGNGL| { &m.GJGFCCKEMFD },
+            |m: &mut CILKBJMGNGL| { &mut m.GJGFCCKEMFD },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OBBKBNDGOAI",
             |m: &CILKBJMGNGL| { &m.OBBKBNDGOAI },
@@ -71,10 +81,10 @@ impl CILKBJMGNGL {
             |m: &CILKBJMGNGL| { &m.story_info },
             |m: &mut CILKBJMGNGL| { &mut m.story_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFGAIOOGPPA::DFGAIOOGPPA>(
-            "IHJKLHGMKBI",
-            |m: &CILKBJMGNGL| { &m.IHJKLHGMKBI },
-            |m: &mut CILKBJMGNGL| { &mut m.IHJKLHGMKBI },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DANNIDIPFAL",
+            |m: &CILKBJMGNGL| { &m.DANNIDIPFAL },
+            |m: &mut CILKBJMGNGL| { &mut m.DANNIDIPFAL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HIILDALHIMD",
@@ -82,19 +92,9 @@ impl CILKBJMGNGL {
             |m: &mut CILKBJMGNGL| { &mut m.HIILDALHIMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DANNIDIPFAL",
-            |m: &CILKBJMGNGL| { &m.DANNIDIPFAL },
-            |m: &mut CILKBJMGNGL| { &mut m.DANNIDIPFAL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JJIEDDMALPE",
             |m: &CILKBJMGNGL| { &m.JJIEDDMALPE },
             |m: &mut CILKBJMGNGL| { &mut m.JJIEDDMALPE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GJGFCCKEMFD",
-            |m: &CILKBJMGNGL| { &m.GJGFCCKEMFD },
-            |m: &mut CILKBJMGNGL| { &mut m.GJGFCCKEMFD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CILKBJMGNGL>(
             "CILKBJMGNGL",
@@ -115,28 +115,28 @@ impl ::protobuf::Message for CILKBJMGNGL {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OBBKBNDGOAI)?;
-                },
-                8 => {
-                    self.OBBKBNDGOAI.push(is.read_uint32()?);
-                },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.story_info)?;
-                },
-                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IHJKLHGMKBI)?;
                 },
-                58 => {
-                    self.HIILDALHIMD.push(is.read_message()?);
+                18 => {
+                    self.GJGFCCKEMFD.push(is.read_message()?);
                 },
-                90 => {
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OBBKBNDGOAI)?;
+                },
+                32 => {
+                    self.OBBKBNDGOAI.push(is.read_uint32()?);
+                },
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.story_info)?;
+                },
+                58 => {
                     self.DANNIDIPFAL.push(is.read_message()?);
                 },
-                98 => {
-                    self.JJIEDDMALPE.push(is.read_message()?);
+                74 => {
+                    self.HIILDALHIMD.push(is.read_message()?);
                 },
-                114 => {
-                    self.GJGFCCKEMFD.push(is.read_message()?);
+                82 => {
+                    self.JJIEDDMALPE.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -150,28 +150,28 @@ impl ::protobuf::Message for CILKBJMGNGL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.OBBKBNDGOAI);
-        if let Some(v) = self.story_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.IHJKLHGMKBI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.HIILDALHIMD {
+        for value in &self.GJGFCCKEMFD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.OBBKBNDGOAI);
+        if let Some(v) = self.story_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         for value in &self.DANNIDIPFAL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.JJIEDDMALPE {
+        for value in &self.HIILDALHIMD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.GJGFCCKEMFD {
+        for value in &self.JJIEDDMALPE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -181,24 +181,24 @@ impl ::protobuf::Message for CILKBJMGNGL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.OBBKBNDGOAI)?;
-        if let Some(v) = self.story_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
         if let Some(v) = self.IHJKLHGMKBI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        for v in &self.GJGFCCKEMFD {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
+        os.write_repeated_packed_uint32(4, &self.OBBKBNDGOAI)?;
+        if let Some(v) = self.story_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        for v in &self.HIILDALHIMD {
+        for v in &self.DANNIDIPFAL {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        for v in &self.DANNIDIPFAL {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.HIILDALHIMD {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         for v in &self.JJIEDDMALPE {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
-        for v in &self.GJGFCCKEMFD {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -217,25 +217,25 @@ impl ::protobuf::Message for CILKBJMGNGL {
     }
 
     fn clear(&mut self) {
+        self.IHJKLHGMKBI.clear();
+        self.GJGFCCKEMFD.clear();
         self.OBBKBNDGOAI.clear();
         self.story_info.clear();
-        self.IHJKLHGMKBI.clear();
-        self.HIILDALHIMD.clear();
         self.DANNIDIPFAL.clear();
+        self.HIILDALHIMD.clear();
         self.JJIEDDMALPE.clear();
-        self.GJGFCCKEMFD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CILKBJMGNGL {
         static instance: CILKBJMGNGL = CILKBJMGNGL {
+            IHJKLHGMKBI: ::protobuf::MessageField::none(),
+            GJGFCCKEMFD: ::std::vec::Vec::new(),
             OBBKBNDGOAI: ::std::vec::Vec::new(),
             story_info: ::protobuf::MessageField::none(),
-            IHJKLHGMKBI: ::protobuf::MessageField::none(),
-            HIILDALHIMD: ::std::vec::Vec::new(),
             DANNIDIPFAL: ::std::vec::Vec::new(),
+            HIILDALHIMD: ::std::vec::Vec::new(),
             JJIEDDMALPE: ::std::vec::Vec::new(),
-            GJGFCCKEMFD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -262,15 +262,14 @@ impl ::protobuf::reflect::ProtobufValue for CILKBJMGNGL {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CILKBJMGNGL.proto\x1a\x11DFGAIOOGPPA.proto\x1a\x11GNPFDBACMIH.prot\
     o\x1a\x11IFCNLKPPPHK.proto\x1a\x11LGFOKKPICEH.proto\x1a\x11NMOMMMGHMOA.p\
-    roto\x1a\x11ONMFMINNBEB.proto\"\xcc\x02\n\x0bCILKBJMGNGL\x12\x20\n\x0bOB\
-    BKBNDGOAI\x18\x01\x20\x03(\rR\x0bOBBKBNDGOAI\x12+\n\nstory_info\x18\x02\
-    \x20\x01(\x0b2\x0c.GNPFDBACMIHR\tstoryInfo\x12.\n\x0bIHJKLHGMKBI\x18\x06\
-    \x20\x01(\x0b2\x0c.DFGAIOOGPPAR\x0bIHJKLHGMKBI\x12.\n\x0bHIILDALHIMD\x18\
-    \x07\x20\x03(\x0b2\x0c.LGFOKKPICEHR\x0bHIILDALHIMD\x12.\n\x0bDANNIDIPFAL\
-    \x18\x0b\x20\x03(\x0b2\x0c.IFCNLKPPPHKR\x0bDANNIDIPFAL\x12.\n\x0bJJIEDDM\
-    ALPE\x18\x0c\x20\x03(\x0b2\x0c.NMOMMMGHMOAR\x0bJJIEDDMALPE\x12.\n\x0bGJG\
-    FCCKEMFD\x18\x0e\x20\x03(\x0b2\x0c.ONMFMINNBEBR\x0bGJGFCCKEMFDb\x06proto\
-    3\
+    roto\x1a\x11ONMFMINNBEB.proto\"\xcc\x02\n\x0bCILKBJMGNGL\x12.\n\x0bIHJKL\
+    HGMKBI\x18\x01\x20\x01(\x0b2\x0c.DFGAIOOGPPAR\x0bIHJKLHGMKBI\x12.\n\x0bG\
+    JGFCCKEMFD\x18\x02\x20\x03(\x0b2\x0c.ONMFMINNBEBR\x0bGJGFCCKEMFD\x12\x20\
+    \n\x0bOBBKBNDGOAI\x18\x04\x20\x03(\rR\x0bOBBKBNDGOAI\x12+\n\nstory_info\
+    \x18\x06\x20\x01(\x0b2\x0c.GNPFDBACMIHR\tstoryInfo\x12.\n\x0bDANNIDIPFAL\
+    \x18\x07\x20\x03(\x0b2\x0c.IFCNLKPPPHKR\x0bDANNIDIPFAL\x12.\n\x0bHIILDAL\
+    HIMD\x18\t\x20\x03(\x0b2\x0c.LGFOKKPICEHR\x0bHIILDALHIMD\x12.\n\x0bJJIED\
+    DMALPE\x18\n\x20\x03(\x0b2\x0c.NMOMMMGHMOAR\x0bJJIEDDMALPEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

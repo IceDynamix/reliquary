@@ -45,7 +45,7 @@ impl MAEEIBPEOFN {
         ::std::default::Default::default()
     }
 
-    // .BPOKOPCGMAJ CNKCDGOJGJH = 10;
+    // .BPOKOPCGMAJ CNKCDGOJGJH = 1;
 
     pub fn CNKCDGOJGJH(&self) -> &super::BPOKOPCGMAJ::BPOKOPCGMAJ {
         match self.PGNIENCDODA {
@@ -94,7 +94,7 @@ impl MAEEIBPEOFN {
         }
     }
 
-    // .PIACCCGNOOF BACBKGJJOGA = 11;
+    // .PIACCCGNOOF BACBKGJJOGA = 4;
 
     pub fn BACBKGJJOGA(&self) -> &super::PIACCCGNOOF::PIACCCGNOOF {
         match self.PGNIENCDODA {
@@ -179,10 +179,10 @@ impl ::protobuf::Message for MAEEIBPEOFN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                10 => {
                     self.PGNIENCDODA = ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::CNKCDGOJGJH(is.read_message()?));
                 },
-                90 => {
+                34 => {
                     self.PGNIENCDODA = ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(is.read_message()?));
                 },
                 tag => {
@@ -218,10 +218,10 @@ impl ::protobuf::Message for MAEEIBPEOFN {
         if let ::std::option::Option::Some(ref v) = self.PGNIENCDODA {
             match v {
                 &maeeibpeofn::PGNIENCDODA::CNKCDGOJGJH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
             };
         }
@@ -305,8 +305,8 @@ pub mod maeeibpeofn {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MAEEIBPEOFN.proto\x1a\x11BPOKOPCGMAJ.proto\x1a\x11PIACCCGNOOF.prot\
-    o\"\x80\x01\n\x0bMAEEIBPEOFN\x120\n\x0bCNKCDGOJGJH\x18\n\x20\x01(\x0b2\
-    \x0c.BPOKOPCGMAJH\0R\x0bCNKCDGOJGJH\x120\n\x0bBACBKGJJOGA\x18\x0b\x20\
+    o\"\x80\x01\n\x0bMAEEIBPEOFN\x120\n\x0bCNKCDGOJGJH\x18\x01\x20\x01(\x0b2\
+    \x0c.BPOKOPCGMAJH\0R\x0bCNKCDGOJGJH\x120\n\x0bBACBKGJJOGA\x18\x04\x20\
     \x01(\x0b2\x0c.PIACCCGNOOFH\0R\x0bBACBKGJJOGAB\r\n\x0bPGNIENCDODAb\x06pr\
     oto3\
 ";

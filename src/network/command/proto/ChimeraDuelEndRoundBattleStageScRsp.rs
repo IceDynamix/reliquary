@@ -50,7 +50,7 @@ impl ChimeraDuelEndRoundBattleStageScRsp {
         ::std::default::Default::default()
     }
 
-    // .EBPBMFBFEJA CECFDNCDBEI = 693;
+    // .EBPBMFBFEJA CECFDNCDBEI = 997;
 
     pub fn CECFDNCDBEI(&self) -> &super::EBPBMFBFEJA::EBPBMFBFEJA {
         match self.KKNBOACNCON {
@@ -99,7 +99,7 @@ impl ChimeraDuelEndRoundBattleStageScRsp {
         }
     }
 
-    // .LCEDDGELBMJ CFDIKLBINHK = 1788;
+    // .LCEDDGELBMJ CFDIKLBINHK = 1200;
 
     pub fn CFDIKLBINHK(&self) -> &super::LCEDDGELBMJ::LCEDDGELBMJ {
         match self.KKNBOACNCON {
@@ -194,16 +194,16 @@ impl ::protobuf::Message for ChimeraDuelEndRoundBattleStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
+                48 => {
                     self.NONPIMDDJNN = is.read_enum_or_unknown()?;
                 },
-                5546 => {
+                7978 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::KKNBOACNCON::CECFDNCDBEI(is.read_message()?));
                 },
-                14306 => {
+                9602 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::KKNBOACNCON::CFDIKLBINHK(is.read_message()?));
                 },
                 tag => {
@@ -219,10 +219,10 @@ impl ::protobuf::Message for ChimeraDuelEndRoundBattleStageScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         if self.NONPIMDDJNN != ::protobuf::EnumOrUnknown::new(super::DIIKFKNEHHG::DIIKFKNEHHG::DIIKFKNEHHG_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(11, self.NONPIMDDJNN.value());
+            my_size += ::protobuf::rt::int32_size(6, self.NONPIMDDJNN.value());
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
@@ -243,18 +243,18 @@ impl ::protobuf::Message for ChimeraDuelEndRoundBattleStageScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         if self.NONPIMDDJNN != ::protobuf::EnumOrUnknown::new(super::DIIKFKNEHHG::DIIKFKNEHHG::DIIKFKNEHHG_NLCDGIPGFDJ) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.NONPIMDDJNN))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.NONPIMDDJNN))?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &chimera_duel_end_round_battle_stage_sc_rsp::KKNBOACNCON::CECFDNCDBEI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(693, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(997, v, os)?;
                 },
                 &chimera_duel_end_round_battle_stage_sc_rsp::KKNBOACNCON::CFDIKLBINHK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1788, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1200, v, os)?;
                 },
             };
         }
@@ -343,11 +343,11 @@ pub mod chimera_duel_end_round_battle_stage_sc_rsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)ChimeraDuelEndRoundBattleStageScRsp.proto\x1a\x11DIIKFKNEHHG.proto\
     \x1a\x11EBPBMFBFEJA.proto\x1a\x11LCEDDGELBMJ.proto\"\xe4\x01\n#ChimeraDu\
-    elEndRoundBattleStageScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07ret\
-    code\x12.\n\x0bNONPIMDDJNN\x18\x0b\x20\x01(\x0e2\x0c.DIIKFKNEHHGR\x0bNON\
-    PIMDDJNN\x121\n\x0bCECFDNCDBEI\x18\xb5\x05\x20\x01(\x0b2\x0c.EBPBMFBFEJA\
-    H\0R\x0bCECFDNCDBEI\x121\n\x0bCFDIKLBINHK\x18\xfc\r\x20\x01(\x0b2\x0c.LC\
-    EDDGELBMJH\0R\x0bCFDIKLBINHKB\r\n\x0bKKNBOACNCONb\x06proto3\
+    elEndRoundBattleStageScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07r\
+    etcode\x12.\n\x0bNONPIMDDJNN\x18\x06\x20\x01(\x0e2\x0c.DIIKFKNEHHGR\x0bN\
+    ONPIMDDJNN\x121\n\x0bCECFDNCDBEI\x18\xe5\x07\x20\x01(\x0b2\x0c.EBPBMFBFE\
+    JAH\0R\x0bCECFDNCDBEI\x121\n\x0bCFDIKLBINHK\x18\xb0\t\x20\x01(\x0b2\x0c.\
+    LCEDDGELBMJH\0R\x0bCFDIKLBINHKB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct EGMPACONNFP {
     // message fields
     // @@protoc_insertion_point(field:EGMPACONNFP.unique_id)
     pub unique_id: u32,
-    // @@protoc_insertion_point(field:EGMPACONNFP.GNCFHIKODKE)
-    pub GNCFHIKODKE: u32,
     // @@protoc_insertion_point(field:EGMPACONNFP.NPBLEKPLPFA)
     pub NPBLEKPLPFA: u32,
+    // @@protoc_insertion_point(field:EGMPACONNFP.GNCFHIKODKE)
+    pub GNCFHIKODKE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EGMPACONNFP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl EGMPACONNFP {
             |m: &mut EGMPACONNFP| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNCFHIKODKE",
-            |m: &EGMPACONNFP| { &m.GNCFHIKODKE },
-            |m: &mut EGMPACONNFP| { &mut m.GNCFHIKODKE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NPBLEKPLPFA",
             |m: &EGMPACONNFP| { &m.NPBLEKPLPFA },
             |m: &mut EGMPACONNFP| { &mut m.NPBLEKPLPFA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GNCFHIKODKE",
+            |m: &EGMPACONNFP| { &m.GNCFHIKODKE },
+            |m: &mut EGMPACONNFP| { &mut m.GNCFHIKODKE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EGMPACONNFP>(
             "EGMPACONNFP",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EGMPACONNFP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                64 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                104 => {
-                    self.GNCFHIKODKE = is.read_uint32()?;
-                },
-                120 => {
+                72 => {
                     self.NPBLEKPLPFA = is.read_uint32()?;
+                },
+                80 => {
+                    self.GNCFHIKODKE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for EGMPACONNFP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.unique_id);
-        }
-        if self.GNCFHIKODKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.GNCFHIKODKE);
+            my_size += ::protobuf::rt::uint32_size(8, self.unique_id);
         }
         if self.NPBLEKPLPFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.NPBLEKPLPFA);
+            my_size += ::protobuf::rt::uint32_size(9, self.NPBLEKPLPFA);
+        }
+        if self.GNCFHIKODKE != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.GNCFHIKODKE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for EGMPACONNFP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.unique_id != 0 {
-            os.write_uint32(6, self.unique_id)?;
-        }
-        if self.GNCFHIKODKE != 0 {
-            os.write_uint32(13, self.GNCFHIKODKE)?;
+            os.write_uint32(8, self.unique_id)?;
         }
         if self.NPBLEKPLPFA != 0 {
-            os.write_uint32(15, self.NPBLEKPLPFA)?;
+            os.write_uint32(9, self.NPBLEKPLPFA)?;
+        }
+        if self.GNCFHIKODKE != 0 {
+            os.write_uint32(10, self.GNCFHIKODKE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for EGMPACONNFP {
 
     fn clear(&mut self) {
         self.unique_id = 0;
-        self.GNCFHIKODKE = 0;
         self.NPBLEKPLPFA = 0;
+        self.GNCFHIKODKE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EGMPACONNFP {
         static instance: EGMPACONNFP = EGMPACONNFP {
             unique_id: 0,
-            GNCFHIKODKE: 0,
             NPBLEKPLPFA: 0,
+            GNCFHIKODKE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for EGMPACONNFP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EGMPACONNFP.proto\"n\n\x0bEGMPACONNFP\x12\x1b\n\tunique_id\x18\x06\
-    \x20\x01(\rR\x08uniqueId\x12\x20\n\x0bGNCFHIKODKE\x18\r\x20\x01(\rR\x0bG\
-    NCFHIKODKE\x12\x20\n\x0bNPBLEKPLPFA\x18\x0f\x20\x01(\rR\x0bNPBLEKPLPFAb\
+    \n\x11EGMPACONNFP.proto\"n\n\x0bEGMPACONNFP\x12\x1b\n\tunique_id\x18\x08\
+    \x20\x01(\rR\x08uniqueId\x12\x20\n\x0bNPBLEKPLPFA\x18\t\x20\x01(\rR\x0bN\
+    PBLEKPLPFA\x12\x20\n\x0bGNCFHIKODKE\x18\n\x20\x01(\rR\x0bGNCFHIKODKEb\
     \x06proto3\
 ";
 

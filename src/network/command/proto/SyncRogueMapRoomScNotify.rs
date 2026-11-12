@@ -82,7 +82,7 @@ impl ::protobuf::Message for SyncRogueMapRoomScNotify {
                 34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNEANMNJHDB)?;
                 },
-                56 => {
+                112 => {
                     self.map_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for SyncRogueMapRoomScNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.map_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.map_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for SyncRogueMapRoomScNotify {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.map_id != 0 {
-            os.write_uint32(7, self.map_id)?;
+            os.write_uint32(14, self.map_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueMapRoomScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSyncRogueMapRoomScNotify.proto\x1a\x11PAIJCBOKIFO.proto\"a\n\x18Sy\
     ncRogueMapRoomScNotify\x12.\n\x0bHNEANMNJHDB\x18\x04\x20\x01(\x0b2\x0c.P\
-    AIJCBOKIFOR\x0bHNEANMNJHDB\x12\x15\n\x06map_id\x18\x07\x20\x01(\rR\x05ma\
+    AIJCBOKIFOR\x0bHNEANMNJHDB\x12\x15\n\x06map_id\x18\x0e\x20\x01(\rR\x05ma\
     pIdb\x06proto3\
 ";
 

@@ -32,10 +32,10 @@ pub struct BMKNANGPDGH {
     pub HCDLPKAGAKO: u32,
     // @@protoc_insertion_point(field:BMKNANGPDGH.EMOHLJHPOPC)
     pub EMOHLJHPOPC: u32,
-    // @@protoc_insertion_point(field:BMKNANGPDGH.HLAIOEJBEPG)
-    pub HLAIOEJBEPG: u32,
     // @@protoc_insertion_point(field:BMKNANGPDGH.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::ONKDAPOKGAC::ONKDAPOKGAC>,
+    // @@protoc_insertion_point(field:BMKNANGPDGH.HLAIOEJBEPG)
+    pub HLAIOEJBEPG: u32,
     // @@protoc_insertion_point(field:BMKNANGPDGH.EOJNPEPDECF)
     pub EOJNPEPDECF: u32,
     // special fields
@@ -67,15 +67,15 @@ impl BMKNANGPDGH {
             |m: &BMKNANGPDGH| { &m.EMOHLJHPOPC },
             |m: &mut BMKNANGPDGH| { &mut m.EMOHLJHPOPC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HLAIOEJBEPG",
-            |m: &BMKNANGPDGH| { &m.HLAIOEJBEPG },
-            |m: &mut BMKNANGPDGH| { &mut m.HLAIOEJBEPG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
             |m: &BMKNANGPDGH| { &m.avatar_list },
             |m: &mut BMKNANGPDGH| { &mut m.avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HLAIOEJBEPG",
+            |m: &BMKNANGPDGH| { &m.HLAIOEJBEPG },
+            |m: &mut BMKNANGPDGH| { &mut m.HLAIOEJBEPG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EOJNPEPDECF",
@@ -103,16 +103,16 @@ impl ::protobuf::Message for BMKNANGPDGH {
                 8 => {
                     self.HCDLPKAGAKO = is.read_uint32()?;
                 },
-                24 => {
-                    self.EMOHLJHPOPC = is.read_uint32()?;
-                },
                 48 => {
-                    self.HLAIOEJBEPG = is.read_uint32()?;
+                    self.EMOHLJHPOPC = is.read_uint32()?;
                 },
                 66 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                72 => {
+                80 => {
+                    self.HLAIOEJBEPG = is.read_uint32()?;
+                },
+                88 => {
                     self.EOJNPEPDECF = is.read_uint32()?;
                 },
                 tag => {
@@ -131,17 +131,17 @@ impl ::protobuf::Message for BMKNANGPDGH {
             my_size += ::protobuf::rt::uint32_size(1, self.HCDLPKAGAKO);
         }
         if self.EMOHLJHPOPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.EMOHLJHPOPC);
-        }
-        if self.HLAIOEJBEPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HLAIOEJBEPG);
+            my_size += ::protobuf::rt::uint32_size(6, self.EMOHLJHPOPC);
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.HLAIOEJBEPG != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.HLAIOEJBEPG);
+        }
         if self.EOJNPEPDECF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.EOJNPEPDECF);
+            my_size += ::protobuf::rt::uint32_size(11, self.EOJNPEPDECF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -153,16 +153,16 @@ impl ::protobuf::Message for BMKNANGPDGH {
             os.write_uint32(1, self.HCDLPKAGAKO)?;
         }
         if self.EMOHLJHPOPC != 0 {
-            os.write_uint32(3, self.EMOHLJHPOPC)?;
-        }
-        if self.HLAIOEJBEPG != 0 {
-            os.write_uint32(6, self.HLAIOEJBEPG)?;
+            os.write_uint32(6, self.EMOHLJHPOPC)?;
         }
         for v in &self.avatar_list {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
+        if self.HLAIOEJBEPG != 0 {
+            os.write_uint32(10, self.HLAIOEJBEPG)?;
+        }
         if self.EOJNPEPDECF != 0 {
-            os.write_uint32(9, self.EOJNPEPDECF)?;
+            os.write_uint32(11, self.EOJNPEPDECF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,8 +183,8 @@ impl ::protobuf::Message for BMKNANGPDGH {
     fn clear(&mut self) {
         self.HCDLPKAGAKO = 0;
         self.EMOHLJHPOPC = 0;
-        self.HLAIOEJBEPG = 0;
         self.avatar_list.clear();
+        self.HLAIOEJBEPG = 0;
         self.EOJNPEPDECF = 0;
         self.special_fields.clear();
     }
@@ -193,8 +193,8 @@ impl ::protobuf::Message for BMKNANGPDGH {
         static instance: BMKNANGPDGH = BMKNANGPDGH {
             HCDLPKAGAKO: 0,
             EMOHLJHPOPC: 0,
-            HLAIOEJBEPG: 0,
             avatar_list: ::std::vec::Vec::new(),
+            HLAIOEJBEPG: 0,
             EOJNPEPDECF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -222,10 +222,10 @@ impl ::protobuf::reflect::ProtobufValue for BMKNANGPDGH {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BMKNANGPDGH.proto\x1a\x11ONKDAPOKGAC.proto\"\xc4\x01\n\x0bBMKNANGP\
     DGH\x12\x20\n\x0bHCDLPKAGAKO\x18\x01\x20\x01(\rR\x0bHCDLPKAGAKO\x12\x20\
-    \n\x0bEMOHLJHPOPC\x18\x03\x20\x01(\rR\x0bEMOHLJHPOPC\x12\x20\n\x0bHLAIOE\
-    JBEPG\x18\x06\x20\x01(\rR\x0bHLAIOEJBEPG\x12-\n\x0bavatar_list\x18\x08\
-    \x20\x03(\x0b2\x0c.ONKDAPOKGACR\navatarList\x12\x20\n\x0bEOJNPEPDECF\x18\
-    \t\x20\x01(\rR\x0bEOJNPEPDECFb\x06proto3\
+    \n\x0bEMOHLJHPOPC\x18\x06\x20\x01(\rR\x0bEMOHLJHPOPC\x12-\n\x0bavatar_li\
+    st\x18\x08\x20\x03(\x0b2\x0c.ONKDAPOKGACR\navatarList\x12\x20\n\x0bHLAIO\
+    EJBEPG\x18\n\x20\x01(\rR\x0bHLAIOEJBEPG\x12\x20\n\x0bEOJNPEPDECF\x18\x0b\
+    \x20\x01(\rR\x0bEOJNPEPDECFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JEIAEAEGEBJ {
     // message fields
-    // @@protoc_insertion_point(field:JEIAEAEGEBJ.HCEENPENFGI)
-    pub HCEENPENFGI: ::protobuf::EnumOrUnknown<super::PunkLordAttackerStatus::PunkLordAttackerStatus>,
-    // @@protoc_insertion_point(field:JEIAEAEGEBJ.FDJHMFAGEOA)
-    pub FDJHMFAGEOA: ::protobuf::MessageField<super::GMDHIALLILJ::GMDHIALLILJ>,
     // @@protoc_insertion_point(field:JEIAEAEGEBJ.basic_info)
     pub basic_info: ::protobuf::MessageField<super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>,
+    // @@protoc_insertion_point(field:JEIAEAEGEBJ.FDJHMFAGEOA)
+    pub FDJHMFAGEOA: ::protobuf::MessageField<super::GMDHIALLILJ::GMDHIALLILJ>,
+    // @@protoc_insertion_point(field:JEIAEAEGEBJ.HCEENPENFGI)
+    pub HCEENPENFGI: ::protobuf::EnumOrUnknown<super::PunkLordAttackerStatus::PunkLordAttackerStatus>,
     // @@protoc_insertion_point(field:JEIAEAEGEBJ.HDHIFJNJOBK)
     pub HDHIFJNJOBK: u32,
     // special fields
@@ -55,20 +55,20 @@ impl JEIAEAEGEBJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCEENPENFGI",
-            |m: &JEIAEAEGEBJ| { &m.HCEENPENFGI },
-            |m: &mut JEIAEAEGEBJ| { &mut m.HCEENPENFGI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>(
+            "basic_info",
+            |m: &JEIAEAEGEBJ| { &m.basic_info },
+            |m: &mut JEIAEAEGEBJ| { &mut m.basic_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GMDHIALLILJ::GMDHIALLILJ>(
             "FDJHMFAGEOA",
             |m: &JEIAEAEGEBJ| { &m.FDJHMFAGEOA },
             |m: &mut JEIAEAEGEBJ| { &mut m.FDJHMFAGEOA },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>(
-            "basic_info",
-            |m: &JEIAEAEGEBJ| { &m.basic_info },
-            |m: &mut JEIAEAEGEBJ| { &mut m.basic_info },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HCEENPENFGI",
+            |m: &JEIAEAEGEBJ| { &m.HCEENPENFGI },
+            |m: &mut JEIAEAEGEBJ| { &mut m.HCEENPENFGI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HDHIFJNJOBK",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for JEIAEAEGEBJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.HCEENPENFGI = is.read_enum_or_unknown()?;
-                },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FDJHMFAGEOA)?;
-                },
-                66 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic_info)?;
                 },
-                96 => {
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FDJHMFAGEOA)?;
+                },
+                56 => {
+                    self.HCEENPENFGI = is.read_enum_or_unknown()?;
+                },
+                64 => {
                     self.HDHIFJNJOBK = is.read_uint32()?;
                 },
                 tag => {
@@ -117,19 +117,19 @@ impl ::protobuf::Message for JEIAEAEGEBJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HCEENPENFGI != ::protobuf::EnumOrUnknown::new(super::PunkLordAttackerStatus::PunkLordAttackerStatus::PunkLordAttackerStatus_None) {
-            my_size += ::protobuf::rt::int32_size(1, self.HCEENPENFGI.value());
+        if let Some(v) = self.basic_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.FDJHMFAGEOA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.basic_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.HCEENPENFGI != ::protobuf::EnumOrUnknown::new(super::PunkLordAttackerStatus::PunkLordAttackerStatus::PunkLordAttackerStatus_None) {
+            my_size += ::protobuf::rt::int32_size(7, self.HCEENPENFGI.value());
         }
         if self.HDHIFJNJOBK != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HDHIFJNJOBK);
+            my_size += ::protobuf::rt::uint32_size(8, self.HDHIFJNJOBK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for JEIAEAEGEBJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HCEENPENFGI != ::protobuf::EnumOrUnknown::new(super::PunkLordAttackerStatus::PunkLordAttackerStatus::PunkLordAttackerStatus_None) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.HCEENPENFGI))?;
+        if let Some(v) = self.basic_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if let Some(v) = self.FDJHMFAGEOA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if let Some(v) = self.basic_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if self.HCEENPENFGI != ::protobuf::EnumOrUnknown::new(super::PunkLordAttackerStatus::PunkLordAttackerStatus::PunkLordAttackerStatus_None) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.HCEENPENFGI))?;
         }
         if self.HDHIFJNJOBK != 0 {
-            os.write_uint32(12, self.HDHIFJNJOBK)?;
+            os.write_uint32(8, self.HDHIFJNJOBK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for JEIAEAEGEBJ {
     }
 
     fn clear(&mut self) {
-        self.HCEENPENFGI = ::protobuf::EnumOrUnknown::new(super::PunkLordAttackerStatus::PunkLordAttackerStatus::PunkLordAttackerStatus_None);
-        self.FDJHMFAGEOA.clear();
         self.basic_info.clear();
+        self.FDJHMFAGEOA.clear();
+        self.HCEENPENFGI = ::protobuf::EnumOrUnknown::new(super::PunkLordAttackerStatus::PunkLordAttackerStatus::PunkLordAttackerStatus_None);
         self.HDHIFJNJOBK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JEIAEAEGEBJ {
         static instance: JEIAEAEGEBJ = JEIAEAEGEBJ {
-            HCEENPENFGI: ::protobuf::EnumOrUnknown::from_i32(0),
-            FDJHMFAGEOA: ::protobuf::MessageField::none(),
             basic_info: ::protobuf::MessageField::none(),
+            FDJHMFAGEOA: ::protobuf::MessageField::none(),
+            HCEENPENFGI: ::protobuf::EnumOrUnknown::from_i32(0),
             HDHIFJNJOBK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -205,10 +205,10 @@ impl ::protobuf::reflect::ProtobufValue for JEIAEAEGEBJ {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JEIAEAEGEBJ.proto\x1a\x11GMDHIALLILJ.proto\x1a\x1cPunkLordAttacker\
     Status.proto\x1a\x1ePunkLordMonsterBasicInfo.proto\"\xd4\x01\n\x0bJEIAEA\
-    EGEBJ\x129\n\x0bHCEENPENFGI\x18\x01\x20\x01(\x0e2\x17.PunkLordAttackerSt\
-    atusR\x0bHCEENPENFGI\x12.\n\x0bFDJHMFAGEOA\x18\x04\x20\x01(\x0b2\x0c.GMD\
-    HIALLILJR\x0bFDJHMFAGEOA\x128\n\nbasic_info\x18\x08\x20\x01(\x0b2\x19.Pu\
-    nkLordMonsterBasicInfoR\tbasicInfo\x12\x20\n\x0bHDHIFJNJOBK\x18\x0c\x20\
+    EGEBJ\x128\n\nbasic_info\x18\x01\x20\x01(\x0b2\x19.PunkLordMonsterBasicI\
+    nfoR\tbasicInfo\x12.\n\x0bFDJHMFAGEOA\x18\x06\x20\x01(\x0b2\x0c.GMDHIALL\
+    ILJR\x0bFDJHMFAGEOA\x129\n\x0bHCEENPENFGI\x18\x07\x20\x01(\x0e2\x17.Punk\
+    LordAttackerStatusR\x0bHCEENPENFGI\x12\x20\n\x0bHDHIFJNJOBK\x18\x08\x20\
     \x01(\rR\x0bHDHIFJNJOBKb\x06proto3\
 ";
 

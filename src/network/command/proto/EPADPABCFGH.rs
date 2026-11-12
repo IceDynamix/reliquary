@@ -86,7 +86,7 @@ impl ::protobuf::Message for EPADPABCFGH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                64 => {
                     self.pos_index = is.read_uint32()?;
                 },
                 88 => {
@@ -108,7 +108,7 @@ impl ::protobuf::Message for EPADPABCFGH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.pos_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.pos_index);
+            my_size += ::protobuf::rt::uint32_size(8, self.pos_index);
         }
         if self.unique_id != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.unique_id);
@@ -123,7 +123,7 @@ impl ::protobuf::Message for EPADPABCFGH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.pos_index != 0 {
-            os.write_uint32(9, self.pos_index)?;
+            os.write_uint32(8, self.pos_index)?;
         }
         if self.unique_id != 0 {
             os.write_uint32(11, self.unique_id)?;
@@ -183,7 +183,7 @@ impl ::protobuf::reflect::ProtobufValue for EPADPABCFGH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EPADPABCFGH.proto\"i\n\x0bEPADPABCFGH\x12\x1b\n\tpos_index\x18\t\
+    \n\x11EPADPABCFGH.proto\"i\n\x0bEPADPABCFGH\x12\x1b\n\tpos_index\x18\x08\
     \x20\x01(\rR\x08posIndex\x12\x1b\n\tunique_id\x18\x0b\x20\x01(\rR\x08uni\
     queId\x12\x20\n\x0bIAAHNOFKNGN\x18\x0f\x20\x01(\rR\x0bIAAHNOFKNGNb\x06pr\
     oto3\

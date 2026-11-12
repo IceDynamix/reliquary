@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NEJPAGJBMDA {
     // message fields
-    // @@protoc_insertion_point(field:NEJPAGJBMDA.FGFFLBHLKDF)
-    pub FGFFLBHLKDF: u32,
     // @@protoc_insertion_point(field:NEJPAGJBMDA.OGNBANANFCC)
     pub OGNBANANFCC: bool,
+    // @@protoc_insertion_point(field:NEJPAGJBMDA.FGFFLBHLKDF)
+    pub FGFFLBHLKDF: u32,
     // message oneof groups
     pub MOKOADHEBBA: ::std::option::Option<nejpagjbmda::MOKOADHEBBA>,
     // special fields
@@ -50,7 +50,7 @@ impl NEJPAGJBMDA {
         ::std::default::Default::default()
     }
 
-    // .FEGKCMBHHJP NGALCDKBGBK = 6;
+    // .FEGKCMBHHJP NGALCDKBGBK = 7;
 
     pub fn NGALCDKBGBK(&self) -> &super::FEGKCMBHHJP::FEGKCMBHHJP {
         match self.MOKOADHEBBA {
@@ -99,7 +99,7 @@ impl NEJPAGJBMDA {
         }
     }
 
-    // .HJDCJNOFBHH AOLFPJFJPEO = 10;
+    // .HJDCJNOFBHH AOLFPJFJPEO = 14;
 
     pub fn AOLFPJFJPEO(&self) -> &super::HJDCJNOFBHH::HJDCJNOFBHH {
         match self.MOKOADHEBBA {
@@ -152,14 +152,14 @@ impl NEJPAGJBMDA {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FGFFLBHLKDF",
-            |m: &NEJPAGJBMDA| { &m.FGFFLBHLKDF },
-            |m: &mut NEJPAGJBMDA| { &mut m.FGFFLBHLKDF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OGNBANANFCC",
             |m: &NEJPAGJBMDA| { &m.OGNBANANFCC },
             |m: &mut NEJPAGJBMDA| { &mut m.OGNBANANFCC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FGFFLBHLKDF",
+            |m: &NEJPAGJBMDA| { &m.FGFFLBHLKDF },
+            |m: &mut NEJPAGJBMDA| { &mut m.FGFFLBHLKDF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FEGKCMBHHJP::FEGKCMBHHJP>(
             "NGALCDKBGBK",
@@ -195,15 +195,15 @@ impl ::protobuf::Message for NEJPAGJBMDA {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.FGFFLBHLKDF = is.read_uint32()?;
-                },
-                32 => {
                     self.OGNBANANFCC = is.read_bool()?;
                 },
-                50 => {
+                80 => {
+                    self.FGFFLBHLKDF = is.read_uint32()?;
+                },
+                58 => {
                     self.MOKOADHEBBA = ::std::option::Option::Some(nejpagjbmda::MOKOADHEBBA::NGALCDKBGBK(is.read_message()?));
                 },
-                82 => {
+                114 => {
                     self.MOKOADHEBBA = ::std::option::Option::Some(nejpagjbmda::MOKOADHEBBA::AOLFPJFJPEO(is.read_message()?));
                 },
                 tag => {
@@ -218,11 +218,11 @@ impl ::protobuf::Message for NEJPAGJBMDA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FGFFLBHLKDF != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FGFFLBHLKDF);
-        }
         if self.OGNBANANFCC != false {
             my_size += 1 + 1;
+        }
+        if self.FGFFLBHLKDF != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.FGFFLBHLKDF);
         }
         if let ::std::option::Option::Some(ref v) = self.MOKOADHEBBA {
             match v {
@@ -242,19 +242,19 @@ impl ::protobuf::Message for NEJPAGJBMDA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FGFFLBHLKDF != 0 {
-            os.write_uint32(2, self.FGFFLBHLKDF)?;
-        }
         if self.OGNBANANFCC != false {
-            os.write_bool(4, self.OGNBANANFCC)?;
+            os.write_bool(2, self.OGNBANANFCC)?;
+        }
+        if self.FGFFLBHLKDF != 0 {
+            os.write_uint32(10, self.FGFFLBHLKDF)?;
         }
         if let ::std::option::Option::Some(ref v) = self.MOKOADHEBBA {
             match v {
                 &nejpagjbmda::MOKOADHEBBA::NGALCDKBGBK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
                 &nejpagjbmda::MOKOADHEBBA::AOLFPJFJPEO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
         }
@@ -275,8 +275,8 @@ impl ::protobuf::Message for NEJPAGJBMDA {
     }
 
     fn clear(&mut self) {
-        self.FGFFLBHLKDF = 0;
         self.OGNBANANFCC = false;
+        self.FGFFLBHLKDF = 0;
         self.MOKOADHEBBA = ::std::option::Option::None;
         self.MOKOADHEBBA = ::std::option::Option::None;
         self.special_fields.clear();
@@ -284,8 +284,8 @@ impl ::protobuf::Message for NEJPAGJBMDA {
 
     fn default_instance() -> &'static NEJPAGJBMDA {
         static instance: NEJPAGJBMDA = NEJPAGJBMDA {
-            FGFFLBHLKDF: 0,
             OGNBANANFCC: false,
+            FGFFLBHLKDF: 0,
             MOKOADHEBBA: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -342,11 +342,11 @@ pub mod nejpagjbmda {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NEJPAGJBMDA.proto\x1a\x11FEGKCMBHHJP.proto\x1a\x11HJDCJNOFBHH.prot\
-    o\"\xc4\x01\n\x0bNEJPAGJBMDA\x12\x20\n\x0bFGFFLBHLKDF\x18\x02\x20\x01(\r\
-    R\x0bFGFFLBHLKDF\x12\x20\n\x0bOGNBANANFCC\x18\x04\x20\x01(\x08R\x0bOGNBA\
-    NANFCC\x120\n\x0bNGALCDKBGBK\x18\x06\x20\x01(\x0b2\x0c.FEGKCMBHHJPH\0R\
-    \x0bNGALCDKBGBK\x120\n\x0bAOLFPJFJPEO\x18\n\x20\x01(\x0b2\x0c.HJDCJNOFBH\
-    HH\0R\x0bAOLFPJFJPEOB\r\n\x0bMOKOADHEBBAb\x06proto3\
+    o\"\xc4\x01\n\x0bNEJPAGJBMDA\x12\x20\n\x0bOGNBANANFCC\x18\x02\x20\x01(\
+    \x08R\x0bOGNBANANFCC\x12\x20\n\x0bFGFFLBHLKDF\x18\n\x20\x01(\rR\x0bFGFFL\
+    BHLKDF\x120\n\x0bNGALCDKBGBK\x18\x07\x20\x01(\x0b2\x0c.FEGKCMBHHJPH\0R\
+    \x0bNGALCDKBGBK\x120\n\x0bAOLFPJFJPEO\x18\x0e\x20\x01(\x0b2\x0c.HJDCJNOF\
+    BHHH\0R\x0bAOLFPJFJPEOB\r\n\x0bMOKOADHEBBAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

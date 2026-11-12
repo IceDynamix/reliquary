@@ -45,56 +45,7 @@ impl FHBDPOJEEMJ {
         ::std::default::Default::default()
     }
 
-    // .EGAILAEBLIG ECCLOKPNFHP = 7;
-
-    pub fn ECCLOKPNFHP(&self) -> &super::EGAILAEBLIG::EGAILAEBLIG {
-        match self.KOEFMOAPDGI {
-            ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(ref v)) => v,
-            _ => <super::EGAILAEBLIG::EGAILAEBLIG as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_ECCLOKPNFHP(&mut self) {
-        self.KOEFMOAPDGI = ::std::option::Option::None;
-    }
-
-    pub fn has_ECCLOKPNFHP(&self) -> bool {
-        match self.KOEFMOAPDGI {
-            ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_ECCLOKPNFHP(&mut self, v: super::EGAILAEBLIG::EGAILAEBLIG) {
-        self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_ECCLOKPNFHP(&mut self) -> &mut super::EGAILAEBLIG::EGAILAEBLIG {
-        if let ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(_)) = self.KOEFMOAPDGI {
-        } else {
-            self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(super::EGAILAEBLIG::EGAILAEBLIG::new()));
-        }
-        match self.KOEFMOAPDGI {
-            ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_ECCLOKPNFHP(&mut self) -> super::EGAILAEBLIG::EGAILAEBLIG {
-        if self.has_ECCLOKPNFHP() {
-            match self.KOEFMOAPDGI.take() {
-                ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::EGAILAEBLIG::EGAILAEBLIG::new()
-        }
-    }
-
-    // .HLEBBGFAKAK HDFLCOIDCPE = 8;
+    // .HLEBBGFAKAK HDFLCOIDCPE = 4;
 
     pub fn HDFLCOIDCPE(&self) -> &super::HLEBBGFAKAK::HLEBBGFAKAK {
         match self.KOEFMOAPDGI {
@@ -143,7 +94,7 @@ impl FHBDPOJEEMJ {
         }
     }
 
-    // .DJEECBNBGMN HHBPBGMNGPN = 15;
+    // .DJEECBNBGMN HHBPBGMNGPN = 5;
 
     pub fn HHBPBGMNGPN(&self) -> &super::DJEECBNBGMN::DJEECBNBGMN {
         match self.KOEFMOAPDGI {
@@ -192,16 +143,58 @@ impl FHBDPOJEEMJ {
         }
     }
 
+    // .EGAILAEBLIG ECCLOKPNFHP = 14;
+
+    pub fn ECCLOKPNFHP(&self) -> &super::EGAILAEBLIG::EGAILAEBLIG {
+        match self.KOEFMOAPDGI {
+            ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(ref v)) => v,
+            _ => <super::EGAILAEBLIG::EGAILAEBLIG as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_ECCLOKPNFHP(&mut self) {
+        self.KOEFMOAPDGI = ::std::option::Option::None;
+    }
+
+    pub fn has_ECCLOKPNFHP(&self) -> bool {
+        match self.KOEFMOAPDGI {
+            ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_ECCLOKPNFHP(&mut self, v: super::EGAILAEBLIG::EGAILAEBLIG) {
+        self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_ECCLOKPNFHP(&mut self) -> &mut super::EGAILAEBLIG::EGAILAEBLIG {
+        if let ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(_)) = self.KOEFMOAPDGI {
+        } else {
+            self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(super::EGAILAEBLIG::EGAILAEBLIG::new()));
+        }
+        match self.KOEFMOAPDGI {
+            ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_ECCLOKPNFHP(&mut self) -> super::EGAILAEBLIG::EGAILAEBLIG {
+        if self.has_ECCLOKPNFHP() {
+            match self.KOEFMOAPDGI.take() {
+                ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::EGAILAEBLIG::EGAILAEBLIG::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EGAILAEBLIG::EGAILAEBLIG>(
-            "ECCLOKPNFHP",
-            FHBDPOJEEMJ::has_ECCLOKPNFHP,
-            FHBDPOJEEMJ::ECCLOKPNFHP,
-            FHBDPOJEEMJ::mut_ECCLOKPNFHP,
-            FHBDPOJEEMJ::set_ECCLOKPNFHP,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HLEBBGFAKAK::HLEBBGFAKAK>(
             "HDFLCOIDCPE",
             FHBDPOJEEMJ::has_HDFLCOIDCPE,
@@ -215,6 +208,13 @@ impl FHBDPOJEEMJ {
             FHBDPOJEEMJ::HHBPBGMNGPN,
             FHBDPOJEEMJ::mut_HHBPBGMNGPN,
             FHBDPOJEEMJ::set_HHBPBGMNGPN,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EGAILAEBLIG::EGAILAEBLIG>(
+            "ECCLOKPNFHP",
+            FHBDPOJEEMJ::has_ECCLOKPNFHP,
+            FHBDPOJEEMJ::ECCLOKPNFHP,
+            FHBDPOJEEMJ::mut_ECCLOKPNFHP,
+            FHBDPOJEEMJ::set_ECCLOKPNFHP,
         ));
         oneofs.push(fhbdpojeemj::KOEFMOAPDGI::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FHBDPOJEEMJ>(
@@ -235,14 +235,14 @@ impl ::protobuf::Message for FHBDPOJEEMJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(is.read_message()?));
-                },
-                66 => {
+                34 => {
                     self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::HDFLCOIDCPE(is.read_message()?));
                 },
-                122 => {
+                42 => {
                     self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::HHBPBGMNGPN(is.read_message()?));
+                },
+                114 => {
+                    self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -258,15 +258,15 @@ impl ::protobuf::Message for FHBDPOJEEMJ {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.KOEFMOAPDGI {
             match v {
-                &fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
                 &fhbdpojeemj::KOEFMOAPDGI::HDFLCOIDCPE(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &fhbdpojeemj::KOEFMOAPDGI::HHBPBGMNGPN(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -280,14 +280,14 @@ impl ::protobuf::Message for FHBDPOJEEMJ {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.KOEFMOAPDGI {
             match v {
-                &fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-                },
                 &fhbdpojeemj::KOEFMOAPDGI::HDFLCOIDCPE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
                 &fhbdpojeemj::KOEFMOAPDGI::HHBPBGMNGPN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                },
+                &fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
         }
@@ -347,12 +347,12 @@ pub mod fhbdpojeemj {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:FHBDPOJEEMJ.KOEFMOAPDGI)
     pub enum KOEFMOAPDGI {
-        // @@protoc_insertion_point(oneof_field:FHBDPOJEEMJ.ECCLOKPNFHP)
-        ECCLOKPNFHP(super::super::EGAILAEBLIG::EGAILAEBLIG),
         // @@protoc_insertion_point(oneof_field:FHBDPOJEEMJ.HDFLCOIDCPE)
         HDFLCOIDCPE(super::super::HLEBBGFAKAK::HLEBBGFAKAK),
         // @@protoc_insertion_point(oneof_field:FHBDPOJEEMJ.HHBPBGMNGPN)
         HHBPBGMNGPN(super::super::DJEECBNBGMN::DJEECBNBGMN),
+        // @@protoc_insertion_point(oneof_field:FHBDPOJEEMJ.ECCLOKPNFHP)
+        ECCLOKPNFHP(super::super::EGAILAEBLIG::EGAILAEBLIG),
     }
 
     impl ::protobuf::Oneof for KOEFMOAPDGI {
@@ -374,11 +374,11 @@ pub mod fhbdpojeemj {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FHBDPOJEEMJ.proto\x1a\x11DJEECBNBGMN.proto\x1a\x11EGAILAEBLIG.prot\
-    o\x1a\x11HLEBBGFAKAK.proto\"\xb2\x01\n\x0bFHBDPOJEEMJ\x120\n\x0bECCLOKPN\
-    FHP\x18\x07\x20\x01(\x0b2\x0c.EGAILAEBLIGH\0R\x0bECCLOKPNFHP\x120\n\x0bH\
-    DFLCOIDCPE\x18\x08\x20\x01(\x0b2\x0c.HLEBBGFAKAKH\0R\x0bHDFLCOIDCPE\x120\
-    \n\x0bHHBPBGMNGPN\x18\x0f\x20\x01(\x0b2\x0c.DJEECBNBGMNH\0R\x0bHHBPBGMNG\
-    PNB\r\n\x0bKOEFMOAPDGIb\x06proto3\
+    o\x1a\x11HLEBBGFAKAK.proto\"\xb2\x01\n\x0bFHBDPOJEEMJ\x120\n\x0bHDFLCOID\
+    CPE\x18\x04\x20\x01(\x0b2\x0c.HLEBBGFAKAKH\0R\x0bHDFLCOIDCPE\x120\n\x0bH\
+    HBPBGMNGPN\x18\x05\x20\x01(\x0b2\x0c.DJEECBNBGMNH\0R\x0bHHBPBGMNGPN\x120\
+    \n\x0bECCLOKPNFHP\x18\x0e\x20\x01(\x0b2\x0c.EGAILAEBLIGH\0R\x0bECCLOKPNF\
+    HPB\r\n\x0bKOEFMOAPDGIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

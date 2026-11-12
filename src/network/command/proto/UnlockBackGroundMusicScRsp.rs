@@ -89,13 +89,13 @@ impl ::protobuf::Message for UnlockBackGroundMusicScRsp {
                 10 => {
                     self.IOKAJIBHLMP.push(is.read_message()?);
                 },
-                82 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.BPFGBEBPEDP)?;
                 },
-                80 => {
+                24 => {
                     self.BPFGBEBPEDP.push(is.read_uint32()?);
                 },
-                88 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -114,9 +114,9 @@ impl ::protobuf::Message for UnlockBackGroundMusicScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.BPFGBEBPEDP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.BPFGBEBPEDP);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -127,9 +127,9 @@ impl ::protobuf::Message for UnlockBackGroundMusicScRsp {
         for v in &self.IOKAJIBHLMP {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        os.write_repeated_packed_uint32(10, &self.BPFGBEBPEDP)?;
+        os.write_repeated_packed_uint32(3, &self.BPFGBEBPEDP)?;
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,7 +186,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20UnlockBackGroundMusicScRsp.proto\x1a\x11LHHGCDLCJDA.proto\"\x88\
     \x01\n\x1aUnlockBackGroundMusicScRsp\x12.\n\x0bIOKAJIBHLMP\x18\x01\x20\
     \x03(\x0b2\x0c.LHHGCDLCJDAR\x0bIOKAJIBHLMP\x12\x20\n\x0bBPFGBEBPEDP\x18\
-    \n\x20\x03(\rR\x0bBPFGBEBPEDP\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\
+    \x03\x20\x03(\rR\x0bBPFGBEBPEDP\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\
     \x07retcodeb\x06proto3\
 ";
 

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LNAAACICHPG {
     // message fields
-    // @@protoc_insertion_point(field:LNAAACICHPG.summoned_pet_id)
-    pub summoned_pet_id: u32,
     // @@protoc_insertion_point(field:LNAAACICHPG.NDMHOKEGOAP)
     pub NDMHOKEGOAP: u32,
+    // @@protoc_insertion_point(field:LNAAACICHPG.summoned_pet_id)
+    pub summoned_pet_id: u32,
     // @@protoc_insertion_point(field:LNAAACICHPG.ONMDDKGCEHK)
     pub ONMDDKGCEHK: u64,
     // special fields
@@ -54,14 +54,14 @@ impl LNAAACICHPG {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "summoned_pet_id",
-            |m: &LNAAACICHPG| { &m.summoned_pet_id },
-            |m: &mut LNAAACICHPG| { &mut m.summoned_pet_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NDMHOKEGOAP",
             |m: &LNAAACICHPG| { &m.NDMHOKEGOAP },
             |m: &mut LNAAACICHPG| { &mut m.NDMHOKEGOAP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "summoned_pet_id",
+            |m: &LNAAACICHPG| { &m.summoned_pet_id },
+            |m: &mut LNAAACICHPG| { &mut m.summoned_pet_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ONMDDKGCEHK",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for LNAAACICHPG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.summoned_pet_id = is.read_uint32()?;
-                },
-                88 => {
+                56 => {
                     self.NDMHOKEGOAP = is.read_uint32()?;
                 },
-                104 => {
+                64 => {
+                    self.summoned_pet_id = is.read_uint32()?;
+                },
+                80 => {
                     self.ONMDDKGCEHK = is.read_uint64()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for LNAAACICHPG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.summoned_pet_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.summoned_pet_id);
-        }
         if self.NDMHOKEGOAP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NDMHOKEGOAP);
+            my_size += ::protobuf::rt::uint32_size(7, self.NDMHOKEGOAP);
+        }
+        if self.summoned_pet_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.summoned_pet_id);
         }
         if self.ONMDDKGCEHK != 0 {
-            my_size += ::protobuf::rt::uint64_size(13, self.ONMDDKGCEHK);
+            my_size += ::protobuf::rt::uint64_size(10, self.ONMDDKGCEHK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for LNAAACICHPG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.summoned_pet_id != 0 {
-            os.write_uint32(1, self.summoned_pet_id)?;
-        }
         if self.NDMHOKEGOAP != 0 {
-            os.write_uint32(11, self.NDMHOKEGOAP)?;
+            os.write_uint32(7, self.NDMHOKEGOAP)?;
+        }
+        if self.summoned_pet_id != 0 {
+            os.write_uint32(8, self.summoned_pet_id)?;
         }
         if self.ONMDDKGCEHK != 0 {
-            os.write_uint64(13, self.ONMDDKGCEHK)?;
+            os.write_uint64(10, self.ONMDDKGCEHK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for LNAAACICHPG {
     }
 
     fn clear(&mut self) {
-        self.summoned_pet_id = 0;
         self.NDMHOKEGOAP = 0;
+        self.summoned_pet_id = 0;
         self.ONMDDKGCEHK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LNAAACICHPG {
         static instance: LNAAACICHPG = LNAAACICHPG {
-            summoned_pet_id: 0,
             NDMHOKEGOAP: 0,
+            summoned_pet_id: 0,
             ONMDDKGCEHK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for LNAAACICHPG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LNAAACICHPG.proto\"y\n\x0bLNAAACICHPG\x12&\n\x0fsummoned_pet_id\
-    \x18\x01\x20\x01(\rR\rsummonedPetId\x12\x20\n\x0bNDMHOKEGOAP\x18\x0b\x20\
-    \x01(\rR\x0bNDMHOKEGOAP\x12\x20\n\x0bONMDDKGCEHK\x18\r\x20\x01(\x04R\x0b\
+    \n\x11LNAAACICHPG.proto\"y\n\x0bLNAAACICHPG\x12\x20\n\x0bNDMHOKEGOAP\x18\
+    \x07\x20\x01(\rR\x0bNDMHOKEGOAP\x12&\n\x0fsummoned_pet_id\x18\x08\x20\
+    \x01(\rR\rsummonedPetId\x12\x20\n\x0bONMDDKGCEHK\x18\n\x20\x01(\x04R\x0b\
     ONMDDKGCEHKb\x06proto3\
 ";
 

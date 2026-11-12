@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CABIEDFJFBI {
     // message fields
+    // @@protoc_insertion_point(field:CABIEDFJFBI.rank)
+    pub rank: u32,
+    // @@protoc_insertion_point(field:CABIEDFJFBI.GMCCILGOMLI)
+    pub GMCCILGOMLI: ::protobuf::EnumOrUnknown<super::EJLGEOKIJKH::EJLGEOKIJKH>,
     // @@protoc_insertion_point(field:CABIEDFJFBI.FDKPCNBCGEG)
     pub FDKPCNBCGEG: u32,
     // @@protoc_insertion_point(field:CABIEDFJFBI.PMGEPADBKKK)
     pub PMGEPADBKKK: bool,
-    // @@protoc_insertion_point(field:CABIEDFJFBI.GMCCILGOMLI)
-    pub GMCCILGOMLI: ::protobuf::EnumOrUnknown<super::EJLGEOKIJKH::EJLGEOKIJKH>,
-    // @@protoc_insertion_point(field:CABIEDFJFBI.rank)
-    pub rank: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CABIEDFJFBI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,6 +56,16 @@ impl CABIEDFJFBI {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rank",
+            |m: &CABIEDFJFBI| { &m.rank },
+            |m: &mut CABIEDFJFBI| { &mut m.rank },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GMCCILGOMLI",
+            |m: &CABIEDFJFBI| { &m.GMCCILGOMLI },
+            |m: &mut CABIEDFJFBI| { &mut m.GMCCILGOMLI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FDKPCNBCGEG",
             |m: &CABIEDFJFBI| { &m.FDKPCNBCGEG },
             |m: &mut CABIEDFJFBI| { &mut m.FDKPCNBCGEG },
@@ -64,16 +74,6 @@ impl CABIEDFJFBI {
             "PMGEPADBKKK",
             |m: &CABIEDFJFBI| { &m.PMGEPADBKKK },
             |m: &mut CABIEDFJFBI| { &mut m.PMGEPADBKKK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMCCILGOMLI",
-            |m: &CABIEDFJFBI| { &m.GMCCILGOMLI },
-            |m: &mut CABIEDFJFBI| { &mut m.GMCCILGOMLI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &CABIEDFJFBI| { &m.rank },
-            |m: &mut CABIEDFJFBI| { &mut m.rank },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CABIEDFJFBI>(
             "CABIEDFJFBI",
@@ -94,16 +94,16 @@ impl ::protobuf::Message for CABIEDFJFBI {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.FDKPCNBCGEG = is.read_uint32()?;
+                    self.rank = is.read_uint32()?;
                 },
-                24 => {
-                    self.PMGEPADBKKK = is.read_bool()?;
-                },
-                88 => {
+                40 => {
                     self.GMCCILGOMLI = is.read_enum_or_unknown()?;
                 },
-                120 => {
-                    self.rank = is.read_uint32()?;
+                64 => {
+                    self.FDKPCNBCGEG = is.read_uint32()?;
+                },
+                112 => {
+                    self.PMGEPADBKKK = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for CABIEDFJFBI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.rank != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.rank);
+        }
+        if self.GMCCILGOMLI != ::protobuf::EnumOrUnknown::new(super::EJLGEOKIJKH::EJLGEOKIJKH::EJLGEOKIJKH_FOFDFIOGIDL) {
+            my_size += ::protobuf::rt::int32_size(5, self.GMCCILGOMLI.value());
+        }
         if self.FDKPCNBCGEG != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FDKPCNBCGEG);
+            my_size += ::protobuf::rt::uint32_size(8, self.FDKPCNBCGEG);
         }
         if self.PMGEPADBKKK != false {
             my_size += 1 + 1;
-        }
-        if self.GMCCILGOMLI != ::protobuf::EnumOrUnknown::new(super::EJLGEOKIJKH::EJLGEOKIJKH::EJLGEOKIJKH_FOFDFIOGIDL) {
-            my_size += ::protobuf::rt::int32_size(11, self.GMCCILGOMLI.value());
-        }
-        if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.rank);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for CABIEDFJFBI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FDKPCNBCGEG != 0 {
-            os.write_uint32(2, self.FDKPCNBCGEG)?;
-        }
-        if self.PMGEPADBKKK != false {
-            os.write_bool(3, self.PMGEPADBKKK)?;
+        if self.rank != 0 {
+            os.write_uint32(2, self.rank)?;
         }
         if self.GMCCILGOMLI != ::protobuf::EnumOrUnknown::new(super::EJLGEOKIJKH::EJLGEOKIJKH::EJLGEOKIJKH_FOFDFIOGIDL) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.GMCCILGOMLI))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.GMCCILGOMLI))?;
         }
-        if self.rank != 0 {
-            os.write_uint32(15, self.rank)?;
+        if self.FDKPCNBCGEG != 0 {
+            os.write_uint32(8, self.FDKPCNBCGEG)?;
+        }
+        if self.PMGEPADBKKK != false {
+            os.write_bool(14, self.PMGEPADBKKK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for CABIEDFJFBI {
     }
 
     fn clear(&mut self) {
+        self.rank = 0;
+        self.GMCCILGOMLI = ::protobuf::EnumOrUnknown::new(super::EJLGEOKIJKH::EJLGEOKIJKH::EJLGEOKIJKH_FOFDFIOGIDL);
         self.FDKPCNBCGEG = 0;
         self.PMGEPADBKKK = false;
-        self.GMCCILGOMLI = ::protobuf::EnumOrUnknown::new(super::EJLGEOKIJKH::EJLGEOKIJKH::EJLGEOKIJKH_FOFDFIOGIDL);
-        self.rank = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CABIEDFJFBI {
         static instance: CABIEDFJFBI = CABIEDFJFBI {
+            rank: 0,
+            GMCCILGOMLI: ::protobuf::EnumOrUnknown::from_i32(0),
             FDKPCNBCGEG: 0,
             PMGEPADBKKK: false,
-            GMCCILGOMLI: ::protobuf::EnumOrUnknown::from_i32(0),
-            rank: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for CABIEDFJFBI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CABIEDFJFBI.proto\x1a\x11EJLGEOKIJKH.proto\"\x95\x01\n\x0bCABIEDFJ\
-    FBI\x12\x20\n\x0bFDKPCNBCGEG\x18\x02\x20\x01(\rR\x0bFDKPCNBCGEG\x12\x20\
-    \n\x0bPMGEPADBKKK\x18\x03\x20\x01(\x08R\x0bPMGEPADBKKK\x12.\n\x0bGMCCILG\
-    OMLI\x18\x0b\x20\x01(\x0e2\x0c.EJLGEOKIJKHR\x0bGMCCILGOMLI\x12\x12\n\x04\
-    rank\x18\x0f\x20\x01(\rR\x04rankb\x06proto3\
+    FBI\x12\x12\n\x04rank\x18\x02\x20\x01(\rR\x04rank\x12.\n\x0bGMCCILGOMLI\
+    \x18\x05\x20\x01(\x0e2\x0c.EJLGEOKIJKHR\x0bGMCCILGOMLI\x12\x20\n\x0bFDKP\
+    CNBCGEG\x18\x08\x20\x01(\rR\x0bFDKPCNBCGEG\x12\x20\n\x0bPMGEPADBKKK\x18\
+    \x0e\x20\x01(\x08R\x0bPMGEPADBKKKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

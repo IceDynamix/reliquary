@@ -82,7 +82,7 @@ impl ::protobuf::Message for EnteredSceneInfo {
                 56 => {
                     self.plane_id = is.read_uint32()?;
                 },
-                104 => {
+                88 => {
                     self.floor_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for EnteredSceneInfo {
             my_size += ::protobuf::rt::uint32_size(7, self.plane_id);
         }
         if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.floor_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.floor_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for EnteredSceneInfo {
             os.write_uint32(7, self.plane_id)?;
         }
         if self.floor_id != 0 {
-            os.write_uint32(13, self.floor_id)?;
+            os.write_uint32(11, self.floor_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for EnteredSceneInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16EnteredSceneInfo.proto\"H\n\x10EnteredSceneInfo\x12\x19\n\x08plane\
-    _id\x18\x07\x20\x01(\rR\x07planeId\x12\x19\n\x08floor_id\x18\r\x20\x01(\
-    \rR\x07floorIdb\x06proto3\
+    _id\x18\x07\x20\x01(\rR\x07planeId\x12\x19\n\x08floor_id\x18\x0b\x20\x01\
+    (\rR\x07floorIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

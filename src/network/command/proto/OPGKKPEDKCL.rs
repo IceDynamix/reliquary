@@ -30,14 +30,14 @@ pub struct OPGKKPEDKCL {
     // message fields
     // @@protoc_insertion_point(field:OPGKKPEDKCL.EGGJFCELHNK)
     pub EGGJFCELHNK: ::std::vec::Vec<super::ICGOLPHCKIL::ICGOLPHCKIL>,
+    // @@protoc_insertion_point(field:OPGKKPEDKCL.EGGJMKCABEF)
+    pub EGGJMKCABEF: u64,
+    // @@protoc_insertion_point(field:OPGKKPEDKCL.JEMFDEEFPFM)
+    pub JEMFDEEFPFM: ::std::vec::Vec<super::LuckyKoiInfoList::LuckyKoiInfoList>,
     // @@protoc_insertion_point(field:OPGKKPEDKCL.begin_time)
     pub begin_time: u64,
     // @@protoc_insertion_point(field:OPGKKPEDKCL.end_time)
     pub end_time: u64,
-    // @@protoc_insertion_point(field:OPGKKPEDKCL.JEMFDEEFPFM)
-    pub JEMFDEEFPFM: ::std::vec::Vec<super::LuckyKoiInfoList::LuckyKoiInfoList>,
-    // @@protoc_insertion_point(field:OPGKKPEDKCL.EGGJMKCABEF)
-    pub EGGJMKCABEF: u64,
     // @@protoc_insertion_point(field:OPGKKPEDKCL.MACLJJCIDEJ)
     pub MACLJJCIDEJ: u32,
     // special fields
@@ -65,6 +65,16 @@ impl OPGKKPEDKCL {
             |m: &mut OPGKKPEDKCL| { &mut m.EGGJFCELHNK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EGGJMKCABEF",
+            |m: &OPGKKPEDKCL| { &m.EGGJMKCABEF },
+            |m: &mut OPGKKPEDKCL| { &mut m.EGGJMKCABEF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JEMFDEEFPFM",
+            |m: &OPGKKPEDKCL| { &m.JEMFDEEFPFM },
+            |m: &mut OPGKKPEDKCL| { &mut m.JEMFDEEFPFM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "begin_time",
             |m: &OPGKKPEDKCL| { &m.begin_time },
             |m: &mut OPGKKPEDKCL| { &mut m.begin_time },
@@ -73,16 +83,6 @@ impl OPGKKPEDKCL {
             "end_time",
             |m: &OPGKKPEDKCL| { &m.end_time },
             |m: &mut OPGKKPEDKCL| { &mut m.end_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JEMFDEEFPFM",
-            |m: &OPGKKPEDKCL| { &m.JEMFDEEFPFM },
-            |m: &mut OPGKKPEDKCL| { &mut m.JEMFDEEFPFM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGGJMKCABEF",
-            |m: &OPGKKPEDKCL| { &m.EGGJMKCABEF },
-            |m: &mut OPGKKPEDKCL| { &mut m.EGGJMKCABEF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MACLJJCIDEJ",
@@ -107,22 +107,22 @@ impl ::protobuf::Message for OPGKKPEDKCL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                10 => {
                     self.EGGJFCELHNK.push(is.read_message()?);
                 },
-                32 => {
-                    self.begin_time = is.read_uint64()?;
-                },
-                48 => {
-                    self.end_time = is.read_uint64()?;
-                },
-                66 => {
-                    self.JEMFDEEFPFM.push(is.read_message()?);
-                },
-                88 => {
+                16 => {
                     self.EGGJMKCABEF = is.read_uint64()?;
                 },
-                120 => {
+                58 => {
+                    self.JEMFDEEFPFM.push(is.read_message()?);
+                },
+                80 => {
+                    self.begin_time = is.read_uint64()?;
+                },
+                88 => {
+                    self.end_time = is.read_uint64()?;
+                },
+                112 => {
                     self.MACLJJCIDEJ = is.read_uint32()?;
                 },
                 tag => {
@@ -141,21 +141,21 @@ impl ::protobuf::Message for OPGKKPEDKCL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.begin_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(4, self.begin_time);
-        }
-        if self.end_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.end_time);
+        if self.EGGJMKCABEF != 0 {
+            my_size += ::protobuf::rt::uint64_size(2, self.EGGJMKCABEF);
         }
         for value in &self.JEMFDEEFPFM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.EGGJMKCABEF != 0 {
-            my_size += ::protobuf::rt::uint64_size(11, self.EGGJMKCABEF);
+        if self.begin_time != 0 {
+            my_size += ::protobuf::rt::uint64_size(10, self.begin_time);
+        }
+        if self.end_time != 0 {
+            my_size += ::protobuf::rt::uint64_size(11, self.end_time);
         }
         if self.MACLJJCIDEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.MACLJJCIDEJ);
+            my_size += ::protobuf::rt::uint32_size(14, self.MACLJJCIDEJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -164,22 +164,22 @@ impl ::protobuf::Message for OPGKKPEDKCL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.EGGJFCELHNK {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
-        if self.begin_time != 0 {
-            os.write_uint64(4, self.begin_time)?;
-        }
-        if self.end_time != 0 {
-            os.write_uint64(6, self.end_time)?;
-        }
-        for v in &self.JEMFDEEFPFM {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if self.EGGJMKCABEF != 0 {
-            os.write_uint64(11, self.EGGJMKCABEF)?;
+            os.write_uint64(2, self.EGGJMKCABEF)?;
+        }
+        for v in &self.JEMFDEEFPFM {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
+        if self.begin_time != 0 {
+            os.write_uint64(10, self.begin_time)?;
+        }
+        if self.end_time != 0 {
+            os.write_uint64(11, self.end_time)?;
         }
         if self.MACLJJCIDEJ != 0 {
-            os.write_uint32(15, self.MACLJJCIDEJ)?;
+            os.write_uint32(14, self.MACLJJCIDEJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -199,10 +199,10 @@ impl ::protobuf::Message for OPGKKPEDKCL {
 
     fn clear(&mut self) {
         self.EGGJFCELHNK.clear();
+        self.EGGJMKCABEF = 0;
+        self.JEMFDEEFPFM.clear();
         self.begin_time = 0;
         self.end_time = 0;
-        self.JEMFDEEFPFM.clear();
-        self.EGGJMKCABEF = 0;
         self.MACLJJCIDEJ = 0;
         self.special_fields.clear();
     }
@@ -210,10 +210,10 @@ impl ::protobuf::Message for OPGKKPEDKCL {
     fn default_instance() -> &'static OPGKKPEDKCL {
         static instance: OPGKKPEDKCL = OPGKKPEDKCL {
             EGGJFCELHNK: ::std::vec::Vec::new(),
+            EGGJMKCABEF: 0,
+            JEMFDEEFPFM: ::std::vec::Vec::new(),
             begin_time: 0,
             end_time: 0,
-            JEMFDEEFPFM: ::std::vec::Vec::new(),
-            EGGJMKCABEF: 0,
             MACLJJCIDEJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -240,13 +240,13 @@ impl ::protobuf::reflect::ProtobufValue for OPGKKPEDKCL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OPGKKPEDKCL.proto\x1a\x11ICGOLPHCKIL.proto\x1a\x16LuckyKoiInfoList\
-    .proto\"\xf0\x01\n\x0bOPGKKPEDKCL\x12.\n\x0bEGGJFCELHNK\x18\x03\x20\x03(\
-    \x0b2\x0c.ICGOLPHCKILR\x0bEGGJFCELHNK\x12\x1d\n\nbegin_time\x18\x04\x20\
-    \x01(\x04R\tbeginTime\x12\x19\n\x08end_time\x18\x06\x20\x01(\x04R\x07end\
-    Time\x123\n\x0bJEMFDEEFPFM\x18\x08\x20\x03(\x0b2\x11.LuckyKoiInfoListR\
-    \x0bJEMFDEEFPFM\x12\x20\n\x0bEGGJMKCABEF\x18\x0b\x20\x01(\x04R\x0bEGGJMK\
-    CABEF\x12\x20\n\x0bMACLJJCIDEJ\x18\x0f\x20\x01(\rR\x0bMACLJJCIDEJb\x06pr\
-    oto3\
+    .proto\"\xf0\x01\n\x0bOPGKKPEDKCL\x12.\n\x0bEGGJFCELHNK\x18\x01\x20\x03(\
+    \x0b2\x0c.ICGOLPHCKILR\x0bEGGJFCELHNK\x12\x20\n\x0bEGGJMKCABEF\x18\x02\
+    \x20\x01(\x04R\x0bEGGJMKCABEF\x123\n\x0bJEMFDEEFPFM\x18\x07\x20\x03(\x0b\
+    2\x11.LuckyKoiInfoListR\x0bJEMFDEEFPFM\x12\x1d\n\nbegin_time\x18\n\x20\
+    \x01(\x04R\tbeginTime\x12\x19\n\x08end_time\x18\x0b\x20\x01(\x04R\x07end\
+    Time\x12\x20\n\x0bMACLJJCIDEJ\x18\x0e\x20\x01(\rR\x0bMACLJJCIDEJb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

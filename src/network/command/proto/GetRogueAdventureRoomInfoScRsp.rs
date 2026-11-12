@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRogueAdventureRoomInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetRogueAdventureRoomInfoScRsp.DJMHHMMABJL)
-    pub DJMHHMMABJL: ::protobuf::MessageField<super::HHAGOFKBFAP::HHAGOFKBFAP>,
     // @@protoc_insertion_point(field:GetRogueAdventureRoomInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetRogueAdventureRoomInfoScRsp.DJMHHMMABJL)
+    pub DJMHHMMABJL: ::protobuf::MessageField<super::HHAGOFKBFAP::HHAGOFKBFAP>,
     // special fields
     // @@protoc_insertion_point(special_field:GetRogueAdventureRoomInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetRogueAdventureRoomInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HHAGOFKBFAP::HHAGOFKBFAP>(
-            "DJMHHMMABJL",
-            |m: &GetRogueAdventureRoomInfoScRsp| { &m.DJMHHMMABJL },
-            |m: &mut GetRogueAdventureRoomInfoScRsp| { &mut m.DJMHHMMABJL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetRogueAdventureRoomInfoScRsp| { &m.retcode },
             |m: &mut GetRogueAdventureRoomInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HHAGOFKBFAP::HHAGOFKBFAP>(
+            "DJMHHMMABJL",
+            |m: &GetRogueAdventureRoomInfoScRsp| { &m.DJMHHMMABJL },
+            |m: &mut GetRogueAdventureRoomInfoScRsp| { &mut m.DJMHHMMABJL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRogueAdventureRoomInfoScRsp>(
             "GetRogueAdventureRoomInfoScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetRogueAdventureRoomInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DJMHHMMABJL)?;
-                },
-                120 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DJMHHMMABJL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for GetRogueAdventureRoomInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
         if let Some(v) = self.DJMHHMMABJL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetRogueAdventureRoomInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DJMHHMMABJL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
+        }
+        if let Some(v) = self.DJMHHMMABJL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetRogueAdventureRoomInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.DJMHHMMABJL.clear();
         self.retcode = 0;
+        self.DJMHHMMABJL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRogueAdventureRoomInfoScRsp {
         static instance: GetRogueAdventureRoomInfoScRsp = GetRogueAdventureRoomInfoScRsp {
-            DJMHHMMABJL: ::protobuf::MessageField::none(),
             retcode: 0,
+            DJMHHMMABJL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueAdventureRoomInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$GetRogueAdventureRoomInfoScRsp.proto\x1a\x11HHAGOFKBFAP.proto\"j\n\
-    \x1eGetRogueAdventureRoomInfoScRsp\x12.\n\x0bDJMHHMMABJL\x18\r\x20\x01(\
-    \x0b2\x0c.HHAGOFKBFAPR\x0bDJMHHMMABJL\x12\x18\n\x07retcode\x18\x0f\x20\
-    \x01(\rR\x07retcodeb\x06proto3\
+    \x1eGetRogueAdventureRoomInfoScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\
+    \rR\x07retcode\x12.\n\x0bDJMHHMMABJL\x18\x0e\x20\x01(\x0b2\x0c.HHAGOFKBF\
+    APR\x0bDJMHHMMABJLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

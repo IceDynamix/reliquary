@@ -72,7 +72,7 @@ impl ::protobuf::Message for OHPMDJFALNH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                80 => {
                     self.content_id = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for OHPMDJFALNH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.content_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.content_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for OHPMDJFALNH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.content_id != 0 {
-            os.write_uint32(13, self.content_id)?;
+            os.write_uint32(10, self.content_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for OHPMDJFALNH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OHPMDJFALNH.proto\",\n\x0bOHPMDJFALNH\x12\x1d\n\ncontent_id\x18\r\
+    \n\x11OHPMDJFALNH.proto\",\n\x0bOHPMDJFALNH\x12\x1d\n\ncontent_id\x18\n\
     \x20\x01(\rR\tcontentIdb\x06proto3\
 ";
 

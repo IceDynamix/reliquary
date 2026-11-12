@@ -79,10 +79,10 @@ impl ::protobuf::Message for DAAKGEDPPJJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                24 => {
                     self.func_id = is.read_uint32()?;
                 },
-                96 => {
+                56 => {
                     self.KKKIONIDKFA = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for DAAKGEDPPJJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.func_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.func_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.func_id);
         }
         if self.KKKIONIDKFA != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DAAKGEDPPJJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.func_id != 0 {
-            os.write_uint32(5, self.func_id)?;
+            os.write_uint32(3, self.func_id)?;
         }
         if self.KKKIONIDKFA != false {
-            os.write_bool(12, self.KKKIONIDKFA)?;
+            os.write_bool(7, self.KKKIONIDKFA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for DAAKGEDPPJJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DAAKGEDPPJJ.proto\"H\n\x0bDAAKGEDPPJJ\x12\x17\n\x07func_id\x18\x05\
-    \x20\x01(\rR\x06funcId\x12\x20\n\x0bKKKIONIDKFA\x18\x0c\x20\x01(\x08R\
+    \n\x11DAAKGEDPPJJ.proto\"H\n\x0bDAAKGEDPPJJ\x12\x17\n\x07func_id\x18\x03\
+    \x20\x01(\rR\x06funcId\x12\x20\n\x0bKKKIONIDKFA\x18\x07\x20\x01(\x08R\
     \x0bKKKIONIDKFAb\x06proto3\
 ";
 

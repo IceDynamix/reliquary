@@ -79,10 +79,10 @@ impl ::protobuf::Message for NPGCEFKJOIN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                16 => {
                     self.COPALFLACHO = is.read_uint32()?;
                 },
-                120 => {
+                88 => {
                     self.IOBJFEJFLJP = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for NPGCEFKJOIN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.COPALFLACHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.COPALFLACHO);
+            my_size += ::protobuf::rt::uint32_size(2, self.COPALFLACHO);
         }
         if self.IOBJFEJFLJP != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for NPGCEFKJOIN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.COPALFLACHO != 0 {
-            os.write_uint32(11, self.COPALFLACHO)?;
+            os.write_uint32(2, self.COPALFLACHO)?;
         }
         if self.IOBJFEJFLJP != false {
-            os.write_bool(15, self.IOBJFEJFLJP)?;
+            os.write_bool(11, self.IOBJFEJFLJP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for NPGCEFKJOIN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NPGCEFKJOIN.proto\"Q\n\x0bNPGCEFKJOIN\x12\x20\n\x0bCOPALFLACHO\x18\
-    \x0b\x20\x01(\rR\x0bCOPALFLACHO\x12\x20\n\x0bIOBJFEJFLJP\x18\x0f\x20\x01\
+    \x02\x20\x01(\rR\x0bCOPALFLACHO\x12\x20\n\x0bIOBJFEJFLJP\x18\x0b\x20\x01\
     (\x08R\x0bIOBJFEJFLJPb\x06proto3\
 ";
 

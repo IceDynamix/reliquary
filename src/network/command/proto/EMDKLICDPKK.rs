@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EMDKLICDPKK {
     // message fields
-    // @@protoc_insertion_point(field:EMDKLICDPKK.IJCJBDDGGJF)
-    pub IJCJBDDGGJF: u32,
     // @@protoc_insertion_point(field:EMDKLICDPKK.HIEMHCBHKEO)
     pub HIEMHCBHKEO: bool,
+    // @@protoc_insertion_point(field:EMDKLICDPKK.IJCJBDDGGJF)
+    pub IJCJBDDGGJF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EMDKLICDPKK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl EMDKLICDPKK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJCJBDDGGJF",
-            |m: &EMDKLICDPKK| { &m.IJCJBDDGGJF },
-            |m: &mut EMDKLICDPKK| { &mut m.IJCJBDDGGJF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HIEMHCBHKEO",
             |m: &EMDKLICDPKK| { &m.HIEMHCBHKEO },
             |m: &mut EMDKLICDPKK| { &mut m.HIEMHCBHKEO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IJCJBDDGGJF",
+            |m: &EMDKLICDPKK| { &m.IJCJBDDGGJF },
+            |m: &mut EMDKLICDPKK| { &mut m.IJCJBDDGGJF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EMDKLICDPKK>(
             "EMDKLICDPKK",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for EMDKLICDPKK {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 32 => {
-                    self.IJCJBDDGGJF = is.read_uint32()?;
-                },
-                120 => {
                     self.HIEMHCBHKEO = is.read_bool()?;
+                },
+                96 => {
+                    self.IJCJBDDGGJF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for EMDKLICDPKK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IJCJBDDGGJF != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IJCJBDDGGJF);
-        }
         if self.HIEMHCBHKEO != false {
             my_size += 1 + 1;
+        }
+        if self.IJCJBDDGGJF != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.IJCJBDDGGJF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for EMDKLICDPKK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IJCJBDDGGJF != 0 {
-            os.write_uint32(4, self.IJCJBDDGGJF)?;
-        }
         if self.HIEMHCBHKEO != false {
-            os.write_bool(15, self.HIEMHCBHKEO)?;
+            os.write_bool(4, self.HIEMHCBHKEO)?;
+        }
+        if self.IJCJBDDGGJF != 0 {
+            os.write_uint32(12, self.IJCJBDDGGJF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for EMDKLICDPKK {
     }
 
     fn clear(&mut self) {
-        self.IJCJBDDGGJF = 0;
         self.HIEMHCBHKEO = false;
+        self.IJCJBDDGGJF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EMDKLICDPKK {
         static instance: EMDKLICDPKK = EMDKLICDPKK {
-            IJCJBDDGGJF: 0,
             HIEMHCBHKEO: false,
+            IJCJBDDGGJF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for EMDKLICDPKK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EMDKLICDPKK.proto\"Q\n\x0bEMDKLICDPKK\x12\x20\n\x0bIJCJBDDGGJF\x18\
-    \x04\x20\x01(\rR\x0bIJCJBDDGGJF\x12\x20\n\x0bHIEMHCBHKEO\x18\x0f\x20\x01\
-    (\x08R\x0bHIEMHCBHKEOb\x06proto3\
+    \n\x11EMDKLICDPKK.proto\"Q\n\x0bEMDKLICDPKK\x12\x20\n\x0bHIEMHCBHKEO\x18\
+    \x04\x20\x01(\x08R\x0bHIEMHCBHKEO\x12\x20\n\x0bIJCJBDDGGJF\x18\x0c\x20\
+    \x01(\rR\x0bIJCJBDDGGJFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

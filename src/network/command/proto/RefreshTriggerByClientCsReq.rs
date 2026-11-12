@@ -103,19 +103,19 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
                 10 => {
                     self.trigger_name = is.read_string()?;
                 },
-                34 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.trigger_motion)?;
                 },
                 64 => {
                     self.interact_id = is.read_uint64()?;
                 },
-                96 => {
+                88 => {
                     self.trigger_entity_id = is.read_uint32()?;
                 },
-                114 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.trigger_target_id_list)?;
                 },
-                112 => {
+                120 => {
                     self.trigger_target_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -141,9 +141,9 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
             my_size += ::protobuf::rt::uint64_size(8, self.interact_id);
         }
         if self.trigger_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.trigger_entity_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.trigger_entity_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.trigger_target_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.trigger_target_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -154,15 +154,15 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
             os.write_string(1, &self.trigger_name)?;
         }
         if let Some(v) = self.trigger_motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.interact_id != 0 {
             os.write_uint64(8, self.interact_id)?;
         }
         if self.trigger_entity_id != 0 {
-            os.write_uint32(12, self.trigger_entity_id)?;
+            os.write_uint32(11, self.trigger_entity_id)?;
         }
-        os.write_repeated_packed_uint32(14, &self.trigger_target_id_list)?;
+        os.write_repeated_packed_uint32(15, &self.trigger_target_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -221,10 +221,10 @@ impl ::protobuf::reflect::ProtobufValue for RefreshTriggerByClientCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!RefreshTriggerByClientCsReq.proto\x1a\x10MotionInfo.proto\"\xf6\x01\n\
     \x1bRefreshTriggerByClientCsReq\x12!\n\x0ctrigger_name\x18\x01\x20\x01(\
-    \tR\x0btriggerName\x122\n\x0etrigger_motion\x18\x04\x20\x01(\x0b2\x0b.Mo\
+    \tR\x0btriggerName\x122\n\x0etrigger_motion\x18\x06\x20\x01(\x0b2\x0b.Mo\
     tionInfoR\rtriggerMotion\x12\x1f\n\x0binteract_id\x18\x08\x20\x01(\x04R\
-    \ninteractId\x12*\n\x11trigger_entity_id\x18\x0c\x20\x01(\rR\x0ftriggerE\
-    ntityId\x123\n\x16trigger_target_id_list\x18\x0e\x20\x03(\rR\x13triggerT\
+    \ninteractId\x12*\n\x11trigger_entity_id\x18\x0b\x20\x01(\rR\x0ftriggerE\
+    ntityId\x123\n\x16trigger_target_id_list\x18\x0f\x20\x03(\rR\x13triggerT\
     argetIdListb\x06proto3\
 ";
 

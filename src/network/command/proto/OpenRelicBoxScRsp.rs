@@ -30,10 +30,10 @@ pub struct OpenRelicBoxScRsp {
     // message fields
     // @@protoc_insertion_point(field:OpenRelicBoxScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:OpenRelicBoxScRsp.GNLAAIDFOJF)
-    pub GNLAAIDFOJF: u32,
-    // @@protoc_insertion_point(field:OpenRelicBoxScRsp.LCMADDIMION)
-    pub LCMADDIMION: ::protobuf::MessageField<super::PNGBDDIBCDD::PNGBDDIBCDD>,
+    // @@protoc_insertion_point(field:OpenRelicBoxScRsp.relic_id)
+    pub relic_id: u32,
+    // @@protoc_insertion_point(field:OpenRelicBoxScRsp.box_relic)
+    pub box_relic: ::protobuf::MessageField<super::BoxRelic::BoxRelic>,
     // special fields
     // @@protoc_insertion_point(special_field:OpenRelicBoxScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl OpenRelicBoxScRsp {
             |m: &mut OpenRelicBoxScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNLAAIDFOJF",
-            |m: &OpenRelicBoxScRsp| { &m.GNLAAIDFOJF },
-            |m: &mut OpenRelicBoxScRsp| { &mut m.GNLAAIDFOJF },
+            "relic_id",
+            |m: &OpenRelicBoxScRsp| { &m.relic_id },
+            |m: &mut OpenRelicBoxScRsp| { &mut m.relic_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PNGBDDIBCDD::PNGBDDIBCDD>(
-            "LCMADDIMION",
-            |m: &OpenRelicBoxScRsp| { &m.LCMADDIMION },
-            |m: &mut OpenRelicBoxScRsp| { &mut m.LCMADDIMION },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BoxRelic::BoxRelic>(
+            "box_relic",
+            |m: &OpenRelicBoxScRsp| { &m.box_relic },
+            |m: &mut OpenRelicBoxScRsp| { &mut m.box_relic },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OpenRelicBoxScRsp>(
             "OpenRelicBoxScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for OpenRelicBoxScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                80 => {
-                    self.GNLAAIDFOJF = is.read_uint32()?;
+                24 => {
+                    self.relic_id = is.read_uint32()?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCMADDIMION)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.box_relic)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,12 +108,12 @@ impl ::protobuf::Message for OpenRelicBoxScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        if self.GNLAAIDFOJF != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.GNLAAIDFOJF);
+        if self.relic_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.relic_id);
         }
-        if let Some(v) = self.LCMADDIMION.as_ref() {
+        if let Some(v) = self.box_relic.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,13 +124,13 @@ impl ::protobuf::Message for OpenRelicBoxScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
-        if self.GNLAAIDFOJF != 0 {
-            os.write_uint32(10, self.GNLAAIDFOJF)?;
+        if self.relic_id != 0 {
+            os.write_uint32(3, self.relic_id)?;
         }
-        if let Some(v) = self.LCMADDIMION.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.box_relic.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for OpenRelicBoxScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.GNLAAIDFOJF = 0;
-        self.LCMADDIMION.clear();
+        self.relic_id = 0;
+        self.box_relic.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OpenRelicBoxScRsp {
         static instance: OpenRelicBoxScRsp = OpenRelicBoxScRsp {
             retcode: 0,
-            GNLAAIDFOJF: 0,
-            LCMADDIMION: ::protobuf::MessageField::none(),
+            relic_id: 0,
+            box_relic: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for OpenRelicBoxScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17OpenRelicBoxScRsp.proto\x1a\x11PNGBDDIBCDD.proto\"\x7f\n\x11OpenRe\
-    licBoxScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x20\
-    \n\x0bGNLAAIDFOJF\x18\n\x20\x01(\rR\x0bGNLAAIDFOJF\x12.\n\x0bLCMADDIMION\
-    \x18\x0c\x20\x01(\x0b2\x0c.PNGBDDIBCDDR\x0bLCMADDIMIONb\x06proto3\
+    \n\x17OpenRelicBoxScRsp.proto\x1a\x0eBoxRelic.proto\"p\n\x11OpenRelicBox\
+    ScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x19\n\x08r\
+    elic_id\x18\x03\x20\x01(\rR\x07relicId\x12&\n\tbox_relic\x18\x0e\x20\x01\
+    (\x0b2\t.BoxRelicR\x08boxRelicb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PNGBDDIBCDD::file_descriptor().clone());
+            deps.push(super::BoxRelic::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OpenRelicBoxScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

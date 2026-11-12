@@ -50,7 +50,7 @@ impl HAJJKFAIJBD {
         ::std::default::Default::default()
     }
 
-    // bool DAJHCEKHNBH = 2;
+    // bool DAJHCEKHNBH = 1;
 
     pub fn DAJHCEKHNBH(&self) -> bool {
         match self.PIEPADODEDD {
@@ -75,7 +75,7 @@ impl HAJJKFAIJBD {
         self.PIEPADODEDD = ::std::option::Option::Some(hajjkfaijbd::PIEPADODEDD::DAJHCEKHNBH(v))
     }
 
-    // uint32 ELGOLPLGFKJ = 8;
+    // uint32 ELGOLPLGFKJ = 2;
 
     pub fn ELGOLPLGFKJ(&self) -> u32 {
         match self.PIEPADODEDD {
@@ -144,16 +144,16 @@ impl ::protobuf::Message for HAJJKFAIJBD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NLFCABFPJHD)?;
                 },
-                80 => {
+                104 => {
                     self.BHPCOAPAGMA = is.read_bool()?;
                 },
-                16 => {
+                8 => {
                     self.PIEPADODEDD = ::std::option::Option::Some(hajjkfaijbd::PIEPADODEDD::DAJHCEKHNBH(is.read_bool()?));
                 },
-                64 => {
+                16 => {
                     self.PIEPADODEDD = ::std::option::Option::Some(hajjkfaijbd::PIEPADODEDD::ELGOLPLGFKJ(is.read_uint32()?));
                 },
                 tag => {
@@ -181,7 +181,7 @@ impl ::protobuf::Message for HAJJKFAIJBD {
                     my_size += 1 + 1;
                 },
                 &hajjkfaijbd::PIEPADODEDD::ELGOLPLGFKJ(v) => {
-                    my_size += ::protobuf::rt::uint32_size(8, v);
+                    my_size += ::protobuf::rt::uint32_size(2, v);
                 },
             };
         }
@@ -192,18 +192,18 @@ impl ::protobuf::Message for HAJJKFAIJBD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.NLFCABFPJHD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.BHPCOAPAGMA != false {
-            os.write_bool(10, self.BHPCOAPAGMA)?;
+            os.write_bool(13, self.BHPCOAPAGMA)?;
         }
         if let ::std::option::Option::Some(ref v) = self.PIEPADODEDD {
             match v {
                 &hajjkfaijbd::PIEPADODEDD::DAJHCEKHNBH(v) => {
-                    os.write_bool(2, v)?;
+                    os.write_bool(1, v)?;
                 },
                 &hajjkfaijbd::PIEPADODEDD::ELGOLPLGFKJ(v) => {
-                    os.write_uint32(8, v)?;
+                    os.write_uint32(2, v)?;
                 },
             };
         }
@@ -291,10 +291,10 @@ pub mod hajjkfaijbd {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HAJJKFAIJBD.proto\x1a\x11NKGAIPKINJE.proto\"\xb6\x01\n\x0bHAJJKFAI\
-    JBD\x12.\n\x0bNLFCABFPJHD\x18\x01\x20\x01(\x0b2\x0c.NKGAIPKINJER\x0bNLFC\
-    ABFPJHD\x12\x20\n\x0bBHPCOAPAGMA\x18\n\x20\x01(\x08R\x0bBHPCOAPAGMA\x12\
-    \"\n\x0bDAJHCEKHNBH\x18\x02\x20\x01(\x08H\0R\x0bDAJHCEKHNBH\x12\"\n\x0bE\
-    LGOLPLGFKJ\x18\x08\x20\x01(\rH\0R\x0bELGOLPLGFKJB\r\n\x0bPIEPADODEDDb\
+    JBD\x12.\n\x0bNLFCABFPJHD\x18\x03\x20\x01(\x0b2\x0c.NKGAIPKINJER\x0bNLFC\
+    ABFPJHD\x12\x20\n\x0bBHPCOAPAGMA\x18\r\x20\x01(\x08R\x0bBHPCOAPAGMA\x12\
+    \"\n\x0bDAJHCEKHNBH\x18\x01\x20\x01(\x08H\0R\x0bDAJHCEKHNBH\x12\"\n\x0bE\
+    LGOLPLGFKJ\x18\x02\x20\x01(\rH\0R\x0bELGOLPLGFKJB\r\n\x0bPIEPADODEDDb\
     \x06proto3\
 ";
 

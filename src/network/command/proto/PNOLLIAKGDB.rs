@@ -30,10 +30,10 @@ pub struct PNOLLIAKGDB {
     // message fields
     // @@protoc_insertion_point(field:PNOLLIAKGDB.BELKCBAGMFC)
     pub BELKCBAGMFC: bool,
-    // @@protoc_insertion_point(field:PNOLLIAKGDB.MLPGDPGIFCJ)
-    pub MLPGDPGIFCJ: bool,
     // @@protoc_insertion_point(field:PNOLLIAKGDB.JHJKCJKDHIB)
     pub JHJKCJKDHIB: u32,
+    // @@protoc_insertion_point(field:PNOLLIAKGDB.MLPGDPGIFCJ)
+    pub MLPGDPGIFCJ: bool,
     // special fields
     // @@protoc_insertion_point(special_field:PNOLLIAKGDB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl PNOLLIAKGDB {
             |m: &mut PNOLLIAKGDB| { &mut m.BELKCBAGMFC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLPGDPGIFCJ",
-            |m: &PNOLLIAKGDB| { &m.MLPGDPGIFCJ },
-            |m: &mut PNOLLIAKGDB| { &mut m.MLPGDPGIFCJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JHJKCJKDHIB",
             |m: &PNOLLIAKGDB| { &m.JHJKCJKDHIB },
             |m: &mut PNOLLIAKGDB| { &mut m.JHJKCJKDHIB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MLPGDPGIFCJ",
+            |m: &PNOLLIAKGDB| { &m.MLPGDPGIFCJ },
+            |m: &mut PNOLLIAKGDB| { &mut m.MLPGDPGIFCJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PNOLLIAKGDB>(
             "PNOLLIAKGDB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PNOLLIAKGDB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                40 => {
                     self.BELKCBAGMFC = is.read_bool()?;
                 },
-                56 => {
-                    self.MLPGDPGIFCJ = is.read_bool()?;
-                },
-                104 => {
+                48 => {
                     self.JHJKCJKDHIB = is.read_uint32()?;
+                },
+                64 => {
+                    self.MLPGDPGIFCJ = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for PNOLLIAKGDB {
         if self.BELKCBAGMFC != false {
             my_size += 1 + 1;
         }
+        if self.JHJKCJKDHIB != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.JHJKCJKDHIB);
+        }
         if self.MLPGDPGIFCJ != false {
             my_size += 1 + 1;
-        }
-        if self.JHJKCJKDHIB != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.JHJKCJKDHIB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for PNOLLIAKGDB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BELKCBAGMFC != false {
-            os.write_bool(2, self.BELKCBAGMFC)?;
-        }
-        if self.MLPGDPGIFCJ != false {
-            os.write_bool(7, self.MLPGDPGIFCJ)?;
+            os.write_bool(5, self.BELKCBAGMFC)?;
         }
         if self.JHJKCJKDHIB != 0 {
-            os.write_uint32(13, self.JHJKCJKDHIB)?;
+            os.write_uint32(6, self.JHJKCJKDHIB)?;
+        }
+        if self.MLPGDPGIFCJ != false {
+            os.write_bool(8, self.MLPGDPGIFCJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for PNOLLIAKGDB {
 
     fn clear(&mut self) {
         self.BELKCBAGMFC = false;
-        self.MLPGDPGIFCJ = false;
         self.JHJKCJKDHIB = 0;
+        self.MLPGDPGIFCJ = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PNOLLIAKGDB {
         static instance: PNOLLIAKGDB = PNOLLIAKGDB {
             BELKCBAGMFC: false,
-            MLPGDPGIFCJ: false,
             JHJKCJKDHIB: 0,
+            MLPGDPGIFCJ: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for PNOLLIAKGDB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PNOLLIAKGDB.proto\"s\n\x0bPNOLLIAKGDB\x12\x20\n\x0bBELKCBAGMFC\x18\
-    \x02\x20\x01(\x08R\x0bBELKCBAGMFC\x12\x20\n\x0bMLPGDPGIFCJ\x18\x07\x20\
-    \x01(\x08R\x0bMLPGDPGIFCJ\x12\x20\n\x0bJHJKCJKDHIB\x18\r\x20\x01(\rR\x0b\
-    JHJKCJKDHIBb\x06proto3\
+    \x05\x20\x01(\x08R\x0bBELKCBAGMFC\x12\x20\n\x0bJHJKCJKDHIB\x18\x06\x20\
+    \x01(\rR\x0bJHJKCJKDHIB\x12\x20\n\x0bMLPGDPGIFCJ\x18\x08\x20\x01(\x08R\
+    \x0bMLPGDPGIFCJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

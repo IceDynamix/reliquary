@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GCFGCHAMNOL {
     // message fields
-    // @@protoc_insertion_point(field:GCFGCHAMNOL.PGFFGKDOPGM)
-    pub PGFFGKDOPGM: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GCFGCHAMNOL.CMEKNAJONPH)
     pub CMEKNAJONPH: u32,
+    // @@protoc_insertion_point(field:GCFGCHAMNOL.PGFFGKDOPGM)
+    pub PGFFGKDOPGM: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GCFGCHAMNOL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GCFGCHAMNOL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PGFFGKDOPGM",
-            |m: &GCFGCHAMNOL| { &m.PGFFGKDOPGM },
-            |m: &mut GCFGCHAMNOL| { &mut m.PGFFGKDOPGM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CMEKNAJONPH",
             |m: &GCFGCHAMNOL| { &m.CMEKNAJONPH },
             |m: &mut GCFGCHAMNOL| { &mut m.CMEKNAJONPH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PGFFGKDOPGM",
+            |m: &GCFGCHAMNOL| { &m.PGFFGKDOPGM },
+            |m: &mut GCFGCHAMNOL| { &mut m.PGFFGKDOPGM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GCFGCHAMNOL>(
             "GCFGCHAMNOL",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for GCFGCHAMNOL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                24 => {
+                    self.CMEKNAJONPH = is.read_uint32()?;
+                },
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.PGFFGKDOPGM)?;
                 },
-                24 => {
-                    self.PGFFGKDOPGM.push(is.read_uint32()?);
-                },
                 32 => {
-                    self.CMEKNAJONPH = is.read_uint32()?;
+                    self.PGFFGKDOPGM.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GCFGCHAMNOL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.PGFFGKDOPGM);
         if self.CMEKNAJONPH != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.CMEKNAJONPH);
+            my_size += ::protobuf::rt::uint32_size(3, self.CMEKNAJONPH);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.PGFFGKDOPGM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.PGFFGKDOPGM)?;
         if self.CMEKNAJONPH != 0 {
-            os.write_uint32(4, self.CMEKNAJONPH)?;
+            os.write_uint32(3, self.CMEKNAJONPH)?;
         }
+        os.write_repeated_packed_uint32(4, &self.PGFFGKDOPGM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for GCFGCHAMNOL {
     }
 
     fn clear(&mut self) {
-        self.PGFFGKDOPGM.clear();
         self.CMEKNAJONPH = 0;
+        self.PGFFGKDOPGM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GCFGCHAMNOL {
         static instance: GCFGCHAMNOL = GCFGCHAMNOL {
-            PGFFGKDOPGM: ::std::vec::Vec::new(),
             CMEKNAJONPH: 0,
+            PGFFGKDOPGM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for GCFGCHAMNOL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GCFGCHAMNOL.proto\"Q\n\x0bGCFGCHAMNOL\x12\x20\n\x0bPGFFGKDOPGM\x18\
-    \x03\x20\x03(\rR\x0bPGFFGKDOPGM\x12\x20\n\x0bCMEKNAJONPH\x18\x04\x20\x01\
-    (\rR\x0bCMEKNAJONPHb\x06proto3\
+    \n\x11GCFGCHAMNOL.proto\"Q\n\x0bGCFGCHAMNOL\x12\x20\n\x0bCMEKNAJONPH\x18\
+    \x03\x20\x01(\rR\x0bCMEKNAJONPH\x12\x20\n\x0bPGFFGKDOPGM\x18\x04\x20\x03\
+    (\rR\x0bPGFFGKDOPGMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

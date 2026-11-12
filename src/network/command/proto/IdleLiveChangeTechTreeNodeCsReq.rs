@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IdleLiveChangeTechTreeNodeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:IdleLiveChangeTechTreeNodeCsReq.op_type)
-    pub op_type: ::protobuf::EnumOrUnknown<super::OEDABANAJEK::OEDABANAJEK>,
     // @@protoc_insertion_point(field:IdleLiveChangeTechTreeNodeCsReq.CDMFHNGEFCN)
     pub CDMFHNGEFCN: u32,
+    // @@protoc_insertion_point(field:IdleLiveChangeTechTreeNodeCsReq.op_type)
+    pub op_type: ::protobuf::EnumOrUnknown<super::OEDABANAJEK::OEDABANAJEK>,
     // special fields
     // @@protoc_insertion_point(special_field:IdleLiveChangeTechTreeNodeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl IdleLiveChangeTechTreeNodeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "op_type",
-            |m: &IdleLiveChangeTechTreeNodeCsReq| { &m.op_type },
-            |m: &mut IdleLiveChangeTechTreeNodeCsReq| { &mut m.op_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CDMFHNGEFCN",
             |m: &IdleLiveChangeTechTreeNodeCsReq| { &m.CDMFHNGEFCN },
             |m: &mut IdleLiveChangeTechTreeNodeCsReq| { &mut m.CDMFHNGEFCN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "op_type",
+            |m: &IdleLiveChangeTechTreeNodeCsReq| { &m.op_type },
+            |m: &mut IdleLiveChangeTechTreeNodeCsReq| { &mut m.op_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IdleLiveChangeTechTreeNodeCsReq>(
             "IdleLiveChangeTechTreeNodeCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for IdleLiveChangeTechTreeNodeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.op_type = is.read_enum_or_unknown()?;
-                },
-                112 => {
+                48 => {
                     self.CDMFHNGEFCN = is.read_uint32()?;
+                },
+                96 => {
+                    self.op_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for IdleLiveChangeTechTreeNodeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.op_type != ::protobuf::EnumOrUnknown::new(super::OEDABANAJEK::OEDABANAJEK::OEDABANAJEK_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(5, self.op_type.value());
-        }
         if self.CDMFHNGEFCN != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CDMFHNGEFCN);
+            my_size += ::protobuf::rt::uint32_size(6, self.CDMFHNGEFCN);
+        }
+        if self.op_type != ::protobuf::EnumOrUnknown::new(super::OEDABANAJEK::OEDABANAJEK::OEDABANAJEK_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(12, self.op_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for IdleLiveChangeTechTreeNodeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.op_type != ::protobuf::EnumOrUnknown::new(super::OEDABANAJEK::OEDABANAJEK::OEDABANAJEK_NLCDGIPGFDJ) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.op_type))?;
-        }
         if self.CDMFHNGEFCN != 0 {
-            os.write_uint32(14, self.CDMFHNGEFCN)?;
+            os.write_uint32(6, self.CDMFHNGEFCN)?;
+        }
+        if self.op_type != ::protobuf::EnumOrUnknown::new(super::OEDABANAJEK::OEDABANAJEK::OEDABANAJEK_NLCDGIPGFDJ) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.op_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for IdleLiveChangeTechTreeNodeCsReq {
     }
 
     fn clear(&mut self) {
-        self.op_type = ::protobuf::EnumOrUnknown::new(super::OEDABANAJEK::OEDABANAJEK::OEDABANAJEK_NLCDGIPGFDJ);
         self.CDMFHNGEFCN = 0;
+        self.op_type = ::protobuf::EnumOrUnknown::new(super::OEDABANAJEK::OEDABANAJEK::OEDABANAJEK_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IdleLiveChangeTechTreeNodeCsReq {
         static instance: IdleLiveChangeTechTreeNodeCsReq = IdleLiveChangeTechTreeNodeCsReq {
-            op_type: ::protobuf::EnumOrUnknown::from_i32(0),
             CDMFHNGEFCN: 0,
+            op_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for IdleLiveChangeTechTreeNodeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%IdleLiveChangeTechTreeNodeCsReq.proto\x1a\x11OEDABANAJEK.proto\"j\n\
-    \x1fIdleLiveChangeTechTreeNodeCsReq\x12%\n\x07op_type\x18\x05\x20\x01(\
-    \x0e2\x0c.OEDABANAJEKR\x06opType\x12\x20\n\x0bCDMFHNGEFCN\x18\x0e\x20\
-    \x01(\rR\x0bCDMFHNGEFCNb\x06proto3\
+    \x1fIdleLiveChangeTechTreeNodeCsReq\x12\x20\n\x0bCDMFHNGEFCN\x18\x06\x20\
+    \x01(\rR\x0bCDMFHNGEFCN\x12%\n\x07op_type\x18\x0c\x20\x01(\x0e2\x0c.OEDA\
+    BANAJEKR\x06opTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

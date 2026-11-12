@@ -45,32 +45,7 @@ impl EKIFAOJKOCL {
         ::std::default::Default::default()
     }
 
-    // uint32 unique_id = 4;
-
-    pub fn unique_id(&self) -> u32 {
-        match self.GBFHOGKMMEA {
-            ::std::option::Option::Some(ekifaojkocl::GBFHOGKMMEA::UniqueId(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_unique_id(&mut self) {
-        self.GBFHOGKMMEA = ::std::option::Option::None;
-    }
-
-    pub fn has_unique_id(&self) -> bool {
-        match self.GBFHOGKMMEA {
-            ::std::option::Option::Some(ekifaojkocl::GBFHOGKMMEA::UniqueId(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_unique_id(&mut self, v: u32) {
-        self.GBFHOGKMMEA = ::std::option::Option::Some(ekifaojkocl::GBFHOGKMMEA::UniqueId(v))
-    }
-
-    // uint32 JAMNNBEPPKE = 5;
+    // uint32 JAMNNBEPPKE = 7;
 
     pub fn JAMNNBEPPKE(&self) -> u32 {
         match self.GBFHOGKMMEA {
@@ -95,20 +70,45 @@ impl EKIFAOJKOCL {
         self.GBFHOGKMMEA = ::std::option::Option::Some(ekifaojkocl::GBFHOGKMMEA::JAMNNBEPPKE(v))
     }
 
+    // uint32 unique_id = 15;
+
+    pub fn unique_id(&self) -> u32 {
+        match self.GBFHOGKMMEA {
+            ::std::option::Option::Some(ekifaojkocl::GBFHOGKMMEA::UniqueId(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_unique_id(&mut self) {
+        self.GBFHOGKMMEA = ::std::option::Option::None;
+    }
+
+    pub fn has_unique_id(&self) -> bool {
+        match self.GBFHOGKMMEA {
+            ::std::option::Option::Some(ekifaojkocl::GBFHOGKMMEA::UniqueId(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_unique_id(&mut self, v: u32) {
+        self.GBFHOGKMMEA = ::std::option::Option::Some(ekifaojkocl::GBFHOGKMMEA::UniqueId(v))
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "unique_id",
-            EKIFAOJKOCL::has_unique_id,
-            EKIFAOJKOCL::unique_id,
-            EKIFAOJKOCL::set_unique_id,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "JAMNNBEPPKE",
             EKIFAOJKOCL::has_JAMNNBEPPKE,
             EKIFAOJKOCL::JAMNNBEPPKE,
             EKIFAOJKOCL::set_JAMNNBEPPKE,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "unique_id",
+            EKIFAOJKOCL::has_unique_id,
+            EKIFAOJKOCL::unique_id,
+            EKIFAOJKOCL::set_unique_id,
         ));
         oneofs.push(ekifaojkocl::GBFHOGKMMEA::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EKIFAOJKOCL>(
@@ -129,11 +129,11 @@ impl ::protobuf::Message for EKIFAOJKOCL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.GBFHOGKMMEA = ::std::option::Option::Some(ekifaojkocl::GBFHOGKMMEA::UniqueId(is.read_uint32()?));
-                },
-                40 => {
+                56 => {
                     self.GBFHOGKMMEA = ::std::option::Option::Some(ekifaojkocl::GBFHOGKMMEA::JAMNNBEPPKE(is.read_uint32()?));
+                },
+                120 => {
+                    self.GBFHOGKMMEA = ::std::option::Option::Some(ekifaojkocl::GBFHOGKMMEA::UniqueId(is.read_uint32()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -149,11 +149,11 @@ impl ::protobuf::Message for EKIFAOJKOCL {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.GBFHOGKMMEA {
             match v {
-                &ekifaojkocl::GBFHOGKMMEA::UniqueId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(4, v);
-                },
                 &ekifaojkocl::GBFHOGKMMEA::JAMNNBEPPKE(v) => {
-                    my_size += ::protobuf::rt::uint32_size(5, v);
+                    my_size += ::protobuf::rt::uint32_size(7, v);
+                },
+                &ekifaojkocl::GBFHOGKMMEA::UniqueId(v) => {
+                    my_size += ::protobuf::rt::uint32_size(15, v);
                 },
             };
         }
@@ -165,11 +165,11 @@ impl ::protobuf::Message for EKIFAOJKOCL {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.GBFHOGKMMEA {
             match v {
-                &ekifaojkocl::GBFHOGKMMEA::UniqueId(v) => {
-                    os.write_uint32(4, v)?;
-                },
                 &ekifaojkocl::GBFHOGKMMEA::JAMNNBEPPKE(v) => {
-                    os.write_uint32(5, v)?;
+                    os.write_uint32(7, v)?;
+                },
+                &ekifaojkocl::GBFHOGKMMEA::UniqueId(v) => {
+                    os.write_uint32(15, v)?;
                 },
             };
         }
@@ -228,10 +228,10 @@ pub mod ekifaojkocl {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:EKIFAOJKOCL.GBFHOGKMMEA)
     pub enum GBFHOGKMMEA {
-        // @@protoc_insertion_point(oneof_field:EKIFAOJKOCL.unique_id)
-        UniqueId(u32),
         // @@protoc_insertion_point(oneof_field:EKIFAOJKOCL.JAMNNBEPPKE)
         JAMNNBEPPKE(u32),
+        // @@protoc_insertion_point(oneof_field:EKIFAOJKOCL.unique_id)
+        UniqueId(u32),
     }
 
     impl ::protobuf::Oneof for GBFHOGKMMEA {
@@ -252,9 +252,9 @@ pub mod ekifaojkocl {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EKIFAOJKOCL.proto\"_\n\x0bEKIFAOJKOCL\x12\x1d\n\tunique_id\x18\x04\
-    \x20\x01(\rH\0R\x08uniqueId\x12\"\n\x0bJAMNNBEPPKE\x18\x05\x20\x01(\rH\0\
-    R\x0bJAMNNBEPPKEB\r\n\x0bGBFHOGKMMEAb\x06proto3\
+    \n\x11EKIFAOJKOCL.proto\"_\n\x0bEKIFAOJKOCL\x12\"\n\x0bJAMNNBEPPKE\x18\
+    \x07\x20\x01(\rH\0R\x0bJAMNNBEPPKE\x12\x1d\n\tunique_id\x18\x0f\x20\x01(\
+    \rH\0R\x08uniqueIdB\r\n\x0bGBFHOGKMMEAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

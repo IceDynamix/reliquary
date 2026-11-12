@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PEFKOGMGEIC {
     // message fields
-    // @@protoc_insertion_point(field:PEFKOGMGEIC.DAEMEBCKHIK)
-    pub DAEMEBCKHIK: u32,
     // @@protoc_insertion_point(field:PEFKOGMGEIC.PLPJNCDKMAD)
     pub PLPJNCDKMAD: u32,
-    // @@protoc_insertion_point(field:PEFKOGMGEIC.NPHOIMEEDHM)
-    pub NPHOIMEEDHM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PEFKOGMGEIC.DAEMEBCKHIK)
+    pub DAEMEBCKHIK: u32,
     // @@protoc_insertion_point(field:PEFKOGMGEIC.GMLNOOHJCHM)
     pub GMLNOOHJCHM: u32,
+    // @@protoc_insertion_point(field:PEFKOGMGEIC.NPHOIMEEDHM)
+    pub NPHOIMEEDHM: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:PEFKOGMGEIC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl PEFKOGMGEIC {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PLPJNCDKMAD",
+            |m: &PEFKOGMGEIC| { &m.PLPJNCDKMAD },
+            |m: &mut PEFKOGMGEIC| { &mut m.PLPJNCDKMAD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DAEMEBCKHIK",
             |m: &PEFKOGMGEIC| { &m.DAEMEBCKHIK },
             |m: &mut PEFKOGMGEIC| { &mut m.DAEMEBCKHIK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PLPJNCDKMAD",
-            |m: &PEFKOGMGEIC| { &m.PLPJNCDKMAD },
-            |m: &mut PEFKOGMGEIC| { &mut m.PLPJNCDKMAD },
+            "GMLNOOHJCHM",
+            |m: &PEFKOGMGEIC| { &m.GMLNOOHJCHM },
+            |m: &mut PEFKOGMGEIC| { &mut m.GMLNOOHJCHM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NPHOIMEEDHM",
             |m: &PEFKOGMGEIC| { &m.NPHOIMEEDHM },
             |m: &mut PEFKOGMGEIC| { &mut m.NPHOIMEEDHM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMLNOOHJCHM",
-            |m: &PEFKOGMGEIC| { &m.GMLNOOHJCHM },
-            |m: &mut PEFKOGMGEIC| { &mut m.GMLNOOHJCHM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PEFKOGMGEIC>(
             "PEFKOGMGEIC",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for PEFKOGMGEIC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.DAEMEBCKHIK = is.read_uint32()?;
-                },
-                64 => {
+                24 => {
                     self.PLPJNCDKMAD = is.read_uint32()?;
                 },
-                74 => {
+                32 => {
+                    self.DAEMEBCKHIK = is.read_uint32()?;
+                },
+                40 => {
+                    self.GMLNOOHJCHM = is.read_uint32()?;
+                },
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.NPHOIMEEDHM)?;
                 },
-                72 => {
+                56 => {
                     self.NPHOIMEEDHM.push(is.read_uint32()?);
-                },
-                88 => {
-                    self.GMLNOOHJCHM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,32 +120,32 @@ impl ::protobuf::Message for PEFKOGMGEIC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DAEMEBCKHIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DAEMEBCKHIK);
-        }
         if self.PLPJNCDKMAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PLPJNCDKMAD);
+            my_size += ::protobuf::rt::uint32_size(3, self.PLPJNCDKMAD);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.NPHOIMEEDHM);
+        if self.DAEMEBCKHIK != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.DAEMEBCKHIK);
+        }
         if self.GMLNOOHJCHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GMLNOOHJCHM);
+            my_size += ::protobuf::rt::uint32_size(5, self.GMLNOOHJCHM);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.NPHOIMEEDHM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DAEMEBCKHIK != 0 {
-            os.write_uint32(2, self.DAEMEBCKHIK)?;
-        }
         if self.PLPJNCDKMAD != 0 {
-            os.write_uint32(8, self.PLPJNCDKMAD)?;
+            os.write_uint32(3, self.PLPJNCDKMAD)?;
         }
-        os.write_repeated_packed_uint32(9, &self.NPHOIMEEDHM)?;
+        if self.DAEMEBCKHIK != 0 {
+            os.write_uint32(4, self.DAEMEBCKHIK)?;
+        }
         if self.GMLNOOHJCHM != 0 {
-            os.write_uint32(11, self.GMLNOOHJCHM)?;
+            os.write_uint32(5, self.GMLNOOHJCHM)?;
         }
+        os.write_repeated_packed_uint32(7, &self.NPHOIMEEDHM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,19 +163,19 @@ impl ::protobuf::Message for PEFKOGMGEIC {
     }
 
     fn clear(&mut self) {
-        self.DAEMEBCKHIK = 0;
         self.PLPJNCDKMAD = 0;
-        self.NPHOIMEEDHM.clear();
+        self.DAEMEBCKHIK = 0;
         self.GMLNOOHJCHM = 0;
+        self.NPHOIMEEDHM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PEFKOGMGEIC {
         static instance: PEFKOGMGEIC = PEFKOGMGEIC {
-            DAEMEBCKHIK: 0,
             PLPJNCDKMAD: 0,
-            NPHOIMEEDHM: ::std::vec::Vec::new(),
+            DAEMEBCKHIK: 0,
             GMLNOOHJCHM: 0,
+            NPHOIMEEDHM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for PEFKOGMGEIC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PEFKOGMGEIC.proto\"\x95\x01\n\x0bPEFKOGMGEIC\x12\x20\n\x0bDAEMEBCK\
-    HIK\x18\x02\x20\x01(\rR\x0bDAEMEBCKHIK\x12\x20\n\x0bPLPJNCDKMAD\x18\x08\
-    \x20\x01(\rR\x0bPLPJNCDKMAD\x12\x20\n\x0bNPHOIMEEDHM\x18\t\x20\x03(\rR\
-    \x0bNPHOIMEEDHM\x12\x20\n\x0bGMLNOOHJCHM\x18\x0b\x20\x01(\rR\x0bGMLNOOHJ\
-    CHMb\x06proto3\
+    \n\x11PEFKOGMGEIC.proto\"\x95\x01\n\x0bPEFKOGMGEIC\x12\x20\n\x0bPLPJNCDK\
+    MAD\x18\x03\x20\x01(\rR\x0bPLPJNCDKMAD\x12\x20\n\x0bDAEMEBCKHIK\x18\x04\
+    \x20\x01(\rR\x0bDAEMEBCKHIK\x12\x20\n\x0bGMLNOOHJCHM\x18\x05\x20\x01(\rR\
+    \x0bGMLNOOHJCHM\x12\x20\n\x0bNPHOIMEEDHM\x18\x07\x20\x03(\rR\x0bNPHOIMEE\
+    DHMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

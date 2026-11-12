@@ -79,10 +79,10 @@ impl ::protobuf::Message for OpenRogueChestCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                80 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
-                96 => {
+                120 => {
                     self.FDEKKOKBDIC = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for OpenRogueChestCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.interacted_prop_entity_id);
         }
         if self.FDEKKOKBDIC != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for OpenRogueChestCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(6, self.interacted_prop_entity_id)?;
+            os.write_uint32(10, self.interacted_prop_entity_id)?;
         }
         if self.FDEKKOKBDIC != false {
-            os.write_bool(12, self.FDEKKOKBDIC)?;
+            os.write_bool(15, self.FDEKKOKBDIC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for OpenRogueChestCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19OpenRogueChestCsReq.proto\"r\n\x13OpenRogueChestCsReq\x129\n\x19in\
-    teracted_prop_entity_id\x18\x06\x20\x01(\rR\x16interactedPropEntityId\
-    \x12\x20\n\x0bFDEKKOKBDIC\x18\x0c\x20\x01(\x08R\x0bFDEKKOKBDICb\x06proto\
-    3\
+    teracted_prop_entity_id\x18\n\x20\x01(\rR\x16interactedPropEntityId\x12\
+    \x20\n\x0bFDEKKOKBDIC\x18\x0f\x20\x01(\x08R\x0bFDEKKOKBDICb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

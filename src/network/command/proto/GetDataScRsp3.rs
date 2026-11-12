@@ -28,10 +28,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetDataScRsp3 {
     // message fields
-    // @@protoc_insertion_point(field:GetDataScRsp3.BJBJLBIOPKA)
-    pub BJBJLBIOPKA: ::protobuf::MessageField<super::JKEBEAKOHJJ::JKEBEAKOHJJ>,
+    // @@protoc_insertion_point(field:GetDataScRsp3.MKAGCFGNPGD)
+    pub MKAGCFGNPGD: ::protobuf::MessageField<super::CGBPOHBACGE::CGBPOHBACGE>,
+    // @@protoc_insertion_point(field:GetDataScRsp3.HKLNGMHFICM)
+    pub HKLNGMHFICM: ::protobuf::MessageField<super::JDDFIGPOKHC::JDDFIGPOKHC>,
     // @@protoc_insertion_point(field:GetDataScRsp3.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetDataScRsp3.DNGNEKAMHMD)
+    pub DNGNEKAMHMD: ::protobuf::MessageField<super::DICEFIGKFCL::DICEFIGKFCL>,
+    // @@protoc_insertion_point(field:GetDataScRsp3.AIBHMDPILKE)
+    pub AIBHMDPILKE: ::protobuf::MessageField<super::PFPHKOAFPCJ::PFPHKOAFPCJ>,
+    // @@protoc_insertion_point(field:GetDataScRsp3.GNPHKFCKNOP)
+    pub GNPHKFCKNOP: ::protobuf::MessageField<super::IIPIFJCOIFO::IIPIFJCOIFO>,
+    // @@protoc_insertion_point(field:GetDataScRsp3.BOOIAMNBFND)
+    pub BOOIAMNBFND: ::protobuf::MessageField<super::HANHLKIHCJH::HANHLKIHCJH>,
+    // @@protoc_insertion_point(field:GetDataScRsp3.PLFNNLOKBOO)
+    pub PLFNNLOKBOO: ::protobuf::MessageField<super::IGOGKCCOIIF::IGOGKCCOIIF>,
+    // @@protoc_insertion_point(field:GetDataScRsp3.HFBBOHBKBJE)
+    pub HFBBOHBKBJE: ::protobuf::MessageField<super::HIDCLKLDHLE::HIDCLKLDHLE>,
+    // @@protoc_insertion_point(field:GetDataScRsp3.FNBMIGIICEK)
+    pub FNBMIGIICEK: ::protobuf::MessageField<super::PIOJJEGMOOF::PIOJJEGMOOF>,
+    // @@protoc_insertion_point(field:GetDataScRsp3.OPHJAENGBGJ)
+    pub OPHJAENGBGJ: ::protobuf::MessageField<super::PCGMJHKDCOG::PCGMJHKDCOG>,
+    // @@protoc_insertion_point(field:GetDataScRsp3.JJKKMGKNCJA)
+    pub JJKKMGKNCJA: ::protobuf::MessageField<super::EJJBHFOLCEA::EJJBHFOLCEA>,
     // special fields
     // @@protoc_insertion_point(special_field:GetDataScRsp3.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,17 +69,67 @@ impl GetDataScRsp3 {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(12);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JKEBEAKOHJJ::JKEBEAKOHJJ>(
-            "BJBJLBIOPKA",
-            |m: &GetDataScRsp3| { &m.BJBJLBIOPKA },
-            |m: &mut GetDataScRsp3| { &mut m.BJBJLBIOPKA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CGBPOHBACGE::CGBPOHBACGE>(
+            "MKAGCFGNPGD",
+            |m: &GetDataScRsp3| { &m.MKAGCFGNPGD },
+            |m: &mut GetDataScRsp3| { &mut m.MKAGCFGNPGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JDDFIGPOKHC::JDDFIGPOKHC>(
+            "HKLNGMHFICM",
+            |m: &GetDataScRsp3| { &m.HKLNGMHFICM },
+            |m: &mut GetDataScRsp3| { &mut m.HKLNGMHFICM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetDataScRsp3| { &m.retcode },
             |m: &mut GetDataScRsp3| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DICEFIGKFCL::DICEFIGKFCL>(
+            "DNGNEKAMHMD",
+            |m: &GetDataScRsp3| { &m.DNGNEKAMHMD },
+            |m: &mut GetDataScRsp3| { &mut m.DNGNEKAMHMD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PFPHKOAFPCJ::PFPHKOAFPCJ>(
+            "AIBHMDPILKE",
+            |m: &GetDataScRsp3| { &m.AIBHMDPILKE },
+            |m: &mut GetDataScRsp3| { &mut m.AIBHMDPILKE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IIPIFJCOIFO::IIPIFJCOIFO>(
+            "GNPHKFCKNOP",
+            |m: &GetDataScRsp3| { &m.GNPHKFCKNOP },
+            |m: &mut GetDataScRsp3| { &mut m.GNPHKFCKNOP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HANHLKIHCJH::HANHLKIHCJH>(
+            "BOOIAMNBFND",
+            |m: &GetDataScRsp3| { &m.BOOIAMNBFND },
+            |m: &mut GetDataScRsp3| { &mut m.BOOIAMNBFND },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IGOGKCCOIIF::IGOGKCCOIIF>(
+            "PLFNNLOKBOO",
+            |m: &GetDataScRsp3| { &m.PLFNNLOKBOO },
+            |m: &mut GetDataScRsp3| { &mut m.PLFNNLOKBOO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HIDCLKLDHLE::HIDCLKLDHLE>(
+            "HFBBOHBKBJE",
+            |m: &GetDataScRsp3| { &m.HFBBOHBKBJE },
+            |m: &mut GetDataScRsp3| { &mut m.HFBBOHBKBJE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PIOJJEGMOOF::PIOJJEGMOOF>(
+            "FNBMIGIICEK",
+            |m: &GetDataScRsp3| { &m.FNBMIGIICEK },
+            |m: &mut GetDataScRsp3| { &mut m.FNBMIGIICEK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PCGMJHKDCOG::PCGMJHKDCOG>(
+            "OPHJAENGBGJ",
+            |m: &GetDataScRsp3| { &m.OPHJAENGBGJ },
+            |m: &mut GetDataScRsp3| { &mut m.OPHJAENGBGJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EJJBHFOLCEA::EJJBHFOLCEA>(
+            "JJKKMGKNCJA",
+            |m: &GetDataScRsp3| { &m.JJKKMGKNCJA },
+            |m: &mut GetDataScRsp3| { &mut m.JJKKMGKNCJA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetDataScRsp3>(
             "GetDataScRsp3",
@@ -79,11 +149,41 @@ impl ::protobuf::Message for GetDataScRsp3 {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BJBJLBIOPKA)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MKAGCFGNPGD)?;
                 },
-                120 => {
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HKLNGMHFICM)?;
+                },
+                24 => {
                     self.retcode = is.read_uint32()?;
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DNGNEKAMHMD)?;
+                },
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AIBHMDPILKE)?;
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GNPHKFCKNOP)?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOOIAMNBFND)?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PLFNNLOKBOO)?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HFBBOHBKBJE)?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FNBMIGIICEK)?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPHJAENGBGJ)?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JJKKMGKNCJA)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +197,52 @@ impl ::protobuf::Message for GetDataScRsp3 {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.BJBJLBIOPKA.as_ref() {
+        if let Some(v) = self.MKAGCFGNPGD.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.HKLNGMHFICM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
+        if let Some(v) = self.DNGNEKAMHMD.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.AIBHMDPILKE.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.GNPHKFCKNOP.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.BOOIAMNBFND.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.PLFNNLOKBOO.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.HFBBOHBKBJE.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.FNBMIGIICEK.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.OPHJAENGBGJ.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.JJKKMGKNCJA.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +250,41 @@ impl ::protobuf::Message for GetDataScRsp3 {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BJBJLBIOPKA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.MKAGCFGNPGD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if let Some(v) = self.HKLNGMHFICM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
+        }
+        if let Some(v) = self.DNGNEKAMHMD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if let Some(v) = self.AIBHMDPILKE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if let Some(v) = self.GNPHKFCKNOP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if let Some(v) = self.BOOIAMNBFND.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if let Some(v) = self.PLFNNLOKBOO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if let Some(v) = self.HFBBOHBKBJE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if let Some(v) = self.FNBMIGIICEK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if let Some(v) = self.OPHJAENGBGJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if let Some(v) = self.JJKKMGKNCJA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +303,35 @@ impl ::protobuf::Message for GetDataScRsp3 {
     }
 
     fn clear(&mut self) {
-        self.BJBJLBIOPKA.clear();
+        self.MKAGCFGNPGD.clear();
+        self.HKLNGMHFICM.clear();
         self.retcode = 0;
+        self.DNGNEKAMHMD.clear();
+        self.AIBHMDPILKE.clear();
+        self.GNPHKFCKNOP.clear();
+        self.BOOIAMNBFND.clear();
+        self.PLFNNLOKBOO.clear();
+        self.HFBBOHBKBJE.clear();
+        self.FNBMIGIICEK.clear();
+        self.OPHJAENGBGJ.clear();
+        self.JJKKMGKNCJA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetDataScRsp3 {
         static instance: GetDataScRsp3 = GetDataScRsp3 {
-            BJBJLBIOPKA: ::protobuf::MessageField::none(),
+            MKAGCFGNPGD: ::protobuf::MessageField::none(),
+            HKLNGMHFICM: ::protobuf::MessageField::none(),
             retcode: 0,
+            DNGNEKAMHMD: ::protobuf::MessageField::none(),
+            AIBHMDPILKE: ::protobuf::MessageField::none(),
+            GNPHKFCKNOP: ::protobuf::MessageField::none(),
+            BOOIAMNBFND: ::protobuf::MessageField::none(),
+            PLFNNLOKBOO: ::protobuf::MessageField::none(),
+            HFBBOHBKBJE: ::protobuf::MessageField::none(),
+            FNBMIGIICEK: ::protobuf::MessageField::none(),
+            OPHJAENGBGJ: ::protobuf::MessageField::none(),
+            JJKKMGKNCJA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +356,24 @@ impl ::protobuf::reflect::ProtobufValue for GetDataScRsp3 {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13GetDataScRsp3.proto\x1a\x11JKEBEAKOHJJ.proto\"Y\n\rGetDataScRsp3\
-    \x12.\n\x0bBJBJLBIOPKA\x18\x06\x20\x01(\x0b2\x0c.JKEBEAKOHJJR\x0bBJBJLBI\
-    OPKA\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x13GetDataScRsp3.proto\x1a\x11CGBPOHBACGE.proto\x1a\x11DICEFIGKFCL.pr\
+    oto\x1a\x11EJJBHFOLCEA.proto\x1a\x11HANHLKIHCJH.proto\x1a\x11HIDCLKLDHLE\
+    .proto\x1a\x11IGOGKCCOIIF.proto\x1a\x11IIPIFJCOIFO.proto\x1a\x11JDDFIGPO\
+    KHC.proto\x1a\x11PCGMJHKDCOG.proto\x1a\x11PFPHKOAFPCJ.proto\x1a\x11PIOJJ\
+    EGMOOF.proto\"\xb9\x04\n\rGetDataScRsp3\x12.\n\x0bMKAGCFGNPGD\x18\x01\
+    \x20\x01(\x0b2\x0c.CGBPOHBACGER\x0bMKAGCFGNPGD\x12.\n\x0bHKLNGMHFICM\x18\
+    \x02\x20\x01(\x0b2\x0c.JDDFIGPOKHCR\x0bHKLNGMHFICM\x12\x18\n\x07retcode\
+    \x18\x03\x20\x01(\rR\x07retcode\x12.\n\x0bDNGNEKAMHMD\x18\x04\x20\x01(\
+    \x0b2\x0c.DICEFIGKFCLR\x0bDNGNEKAMHMD\x12.\n\x0bAIBHMDPILKE\x18\x06\x20\
+    \x01(\x0b2\x0c.PFPHKOAFPCJR\x0bAIBHMDPILKE\x12.\n\x0bGNPHKFCKNOP\x18\x07\
+    \x20\x01(\x0b2\x0c.IIPIFJCOIFOR\x0bGNPHKFCKNOP\x12.\n\x0bBOOIAMNBFND\x18\
+    \x08\x20\x01(\x0b2\x0c.HANHLKIHCJHR\x0bBOOIAMNBFND\x12.\n\x0bPLFNNLOKBOO\
+    \x18\t\x20\x01(\x0b2\x0c.IGOGKCCOIIFR\x0bPLFNNLOKBOO\x12.\n\x0bHFBBOHBKB\
+    JE\x18\n\x20\x01(\x0b2\x0c.HIDCLKLDHLER\x0bHFBBOHBKBJE\x12.\n\x0bFNBMIGI\
+    ICEK\x18\x0b\x20\x01(\x0b2\x0c.PIOJJEGMOOFR\x0bFNBMIGIICEK\x12.\n\x0bOPH\
+    JAENGBGJ\x18\x0e\x20\x01(\x0b2\x0c.PCGMJHKDCOGR\x0bOPHJAENGBGJ\x12.\n\
+    \x0bJJKKMGKNCJA\x18\x0f\x20\x01(\x0b2\x0c.EJJBHFOLCEAR\x0bJJKKMGKNCJAb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -185,8 +390,18 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JKEBEAKOHJJ::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(11);
+            deps.push(super::CGBPOHBACGE::file_descriptor().clone());
+            deps.push(super::DICEFIGKFCL::file_descriptor().clone());
+            deps.push(super::EJJBHFOLCEA::file_descriptor().clone());
+            deps.push(super::HANHLKIHCJH::file_descriptor().clone());
+            deps.push(super::HIDCLKLDHLE::file_descriptor().clone());
+            deps.push(super::IGOGKCCOIIF::file_descriptor().clone());
+            deps.push(super::IIPIFJCOIFO::file_descriptor().clone());
+            deps.push(super::JDDFIGPOKHC::file_descriptor().clone());
+            deps.push(super::PCGMJHKDCOG::file_descriptor().clone());
+            deps.push(super::PFPHKOAFPCJ::file_descriptor().clone());
+            deps.push(super::PIOJJEGMOOF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetDataScRsp3::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

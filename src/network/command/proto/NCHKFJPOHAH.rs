@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NCHKFJPOHAH {
     // message fields
-    // @@protoc_insertion_point(field:NCHKFJPOHAH.H_4ebfc4ff)
-    pub H_4ebfc4ff: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:NCHKFJPOHAH.H_7caab6c0)
+    pub H_7caab6c0: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:NCHKFJPOHAH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl NCHKFJPOHAH {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_4ebfc4ff",
-            |m: &NCHKFJPOHAH| { &m.H_4ebfc4ff },
-            |m: &mut NCHKFJPOHAH| { &mut m.H_4ebfc4ff },
+            "H_7caab6c0",
+            |m: &NCHKFJPOHAH| { &m.H_7caab6c0 },
+            |m: &mut NCHKFJPOHAH| { &mut m.H_7caab6c0 },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NCHKFJPOHAH>(
             "NCHKFJPOHAH",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for NCHKFJPOHAH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.H_4ebfc4ff)?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.H_7caab6c0)?;
                 },
-                72 => {
-                    self.H_4ebfc4ff.push(is.read_uint32()?);
+                24 => {
+                    self.H_7caab6c0.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for NCHKFJPOHAH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.H_4ebfc4ff);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.H_7caab6c0);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.H_4ebfc4ff)?;
+        os.write_repeated_packed_uint32(3, &self.H_7caab6c0)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for NCHKFJPOHAH {
     }
 
     fn clear(&mut self) {
-        self.H_4ebfc4ff.clear();
+        self.H_7caab6c0.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NCHKFJPOHAH {
         static instance: NCHKFJPOHAH = NCHKFJPOHAH {
-            H_4ebfc4ff: ::std::vec::Vec::new(),
+            H_7caab6c0: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,8 +146,8 @@ impl ::protobuf::reflect::ProtobufValue for NCHKFJPOHAH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NCHKFJPOHAH.proto\",\n\x0bNCHKFJPOHAH\x12\x1d\n\nH_4ebfc4ff\x18\t\
-    \x20\x03(\rR\tH4ebfc4ffb\x06proto3\
+    \n\x11NCHKFJPOHAH.proto\",\n\x0bNCHKFJPOHAH\x12\x1d\n\nH_7caab6c0\x18\
+    \x03\x20\x03(\rR\tH7caab6c0b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

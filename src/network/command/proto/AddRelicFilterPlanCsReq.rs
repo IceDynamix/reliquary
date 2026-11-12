@@ -30,14 +30,14 @@ pub struct AddRelicFilterPlanCsReq {
     // message fields
     // @@protoc_insertion_point(field:AddRelicFilterPlanCsReq.MJPKBIGCFOM)
     pub MJPKBIGCFOM: ::protobuf::MessageField<super::KJDLIPEIAAK::KJDLIPEIAAK>,
-    // @@protoc_insertion_point(field:AddRelicFilterPlanCsReq.GFEENEDNJGF)
-    pub GFEENEDNJGF: u32,
     // @@protoc_insertion_point(field:AddRelicFilterPlanCsReq.LJKNDCIOOCG)
     pub LJKNDCIOOCG: ::protobuf::MessageField<super::BNAILMNNGIF::BNAILMNNGIF>,
-    // @@protoc_insertion_point(field:AddRelicFilterPlanCsReq.name)
-    pub name: ::std::string::String,
+    // @@protoc_insertion_point(field:AddRelicFilterPlanCsReq.GFEENEDNJGF)
+    pub GFEENEDNJGF: u32,
     // @@protoc_insertion_point(field:AddRelicFilterPlanCsReq.is_marked)
     pub is_marked: bool,
+    // @@protoc_insertion_point(field:AddRelicFilterPlanCsReq.name)
+    pub name: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:AddRelicFilterPlanCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,25 +62,25 @@ impl AddRelicFilterPlanCsReq {
             |m: &AddRelicFilterPlanCsReq| { &m.MJPKBIGCFOM },
             |m: &mut AddRelicFilterPlanCsReq| { &mut m.MJPKBIGCFOM },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GFEENEDNJGF",
-            |m: &AddRelicFilterPlanCsReq| { &m.GFEENEDNJGF },
-            |m: &mut AddRelicFilterPlanCsReq| { &mut m.GFEENEDNJGF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BNAILMNNGIF::BNAILMNNGIF>(
             "LJKNDCIOOCG",
             |m: &AddRelicFilterPlanCsReq| { &m.LJKNDCIOOCG },
             |m: &mut AddRelicFilterPlanCsReq| { &mut m.LJKNDCIOOCG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "name",
-            |m: &AddRelicFilterPlanCsReq| { &m.name },
-            |m: &mut AddRelicFilterPlanCsReq| { &mut m.name },
+            "GFEENEDNJGF",
+            |m: &AddRelicFilterPlanCsReq| { &m.GFEENEDNJGF },
+            |m: &mut AddRelicFilterPlanCsReq| { &mut m.GFEENEDNJGF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_marked",
             |m: &AddRelicFilterPlanCsReq| { &m.is_marked },
             |m: &mut AddRelicFilterPlanCsReq| { &mut m.is_marked },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "name",
+            |m: &AddRelicFilterPlanCsReq| { &m.name },
+            |m: &mut AddRelicFilterPlanCsReq| { &mut m.name },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AddRelicFilterPlanCsReq>(
             "AddRelicFilterPlanCsReq",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for AddRelicFilterPlanCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MJPKBIGCFOM)?;
                 },
-                24 => {
-                    self.GFEENEDNJGF = is.read_uint32()?;
-                },
-                42 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LJKNDCIOOCG)?;
                 },
-                82 => {
-                    self.name = is.read_string()?;
+                64 => {
+                    self.GFEENEDNJGF = is.read_uint32()?;
                 },
-                120 => {
+                80 => {
                     self.is_marked = is.read_bool()?;
+                },
+                114 => {
+                    self.name = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,18 +131,18 @@ impl ::protobuf::Message for AddRelicFilterPlanCsReq {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.GFEENEDNJGF != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GFEENEDNJGF);
-        }
         if let Some(v) = self.LJKNDCIOOCG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.name);
+        if self.GFEENEDNJGF != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.GFEENEDNJGF);
         }
         if self.is_marked != false {
             my_size += 1 + 1;
+        }
+        if !self.name.is_empty() {
+            my_size += ::protobuf::rt::string_size(14, &self.name);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,19 +151,19 @@ impl ::protobuf::Message for AddRelicFilterPlanCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MJPKBIGCFOM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        if self.GFEENEDNJGF != 0 {
-            os.write_uint32(3, self.GFEENEDNJGF)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.LJKNDCIOOCG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if !self.name.is_empty() {
-            os.write_string(10, &self.name)?;
+        if self.GFEENEDNJGF != 0 {
+            os.write_uint32(8, self.GFEENEDNJGF)?;
         }
         if self.is_marked != false {
-            os.write_bool(15, self.is_marked)?;
+            os.write_bool(10, self.is_marked)?;
+        }
+        if !self.name.is_empty() {
+            os.write_string(14, &self.name)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,20 +183,20 @@ impl ::protobuf::Message for AddRelicFilterPlanCsReq {
 
     fn clear(&mut self) {
         self.MJPKBIGCFOM.clear();
-        self.GFEENEDNJGF = 0;
         self.LJKNDCIOOCG.clear();
-        self.name.clear();
+        self.GFEENEDNJGF = 0;
         self.is_marked = false;
+        self.name.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AddRelicFilterPlanCsReq {
         static instance: AddRelicFilterPlanCsReq = AddRelicFilterPlanCsReq {
             MJPKBIGCFOM: ::protobuf::MessageField::none(),
-            GFEENEDNJGF: 0,
             LJKNDCIOOCG: ::protobuf::MessageField::none(),
-            name: ::std::string::String::new(),
+            GFEENEDNJGF: 0,
             is_marked: false,
+            name: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,11 +223,11 @@ impl ::protobuf::reflect::ProtobufValue for AddRelicFilterPlanCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dAddRelicFilterPlanCsReq.proto\x1a\x11BNAILMNNGIF.proto\x1a\x11KJDL\
     IPEIAAK.proto\"\xcc\x01\n\x17AddRelicFilterPlanCsReq\x12.\n\x0bMJPKBIGCF\
-    OM\x18\x01\x20\x01(\x0b2\x0c.KJDLIPEIAAKR\x0bMJPKBIGCFOM\x12\x20\n\x0bGF\
-    EENEDNJGF\x18\x03\x20\x01(\rR\x0bGFEENEDNJGF\x12.\n\x0bLJKNDCIOOCG\x18\
-    \x05\x20\x01(\x0b2\x0c.BNAILMNNGIFR\x0bLJKNDCIOOCG\x12\x12\n\x04name\x18\
-    \n\x20\x01(\tR\x04name\x12\x1b\n\tis_marked\x18\x0f\x20\x01(\x08R\x08isM\
-    arkedb\x06proto3\
+    OM\x18\x02\x20\x01(\x0b2\x0c.KJDLIPEIAAKR\x0bMJPKBIGCFOM\x12.\n\x0bLJKND\
+    CIOOCG\x18\x07\x20\x01(\x0b2\x0c.BNAILMNNGIFR\x0bLJKNDCIOOCG\x12\x20\n\
+    \x0bGFEENEDNJGF\x18\x08\x20\x01(\rR\x0bGFEENEDNJGF\x12\x1b\n\tis_marked\
+    \x18\n\x20\x01(\x08R\x08isMarked\x12\x12\n\x04name\x18\x0e\x20\x01(\tR\
+    \x04nameb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

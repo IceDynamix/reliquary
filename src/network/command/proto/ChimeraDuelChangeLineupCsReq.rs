@@ -86,16 +86,16 @@ impl ::protobuf::Message for ChimeraDuelChangeLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                64 => {
                     self.ALJOJIDAAPC = is.read_uint32()?;
                 },
-                50 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.AJFJLCKPNAM)?;
                 },
-                48 => {
+                80 => {
                     self.AJFJLCKPNAM.push(is.read_uint32()?);
                 },
-                64 => {
+                112 => {
                     self.GIECFFNDLEB = is.read_uint32()?;
                 },
                 tag => {
@@ -111,11 +111,11 @@ impl ::protobuf::Message for ChimeraDuelChangeLineupCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.ALJOJIDAAPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ALJOJIDAAPC);
+            my_size += ::protobuf::rt::uint32_size(8, self.ALJOJIDAAPC);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.AJFJLCKPNAM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.AJFJLCKPNAM);
         if self.GIECFFNDLEB != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.GIECFFNDLEB);
+            my_size += ::protobuf::rt::uint32_size(14, self.GIECFFNDLEB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,11 +124,11 @@ impl ::protobuf::Message for ChimeraDuelChangeLineupCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ALJOJIDAAPC != 0 {
-            os.write_uint32(5, self.ALJOJIDAAPC)?;
+            os.write_uint32(8, self.ALJOJIDAAPC)?;
         }
-        os.write_repeated_packed_uint32(6, &self.AJFJLCKPNAM)?;
+        os.write_repeated_packed_uint32(10, &self.AJFJLCKPNAM)?;
         if self.GIECFFNDLEB != 0 {
-            os.write_uint32(8, self.GIECFFNDLEB)?;
+            os.write_uint32(14, self.GIECFFNDLEB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelChangeLineupCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"ChimeraDuelChangeLineupCsReq.proto\"\x84\x01\n\x1cChimeraDuelChangeL\
-    ineupCsReq\x12\x20\n\x0bALJOJIDAAPC\x18\x05\x20\x01(\rR\x0bALJOJIDAAPC\
-    \x12\x20\n\x0bAJFJLCKPNAM\x18\x06\x20\x03(\rR\x0bAJFJLCKPNAM\x12\x20\n\
-    \x0bGIECFFNDLEB\x18\x08\x20\x01(\rR\x0bGIECFFNDLEBb\x06proto3\
+    ineupCsReq\x12\x20\n\x0bALJOJIDAAPC\x18\x08\x20\x01(\rR\x0bALJOJIDAAPC\
+    \x12\x20\n\x0bAJFJLCKPNAM\x18\n\x20\x03(\rR\x0bAJFJLCKPNAM\x12\x20\n\x0b\
+    GIECFFNDLEB\x18\x0e\x20\x01(\rR\x0bGIECFFNDLEBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

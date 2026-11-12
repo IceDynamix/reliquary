@@ -79,13 +79,13 @@ impl ::protobuf::Message for GBHIPKDIMMH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.BPAOGJPLENJ)?;
                 },
-                24 => {
+                56 => {
                     self.BPAOGJPLENJ.push(is.read_uint32()?);
                 },
-                80 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for GBHIPKDIMMH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.BPAOGJPLENJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.BPAOGJPLENJ);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for GBHIPKDIMMH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.BPAOGJPLENJ)?;
+        os.write_repeated_packed_uint32(7, &self.BPAOGJPLENJ)?;
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for GBHIPKDIMMH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GBHIPKDIMMH.proto\"I\n\x0bGBHIPKDIMMH\x12\x20\n\x0bBPAOGJPLENJ\x18\
-    \x03\x20\x03(\rR\x0bBPAOGJPLENJ\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\
+    \x07\x20\x03(\rR\x0bBPAOGJPLENJ\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\
     \x07retcodeb\x06proto3\
 ";
 

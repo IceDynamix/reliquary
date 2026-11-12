@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyGetRaffleTicketScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyGetRaffleTicketScRsp.GACKJLBPKGD)
-    pub GACKJLBPKGD: u32,
     // @@protoc_insertion_point(field:MonopolyGetRaffleTicketScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:MonopolyGetRaffleTicketScRsp.HDLPEKIMAJB)
     pub HDLPEKIMAJB: ::std::vec::Vec<super::DDHIEONLIIL::DDHIEONLIIL>,
+    // @@protoc_insertion_point(field:MonopolyGetRaffleTicketScRsp.GACKJLBPKGD)
+    pub GACKJLBPKGD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyGetRaffleTicketScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl MonopolyGetRaffleTicketScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GACKJLBPKGD",
-            |m: &MonopolyGetRaffleTicketScRsp| { &m.GACKJLBPKGD },
-            |m: &mut MonopolyGetRaffleTicketScRsp| { &mut m.GACKJLBPKGD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MonopolyGetRaffleTicketScRsp| { &m.retcode },
             |m: &mut MonopolyGetRaffleTicketScRsp| { &mut m.retcode },
@@ -67,6 +62,11 @@ impl MonopolyGetRaffleTicketScRsp {
             "HDLPEKIMAJB",
             |m: &MonopolyGetRaffleTicketScRsp| { &m.HDLPEKIMAJB },
             |m: &mut MonopolyGetRaffleTicketScRsp| { &mut m.HDLPEKIMAJB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GACKJLBPKGD",
+            |m: &MonopolyGetRaffleTicketScRsp| { &m.GACKJLBPKGD },
+            |m: &mut MonopolyGetRaffleTicketScRsp| { &mut m.GACKJLBPKGD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyGetRaffleTicketScRsp>(
             "MonopolyGetRaffleTicketScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MonopolyGetRaffleTicketScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.GACKJLBPKGD = is.read_uint32()?;
-                },
-                64 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                122 => {
+                66 => {
                     self.HDLPEKIMAJB.push(is.read_message()?);
+                },
+                80 => {
+                    self.GACKJLBPKGD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for MonopolyGetRaffleTicketScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GACKJLBPKGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.GACKJLBPKGD);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         for value in &self.HDLPEKIMAJB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.GACKJLBPKGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.GACKJLBPKGD);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GACKJLBPKGD != 0 {
-            os.write_uint32(1, self.GACKJLBPKGD)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         for v in &self.HDLPEKIMAJB {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
+        if self.GACKJLBPKGD != 0 {
+            os.write_uint32(10, self.GACKJLBPKGD)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for MonopolyGetRaffleTicketScRsp {
     }
 
     fn clear(&mut self) {
-        self.GACKJLBPKGD = 0;
         self.retcode = 0;
         self.HDLPEKIMAJB.clear();
+        self.GACKJLBPKGD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyGetRaffleTicketScRsp {
         static instance: MonopolyGetRaffleTicketScRsp = MonopolyGetRaffleTicketScRsp {
-            GACKJLBPKGD: 0,
             retcode: 0,
             HDLPEKIMAJB: ::std::vec::Vec::new(),
+            GACKJLBPKGD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyGetRaffleTicketScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"MonopolyGetRaffleTicketScRsp.proto\x1a\x11DDHIEONLIIL.proto\"\x8a\
-    \x01\n\x1cMonopolyGetRaffleTicketScRsp\x12\x20\n\x0bGACKJLBPKGD\x18\x01\
-    \x20\x01(\rR\x0bGACKJLBPKGD\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07\
-    retcode\x12.\n\x0bHDLPEKIMAJB\x18\x0f\x20\x03(\x0b2\x0c.DDHIEONLIILR\x0b\
-    HDLPEKIMAJBb\x06proto3\
+    \x01\n\x1cMonopolyGetRaffleTicketScRsp\x12\x18\n\x07retcode\x18\x06\x20\
+    \x01(\rR\x07retcode\x12.\n\x0bHDLPEKIMAJB\x18\x08\x20\x03(\x0b2\x0c.DDHI\
+    EONLIILR\x0bHDLPEKIMAJB\x12\x20\n\x0bGACKJLBPKGD\x18\n\x20\x01(\rR\x0bGA\
+    CKJLBPKGDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for TrialActivityDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                10 => {
                     self.OBOPMFBGBAE.push(is.read_message()?);
                 },
-                50 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.trial_activity_info)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for TrialActivityDataChangeScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.OBOPMFBGBAE {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if let Some(v) = self.trial_activity_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for TrialActivityDataChangeScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%TrialActivityDataChangeScNotify.proto\x1a\x11PAALDKHKOLE.proto\x1a\
     \x17TrialActivityInfo.proto\"\x95\x01\n\x1fTrialActivityDataChangeScNoti\
-    fy\x12.\n\x0bOBOPMFBGBAE\x18\x05\x20\x03(\x0b2\x0c.PAALDKHKOLER\x0bOBOPM\
-    FBGBAE\x12B\n\x13trial_activity_info\x18\x06\x20\x01(\x0b2\x12.TrialActi\
-    vityInfoR\x11trialActivityInfob\x06proto3\
+    fy\x12.\n\x0bOBOPMFBGBAE\x18\x01\x20\x03(\x0b2\x0c.PAALDKHKOLER\x0bOBOPM\
+    FBGBAE\x12B\n\x13trial_activity_info\x18\r\x20\x01(\x0b2\x12.TrialActivi\
+    tyInfoR\x11trialActivityInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

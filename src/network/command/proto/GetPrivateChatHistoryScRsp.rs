@@ -96,13 +96,13 @@ impl ::protobuf::Message for GetPrivateChatHistoryScRsp {
                 16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                34 => {
+                50 => {
                     self.chat_message_list.push(is.read_message()?);
                 },
-                112 => {
+                72 => {
                     self.target_side = is.read_uint32()?;
                 },
-                120 => {
+                104 => {
                     self.contact_side = is.read_uint32()?;
                 },
                 tag => {
@@ -125,10 +125,10 @@ impl ::protobuf::Message for GetPrivateChatHistoryScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.target_side != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.target_side);
+            my_size += ::protobuf::rt::uint32_size(9, self.target_side);
         }
         if self.contact_side != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.contact_side);
+            my_size += ::protobuf::rt::uint32_size(13, self.contact_side);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -140,13 +140,13 @@ impl ::protobuf::Message for GetPrivateChatHistoryScRsp {
             os.write_uint32(2, self.retcode)?;
         }
         for v in &self.chat_message_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         if self.target_side != 0 {
-            os.write_uint32(14, self.target_side)?;
+            os.write_uint32(9, self.target_side)?;
         }
         if self.contact_side != 0 {
-            os.write_uint32(15, self.contact_side)?;
+            os.write_uint32(13, self.contact_side)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for GetPrivateChatHistoryScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20GetPrivateChatHistoryScRsp.proto\x1a\x15ChatMessageData.proto\"\
     \xb8\x01\n\x1aGetPrivateChatHistoryScRsp\x12\x18\n\x07retcode\x18\x02\
-    \x20\x01(\rR\x07retcode\x12<\n\x11chat_message_list\x18\x04\x20\x03(\x0b\
-    2\x10.ChatMessageDataR\x0fchatMessageList\x12\x1f\n\x0btarget_side\x18\
-    \x0e\x20\x01(\rR\ntargetSide\x12!\n\x0ccontact_side\x18\x0f\x20\x01(\rR\
-    \x0bcontactSideb\x06proto3\
+    \x20\x01(\rR\x07retcode\x12<\n\x11chat_message_list\x18\x06\x20\x03(\x0b\
+    2\x10.ChatMessageDataR\x0fchatMessageList\x12\x1f\n\x0btarget_side\x18\t\
+    \x20\x01(\rR\ntargetSide\x12!\n\x0ccontact_side\x18\r\x20\x01(\rR\x0bcon\
+    tactSideb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

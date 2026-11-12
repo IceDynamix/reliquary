@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum PKKCLCNFPLE {
     // @@protoc_insertion_point(enum_value:PKKCLCNFPLE.PKKCLCNFPLE_NLCDGIPGFDJ)
     PKKCLCNFPLE_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:PKKCLCNFPLE.PKKCLCNFPLE_DODAJINHEGA)
-    PKKCLCNFPLE_DODAJINHEGA = 7534,
     // @@protoc_insertion_point(enum_value:PKKCLCNFPLE.PKKCLCNFPLE_DAKANPJMLEA)
-    PKKCLCNFPLE_DAKANPJMLEA = 7520,
-    // @@protoc_insertion_point(enum_value:PKKCLCNFPLE.PKKCLCNFPLE_OCFEICNOBPC)
-    PKKCLCNFPLE_OCFEICNOBPC = 7506,
+    PKKCLCNFPLE_DAKANPJMLEA = 7548,
+    // @@protoc_insertion_point(enum_value:PKKCLCNFPLE.PKKCLCNFPLE_DODAJINHEGA)
+    PKKCLCNFPLE_DODAJINHEGA = 7542,
     // @@protoc_insertion_point(enum_value:PKKCLCNFPLE.PKKCLCNFPLE_LIGGAHEJBCM)
-    PKKCLCNFPLE_LIGGAHEJBCM = 7532,
+    PKKCLCNFPLE_LIGGAHEJBCM = 7535,
+    // @@protoc_insertion_point(enum_value:PKKCLCNFPLE.PKKCLCNFPLE_OCFEICNOBPC)
+    PKKCLCNFPLE_OCFEICNOBPC = 7538,
 }
 
 impl ::protobuf::Enum for PKKCLCNFPLE {
@@ -49,10 +49,10 @@ impl ::protobuf::Enum for PKKCLCNFPLE {
     fn from_i32(value: i32) -> ::std::option::Option<PKKCLCNFPLE> {
         match value {
             0 => ::std::option::Option::Some(PKKCLCNFPLE::PKKCLCNFPLE_NLCDGIPGFDJ),
-            7534 => ::std::option::Option::Some(PKKCLCNFPLE::PKKCLCNFPLE_DODAJINHEGA),
-            7520 => ::std::option::Option::Some(PKKCLCNFPLE::PKKCLCNFPLE_DAKANPJMLEA),
-            7506 => ::std::option::Option::Some(PKKCLCNFPLE::PKKCLCNFPLE_OCFEICNOBPC),
-            7532 => ::std::option::Option::Some(PKKCLCNFPLE::PKKCLCNFPLE_LIGGAHEJBCM),
+            7548 => ::std::option::Option::Some(PKKCLCNFPLE::PKKCLCNFPLE_DAKANPJMLEA),
+            7542 => ::std::option::Option::Some(PKKCLCNFPLE::PKKCLCNFPLE_DODAJINHEGA),
+            7535 => ::std::option::Option::Some(PKKCLCNFPLE::PKKCLCNFPLE_LIGGAHEJBCM),
+            7538 => ::std::option::Option::Some(PKKCLCNFPLE::PKKCLCNFPLE_OCFEICNOBPC),
             _ => ::std::option::Option::None
         }
     }
@@ -60,20 +60,20 @@ impl ::protobuf::Enum for PKKCLCNFPLE {
     fn from_str(str: &str) -> ::std::option::Option<PKKCLCNFPLE> {
         match str {
             "PKKCLCNFPLE_NLCDGIPGFDJ" => ::std::option::Option::Some(PKKCLCNFPLE::PKKCLCNFPLE_NLCDGIPGFDJ),
-            "PKKCLCNFPLE_DODAJINHEGA" => ::std::option::Option::Some(PKKCLCNFPLE::PKKCLCNFPLE_DODAJINHEGA),
             "PKKCLCNFPLE_DAKANPJMLEA" => ::std::option::Option::Some(PKKCLCNFPLE::PKKCLCNFPLE_DAKANPJMLEA),
-            "PKKCLCNFPLE_OCFEICNOBPC" => ::std::option::Option::Some(PKKCLCNFPLE::PKKCLCNFPLE_OCFEICNOBPC),
+            "PKKCLCNFPLE_DODAJINHEGA" => ::std::option::Option::Some(PKKCLCNFPLE::PKKCLCNFPLE_DODAJINHEGA),
             "PKKCLCNFPLE_LIGGAHEJBCM" => ::std::option::Option::Some(PKKCLCNFPLE::PKKCLCNFPLE_LIGGAHEJBCM),
+            "PKKCLCNFPLE_OCFEICNOBPC" => ::std::option::Option::Some(PKKCLCNFPLE::PKKCLCNFPLE_OCFEICNOBPC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [PKKCLCNFPLE] = &[
         PKKCLCNFPLE::PKKCLCNFPLE_NLCDGIPGFDJ,
-        PKKCLCNFPLE::PKKCLCNFPLE_DODAJINHEGA,
         PKKCLCNFPLE::PKKCLCNFPLE_DAKANPJMLEA,
-        PKKCLCNFPLE::PKKCLCNFPLE_OCFEICNOBPC,
+        PKKCLCNFPLE::PKKCLCNFPLE_DODAJINHEGA,
         PKKCLCNFPLE::PKKCLCNFPLE_LIGGAHEJBCM,
+        PKKCLCNFPLE::PKKCLCNFPLE_OCFEICNOBPC,
     ];
 }
 
@@ -86,10 +86,10 @@ impl ::protobuf::EnumFull for PKKCLCNFPLE {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             PKKCLCNFPLE::PKKCLCNFPLE_NLCDGIPGFDJ => 0,
-            PKKCLCNFPLE::PKKCLCNFPLE_DODAJINHEGA => 1,
-            PKKCLCNFPLE::PKKCLCNFPLE_DAKANPJMLEA => 2,
-            PKKCLCNFPLE::PKKCLCNFPLE_OCFEICNOBPC => 3,
-            PKKCLCNFPLE::PKKCLCNFPLE_LIGGAHEJBCM => 4,
+            PKKCLCNFPLE::PKKCLCNFPLE_DAKANPJMLEA => 1,
+            PKKCLCNFPLE::PKKCLCNFPLE_DODAJINHEGA => 2,
+            PKKCLCNFPLE::PKKCLCNFPLE_LIGGAHEJBCM => 3,
+            PKKCLCNFPLE::PKKCLCNFPLE_OCFEICNOBPC => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,9 +109,9 @@ impl PKKCLCNFPLE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PKKCLCNFPLE.proto*\xa2\x01\n\x0bPKKCLCNFPLE\x12\x1b\n\x17PKKCLCNFP\
-    LE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17PKKCLCNFPLE_DODAJINHEGA\x10\xee:\x12\
-    \x1c\n\x17PKKCLCNFPLE_DAKANPJMLEA\x10\xe0:\x12\x1c\n\x17PKKCLCNFPLE_OCFE\
-    ICNOBPC\x10\xd2:\x12\x1c\n\x17PKKCLCNFPLE_LIGGAHEJBCM\x10\xec:b\x06proto\
+    LE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17PKKCLCNFPLE_DAKANPJMLEA\x10\xfc:\x12\
+    \x1c\n\x17PKKCLCNFPLE_DODAJINHEGA\x10\xf6:\x12\x1c\n\x17PKKCLCNFPLE_LIGG\
+    AHEJBCM\x10\xef:\x12\x1c\n\x17PKKCLCNFPLE_OCFEICNOBPC\x10\xf2:b\x06proto\
     3\
 ";
 

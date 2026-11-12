@@ -86,13 +86,13 @@ impl ::protobuf::Message for EPMONPAABKJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                32 => {
                     self.CBGODLHCLPK = is.read_uint32()?;
                 },
-                32 => {
+                96 => {
                     self.BOGIJENAEHJ = is.read_uint32()?;
                 },
-                88 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for EPMONPAABKJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CBGODLHCLPK != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.CBGODLHCLPK);
+            my_size += ::protobuf::rt::uint32_size(4, self.CBGODLHCLPK);
         }
         if self.BOGIJENAEHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.BOGIJENAEHJ);
+            my_size += ::protobuf::rt::uint32_size(12, self.BOGIJENAEHJ);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for EPMONPAABKJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CBGODLHCLPK != 0 {
-            os.write_uint32(2, self.CBGODLHCLPK)?;
+            os.write_uint32(4, self.CBGODLHCLPK)?;
         }
         if self.BOGIJENAEHJ != 0 {
-            os.write_uint32(4, self.BOGIJENAEHJ)?;
+            os.write_uint32(12, self.BOGIJENAEHJ)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for EPMONPAABKJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EPMONPAABKJ.proto\"k\n\x0bEPMONPAABKJ\x12\x20\n\x0bCBGODLHCLPK\x18\
-    \x02\x20\x01(\rR\x0bCBGODLHCLPK\x12\x20\n\x0bBOGIJENAEHJ\x18\x04\x20\x01\
-    (\rR\x0bBOGIJENAEHJ\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\
+    \x04\x20\x01(\rR\x0bCBGODLHCLPK\x12\x20\n\x0bBOGIJENAEHJ\x18\x0c\x20\x01\
+    (\rR\x0bBOGIJENAEHJ\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\
     \x06proto3\
 ";
 

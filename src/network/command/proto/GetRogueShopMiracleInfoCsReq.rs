@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetRogueShopMiracleInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                24 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
-                104 => {
+                32 => {
                     self.LJBCDJNNBJH = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GetRogueShopMiracleInfoCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.interacted_prop_entity_id);
         }
         if self.LJBCDJNNBJH != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GetRogueShopMiracleInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(12, self.interacted_prop_entity_id)?;
+            os.write_uint32(3, self.interacted_prop_entity_id)?;
         }
         if self.LJBCDJNNBJH != false {
-            os.write_bool(13, self.LJBCDJNNBJH)?;
+            os.write_bool(4, self.LJBCDJNNBJH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueShopMiracleInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GetRogueShopMiracleInfoCsReq.proto\"{\n\x1cGetRogueShopMiracleInfoCs\
-    Req\x129\n\x19interacted_prop_entity_id\x18\x0c\x20\x01(\rR\x16interacte\
-    dPropEntityId\x12\x20\n\x0bLJBCDJNNBJH\x18\r\x20\x01(\x08R\x0bLJBCDJNNBJ\
-    Hb\x06proto3\
+    Req\x129\n\x19interacted_prop_entity_id\x18\x03\x20\x01(\rR\x16interacte\
+    dPropEntityId\x12\x20\n\x0bLJBCDJNNBJH\x18\x04\x20\x01(\x08R\x0bLJBCDJNN\
+    BJHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

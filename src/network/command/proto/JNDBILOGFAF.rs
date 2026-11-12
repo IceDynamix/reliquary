@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JNDBILOGFAF {
     // message fields
-    // @@protoc_insertion_point(field:JNDBILOGFAF.FBDIGGDLDCP)
-    pub FBDIGGDLDCP: ::std::vec::Vec<super::MNGADDFICJF::MNGADDFICJF>,
     // @@protoc_insertion_point(field:JNDBILOGFAF.FLBOPEJIGJF)
     pub FLBOPEJIGJF: u32,
+    // @@protoc_insertion_point(field:JNDBILOGFAF.FBDIGGDLDCP)
+    pub FBDIGGDLDCP: ::std::vec::Vec<super::MNGADDFICJF::MNGADDFICJF>,
     // special fields
     // @@protoc_insertion_point(special_field:JNDBILOGFAF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl JNDBILOGFAF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FBDIGGDLDCP",
-            |m: &JNDBILOGFAF| { &m.FBDIGGDLDCP },
-            |m: &mut JNDBILOGFAF| { &mut m.FBDIGGDLDCP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FLBOPEJIGJF",
             |m: &JNDBILOGFAF| { &m.FLBOPEJIGJF },
             |m: &mut JNDBILOGFAF| { &mut m.FLBOPEJIGJF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FBDIGGDLDCP",
+            |m: &JNDBILOGFAF| { &m.FBDIGGDLDCP },
+            |m: &mut JNDBILOGFAF| { &mut m.FBDIGGDLDCP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JNDBILOGFAF>(
             "JNDBILOGFAF",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for JNDBILOGFAF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.FBDIGGDLDCP.push(is.read_message()?);
-                },
-                80 => {
+                40 => {
                     self.FLBOPEJIGJF = is.read_uint32()?;
+                },
+                122 => {
+                    self.FBDIGGDLDCP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for JNDBILOGFAF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FLBOPEJIGJF != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.FLBOPEJIGJF);
+        }
         for value in &self.FBDIGGDLDCP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.FLBOPEJIGJF != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FLBOPEJIGJF);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FBDIGGDLDCP {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         if self.FLBOPEJIGJF != 0 {
-            os.write_uint32(10, self.FLBOPEJIGJF)?;
+            os.write_uint32(5, self.FLBOPEJIGJF)?;
         }
+        for v in &self.FBDIGGDLDCP {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for JNDBILOGFAF {
     }
 
     fn clear(&mut self) {
-        self.FBDIGGDLDCP.clear();
         self.FLBOPEJIGJF = 0;
+        self.FBDIGGDLDCP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JNDBILOGFAF {
         static instance: JNDBILOGFAF = JNDBILOGFAF {
-            FBDIGGDLDCP: ::std::vec::Vec::new(),
             FLBOPEJIGJF: 0,
+            FBDIGGDLDCP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for JNDBILOGFAF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JNDBILOGFAF.proto\x1a\x11MNGADDFICJF.proto\"_\n\x0bJNDBILOGFAF\x12\
-    .\n\x0bFBDIGGDLDCP\x18\x01\x20\x03(\x0b2\x0c.MNGADDFICJFR\x0bFBDIGGDLDCP\
-    \x12\x20\n\x0bFLBOPEJIGJF\x18\n\x20\x01(\rR\x0bFLBOPEJIGJFb\x06proto3\
+    \x20\n\x0bFLBOPEJIGJF\x18\x05\x20\x01(\rR\x0bFLBOPEJIGJF\x12.\n\x0bFBDIG\
+    GDLDCP\x18\x0f\x20\x03(\x0b2\x0c.MNGADDFICJFR\x0bFBDIGGDLDCPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

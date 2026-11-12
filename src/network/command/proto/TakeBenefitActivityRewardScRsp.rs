@@ -89,10 +89,10 @@ impl ::protobuf::Message for TakeBenefitActivityRewardScRsp {
                 34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JJOKIIKIHNL)?;
                 },
-                40 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                122 => {
+                82 => {
                     self.switch_list.push(is.read_message()?);
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for TakeBenefitActivityRewardScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         for value in &self.switch_list {
             let len = value.compute_size();
@@ -128,10 +128,10 @@ impl ::protobuf::Message for TakeBenefitActivityRewardScRsp {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         for v in &self.switch_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -188,7 +188,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n$TakeBenefitActivityRewardScRsp.proto\x1a\x0eItemList.proto\x1a\x11OIE\
     AMBAGHBK.proto\"\x96\x01\n\x1eTakeBenefitActivityRewardScRsp\x12+\n\x0bJ\
     JOKIIKIHNL\x18\x04\x20\x01(\x0b2\t.ItemListR\x0bJJOKIIKIHNL\x12\x18\n\
-    \x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12-\n\x0bswitch_list\x18\x0f\
+    \x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12-\n\x0bswitch_list\x18\n\
     \x20\x03(\x0b2\x0c.OIEAMBAGHBKR\nswitchListb\x06proto3\
 ";
 

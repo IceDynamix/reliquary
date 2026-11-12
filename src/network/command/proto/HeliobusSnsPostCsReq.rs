@@ -86,10 +86,10 @@ impl ::protobuf::Message for HeliobusSnsPostCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                16 => {
                     self.MDAIPFLCNAJ = is.read_uint32()?;
                 },
-                32 => {
+                64 => {
                     self.DNNCAGJIOAP = is.read_uint32()?;
                 },
                 80 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for HeliobusSnsPostCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MDAIPFLCNAJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.MDAIPFLCNAJ);
+            my_size += ::protobuf::rt::uint32_size(2, self.MDAIPFLCNAJ);
         }
         if self.DNNCAGJIOAP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DNNCAGJIOAP);
+            my_size += ::protobuf::rt::uint32_size(8, self.DNNCAGJIOAP);
         }
         if self.CBGODLHCLPK != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.CBGODLHCLPK);
@@ -123,10 +123,10 @@ impl ::protobuf::Message for HeliobusSnsPostCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MDAIPFLCNAJ != 0 {
-            os.write_uint32(3, self.MDAIPFLCNAJ)?;
+            os.write_uint32(2, self.MDAIPFLCNAJ)?;
         }
         if self.DNNCAGJIOAP != 0 {
-            os.write_uint32(4, self.DNNCAGJIOAP)?;
+            os.write_uint32(8, self.DNNCAGJIOAP)?;
         }
         if self.CBGODLHCLPK != 0 {
             os.write_uint32(10, self.CBGODLHCLPK)?;
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusSnsPostCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aHeliobusSnsPostCsReq.proto\"|\n\x14HeliobusSnsPostCsReq\x12\x20\n\
-    \x0bMDAIPFLCNAJ\x18\x03\x20\x01(\rR\x0bMDAIPFLCNAJ\x12\x20\n\x0bDNNCAGJI\
-    OAP\x18\x04\x20\x01(\rR\x0bDNNCAGJIOAP\x12\x20\n\x0bCBGODLHCLPK\x18\n\
+    \x0bMDAIPFLCNAJ\x18\x02\x20\x01(\rR\x0bMDAIPFLCNAJ\x12\x20\n\x0bDNNCAGJI\
+    OAP\x18\x08\x20\x01(\rR\x0bDNNCAGJIOAP\x12\x20\n\x0bCBGODLHCLPK\x18\n\
     \x20\x01(\rR\x0bCBGODLHCLPKb\x06proto3\
 ";
 

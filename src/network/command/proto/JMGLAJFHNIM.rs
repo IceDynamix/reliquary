@@ -86,13 +86,13 @@ impl ::protobuf::Message for JMGLAJFHNIM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.HECCOBFBJFI = is.read_uint32()?;
                 },
-                88 => {
+                56 => {
                     self.map_id = is.read_uint32()?;
                 },
-                122 => {
+                66 => {
                     self.EPJFNPBFFKD.push(is.read_message()?);
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for JMGLAJFHNIM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HECCOBFBJFI != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HECCOBFBJFI);
+            my_size += ::protobuf::rt::uint32_size(1, self.HECCOBFBJFI);
         }
         if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.map_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.map_id);
         }
         for value in &self.EPJFNPBFFKD {
             let len = value.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for JMGLAJFHNIM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HECCOBFBJFI != 0 {
-            os.write_uint32(3, self.HECCOBFBJFI)?;
+            os.write_uint32(1, self.HECCOBFBJFI)?;
         }
         if self.map_id != 0 {
-            os.write_uint32(11, self.map_id)?;
+            os.write_uint32(7, self.map_id)?;
         }
         for v in &self.EPJFNPBFFKD {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for JMGLAJFHNIM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JMGLAJFHNIM.proto\x1a\x11BFMENAAGPDN.proto\"v\n\x0bJMGLAJFHNIM\x12\
-    \x20\n\x0bHECCOBFBJFI\x18\x03\x20\x01(\rR\x0bHECCOBFBJFI\x12\x15\n\x06ma\
-    p_id\x18\x0b\x20\x01(\rR\x05mapId\x12.\n\x0bEPJFNPBFFKD\x18\x0f\x20\x03(\
+    \x20\n\x0bHECCOBFBJFI\x18\x01\x20\x01(\rR\x0bHECCOBFBJFI\x12\x15\n\x06ma\
+    p_id\x18\x07\x20\x01(\rR\x05mapId\x12.\n\x0bEPJFNPBFFKD\x18\x08\x20\x03(\
     \x0b2\x0c.BFMENAAGPDNR\x0bEPJFNPBFFKDb\x06proto3\
 ";
 

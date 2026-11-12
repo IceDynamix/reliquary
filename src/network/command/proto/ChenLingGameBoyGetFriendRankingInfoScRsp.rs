@@ -93,16 +93,16 @@ impl ::protobuf::Message for ChenLingGameBoyGetFriendRankingInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                18 => {
                     self.BEDHEKAGAPE.push(is.read_message()?);
                 },
                 40 => {
                     self.IJCJBDDGGJF = is.read_uint32()?;
                 },
-                88 => {
+                48 => {
                     self.EBAFPOLLJIA = is.read_bool()?;
                 },
-                96 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -128,7 +128,7 @@ impl ::protobuf::Message for ChenLingGameBoyGetFriendRankingInfoScRsp {
             my_size += 1 + 1;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for ChenLingGameBoyGetFriendRankingInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.BEDHEKAGAPE {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.IJCJBDDGGJF != 0 {
             os.write_uint32(5, self.IJCJBDDGGJF)?;
         }
         if self.EBAFPOLLJIA != false {
-            os.write_bool(11, self.EBAFPOLLJIA)?;
+            os.write_bool(6, self.EBAFPOLLJIA)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for ChenLingGameBoyGetFriendRankingInfoS
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n.ChenLingGameBoyGetFriendRankingInfoScRsp.proto\x1a\x11NBHDCJHGKCN.pro\
     to\"\xb8\x01\n(ChenLingGameBoyGetFriendRankingInfoScRsp\x12.\n\x0bBEDHEK\
-    AGAPE\x18\x01\x20\x03(\x0b2\x0c.NBHDCJHGKCNR\x0bBEDHEKAGAPE\x12\x20\n\
+    AGAPE\x18\x02\x20\x03(\x0b2\x0c.NBHDCJHGKCNR\x0bBEDHEKAGAPE\x12\x20\n\
     \x0bIJCJBDDGGJF\x18\x05\x20\x01(\rR\x0bIJCJBDDGGJF\x12\x20\n\x0bEBAFPOLL\
-    JIA\x18\x0b\x20\x01(\x08R\x0bEBAFPOLLJIA\x12\x18\n\x07retcode\x18\x0c\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    JIA\x18\x06\x20\x01(\x08R\x0bEBAFPOLLJIA\x12\x18\n\x07retcode\x18\r\x20\
+    \x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

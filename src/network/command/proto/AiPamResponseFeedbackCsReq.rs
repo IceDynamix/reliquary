@@ -86,13 +86,13 @@ impl ::protobuf::Message for AiPamResponseFeedbackCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                24 => {
                     self.IAJAOMAKAHA = is.read_bool()?;
                 },
-                32 => {
+                40 => {
                     self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
                 },
-                64 => {
+                96 => {
                     self.NMMJBGFDNAI = is.read_bool()?;
                 },
                 tag => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for AiPamResponseFeedbackCsReq {
             my_size += 1 + 1;
         }
         if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(4, self.BDPIMPJOJBK.value());
+            my_size += ::protobuf::rt::int32_size(5, self.BDPIMPJOJBK.value());
         }
         if self.NMMJBGFDNAI != false {
             my_size += 1 + 1;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for AiPamResponseFeedbackCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IAJAOMAKAHA != false {
-            os.write_bool(1, self.IAJAOMAKAHA)?;
+            os.write_bool(3, self.IAJAOMAKAHA)?;
         }
         if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
         }
         if self.NMMJBGFDNAI != false {
-            os.write_bool(8, self.NMMJBGFDNAI)?;
+            os.write_bool(12, self.NMMJBGFDNAI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for AiPamResponseFeedbackCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20AiPamResponseFeedbackCsReq.proto\x1a\x11FKNKNLGMACL.proto\"\x90\
-    \x01\n\x1aAiPamResponseFeedbackCsReq\x12\x20\n\x0bIAJAOMAKAHA\x18\x01\
-    \x20\x01(\x08R\x0bIAJAOMAKAHA\x12.\n\x0bBDPIMPJOJBK\x18\x04\x20\x01(\x0e\
-    2\x0c.FKNKNLGMACLR\x0bBDPIMPJOJBK\x12\x20\n\x0bNMMJBGFDNAI\x18\x08\x20\
+    \x01\n\x1aAiPamResponseFeedbackCsReq\x12\x20\n\x0bIAJAOMAKAHA\x18\x03\
+    \x20\x01(\x08R\x0bIAJAOMAKAHA\x12.\n\x0bBDPIMPJOJBK\x18\x05\x20\x01(\x0e\
+    2\x0c.FKNKNLGMACLR\x0bBDPIMPJOJBK\x12\x20\n\x0bNMMJBGFDNAI\x18\x0c\x20\
     \x01(\x08R\x0bNMMJBGFDNAIb\x06proto3\
 ";
 

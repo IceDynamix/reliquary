@@ -30,10 +30,10 @@ pub struct VoracityInvasionChangeScNotify {
     // message fields
     // @@protoc_insertion_point(field:VoracityInvasionChangeScNotify.type)
     pub type_: u32,
-    // @@protoc_insertion_point(field:VoracityInvasionChangeScNotify.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:VoracityInvasionChangeScNotify.GHAMIKJEAFO)
     pub GHAMIKJEAFO: bool,
+    // @@protoc_insertion_point(field:VoracityInvasionChangeScNotify.id)
+    pub id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:VoracityInvasionChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl VoracityInvasionChangeScNotify {
             |m: &mut VoracityInvasionChangeScNotify| { &mut m.type_ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &VoracityInvasionChangeScNotify| { &m.id },
-            |m: &mut VoracityInvasionChangeScNotify| { &mut m.id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GHAMIKJEAFO",
             |m: &VoracityInvasionChangeScNotify| { &m.GHAMIKJEAFO },
             |m: &mut VoracityInvasionChangeScNotify| { &mut m.GHAMIKJEAFO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &VoracityInvasionChangeScNotify| { &m.id },
+            |m: &mut VoracityInvasionChangeScNotify| { &mut m.id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<VoracityInvasionChangeScNotify>(
             "VoracityInvasionChangeScNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for VoracityInvasionChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                32 => {
                     self.type_ = is.read_uint32()?;
                 },
                 40 => {
-                    self.id = is.read_uint32()?;
-                },
-                72 => {
                     self.GHAMIKJEAFO = is.read_bool()?;
+                },
+                48 => {
+                    self.id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for VoracityInvasionChangeScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.type_ != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.type_);
-        }
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.id);
+            my_size += ::protobuf::rt::uint32_size(4, self.type_);
         }
         if self.GHAMIKJEAFO != false {
             my_size += 1 + 1;
+        }
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for VoracityInvasionChangeScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.type_ != 0 {
-            os.write_uint32(3, self.type_)?;
-        }
-        if self.id != 0 {
-            os.write_uint32(5, self.id)?;
+            os.write_uint32(4, self.type_)?;
         }
         if self.GHAMIKJEAFO != false {
-            os.write_bool(9, self.GHAMIKJEAFO)?;
+            os.write_bool(5, self.GHAMIKJEAFO)?;
+        }
+        if self.id != 0 {
+            os.write_uint32(6, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for VoracityInvasionChangeScNotify {
 
     fn clear(&mut self) {
         self.type_ = 0;
-        self.id = 0;
         self.GHAMIKJEAFO = false;
+        self.id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static VoracityInvasionChangeScNotify {
         static instance: VoracityInvasionChangeScNotify = VoracityInvasionChangeScNotify {
             type_: 0,
-            id: 0,
             GHAMIKJEAFO: false,
+            id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for VoracityInvasionChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$VoracityInvasionChangeScNotify.proto\"f\n\x1eVoracityInvasionChangeSc\
-    Notify\x12\x12\n\x04type\x18\x03\x20\x01(\rR\x04type\x12\x0e\n\x02id\x18\
-    \x05\x20\x01(\rR\x02id\x12\x20\n\x0bGHAMIKJEAFO\x18\t\x20\x01(\x08R\x0bG\
-    HAMIKJEAFOb\x06proto3\
+    Notify\x12\x12\n\x04type\x18\x04\x20\x01(\rR\x04type\x12\x20\n\x0bGHAMIK\
+    JEAFO\x18\x05\x20\x01(\x08R\x0bGHAMIKJEAFO\x12\x0e\n\x02id\x18\x06\x20\
+    \x01(\rR\x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

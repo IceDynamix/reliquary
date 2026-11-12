@@ -82,7 +82,7 @@ impl ::protobuf::Message for UpdateRogueAdventureRoomScoreCsReq {
                 24 => {
                     self.LPEHHMHPCMG = is.read_uint32()?;
                 },
-                80 => {
+                120 => {
                     self.score_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for UpdateRogueAdventureRoomScoreCsReq {
             my_size += ::protobuf::rt::uint32_size(3, self.LPEHHMHPCMG);
         }
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.score_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for UpdateRogueAdventureRoomScoreCsReq {
             os.write_uint32(3, self.LPEHHMHPCMG)?;
         }
         if self.score_id != 0 {
-            os.write_uint32(10, self.score_id)?;
+            os.write_uint32(15, self.score_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for UpdateRogueAdventureRoomScoreCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(UpdateRogueAdventureRoomScoreCsReq.proto\"a\n\"UpdateRogueAdventureRo\
     omScoreCsReq\x12\x20\n\x0bLPEHHMHPCMG\x18\x03\x20\x01(\rR\x0bLPEHHMHPCMG\
-    \x12\x19\n\x08score_id\x18\n\x20\x01(\rR\x07scoreIdb\x06proto3\
+    \x12\x19\n\x08score_id\x18\x0f\x20\x01(\rR\x07scoreIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

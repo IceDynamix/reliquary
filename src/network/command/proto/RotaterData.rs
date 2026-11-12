@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RotaterData {
     // message fields
-    // @@protoc_insertion_point(field:RotaterData.BBFOLEOPPPL)
-    pub BBFOLEOPPPL: f32,
     // @@protoc_insertion_point(field:RotaterData.group_id)
     pub group_id: u32,
+    // @@protoc_insertion_point(field:RotaterData.BBFOLEOPPPL)
+    pub BBFOLEOPPPL: f32,
     // @@protoc_insertion_point(field:RotaterData.PCCCKLNCLHB)
     pub PCCCKLNCLHB: u32,
     // special fields
@@ -54,14 +54,14 @@ impl RotaterData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BBFOLEOPPPL",
-            |m: &RotaterData| { &m.BBFOLEOPPPL },
-            |m: &mut RotaterData| { &mut m.BBFOLEOPPPL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &RotaterData| { &m.group_id },
             |m: &mut RotaterData| { &mut m.group_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BBFOLEOPPPL",
+            |m: &RotaterData| { &m.BBFOLEOPPPL },
+            |m: &mut RotaterData| { &mut m.BBFOLEOPPPL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PCCCKLNCLHB",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for RotaterData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                77 => {
-                    self.BBFOLEOPPPL = is.read_float()?;
-                },
-                80 => {
+                72 => {
                     self.group_id = is.read_uint32()?;
                 },
-                120 => {
+                109 => {
+                    self.BBFOLEOPPPL = is.read_float()?;
+                },
+                112 => {
                     self.PCCCKLNCLHB = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for RotaterData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.group_id);
+        }
         if self.BBFOLEOPPPL != 0. {
             my_size += 1 + 4;
         }
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.group_id);
-        }
         if self.PCCCKLNCLHB != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PCCCKLNCLHB);
+            my_size += ::protobuf::rt::uint32_size(14, self.PCCCKLNCLHB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for RotaterData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BBFOLEOPPPL != 0. {
-            os.write_float(9, self.BBFOLEOPPPL)?;
-        }
         if self.group_id != 0 {
-            os.write_uint32(10, self.group_id)?;
+            os.write_uint32(9, self.group_id)?;
+        }
+        if self.BBFOLEOPPPL != 0. {
+            os.write_float(13, self.BBFOLEOPPPL)?;
         }
         if self.PCCCKLNCLHB != 0 {
-            os.write_uint32(15, self.PCCCKLNCLHB)?;
+            os.write_uint32(14, self.PCCCKLNCLHB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for RotaterData {
     }
 
     fn clear(&mut self) {
-        self.BBFOLEOPPPL = 0.;
         self.group_id = 0;
+        self.BBFOLEOPPPL = 0.;
         self.PCCCKLNCLHB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RotaterData {
         static instance: RotaterData = RotaterData {
-            BBFOLEOPPPL: 0.,
             group_id: 0,
+            BBFOLEOPPPL: 0.,
             PCCCKLNCLHB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for RotaterData {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11RotaterData.proto\"l\n\x0bRotaterData\x12\x20\n\x0bBBFOLEOPPPL\x18\
-    \t\x20\x01(\x02R\x0bBBFOLEOPPPL\x12\x19\n\x08group_id\x18\n\x20\x01(\rR\
-    \x07groupId\x12\x20\n\x0bPCCCKLNCLHB\x18\x0f\x20\x01(\rR\x0bPCCCKLNCLHBb\
+    \n\x11RotaterData.proto\"l\n\x0bRotaterData\x12\x19\n\x08group_id\x18\t\
+    \x20\x01(\rR\x07groupId\x12\x20\n\x0bBBFOLEOPPPL\x18\r\x20\x01(\x02R\x0b\
+    BBFOLEOPPPL\x12\x20\n\x0bPCCCKLNCLHB\x18\x0e\x20\x01(\rR\x0bPCCCKLNCLHBb\
     \x06proto3\
 ";
 

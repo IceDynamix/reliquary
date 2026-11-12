@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MNGADDFICJF {
     // message fields
+    // @@protoc_insertion_point(field:MNGADDFICJF.x)
+    pub x: u32,
     // @@protoc_insertion_point(field:MNGADDFICJF.ENPNDBIBPLE)
     pub ENPNDBIBPLE: u32,
+    // @@protoc_insertion_point(field:MNGADDFICJF.y)
+    pub y: u32,
     // @@protoc_insertion_point(field:MNGADDFICJF.PANMEBACIBF)
     pub PANMEBACIBF: bool,
     // @@protoc_insertion_point(field:MNGADDFICJF.NMELCPIOKNO)
     pub NMELCPIOKNO: u32,
-    // @@protoc_insertion_point(field:MNGADDFICJF.x)
-    pub x: u32,
-    // @@protoc_insertion_point(field:MNGADDFICJF.y)
-    pub y: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MNGADDFICJF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,19 @@ impl MNGADDFICJF {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "x",
+            |m: &MNGADDFICJF| { &m.x },
+            |m: &mut MNGADDFICJF| { &mut m.x },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ENPNDBIBPLE",
             |m: &MNGADDFICJF| { &m.ENPNDBIBPLE },
             |m: &mut MNGADDFICJF| { &mut m.ENPNDBIBPLE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "y",
+            |m: &MNGADDFICJF| { &m.y },
+            |m: &mut MNGADDFICJF| { &mut m.y },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PANMEBACIBF",
@@ -71,16 +81,6 @@ impl MNGADDFICJF {
             "NMELCPIOKNO",
             |m: &MNGADDFICJF| { &m.NMELCPIOKNO },
             |m: &mut MNGADDFICJF| { &mut m.NMELCPIOKNO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "x",
-            |m: &MNGADDFICJF| { &m.x },
-            |m: &mut MNGADDFICJF| { &mut m.x },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "y",
-            |m: &MNGADDFICJF| { &m.y },
-            |m: &mut MNGADDFICJF| { &mut m.y },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MNGADDFICJF>(
             "MNGADDFICJF",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for MNGADDFICJF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.ENPNDBIBPLE = is.read_uint32()?;
-                },
-                16 => {
-                    self.PANMEBACIBF = is.read_bool()?;
-                },
-                24 => {
-                    self.NMELCPIOKNO = is.read_uint32()?;
-                },
-                64 => {
+                32 => {
                     self.x = is.read_uint32()?;
                 },
-                88 => {
+                48 => {
+                    self.ENPNDBIBPLE = is.read_uint32()?;
+                },
+                56 => {
                     self.y = is.read_uint32()?;
+                },
+                72 => {
+                    self.PANMEBACIBF = is.read_bool()?;
+                },
+                80 => {
+                    self.NMELCPIOKNO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for MNGADDFICJF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.x != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.x);
+        }
         if self.ENPNDBIBPLE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ENPNDBIBPLE);
+            my_size += ::protobuf::rt::uint32_size(6, self.ENPNDBIBPLE);
+        }
+        if self.y != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.y);
         }
         if self.PANMEBACIBF != false {
             my_size += 1 + 1;
         }
         if self.NMELCPIOKNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.NMELCPIOKNO);
-        }
-        if self.x != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.x);
-        }
-        if self.y != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.y);
+            my_size += ::protobuf::rt::uint32_size(10, self.NMELCPIOKNO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for MNGADDFICJF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ENPNDBIBPLE != 0 {
-            os.write_uint32(1, self.ENPNDBIBPLE)?;
-        }
-        if self.PANMEBACIBF != false {
-            os.write_bool(2, self.PANMEBACIBF)?;
-        }
-        if self.NMELCPIOKNO != 0 {
-            os.write_uint32(3, self.NMELCPIOKNO)?;
-        }
         if self.x != 0 {
-            os.write_uint32(8, self.x)?;
+            os.write_uint32(4, self.x)?;
+        }
+        if self.ENPNDBIBPLE != 0 {
+            os.write_uint32(6, self.ENPNDBIBPLE)?;
         }
         if self.y != 0 {
-            os.write_uint32(11, self.y)?;
+            os.write_uint32(7, self.y)?;
+        }
+        if self.PANMEBACIBF != false {
+            os.write_bool(9, self.PANMEBACIBF)?;
+        }
+        if self.NMELCPIOKNO != 0 {
+            os.write_uint32(10, self.NMELCPIOKNO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for MNGADDFICJF {
     }
 
     fn clear(&mut self) {
+        self.x = 0;
         self.ENPNDBIBPLE = 0;
+        self.y = 0;
         self.PANMEBACIBF = false;
         self.NMELCPIOKNO = 0;
-        self.x = 0;
-        self.y = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MNGADDFICJF {
         static instance: MNGADDFICJF = MNGADDFICJF {
+            x: 0,
             ENPNDBIBPLE: 0,
+            y: 0,
             PANMEBACIBF: false,
             NMELCPIOKNO: 0,
-            x: 0,
-            y: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for MNGADDFICJF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MNGADDFICJF.proto\"\x8f\x01\n\x0bMNGADDFICJF\x12\x20\n\x0bENPNDBIB\
-    PLE\x18\x01\x20\x01(\rR\x0bENPNDBIBPLE\x12\x20\n\x0bPANMEBACIBF\x18\x02\
-    \x20\x01(\x08R\x0bPANMEBACIBF\x12\x20\n\x0bNMELCPIOKNO\x18\x03\x20\x01(\
-    \rR\x0bNMELCPIOKNO\x12\x0c\n\x01x\x18\x08\x20\x01(\rR\x01x\x12\x0c\n\x01\
-    y\x18\x0b\x20\x01(\rR\x01yb\x06proto3\
+    \n\x11MNGADDFICJF.proto\"\x8f\x01\n\x0bMNGADDFICJF\x12\x0c\n\x01x\x18\
+    \x04\x20\x01(\rR\x01x\x12\x20\n\x0bENPNDBIBPLE\x18\x06\x20\x01(\rR\x0bEN\
+    PNDBIBPLE\x12\x0c\n\x01y\x18\x07\x20\x01(\rR\x01y\x12\x20\n\x0bPANMEBACI\
+    BF\x18\t\x20\x01(\x08R\x0bPANMEBACIBF\x12\x20\n\x0bNMELCPIOKNO\x18\n\x20\
+    \x01(\rR\x0bNMELCPIOKNOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

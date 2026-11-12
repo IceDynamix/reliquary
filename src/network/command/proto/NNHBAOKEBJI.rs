@@ -29,22 +29,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum NNHBAOKEBJI {
     // @@protoc_insertion_point(enum_value:NNHBAOKEBJI.NNHBAOKEBJI_NLCDGIPGFDJ)
     NNHBAOKEBJI_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:NNHBAOKEBJI.NNHBAOKEBJI_IFPCDBMEIAK)
-    NNHBAOKEBJI_IFPCDBMEIAK = 7656,
-    // @@protoc_insertion_point(enum_value:NNHBAOKEBJI.NNHBAOKEBJI_OCKANPAJIMJ)
-    NNHBAOKEBJI_OCKANPAJIMJ = 7681,
-    // @@protoc_insertion_point(enum_value:NNHBAOKEBJI.NNHBAOKEBJI_PJDFLECDOAA)
-    NNHBAOKEBJI_PJDFLECDOAA = 7679,
-    // @@protoc_insertion_point(enum_value:NNHBAOKEBJI.NNHBAOKEBJI_ENDFCJDJHEJ)
-    NNHBAOKEBJI_ENDFCJDJHEJ = 7670,
-    // @@protoc_insertion_point(enum_value:NNHBAOKEBJI.NNHBAOKEBJI_OCEMBBBNAGJ)
-    NNHBAOKEBJI_OCEMBBBNAGJ = 7682,
-    // @@protoc_insertion_point(enum_value:NNHBAOKEBJI.NNHBAOKEBJI_DCHBPOBFJJK)
-    NNHBAOKEBJI_DCHBPOBFJJK = 7666,
     // @@protoc_insertion_point(enum_value:NNHBAOKEBJI.NNHBAOKEBJI_FNAMLLEMAOK)
-    NNHBAOKEBJI_FNAMLLEMAOK = 7661,
+    NNHBAOKEBJI_FNAMLLEMAOK = 7685,
+    // @@protoc_insertion_point(enum_value:NNHBAOKEBJI.NNHBAOKEBJI_OCEMBBBNAGJ)
+    NNHBAOKEBJI_OCEMBBBNAGJ = 7698,
     // @@protoc_insertion_point(enum_value:NNHBAOKEBJI.NNHBAOKEBJI_GFECMCBCMDM)
-    NNHBAOKEBJI_GFECMCBCMDM = 7684,
+    NNHBAOKEBJI_GFECMCBCMDM = 7690,
+    // @@protoc_insertion_point(enum_value:NNHBAOKEBJI.NNHBAOKEBJI_IFPCDBMEIAK)
+    NNHBAOKEBJI_IFPCDBMEIAK = 7684,
+    // @@protoc_insertion_point(enum_value:NNHBAOKEBJI.NNHBAOKEBJI_ENDFCJDJHEJ)
+    NNHBAOKEBJI_ENDFCJDJHEJ = 7696,
+    // @@protoc_insertion_point(enum_value:NNHBAOKEBJI.NNHBAOKEBJI_PJDFLECDOAA)
+    NNHBAOKEBJI_PJDFLECDOAA = 7663,
+    // @@protoc_insertion_point(enum_value:NNHBAOKEBJI.NNHBAOKEBJI_OCKANPAJIMJ)
+    NNHBAOKEBJI_OCKANPAJIMJ = 7667,
+    // @@protoc_insertion_point(enum_value:NNHBAOKEBJI.NNHBAOKEBJI_DCHBPOBFJJK)
+    NNHBAOKEBJI_DCHBPOBFJJK = 7675,
 }
 
 impl ::protobuf::Enum for NNHBAOKEBJI {
@@ -57,14 +57,14 @@ impl ::protobuf::Enum for NNHBAOKEBJI {
     fn from_i32(value: i32) -> ::std::option::Option<NNHBAOKEBJI> {
         match value {
             0 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_NLCDGIPGFDJ),
-            7656 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_IFPCDBMEIAK),
-            7681 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_OCKANPAJIMJ),
-            7679 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_PJDFLECDOAA),
-            7670 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_ENDFCJDJHEJ),
-            7682 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_OCEMBBBNAGJ),
-            7666 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_DCHBPOBFJJK),
-            7661 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_FNAMLLEMAOK),
-            7684 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_GFECMCBCMDM),
+            7685 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_FNAMLLEMAOK),
+            7698 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_OCEMBBBNAGJ),
+            7690 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_GFECMCBCMDM),
+            7684 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_IFPCDBMEIAK),
+            7696 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_ENDFCJDJHEJ),
+            7663 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_PJDFLECDOAA),
+            7667 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_OCKANPAJIMJ),
+            7675 => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_DCHBPOBFJJK),
             _ => ::std::option::Option::None
         }
     }
@@ -72,28 +72,28 @@ impl ::protobuf::Enum for NNHBAOKEBJI {
     fn from_str(str: &str) -> ::std::option::Option<NNHBAOKEBJI> {
         match str {
             "NNHBAOKEBJI_NLCDGIPGFDJ" => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_NLCDGIPGFDJ),
-            "NNHBAOKEBJI_IFPCDBMEIAK" => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_IFPCDBMEIAK),
-            "NNHBAOKEBJI_OCKANPAJIMJ" => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_OCKANPAJIMJ),
-            "NNHBAOKEBJI_PJDFLECDOAA" => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_PJDFLECDOAA),
-            "NNHBAOKEBJI_ENDFCJDJHEJ" => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_ENDFCJDJHEJ),
-            "NNHBAOKEBJI_OCEMBBBNAGJ" => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_OCEMBBBNAGJ),
-            "NNHBAOKEBJI_DCHBPOBFJJK" => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_DCHBPOBFJJK),
             "NNHBAOKEBJI_FNAMLLEMAOK" => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_FNAMLLEMAOK),
+            "NNHBAOKEBJI_OCEMBBBNAGJ" => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_OCEMBBBNAGJ),
             "NNHBAOKEBJI_GFECMCBCMDM" => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_GFECMCBCMDM),
+            "NNHBAOKEBJI_IFPCDBMEIAK" => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_IFPCDBMEIAK),
+            "NNHBAOKEBJI_ENDFCJDJHEJ" => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_ENDFCJDJHEJ),
+            "NNHBAOKEBJI_PJDFLECDOAA" => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_PJDFLECDOAA),
+            "NNHBAOKEBJI_OCKANPAJIMJ" => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_OCKANPAJIMJ),
+            "NNHBAOKEBJI_DCHBPOBFJJK" => ::std::option::Option::Some(NNHBAOKEBJI::NNHBAOKEBJI_DCHBPOBFJJK),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [NNHBAOKEBJI] = &[
         NNHBAOKEBJI::NNHBAOKEBJI_NLCDGIPGFDJ,
-        NNHBAOKEBJI::NNHBAOKEBJI_IFPCDBMEIAK,
-        NNHBAOKEBJI::NNHBAOKEBJI_OCKANPAJIMJ,
-        NNHBAOKEBJI::NNHBAOKEBJI_PJDFLECDOAA,
-        NNHBAOKEBJI::NNHBAOKEBJI_ENDFCJDJHEJ,
-        NNHBAOKEBJI::NNHBAOKEBJI_OCEMBBBNAGJ,
-        NNHBAOKEBJI::NNHBAOKEBJI_DCHBPOBFJJK,
         NNHBAOKEBJI::NNHBAOKEBJI_FNAMLLEMAOK,
+        NNHBAOKEBJI::NNHBAOKEBJI_OCEMBBBNAGJ,
         NNHBAOKEBJI::NNHBAOKEBJI_GFECMCBCMDM,
+        NNHBAOKEBJI::NNHBAOKEBJI_IFPCDBMEIAK,
+        NNHBAOKEBJI::NNHBAOKEBJI_ENDFCJDJHEJ,
+        NNHBAOKEBJI::NNHBAOKEBJI_PJDFLECDOAA,
+        NNHBAOKEBJI::NNHBAOKEBJI_OCKANPAJIMJ,
+        NNHBAOKEBJI::NNHBAOKEBJI_DCHBPOBFJJK,
     ];
 }
 
@@ -106,14 +106,14 @@ impl ::protobuf::EnumFull for NNHBAOKEBJI {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             NNHBAOKEBJI::NNHBAOKEBJI_NLCDGIPGFDJ => 0,
-            NNHBAOKEBJI::NNHBAOKEBJI_IFPCDBMEIAK => 1,
-            NNHBAOKEBJI::NNHBAOKEBJI_OCKANPAJIMJ => 2,
-            NNHBAOKEBJI::NNHBAOKEBJI_PJDFLECDOAA => 3,
-            NNHBAOKEBJI::NNHBAOKEBJI_ENDFCJDJHEJ => 4,
-            NNHBAOKEBJI::NNHBAOKEBJI_OCEMBBBNAGJ => 5,
-            NNHBAOKEBJI::NNHBAOKEBJI_DCHBPOBFJJK => 6,
-            NNHBAOKEBJI::NNHBAOKEBJI_FNAMLLEMAOK => 7,
-            NNHBAOKEBJI::NNHBAOKEBJI_GFECMCBCMDM => 8,
+            NNHBAOKEBJI::NNHBAOKEBJI_FNAMLLEMAOK => 1,
+            NNHBAOKEBJI::NNHBAOKEBJI_OCEMBBBNAGJ => 2,
+            NNHBAOKEBJI::NNHBAOKEBJI_GFECMCBCMDM => 3,
+            NNHBAOKEBJI::NNHBAOKEBJI_IFPCDBMEIAK => 4,
+            NNHBAOKEBJI::NNHBAOKEBJI_ENDFCJDJHEJ => 5,
+            NNHBAOKEBJI::NNHBAOKEBJI_PJDFLECDOAA => 6,
+            NNHBAOKEBJI::NNHBAOKEBJI_OCKANPAJIMJ => 7,
+            NNHBAOKEBJI::NNHBAOKEBJI_DCHBPOBFJJK => 8,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -133,12 +133,12 @@ impl NNHBAOKEBJI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NNHBAOKEBJI.proto*\x9a\x02\n\x0bNNHBAOKEBJI\x12\x1b\n\x17NNHBAOKEB\
-    JI_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17NNHBAOKEBJI_IFPCDBMEIAK\x10\xe8;\x12\
-    \x1c\n\x17NNHBAOKEBJI_OCKANPAJIMJ\x10\x81<\x12\x1c\n\x17NNHBAOKEBJI_PJDF\
-    LECDOAA\x10\xff;\x12\x1c\n\x17NNHBAOKEBJI_ENDFCJDJHEJ\x10\xf6;\x12\x1c\n\
-    \x17NNHBAOKEBJI_OCEMBBBNAGJ\x10\x82<\x12\x1c\n\x17NNHBAOKEBJI_DCHBPOBFJJ\
-    K\x10\xf2;\x12\x1c\n\x17NNHBAOKEBJI_FNAMLLEMAOK\x10\xed;\x12\x1c\n\x17NN\
-    HBAOKEBJI_GFECMCBCMDM\x10\x84<b\x06proto3\
+    JI_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17NNHBAOKEBJI_FNAMLLEMAOK\x10\x85<\x12\
+    \x1c\n\x17NNHBAOKEBJI_OCEMBBBNAGJ\x10\x92<\x12\x1c\n\x17NNHBAOKEBJI_GFEC\
+    MCBCMDM\x10\x8a<\x12\x1c\n\x17NNHBAOKEBJI_IFPCDBMEIAK\x10\x84<\x12\x1c\n\
+    \x17NNHBAOKEBJI_ENDFCJDJHEJ\x10\x90<\x12\x1c\n\x17NNHBAOKEBJI_PJDFLECDOA\
+    A\x10\xef;\x12\x1c\n\x17NNHBAOKEBJI_OCKANPAJIMJ\x10\xf3;\x12\x1c\n\x17NN\
+    HBAOKEBJI_DCHBPOBFJJK\x10\xfb;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

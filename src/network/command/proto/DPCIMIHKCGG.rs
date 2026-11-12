@@ -79,10 +79,10 @@ impl ::protobuf::Message for DPCIMIHKCGG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                16 => {
                     self.JLAHNBIMKPD = is.read_uint32()?;
                 },
-                48 => {
+                96 => {
                     self.DPHAJPEADAF = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for DPCIMIHKCGG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JLAHNBIMKPD != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.JLAHNBIMKPD);
+            my_size += ::protobuf::rt::uint32_size(2, self.JLAHNBIMKPD);
         }
         if self.DPHAJPEADAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DPHAJPEADAF);
+            my_size += ::protobuf::rt::uint32_size(12, self.DPHAJPEADAF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DPCIMIHKCGG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JLAHNBIMKPD != 0 {
-            os.write_uint32(4, self.JLAHNBIMKPD)?;
+            os.write_uint32(2, self.JLAHNBIMKPD)?;
         }
         if self.DPHAJPEADAF != 0 {
-            os.write_uint32(6, self.DPHAJPEADAF)?;
+            os.write_uint32(12, self.DPHAJPEADAF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for DPCIMIHKCGG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DPCIMIHKCGG.proto\"Q\n\x0bDPCIMIHKCGG\x12\x20\n\x0bJLAHNBIMKPD\x18\
-    \x04\x20\x01(\rR\x0bJLAHNBIMKPD\x12\x20\n\x0bDPHAJPEADAF\x18\x06\x20\x01\
+    \x02\x20\x01(\rR\x0bJLAHNBIMKPD\x12\x20\n\x0bDPHAJPEADAF\x18\x0c\x20\x01\
     (\rR\x0bDPHAJPEADAFb\x06proto3\
 ";
 

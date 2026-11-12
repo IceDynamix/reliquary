@@ -30,12 +30,12 @@ pub struct IdleLiveFinishQuestionTimeoutCsReq {
     // message fields
     // @@protoc_insertion_point(field:IdleLiveFinishQuestionTimeoutCsReq.JMBGMIPLLJI)
     pub JMBGMIPLLJI: u32,
-    // @@protoc_insertion_point(field:IdleLiveFinishQuestionTimeoutCsReq.CJAINJMLDFC)
-    pub CJAINJMLDFC: u32,
-    // @@protoc_insertion_point(field:IdleLiveFinishQuestionTimeoutCsReq.DJNDDEBIMGA)
-    pub DJNDDEBIMGA: bool,
     // @@protoc_insertion_point(field:IdleLiveFinishQuestionTimeoutCsReq.PDICFEGEPNM)
     pub PDICFEGEPNM: u32,
+    // @@protoc_insertion_point(field:IdleLiveFinishQuestionTimeoutCsReq.DJNDDEBIMGA)
+    pub DJNDDEBIMGA: bool,
+    // @@protoc_insertion_point(field:IdleLiveFinishQuestionTimeoutCsReq.CJAINJMLDFC)
+    pub CJAINJMLDFC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IdleLiveFinishQuestionTimeoutCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,9 +61,9 @@ impl IdleLiveFinishQuestionTimeoutCsReq {
             |m: &mut IdleLiveFinishQuestionTimeoutCsReq| { &mut m.JMBGMIPLLJI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CJAINJMLDFC",
-            |m: &IdleLiveFinishQuestionTimeoutCsReq| { &m.CJAINJMLDFC },
-            |m: &mut IdleLiveFinishQuestionTimeoutCsReq| { &mut m.CJAINJMLDFC },
+            "PDICFEGEPNM",
+            |m: &IdleLiveFinishQuestionTimeoutCsReq| { &m.PDICFEGEPNM },
+            |m: &mut IdleLiveFinishQuestionTimeoutCsReq| { &mut m.PDICFEGEPNM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DJNDDEBIMGA",
@@ -71,9 +71,9 @@ impl IdleLiveFinishQuestionTimeoutCsReq {
             |m: &mut IdleLiveFinishQuestionTimeoutCsReq| { &mut m.DJNDDEBIMGA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PDICFEGEPNM",
-            |m: &IdleLiveFinishQuestionTimeoutCsReq| { &m.PDICFEGEPNM },
-            |m: &mut IdleLiveFinishQuestionTimeoutCsReq| { &mut m.PDICFEGEPNM },
+            "CJAINJMLDFC",
+            |m: &IdleLiveFinishQuestionTimeoutCsReq| { &m.CJAINJMLDFC },
+            |m: &mut IdleLiveFinishQuestionTimeoutCsReq| { &mut m.CJAINJMLDFC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IdleLiveFinishQuestionTimeoutCsReq>(
             "IdleLiveFinishQuestionTimeoutCsReq",
@@ -97,13 +97,13 @@ impl ::protobuf::Message for IdleLiveFinishQuestionTimeoutCsReq {
                     self.JMBGMIPLLJI = is.read_uint32()?;
                 },
                 40 => {
-                    self.CJAINJMLDFC = is.read_uint32()?;
+                    self.PDICFEGEPNM = is.read_uint32()?;
                 },
-                104 => {
+                96 => {
                     self.DJNDDEBIMGA = is.read_bool()?;
                 },
                 120 => {
-                    self.PDICFEGEPNM = is.read_uint32()?;
+                    self.CJAINJMLDFC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,14 +120,14 @@ impl ::protobuf::Message for IdleLiveFinishQuestionTimeoutCsReq {
         if self.JMBGMIPLLJI != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.JMBGMIPLLJI);
         }
-        if self.CJAINJMLDFC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.CJAINJMLDFC);
+        if self.PDICFEGEPNM != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.PDICFEGEPNM);
         }
         if self.DJNDDEBIMGA != false {
             my_size += 1 + 1;
         }
-        if self.PDICFEGEPNM != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PDICFEGEPNM);
+        if self.CJAINJMLDFC != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.CJAINJMLDFC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,14 +138,14 @@ impl ::protobuf::Message for IdleLiveFinishQuestionTimeoutCsReq {
         if self.JMBGMIPLLJI != 0 {
             os.write_uint32(2, self.JMBGMIPLLJI)?;
         }
-        if self.CJAINJMLDFC != 0 {
-            os.write_uint32(5, self.CJAINJMLDFC)?;
+        if self.PDICFEGEPNM != 0 {
+            os.write_uint32(5, self.PDICFEGEPNM)?;
         }
         if self.DJNDDEBIMGA != false {
-            os.write_bool(13, self.DJNDDEBIMGA)?;
+            os.write_bool(12, self.DJNDDEBIMGA)?;
         }
-        if self.PDICFEGEPNM != 0 {
-            os.write_uint32(15, self.PDICFEGEPNM)?;
+        if self.CJAINJMLDFC != 0 {
+            os.write_uint32(15, self.CJAINJMLDFC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for IdleLiveFinishQuestionTimeoutCsReq {
 
     fn clear(&mut self) {
         self.JMBGMIPLLJI = 0;
-        self.CJAINJMLDFC = 0;
-        self.DJNDDEBIMGA = false;
         self.PDICFEGEPNM = 0;
+        self.DJNDDEBIMGA = false;
+        self.CJAINJMLDFC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IdleLiveFinishQuestionTimeoutCsReq {
         static instance: IdleLiveFinishQuestionTimeoutCsReq = IdleLiveFinishQuestionTimeoutCsReq {
             JMBGMIPLLJI: 0,
-            CJAINJMLDFC: 0,
-            DJNDDEBIMGA: false,
             PDICFEGEPNM: 0,
+            DJNDDEBIMGA: false,
+            CJAINJMLDFC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,9 +203,9 @@ impl ::protobuf::reflect::ProtobufValue for IdleLiveFinishQuestionTimeoutCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(IdleLiveFinishQuestionTimeoutCsReq.proto\"\xac\x01\n\"IdleLiveFinishQ\
     uestionTimeoutCsReq\x12\x20\n\x0bJMBGMIPLLJI\x18\x02\x20\x01(\rR\x0bJMBG\
-    MIPLLJI\x12\x20\n\x0bCJAINJMLDFC\x18\x05\x20\x01(\rR\x0bCJAINJMLDFC\x12\
-    \x20\n\x0bDJNDDEBIMGA\x18\r\x20\x01(\x08R\x0bDJNDDEBIMGA\x12\x20\n\x0bPD\
-    ICFEGEPNM\x18\x0f\x20\x01(\rR\x0bPDICFEGEPNMb\x06proto3\
+    MIPLLJI\x12\x20\n\x0bPDICFEGEPNM\x18\x05\x20\x01(\rR\x0bPDICFEGEPNM\x12\
+    \x20\n\x0bDJNDDEBIMGA\x18\x0c\x20\x01(\x08R\x0bDJNDDEBIMGA\x12\x20\n\x0b\
+    CJAINJMLDFC\x18\x0f\x20\x01(\rR\x0bCJAINJMLDFCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

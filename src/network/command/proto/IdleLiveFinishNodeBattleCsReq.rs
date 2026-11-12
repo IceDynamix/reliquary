@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IdleLiveFinishNodeBattleCsReq {
     // message fields
-    // @@protoc_insertion_point(field:IdleLiveFinishNodeBattleCsReq.HNMLBLGGOLB)
-    pub HNMLBLGGOLB: ::protobuf::MessageField<super::BIKNPJPLDAO::BIKNPJPLDAO>,
     // @@protoc_insertion_point(field:IdleLiveFinishNodeBattleCsReq.GBJEALNCMJC)
     pub GBJEALNCMJC: ::protobuf::EnumOrUnknown<super::JDGNMIDMACL::JDGNMIDMACL>,
+    // @@protoc_insertion_point(field:IdleLiveFinishNodeBattleCsReq.HNMLBLGGOLB)
+    pub HNMLBLGGOLB: ::protobuf::MessageField<super::BIKNPJPLDAO::BIKNPJPLDAO>,
     // special fields
     // @@protoc_insertion_point(special_field:IdleLiveFinishNodeBattleCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl IdleLiveFinishNodeBattleCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BIKNPJPLDAO::BIKNPJPLDAO>(
-            "HNMLBLGGOLB",
-            |m: &IdleLiveFinishNodeBattleCsReq| { &m.HNMLBLGGOLB },
-            |m: &mut IdleLiveFinishNodeBattleCsReq| { &mut m.HNMLBLGGOLB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GBJEALNCMJC",
             |m: &IdleLiveFinishNodeBattleCsReq| { &m.GBJEALNCMJC },
             |m: &mut IdleLiveFinishNodeBattleCsReq| { &mut m.GBJEALNCMJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BIKNPJPLDAO::BIKNPJPLDAO>(
+            "HNMLBLGGOLB",
+            |m: &IdleLiveFinishNodeBattleCsReq| { &m.HNMLBLGGOLB },
+            |m: &mut IdleLiveFinishNodeBattleCsReq| { &mut m.HNMLBLGGOLB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IdleLiveFinishNodeBattleCsReq>(
             "IdleLiveFinishNodeBattleCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for IdleLiveFinishNodeBattleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNMLBLGGOLB)?;
-                },
-                120 => {
+                80 => {
                     self.GBJEALNCMJC = is.read_enum_or_unknown()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNMLBLGGOLB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for IdleLiveFinishNodeBattleCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.GBJEALNCMJC != ::protobuf::EnumOrUnknown::new(super::JDGNMIDMACL::JDGNMIDMACL::JDGNMIDMACL_GAIFBJCKGPA) {
+            my_size += ::protobuf::rt::int32_size(10, self.GBJEALNCMJC.value());
+        }
         if let Some(v) = self.HNMLBLGGOLB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.GBJEALNCMJC != ::protobuf::EnumOrUnknown::new(super::JDGNMIDMACL::JDGNMIDMACL::JDGNMIDMACL_GAIFBJCKGPA) {
-            my_size += ::protobuf::rt::int32_size(15, self.GBJEALNCMJC.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for IdleLiveFinishNodeBattleCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.HNMLBLGGOLB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
         if self.GBJEALNCMJC != ::protobuf::EnumOrUnknown::new(super::JDGNMIDMACL::JDGNMIDMACL::JDGNMIDMACL_GAIFBJCKGPA) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.GBJEALNCMJC))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.GBJEALNCMJC))?;
+        }
+        if let Some(v) = self.HNMLBLGGOLB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for IdleLiveFinishNodeBattleCsReq {
     }
 
     fn clear(&mut self) {
-        self.HNMLBLGGOLB.clear();
         self.GBJEALNCMJC = ::protobuf::EnumOrUnknown::new(super::JDGNMIDMACL::JDGNMIDMACL::JDGNMIDMACL_GAIFBJCKGPA);
+        self.HNMLBLGGOLB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IdleLiveFinishNodeBattleCsReq {
         static instance: IdleLiveFinishNodeBattleCsReq = IdleLiveFinishNodeBattleCsReq {
-            HNMLBLGGOLB: ::protobuf::MessageField::none(),
             GBJEALNCMJC: ::protobuf::EnumOrUnknown::from_i32(0),
+            HNMLBLGGOLB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for IdleLiveFinishNodeBattleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#IdleLiveFinishNodeBattleCsReq.proto\x1a\x11BIKNPJPLDAO.proto\x1a\x11J\
-    DGNMIDMACL.proto\"\x7f\n\x1dIdleLiveFinishNodeBattleCsReq\x12.\n\x0bHNML\
-    BLGGOLB\x18\x08\x20\x01(\x0b2\x0c.BIKNPJPLDAOR\x0bHNMLBLGGOLB\x12.\n\x0b\
-    GBJEALNCMJC\x18\x0f\x20\x01(\x0e2\x0c.JDGNMIDMACLR\x0bGBJEALNCMJCb\x06pr\
-    oto3\
+    DGNMIDMACL.proto\"\x7f\n\x1dIdleLiveFinishNodeBattleCsReq\x12.\n\x0bGBJE\
+    ALNCMJC\x18\n\x20\x01(\x0e2\x0c.JDGNMIDMACLR\x0bGBJEALNCMJC\x12.\n\x0bHN\
+    MLBLGGOLB\x18\x0b\x20\x01(\x0b2\x0c.BIKNPJPLDAOR\x0bHNMLBLGGOLBb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

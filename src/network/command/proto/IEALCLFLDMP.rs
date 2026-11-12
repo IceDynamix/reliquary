@@ -86,16 +86,16 @@ impl ::protobuf::Message for IEALCLFLDMP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
                     self.LLBJAJNCEAL = is.read_enum_or_unknown()?;
                 },
-                58 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.JAJNHOKCAHH)?;
                 },
-                56 => {
+                40 => {
                     self.JAJNHOKCAHH.push(is.read_uint32()?);
                 },
-                74 => {
+                82 => {
                     self.COOMKNFDNLH.push(is.read_message()?);
                 },
                 tag => {
@@ -111,9 +111,9 @@ impl ::protobuf::Message for IEALCLFLDMP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LLBJAJNCEAL != ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_None) {
-            my_size += ::protobuf::rt::int32_size(1, self.LLBJAJNCEAL.value());
+            my_size += ::protobuf::rt::int32_size(4, self.LLBJAJNCEAL.value());
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.JAJNHOKCAHH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.JAJNHOKCAHH);
         for value in &self.COOMKNFDNLH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -125,11 +125,11 @@ impl ::protobuf::Message for IEALCLFLDMP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LLBJAJNCEAL != ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_None) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.LLBJAJNCEAL))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.LLBJAJNCEAL))?;
         }
-        os.write_repeated_packed_uint32(7, &self.JAJNHOKCAHH)?;
+        os.write_repeated_packed_uint32(5, &self.JAJNHOKCAHH)?;
         for v in &self.COOMKNFDNLH {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for IEALCLFLDMP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IEALCLFLDMP.proto\x1a\x11GOCNLGIDBLM.proto\x1a!SwordTrainingDailyP\
-    haseType.proto\"\x9f\x01\n\x0bIEALCLFLDMP\x12>\n\x0bLLBJAJNCEAL\x18\x01\
+    haseType.proto\"\x9f\x01\n\x0bIEALCLFLDMP\x12>\n\x0bLLBJAJNCEAL\x18\x04\
     \x20\x01(\x0e2\x1c.SwordTrainingDailyPhaseTypeR\x0bLLBJAJNCEAL\x12\x20\n\
-    \x0bJAJNHOKCAHH\x18\x07\x20\x03(\rR\x0bJAJNHOKCAHH\x12.\n\x0bCOOMKNFDNLH\
-    \x18\t\x20\x03(\x0b2\x0c.GOCNLGIDBLMR\x0bCOOMKNFDNLHb\x06proto3\
+    \x0bJAJNHOKCAHH\x18\x05\x20\x03(\rR\x0bJAJNHOKCAHH\x12.\n\x0bCOOMKNFDNLH\
+    \x18\n\x20\x03(\x0b2\x0c.GOCNLGIDBLMR\x0bCOOMKNFDNLHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

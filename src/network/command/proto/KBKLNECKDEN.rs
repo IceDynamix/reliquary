@@ -30,12 +30,12 @@ pub struct KBKLNECKDEN {
     // message fields
     // @@protoc_insertion_point(field:KBKLNECKDEN.AGKFAODICEA)
     pub AGKFAODICEA: ::std::vec::Vec<super::OKCCLEEPELM::OKCCLEEPELM>,
-    // @@protoc_insertion_point(field:KBKLNECKDEN.LGIPILAKIKB)
-    pub LGIPILAKIKB: u32,
-    // @@protoc_insertion_point(field:KBKLNECKDEN.EIALMEADLGF)
-    pub EIALMEADLGF: u32,
     // @@protoc_insertion_point(field:KBKLNECKDEN.NKGGAOJLCMD)
     pub NKGGAOJLCMD: u32,
+    // @@protoc_insertion_point(field:KBKLNECKDEN.EIALMEADLGF)
+    pub EIALMEADLGF: u32,
+    // @@protoc_insertion_point(field:KBKLNECKDEN.LGIPILAKIKB)
+    pub LGIPILAKIKB: u32,
     // @@protoc_insertion_point(field:KBKLNECKDEN.EPOCLANFIAC)
     pub EPOCLANFIAC: ::protobuf::MessageField<super::OKCCLEEPELM::OKCCLEEPELM>,
     // special fields
@@ -63,9 +63,9 @@ impl KBKLNECKDEN {
             |m: &mut KBKLNECKDEN| { &mut m.AGKFAODICEA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGIPILAKIKB",
-            |m: &KBKLNECKDEN| { &m.LGIPILAKIKB },
-            |m: &mut KBKLNECKDEN| { &mut m.LGIPILAKIKB },
+            "NKGGAOJLCMD",
+            |m: &KBKLNECKDEN| { &m.NKGGAOJLCMD },
+            |m: &mut KBKLNECKDEN| { &mut m.NKGGAOJLCMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EIALMEADLGF",
@@ -73,9 +73,9 @@ impl KBKLNECKDEN {
             |m: &mut KBKLNECKDEN| { &mut m.EIALMEADLGF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NKGGAOJLCMD",
-            |m: &KBKLNECKDEN| { &m.NKGGAOJLCMD },
-            |m: &mut KBKLNECKDEN| { &mut m.NKGGAOJLCMD },
+            "LGIPILAKIKB",
+            |m: &KBKLNECKDEN| { &m.LGIPILAKIKB },
+            |m: &mut KBKLNECKDEN| { &mut m.LGIPILAKIKB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OKCCLEEPELM::OKCCLEEPELM>(
             "EPOCLANFIAC",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for KBKLNECKDEN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                10 => {
                     self.AGKFAODICEA.push(is.read_message()?);
                 },
-                32 => {
-                    self.LGIPILAKIKB = is.read_uint32()?;
+                40 => {
+                    self.NKGGAOJLCMD = is.read_uint32()?;
                 },
-                48 => {
+                64 => {
                     self.EIALMEADLGF = is.read_uint32()?;
                 },
                 72 => {
-                    self.NKGGAOJLCMD = is.read_uint32()?;
+                    self.LGIPILAKIKB = is.read_uint32()?;
                 },
-                82 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EPOCLANFIAC)?;
                 },
                 tag => {
@@ -131,14 +131,14 @@ impl ::protobuf::Message for KBKLNECKDEN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.LGIPILAKIKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LGIPILAKIKB);
+        if self.NKGGAOJLCMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.NKGGAOJLCMD);
         }
         if self.EIALMEADLGF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.EIALMEADLGF);
+            my_size += ::protobuf::rt::uint32_size(8, self.EIALMEADLGF);
         }
-        if self.NKGGAOJLCMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NKGGAOJLCMD);
+        if self.LGIPILAKIKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.LGIPILAKIKB);
         }
         if let Some(v) = self.EPOCLANFIAC.as_ref() {
             let len = v.compute_size();
@@ -151,19 +151,19 @@ impl ::protobuf::Message for KBKLNECKDEN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.AGKFAODICEA {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if self.LGIPILAKIKB != 0 {
-            os.write_uint32(4, self.LGIPILAKIKB)?;
+        if self.NKGGAOJLCMD != 0 {
+            os.write_uint32(5, self.NKGGAOJLCMD)?;
         }
         if self.EIALMEADLGF != 0 {
-            os.write_uint32(6, self.EIALMEADLGF)?;
+            os.write_uint32(8, self.EIALMEADLGF)?;
         }
-        if self.NKGGAOJLCMD != 0 {
-            os.write_uint32(9, self.NKGGAOJLCMD)?;
+        if self.LGIPILAKIKB != 0 {
+            os.write_uint32(9, self.LGIPILAKIKB)?;
         }
         if let Some(v) = self.EPOCLANFIAC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::Message for KBKLNECKDEN {
 
     fn clear(&mut self) {
         self.AGKFAODICEA.clear();
-        self.LGIPILAKIKB = 0;
-        self.EIALMEADLGF = 0;
         self.NKGGAOJLCMD = 0;
+        self.EIALMEADLGF = 0;
+        self.LGIPILAKIKB = 0;
         self.EPOCLANFIAC.clear();
         self.special_fields.clear();
     }
@@ -193,9 +193,9 @@ impl ::protobuf::Message for KBKLNECKDEN {
     fn default_instance() -> &'static KBKLNECKDEN {
         static instance: KBKLNECKDEN = KBKLNECKDEN {
             AGKFAODICEA: ::std::vec::Vec::new(),
-            LGIPILAKIKB: 0,
-            EIALMEADLGF: 0,
             NKGGAOJLCMD: 0,
+            EIALMEADLGF: 0,
+            LGIPILAKIKB: 0,
             EPOCLANFIAC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -222,10 +222,10 @@ impl ::protobuf::reflect::ProtobufValue for KBKLNECKDEN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KBKLNECKDEN.proto\x1a\x11OKCCLEEPELM.proto\"\xd3\x01\n\x0bKBKLNECK\
-    DEN\x12.\n\x0bAGKFAODICEA\x18\x03\x20\x03(\x0b2\x0c.OKCCLEEPELMR\x0bAGKF\
-    AODICEA\x12\x20\n\x0bLGIPILAKIKB\x18\x04\x20\x01(\rR\x0bLGIPILAKIKB\x12\
-    \x20\n\x0bEIALMEADLGF\x18\x06\x20\x01(\rR\x0bEIALMEADLGF\x12\x20\n\x0bNK\
-    GGAOJLCMD\x18\t\x20\x01(\rR\x0bNKGGAOJLCMD\x12.\n\x0bEPOCLANFIAC\x18\n\
+    DEN\x12.\n\x0bAGKFAODICEA\x18\x01\x20\x03(\x0b2\x0c.OKCCLEEPELMR\x0bAGKF\
+    AODICEA\x12\x20\n\x0bNKGGAOJLCMD\x18\x05\x20\x01(\rR\x0bNKGGAOJLCMD\x12\
+    \x20\n\x0bEIALMEADLGF\x18\x08\x20\x01(\rR\x0bEIALMEADLGF\x12\x20\n\x0bLG\
+    IPILAKIKB\x18\t\x20\x01(\rR\x0bLGIPILAKIKB\x12.\n\x0bEPOCLANFIAC\x18\x0b\
     \x20\x01(\x0b2\x0c.OKCCLEEPELMR\x0bEPOCLANFIACb\x06proto3\
 ";
 

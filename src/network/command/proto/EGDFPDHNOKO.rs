@@ -79,7 +79,7 @@ impl ::protobuf::Message for EGDFPDHNOKO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                64 => {
                     self.JKFCKJNHLHI = is.read_uint32()?;
                 },
                 120 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for EGDFPDHNOKO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JKFCKJNHLHI != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.JKFCKJNHLHI);
+            my_size += ::protobuf::rt::uint32_size(8, self.JKFCKJNHLHI);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.retcode);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for EGDFPDHNOKO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JKFCKJNHLHI != 0 {
-            os.write_uint32(6, self.JKFCKJNHLHI)?;
+            os.write_uint32(8, self.JKFCKJNHLHI)?;
         }
         if self.retcode != 0 {
             os.write_uint32(15, self.retcode)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for EGDFPDHNOKO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EGDFPDHNOKO.proto\"I\n\x0bEGDFPDHNOKO\x12\x20\n\x0bJKFCKJNHLHI\x18\
-    \x06\x20\x01(\rR\x0bJKFCKJNHLHI\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\
+    \x08\x20\x01(\rR\x0bJKFCKJNHLHI\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\
     \x07retcodeb\x06proto3\
 ";
 

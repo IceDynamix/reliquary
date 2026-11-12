@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ExpeditionDataChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.CAALNNFJIAH)
-    pub CAALNNFJIAH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.BJMGDBCHEAN)
-    pub BJMGDBCHEAN: i64,
-    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.total_expedition_count)
-    pub total_expedition_count: u32,
     // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.expedition_info)
     pub expedition_info: ::std::vec::Vec<super::ExpeditionInfo::ExpeditionInfo>,
+    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.BJMGDBCHEAN)
+    pub BJMGDBCHEAN: i64,
+    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.CAALNNFJIAH)
+    pub CAALNNFJIAH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.total_expedition_count)
+    pub total_expedition_count: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ExpeditionDataChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl ExpeditionDataChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CAALNNFJIAH",
-            |m: &ExpeditionDataChangeScNotify| { &m.CAALNNFJIAH },
-            |m: &mut ExpeditionDataChangeScNotify| { &mut m.CAALNNFJIAH },
+            "expedition_info",
+            |m: &ExpeditionDataChangeScNotify| { &m.expedition_info },
+            |m: &mut ExpeditionDataChangeScNotify| { &mut m.expedition_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BJMGDBCHEAN",
             |m: &ExpeditionDataChangeScNotify| { &m.BJMGDBCHEAN },
             |m: &mut ExpeditionDataChangeScNotify| { &mut m.BJMGDBCHEAN },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CAALNNFJIAH",
+            |m: &ExpeditionDataChangeScNotify| { &m.CAALNNFJIAH },
+            |m: &mut ExpeditionDataChangeScNotify| { &mut m.CAALNNFJIAH },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "total_expedition_count",
             |m: &ExpeditionDataChangeScNotify| { &m.total_expedition_count },
             |m: &mut ExpeditionDataChangeScNotify| { &mut m.total_expedition_count },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "expedition_info",
-            |m: &ExpeditionDataChangeScNotify| { &m.expedition_info },
-            |m: &mut ExpeditionDataChangeScNotify| { &mut m.expedition_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ExpeditionDataChangeScNotify>(
             "ExpeditionDataChangeScNotify",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for ExpeditionDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CAALNNFJIAH)?;
-                },
-                8 => {
-                    self.CAALNNFJIAH.push(is.read_uint32()?);
-                },
-                16 => {
-                    self.BJMGDBCHEAN = is.read_int64()?;
+                18 => {
+                    self.expedition_info.push(is.read_message()?);
                 },
                 104 => {
-                    self.total_expedition_count = is.read_uint32()?;
+                    self.BJMGDBCHEAN = is.read_int64()?;
                 },
                 114 => {
-                    self.expedition_info.push(is.read_message()?);
+                    is.read_repeated_packed_uint32_into(&mut self.CAALNNFJIAH)?;
+                },
+                112 => {
+                    self.CAALNNFJIAH.push(is.read_uint32()?);
+                },
+                120 => {
+                    self.total_expedition_count = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,33 +120,33 @@ impl ::protobuf::Message for ExpeditionDataChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.CAALNNFJIAH);
-        if self.BJMGDBCHEAN != 0 {
-            my_size += ::protobuf::rt::int64_size(2, self.BJMGDBCHEAN);
-        }
-        if self.total_expedition_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.total_expedition_count);
-        }
         for value in &self.expedition_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.BJMGDBCHEAN != 0 {
+            my_size += ::protobuf::rt::int64_size(13, self.BJMGDBCHEAN);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.CAALNNFJIAH);
+        if self.total_expedition_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.total_expedition_count);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.CAALNNFJIAH)?;
-        if self.BJMGDBCHEAN != 0 {
-            os.write_int64(2, self.BJMGDBCHEAN)?;
-        }
-        if self.total_expedition_count != 0 {
-            os.write_uint32(13, self.total_expedition_count)?;
-        }
         for v in &self.expedition_info {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
+        if self.BJMGDBCHEAN != 0 {
+            os.write_int64(13, self.BJMGDBCHEAN)?;
+        }
+        os.write_repeated_packed_uint32(14, &self.CAALNNFJIAH)?;
+        if self.total_expedition_count != 0 {
+            os.write_uint32(15, self.total_expedition_count)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,19 +164,19 @@ impl ::protobuf::Message for ExpeditionDataChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.CAALNNFJIAH.clear();
-        self.BJMGDBCHEAN = 0;
-        self.total_expedition_count = 0;
         self.expedition_info.clear();
+        self.BJMGDBCHEAN = 0;
+        self.CAALNNFJIAH.clear();
+        self.total_expedition_count = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ExpeditionDataChangeScNotify {
         static instance: ExpeditionDataChangeScNotify = ExpeditionDataChangeScNotify {
-            CAALNNFJIAH: ::std::vec::Vec::new(),
-            BJMGDBCHEAN: 0,
-            total_expedition_count: 0,
             expedition_info: ::std::vec::Vec::new(),
+            BJMGDBCHEAN: 0,
+            CAALNNFJIAH: ::std::vec::Vec::new(),
+            total_expedition_count: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for ExpeditionDataChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"ExpeditionDataChangeScNotify.proto\x1a\x14ExpeditionInfo.proto\"\xd2\
-    \x01\n\x1cExpeditionDataChangeScNotify\x12\x20\n\x0bCAALNNFJIAH\x18\x01\
-    \x20\x03(\rR\x0bCAALNNFJIAH\x12\x20\n\x0bBJMGDBCHEAN\x18\x02\x20\x01(\
-    \x03R\x0bBJMGDBCHEAN\x124\n\x16total_expedition_count\x18\r\x20\x01(\rR\
-    \x14totalExpeditionCount\x128\n\x0fexpedition_info\x18\x0e\x20\x03(\x0b2\
-    \x0f.ExpeditionInfoR\x0eexpeditionInfob\x06proto3\
+    \x01\n\x1cExpeditionDataChangeScNotify\x128\n\x0fexpedition_info\x18\x02\
+    \x20\x03(\x0b2\x0f.ExpeditionInfoR\x0eexpeditionInfo\x12\x20\n\x0bBJMGDB\
+    CHEAN\x18\r\x20\x01(\x03R\x0bBJMGDBCHEAN\x12\x20\n\x0bCAALNNFJIAH\x18\
+    \x0e\x20\x03(\rR\x0bCAALNNFJIAH\x124\n\x16total_expedition_count\x18\x0f\
+    \x20\x01(\rR\x14totalExpeditionCountb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

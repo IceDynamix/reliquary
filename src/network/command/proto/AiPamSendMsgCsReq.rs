@@ -30,14 +30,14 @@ pub struct AiPamSendMsgCsReq {
     // message fields
     // @@protoc_insertion_point(field:AiPamSendMsgCsReq.BDPIMPJOJBK)
     pub BDPIMPJOJBK: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
+    // @@protoc_insertion_point(field:AiPamSendMsgCsReq.GFIJJLNOOOM)
+    pub GFIJJLNOOOM: bool,
     // @@protoc_insertion_point(field:AiPamSendMsgCsReq.LOODCBCFNMJ)
     pub LOODCBCFNMJ: bool,
     // @@protoc_insertion_point(field:AiPamSendMsgCsReq.CLDBFBNOLNP)
     pub CLDBFBNOLNP: bool,
     // @@protoc_insertion_point(field:AiPamSendMsgCsReq.message_datas)
     pub message_datas: ::protobuf::MessageField<super::MessageChatData::MessageChatData>,
-    // @@protoc_insertion_point(field:AiPamSendMsgCsReq.GFIJJLNOOOM)
-    pub GFIJJLNOOOM: bool,
     // special fields
     // @@protoc_insertion_point(special_field:AiPamSendMsgCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,6 +63,11 @@ impl AiPamSendMsgCsReq {
             |m: &mut AiPamSendMsgCsReq| { &mut m.BDPIMPJOJBK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GFIJJLNOOOM",
+            |m: &AiPamSendMsgCsReq| { &m.GFIJJLNOOOM },
+            |m: &mut AiPamSendMsgCsReq| { &mut m.GFIJJLNOOOM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LOODCBCFNMJ",
             |m: &AiPamSendMsgCsReq| { &m.LOODCBCFNMJ },
             |m: &mut AiPamSendMsgCsReq| { &mut m.LOODCBCFNMJ },
@@ -76,11 +81,6 @@ impl AiPamSendMsgCsReq {
             "message_datas",
             |m: &AiPamSendMsgCsReq| { &m.message_datas },
             |m: &mut AiPamSendMsgCsReq| { &mut m.message_datas },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GFIJJLNOOOM",
-            |m: &AiPamSendMsgCsReq| { &m.GFIJJLNOOOM },
-            |m: &mut AiPamSendMsgCsReq| { &mut m.GFIJJLNOOOM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AiPamSendMsgCsReq>(
             "AiPamSendMsgCsReq",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for AiPamSendMsgCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                24 => {
                     self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
                 },
                 32 => {
+                    self.GFIJJLNOOOM = is.read_bool()?;
+                },
+                64 => {
                     self.LOODCBCFNMJ = is.read_bool()?;
                 },
-                96 => {
+                88 => {
                     self.CLDBFBNOLNP = is.read_bool()?;
                 },
-                106 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.message_datas)?;
-                },
-                112 => {
-                    self.GFIJJLNOOOM = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,7 +128,10 @@ impl ::protobuf::Message for AiPamSendMsgCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(2, self.BDPIMPJOJBK.value());
+            my_size += ::protobuf::rt::int32_size(3, self.BDPIMPJOJBK.value());
+        }
+        if self.GFIJJLNOOOM != false {
+            my_size += 1 + 1;
         }
         if self.LOODCBCFNMJ != false {
             my_size += 1 + 1;
@@ -140,9 +143,6 @@ impl ::protobuf::Message for AiPamSendMsgCsReq {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.GFIJJLNOOOM != false {
-            my_size += 1 + 1;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -150,19 +150,19 @@ impl ::protobuf::Message for AiPamSendMsgCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
-        }
-        if self.LOODCBCFNMJ != false {
-            os.write_bool(4, self.LOODCBCFNMJ)?;
-        }
-        if self.CLDBFBNOLNP != false {
-            os.write_bool(12, self.CLDBFBNOLNP)?;
-        }
-        if let Some(v) = self.message_datas.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
         }
         if self.GFIJJLNOOOM != false {
-            os.write_bool(14, self.GFIJJLNOOOM)?;
+            os.write_bool(4, self.GFIJJLNOOOM)?;
+        }
+        if self.LOODCBCFNMJ != false {
+            os.write_bool(8, self.LOODCBCFNMJ)?;
+        }
+        if self.CLDBFBNOLNP != false {
+            os.write_bool(11, self.CLDBFBNOLNP)?;
+        }
+        if let Some(v) = self.message_datas.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,20 +182,20 @@ impl ::protobuf::Message for AiPamSendMsgCsReq {
 
     fn clear(&mut self) {
         self.BDPIMPJOJBK = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
+        self.GFIJJLNOOOM = false;
         self.LOODCBCFNMJ = false;
         self.CLDBFBNOLNP = false;
         self.message_datas.clear();
-        self.GFIJJLNOOOM = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AiPamSendMsgCsReq {
         static instance: AiPamSendMsgCsReq = AiPamSendMsgCsReq {
             BDPIMPJOJBK: ::protobuf::EnumOrUnknown::from_i32(0),
+            GFIJJLNOOOM: false,
             LOODCBCFNMJ: false,
             CLDBFBNOLNP: false,
             message_datas: ::protobuf::MessageField::none(),
-            GFIJJLNOOOM: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,11 +222,11 @@ impl ::protobuf::reflect::ProtobufValue for AiPamSendMsgCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17AiPamSendMsgCsReq.proto\x1a\x11FKNKNLGMACL.proto\x1a\x15MessageCha\
     tData.proto\"\xe0\x01\n\x11AiPamSendMsgCsReq\x12.\n\x0bBDPIMPJOJBK\x18\
-    \x02\x20\x01(\x0e2\x0c.FKNKNLGMACLR\x0bBDPIMPJOJBK\x12\x20\n\x0bLOODCBCF\
-    NMJ\x18\x04\x20\x01(\x08R\x0bLOODCBCFNMJ\x12\x20\n\x0bCLDBFBNOLNP\x18\
-    \x0c\x20\x01(\x08R\x0bCLDBFBNOLNP\x125\n\rmessage_datas\x18\r\x20\x01(\
-    \x0b2\x10.MessageChatDataR\x0cmessageDatas\x12\x20\n\x0bGFIJJLNOOOM\x18\
-    \x0e\x20\x01(\x08R\x0bGFIJJLNOOOMb\x06proto3\
+    \x03\x20\x01(\x0e2\x0c.FKNKNLGMACLR\x0bBDPIMPJOJBK\x12\x20\n\x0bGFIJJLNO\
+    OOM\x18\x04\x20\x01(\x08R\x0bGFIJJLNOOOM\x12\x20\n\x0bLOODCBCFNMJ\x18\
+    \x08\x20\x01(\x08R\x0bLOODCBCFNMJ\x12\x20\n\x0bCLDBFBNOLNP\x18\x0b\x20\
+    \x01(\x08R\x0bCLDBFBNOLNP\x125\n\rmessage_datas\x18\x0f\x20\x01(\x0b2\
+    \x10.MessageChatDataR\x0cmessageDatasb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

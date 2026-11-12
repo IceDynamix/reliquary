@@ -30,14 +30,14 @@ pub struct ACAKOLCGDLL {
     // message fields
     // @@protoc_insertion_point(field:ACAKOLCGDLL.MDIIJKBHBBI)
     pub MDIIJKBHBBI: u32,
-    // @@protoc_insertion_point(field:ACAKOLCGDLL.NMJIOGGNLEO)
-    pub NMJIOGGNLEO: ::std::vec::Vec<super::NOHPJFOGFLM::NOHPJFOGFLM>,
-    // @@protoc_insertion_point(field:ACAKOLCGDLL.NPGFNBPFMKI)
-    pub NPGFNBPFMKI: u32,
     // @@protoc_insertion_point(field:ACAKOLCGDLL.GPPHKPEHKIM)
     pub GPPHKPEHKIM: bool,
+    // @@protoc_insertion_point(field:ACAKOLCGDLL.NPGFNBPFMKI)
+    pub NPGFNBPFMKI: u32,
     // @@protoc_insertion_point(field:ACAKOLCGDLL.KKCKMCDGCGK)
     pub KKCKMCDGCGK: u32,
+    // @@protoc_insertion_point(field:ACAKOLCGDLL.NMJIOGGNLEO)
+    pub NMJIOGGNLEO: ::std::vec::Vec<super::NOHPJFOGFLM::NOHPJFOGFLM>,
     // special fields
     // @@protoc_insertion_point(special_field:ACAKOLCGDLL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,10 +62,10 @@ impl ACAKOLCGDLL {
             |m: &ACAKOLCGDLL| { &m.MDIIJKBHBBI },
             |m: &mut ACAKOLCGDLL| { &mut m.MDIIJKBHBBI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NMJIOGGNLEO",
-            |m: &ACAKOLCGDLL| { &m.NMJIOGGNLEO },
-            |m: &mut ACAKOLCGDLL| { &mut m.NMJIOGGNLEO },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GPPHKPEHKIM",
+            |m: &ACAKOLCGDLL| { &m.GPPHKPEHKIM },
+            |m: &mut ACAKOLCGDLL| { &mut m.GPPHKPEHKIM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NPGFNBPFMKI",
@@ -73,14 +73,14 @@ impl ACAKOLCGDLL {
             |m: &mut ACAKOLCGDLL| { &mut m.NPGFNBPFMKI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GPPHKPEHKIM",
-            |m: &ACAKOLCGDLL| { &m.GPPHKPEHKIM },
-            |m: &mut ACAKOLCGDLL| { &mut m.GPPHKPEHKIM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KKCKMCDGCGK",
             |m: &ACAKOLCGDLL| { &m.KKCKMCDGCGK },
             |m: &mut ACAKOLCGDLL| { &mut m.KKCKMCDGCGK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NMJIOGGNLEO",
+            |m: &ACAKOLCGDLL| { &m.NMJIOGGNLEO },
+            |m: &mut ACAKOLCGDLL| { &mut m.NMJIOGGNLEO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ACAKOLCGDLL>(
             "ACAKOLCGDLL",
@@ -103,17 +103,17 @@ impl ::protobuf::Message for ACAKOLCGDLL {
                 8 => {
                     self.MDIIJKBHBBI = is.read_uint32()?;
                 },
-                34 => {
-                    self.NMJIOGGNLEO.push(is.read_message()?);
+                16 => {
+                    self.GPPHKPEHKIM = is.read_bool()?;
                 },
                 40 => {
                     self.NPGFNBPFMKI = is.read_uint32()?;
                 },
-                80 => {
-                    self.GPPHKPEHKIM = is.read_bool()?;
-                },
-                120 => {
+                64 => {
                     self.KKCKMCDGCGK = is.read_uint32()?;
+                },
+                74 => {
+                    self.NMJIOGGNLEO.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,19 +130,19 @@ impl ::protobuf::Message for ACAKOLCGDLL {
         if self.MDIIJKBHBBI != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.MDIIJKBHBBI);
         }
+        if self.GPPHKPEHKIM != false {
+            my_size += 1 + 1;
+        }
+        if self.NPGFNBPFMKI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.NPGFNBPFMKI);
+        }
+        if self.KKCKMCDGCGK != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.KKCKMCDGCGK);
+        }
         for value in &self.NMJIOGGNLEO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.NPGFNBPFMKI != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.NPGFNBPFMKI);
-        }
-        if self.GPPHKPEHKIM != false {
-            my_size += 1 + 1;
-        }
-        if self.KKCKMCDGCGK != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KKCKMCDGCGK);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -152,18 +152,18 @@ impl ::protobuf::Message for ACAKOLCGDLL {
         if self.MDIIJKBHBBI != 0 {
             os.write_uint32(1, self.MDIIJKBHBBI)?;
         }
-        for v in &self.NMJIOGGNLEO {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
+        if self.GPPHKPEHKIM != false {
+            os.write_bool(2, self.GPPHKPEHKIM)?;
+        }
         if self.NPGFNBPFMKI != 0 {
             os.write_uint32(5, self.NPGFNBPFMKI)?;
         }
-        if self.GPPHKPEHKIM != false {
-            os.write_bool(10, self.GPPHKPEHKIM)?;
-        }
         if self.KKCKMCDGCGK != 0 {
-            os.write_uint32(15, self.KKCKMCDGCGK)?;
+            os.write_uint32(8, self.KKCKMCDGCGK)?;
         }
+        for v in &self.NMJIOGGNLEO {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -182,20 +182,20 @@ impl ::protobuf::Message for ACAKOLCGDLL {
 
     fn clear(&mut self) {
         self.MDIIJKBHBBI = 0;
-        self.NMJIOGGNLEO.clear();
-        self.NPGFNBPFMKI = 0;
         self.GPPHKPEHKIM = false;
+        self.NPGFNBPFMKI = 0;
         self.KKCKMCDGCGK = 0;
+        self.NMJIOGGNLEO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ACAKOLCGDLL {
         static instance: ACAKOLCGDLL = ACAKOLCGDLL {
             MDIIJKBHBBI: 0,
-            NMJIOGGNLEO: ::std::vec::Vec::new(),
-            NPGFNBPFMKI: 0,
             GPPHKPEHKIM: false,
+            NPGFNBPFMKI: 0,
             KKCKMCDGCGK: 0,
+            NMJIOGGNLEO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for ACAKOLCGDLL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ACAKOLCGDLL.proto\x1a\x11NOHPJFOGFLM.proto\"\xc5\x01\n\x0bACAKOLCG\
-    DLL\x12\x20\n\x0bMDIIJKBHBBI\x18\x01\x20\x01(\rR\x0bMDIIJKBHBBI\x12.\n\
-    \x0bNMJIOGGNLEO\x18\x04\x20\x03(\x0b2\x0c.NOHPJFOGFLMR\x0bNMJIOGGNLEO\
-    \x12\x20\n\x0bNPGFNBPFMKI\x18\x05\x20\x01(\rR\x0bNPGFNBPFMKI\x12\x20\n\
-    \x0bGPPHKPEHKIM\x18\n\x20\x01(\x08R\x0bGPPHKPEHKIM\x12\x20\n\x0bKKCKMCDG\
-    CGK\x18\x0f\x20\x01(\rR\x0bKKCKMCDGCGKb\x06proto3\
+    DLL\x12\x20\n\x0bMDIIJKBHBBI\x18\x01\x20\x01(\rR\x0bMDIIJKBHBBI\x12\x20\
+    \n\x0bGPPHKPEHKIM\x18\x02\x20\x01(\x08R\x0bGPPHKPEHKIM\x12\x20\n\x0bNPGF\
+    NBPFMKI\x18\x05\x20\x01(\rR\x0bNPGFNBPFMKI\x12\x20\n\x0bKKCKMCDGCGK\x18\
+    \x08\x20\x01(\rR\x0bKKCKMCDGCGK\x12.\n\x0bNMJIOGGNLEO\x18\t\x20\x03(\x0b\
+    2\x0c.NOHPJFOGFLMR\x0bNMJIOGGNLEOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

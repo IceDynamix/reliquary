@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LogisticsGameCsReq {
     // message fields
-    // @@protoc_insertion_point(field:LogisticsGameCsReq.MDNBOBFGKFN)
-    pub MDNBOBFGKFN: ::std::vec::Vec<super::IODAFIBPAGM::IODAFIBPAGM>,
     // @@protoc_insertion_point(field:LogisticsGameCsReq.CNCJKGEDEII)
     pub CNCJKGEDEII: bool,
+    // @@protoc_insertion_point(field:LogisticsGameCsReq.MDNBOBFGKFN)
+    pub MDNBOBFGKFN: ::std::vec::Vec<super::IODAFIBPAGM::IODAFIBPAGM>,
     // special fields
     // @@protoc_insertion_point(special_field:LogisticsGameCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl LogisticsGameCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MDNBOBFGKFN",
-            |m: &LogisticsGameCsReq| { &m.MDNBOBFGKFN },
-            |m: &mut LogisticsGameCsReq| { &mut m.MDNBOBFGKFN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CNCJKGEDEII",
             |m: &LogisticsGameCsReq| { &m.CNCJKGEDEII },
             |m: &mut LogisticsGameCsReq| { &mut m.CNCJKGEDEII },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MDNBOBFGKFN",
+            |m: &LogisticsGameCsReq| { &m.MDNBOBFGKFN },
+            |m: &mut LogisticsGameCsReq| { &mut m.MDNBOBFGKFN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LogisticsGameCsReq>(
             "LogisticsGameCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for LogisticsGameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.MDNBOBFGKFN.push(is.read_message()?);
-                },
-                112 => {
+                104 => {
                     self.CNCJKGEDEII = is.read_bool()?;
+                },
+                122 => {
+                    self.MDNBOBFGKFN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for LogisticsGameCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.CNCJKGEDEII != false {
+            my_size += 1 + 1;
+        }
         for value in &self.MDNBOBFGKFN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.CNCJKGEDEII != false {
-            my_size += 1 + 1;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MDNBOBFGKFN {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
         if self.CNCJKGEDEII != false {
-            os.write_bool(14, self.CNCJKGEDEII)?;
+            os.write_bool(13, self.CNCJKGEDEII)?;
         }
+        for v in &self.MDNBOBFGKFN {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for LogisticsGameCsReq {
     }
 
     fn clear(&mut self) {
-        self.MDNBOBFGKFN.clear();
         self.CNCJKGEDEII = false;
+        self.MDNBOBFGKFN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LogisticsGameCsReq {
         static instance: LogisticsGameCsReq = LogisticsGameCsReq {
-            MDNBOBFGKFN: ::std::vec::Vec::new(),
             CNCJKGEDEII: false,
+            MDNBOBFGKFN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for LogisticsGameCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18LogisticsGameCsReq.proto\x1a\x11IODAFIBPAGM.proto\"f\n\x12Logistic\
-    sGameCsReq\x12.\n\x0bMDNBOBFGKFN\x18\t\x20\x03(\x0b2\x0c.IODAFIBPAGMR\
-    \x0bMDNBOBFGKFN\x12\x20\n\x0bCNCJKGEDEII\x18\x0e\x20\x01(\x08R\x0bCNCJKG\
-    EDEIIb\x06proto3\
+    sGameCsReq\x12\x20\n\x0bCNCJKGEDEII\x18\r\x20\x01(\x08R\x0bCNCJKGEDEII\
+    \x12.\n\x0bMDNBOBFGKFN\x18\x0f\x20\x03(\x0b2\x0c.IODAFIBPAGMR\x0bMDNBOBF\
+    GKFNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GDGEIAHNDAD {
     // message fields
-    // @@protoc_insertion_point(field:GDGEIAHNDAD.IFOKHMFNNNF)
-    pub IFOKHMFNNNF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GDGEIAHNDAD.ALOOPKCJFEA)
     pub ALOOPKCJFEA: ::std::vec::Vec<super::BOLCGIOGIBP::BOLCGIOGIBP>,
-    // @@protoc_insertion_point(field:GDGEIAHNDAD.OELPOFLBMIE)
-    pub OELPOFLBMIE: ::std::vec::Vec<super::JEEHGNIBIFE::JEEHGNIBIFE>,
     // @@protoc_insertion_point(field:GDGEIAHNDAD.CFNKOBKJKNK)
     pub CFNKOBKJKNK: ::std::vec::Vec<super::IODAFIBPAGM::IODAFIBPAGM>,
+    // @@protoc_insertion_point(field:GDGEIAHNDAD.OELPOFLBMIE)
+    pub OELPOFLBMIE: ::std::vec::Vec<super::JEEHGNIBIFE::JEEHGNIBIFE>,
+    // @@protoc_insertion_point(field:GDGEIAHNDAD.IFOKHMFNNNF)
+    pub IFOKHMFNNNF: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GDGEIAHNDAD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,14 +56,14 @@ impl GDGEIAHNDAD {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IFOKHMFNNNF",
-            |m: &GDGEIAHNDAD| { &m.IFOKHMFNNNF },
-            |m: &mut GDGEIAHNDAD| { &mut m.IFOKHMFNNNF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ALOOPKCJFEA",
             |m: &GDGEIAHNDAD| { &m.ALOOPKCJFEA },
             |m: &mut GDGEIAHNDAD| { &mut m.ALOOPKCJFEA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CFNKOBKJKNK",
+            |m: &GDGEIAHNDAD| { &m.CFNKOBKJKNK },
+            |m: &mut GDGEIAHNDAD| { &mut m.CFNKOBKJKNK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OELPOFLBMIE",
@@ -71,9 +71,9 @@ impl GDGEIAHNDAD {
             |m: &mut GDGEIAHNDAD| { &mut m.OELPOFLBMIE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CFNKOBKJKNK",
-            |m: &GDGEIAHNDAD| { &m.CFNKOBKJKNK },
-            |m: &mut GDGEIAHNDAD| { &mut m.CFNKOBKJKNK },
+            "IFOKHMFNNNF",
+            |m: &GDGEIAHNDAD| { &m.IFOKHMFNNNF },
+            |m: &mut GDGEIAHNDAD| { &mut m.IFOKHMFNNNF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GDGEIAHNDAD>(
             "GDGEIAHNDAD",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for GDGEIAHNDAD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IFOKHMFNNNF)?;
-                },
-                32 => {
-                    self.IFOKHMFNNNF.push(is.read_uint32()?);
-                },
-                82 => {
+                18 => {
                     self.ALOOPKCJFEA.push(is.read_message()?);
                 },
-                98 => {
+                58 => {
+                    self.CFNKOBKJKNK.push(is.read_message()?);
+                },
+                90 => {
                     self.OELPOFLBMIE.push(is.read_message()?);
                 },
-                122 => {
-                    self.CFNKOBKJKNK.push(is.read_message()?);
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IFOKHMFNNNF)?;
+                },
+                112 => {
+                    self.IFOKHMFNNNF.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,12 +120,7 @@ impl ::protobuf::Message for GDGEIAHNDAD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.IFOKHMFNNNF);
         for value in &self.ALOOPKCJFEA {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.OELPOFLBMIE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -133,22 +128,27 @@ impl ::protobuf::Message for GDGEIAHNDAD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.OELPOFLBMIE {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.IFOKHMFNNNF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.IFOKHMFNNNF)?;
         for v in &self.ALOOPKCJFEA {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
-        for v in &self.OELPOFLBMIE {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         for v in &self.CFNKOBKJKNK {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
+        for v in &self.OELPOFLBMIE {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        os.write_repeated_packed_uint32(14, &self.IFOKHMFNNNF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,19 +166,19 @@ impl ::protobuf::Message for GDGEIAHNDAD {
     }
 
     fn clear(&mut self) {
-        self.IFOKHMFNNNF.clear();
         self.ALOOPKCJFEA.clear();
-        self.OELPOFLBMIE.clear();
         self.CFNKOBKJKNK.clear();
+        self.OELPOFLBMIE.clear();
+        self.IFOKHMFNNNF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GDGEIAHNDAD {
         static instance: GDGEIAHNDAD = GDGEIAHNDAD {
-            IFOKHMFNNNF: ::std::vec::Vec::new(),
             ALOOPKCJFEA: ::std::vec::Vec::new(),
-            OELPOFLBMIE: ::std::vec::Vec::new(),
             CFNKOBKJKNK: ::std::vec::Vec::new(),
+            OELPOFLBMIE: ::std::vec::Vec::new(),
+            IFOKHMFNNNF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for GDGEIAHNDAD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GDGEIAHNDAD.proto\x1a\x11BOLCGIOGIBP.proto\x1a\x11IODAFIBPAGM.prot\
-    o\x1a\x11JEEHGNIBIFE.proto\"\xbf\x01\n\x0bGDGEIAHNDAD\x12\x20\n\x0bIFOKH\
-    MFNNNF\x18\x04\x20\x03(\rR\x0bIFOKHMFNNNF\x12.\n\x0bALOOPKCJFEA\x18\n\
-    \x20\x03(\x0b2\x0c.BOLCGIOGIBPR\x0bALOOPKCJFEA\x12.\n\x0bOELPOFLBMIE\x18\
-    \x0c\x20\x03(\x0b2\x0c.JEEHGNIBIFER\x0bOELPOFLBMIE\x12.\n\x0bCFNKOBKJKNK\
-    \x18\x0f\x20\x03(\x0b2\x0c.IODAFIBPAGMR\x0bCFNKOBKJKNKb\x06proto3\
+    o\x1a\x11JEEHGNIBIFE.proto\"\xbf\x01\n\x0bGDGEIAHNDAD\x12.\n\x0bALOOPKCJ\
+    FEA\x18\x02\x20\x03(\x0b2\x0c.BOLCGIOGIBPR\x0bALOOPKCJFEA\x12.\n\x0bCFNK\
+    OBKJKNK\x18\x07\x20\x03(\x0b2\x0c.IODAFIBPAGMR\x0bCFNKOBKJKNK\x12.\n\x0b\
+    OELPOFLBMIE\x18\x0b\x20\x03(\x0b2\x0c.JEEHGNIBIFER\x0bOELPOFLBMIE\x12\
+    \x20\n\x0bIFOKHMFNNNF\x18\x0e\x20\x03(\rR\x0bIFOKHMFNNNFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

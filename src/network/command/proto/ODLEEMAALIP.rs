@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ODLEEMAALIP {
     // message fields
-    // @@protoc_insertion_point(field:ODLEEMAALIP.AOLIEDBCNBN)
-    pub AOLIEDBCNBN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ODLEEMAALIP.hp)
-    pub hp: i32,
     // @@protoc_insertion_point(field:ODLEEMAALIP.KNDIIBJEIDG)
     pub KNDIIBJEIDG: u32,
     // @@protoc_insertion_point(field:ODLEEMAALIP.NDMHOKEGOAP)
     pub NDMHOKEGOAP: u32,
-    // @@protoc_insertion_point(field:ODLEEMAALIP.OLANKLPCBEG)
-    pub OLANKLPCBEG: u32,
     // @@protoc_insertion_point(field:ODLEEMAALIP.COJOIFPPCIJ)
     pub COJOIFPPCIJ: u32,
-    // @@protoc_insertion_point(field:ODLEEMAALIP.AGKNBANFLIB)
-    pub AGKNBANFLIB: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
+    // @@protoc_insertion_point(field:ODLEEMAALIP.hp)
+    pub hp: i32,
+    // @@protoc_insertion_point(field:ODLEEMAALIP.OLANKLPCBEG)
+    pub OLANKLPCBEG: u32,
+    // @@protoc_insertion_point(field:ODLEEMAALIP.AOLIEDBCNBN)
+    pub AOLIEDBCNBN: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ODLEEMAALIP.MDKFLGDEJCN)
     pub MDKFLGDEJCN: u32,
+    // @@protoc_insertion_point(field:ODLEEMAALIP.AGKNBANFLIB)
+    pub AGKNBANFLIB: ::std::vec::Vec<super::KVP::KVP>,
     // special fields
     // @@protoc_insertion_point(special_field:ODLEEMAALIP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,16 +63,6 @@ impl ODLEEMAALIP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AOLIEDBCNBN",
-            |m: &ODLEEMAALIP| { &m.AOLIEDBCNBN },
-            |m: &mut ODLEEMAALIP| { &mut m.AOLIEDBCNBN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "hp",
-            |m: &ODLEEMAALIP| { &m.hp },
-            |m: &mut ODLEEMAALIP| { &mut m.hp },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KNDIIBJEIDG",
             |m: &ODLEEMAALIP| { &m.KNDIIBJEIDG },
@@ -84,24 +74,34 @@ impl ODLEEMAALIP {
             |m: &mut ODLEEMAALIP| { &mut m.NDMHOKEGOAP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OLANKLPCBEG",
-            |m: &ODLEEMAALIP| { &m.OLANKLPCBEG },
-            |m: &mut ODLEEMAALIP| { &mut m.OLANKLPCBEG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "COJOIFPPCIJ",
             |m: &ODLEEMAALIP| { &m.COJOIFPPCIJ },
             |m: &mut ODLEEMAALIP| { &mut m.COJOIFPPCIJ },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "hp",
+            |m: &ODLEEMAALIP| { &m.hp },
+            |m: &mut ODLEEMAALIP| { &mut m.hp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OLANKLPCBEG",
+            |m: &ODLEEMAALIP| { &m.OLANKLPCBEG },
+            |m: &mut ODLEEMAALIP| { &mut m.OLANKLPCBEG },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AGKNBANFLIB",
-            |m: &ODLEEMAALIP| { &m.AGKNBANFLIB },
-            |m: &mut ODLEEMAALIP| { &mut m.AGKNBANFLIB },
+            "AOLIEDBCNBN",
+            |m: &ODLEEMAALIP| { &m.AOLIEDBCNBN },
+            |m: &mut ODLEEMAALIP| { &mut m.AOLIEDBCNBN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MDKFLGDEJCN",
             |m: &ODLEEMAALIP| { &m.MDKFLGDEJCN },
             |m: &mut ODLEEMAALIP| { &mut m.MDKFLGDEJCN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AGKNBANFLIB",
+            |m: &ODLEEMAALIP| { &m.AGKNBANFLIB },
+            |m: &mut ODLEEMAALIP| { &mut m.AGKNBANFLIB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ODLEEMAALIP>(
             "ODLEEMAALIP",
@@ -121,32 +121,32 @@ impl ::protobuf::Message for ODLEEMAALIP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.AOLIEDBCNBN)?;
-                },
-                8 => {
-                    self.AOLIEDBCNBN.push(is.read_uint32()?);
-                },
-                32 => {
-                    self.hp = is.read_sint32()?;
-                },
-                48 => {
+                24 => {
                     self.KNDIIBJEIDG = is.read_uint32()?;
                 },
-                56 => {
+                32 => {
                     self.NDMHOKEGOAP = is.read_uint32()?;
                 },
-                72 => {
-                    self.OLANKLPCBEG = is.read_uint32()?;
-                },
-                80 => {
+                48 => {
                     self.COJOIFPPCIJ = is.read_uint32()?;
                 },
-                90 => {
-                    self.AGKNBANFLIB.push(is.read_message()?);
+                72 => {
+                    self.hp = is.read_sint32()?;
                 },
-                96 => {
+                80 => {
+                    self.OLANKLPCBEG = is.read_uint32()?;
+                },
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AOLIEDBCNBN)?;
+                },
+                88 => {
+                    self.AOLIEDBCNBN.push(is.read_uint32()?);
+                },
+                112 => {
                     self.MDKFLGDEJCN = is.read_uint32()?;
+                },
+                122 => {
+                    self.AGKNBANFLIB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -160,57 +160,57 @@ impl ::protobuf::Message for ODLEEMAALIP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.AOLIEDBCNBN);
-        if self.hp != 0 {
-            my_size += ::protobuf::rt::sint32_size(4, self.hp);
-        }
         if self.KNDIIBJEIDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.KNDIIBJEIDG);
+            my_size += ::protobuf::rt::uint32_size(3, self.KNDIIBJEIDG);
         }
         if self.NDMHOKEGOAP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.NDMHOKEGOAP);
-        }
-        if self.OLANKLPCBEG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OLANKLPCBEG);
+            my_size += ::protobuf::rt::uint32_size(4, self.NDMHOKEGOAP);
         }
         if self.COJOIFPPCIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.COJOIFPPCIJ);
+            my_size += ::protobuf::rt::uint32_size(6, self.COJOIFPPCIJ);
+        }
+        if self.hp != 0 {
+            my_size += ::protobuf::rt::sint32_size(9, self.hp);
+        }
+        if self.OLANKLPCBEG != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.OLANKLPCBEG);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.AOLIEDBCNBN);
+        if self.MDKFLGDEJCN != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.MDKFLGDEJCN);
         }
         for value in &self.AGKNBANFLIB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.MDKFLGDEJCN != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MDKFLGDEJCN);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.AOLIEDBCNBN)?;
-        if self.hp != 0 {
-            os.write_sint32(4, self.hp)?;
-        }
         if self.KNDIIBJEIDG != 0 {
-            os.write_uint32(6, self.KNDIIBJEIDG)?;
+            os.write_uint32(3, self.KNDIIBJEIDG)?;
         }
         if self.NDMHOKEGOAP != 0 {
-            os.write_uint32(7, self.NDMHOKEGOAP)?;
-        }
-        if self.OLANKLPCBEG != 0 {
-            os.write_uint32(9, self.OLANKLPCBEG)?;
+            os.write_uint32(4, self.NDMHOKEGOAP)?;
         }
         if self.COJOIFPPCIJ != 0 {
-            os.write_uint32(10, self.COJOIFPPCIJ)?;
+            os.write_uint32(6, self.COJOIFPPCIJ)?;
+        }
+        if self.hp != 0 {
+            os.write_sint32(9, self.hp)?;
+        }
+        if self.OLANKLPCBEG != 0 {
+            os.write_uint32(10, self.OLANKLPCBEG)?;
+        }
+        os.write_repeated_packed_uint32(11, &self.AOLIEDBCNBN)?;
+        if self.MDKFLGDEJCN != 0 {
+            os.write_uint32(14, self.MDKFLGDEJCN)?;
         }
         for v in &self.AGKNBANFLIB {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
-        if self.MDKFLGDEJCN != 0 {
-            os.write_uint32(12, self.MDKFLGDEJCN)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -228,27 +228,27 @@ impl ::protobuf::Message for ODLEEMAALIP {
     }
 
     fn clear(&mut self) {
-        self.AOLIEDBCNBN.clear();
-        self.hp = 0;
         self.KNDIIBJEIDG = 0;
         self.NDMHOKEGOAP = 0;
-        self.OLANKLPCBEG = 0;
         self.COJOIFPPCIJ = 0;
-        self.AGKNBANFLIB.clear();
+        self.hp = 0;
+        self.OLANKLPCBEG = 0;
+        self.AOLIEDBCNBN.clear();
         self.MDKFLGDEJCN = 0;
+        self.AGKNBANFLIB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ODLEEMAALIP {
         static instance: ODLEEMAALIP = ODLEEMAALIP {
-            AOLIEDBCNBN: ::std::vec::Vec::new(),
-            hp: 0,
             KNDIIBJEIDG: 0,
             NDMHOKEGOAP: 0,
-            OLANKLPCBEG: 0,
             COJOIFPPCIJ: 0,
-            AGKNBANFLIB: ::std::vec::Vec::new(),
+            hp: 0,
+            OLANKLPCBEG: 0,
+            AOLIEDBCNBN: ::std::vec::Vec::new(),
             MDKFLGDEJCN: 0,
+            AGKNBANFLIB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -273,14 +273,14 @@ impl ::protobuf::reflect::ProtobufValue for ODLEEMAALIP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ODLEEMAALIP.proto\x1a\x11APAMFCKFHLL.proto\"\x99\x02\n\x0bODLEEMAA\
-    LIP\x12\x20\n\x0bAOLIEDBCNBN\x18\x01\x20\x03(\rR\x0bAOLIEDBCNBN\x12\x0e\
-    \n\x02hp\x18\x04\x20\x01(\x11R\x02hp\x12\x20\n\x0bKNDIIBJEIDG\x18\x06\
-    \x20\x01(\rR\x0bKNDIIBJEIDG\x12\x20\n\x0bNDMHOKEGOAP\x18\x07\x20\x01(\rR\
-    \x0bNDMHOKEGOAP\x12\x20\n\x0bOLANKLPCBEG\x18\t\x20\x01(\rR\x0bOLANKLPCBE\
-    G\x12\x20\n\x0bCOJOIFPPCIJ\x18\n\x20\x01(\rR\x0bCOJOIFPPCIJ\x12.\n\x0bAG\
-    KNBANFLIB\x18\x0b\x20\x03(\x0b2\x0c.APAMFCKFHLLR\x0bAGKNBANFLIB\x12\x20\
-    \n\x0bMDKFLGDEJCN\x18\x0c\x20\x01(\rR\x0bMDKFLGDEJCNb\x06proto3\
+    \n\x11ODLEEMAALIP.proto\x1a\tKVP.proto\"\x91\x02\n\x0bODLEEMAALIP\x12\
+    \x20\n\x0bKNDIIBJEIDG\x18\x03\x20\x01(\rR\x0bKNDIIBJEIDG\x12\x20\n\x0bND\
+    MHOKEGOAP\x18\x04\x20\x01(\rR\x0bNDMHOKEGOAP\x12\x20\n\x0bCOJOIFPPCIJ\
+    \x18\x06\x20\x01(\rR\x0bCOJOIFPPCIJ\x12\x0e\n\x02hp\x18\t\x20\x01(\x11R\
+    \x02hp\x12\x20\n\x0bOLANKLPCBEG\x18\n\x20\x01(\rR\x0bOLANKLPCBEG\x12\x20\
+    \n\x0bAOLIEDBCNBN\x18\x0b\x20\x03(\rR\x0bAOLIEDBCNBN\x12\x20\n\x0bMDKFLG\
+    DEJCN\x18\x0e\x20\x01(\rR\x0bMDKFLGDEJCN\x12&\n\x0bAGKNBANFLIB\x18\x0f\
+    \x20\x03(\x0b2\x04.KVPR\x0bAGKNBANFLIBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -298,7 +298,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::APAMFCKFHLL::file_descriptor().clone());
+            deps.push(super::KVP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ODLEEMAALIP::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

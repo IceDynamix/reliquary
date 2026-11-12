@@ -30,6 +30,10 @@ pub struct CKPOBLIFMGN {
     // message fields
     // @@protoc_insertion_point(field:CKPOBLIFMGN.MHFHLBHFIBC)
     pub MHFHLBHFIBC: ::protobuf::MessageField<super::FMNKKAMOHEE::FMNKKAMOHEE>,
+    // @@protoc_insertion_point(field:CKPOBLIFMGN.FBJMBJKMAJA)
+    pub FBJMBJKMAJA: ::std::collections::HashMap<u32, super::GLHCHCJMFGA::GLHCHCJMFGA>,
+    // @@protoc_insertion_point(field:CKPOBLIFMGN.ENECKKGPKHI)
+    pub ENECKKGPKHI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CKPOBLIFMGN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,12 +51,22 @@ impl CKPOBLIFMGN {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FMNKKAMOHEE::FMNKKAMOHEE>(
             "MHFHLBHFIBC",
             |m: &CKPOBLIFMGN| { &m.MHFHLBHFIBC },
             |m: &mut CKPOBLIFMGN| { &mut m.MHFHLBHFIBC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "FBJMBJKMAJA",
+            |m: &CKPOBLIFMGN| { &m.FBJMBJKMAJA },
+            |m: &mut CKPOBLIFMGN| { &mut m.FBJMBJKMAJA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ENECKKGPKHI",
+            |m: &CKPOBLIFMGN| { &m.ENECKKGPKHI },
+            |m: &mut CKPOBLIFMGN| { &mut m.ENECKKGPKHI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CKPOBLIFMGN>(
             "CKPOBLIFMGN",
@@ -72,8 +86,26 @@ impl ::protobuf::Message for CKPOBLIFMGN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MHFHLBHFIBC)?;
+                },
+                50 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            8 => key = is.read_uint32()?,
+                            18 => value = is.read_message()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.FBJMBJKMAJA.insert(key, value);
+                },
+                88 => {
+                    self.ENECKKGPKHI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,6 +123,16 @@ impl ::protobuf::Message for CKPOBLIFMGN {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for (k, v) in &self.FBJMBJKMAJA {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            let len = v.compute_size();
+            entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
+        if self.ENECKKGPKHI != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.ENECKKGPKHI);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -98,7 +140,20 @@ impl ::protobuf::Message for CKPOBLIFMGN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MHFHLBHFIBC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        for (k, v) in &self.FBJMBJKMAJA {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            let len = v.cached_size() as u64;
+            entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            os.write_raw_varint32(50)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_uint32(1, *k)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
+        if self.ENECKKGPKHI != 0 {
+            os.write_uint32(11, self.ENECKKGPKHI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,15 +173,14 @@ impl ::protobuf::Message for CKPOBLIFMGN {
 
     fn clear(&mut self) {
         self.MHFHLBHFIBC.clear();
+        self.FBJMBJKMAJA.clear();
+        self.ENECKKGPKHI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CKPOBLIFMGN {
-        static instance: CKPOBLIFMGN = CKPOBLIFMGN {
-            MHFHLBHFIBC: ::protobuf::MessageField::none(),
-            special_fields: ::protobuf::SpecialFields::new(),
-        };
-        &instance
+        static instance: ::protobuf::rt::Lazy<CKPOBLIFMGN> = ::protobuf::rt::Lazy::new();
+        instance.get(CKPOBLIFMGN::new)
     }
 }
 
@@ -148,9 +202,13 @@ impl ::protobuf::reflect::ProtobufValue for CKPOBLIFMGN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CKPOBLIFMGN.proto\x1a\x11FMNKKAMOHEE.proto\"=\n\x0bCKPOBLIFMGN\x12\
-    .\n\x0bMHFHLBHFIBC\x18\x06\x20\x01(\x0b2\x0c.FMNKKAMOHEER\x0bMHFHLBHFIBC\
-    b\x06proto3\
+    \n\x11CKPOBLIFMGN.proto\x1a\x11FMNKKAMOHEE.proto\x1a\x11GLHCHCJMFGA.prot\
+    o\"\xee\x01\n\x0bCKPOBLIFMGN\x12.\n\x0bMHFHLBHFIBC\x18\x01\x20\x01(\x0b2\
+    \x0c.FMNKKAMOHEER\x0bMHFHLBHFIBC\x12?\n\x0bFBJMBJKMAJA\x18\x06\x20\x03(\
+    \x0b2\x1d.CKPOBLIFMGN.FBJMBJKMAJAEntryR\x0bFBJMBJKMAJA\x12\x20\n\x0bENEC\
+    KKGPKHI\x18\x0b\x20\x01(\rR\x0bENECKKGPKHI\x1aL\n\x10FBJMBJKMAJAEntry\
+    \x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\"\n\x05value\x18\x02\
+    \x20\x01(\x0b2\x0c.GLHCHCJMFGAR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -167,8 +225,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
+            let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::FMNKKAMOHEE::file_descriptor().clone());
+            deps.push(super::GLHCHCJMFGA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(CKPOBLIFMGN::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

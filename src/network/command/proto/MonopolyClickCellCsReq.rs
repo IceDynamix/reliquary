@@ -82,7 +82,7 @@ impl ::protobuf::Message for MonopolyClickCellCsReq {
                 16 => {
                     self.IHAOMLEPHOM = is.read_uint32()?;
                 },
-                104 => {
+                48 => {
                     self.map_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for MonopolyClickCellCsReq {
             my_size += ::protobuf::rt::uint32_size(2, self.IHAOMLEPHOM);
         }
         if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.map_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.map_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for MonopolyClickCellCsReq {
             os.write_uint32(2, self.IHAOMLEPHOM)?;
         }
         if self.map_id != 0 {
-            os.write_uint32(13, self.map_id)?;
+            os.write_uint32(6, self.map_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyClickCellCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMonopolyClickCellCsReq.proto\"Q\n\x16MonopolyClickCellCsReq\x12\
     \x20\n\x0bIHAOMLEPHOM\x18\x02\x20\x01(\rR\x0bIHAOMLEPHOM\x12\x15\n\x06ma\
-    p_id\x18\r\x20\x01(\rR\x05mapIdb\x06proto3\
+    p_id\x18\x06\x20\x01(\rR\x05mapIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

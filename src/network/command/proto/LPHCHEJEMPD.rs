@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LPHCHEJEMPD {
     // message fields
-    // @@protoc_insertion_point(field:LPHCHEJEMPD.score_id)
-    pub score_id: u32,
     // @@protoc_insertion_point(field:LPHCHEJEMPD.rank)
     pub rank: u32,
     // @@protoc_insertion_point(field:LPHCHEJEMPD.DHJANOFGDNP)
     pub DHJANOFGDNP: u32,
+    // @@protoc_insertion_point(field:LPHCHEJEMPD.score_id)
+    pub score_id: u32,
     // @@protoc_insertion_point(field:LPHCHEJEMPD.state)
     pub state: ::protobuf::EnumOrUnknown<super::NHHJAONHDDG::NHHJAONHDDG>,
     // special fields
@@ -56,11 +56,6 @@ impl LPHCHEJEMPD {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score_id",
-            |m: &LPHCHEJEMPD| { &m.score_id },
-            |m: &mut LPHCHEJEMPD| { &mut m.score_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rank",
             |m: &LPHCHEJEMPD| { &m.rank },
             |m: &mut LPHCHEJEMPD| { &mut m.rank },
@@ -69,6 +64,11 @@ impl LPHCHEJEMPD {
             "DHJANOFGDNP",
             |m: &LPHCHEJEMPD| { &m.DHJANOFGDNP },
             |m: &mut LPHCHEJEMPD| { &mut m.DHJANOFGDNP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "score_id",
+            |m: &LPHCHEJEMPD| { &m.score_id },
+            |m: &mut LPHCHEJEMPD| { &mut m.score_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "state",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for LPHCHEJEMPD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.score_id = is.read_uint32()?;
-                },
-                48 => {
+                32 => {
                     self.rank = is.read_uint32()?;
                 },
-                56 => {
+                96 => {
                     self.DHJANOFGDNP = is.read_uint32()?;
                 },
-                96 => {
+                104 => {
+                    self.score_id = is.read_uint32()?;
+                },
+                120 => {
                     self.state = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for LPHCHEJEMPD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.score_id);
-        }
         if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.rank);
+            my_size += ::protobuf::rt::uint32_size(4, self.rank);
         }
         if self.DHJANOFGDNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DHJANOFGDNP);
+            my_size += ::protobuf::rt::uint32_size(12, self.DHJANOFGDNP);
+        }
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.score_id);
         }
         if self.state != ::protobuf::EnumOrUnknown::new(super::NHHJAONHDDG::NHHJAONHDDG::NHHJAONHDDG_LCNJHOKLMPN) {
-            my_size += ::protobuf::rt::int32_size(12, self.state.value());
+            my_size += ::protobuf::rt::int32_size(15, self.state.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for LPHCHEJEMPD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.score_id != 0 {
-            os.write_uint32(1, self.score_id)?;
-        }
         if self.rank != 0 {
-            os.write_uint32(6, self.rank)?;
+            os.write_uint32(4, self.rank)?;
         }
         if self.DHJANOFGDNP != 0 {
-            os.write_uint32(7, self.DHJANOFGDNP)?;
+            os.write_uint32(12, self.DHJANOFGDNP)?;
+        }
+        if self.score_id != 0 {
+            os.write_uint32(13, self.score_id)?;
         }
         if self.state != ::protobuf::EnumOrUnknown::new(super::NHHJAONHDDG::NHHJAONHDDG::NHHJAONHDDG_LCNJHOKLMPN) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.state))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.state))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for LPHCHEJEMPD {
     }
 
     fn clear(&mut self) {
-        self.score_id = 0;
         self.rank = 0;
         self.DHJANOFGDNP = 0;
+        self.score_id = 0;
         self.state = ::protobuf::EnumOrUnknown::new(super::NHHJAONHDDG::NHHJAONHDDG::NHHJAONHDDG_LCNJHOKLMPN);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LPHCHEJEMPD {
         static instance: LPHCHEJEMPD = LPHCHEJEMPD {
-            score_id: 0,
             rank: 0,
             DHJANOFGDNP: 0,
+            score_id: 0,
             state: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for LPHCHEJEMPD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LPHCHEJEMPD.proto\x1a\x11NHHJAONHDDG.proto\"\x82\x01\n\x0bLPHCHEJE\
-    MPD\x12\x19\n\x08score_id\x18\x01\x20\x01(\rR\x07scoreId\x12\x12\n\x04ra\
-    nk\x18\x06\x20\x01(\rR\x04rank\x12\x20\n\x0bDHJANOFGDNP\x18\x07\x20\x01(\
-    \rR\x0bDHJANOFGDNP\x12\"\n\x05state\x18\x0c\x20\x01(\x0e2\x0c.NHHJAONHDD\
-    GR\x05stateb\x06proto3\
+    MPD\x12\x12\n\x04rank\x18\x04\x20\x01(\rR\x04rank\x12\x20\n\x0bDHJANOFGD\
+    NP\x18\x0c\x20\x01(\rR\x0bDHJANOFGDNP\x12\x19\n\x08score_id\x18\r\x20\
+    \x01(\rR\x07scoreId\x12\"\n\x05state\x18\x0f\x20\x01(\x0e2\x0c.NHHJAONHD\
+    DGR\x05stateb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

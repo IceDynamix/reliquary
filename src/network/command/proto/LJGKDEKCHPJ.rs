@@ -86,13 +86,13 @@ impl ::protobuf::Message for LJGKDEKCHPJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                16 => {
                     self.MMONAECCLHN = is.read_uint32()?;
                 },
-                64 => {
+                40 => {
                     self.MGBCAPIIKLM = is.read_uint32()?;
                 },
-                88 => {
+                48 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for LJGKDEKCHPJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MMONAECCLHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.MMONAECCLHN);
+            my_size += ::protobuf::rt::uint32_size(2, self.MMONAECCLHN);
         }
         if self.MGBCAPIIKLM != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MGBCAPIIKLM);
+            my_size += ::protobuf::rt::uint32_size(5, self.MGBCAPIIKLM);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for LJGKDEKCHPJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MMONAECCLHN != 0 {
-            os.write_uint32(7, self.MMONAECCLHN)?;
+            os.write_uint32(2, self.MMONAECCLHN)?;
         }
         if self.MGBCAPIIKLM != 0 {
-            os.write_uint32(8, self.MGBCAPIIKLM)?;
+            os.write_uint32(5, self.MGBCAPIIKLM)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(11, self.avatar_id)?;
+            os.write_uint32(6, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for LJGKDEKCHPJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LJGKDEKCHPJ.proto\"n\n\x0bLJGKDEKCHPJ\x12\x20\n\x0bMMONAECCLHN\x18\
-    \x07\x20\x01(\rR\x0bMMONAECCLHN\x12\x20\n\x0bMGBCAPIIKLM\x18\x08\x20\x01\
-    (\rR\x0bMGBCAPIIKLM\x12\x1b\n\tavatar_id\x18\x0b\x20\x01(\rR\x08avatarId\
+    \x02\x20\x01(\rR\x0bMMONAECCLHN\x12\x20\n\x0bMGBCAPIIKLM\x18\x05\x20\x01\
+    (\rR\x0bMGBCAPIIKLM\x12\x1b\n\tavatar_id\x18\x06\x20\x01(\rR\x08avatarId\
     b\x06proto3\
 ";
 

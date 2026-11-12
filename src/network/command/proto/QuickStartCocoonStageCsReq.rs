@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct QuickStartCocoonStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:QuickStartCocoonStageCsReq.world_level)
-    pub world_level: u32,
     // @@protoc_insertion_point(field:QuickStartCocoonStageCsReq.wave)
     pub wave: u32,
     // @@protoc_insertion_point(field:QuickStartCocoonStageCsReq.HECCOBFBJFI)
     pub HECCOBFBJFI: u32,
-    // @@protoc_insertion_point(field:QuickStartCocoonStageCsReq.cocoon_id)
-    pub cocoon_id: u32,
     // @@protoc_insertion_point(field:QuickStartCocoonStageCsReq.CBJCKEIGGNL)
     pub CBJCKEIGGNL: ::protobuf::MessageField<super::NAJKNJLJPEP::NAJKNJLJPEP>,
+    // @@protoc_insertion_point(field:QuickStartCocoonStageCsReq.world_level)
+    pub world_level: u32,
+    // @@protoc_insertion_point(field:QuickStartCocoonStageCsReq.cocoon_id)
+    pub cocoon_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:QuickStartCocoonStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,11 +58,6 @@ impl QuickStartCocoonStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &QuickStartCocoonStageCsReq| { &m.world_level },
-            |m: &mut QuickStartCocoonStageCsReq| { &mut m.world_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "wave",
             |m: &QuickStartCocoonStageCsReq| { &m.wave },
             |m: &mut QuickStartCocoonStageCsReq| { &mut m.wave },
@@ -72,15 +67,20 @@ impl QuickStartCocoonStageCsReq {
             |m: &QuickStartCocoonStageCsReq| { &m.HECCOBFBJFI },
             |m: &mut QuickStartCocoonStageCsReq| { &mut m.HECCOBFBJFI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cocoon_id",
-            |m: &QuickStartCocoonStageCsReq| { &m.cocoon_id },
-            |m: &mut QuickStartCocoonStageCsReq| { &mut m.cocoon_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NAJKNJLJPEP::NAJKNJLJPEP>(
             "CBJCKEIGGNL",
             |m: &QuickStartCocoonStageCsReq| { &m.CBJCKEIGGNL },
             |m: &mut QuickStartCocoonStageCsReq| { &mut m.CBJCKEIGGNL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "world_level",
+            |m: &QuickStartCocoonStageCsReq| { &m.world_level },
+            |m: &mut QuickStartCocoonStageCsReq| { &mut m.world_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cocoon_id",
+            |m: &QuickStartCocoonStageCsReq| { &m.cocoon_id },
+            |m: &mut QuickStartCocoonStageCsReq| { &mut m.cocoon_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<QuickStartCocoonStageCsReq>(
             "QuickStartCocoonStageCsReq",
@@ -101,19 +101,19 @@ impl ::protobuf::Message for QuickStartCocoonStageCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.world_level = is.read_uint32()?;
-                },
-                24 => {
                     self.wave = is.read_uint32()?;
                 },
-                48 => {
+                16 => {
                     self.HECCOBFBJFI = is.read_uint32()?;
                 },
-                56 => {
-                    self.cocoon_id = is.read_uint32()?;
-                },
-                90 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CBJCKEIGGNL)?;
+                },
+                64 => {
+                    self.world_level = is.read_uint32()?;
+                },
+                120 => {
+                    self.cocoon_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for QuickStartCocoonStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.world_level);
-        }
         if self.wave != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.wave);
+            my_size += ::protobuf::rt::uint32_size(1, self.wave);
         }
         if self.HECCOBFBJFI != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HECCOBFBJFI);
-        }
-        if self.cocoon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.cocoon_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.HECCOBFBJFI);
         }
         if let Some(v) = self.CBJCKEIGGNL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.world_level);
+        }
+        if self.cocoon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.cocoon_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for QuickStartCocoonStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.world_level != 0 {
-            os.write_uint32(1, self.world_level)?;
-        }
         if self.wave != 0 {
-            os.write_uint32(3, self.wave)?;
+            os.write_uint32(1, self.wave)?;
         }
         if self.HECCOBFBJFI != 0 {
-            os.write_uint32(6, self.HECCOBFBJFI)?;
-        }
-        if self.cocoon_id != 0 {
-            os.write_uint32(7, self.cocoon_id)?;
+            os.write_uint32(2, self.HECCOBFBJFI)?;
         }
         if let Some(v) = self.CBJCKEIGGNL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if self.world_level != 0 {
+            os.write_uint32(8, self.world_level)?;
+        }
+        if self.cocoon_id != 0 {
+            os.write_uint32(15, self.cocoon_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for QuickStartCocoonStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.world_level = 0;
         self.wave = 0;
         self.HECCOBFBJFI = 0;
-        self.cocoon_id = 0;
         self.CBJCKEIGGNL.clear();
+        self.world_level = 0;
+        self.cocoon_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static QuickStartCocoonStageCsReq {
         static instance: QuickStartCocoonStageCsReq = QuickStartCocoonStageCsReq {
-            world_level: 0,
             wave: 0,
             HECCOBFBJFI: 0,
-            cocoon_id: 0,
             CBJCKEIGGNL: ::protobuf::MessageField::none(),
+            world_level: 0,
+            cocoon_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for QuickStartCocoonStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20QuickStartCocoonStageCsReq.proto\x1a\x11NAJKNJLJPEP.proto\"\xc0\
-    \x01\n\x1aQuickStartCocoonStageCsReq\x12\x1f\n\x0bworld_level\x18\x01\
-    \x20\x01(\rR\nworldLevel\x12\x12\n\x04wave\x18\x03\x20\x01(\rR\x04wave\
-    \x12\x20\n\x0bHECCOBFBJFI\x18\x06\x20\x01(\rR\x0bHECCOBFBJFI\x12\x1b\n\t\
-    cocoon_id\x18\x07\x20\x01(\rR\x08cocoonId\x12.\n\x0bCBJCKEIGGNL\x18\x0b\
-    \x20\x01(\x0b2\x0c.NAJKNJLJPEPR\x0bCBJCKEIGGNLb\x06proto3\
+    \x01\n\x1aQuickStartCocoonStageCsReq\x12\x12\n\x04wave\x18\x01\x20\x01(\
+    \rR\x04wave\x12\x20\n\x0bHECCOBFBJFI\x18\x02\x20\x01(\rR\x0bHECCOBFBJFI\
+    \x12.\n\x0bCBJCKEIGGNL\x18\x03\x20\x01(\x0b2\x0c.NAJKNJLJPEPR\x0bCBJCKEI\
+    GGNL\x12\x1f\n\x0bworld_level\x18\x08\x20\x01(\rR\nworldLevel\x12\x1b\n\
+    \tcocoon_id\x18\x0f\x20\x01(\rR\x08cocoonIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

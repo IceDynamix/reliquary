@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum ADBEHIMDINE {
     // @@protoc_insertion_point(enum_value:ADBEHIMDINE.ADBEHIMDINE_NLCDGIPGFDJ)
     ADBEHIMDINE_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:ADBEHIMDINE.ADBEHIMDINE_BCFGIPOICLK)
-    ADBEHIMDINE_BCFGIPOICLK = 10270,
-    // @@protoc_insertion_point(enum_value:ADBEHIMDINE.ADBEHIMDINE_HEPALNLMDEP)
-    ADBEHIMDINE_HEPALNLMDEP = 10277,
     // @@protoc_insertion_point(enum_value:ADBEHIMDINE.ADBEHIMDINE_ELNOKFJOMON)
-    ADBEHIMDINE_ELNOKFJOMON = 10276,
+    ADBEHIMDINE_ELNOKFJOMON = 10268,
+    // @@protoc_insertion_point(enum_value:ADBEHIMDINE.ADBEHIMDINE_BCFGIPOICLK)
+    ADBEHIMDINE_BCFGIPOICLK = 10275,
+    // @@protoc_insertion_point(enum_value:ADBEHIMDINE.ADBEHIMDINE_HEPALNLMDEP)
+    ADBEHIMDINE_HEPALNLMDEP = 10264,
 }
 
 impl ::protobuf::Enum for ADBEHIMDINE {
@@ -47,9 +47,9 @@ impl ::protobuf::Enum for ADBEHIMDINE {
     fn from_i32(value: i32) -> ::std::option::Option<ADBEHIMDINE> {
         match value {
             0 => ::std::option::Option::Some(ADBEHIMDINE::ADBEHIMDINE_NLCDGIPGFDJ),
-            10270 => ::std::option::Option::Some(ADBEHIMDINE::ADBEHIMDINE_BCFGIPOICLK),
-            10277 => ::std::option::Option::Some(ADBEHIMDINE::ADBEHIMDINE_HEPALNLMDEP),
-            10276 => ::std::option::Option::Some(ADBEHIMDINE::ADBEHIMDINE_ELNOKFJOMON),
+            10268 => ::std::option::Option::Some(ADBEHIMDINE::ADBEHIMDINE_ELNOKFJOMON),
+            10275 => ::std::option::Option::Some(ADBEHIMDINE::ADBEHIMDINE_BCFGIPOICLK),
+            10264 => ::std::option::Option::Some(ADBEHIMDINE::ADBEHIMDINE_HEPALNLMDEP),
             _ => ::std::option::Option::None
         }
     }
@@ -57,18 +57,18 @@ impl ::protobuf::Enum for ADBEHIMDINE {
     fn from_str(str: &str) -> ::std::option::Option<ADBEHIMDINE> {
         match str {
             "ADBEHIMDINE_NLCDGIPGFDJ" => ::std::option::Option::Some(ADBEHIMDINE::ADBEHIMDINE_NLCDGIPGFDJ),
+            "ADBEHIMDINE_ELNOKFJOMON" => ::std::option::Option::Some(ADBEHIMDINE::ADBEHIMDINE_ELNOKFJOMON),
             "ADBEHIMDINE_BCFGIPOICLK" => ::std::option::Option::Some(ADBEHIMDINE::ADBEHIMDINE_BCFGIPOICLK),
             "ADBEHIMDINE_HEPALNLMDEP" => ::std::option::Option::Some(ADBEHIMDINE::ADBEHIMDINE_HEPALNLMDEP),
-            "ADBEHIMDINE_ELNOKFJOMON" => ::std::option::Option::Some(ADBEHIMDINE::ADBEHIMDINE_ELNOKFJOMON),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [ADBEHIMDINE] = &[
         ADBEHIMDINE::ADBEHIMDINE_NLCDGIPGFDJ,
+        ADBEHIMDINE::ADBEHIMDINE_ELNOKFJOMON,
         ADBEHIMDINE::ADBEHIMDINE_BCFGIPOICLK,
         ADBEHIMDINE::ADBEHIMDINE_HEPALNLMDEP,
-        ADBEHIMDINE::ADBEHIMDINE_ELNOKFJOMON,
     ];
 }
 
@@ -81,9 +81,9 @@ impl ::protobuf::EnumFull for ADBEHIMDINE {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             ADBEHIMDINE::ADBEHIMDINE_NLCDGIPGFDJ => 0,
-            ADBEHIMDINE::ADBEHIMDINE_BCFGIPOICLK => 1,
-            ADBEHIMDINE::ADBEHIMDINE_HEPALNLMDEP => 2,
-            ADBEHIMDINE::ADBEHIMDINE_ELNOKFJOMON => 3,
+            ADBEHIMDINE::ADBEHIMDINE_ELNOKFJOMON => 1,
+            ADBEHIMDINE::ADBEHIMDINE_BCFGIPOICLK => 2,
+            ADBEHIMDINE::ADBEHIMDINE_HEPALNLMDEP => 3,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,9 +103,9 @@ impl ADBEHIMDINE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ADBEHIMDINE.proto*\x84\x01\n\x0bADBEHIMDINE\x12\x1b\n\x17ADBEHIMDI\
-    NE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ADBEHIMDINE_BCFGIPOICLK\x10\x9eP\x12\
-    \x1c\n\x17ADBEHIMDINE_HEPALNLMDEP\x10\xa5P\x12\x1c\n\x17ADBEHIMDINE_ELNO\
-    KFJOMON\x10\xa4Pb\x06proto3\
+    NE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ADBEHIMDINE_ELNOKFJOMON\x10\x9cP\x12\
+    \x1c\n\x17ADBEHIMDINE_BCFGIPOICLK\x10\xa3P\x12\x1c\n\x17ADBEHIMDINE_HEPA\
+    LNLMDEP\x10\x98Pb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

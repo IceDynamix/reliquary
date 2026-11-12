@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MGFJDLIBABO {
     // message fields
-    // @@protoc_insertion_point(field:MGFJDLIBABO.end_status)
-    pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
     // @@protoc_insertion_point(field:MGFJDLIBABO.PLAPNCJJAOP)
     pub PLAPNCJJAOP: ::protobuf::MessageField<super::NPLMMCGAJDF::NPLMMCGAJDF>,
     // @@protoc_insertion_point(field:MGFJDLIBABO.ELHJAMKKKLH)
     pub ELHJAMKKKLH: bool,
+    // @@protoc_insertion_point(field:MGFJDLIBABO.end_status)
+    pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
     // special fields
     // @@protoc_insertion_point(special_field:MGFJDLIBABO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl MGFJDLIBABO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "end_status",
-            |m: &MGFJDLIBABO| { &m.end_status },
-            |m: &mut MGFJDLIBABO| { &mut m.end_status },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NPLMMCGAJDF::NPLMMCGAJDF>(
             "PLAPNCJJAOP",
             |m: &MGFJDLIBABO| { &m.PLAPNCJJAOP },
@@ -67,6 +62,11 @@ impl MGFJDLIBABO {
             "ELHJAMKKKLH",
             |m: &MGFJDLIBABO| { &m.ELHJAMKKKLH },
             |m: &mut MGFJDLIBABO| { &mut m.ELHJAMKKKLH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "end_status",
+            |m: &MGFJDLIBABO| { &m.end_status },
+            |m: &mut MGFJDLIBABO| { &mut m.end_status },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MGFJDLIBABO>(
             "MGFJDLIBABO",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MGFJDLIBABO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.end_status = is.read_enum_or_unknown()?;
-                },
-                90 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PLAPNCJJAOP)?;
                 },
-                96 => {
+                72 => {
                     self.ELHJAMKKKLH = is.read_bool()?;
+                },
+                104 => {
+                    self.end_status = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,9 +107,6 @@ impl ::protobuf::Message for MGFJDLIBABO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.end_status.value());
-        }
         if let Some(v) = self.PLAPNCJJAOP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -117,20 +114,23 @@ impl ::protobuf::Message for MGFJDLIBABO {
         if self.ELHJAMKKKLH != false {
             my_size += 1 + 1;
         }
+        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
+            my_size += ::protobuf::rt::int32_size(13, self.end_status.value());
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
-        }
         if let Some(v) = self.PLAPNCJJAOP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.ELHJAMKKKLH != false {
-            os.write_bool(12, self.ELHJAMKKKLH)?;
+            os.write_bool(9, self.ELHJAMKKKLH)?;
+        }
+        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for MGFJDLIBABO {
     }
 
     fn clear(&mut self) {
-        self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
         self.PLAPNCJJAOP.clear();
         self.ELHJAMKKKLH = false;
+        self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MGFJDLIBABO {
         static instance: MGFJDLIBABO = MGFJDLIBABO {
-            end_status: ::protobuf::EnumOrUnknown::from_i32(0),
             PLAPNCJJAOP: ::protobuf::MessageField::none(),
             ELHJAMKKKLH: false,
+            end_status: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for MGFJDLIBABO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MGFJDLIBABO.proto\x1a\x15BattleEndStatus.proto\x1a\x11NPLMMCGAJDF.\
-    proto\"\x90\x01\n\x0bMGFJDLIBABO\x12/\n\nend_status\x18\x06\x20\x01(\x0e\
-    2\x10.BattleEndStatusR\tendStatus\x12.\n\x0bPLAPNCJJAOP\x18\x0b\x20\x01(\
-    \x0b2\x0c.NPLMMCGAJDFR\x0bPLAPNCJJAOP\x12\x20\n\x0bELHJAMKKKLH\x18\x0c\
-    \x20\x01(\x08R\x0bELHJAMKKKLHb\x06proto3\
+    proto\"\x90\x01\n\x0bMGFJDLIBABO\x12.\n\x0bPLAPNCJJAOP\x18\x01\x20\x01(\
+    \x0b2\x0c.NPLMMCGAJDFR\x0bPLAPNCJJAOP\x12\x20\n\x0bELHJAMKKKLH\x18\t\x20\
+    \x01(\x08R\x0bELHJAMKKKLH\x12/\n\nend_status\x18\r\x20\x01(\x0e2\x10.Bat\
+    tleEndStatusR\tendStatusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

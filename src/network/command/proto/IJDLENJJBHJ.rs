@@ -28,16 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IJDLENJJBHJ {
     // message fields
-    // @@protoc_insertion_point(field:IJDLENJJBHJ.unique_id)
-    pub unique_id: u32,
     // @@protoc_insertion_point(field:IJDLENJJBHJ.IODIJBEHEGF)
     pub IODIJBEHEGF: bool,
-    // @@protoc_insertion_point(field:IJDLENJJBHJ.convert_property_to_fixpoint)
-    pub convert_property_to_fixpoint: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:IJDLENJJBHJ.H_603b4ee2)
-    pub H_603b4ee2: u32,
     // @@protoc_insertion_point(field:IJDLENJJBHJ.source)
     pub source: u32,
+    // @@protoc_insertion_point(field:IJDLENJJBHJ.convert_property_to_fixpoint)
+    pub convert_property_to_fixpoint: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:IJDLENJJBHJ.MCGHFJCBBMK)
+    pub MCGHFJCBBMK: u32,
+    // @@protoc_insertion_point(field:IJDLENJJBHJ.HLHGALNKHAL)
+    pub HLHGALNKHAL: bool,
+    // @@protoc_insertion_point(field:IJDLENJJBHJ.unique_id)
+    pub unique_id: u32,
+    // @@protoc_insertion_point(field:IJDLENJJBHJ.H_a45cd9b1)
+    pub H_a45cd9b1: u32,
+    // @@protoc_insertion_point(field:IJDLENJJBHJ.KGGHEHCBMGA)
+    pub KGGHEHCBMGA: bool,
     // special fields
     // @@protoc_insertion_point(special_field:IJDLENJJBHJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,17 +61,17 @@ impl IJDLENJJBHJ {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &IJDLENJJBHJ| { &m.unique_id },
-            |m: &mut IJDLENJJBHJ| { &mut m.unique_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IODIJBEHEGF",
             |m: &IJDLENJJBHJ| { &m.IODIJBEHEGF },
             |m: &mut IJDLENJJBHJ| { &mut m.IODIJBEHEGF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "source",
+            |m: &IJDLENJJBHJ| { &m.source },
+            |m: &mut IJDLENJJBHJ| { &mut m.source },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "convert_property_to_fixpoint",
@@ -73,14 +79,29 @@ impl IJDLENJJBHJ {
             |m: &mut IJDLENJJBHJ| { &mut m.convert_property_to_fixpoint },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "H_603b4ee2",
-            |m: &IJDLENJJBHJ| { &m.H_603b4ee2 },
-            |m: &mut IJDLENJJBHJ| { &mut m.H_603b4ee2 },
+            "MCGHFJCBBMK",
+            |m: &IJDLENJJBHJ| { &m.MCGHFJCBBMK },
+            |m: &mut IJDLENJJBHJ| { &mut m.MCGHFJCBBMK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "source",
-            |m: &IJDLENJJBHJ| { &m.source },
-            |m: &mut IJDLENJJBHJ| { &mut m.source },
+            "HLHGALNKHAL",
+            |m: &IJDLENJJBHJ| { &m.HLHGALNKHAL },
+            |m: &mut IJDLENJJBHJ| { &mut m.HLHGALNKHAL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unique_id",
+            |m: &IJDLENJJBHJ| { &m.unique_id },
+            |m: &mut IJDLENJJBHJ| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "H_a45cd9b1",
+            |m: &IJDLENJJBHJ| { &m.H_a45cd9b1 },
+            |m: &mut IJDLENJJBHJ| { &mut m.H_a45cd9b1 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KGGHEHCBMGA",
+            |m: &IJDLENJJBHJ| { &m.KGGHEHCBMGA },
+            |m: &mut IJDLENJJBHJ| { &mut m.KGGHEHCBMGA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IJDLENJJBHJ>(
             "IJDLENJJBHJ",
@@ -100,13 +121,13 @@ impl ::protobuf::Message for IJDLENJJBHJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.unique_id = is.read_uint32()?;
-                },
-                64 => {
+                8 => {
                     self.IODIJBEHEGF = is.read_bool()?;
                 },
-                74 => {
+                16 => {
+                    self.source = is.read_uint32()?;
+                },
+                50 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -121,11 +142,20 @@ impl ::protobuf::Message for IJDLENJJBHJ {
                     is.pop_limit(old_limit);
                     self.convert_property_to_fixpoint.insert(key, value);
                 },
+                64 => {
+                    self.MCGHFJCBBMK = is.read_uint32()?;
+                },
+                72 => {
+                    self.HLHGALNKHAL = is.read_bool()?;
+                },
                 88 => {
-                    self.H_603b4ee2 = is.read_uint32()?;
+                    self.unique_id = is.read_uint32()?;
+                },
+                104 => {
+                    self.H_a45cd9b1 = is.read_uint32()?;
                 },
                 112 => {
-                    self.source = is.read_uint32()?;
+                    self.KGGHEHCBMGA = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -139,11 +169,11 @@ impl ::protobuf::Message for IJDLENJJBHJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.unique_id);
-        }
         if self.IODIJBEHEGF != false {
             my_size += 1 + 1;
+        }
+        if self.source != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.source);
         }
         for (k, v) in &self.convert_property_to_fixpoint {
             let mut entry_size = 0;
@@ -151,11 +181,20 @@ impl ::protobuf::Message for IJDLENJJBHJ {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.H_603b4ee2 != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.H_603b4ee2);
+        if self.MCGHFJCBBMK != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.MCGHFJCBBMK);
         }
-        if self.source != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.source);
+        if self.HLHGALNKHAL != false {
+            my_size += 1 + 1;
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.unique_id);
+        }
+        if self.H_a45cd9b1 != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.H_a45cd9b1);
+        }
+        if self.KGGHEHCBMGA != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,26 +202,35 @@ impl ::protobuf::Message for IJDLENJJBHJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.unique_id != 0 {
-            os.write_uint32(4, self.unique_id)?;
-        }
         if self.IODIJBEHEGF != false {
-            os.write_bool(8, self.IODIJBEHEGF)?;
+            os.write_bool(1, self.IODIJBEHEGF)?;
+        }
+        if self.source != 0 {
+            os.write_uint32(2, self.source)?;
         }
         for (k, v) in &self.convert_property_to_fixpoint {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(74)?; // Tag.
+            os.write_raw_varint32(50)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.H_603b4ee2 != 0 {
-            os.write_uint32(11, self.H_603b4ee2)?;
+        if self.MCGHFJCBBMK != 0 {
+            os.write_uint32(8, self.MCGHFJCBBMK)?;
         }
-        if self.source != 0 {
-            os.write_uint32(14, self.source)?;
+        if self.HLHGALNKHAL != false {
+            os.write_bool(9, self.HLHGALNKHAL)?;
+        }
+        if self.unique_id != 0 {
+            os.write_uint32(11, self.unique_id)?;
+        }
+        if self.H_a45cd9b1 != 0 {
+            os.write_uint32(13, self.H_a45cd9b1)?;
+        }
+        if self.KGGHEHCBMGA != false {
+            os.write_bool(14, self.KGGHEHCBMGA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -201,11 +249,14 @@ impl ::protobuf::Message for IJDLENJJBHJ {
     }
 
     fn clear(&mut self) {
-        self.unique_id = 0;
         self.IODIJBEHEGF = false;
-        self.convert_property_to_fixpoint.clear();
-        self.H_603b4ee2 = 0;
         self.source = 0;
+        self.convert_property_to_fixpoint.clear();
+        self.MCGHFJCBBMK = 0;
+        self.HLHGALNKHAL = false;
+        self.unique_id = 0;
+        self.H_a45cd9b1 = 0;
+        self.KGGHEHCBMGA = false;
         self.special_fields.clear();
     }
 
@@ -233,14 +284,17 @@ impl ::protobuf::reflect::ProtobufValue for IJDLENJJBHJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IJDLENJJBHJ.proto\"\xbf\x02\n\x0bIJDLENJJBHJ\x12\x1b\n\tunique_id\
-    \x18\x04\x20\x01(\rR\x08uniqueId\x12\x20\n\x0bIODIJBEHEGF\x18\x08\x20\
-    \x01(\x08R\x0bIODIJBEHEGF\x12l\n\x1cconvert_property_to_fixpoint\x18\t\
-    \x20\x03(\x0b2+.IJDLENJJBHJ.ConvertPropertyToFixpointEntryR\x19convertPr\
-    opertyToFixpoint\x12\x1d\n\nH_603b4ee2\x18\x0b\x20\x01(\rR\tH603b4ee2\
-    \x12\x16\n\x06source\x18\x0e\x20\x01(\rR\x06source\x1aL\n\x1eConvertProp\
-    ertyToFixpointEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\
-    \n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
+    \n\x11IJDLENJJBHJ.proto\"\xa5\x03\n\x0bIJDLENJJBHJ\x12\x20\n\x0bIODIJBEH\
+    EGF\x18\x01\x20\x01(\x08R\x0bIODIJBEHEGF\x12\x16\n\x06source\x18\x02\x20\
+    \x01(\rR\x06source\x12l\n\x1cconvert_property_to_fixpoint\x18\x06\x20\
+    \x03(\x0b2+.IJDLENJJBHJ.ConvertPropertyToFixpointEntryR\x19convertProper\
+    tyToFixpoint\x12\x20\n\x0bMCGHFJCBBMK\x18\x08\x20\x01(\rR\x0bMCGHFJCBBMK\
+    \x12\x20\n\x0bHLHGALNKHAL\x18\t\x20\x01(\x08R\x0bHLHGALNKHAL\x12\x1b\n\t\
+    unique_id\x18\x0b\x20\x01(\rR\x08uniqueId\x12\x1d\n\nH_a45cd9b1\x18\r\
+    \x20\x01(\rR\tHA45cd9b1\x12\x20\n\x0bKGGHEHCBMGA\x18\x0e\x20\x01(\x08R\
+    \x0bKGGHEHCBMGA\x1aL\n\x1eConvertPropertyToFixpointEntry\x12\x10\n\x03ke\
+    y\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05v\
+    alue:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

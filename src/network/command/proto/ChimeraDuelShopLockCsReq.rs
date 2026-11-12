@@ -48,32 +48,7 @@ impl ChimeraDuelShopLockCsReq {
         ::std::default::Default::default()
     }
 
-    // uint32 AGBAIFPNKII = 2;
-
-    pub fn AGBAIFPNKII(&self) -> u32 {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(chimera_duel_shop_lock_cs_req::KKNBOACNCON::AGBAIFPNKII(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_AGBAIFPNKII(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_AGBAIFPNKII(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(chimera_duel_shop_lock_cs_req::KKNBOACNCON::AGBAIFPNKII(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_AGBAIFPNKII(&mut self, v: u32) {
-        self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_shop_lock_cs_req::KKNBOACNCON::AGBAIFPNKII(v))
-    }
-
-    // uint32 NDJGKJMPPHJ = 13;
+    // uint32 NDJGKJMPPHJ = 9;
 
     pub fn NDJGKJMPPHJ(&self) -> u32 {
         match self.KKNBOACNCON {
@@ -98,6 +73,31 @@ impl ChimeraDuelShopLockCsReq {
         self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_shop_lock_cs_req::KKNBOACNCON::NDJGKJMPPHJ(v))
     }
 
+    // uint32 AGBAIFPNKII = 13;
+
+    pub fn AGBAIFPNKII(&self) -> u32 {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(chimera_duel_shop_lock_cs_req::KKNBOACNCON::AGBAIFPNKII(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_AGBAIFPNKII(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_AGBAIFPNKII(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(chimera_duel_shop_lock_cs_req::KKNBOACNCON::AGBAIFPNKII(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_AGBAIFPNKII(&mut self, v: u32) {
+        self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_shop_lock_cs_req::KKNBOACNCON::AGBAIFPNKII(v))
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
@@ -107,16 +107,16 @@ impl ChimeraDuelShopLockCsReq {
             |m: &mut ChimeraDuelShopLockCsReq| { &mut m.is_locked },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "AGBAIFPNKII",
-            ChimeraDuelShopLockCsReq::has_AGBAIFPNKII,
-            ChimeraDuelShopLockCsReq::AGBAIFPNKII,
-            ChimeraDuelShopLockCsReq::set_AGBAIFPNKII,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "NDJGKJMPPHJ",
             ChimeraDuelShopLockCsReq::has_NDJGKJMPPHJ,
             ChimeraDuelShopLockCsReq::NDJGKJMPPHJ,
             ChimeraDuelShopLockCsReq::set_NDJGKJMPPHJ,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "AGBAIFPNKII",
+            ChimeraDuelShopLockCsReq::has_AGBAIFPNKII,
+            ChimeraDuelShopLockCsReq::AGBAIFPNKII,
+            ChimeraDuelShopLockCsReq::set_AGBAIFPNKII,
         ));
         oneofs.push(chimera_duel_shop_lock_cs_req::KKNBOACNCON::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraDuelShopLockCsReq>(
@@ -137,14 +137,14 @@ impl ::protobuf::Message for ChimeraDuelShopLockCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
                     self.is_locked = is.read_bool()?;
                 },
-                16 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_shop_lock_cs_req::KKNBOACNCON::AGBAIFPNKII(is.read_uint32()?));
+                72 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_shop_lock_cs_req::KKNBOACNCON::NDJGKJMPPHJ(is.read_uint32()?));
                 },
                 104 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_shop_lock_cs_req::KKNBOACNCON::NDJGKJMPPHJ(is.read_uint32()?));
+                    self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_shop_lock_cs_req::KKNBOACNCON::AGBAIFPNKII(is.read_uint32()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -163,10 +163,10 @@ impl ::protobuf::Message for ChimeraDuelShopLockCsReq {
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &chimera_duel_shop_lock_cs_req::KKNBOACNCON::AGBAIFPNKII(v) => {
-                    my_size += ::protobuf::rt::uint32_size(2, v);
-                },
                 &chimera_duel_shop_lock_cs_req::KKNBOACNCON::NDJGKJMPPHJ(v) => {
+                    my_size += ::protobuf::rt::uint32_size(9, v);
+                },
+                &chimera_duel_shop_lock_cs_req::KKNBOACNCON::AGBAIFPNKII(v) => {
                     my_size += ::protobuf::rt::uint32_size(13, v);
                 },
             };
@@ -178,14 +178,14 @@ impl ::protobuf::Message for ChimeraDuelShopLockCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_locked != false {
-            os.write_bool(1, self.is_locked)?;
+            os.write_bool(4, self.is_locked)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &chimera_duel_shop_lock_cs_req::KKNBOACNCON::AGBAIFPNKII(v) => {
-                    os.write_uint32(2, v)?;
-                },
                 &chimera_duel_shop_lock_cs_req::KKNBOACNCON::NDJGKJMPPHJ(v) => {
+                    os.write_uint32(9, v)?;
+                },
+                &chimera_duel_shop_lock_cs_req::KKNBOACNCON::AGBAIFPNKII(v) => {
                     os.write_uint32(13, v)?;
                 },
             };
@@ -247,10 +247,10 @@ pub mod chimera_duel_shop_lock_cs_req {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:ChimeraDuelShopLockCsReq.KKNBOACNCON)
     pub enum KKNBOACNCON {
-        // @@protoc_insertion_point(oneof_field:ChimeraDuelShopLockCsReq.AGBAIFPNKII)
-        AGBAIFPNKII(u32),
         // @@protoc_insertion_point(oneof_field:ChimeraDuelShopLockCsReq.NDJGKJMPPHJ)
         NDJGKJMPPHJ(u32),
+        // @@protoc_insertion_point(oneof_field:ChimeraDuelShopLockCsReq.AGBAIFPNKII)
+        AGBAIFPNKII(u32),
     }
 
     impl ::protobuf::Oneof for KKNBOACNCON {
@@ -272,9 +272,9 @@ pub mod chimera_duel_shop_lock_cs_req {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eChimeraDuelShopLockCsReq.proto\"\x8e\x01\n\x18ChimeraDuelShopLockC\
-    sReq\x12\x1b\n\tis_locked\x18\x01\x20\x01(\x08R\x08isLocked\x12\"\n\x0bA\
-    GBAIFPNKII\x18\x02\x20\x01(\rH\0R\x0bAGBAIFPNKII\x12\"\n\x0bNDJGKJMPPHJ\
-    \x18\r\x20\x01(\rH\0R\x0bNDJGKJMPPHJB\r\n\x0bKKNBOACNCONb\x06proto3\
+    sReq\x12\x1b\n\tis_locked\x18\x04\x20\x01(\x08R\x08isLocked\x12\"\n\x0bN\
+    DJGKJMPPHJ\x18\t\x20\x01(\rH\0R\x0bNDJGKJMPPHJ\x12\"\n\x0bAGBAIFPNKII\
+    \x18\r\x20\x01(\rH\0R\x0bAGBAIFPNKIIB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

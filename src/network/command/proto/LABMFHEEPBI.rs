@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LABMFHEEPBI {
     // message fields
-    // @@protoc_insertion_point(field:LABMFHEEPBI.FFEILKDLABH)
-    pub FFEILKDLABH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LABMFHEEPBI.FEKHNEKHAAK)
-    pub FEKHNEKHAAK: u64,
-    // @@protoc_insertion_point(field:LABMFHEEPBI.FGJIAMOOIIG)
-    pub FGJIAMOOIIG: ::std::vec::Vec<super::CLBNCPOFNPB::CLBNCPOFNPB>,
-    // @@protoc_insertion_point(field:LABMFHEEPBI.ELJEBPIOKDD)
-    pub ELJEBPIOKDD: ::std::vec::Vec<super::BMJDDOLALFI::BMJDDOLALFI>,
     // @@protoc_insertion_point(field:LABMFHEEPBI.JEENJPHNBLI)
     pub JEENJPHNBLI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LABMFHEEPBI.FEKHNEKHAAK)
+    pub FEKHNEKHAAK: u64,
+    // @@protoc_insertion_point(field:LABMFHEEPBI.FFEILKDLABH)
+    pub FFEILKDLABH: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LABMFHEEPBI.JFBOMKNCNIE)
     pub JFBOMKNCNIE: u32,
+    // @@protoc_insertion_point(field:LABMFHEEPBI.ELJEBPIOKDD)
+    pub ELJEBPIOKDD: ::std::vec::Vec<super::BMJDDOLALFI::BMJDDOLALFI>,
+    // @@protoc_insertion_point(field:LABMFHEEPBI.FGJIAMOOIIG)
+    pub FGJIAMOOIIG: ::std::vec::Vec<super::CLBNCPOFNPB::CLBNCPOFNPB>,
     // @@protoc_insertion_point(field:LABMFHEEPBI.DFELFGNJGDP)
     pub DFELFGNJGDP: u32,
     // special fields
@@ -62,9 +62,9 @@ impl LABMFHEEPBI {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FFEILKDLABH",
-            |m: &LABMFHEEPBI| { &m.FFEILKDLABH },
-            |m: &mut LABMFHEEPBI| { &mut m.FFEILKDLABH },
+            "JEENJPHNBLI",
+            |m: &LABMFHEEPBI| { &m.JEENJPHNBLI },
+            |m: &mut LABMFHEEPBI| { &mut m.JEENJPHNBLI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FEKHNEKHAAK",
@@ -72,9 +72,14 @@ impl LABMFHEEPBI {
             |m: &mut LABMFHEEPBI| { &mut m.FEKHNEKHAAK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FGJIAMOOIIG",
-            |m: &LABMFHEEPBI| { &m.FGJIAMOOIIG },
-            |m: &mut LABMFHEEPBI| { &mut m.FGJIAMOOIIG },
+            "FFEILKDLABH",
+            |m: &LABMFHEEPBI| { &m.FFEILKDLABH },
+            |m: &mut LABMFHEEPBI| { &mut m.FFEILKDLABH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JFBOMKNCNIE",
+            |m: &LABMFHEEPBI| { &m.JFBOMKNCNIE },
+            |m: &mut LABMFHEEPBI| { &mut m.JFBOMKNCNIE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ELJEBPIOKDD",
@@ -82,14 +87,9 @@ impl LABMFHEEPBI {
             |m: &mut LABMFHEEPBI| { &mut m.ELJEBPIOKDD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JEENJPHNBLI",
-            |m: &LABMFHEEPBI| { &m.JEENJPHNBLI },
-            |m: &mut LABMFHEEPBI| { &mut m.JEENJPHNBLI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFBOMKNCNIE",
-            |m: &LABMFHEEPBI| { &m.JFBOMKNCNIE },
-            |m: &mut LABMFHEEPBI| { &mut m.JFBOMKNCNIE },
+            "FGJIAMOOIIG",
+            |m: &LABMFHEEPBI| { &m.FGJIAMOOIIG },
+            |m: &mut LABMFHEEPBI| { &mut m.FGJIAMOOIIG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DFELFGNJGDP",
@@ -114,29 +114,29 @@ impl ::protobuf::Message for LABMFHEEPBI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FFEILKDLABH)?;
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JEENJPHNBLI)?;
                 },
-                24 => {
-                    self.FFEILKDLABH.push(is.read_uint32()?);
+                8 => {
+                    self.JEENJPHNBLI.push(is.read_uint32()?);
                 },
-                32 => {
+                16 => {
                     self.FEKHNEKHAAK = is.read_uint64()?;
                 },
                 58 => {
-                    self.FGJIAMOOIIG.push(is.read_message()?);
+                    is.read_repeated_packed_uint32_into(&mut self.FFEILKDLABH)?;
                 },
-                66 => {
-                    self.ELJEBPIOKDD.push(is.read_message()?);
+                56 => {
+                    self.FFEILKDLABH.push(is.read_uint32()?);
+                },
+                64 => {
+                    self.JFBOMKNCNIE = is.read_uint32()?;
                 },
                 90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JEENJPHNBLI)?;
+                    self.ELJEBPIOKDD.push(is.read_message()?);
                 },
-                88 => {
-                    self.JEENJPHNBLI.push(is.read_uint32()?);
-                },
-                96 => {
-                    self.JFBOMKNCNIE = is.read_uint32()?;
+                98 => {
+                    self.FGJIAMOOIIG.push(is.read_message()?);
                 },
                 104 => {
                     self.DFELFGNJGDP = is.read_uint32()?;
@@ -153,22 +153,22 @@ impl ::protobuf::Message for LABMFHEEPBI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.FFEILKDLABH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.JEENJPHNBLI);
         if self.FEKHNEKHAAK != 0 {
-            my_size += ::protobuf::rt::uint64_size(4, self.FEKHNEKHAAK);
+            my_size += ::protobuf::rt::uint64_size(2, self.FEKHNEKHAAK);
         }
-        for value in &self.FGJIAMOOIIG {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.FFEILKDLABH);
+        if self.JFBOMKNCNIE != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.JFBOMKNCNIE);
+        }
         for value in &self.ELJEBPIOKDD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.JEENJPHNBLI);
-        if self.JFBOMKNCNIE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.JFBOMKNCNIE);
-        }
+        for value in &self.FGJIAMOOIIG {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.DFELFGNJGDP != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.DFELFGNJGDP);
         }
@@ -178,20 +178,20 @@ impl ::protobuf::Message for LABMFHEEPBI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.FFEILKDLABH)?;
+        os.write_repeated_packed_uint32(1, &self.JEENJPHNBLI)?;
         if self.FEKHNEKHAAK != 0 {
-            os.write_uint64(4, self.FEKHNEKHAAK)?;
+            os.write_uint64(2, self.FEKHNEKHAAK)?;
         }
-        for v in &self.FGJIAMOOIIG {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        for v in &self.ELJEBPIOKDD {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        os.write_repeated_packed_uint32(11, &self.JEENJPHNBLI)?;
+        os.write_repeated_packed_uint32(7, &self.FFEILKDLABH)?;
         if self.JFBOMKNCNIE != 0 {
-            os.write_uint32(12, self.JFBOMKNCNIE)?;
+            os.write_uint32(8, self.JFBOMKNCNIE)?;
         }
+        for v in &self.ELJEBPIOKDD {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        for v in &self.FGJIAMOOIIG {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
         if self.DFELFGNJGDP != 0 {
             os.write_uint32(13, self.DFELFGNJGDP)?;
         }
@@ -212,24 +212,24 @@ impl ::protobuf::Message for LABMFHEEPBI {
     }
 
     fn clear(&mut self) {
-        self.FFEILKDLABH.clear();
-        self.FEKHNEKHAAK = 0;
-        self.FGJIAMOOIIG.clear();
-        self.ELJEBPIOKDD.clear();
         self.JEENJPHNBLI.clear();
+        self.FEKHNEKHAAK = 0;
+        self.FFEILKDLABH.clear();
         self.JFBOMKNCNIE = 0;
+        self.ELJEBPIOKDD.clear();
+        self.FGJIAMOOIIG.clear();
         self.DFELFGNJGDP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LABMFHEEPBI {
         static instance: LABMFHEEPBI = LABMFHEEPBI {
-            FFEILKDLABH: ::std::vec::Vec::new(),
-            FEKHNEKHAAK: 0,
-            FGJIAMOOIIG: ::std::vec::Vec::new(),
-            ELJEBPIOKDD: ::std::vec::Vec::new(),
             JEENJPHNBLI: ::std::vec::Vec::new(),
+            FEKHNEKHAAK: 0,
+            FFEILKDLABH: ::std::vec::Vec::new(),
             JFBOMKNCNIE: 0,
+            ELJEBPIOKDD: ::std::vec::Vec::new(),
+            FGJIAMOOIIG: ::std::vec::Vec::new(),
             DFELFGNJGDP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -256,12 +256,12 @@ impl ::protobuf::reflect::ProtobufValue for LABMFHEEPBI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LABMFHEEPBI.proto\x1a\x11BMJDDOLALFI.proto\x1a\x11CLBNCPOFNPB.prot\
-    o\"\x97\x02\n\x0bLABMFHEEPBI\x12\x20\n\x0bFFEILKDLABH\x18\x03\x20\x03(\r\
-    R\x0bFFEILKDLABH\x12\x20\n\x0bFEKHNEKHAAK\x18\x04\x20\x01(\x04R\x0bFEKHN\
-    EKHAAK\x12.\n\x0bFGJIAMOOIIG\x18\x07\x20\x03(\x0b2\x0c.CLBNCPOFNPBR\x0bF\
-    GJIAMOOIIG\x12.\n\x0bELJEBPIOKDD\x18\x08\x20\x03(\x0b2\x0c.BMJDDOLALFIR\
-    \x0bELJEBPIOKDD\x12\x20\n\x0bJEENJPHNBLI\x18\x0b\x20\x03(\rR\x0bJEENJPHN\
-    BLI\x12\x20\n\x0bJFBOMKNCNIE\x18\x0c\x20\x01(\rR\x0bJFBOMKNCNIE\x12\x20\
+    o\"\x97\x02\n\x0bLABMFHEEPBI\x12\x20\n\x0bJEENJPHNBLI\x18\x01\x20\x03(\r\
+    R\x0bJEENJPHNBLI\x12\x20\n\x0bFEKHNEKHAAK\x18\x02\x20\x01(\x04R\x0bFEKHN\
+    EKHAAK\x12\x20\n\x0bFFEILKDLABH\x18\x07\x20\x03(\rR\x0bFFEILKDLABH\x12\
+    \x20\n\x0bJFBOMKNCNIE\x18\x08\x20\x01(\rR\x0bJFBOMKNCNIE\x12.\n\x0bELJEB\
+    PIOKDD\x18\x0b\x20\x03(\x0b2\x0c.BMJDDOLALFIR\x0bELJEBPIOKDD\x12.\n\x0bF\
+    GJIAMOOIIG\x18\x0c\x20\x03(\x0b2\x0c.CLBNCPOFNPBR\x0bFGJIAMOOIIG\x12\x20\
     \n\x0bDFELFGNJGDP\x18\r\x20\x01(\rR\x0bDFELFGNJGDPb\x06proto3\
 ";
 

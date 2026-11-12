@@ -79,13 +79,13 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                50 => {
                     self.passenger_info_list.push(is.read_message()?);
                 },
-                114 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.GHPFANGEMAN)?;
                 },
-                112 => {
+                56 => {
                     self.GHPFANGEMAN.push(is.read_uint32()?);
                 },
                 tag => {
@@ -104,7 +104,7 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.GHPFANGEMAN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.GHPFANGEMAN);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -112,9 +112,9 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.passenger_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        os.write_repeated_packed_uint32(14, &self.GHPFANGEMAN)?;
+        os.write_repeated_packed_uint32(7, &self.GHPFANGEMAN)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyPassengerInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTrainPartyPassengerInfo.proto\x1a\x19TrainPartyPassenger.proto\"\
     \x81\x01\n\x17TrainPartyPassengerInfo\x12D\n\x13passenger_info_list\x18\
-    \x02\x20\x03(\x0b2\x14.TrainPartyPassengerR\x11passengerInfoList\x12\x20\
-    \n\x0bGHPFANGEMAN\x18\x0e\x20\x03(\rR\x0bGHPFANGEMANb\x06proto3\
+    \x06\x20\x03(\x0b2\x14.TrainPartyPassengerR\x11passengerInfoList\x12\x20\
+    \n\x0bGHPFANGEMAN\x18\x07\x20\x03(\rR\x0bGHPFANGEMANb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

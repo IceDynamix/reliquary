@@ -79,10 +79,10 @@ impl ::protobuf::Message for POPJNEHGMIH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                56 => {
                     self.item_id = is.read_uint32()?;
                 },
-                40 => {
+                104 => {
                     self.slot = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for POPJNEHGMIH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.item_id);
         }
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.slot);
+            my_size += ::protobuf::rt::uint32_size(13, self.slot);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for POPJNEHGMIH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_id != 0 {
-            os.write_uint32(2, self.item_id)?;
+            os.write_uint32(7, self.item_id)?;
         }
         if self.slot != 0 {
-            os.write_uint32(5, self.slot)?;
+            os.write_uint32(13, self.slot)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for POPJNEHGMIH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11POPJNEHGMIH.proto\":\n\x0bPOPJNEHGMIH\x12\x17\n\x07item_id\x18\x02\
-    \x20\x01(\rR\x06itemId\x12\x12\n\x04slot\x18\x05\x20\x01(\rR\x04slotb\
-    \x06proto3\
+    \n\x11POPJNEHGMIH.proto\":\n\x0bPOPJNEHGMIH\x12\x17\n\x07item_id\x18\x07\
+    \x20\x01(\rR\x06itemId\x12\x12\n\x04slot\x18\r\x20\x01(\rR\x04slotb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

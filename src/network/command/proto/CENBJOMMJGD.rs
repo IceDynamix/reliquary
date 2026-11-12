@@ -79,10 +79,10 @@ impl ::protobuf::Message for CENBJOMMJGD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                32 => {
                     self.item_count = is.read_uint32()?;
                 },
-                112 => {
+                120 => {
                     self.LINLNNHIBAK = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for CENBJOMMJGD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.item_count);
+            my_size += ::protobuf::rt::uint32_size(4, self.item_count);
         }
         if self.LINLNNHIBAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.LINLNNHIBAK);
+            my_size += ::protobuf::rt::uint32_size(15, self.LINLNNHIBAK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for CENBJOMMJGD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_count != 0 {
-            os.write_uint32(3, self.item_count)?;
+            os.write_uint32(4, self.item_count)?;
         }
         if self.LINLNNHIBAK != 0 {
-            os.write_uint32(14, self.LINLNNHIBAK)?;
+            os.write_uint32(15, self.LINLNNHIBAK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for CENBJOMMJGD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CENBJOMMJGD.proto\"N\n\x0bCENBJOMMJGD\x12\x1d\n\nitem_count\x18\
-    \x03\x20\x01(\rR\titemCount\x12\x20\n\x0bLINLNNHIBAK\x18\x0e\x20\x01(\rR\
+    \x04\x20\x01(\rR\titemCount\x12\x20\n\x0bLINLNNHIBAK\x18\x0f\x20\x01(\rR\
     \x0bLINLNNHIBAKb\x06proto3\
 ";
 

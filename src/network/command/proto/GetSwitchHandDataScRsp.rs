@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSwitchHandDataScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetSwitchHandDataScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:GetSwitchHandDataScRsp.MHKAPGBGFNO)
     pub MHKAPGBGFNO: u32,
     // @@protoc_insertion_point(field:GetSwitchHandDataScRsp.EBNGHIMCAPK)
     pub EBNGHIMCAPK: u32,
-    // @@protoc_insertion_point(field:GetSwitchHandDataScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetSwitchHandDataScRsp.BEADAHPGGAF)
     pub BEADAHPGGAF: ::std::vec::Vec<super::ENHOPAHGCMA::ENHOPAHGCMA>,
     // special fields
@@ -56,6 +56,11 @@ impl GetSwitchHandDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetSwitchHandDataScRsp| { &m.retcode },
+            |m: &mut GetSwitchHandDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MHKAPGBGFNO",
             |m: &GetSwitchHandDataScRsp| { &m.MHKAPGBGFNO },
             |m: &mut GetSwitchHandDataScRsp| { &mut m.MHKAPGBGFNO },
@@ -64,11 +69,6 @@ impl GetSwitchHandDataScRsp {
             "EBNGHIMCAPK",
             |m: &GetSwitchHandDataScRsp| { &m.EBNGHIMCAPK },
             |m: &mut GetSwitchHandDataScRsp| { &mut m.EBNGHIMCAPK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetSwitchHandDataScRsp| { &m.retcode },
-            |m: &mut GetSwitchHandDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BEADAHPGGAF",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for GetSwitchHandDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.MHKAPGBGFNO = is.read_uint32()?;
-                },
                 24 => {
-                    self.EBNGHIMCAPK = is.read_uint32()?;
-                },
-                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
+                56 => {
+                    self.MHKAPGBGFNO = is.read_uint32()?;
+                },
+                80 => {
+                    self.EBNGHIMCAPK = is.read_uint32()?;
+                },
+                90 => {
                     self.BEADAHPGGAF.push(is.read_message()?);
                 },
                 tag => {
@@ -117,14 +117,14 @@ impl ::protobuf::Message for GetSwitchHandDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
         if self.MHKAPGBGFNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MHKAPGBGFNO);
+            my_size += ::protobuf::rt::uint32_size(7, self.MHKAPGBGFNO);
         }
         if self.EBNGHIMCAPK != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.EBNGHIMCAPK);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.EBNGHIMCAPK);
         }
         for value in &self.BEADAHPGGAF {
             let len = value.compute_size();
@@ -136,17 +136,17 @@ impl ::protobuf::Message for GetSwitchHandDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.retcode != 0 {
+            os.write_uint32(3, self.retcode)?;
+        }
         if self.MHKAPGBGFNO != 0 {
-            os.write_uint32(1, self.MHKAPGBGFNO)?;
+            os.write_uint32(7, self.MHKAPGBGFNO)?;
         }
         if self.EBNGHIMCAPK != 0 {
-            os.write_uint32(3, self.EBNGHIMCAPK)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(10, self.EBNGHIMCAPK)?;
         }
         for v in &self.BEADAHPGGAF {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for GetSwitchHandDataScRsp {
     }
 
     fn clear(&mut self) {
+        self.retcode = 0;
         self.MHKAPGBGFNO = 0;
         self.EBNGHIMCAPK = 0;
-        self.retcode = 0;
         self.BEADAHPGGAF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSwitchHandDataScRsp {
         static instance: GetSwitchHandDataScRsp = GetSwitchHandDataScRsp {
+            retcode: 0,
             MHKAPGBGFNO: 0,
             EBNGHIMCAPK: 0,
-            retcode: 0,
             BEADAHPGGAF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for GetSwitchHandDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cGetSwitchHandDataScRsp.proto\x1a\x11ENHOPAHGCMA.proto\"\xa6\x01\n\
-    \x16GetSwitchHandDataScRsp\x12\x20\n\x0bMHKAPGBGFNO\x18\x01\x20\x01(\rR\
-    \x0bMHKAPGBGFNO\x12\x20\n\x0bEBNGHIMCAPK\x18\x03\x20\x01(\rR\x0bEBNGHIMC\
-    APK\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12.\n\x0bBEADAH\
-    PGGAF\x18\t\x20\x03(\x0b2\x0c.ENHOPAHGCMAR\x0bBEADAHPGGAFb\x06proto3\
+    \x16GetSwitchHandDataScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07r\
+    etcode\x12\x20\n\x0bMHKAPGBGFNO\x18\x07\x20\x01(\rR\x0bMHKAPGBGFNO\x12\
+    \x20\n\x0bEBNGHIMCAPK\x18\n\x20\x01(\rR\x0bEBNGHIMCAPK\x12.\n\x0bBEADAHP\
+    GGAF\x18\x0b\x20\x03(\x0b2\x0c.ENHOPAHGCMAR\x0bBEADAHPGGAFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

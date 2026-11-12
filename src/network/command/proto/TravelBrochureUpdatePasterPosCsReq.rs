@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochureUpdatePasterPosCsReq {
     // message fields
+    // @@protoc_insertion_point(field:TravelBrochureUpdatePasterPosCsReq.EPLJKOLIPCI)
+    pub EPLJKOLIPCI: u32,
+    // @@protoc_insertion_point(field:TravelBrochureUpdatePasterPosCsReq.unique_id)
+    pub unique_id: u64,
     // @@protoc_insertion_point(field:TravelBrochureUpdatePasterPosCsReq.item_id)
     pub item_id: u32,
+    // @@protoc_insertion_point(field:TravelBrochureUpdatePasterPosCsReq.NMELCPIOKNO)
+    pub NMELCPIOKNO: u32,
+    // @@protoc_insertion_point(field:TravelBrochureUpdatePasterPosCsReq.KNKFPENAPBF)
+    pub KNKFPENAPBF: i32,
     // @@protoc_insertion_point(field:TravelBrochureUpdatePasterPosCsReq.APHMBADNMPH)
     pub APHMBADNMPH: i32,
     // @@protoc_insertion_point(field:TravelBrochureUpdatePasterPosCsReq.DCIJEFMACME)
     pub DCIJEFMACME: u32,
-    // @@protoc_insertion_point(field:TravelBrochureUpdatePasterPosCsReq.KNKFPENAPBF)
-    pub KNKFPENAPBF: i32,
-    // @@protoc_insertion_point(field:TravelBrochureUpdatePasterPosCsReq.unique_id)
-    pub unique_id: u64,
-    // @@protoc_insertion_point(field:TravelBrochureUpdatePasterPosCsReq.NMELCPIOKNO)
-    pub NMELCPIOKNO: u32,
-    // @@protoc_insertion_point(field:TravelBrochureUpdatePasterPosCsReq.EPLJKOLIPCI)
-    pub EPLJKOLIPCI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochureUpdatePasterPosCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,9 +62,29 @@ impl TravelBrochureUpdatePasterPosCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EPLJKOLIPCI",
+            |m: &TravelBrochureUpdatePasterPosCsReq| { &m.EPLJKOLIPCI },
+            |m: &mut TravelBrochureUpdatePasterPosCsReq| { &mut m.EPLJKOLIPCI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unique_id",
+            |m: &TravelBrochureUpdatePasterPosCsReq| { &m.unique_id },
+            |m: &mut TravelBrochureUpdatePasterPosCsReq| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
             |m: &TravelBrochureUpdatePasterPosCsReq| { &m.item_id },
             |m: &mut TravelBrochureUpdatePasterPosCsReq| { &mut m.item_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NMELCPIOKNO",
+            |m: &TravelBrochureUpdatePasterPosCsReq| { &m.NMELCPIOKNO },
+            |m: &mut TravelBrochureUpdatePasterPosCsReq| { &mut m.NMELCPIOKNO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KNKFPENAPBF",
+            |m: &TravelBrochureUpdatePasterPosCsReq| { &m.KNKFPENAPBF },
+            |m: &mut TravelBrochureUpdatePasterPosCsReq| { &mut m.KNKFPENAPBF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "APHMBADNMPH",
@@ -75,26 +95,6 @@ impl TravelBrochureUpdatePasterPosCsReq {
             "DCIJEFMACME",
             |m: &TravelBrochureUpdatePasterPosCsReq| { &m.DCIJEFMACME },
             |m: &mut TravelBrochureUpdatePasterPosCsReq| { &mut m.DCIJEFMACME },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KNKFPENAPBF",
-            |m: &TravelBrochureUpdatePasterPosCsReq| { &m.KNKFPENAPBF },
-            |m: &mut TravelBrochureUpdatePasterPosCsReq| { &mut m.KNKFPENAPBF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &TravelBrochureUpdatePasterPosCsReq| { &m.unique_id },
-            |m: &mut TravelBrochureUpdatePasterPosCsReq| { &mut m.unique_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NMELCPIOKNO",
-            |m: &TravelBrochureUpdatePasterPosCsReq| { &m.NMELCPIOKNO },
-            |m: &mut TravelBrochureUpdatePasterPosCsReq| { &mut m.NMELCPIOKNO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EPLJKOLIPCI",
-            |m: &TravelBrochureUpdatePasterPosCsReq| { &m.EPLJKOLIPCI },
-            |m: &mut TravelBrochureUpdatePasterPosCsReq| { &mut m.EPLJKOLIPCI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochureUpdatePasterPosCsReq>(
             "TravelBrochureUpdatePasterPosCsReq",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for TravelBrochureUpdatePasterPosCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
+                    self.EPLJKOLIPCI = is.read_uint32()?;
+                },
+                40 => {
+                    self.unique_id = is.read_uint64()?;
+                },
+                48 => {
                     self.item_id = is.read_uint32()?;
                 },
-                16 => {
-                    self.APHMBADNMPH = is.read_int32()?;
-                },
-                24 => {
-                    self.DCIJEFMACME = is.read_uint32()?;
+                56 => {
+                    self.NMELCPIOKNO = is.read_uint32()?;
                 },
                 64 => {
                     self.KNKFPENAPBF = is.read_int32()?;
                 },
-                72 => {
-                    self.unique_id = is.read_uint64()?;
+                80 => {
+                    self.APHMBADNMPH = is.read_int32()?;
                 },
-                88 => {
-                    self.NMELCPIOKNO = is.read_uint32()?;
-                },
-                112 => {
-                    self.EPLJKOLIPCI = is.read_uint32()?;
+                96 => {
+                    self.DCIJEFMACME = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,26 +147,26 @@ impl ::protobuf::Message for TravelBrochureUpdatePasterPosCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.EPLJKOLIPCI != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.EPLJKOLIPCI);
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(5, self.unique_id);
+        }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.item_id);
         }
-        if self.APHMBADNMPH != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.APHMBADNMPH);
-        }
-        if self.DCIJEFMACME != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DCIJEFMACME);
+        if self.NMELCPIOKNO != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.NMELCPIOKNO);
         }
         if self.KNKFPENAPBF != 0 {
             my_size += ::protobuf::rt::int32_size(8, self.KNKFPENAPBF);
         }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(9, self.unique_id);
+        if self.APHMBADNMPH != 0 {
+            my_size += ::protobuf::rt::int32_size(10, self.APHMBADNMPH);
         }
-        if self.NMELCPIOKNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NMELCPIOKNO);
-        }
-        if self.EPLJKOLIPCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.EPLJKOLIPCI);
+        if self.DCIJEFMACME != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.DCIJEFMACME);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -174,26 +174,26 @@ impl ::protobuf::Message for TravelBrochureUpdatePasterPosCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.EPLJKOLIPCI != 0 {
+            os.write_uint32(4, self.EPLJKOLIPCI)?;
+        }
+        if self.unique_id != 0 {
+            os.write_uint64(5, self.unique_id)?;
+        }
         if self.item_id != 0 {
-            os.write_uint32(1, self.item_id)?;
+            os.write_uint32(6, self.item_id)?;
         }
-        if self.APHMBADNMPH != 0 {
-            os.write_int32(2, self.APHMBADNMPH)?;
-        }
-        if self.DCIJEFMACME != 0 {
-            os.write_uint32(3, self.DCIJEFMACME)?;
+        if self.NMELCPIOKNO != 0 {
+            os.write_uint32(7, self.NMELCPIOKNO)?;
         }
         if self.KNKFPENAPBF != 0 {
             os.write_int32(8, self.KNKFPENAPBF)?;
         }
-        if self.unique_id != 0 {
-            os.write_uint64(9, self.unique_id)?;
+        if self.APHMBADNMPH != 0 {
+            os.write_int32(10, self.APHMBADNMPH)?;
         }
-        if self.NMELCPIOKNO != 0 {
-            os.write_uint32(11, self.NMELCPIOKNO)?;
-        }
-        if self.EPLJKOLIPCI != 0 {
-            os.write_uint32(14, self.EPLJKOLIPCI)?;
+        if self.DCIJEFMACME != 0 {
+            os.write_uint32(12, self.DCIJEFMACME)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -212,25 +212,25 @@ impl ::protobuf::Message for TravelBrochureUpdatePasterPosCsReq {
     }
 
     fn clear(&mut self) {
+        self.EPLJKOLIPCI = 0;
+        self.unique_id = 0;
         self.item_id = 0;
+        self.NMELCPIOKNO = 0;
+        self.KNKFPENAPBF = 0;
         self.APHMBADNMPH = 0;
         self.DCIJEFMACME = 0;
-        self.KNKFPENAPBF = 0;
-        self.unique_id = 0;
-        self.NMELCPIOKNO = 0;
-        self.EPLJKOLIPCI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochureUpdatePasterPosCsReq {
         static instance: TravelBrochureUpdatePasterPosCsReq = TravelBrochureUpdatePasterPosCsReq {
+            EPLJKOLIPCI: 0,
+            unique_id: 0,
             item_id: 0,
+            NMELCPIOKNO: 0,
+            KNKFPENAPBF: 0,
             APHMBADNMPH: 0,
             DCIJEFMACME: 0,
-            KNKFPENAPBF: 0,
-            unique_id: 0,
-            NMELCPIOKNO: 0,
-            EPLJKOLIPCI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -256,12 +256,12 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureUpdatePasterPosCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(TravelBrochureUpdatePasterPosCsReq.proto\"\x84\x02\n\"TravelBrochureU\
-    pdatePasterPosCsReq\x12\x17\n\x07item_id\x18\x01\x20\x01(\rR\x06itemId\
-    \x12\x20\n\x0bAPHMBADNMPH\x18\x02\x20\x01(\x05R\x0bAPHMBADNMPH\x12\x20\n\
-    \x0bDCIJEFMACME\x18\x03\x20\x01(\rR\x0bDCIJEFMACME\x12\x20\n\x0bKNKFPENA\
-    PBF\x18\x08\x20\x01(\x05R\x0bKNKFPENAPBF\x12\x1b\n\tunique_id\x18\t\x20\
-    \x01(\x04R\x08uniqueId\x12\x20\n\x0bNMELCPIOKNO\x18\x0b\x20\x01(\rR\x0bN\
-    MELCPIOKNO\x12\x20\n\x0bEPLJKOLIPCI\x18\x0e\x20\x01(\rR\x0bEPLJKOLIPCIb\
+    pdatePasterPosCsReq\x12\x20\n\x0bEPLJKOLIPCI\x18\x04\x20\x01(\rR\x0bEPLJ\
+    KOLIPCI\x12\x1b\n\tunique_id\x18\x05\x20\x01(\x04R\x08uniqueId\x12\x17\n\
+    \x07item_id\x18\x06\x20\x01(\rR\x06itemId\x12\x20\n\x0bNMELCPIOKNO\x18\
+    \x07\x20\x01(\rR\x0bNMELCPIOKNO\x12\x20\n\x0bKNKFPENAPBF\x18\x08\x20\x01\
+    (\x05R\x0bKNKFPENAPBF\x12\x20\n\x0bAPHMBADNMPH\x18\n\x20\x01(\x05R\x0bAP\
+    HMBADNMPH\x12\x20\n\x0bDCIJEFMACME\x18\x0c\x20\x01(\rR\x0bDCIJEFMACMEb\
     \x06proto3\
 ";
 

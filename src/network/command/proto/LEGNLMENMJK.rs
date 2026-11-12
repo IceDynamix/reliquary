@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LEGNLMENMJK {
     // message fields
-    // @@protoc_insertion_point(field:LEGNLMENMJK.card_id)
-    pub card_id: u32,
     // @@protoc_insertion_point(field:LEGNLMENMJK.unique_id)
     pub unique_id: u32,
+    // @@protoc_insertion_point(field:LEGNLMENMJK.card_id)
+    pub card_id: u32,
     // message oneof groups
     pub NPFEGGMNBOC: ::std::option::Option<legnlmenmjk::NPFEGGMNBOC>,
     // special fields
@@ -99,7 +99,7 @@ impl LEGNLMENMJK {
         }
     }
 
-    // .LDNFIICMCHA MLIGAFABJDP = 13;
+    // .LDNFIICMCHA MLIGAFABJDP = 5;
 
     pub fn MLIGAFABJDP(&self) -> &super::LDNFIICMCHA::LDNFIICMCHA {
         match self.NPFEGGMNBOC {
@@ -152,14 +152,14 @@ impl LEGNLMENMJK {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "card_id",
-            |m: &LEGNLMENMJK| { &m.card_id },
-            |m: &mut LEGNLMENMJK| { &mut m.card_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
             |m: &LEGNLMENMJK| { &m.unique_id },
             |m: &mut LEGNLMENMJK| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "card_id",
+            |m: &LEGNLMENMJK| { &m.card_id },
+            |m: &mut LEGNLMENMJK| { &mut m.card_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GKNOCNDPAJA::GKNOCNDPAJA>(
             "BLLCMLBDLPC",
@@ -194,16 +194,16 @@ impl ::protobuf::Message for LEGNLMENMJK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.card_id = is.read_uint32()?;
-                },
-                64 => {
+                8 => {
                     self.unique_id = is.read_uint32()?;
+                },
+                16 => {
+                    self.card_id = is.read_uint32()?;
                 },
                 34 => {
                     self.NPFEGGMNBOC = ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::BLLCMLBDLPC(is.read_message()?));
                 },
-                106 => {
+                42 => {
                     self.NPFEGGMNBOC = ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(is.read_message()?));
                 },
                 tag => {
@@ -218,11 +218,11 @@ impl ::protobuf::Message for LEGNLMENMJK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.card_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.card_id);
-        }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.unique_id);
+        }
+        if self.card_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.card_id);
         }
         if let ::std::option::Option::Some(ref v) = self.NPFEGGMNBOC {
             match v {
@@ -242,11 +242,11 @@ impl ::protobuf::Message for LEGNLMENMJK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.card_id != 0 {
-            os.write_uint32(7, self.card_id)?;
-        }
         if self.unique_id != 0 {
-            os.write_uint32(8, self.unique_id)?;
+            os.write_uint32(1, self.unique_id)?;
+        }
+        if self.card_id != 0 {
+            os.write_uint32(2, self.card_id)?;
         }
         if let ::std::option::Option::Some(ref v) = self.NPFEGGMNBOC {
             match v {
@@ -254,7 +254,7 @@ impl ::protobuf::Message for LEGNLMENMJK {
                     ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
                 &legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
             };
         }
@@ -275,8 +275,8 @@ impl ::protobuf::Message for LEGNLMENMJK {
     }
 
     fn clear(&mut self) {
-        self.card_id = 0;
         self.unique_id = 0;
+        self.card_id = 0;
         self.NPFEGGMNBOC = ::std::option::Option::None;
         self.NPFEGGMNBOC = ::std::option::Option::None;
         self.special_fields.clear();
@@ -284,8 +284,8 @@ impl ::protobuf::Message for LEGNLMENMJK {
 
     fn default_instance() -> &'static LEGNLMENMJK {
         static instance: LEGNLMENMJK = LEGNLMENMJK {
-            card_id: 0,
             unique_id: 0,
+            card_id: 0,
             NPFEGGMNBOC: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -342,11 +342,11 @@ pub mod legnlmenmjk {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LEGNLMENMJK.proto\x1a\x11GKNOCNDPAJA.proto\x1a\x11LDNFIICMCHA.prot\
-    o\"\xb6\x01\n\x0bLEGNLMENMJK\x12\x17\n\x07card_id\x18\x07\x20\x01(\rR\
-    \x06cardId\x12\x1b\n\tunique_id\x18\x08\x20\x01(\rR\x08uniqueId\x120\n\
+    o\"\xb6\x01\n\x0bLEGNLMENMJK\x12\x1b\n\tunique_id\x18\x01\x20\x01(\rR\
+    \x08uniqueId\x12\x17\n\x07card_id\x18\x02\x20\x01(\rR\x06cardId\x120\n\
     \x0bBLLCMLBDLPC\x18\x04\x20\x01(\x0b2\x0c.GKNOCNDPAJAH\0R\x0bBLLCMLBDLPC\
-    \x120\n\x0bMLIGAFABJDP\x18\r\x20\x01(\x0b2\x0c.LDNFIICMCHAH\0R\x0bMLIGAF\
-    ABJDPB\r\n\x0bNPFEGGMNBOCb\x06proto3\
+    \x120\n\x0bMLIGAFABJDP\x18\x05\x20\x01(\x0b2\x0c.LDNFIICMCHAH\0R\x0bMLIG\
+    AFABJDPB\r\n\x0bNPFEGGMNBOCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

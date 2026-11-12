@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LEFIDLICEMH {
     // message fields
-    // @@protoc_insertion_point(field:LEFIDLICEMH.AGCBLNPHFCI)
-    pub AGCBLNPHFCI: ::protobuf::MessageField<super::DFJPGILAAON::DFJPGILAAON>,
     // @@protoc_insertion_point(field:LEFIDLICEMH.LNCKEHDMHLD)
     pub LNCKEHDMHLD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LEFIDLICEMH.AGCBLNPHFCI)
+    pub AGCBLNPHFCI: ::protobuf::MessageField<super::DFJPGILAAON::DFJPGILAAON>,
     // @@protoc_insertion_point(field:LEFIDLICEMH.MJJMPMCCNJH)
     pub MJJMPMCCNJH: u32,
     // @@protoc_insertion_point(field:LEFIDLICEMH.MHNDLPIDJIE)
@@ -55,15 +55,15 @@ impl LEFIDLICEMH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFJPGILAAON::DFJPGILAAON>(
-            "AGCBLNPHFCI",
-            |m: &LEFIDLICEMH| { &m.AGCBLNPHFCI },
-            |m: &mut LEFIDLICEMH| { &mut m.AGCBLNPHFCI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LNCKEHDMHLD",
             |m: &LEFIDLICEMH| { &m.LNCKEHDMHLD },
             |m: &mut LEFIDLICEMH| { &mut m.LNCKEHDMHLD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFJPGILAAON::DFJPGILAAON>(
+            "AGCBLNPHFCI",
+            |m: &LEFIDLICEMH| { &m.AGCBLNPHFCI },
+            |m: &mut LEFIDLICEMH| { &mut m.AGCBLNPHFCI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MJJMPMCCNJH",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for LEFIDLICEMH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AGCBLNPHFCI)?;
-                },
                 50 => {
                     is.read_repeated_packed_uint32_into(&mut self.LNCKEHDMHLD)?;
                 },
                 48 => {
                     self.LNCKEHDMHLD.push(is.read_uint32()?);
                 },
-                72 => {
-                    self.MJJMPMCCNJH = is.read_uint32()?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AGCBLNPHFCI)?;
                 },
                 80 => {
+                    self.MJJMPMCCNJH = is.read_uint32()?;
+                },
+                88 => {
                     self.MHNDLPIDJIE = is.read_bool()?;
                 },
                 tag => {
@@ -120,13 +120,13 @@ impl ::protobuf::Message for LEFIDLICEMH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.LNCKEHDMHLD);
         if let Some(v) = self.AGCBLNPHFCI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.LNCKEHDMHLD);
         if self.MJJMPMCCNJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.MJJMPMCCNJH);
+            my_size += ::protobuf::rt::uint32_size(10, self.MJJMPMCCNJH);
         }
         if self.MHNDLPIDJIE != false {
             my_size += 1 + 1;
@@ -137,15 +137,15 @@ impl ::protobuf::Message for LEFIDLICEMH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.AGCBLNPHFCI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
         os.write_repeated_packed_uint32(6, &self.LNCKEHDMHLD)?;
+        if let Some(v) = self.AGCBLNPHFCI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
         if self.MJJMPMCCNJH != 0 {
-            os.write_uint32(9, self.MJJMPMCCNJH)?;
+            os.write_uint32(10, self.MJJMPMCCNJH)?;
         }
         if self.MHNDLPIDJIE != false {
-            os.write_bool(10, self.MHNDLPIDJIE)?;
+            os.write_bool(11, self.MHNDLPIDJIE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,8 +164,8 @@ impl ::protobuf::Message for LEFIDLICEMH {
     }
 
     fn clear(&mut self) {
-        self.AGCBLNPHFCI.clear();
         self.LNCKEHDMHLD.clear();
+        self.AGCBLNPHFCI.clear();
         self.MJJMPMCCNJH = 0;
         self.MHNDLPIDJIE = false;
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for LEFIDLICEMH {
 
     fn default_instance() -> &'static LEFIDLICEMH {
         static instance: LEFIDLICEMH = LEFIDLICEMH {
-            AGCBLNPHFCI: ::protobuf::MessageField::none(),
             LNCKEHDMHLD: ::std::vec::Vec::new(),
+            AGCBLNPHFCI: ::protobuf::MessageField::none(),
             MJJMPMCCNJH: 0,
             MHNDLPIDJIE: false,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for LEFIDLICEMH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LEFIDLICEMH.proto\x1a\x11DFJPGILAAON.proto\"\xa3\x01\n\x0bLEFIDLIC\
-    EMH\x12.\n\x0bAGCBLNPHFCI\x18\x03\x20\x01(\x0b2\x0c.DFJPGILAAONR\x0bAGCB\
-    LNPHFCI\x12\x20\n\x0bLNCKEHDMHLD\x18\x06\x20\x03(\rR\x0bLNCKEHDMHLD\x12\
-    \x20\n\x0bMJJMPMCCNJH\x18\t\x20\x01(\rR\x0bMJJMPMCCNJH\x12\x20\n\x0bMHND\
-    LPIDJIE\x18\n\x20\x01(\x08R\x0bMHNDLPIDJIEb\x06proto3\
+    EMH\x12\x20\n\x0bLNCKEHDMHLD\x18\x06\x20\x03(\rR\x0bLNCKEHDMHLD\x12.\n\
+    \x0bAGCBLNPHFCI\x18\x07\x20\x01(\x0b2\x0c.DFJPGILAAONR\x0bAGCBLNPHFCI\
+    \x12\x20\n\x0bMJJMPMCCNJH\x18\n\x20\x01(\rR\x0bMJJMPMCCNJH\x12\x20\n\x0b\
+    MHNDLPIDJIE\x18\x0b\x20\x01(\x08R\x0bMHNDLPIDJIEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

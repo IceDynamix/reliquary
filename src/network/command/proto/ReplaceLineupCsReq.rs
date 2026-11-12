@@ -28,26 +28,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ReplaceLineupCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.index)
-    pub index: u32,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.game_story_line_id)
+    pub game_story_line_id: u32,
     // @@protoc_insertion_point(field:ReplaceLineupCsReq.extra_lineup_type)
     pub extra_lineup_type: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.lineup_slot_list)
-    pub lineup_slot_list: ::std::vec::Vec<super::LineupSlotData::LineupSlotData>,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.leader_slot)
-    pub leader_slot: u32,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.index)
+    pub index: u32,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.is_virtual)
+    pub is_virtual: bool,
     // @@protoc_insertion_point(field:ReplaceLineupCsReq.MMMHKFEODJK)
     pub MMMHKFEODJK: bool,
     // @@protoc_insertion_point(field:ReplaceLineupCsReq.plane_id)
     pub plane_id: u32,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.is_virtual)
-    pub is_virtual: bool,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.game_story_line_id)
-    pub game_story_line_id: u32,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.PLIEODDEEHG)
-    pub PLIEODDEEHG: bool,
     // @@protoc_insertion_point(field:ReplaceLineupCsReq.HIAMAJKDIOO)
     pub HIAMAJKDIOO: bool,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.leader_slot)
+    pub leader_slot: u32,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.PLIEODDEEHG)
+    pub PLIEODDEEHG: bool,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.lineup_slot_list)
+    pub lineup_slot_list: ::std::vec::Vec<super::LineupSlotData::LineupSlotData>,
     // special fields
     // @@protoc_insertion_point(special_field:ReplaceLineupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -68,24 +68,24 @@ impl ReplaceLineupCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "index",
-            |m: &ReplaceLineupCsReq| { &m.index },
-            |m: &mut ReplaceLineupCsReq| { &mut m.index },
+            "game_story_line_id",
+            |m: &ReplaceLineupCsReq| { &m.game_story_line_id },
+            |m: &mut ReplaceLineupCsReq| { &mut m.game_story_line_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "extra_lineup_type",
             |m: &ReplaceLineupCsReq| { &m.extra_lineup_type },
             |m: &mut ReplaceLineupCsReq| { &mut m.extra_lineup_type },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "lineup_slot_list",
-            |m: &ReplaceLineupCsReq| { &m.lineup_slot_list },
-            |m: &mut ReplaceLineupCsReq| { &mut m.lineup_slot_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "index",
+            |m: &ReplaceLineupCsReq| { &m.index },
+            |m: &mut ReplaceLineupCsReq| { &mut m.index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "leader_slot",
-            |m: &ReplaceLineupCsReq| { &m.leader_slot },
-            |m: &mut ReplaceLineupCsReq| { &mut m.leader_slot },
+            "is_virtual",
+            |m: &ReplaceLineupCsReq| { &m.is_virtual },
+            |m: &mut ReplaceLineupCsReq| { &mut m.is_virtual },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MMMHKFEODJK",
@@ -98,24 +98,24 @@ impl ReplaceLineupCsReq {
             |m: &mut ReplaceLineupCsReq| { &mut m.plane_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_virtual",
-            |m: &ReplaceLineupCsReq| { &m.is_virtual },
-            |m: &mut ReplaceLineupCsReq| { &mut m.is_virtual },
+            "HIAMAJKDIOO",
+            |m: &ReplaceLineupCsReq| { &m.HIAMAJKDIOO },
+            |m: &mut ReplaceLineupCsReq| { &mut m.HIAMAJKDIOO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_story_line_id",
-            |m: &ReplaceLineupCsReq| { &m.game_story_line_id },
-            |m: &mut ReplaceLineupCsReq| { &mut m.game_story_line_id },
+            "leader_slot",
+            |m: &ReplaceLineupCsReq| { &m.leader_slot },
+            |m: &mut ReplaceLineupCsReq| { &mut m.leader_slot },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PLIEODDEEHG",
             |m: &ReplaceLineupCsReq| { &m.PLIEODDEEHG },
             |m: &mut ReplaceLineupCsReq| { &mut m.PLIEODDEEHG },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HIAMAJKDIOO",
-            |m: &ReplaceLineupCsReq| { &m.HIAMAJKDIOO },
-            |m: &mut ReplaceLineupCsReq| { &mut m.HIAMAJKDIOO },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "lineup_slot_list",
+            |m: &ReplaceLineupCsReq| { &m.lineup_slot_list },
+            |m: &mut ReplaceLineupCsReq| { &mut m.lineup_slot_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ReplaceLineupCsReq>(
             "ReplaceLineupCsReq",
@@ -136,34 +136,34 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
+                    self.game_story_line_id = is.read_uint32()?;
+                },
+                16 => {
+                    self.extra_lineup_type = is.read_enum_or_unknown()?;
+                },
+                24 => {
                     self.index = is.read_uint32()?;
                 },
                 32 => {
-                    self.extra_lineup_type = is.read_enum_or_unknown()?;
-                },
-                58 => {
-                    self.lineup_slot_list.push(is.read_message()?);
-                },
-                72 => {
-                    self.leader_slot = is.read_uint32()?;
-                },
-                80 => {
-                    self.MMMHKFEODJK = is.read_bool()?;
-                },
-                88 => {
-                    self.plane_id = is.read_uint32()?;
-                },
-                96 => {
                     self.is_virtual = is.read_bool()?;
                 },
+                48 => {
+                    self.MMMHKFEODJK = is.read_bool()?;
+                },
+                64 => {
+                    self.plane_id = is.read_uint32()?;
+                },
+                80 => {
+                    self.HIAMAJKDIOO = is.read_bool()?;
+                },
                 104 => {
-                    self.game_story_line_id = is.read_uint32()?;
+                    self.leader_slot = is.read_uint32()?;
                 },
                 112 => {
                     self.PLIEODDEEHG = is.read_bool()?;
                 },
-                120 => {
-                    self.HIAMAJKDIOO = is.read_bool()?;
+                122 => {
+                    self.lineup_slot_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -177,73 +177,73 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.index);
+        if self.game_story_line_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.game_story_line_id);
         }
         if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::ExtraLineupType_LineupNone) {
-            my_size += ::protobuf::rt::int32_size(4, self.extra_lineup_type.value());
+            my_size += ::protobuf::rt::int32_size(2, self.extra_lineup_type.value());
         }
-        for value in &self.lineup_slot_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.leader_slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.leader_slot);
+        if self.index != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.index);
+        }
+        if self.is_virtual != false {
+            my_size += 1 + 1;
         }
         if self.MMMHKFEODJK != false {
             my_size += 1 + 1;
         }
         if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.plane_id);
-        }
-        if self.is_virtual != false {
-            my_size += 1 + 1;
-        }
-        if self.game_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.game_story_line_id);
-        }
-        if self.PLIEODDEEHG != false {
-            my_size += 1 + 1;
+            my_size += ::protobuf::rt::uint32_size(8, self.plane_id);
         }
         if self.HIAMAJKDIOO != false {
             my_size += 1 + 1;
         }
+        if self.leader_slot != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.leader_slot);
+        }
+        if self.PLIEODDEEHG != false {
+            my_size += 1 + 1;
+        }
+        for value in &self.lineup_slot_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.index != 0 {
-            os.write_uint32(1, self.index)?;
+        if self.game_story_line_id != 0 {
+            os.write_uint32(1, self.game_story_line_id)?;
         }
         if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::ExtraLineupType_LineupNone) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
         }
-        for v in &self.lineup_slot_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        if self.leader_slot != 0 {
-            os.write_uint32(9, self.leader_slot)?;
-        }
-        if self.MMMHKFEODJK != false {
-            os.write_bool(10, self.MMMHKFEODJK)?;
-        }
-        if self.plane_id != 0 {
-            os.write_uint32(11, self.plane_id)?;
+        if self.index != 0 {
+            os.write_uint32(3, self.index)?;
         }
         if self.is_virtual != false {
-            os.write_bool(12, self.is_virtual)?;
+            os.write_bool(4, self.is_virtual)?;
         }
-        if self.game_story_line_id != 0 {
-            os.write_uint32(13, self.game_story_line_id)?;
+        if self.MMMHKFEODJK != false {
+            os.write_bool(6, self.MMMHKFEODJK)?;
+        }
+        if self.plane_id != 0 {
+            os.write_uint32(8, self.plane_id)?;
+        }
+        if self.HIAMAJKDIOO != false {
+            os.write_bool(10, self.HIAMAJKDIOO)?;
+        }
+        if self.leader_slot != 0 {
+            os.write_uint32(13, self.leader_slot)?;
         }
         if self.PLIEODDEEHG != false {
             os.write_bool(14, self.PLIEODDEEHG)?;
         }
-        if self.HIAMAJKDIOO != false {
-            os.write_bool(15, self.HIAMAJKDIOO)?;
-        }
+        for v in &self.lineup_slot_list {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -261,31 +261,31 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
     }
 
     fn clear(&mut self) {
-        self.index = 0;
+        self.game_story_line_id = 0;
         self.extra_lineup_type = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::ExtraLineupType_LineupNone);
-        self.lineup_slot_list.clear();
-        self.leader_slot = 0;
+        self.index = 0;
+        self.is_virtual = false;
         self.MMMHKFEODJK = false;
         self.plane_id = 0;
-        self.is_virtual = false;
-        self.game_story_line_id = 0;
-        self.PLIEODDEEHG = false;
         self.HIAMAJKDIOO = false;
+        self.leader_slot = 0;
+        self.PLIEODDEEHG = false;
+        self.lineup_slot_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ReplaceLineupCsReq {
         static instance: ReplaceLineupCsReq = ReplaceLineupCsReq {
-            index: 0,
+            game_story_line_id: 0,
             extra_lineup_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            lineup_slot_list: ::std::vec::Vec::new(),
-            leader_slot: 0,
+            index: 0,
+            is_virtual: false,
             MMMHKFEODJK: false,
             plane_id: 0,
-            is_virtual: false,
-            game_story_line_id: 0,
-            PLIEODDEEHG: false,
             HIAMAJKDIOO: false,
+            leader_slot: 0,
+            PLIEODDEEHG: false,
+            lineup_slot_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -311,16 +311,16 @@ impl ::protobuf::reflect::ProtobufValue for ReplaceLineupCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ReplaceLineupCsReq.proto\x1a\x15ExtraLineupType.proto\x1a\x14Lineu\
-    pSlotData.proto\"\x91\x03\n\x12ReplaceLineupCsReq\x12\x14\n\x05index\x18\
-    \x01\x20\x01(\rR\x05index\x12<\n\x11extra_lineup_type\x18\x04\x20\x01(\
-    \x0e2\x10.ExtraLineupTypeR\x0fextraLineupType\x129\n\x10lineup_slot_list\
-    \x18\x07\x20\x03(\x0b2\x0f.LineupSlotDataR\x0elineupSlotList\x12\x1f\n\
-    \x0bleader_slot\x18\t\x20\x01(\rR\nleaderSlot\x12\x20\n\x0bMMMHKFEODJK\
-    \x18\n\x20\x01(\x08R\x0bMMMHKFEODJK\x12\x19\n\x08plane_id\x18\x0b\x20\
-    \x01(\rR\x07planeId\x12\x1d\n\nis_virtual\x18\x0c\x20\x01(\x08R\tisVirtu\
-    al\x12+\n\x12game_story_line_id\x18\r\x20\x01(\rR\x0fgameStoryLineId\x12\
-    \x20\n\x0bPLIEODDEEHG\x18\x0e\x20\x01(\x08R\x0bPLIEODDEEHG\x12\x20\n\x0b\
-    HIAMAJKDIOO\x18\x0f\x20\x01(\x08R\x0bHIAMAJKDIOOb\x06proto3\
+    pSlotData.proto\"\x91\x03\n\x12ReplaceLineupCsReq\x12+\n\x12game_story_l\
+    ine_id\x18\x01\x20\x01(\rR\x0fgameStoryLineId\x12<\n\x11extra_lineup_typ\
+    e\x18\x02\x20\x01(\x0e2\x10.ExtraLineupTypeR\x0fextraLineupType\x12\x14\
+    \n\x05index\x18\x03\x20\x01(\rR\x05index\x12\x1d\n\nis_virtual\x18\x04\
+    \x20\x01(\x08R\tisVirtual\x12\x20\n\x0bMMMHKFEODJK\x18\x06\x20\x01(\x08R\
+    \x0bMMMHKFEODJK\x12\x19\n\x08plane_id\x18\x08\x20\x01(\rR\x07planeId\x12\
+    \x20\n\x0bHIAMAJKDIOO\x18\n\x20\x01(\x08R\x0bHIAMAJKDIOO\x12\x1f\n\x0ble\
+    ader_slot\x18\r\x20\x01(\rR\nleaderSlot\x12\x20\n\x0bPLIEODDEEHG\x18\x0e\
+    \x20\x01(\x08R\x0bPLIEODDEEHG\x129\n\x10lineup_slot_list\x18\x0f\x20\x03\
+    (\x0b2\x0f.LineupSlotDataR\x0elineupSlotListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

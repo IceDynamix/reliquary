@@ -28,20 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MPIMAEMCEFH {
     // message fields
-    // @@protoc_insertion_point(field:MPIMAEMCEFH.CAAGABEPPPE)
-    pub CAAGABEPPPE: ::protobuf::MessageField<super::HKDACEAEDDE::HKDACEAEDDE>,
-    // @@protoc_insertion_point(field:MPIMAEMCEFH.division_id)
-    pub division_id: u32,
+    // @@protoc_insertion_point(field:MPIMAEMCEFH.HHHHDNAKEGE)
+    pub HHHHDNAKEGE: ::protobuf::MessageField<super::MNJAPPADDIC::MNJAPPADDIC>,
     // @@protoc_insertion_point(field:MPIMAEMCEFH.LJNGPCKPJLF)
     pub LJNGPCKPJLF: u32,
     // @@protoc_insertion_point(field:MPIMAEMCEFH.FMIGOKIDKJL)
     pub FMIGOKIDKJL: ::protobuf::MessageField<super::CHCHAJIANIM::CHCHAJIANIM>,
     // @@protoc_insertion_point(field:MPIMAEMCEFH.JLDDDLDNFEF)
     pub JLDDDLDNFEF: ::protobuf::MessageField<super::CLFABOEKMJI::CLFABOEKMJI>,
-    // @@protoc_insertion_point(field:MPIMAEMCEFH.NAGDJGMMCBE)
-    pub NAGDJGMMCBE: ::std::vec::Vec<super::H_1ba37185::H_1ba37185>,
+    // @@protoc_insertion_point(field:MPIMAEMCEFH.MPJPLKKJNGE)
+    pub MPJPLKKJNGE: u32,
     // @@protoc_insertion_point(field:MPIMAEMCEFH.unique_id)
     pub unique_id: u32,
+    // @@protoc_insertion_point(field:MPIMAEMCEFH.CAAGABEPPPE)
+    pub CAAGABEPPPE: ::protobuf::MessageField<super::HKDACEAEDDE::HKDACEAEDDE>,
+    // @@protoc_insertion_point(field:MPIMAEMCEFH.NAGDJGMMCBE)
+    pub NAGDJGMMCBE: ::std::vec::Vec<super::H_f66a1d15::H_f66a1d15>,
+    // @@protoc_insertion_point(field:MPIMAEMCEFH.division_id)
+    pub division_id: u32,
     // @@protoc_insertion_point(field:MPIMAEMCEFH.is_overlock)
     pub is_overlock: bool,
     // special fields
@@ -61,17 +65,12 @@ impl MPIMAEMCEFH {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(8);
+        let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HKDACEAEDDE::HKDACEAEDDE>(
-            "CAAGABEPPPE",
-            |m: &MPIMAEMCEFH| { &m.CAAGABEPPPE },
-            |m: &mut MPIMAEMCEFH| { &mut m.CAAGABEPPPE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "division_id",
-            |m: &MPIMAEMCEFH| { &m.division_id },
-            |m: &mut MPIMAEMCEFH| { &mut m.division_id },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MNJAPPADDIC::MNJAPPADDIC>(
+            "HHHHDNAKEGE",
+            |m: &MPIMAEMCEFH| { &m.HHHHDNAKEGE },
+            |m: &mut MPIMAEMCEFH| { &mut m.HHHHDNAKEGE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LJNGPCKPJLF",
@@ -88,15 +87,30 @@ impl MPIMAEMCEFH {
             |m: &MPIMAEMCEFH| { &m.JLDDDLDNFEF },
             |m: &mut MPIMAEMCEFH| { &mut m.JLDDDLDNFEF },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MPJPLKKJNGE",
+            |m: &MPIMAEMCEFH| { &m.MPJPLKKJNGE },
+            |m: &mut MPIMAEMCEFH| { &mut m.MPJPLKKJNGE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unique_id",
+            |m: &MPIMAEMCEFH| { &m.unique_id },
+            |m: &mut MPIMAEMCEFH| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HKDACEAEDDE::HKDACEAEDDE>(
+            "CAAGABEPPPE",
+            |m: &MPIMAEMCEFH| { &m.CAAGABEPPPE },
+            |m: &mut MPIMAEMCEFH| { &mut m.CAAGABEPPPE },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NAGDJGMMCBE",
             |m: &MPIMAEMCEFH| { &m.NAGDJGMMCBE },
             |m: &mut MPIMAEMCEFH| { &mut m.NAGDJGMMCBE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &MPIMAEMCEFH| { &m.unique_id },
-            |m: &mut MPIMAEMCEFH| { &mut m.unique_id },
+            "division_id",
+            |m: &MPIMAEMCEFH| { &m.division_id },
+            |m: &mut MPIMAEMCEFH| { &mut m.division_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_overlock",
@@ -122,25 +136,31 @@ impl ::protobuf::Message for MPIMAEMCEFH {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CAAGABEPPPE)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HHHHDNAKEGE)?;
                 },
                 24 => {
-                    self.division_id = is.read_uint32()?;
-                },
-                40 => {
                     self.LJNGPCKPJLF = is.read_uint32()?;
                 },
-                58 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FMIGOKIDKJL)?;
                 },
-                66 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JLDDDLDNFEF)?;
                 },
-                74 => {
+                64 => {
+                    self.MPJPLKKJNGE = is.read_uint32()?;
+                },
+                72 => {
+                    self.unique_id = is.read_uint32()?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CAAGABEPPPE)?;
+                },
+                98 => {
                     self.NAGDJGMMCBE.push(is.read_message()?);
                 },
-                80 => {
-                    self.unique_id = is.read_uint32()?;
+                112 => {
+                    self.division_id = is.read_uint32()?;
                 },
                 120 => {
                     self.is_overlock = is.read_bool()?;
@@ -157,15 +177,12 @@ impl ::protobuf::Message for MPIMAEMCEFH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.CAAGABEPPPE.as_ref() {
+        if let Some(v) = self.HHHHDNAKEGE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.division_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.division_id);
-        }
         if self.LJNGPCKPJLF != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LJNGPCKPJLF);
+            my_size += ::protobuf::rt::uint32_size(3, self.LJNGPCKPJLF);
         }
         if let Some(v) = self.FMIGOKIDKJL.as_ref() {
             let len = v.compute_size();
@@ -175,12 +192,22 @@ impl ::protobuf::Message for MPIMAEMCEFH {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.MPJPLKKJNGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.MPJPLKKJNGE);
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.unique_id);
+        }
+        if let Some(v) = self.CAAGABEPPPE.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         for value in &self.NAGDJGMMCBE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.unique_id);
+        if self.division_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.division_id);
         }
         if self.is_overlock != false {
             my_size += 1 + 1;
@@ -191,26 +218,32 @@ impl ::protobuf::Message for MPIMAEMCEFH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.CAAGABEPPPE.as_ref() {
+        if let Some(v) = self.HHHHDNAKEGE.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if self.division_id != 0 {
-            os.write_uint32(3, self.division_id)?;
-        }
         if self.LJNGPCKPJLF != 0 {
-            os.write_uint32(5, self.LJNGPCKPJLF)?;
+            os.write_uint32(3, self.LJNGPCKPJLF)?;
         }
         if let Some(v) = self.FMIGOKIDKJL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if let Some(v) = self.JLDDDLDNFEF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if self.MPJPLKKJNGE != 0 {
+            os.write_uint32(8, self.MPJPLKKJNGE)?;
+        }
+        if self.unique_id != 0 {
+            os.write_uint32(9, self.unique_id)?;
+        }
+        if let Some(v) = self.CAAGABEPPPE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         for v in &self.NAGDJGMMCBE {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        if self.unique_id != 0 {
-            os.write_uint32(10, self.unique_id)?;
+        if self.division_id != 0 {
+            os.write_uint32(14, self.division_id)?;
         }
         if self.is_overlock != false {
             os.write_bool(15, self.is_overlock)?;
@@ -232,26 +265,30 @@ impl ::protobuf::Message for MPIMAEMCEFH {
     }
 
     fn clear(&mut self) {
-        self.CAAGABEPPPE.clear();
-        self.division_id = 0;
+        self.HHHHDNAKEGE.clear();
         self.LJNGPCKPJLF = 0;
         self.FMIGOKIDKJL.clear();
         self.JLDDDLDNFEF.clear();
-        self.NAGDJGMMCBE.clear();
+        self.MPJPLKKJNGE = 0;
         self.unique_id = 0;
+        self.CAAGABEPPPE.clear();
+        self.NAGDJGMMCBE.clear();
+        self.division_id = 0;
         self.is_overlock = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MPIMAEMCEFH {
         static instance: MPIMAEMCEFH = MPIMAEMCEFH {
-            CAAGABEPPPE: ::protobuf::MessageField::none(),
-            division_id: 0,
+            HHHHDNAKEGE: ::protobuf::MessageField::none(),
             LJNGPCKPJLF: 0,
             FMIGOKIDKJL: ::protobuf::MessageField::none(),
             JLDDDLDNFEF: ::protobuf::MessageField::none(),
-            NAGDJGMMCBE: ::std::vec::Vec::new(),
+            MPJPLKKJNGE: 0,
             unique_id: 0,
+            CAAGABEPPPE: ::protobuf::MessageField::none(),
+            NAGDJGMMCBE: ::std::vec::Vec::new(),
+            division_id: 0,
             is_overlock: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -278,15 +315,17 @@ impl ::protobuf::reflect::ProtobufValue for MPIMAEMCEFH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MPIMAEMCEFH.proto\x1a\x11CHCHAJIANIM.proto\x1a\x11CLFABOEKMJI.prot\
-    o\x1a\x11HKDACEAEDDE.proto\x1a\x10H_1ba37185.proto\"\xcd\x02\n\x0bMPIMAE\
-    MCEFH\x12.\n\x0bCAAGABEPPPE\x18\x02\x20\x01(\x0b2\x0c.HKDACEAEDDER\x0bCA\
-    AGABEPPPE\x12\x1f\n\x0bdivision_id\x18\x03\x20\x01(\rR\ndivisionId\x12\
-    \x20\n\x0bLJNGPCKPJLF\x18\x05\x20\x01(\rR\x0bLJNGPCKPJLF\x12.\n\x0bFMIGO\
-    KIDKJL\x18\x07\x20\x01(\x0b2\x0c.CHCHAJIANIMR\x0bFMIGOKIDKJL\x12.\n\x0bJ\
-    LDDDLDNFEF\x18\x08\x20\x01(\x0b2\x0c.CLFABOEKMJIR\x0bJLDDDLDNFEF\x12-\n\
-    \x0bNAGDJGMMCBE\x18\t\x20\x03(\x0b2\x0b.H_1ba37185R\x0bNAGDJGMMCBE\x12\
-    \x1b\n\tunique_id\x18\n\x20\x01(\rR\x08uniqueId\x12\x1f\n\x0bis_overlock\
-    \x18\x0f\x20\x01(\x08R\nisOverlockb\x06proto3\
+    o\x1a\x11HKDACEAEDDE.proto\x1a\x10H_f66a1d15.proto\x1a\x11MNJAPPADDIC.pr\
+    oto\"\x9f\x03\n\x0bMPIMAEMCEFH\x12.\n\x0bHHHHDNAKEGE\x18\x02\x20\x01(\
+    \x0b2\x0c.MNJAPPADDICR\x0bHHHHDNAKEGE\x12\x20\n\x0bLJNGPCKPJLF\x18\x03\
+    \x20\x01(\rR\x0bLJNGPCKPJLF\x12.\n\x0bFMIGOKIDKJL\x18\x05\x20\x01(\x0b2\
+    \x0c.CHCHAJIANIMR\x0bFMIGOKIDKJL\x12.\n\x0bJLDDDLDNFEF\x18\x06\x20\x01(\
+    \x0b2\x0c.CLFABOEKMJIR\x0bJLDDDLDNFEF\x12\x20\n\x0bMPJPLKKJNGE\x18\x08\
+    \x20\x01(\rR\x0bMPJPLKKJNGE\x12\x1b\n\tunique_id\x18\t\x20\x01(\rR\x08un\
+    iqueId\x12.\n\x0bCAAGABEPPPE\x18\n\x20\x01(\x0b2\x0c.HKDACEAEDDER\x0bCAA\
+    GABEPPPE\x12-\n\x0bNAGDJGMMCBE\x18\x0c\x20\x03(\x0b2\x0b.H_f66a1d15R\x0b\
+    NAGDJGMMCBE\x12\x1f\n\x0bdivision_id\x18\x0e\x20\x01(\rR\ndivisionId\x12\
+    \x1f\n\x0bis_overlock\x18\x0f\x20\x01(\x08R\nisOverlockb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -303,11 +342,12 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(4);
+            let mut deps = ::std::vec::Vec::with_capacity(5);
             deps.push(super::CHCHAJIANIM::file_descriptor().clone());
             deps.push(super::CLFABOEKMJI::file_descriptor().clone());
             deps.push(super::HKDACEAEDDE::file_descriptor().clone());
-            deps.push(super::H_1ba37185::file_descriptor().clone());
+            deps.push(super::H_f66a1d15::file_descriptor().clone());
+            deps.push(super::MNJAPPADDIC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MPIMAEMCEFH::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -79,10 +79,10 @@ impl ::protobuf::Message for SyncRogueCommonPendingActionScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                72 => {
                     self.DLOJFEEHLIJ = is.read_uint32()?;
                 },
-                50 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.action)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SyncRogueCommonPendingActionScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DLOJFEEHLIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DLOJFEEHLIJ);
+            my_size += ::protobuf::rt::uint32_size(9, self.DLOJFEEHLIJ);
         }
         if let Some(v) = self.action.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SyncRogueCommonPendingActionScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DLOJFEEHLIJ != 0 {
-            os.write_uint32(2, self.DLOJFEEHLIJ)?;
+            os.write_uint32(9, self.DLOJFEEHLIJ)?;
         }
         if let Some(v) = self.action.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueCommonPendingActionScNotify
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*SyncRogueCommonPendingActionScNotify.proto\x1a\x11INHBMHCJJCN.proto\"\
-    n\n$SyncRogueCommonPendingActionScNotify\x12\x20\n\x0bDLOJFEEHLIJ\x18\
-    \x02\x20\x01(\rR\x0bDLOJFEEHLIJ\x12$\n\x06action\x18\x06\x20\x01(\x0b2\
-    \x0c.INHBMHCJJCNR\x06actionb\x06proto3\
+    n\n$SyncRogueCommonPendingActionScNotify\x12\x20\n\x0bDLOJFEEHLIJ\x18\t\
+    \x20\x01(\rR\x0bDLOJFEEHLIJ\x12$\n\x06action\x18\x0f\x20\x01(\x0b2\x0c.I\
+    NHBMHCJJCNR\x06actionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

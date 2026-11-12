@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChimeraDuelShopBuyItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                48 => {
                     self.JHINLPCKMPK = is.read_uint32()?;
                 },
-                104 => {
+                112 => {
                     self.AGBAIFPNKII = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ChimeraDuelShopBuyItemCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JHINLPCKMPK != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.JHINLPCKMPK);
+            my_size += ::protobuf::rt::uint32_size(6, self.JHINLPCKMPK);
         }
         if self.AGBAIFPNKII != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.AGBAIFPNKII);
+            my_size += ::protobuf::rt::uint32_size(14, self.AGBAIFPNKII);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ChimeraDuelShopBuyItemCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JHINLPCKMPK != 0 {
-            os.write_uint32(8, self.JHINLPCKMPK)?;
+            os.write_uint32(6, self.JHINLPCKMPK)?;
         }
         if self.AGBAIFPNKII != 0 {
-            os.write_uint32(13, self.AGBAIFPNKII)?;
+            os.write_uint32(14, self.AGBAIFPNKII)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelShopBuyItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ChimeraDuelShopBuyItemCsReq.proto\"a\n\x1bChimeraDuelShopBuyItemCsReq\
-    \x12\x20\n\x0bJHINLPCKMPK\x18\x08\x20\x01(\rR\x0bJHINLPCKMPK\x12\x20\n\
-    \x0bAGBAIFPNKII\x18\r\x20\x01(\rR\x0bAGBAIFPNKIIb\x06proto3\
+    \x12\x20\n\x0bJHINLPCKMPK\x18\x06\x20\x01(\rR\x0bJHINLPCKMPK\x12\x20\n\
+    \x0bAGBAIFPNKII\x18\x0e\x20\x01(\rR\x0bAGBAIFPNKIIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

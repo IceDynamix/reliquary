@@ -82,7 +82,7 @@ impl ::protobuf::Message for NPAJHGDEIDJ {
                 8 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                32 => {
+                48 => {
                     self.ECPDJMMOGCI = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for NPAJHGDEIDJ {
             my_size += ::protobuf::rt::int32_size(1, self.status.value());
         }
         if self.ECPDJMMOGCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ECPDJMMOGCI);
+            my_size += ::protobuf::rt::uint32_size(6, self.ECPDJMMOGCI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for NPAJHGDEIDJ {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if self.ECPDJMMOGCI != 0 {
-            os.write_uint32(4, self.ECPDJMMOGCI)?;
+            os.write_uint32(6, self.ECPDJMMOGCI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for NPAJHGDEIDJ {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NPAJHGDEIDJ.proto\x1a\x11LPCEBDCJBOI.proto\"U\n\x0bNPAJHGDEIDJ\x12\
     $\n\x06status\x18\x01\x20\x01(\x0e2\x0c.LPCEBDCJBOIR\x06status\x12\x20\n\
-    \x0bECPDJMMOGCI\x18\x04\x20\x01(\rR\x0bECPDJMMOGCIb\x06proto3\
+    \x0bECPDJMMOGCI\x18\x06\x20\x01(\rR\x0bECPDJMMOGCIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

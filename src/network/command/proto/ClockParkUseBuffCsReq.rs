@@ -86,13 +86,13 @@ impl ::protobuf::Message for ClockParkUseBuffCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                32 => {
                     self.script_id = is.read_uint32()?;
                 },
-                112 => {
+                72 => {
                     self.JGPHDBDHKKO = is.read_uint32()?;
                 },
-                120 => {
+                96 => {
                     self.unique_id = is.read_uint64()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for ClockParkUseBuffCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.script_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.script_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.script_id);
         }
         if self.JGPHDBDHKKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JGPHDBDHKKO);
+            my_size += ::protobuf::rt::uint32_size(9, self.JGPHDBDHKKO);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.unique_id);
+            my_size += ::protobuf::rt::uint64_size(12, self.unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for ClockParkUseBuffCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.script_id != 0 {
-            os.write_uint32(8, self.script_id)?;
+            os.write_uint32(4, self.script_id)?;
         }
         if self.JGPHDBDHKKO != 0 {
-            os.write_uint32(14, self.JGPHDBDHKKO)?;
+            os.write_uint32(9, self.JGPHDBDHKKO)?;
         }
         if self.unique_id != 0 {
-            os.write_uint64(15, self.unique_id)?;
+            os.write_uint64(12, self.unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for ClockParkUseBuffCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bClockParkUseBuffCsReq.proto\"s\n\x15ClockParkUseBuffCsReq\x12\x1b\
-    \n\tscript_id\x18\x08\x20\x01(\rR\x08scriptId\x12\x20\n\x0bJGPHDBDHKKO\
-    \x18\x0e\x20\x01(\rR\x0bJGPHDBDHKKO\x12\x1b\n\tunique_id\x18\x0f\x20\x01\
-    (\x04R\x08uniqueIdb\x06proto3\
+    \n\tscript_id\x18\x04\x20\x01(\rR\x08scriptId\x12\x20\n\x0bJGPHDBDHKKO\
+    \x18\t\x20\x01(\rR\x0bJGPHDBDHKKO\x12\x1b\n\tunique_id\x18\x0c\x20\x01(\
+    \x04R\x08uniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

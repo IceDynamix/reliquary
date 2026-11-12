@@ -86,16 +86,16 @@ impl ::protobuf::Message for MarkRelicFilterPlanCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                16 => {
                     self.BIJJOJNJHDO = is.read_bool()?;
                 },
-                56 => {
+                48 => {
                     self.NPPKABBJCMI = is.read_bool()?;
                 },
-                82 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.GGIGDJPFBBP)?;
                 },
-                80 => {
+                120 => {
                     self.GGIGDJPFBBP.push(is.read_uint32()?);
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for MarkRelicFilterPlanCsReq {
         if self.NPPKABBJCMI != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.GGIGDJPFBBP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.GGIGDJPFBBP);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,12 +124,12 @@ impl ::protobuf::Message for MarkRelicFilterPlanCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BIJJOJNJHDO != false {
-            os.write_bool(5, self.BIJJOJNJHDO)?;
+            os.write_bool(2, self.BIJJOJNJHDO)?;
         }
         if self.NPPKABBJCMI != false {
-            os.write_bool(7, self.NPPKABBJCMI)?;
+            os.write_bool(6, self.NPPKABBJCMI)?;
         }
-        os.write_repeated_packed_uint32(10, &self.GGIGDJPFBBP)?;
+        os.write_repeated_packed_uint32(15, &self.GGIGDJPFBBP)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for MarkRelicFilterPlanCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eMarkRelicFilterPlanCsReq.proto\"\x80\x01\n\x18MarkRelicFilterPlanC\
-    sReq\x12\x20\n\x0bBIJJOJNJHDO\x18\x05\x20\x01(\x08R\x0bBIJJOJNJHDO\x12\
-    \x20\n\x0bNPPKABBJCMI\x18\x07\x20\x01(\x08R\x0bNPPKABBJCMI\x12\x20\n\x0b\
-    GGIGDJPFBBP\x18\n\x20\x03(\rR\x0bGGIGDJPFBBPb\x06proto3\
+    sReq\x12\x20\n\x0bBIJJOJNJHDO\x18\x02\x20\x01(\x08R\x0bBIJJOJNJHDO\x12\
+    \x20\n\x0bNPPKABBJCMI\x18\x06\x20\x01(\x08R\x0bNPPKABBJCMI\x12\x20\n\x0b\
+    GGIGDJPFBBP\x18\x0f\x20\x03(\rR\x0bGGIGDJPFBBPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

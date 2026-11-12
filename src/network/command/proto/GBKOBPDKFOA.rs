@@ -45,48 +45,48 @@ impl GBKOBPDKFOA {
         ::std::default::Default::default()
     }
 
-    // .HOKMNINJPBP LCMADDIMION = 2;
+    // .HOKMNINJPBP box_relic = 7;
 
-    pub fn LCMADDIMION(&self) -> &super::HOKMNINJPBP::HOKMNINJPBP {
+    pub fn box_relic(&self) -> &super::HOKMNINJPBP::HOKMNINJPBP {
         match self.FJIANHMABAB {
-            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(ref v)) => v,
+            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::BoxRelic(ref v)) => v,
             _ => <super::HOKMNINJPBP::HOKMNINJPBP as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_LCMADDIMION(&mut self) {
+    pub fn clear_box_relic(&mut self) {
         self.FJIANHMABAB = ::std::option::Option::None;
     }
 
-    pub fn has_LCMADDIMION(&self) -> bool {
+    pub fn has_box_relic(&self) -> bool {
         match self.FJIANHMABAB {
-            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(..)) => true,
+            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::BoxRelic(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_LCMADDIMION(&mut self, v: super::HOKMNINJPBP::HOKMNINJPBP) {
-        self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(v))
+    pub fn set_box_relic(&mut self, v: super::HOKMNINJPBP::HOKMNINJPBP) {
+        self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::BoxRelic(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_LCMADDIMION(&mut self) -> &mut super::HOKMNINJPBP::HOKMNINJPBP {
-        if let ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(_)) = self.FJIANHMABAB {
+    pub fn mut_box_relic(&mut self) -> &mut super::HOKMNINJPBP::HOKMNINJPBP {
+        if let ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::BoxRelic(_)) = self.FJIANHMABAB {
         } else {
-            self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(super::HOKMNINJPBP::HOKMNINJPBP::new()));
+            self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::BoxRelic(super::HOKMNINJPBP::HOKMNINJPBP::new()));
         }
         match self.FJIANHMABAB {
-            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(ref mut v)) => v,
+            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::BoxRelic(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_LCMADDIMION(&mut self) -> super::HOKMNINJPBP::HOKMNINJPBP {
-        if self.has_LCMADDIMION() {
+    pub fn take_box_relic(&mut self) -> super::HOKMNINJPBP::HOKMNINJPBP {
+        if self.has_box_relic() {
             match self.FJIANHMABAB.take() {
-                ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(v)) => v,
+                ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::BoxRelic(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,7 +94,7 @@ impl GBKOBPDKFOA {
         }
     }
 
-    // .NJPJKJBMKGB PAGPNOKLNOM = 10;
+    // .NJPJKJBMKGB PAGPNOKLNOM = 13;
 
     pub fn PAGPNOKLNOM(&self) -> &super::NJPJKJBMKGB::NJPJKJBMKGB {
         match self.FJIANHMABAB {
@@ -196,11 +196,11 @@ impl GBKOBPDKFOA {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HOKMNINJPBP::HOKMNINJPBP>(
-            "LCMADDIMION",
-            GBKOBPDKFOA::has_LCMADDIMION,
-            GBKOBPDKFOA::LCMADDIMION,
-            GBKOBPDKFOA::mut_LCMADDIMION,
-            GBKOBPDKFOA::set_LCMADDIMION,
+            "box_relic",
+            GBKOBPDKFOA::has_box_relic,
+            GBKOBPDKFOA::box_relic,
+            GBKOBPDKFOA::mut_box_relic,
+            GBKOBPDKFOA::set_box_relic,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NJPJKJBMKGB::NJPJKJBMKGB>(
             "PAGPNOKLNOM",
@@ -235,10 +235,10 @@ impl ::protobuf::Message for GBKOBPDKFOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(is.read_message()?));
+                58 => {
+                    self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::BoxRelic(is.read_message()?));
                 },
-                82 => {
+                106 => {
                     self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(is.read_message()?));
                 },
                 114 => {
@@ -258,7 +258,7 @@ impl ::protobuf::Message for GBKOBPDKFOA {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.FJIANHMABAB {
             match v {
-                &gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(ref v) => {
+                &gbkobpdkfoa::FJIANHMABAB::BoxRelic(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -280,11 +280,11 @@ impl ::protobuf::Message for GBKOBPDKFOA {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.FJIANHMABAB {
             match v {
-                &gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                &gbkobpdkfoa::FJIANHMABAB::BoxRelic(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
                 &gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
                 &gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
@@ -347,8 +347,8 @@ pub mod gbkobpdkfoa {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:GBKOBPDKFOA.FJIANHMABAB)
     pub enum FJIANHMABAB {
-        // @@protoc_insertion_point(oneof_field:GBKOBPDKFOA.LCMADDIMION)
-        LCMADDIMION(super::super::HOKMNINJPBP::HOKMNINJPBP),
+        // @@protoc_insertion_point(oneof_field:GBKOBPDKFOA.box_relic)
+        BoxRelic(super::super::HOKMNINJPBP::HOKMNINJPBP),
         // @@protoc_insertion_point(oneof_field:GBKOBPDKFOA.PAGPNOKLNOM)
         PAGPNOKLNOM(super::super::NJPJKJBMKGB::NJPJKJBMKGB),
         // @@protoc_insertion_point(oneof_field:GBKOBPDKFOA.FNJBFPALOAO)
@@ -374,11 +374,11 @@ pub mod gbkobpdkfoa {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GBKOBPDKFOA.proto\x1a\x11GJJNNBKCJKF.proto\x1a\x11HOKMNINJPBP.prot\
-    o\x1a\x11NJPJKJBMKGB.proto\"\xb2\x01\n\x0bGBKOBPDKFOA\x120\n\x0bLCMADDIM\
-    ION\x18\x02\x20\x01(\x0b2\x0c.HOKMNINJPBPH\0R\x0bLCMADDIMION\x120\n\x0bP\
-    AGPNOKLNOM\x18\n\x20\x01(\x0b2\x0c.NJPJKJBMKGBH\0R\x0bPAGPNOKLNOM\x120\n\
-    \x0bFNJBFPALOAO\x18\x0e\x20\x01(\x0b2\x0c.GJJNNBKCJKFH\0R\x0bFNJBFPALOAO\
-    B\r\n\x0bFJIANHMABABb\x06proto3\
+    o\x1a\x11NJPJKJBMKGB.proto\"\xad\x01\n\x0bGBKOBPDKFOA\x12+\n\tbox_relic\
+    \x18\x07\x20\x01(\x0b2\x0c.HOKMNINJPBPH\0R\x08boxRelic\x120\n\x0bPAGPNOK\
+    LNOM\x18\r\x20\x01(\x0b2\x0c.NJPJKJBMKGBH\0R\x0bPAGPNOKLNOM\x120\n\x0bFN\
+    JBFPALOAO\x18\x0e\x20\x01(\x0b2\x0c.GJJNNBKCJKFH\0R\x0bFNJBFPALOAOB\r\n\
+    \x0bFJIANHMABABb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

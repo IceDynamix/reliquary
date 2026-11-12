@@ -82,7 +82,7 @@ impl ::protobuf::Message for ReportRelicBoxActionScRsp {
                 56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
+                112 => {
                     self.state = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for ReportRelicBoxActionScRsp {
             my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if self.state != ::protobuf::EnumOrUnknown::new(super::BDFGBPHEPDI::BDFGBPHEPDI::BDFGBPHEPDI_PDKLDMNAJBO) {
-            my_size += ::protobuf::rt::int32_size(11, self.state.value());
+            my_size += ::protobuf::rt::int32_size(14, self.state.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for ReportRelicBoxActionScRsp {
             os.write_uint32(7, self.retcode)?;
         }
         if self.state != ::protobuf::EnumOrUnknown::new(super::BDFGBPHEPDI::BDFGBPHEPDI::BDFGBPHEPDI_PDKLDMNAJBO) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.state))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.state))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for ReportRelicBoxActionScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fReportRelicBoxActionScRsp.proto\x1a\x11BDFGBPHEPDI.proto\"Y\n\x19R\
     eportRelicBoxActionScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07ret\
-    code\x12\"\n\x05state\x18\x0b\x20\x01(\x0e2\x0c.BDFGBPHEPDIR\x05stateb\
+    code\x12\"\n\x05state\x18\x0e\x20\x01(\x0e2\x0c.BDFGBPHEPDIR\x05stateb\
     \x06proto3\
 ";
 

@@ -89,10 +89,10 @@ impl ::protobuf::Message for StartPunkLordRaidCsReq {
                 16 => {
                     self.uid = is.read_uint32()?;
                 },
-                32 => {
+                64 => {
                     self.monster_id = is.read_uint32()?;
                 },
-                112 => {
+                72 => {
                     self.IDMPMEOCJIK = is.read_bool()?;
                 },
                 tag => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for StartPunkLordRaidCsReq {
             my_size += ::protobuf::rt::uint32_size(2, self.uid);
         }
         if self.monster_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.monster_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.monster_id);
         }
         if self.IDMPMEOCJIK != false {
             my_size += 1 + 1;
@@ -126,10 +126,10 @@ impl ::protobuf::Message for StartPunkLordRaidCsReq {
             os.write_uint32(2, self.uid)?;
         }
         if self.monster_id != 0 {
-            os.write_uint32(4, self.monster_id)?;
+            os.write_uint32(8, self.monster_id)?;
         }
         if self.IDMPMEOCJIK != false {
-            os.write_bool(14, self.IDMPMEOCJIK)?;
+            os.write_bool(9, self.IDMPMEOCJIK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for StartPunkLordRaidCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cStartPunkLordRaidCsReq.proto\"k\n\x16StartPunkLordRaidCsReq\x12\
-    \x10\n\x03uid\x18\x02\x20\x01(\rR\x03uid\x12\x1d\n\nmonster_id\x18\x04\
-    \x20\x01(\rR\tmonsterId\x12\x20\n\x0bIDMPMEOCJIK\x18\x0e\x20\x01(\x08R\
-    \x0bIDMPMEOCJIKb\x06proto3\
+    \x10\n\x03uid\x18\x02\x20\x01(\rR\x03uid\x12\x1d\n\nmonster_id\x18\x08\
+    \x20\x01(\rR\tmonsterId\x12\x20\n\x0bIDMPMEOCJIK\x18\t\x20\x01(\x08R\x0b\
+    IDMPMEOCJIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

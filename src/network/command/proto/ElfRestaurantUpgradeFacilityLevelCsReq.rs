@@ -79,10 +79,10 @@ impl ::protobuf::Message for ElfRestaurantUpgradeFacilityLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
                     self.OMFGAABELHE = is.read_uint32()?;
                 },
-                56 => {
+                120 => {
                     self.IGOOJKMPMDC = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ElfRestaurantUpgradeFacilityLevelCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.OMFGAABELHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.OMFGAABELHE);
+            my_size += ::protobuf::rt::uint32_size(4, self.OMFGAABELHE);
         }
         if self.IGOOJKMPMDC != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.IGOOJKMPMDC);
+            my_size += ::protobuf::rt::uint32_size(15, self.IGOOJKMPMDC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ElfRestaurantUpgradeFacilityLevelCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OMFGAABELHE != 0 {
-            os.write_uint32(1, self.OMFGAABELHE)?;
+            os.write_uint32(4, self.OMFGAABELHE)?;
         }
         if self.IGOOJKMPMDC != 0 {
-            os.write_uint32(7, self.IGOOJKMPMDC)?;
+            os.write_uint32(15, self.IGOOJKMPMDC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ElfRestaurantUpgradeFacilityLevelCsR
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,ElfRestaurantUpgradeFacilityLevelCsReq.proto\"l\n&ElfRestaurantUpgrad\
-    eFacilityLevelCsReq\x12\x20\n\x0bOMFGAABELHE\x18\x01\x20\x01(\rR\x0bOMFG\
-    AABELHE\x12\x20\n\x0bIGOOJKMPMDC\x18\x07\x20\x01(\rR\x0bIGOOJKMPMDCb\x06\
+    eFacilityLevelCsReq\x12\x20\n\x0bOMFGAABELHE\x18\x04\x20\x01(\rR\x0bOMFG\
+    AABELHE\x12\x20\n\x0bIGOOJKMPMDC\x18\x0f\x20\x01(\rR\x0bIGOOJKMPMDCb\x06\
     proto3\
 ";
 

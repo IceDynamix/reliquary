@@ -82,7 +82,7 @@ impl ::protobuf::Message for CFNEMEIDMID {
                 24 => {
                     self.area_id = is.read_uint32()?;
                 },
-                48 => {
+                112 => {
                     self.HOLPMKOHACH = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for CFNEMEIDMID {
             my_size += ::protobuf::rt::uint32_size(3, self.area_id);
         }
         if self.HOLPMKOHACH != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HOLPMKOHACH);
+            my_size += ::protobuf::rt::uint32_size(14, self.HOLPMKOHACH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for CFNEMEIDMID {
             os.write_uint32(3, self.area_id)?;
         }
         if self.HOLPMKOHACH != 0 {
-            os.write_uint32(6, self.HOLPMKOHACH)?;
+            os.write_uint32(14, self.HOLPMKOHACH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for CFNEMEIDMID {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CFNEMEIDMID.proto\"H\n\x0bCFNEMEIDMID\x12\x17\n\x07area_id\x18\x03\
-    \x20\x01(\rR\x06areaId\x12\x20\n\x0bHOLPMKOHACH\x18\x06\x20\x01(\rR\x0bH\
+    \x20\x01(\rR\x06areaId\x12\x20\n\x0bHOLPMKOHACH\x18\x0e\x20\x01(\rR\x0bH\
     OLPMKOHACHb\x06proto3\
 ";
 

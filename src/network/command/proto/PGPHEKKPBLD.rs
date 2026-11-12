@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PGPHEKKPBLD {
     // message fields
-    // @@protoc_insertion_point(field:PGPHEKKPBLD.DLFHABGGHFF)
-    pub DLFHABGGHFF: u32,
     // @@protoc_insertion_point(field:PGPHEKKPBLD.AFDNFCBCFBF)
     pub AFDNFCBCFBF: u32,
+    // @@protoc_insertion_point(field:PGPHEKKPBLD.DLFHABGGHFF)
+    pub DLFHABGGHFF: u32,
     // message oneof groups
     pub JMPNIHHAMPH: ::std::option::Option<pgphekkpbld::JMPNIHHAMPH>,
     // special fields
@@ -50,7 +50,7 @@ impl PGPHEKKPBLD {
         ::std::default::Default::default()
     }
 
-    // .NMKNOLPFJDN AGLMEDOBMAL = 5;
+    // .NMKNOLPFJDN AGLMEDOBMAL = 8;
 
     pub fn AGLMEDOBMAL(&self) -> &super::NMKNOLPFJDN::NMKNOLPFJDN {
         match self.JMPNIHHAMPH {
@@ -103,14 +103,14 @@ impl PGPHEKKPBLD {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DLFHABGGHFF",
-            |m: &PGPHEKKPBLD| { &m.DLFHABGGHFF },
-            |m: &mut PGPHEKKPBLD| { &mut m.DLFHABGGHFF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AFDNFCBCFBF",
             |m: &PGPHEKKPBLD| { &m.AFDNFCBCFBF },
             |m: &mut PGPHEKKPBLD| { &mut m.AFDNFCBCFBF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DLFHABGGHFF",
+            |m: &PGPHEKKPBLD| { &m.DLFHABGGHFF },
+            |m: &mut PGPHEKKPBLD| { &mut m.DLFHABGGHFF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NMKNOLPFJDN::NMKNOLPFJDN>(
             "AGLMEDOBMAL",
@@ -138,13 +138,13 @@ impl ::protobuf::Message for PGPHEKKPBLD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.DLFHABGGHFF = is.read_uint32()?;
-                },
-                104 => {
+                8 => {
                     self.AFDNFCBCFBF = is.read_uint32()?;
                 },
-                42 => {
+                88 => {
+                    self.DLFHABGGHFF = is.read_uint32()?;
+                },
+                66 => {
                     self.JMPNIHHAMPH = ::std::option::Option::Some(pgphekkpbld::JMPNIHHAMPH::AGLMEDOBMAL(is.read_message()?));
                 },
                 tag => {
@@ -159,11 +159,11 @@ impl ::protobuf::Message for PGPHEKKPBLD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DLFHABGGHFF != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DLFHABGGHFF);
-        }
         if self.AFDNFCBCFBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.AFDNFCBCFBF);
+            my_size += ::protobuf::rt::uint32_size(1, self.AFDNFCBCFBF);
+        }
+        if self.DLFHABGGHFF != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.DLFHABGGHFF);
         }
         if let ::std::option::Option::Some(ref v) = self.JMPNIHHAMPH {
             match v {
@@ -179,16 +179,16 @@ impl ::protobuf::Message for PGPHEKKPBLD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DLFHABGGHFF != 0 {
-            os.write_uint32(8, self.DLFHABGGHFF)?;
-        }
         if self.AFDNFCBCFBF != 0 {
-            os.write_uint32(13, self.AFDNFCBCFBF)?;
+            os.write_uint32(1, self.AFDNFCBCFBF)?;
+        }
+        if self.DLFHABGGHFF != 0 {
+            os.write_uint32(11, self.DLFHABGGHFF)?;
         }
         if let ::std::option::Option::Some(ref v) = self.JMPNIHHAMPH {
             match v {
                 &pgphekkpbld::JMPNIHHAMPH::AGLMEDOBMAL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
             };
         }
@@ -209,16 +209,16 @@ impl ::protobuf::Message for PGPHEKKPBLD {
     }
 
     fn clear(&mut self) {
-        self.DLFHABGGHFF = 0;
         self.AFDNFCBCFBF = 0;
+        self.DLFHABGGHFF = 0;
         self.JMPNIHHAMPH = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PGPHEKKPBLD {
         static instance: PGPHEKKPBLD = PGPHEKKPBLD {
-            DLFHABGGHFF: 0,
             AFDNFCBCFBF: 0,
+            DLFHABGGHFF: 0,
             JMPNIHHAMPH: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -273,10 +273,10 @@ pub mod pgphekkpbld {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PGPHEKKPBLD.proto\x1a\x11NMKNOLPFJDN.proto\"\x92\x01\n\x0bPGPHEKKP\
-    BLD\x12\x20\n\x0bDLFHABGGHFF\x18\x08\x20\x01(\rR\x0bDLFHABGGHFF\x12\x20\
-    \n\x0bAFDNFCBCFBF\x18\r\x20\x01(\rR\x0bAFDNFCBCFBF\x120\n\x0bAGLMEDOBMAL\
-    \x18\x05\x20\x01(\x0b2\x0c.NMKNOLPFJDNH\0R\x0bAGLMEDOBMALB\r\n\x0bJMPNIH\
-    HAMPHb\x06proto3\
+    BLD\x12\x20\n\x0bAFDNFCBCFBF\x18\x01\x20\x01(\rR\x0bAFDNFCBCFBF\x12\x20\
+    \n\x0bDLFHABGGHFF\x18\x0b\x20\x01(\rR\x0bDLFHABGGHFF\x120\n\x0bAGLMEDOBM\
+    AL\x18\x08\x20\x01(\x0b2\x0c.NMKNOLPFJDNH\0R\x0bAGLMEDOBMALB\r\n\x0bJMPN\
+    IHHAMPHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

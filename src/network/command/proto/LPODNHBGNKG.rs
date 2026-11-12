@@ -30,10 +30,10 @@ pub struct LPODNHBGNKG {
     // message fields
     // @@protoc_insertion_point(field:LPODNHBGNKG.IPDDIKPHGPE)
     pub IPDDIKPHGPE: ::protobuf::EnumOrUnknown<super::DILHPBMCOFK::DILHPBMCOFK>,
-    // @@protoc_insertion_point(field:LPODNHBGNKG.JNBIALMKFCL)
-    pub JNBIALMKFCL: u32,
     // @@protoc_insertion_point(field:LPODNHBGNKG.DHJANOFGDNP)
     pub DHJANOFGDNP: u64,
+    // @@protoc_insertion_point(field:LPODNHBGNKG.JNBIALMKFCL)
+    pub JNBIALMKFCL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LPODNHBGNKG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl LPODNHBGNKG {
             |m: &mut LPODNHBGNKG| { &mut m.IPDDIKPHGPE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JNBIALMKFCL",
-            |m: &LPODNHBGNKG| { &m.JNBIALMKFCL },
-            |m: &mut LPODNHBGNKG| { &mut m.JNBIALMKFCL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DHJANOFGDNP",
             |m: &LPODNHBGNKG| { &m.DHJANOFGDNP },
             |m: &mut LPODNHBGNKG| { &mut m.DHJANOFGDNP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JNBIALMKFCL",
+            |m: &LPODNHBGNKG| { &m.JNBIALMKFCL },
+            |m: &mut LPODNHBGNKG| { &mut m.JNBIALMKFCL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LPODNHBGNKG>(
             "LPODNHBGNKG",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LPODNHBGNKG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                40 => {
                     self.IPDDIKPHGPE = is.read_enum_or_unknown()?;
                 },
-                96 => {
-                    self.JNBIALMKFCL = is.read_uint32()?;
+                88 => {
+                    self.DHJANOFGDNP = is.read_uint64()?;
                 },
                 104 => {
-                    self.DHJANOFGDNP = is.read_uint64()?;
+                    self.JNBIALMKFCL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for LPODNHBGNKG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IPDDIKPHGPE != ::protobuf::EnumOrUnknown::new(super::DILHPBMCOFK::DILHPBMCOFK::DILHPBMCOFK_GPODJJOHNNE) {
-            my_size += ::protobuf::rt::int32_size(6, self.IPDDIKPHGPE.value());
-        }
-        if self.JNBIALMKFCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.JNBIALMKFCL);
+            my_size += ::protobuf::rt::int32_size(5, self.IPDDIKPHGPE.value());
         }
         if self.DHJANOFGDNP != 0 {
-            my_size += ::protobuf::rt::uint64_size(13, self.DHJANOFGDNP);
+            my_size += ::protobuf::rt::uint64_size(11, self.DHJANOFGDNP);
+        }
+        if self.JNBIALMKFCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.JNBIALMKFCL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for LPODNHBGNKG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IPDDIKPHGPE != ::protobuf::EnumOrUnknown::new(super::DILHPBMCOFK::DILHPBMCOFK::DILHPBMCOFK_GPODJJOHNNE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.IPDDIKPHGPE))?;
-        }
-        if self.JNBIALMKFCL != 0 {
-            os.write_uint32(12, self.JNBIALMKFCL)?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.IPDDIKPHGPE))?;
         }
         if self.DHJANOFGDNP != 0 {
-            os.write_uint64(13, self.DHJANOFGDNP)?;
+            os.write_uint64(11, self.DHJANOFGDNP)?;
+        }
+        if self.JNBIALMKFCL != 0 {
+            os.write_uint32(13, self.JNBIALMKFCL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for LPODNHBGNKG {
 
     fn clear(&mut self) {
         self.IPDDIKPHGPE = ::protobuf::EnumOrUnknown::new(super::DILHPBMCOFK::DILHPBMCOFK::DILHPBMCOFK_GPODJJOHNNE);
-        self.JNBIALMKFCL = 0;
         self.DHJANOFGDNP = 0;
+        self.JNBIALMKFCL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LPODNHBGNKG {
         static instance: LPODNHBGNKG = LPODNHBGNKG {
             IPDDIKPHGPE: ::protobuf::EnumOrUnknown::from_i32(0),
-            JNBIALMKFCL: 0,
             DHJANOFGDNP: 0,
+            JNBIALMKFCL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for LPODNHBGNKG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LPODNHBGNKG.proto\x1a\x11DILHPBMCOFK.proto\"\x81\x01\n\x0bLPODNHBG\
-    NKG\x12.\n\x0bIPDDIKPHGPE\x18\x06\x20\x01(\x0e2\x0c.DILHPBMCOFKR\x0bIPDD\
-    IKPHGPE\x12\x20\n\x0bJNBIALMKFCL\x18\x0c\x20\x01(\rR\x0bJNBIALMKFCL\x12\
-    \x20\n\x0bDHJANOFGDNP\x18\r\x20\x01(\x04R\x0bDHJANOFGDNPb\x06proto3\
+    NKG\x12.\n\x0bIPDDIKPHGPE\x18\x05\x20\x01(\x0e2\x0c.DILHPBMCOFKR\x0bIPDD\
+    IKPHGPE\x12\x20\n\x0bDHJANOFGDNP\x18\x0b\x20\x01(\x04R\x0bDHJANOFGDNP\
+    \x12\x20\n\x0bJNBIALMKFCL\x18\r\x20\x01(\rR\x0bJNBIALMKFCLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

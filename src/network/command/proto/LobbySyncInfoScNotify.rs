@@ -86,7 +86,7 @@ impl ::protobuf::Message for LobbySyncInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                96 => {
                     self.uid = is.read_uint32()?;
                 },
                 104 => {
@@ -108,7 +108,7 @@ impl ::protobuf::Message for LobbySyncInfoScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.uid);
+            my_size += ::protobuf::rt::uint32_size(12, self.uid);
         }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::LobbyModifyType::LobbyModifyType::LobbyModifyType_None) {
             my_size += ::protobuf::rt::int32_size(13, self.type_.value());
@@ -124,7 +124,7 @@ impl ::protobuf::Message for LobbySyncInfoScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.uid != 0 {
-            os.write_uint32(1, self.uid)?;
+            os.write_uint32(12, self.uid)?;
         }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::LobbyModifyType::LobbyModifyType::LobbyModifyType_None) {
             os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.type_))?;
@@ -186,7 +186,7 @@ impl ::protobuf::reflect::ProtobufValue for LobbySyncInfoScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bLobbySyncInfoScNotify.proto\x1a\x11LMLNNHKJEIP.proto\x1a\x15LobbyM\
     odifyType.proto\"\x7f\n\x15LobbySyncInfoScNotify\x12\x10\n\x03uid\x18\
-    \x01\x20\x01(\rR\x03uid\x12$\n\x04type\x18\r\x20\x01(\x0e2\x10.LobbyModi\
+    \x0c\x20\x01(\rR\x03uid\x12$\n\x04type\x18\r\x20\x01(\x0e2\x10.LobbyModi\
     fyTypeR\x04type\x12.\n\x0bDFLEOIGPLNM\x18\x0e\x20\x03(\x0b2\x0c.LMLNNHKJ\
     EIPR\x0bDFLEOIGPLNMb\x06proto3\
 ";

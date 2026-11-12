@@ -30,10 +30,10 @@ pub struct JCKGBFJJFFC {
     // message fields
     // @@protoc_insertion_point(field:JCKGBFJJFFC.PAIAEPJIDPE)
     pub PAIAEPJIDPE: ::protobuf::MessageField<super::PMMOFOBCINL::PMMOFOBCINL>,
-    // @@protoc_insertion_point(field:JCKGBFJJFFC.FCJGHHILDEK)
-    pub FCJGHHILDEK: bool,
     // @@protoc_insertion_point(field:JCKGBFJJFFC.finished_target_list)
     pub finished_target_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:JCKGBFJJFFC.FCJGHHILDEK)
+    pub FCJGHHILDEK: bool,
     // special fields
     // @@protoc_insertion_point(special_field:JCKGBFJJFFC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl JCKGBFJJFFC {
             |m: &JCKGBFJJFFC| { &m.PAIAEPJIDPE },
             |m: &mut JCKGBFJJFFC| { &mut m.PAIAEPJIDPE },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FCJGHHILDEK",
-            |m: &JCKGBFJJFFC| { &m.FCJGHHILDEK },
-            |m: &mut JCKGBFJJFFC| { &mut m.FCJGHHILDEK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "finished_target_list",
             |m: &JCKGBFJJFFC| { &m.finished_target_list },
             |m: &mut JCKGBFJJFFC| { &mut m.finished_target_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FCJGHHILDEK",
+            |m: &JCKGBFJJFFC| { &m.FCJGHHILDEK },
+            |m: &mut JCKGBFJJFFC| { &mut m.FCJGHHILDEK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JCKGBFJJFFC>(
             "JCKGBFJJFFC",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for JCKGBFJJFFC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PAIAEPJIDPE)?;
                 },
-                9792 => {
-                    self.FCJGHHILDEK = is.read_bool()?;
-                },
-                15418 => {
+                898 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
                 },
-                15416 => {
+                896 => {
                     self.finished_target_list.push(is.read_uint32()?);
+                },
+                10128 => {
+                    self.FCJGHHILDEK = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -114,10 +114,10 @@ impl ::protobuf::Message for JCKGBFJJFFC {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(112, &self.finished_target_list);
         if self.FCJGHHILDEK != false {
             my_size += 2 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1927, &self.finished_target_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,12 +125,12 @@ impl ::protobuf::Message for JCKGBFJJFFC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.PAIAEPJIDPE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
+        os.write_repeated_packed_uint32(112, &self.finished_target_list)?;
         if self.FCJGHHILDEK != false {
-            os.write_bool(1224, self.FCJGHHILDEK)?;
+            os.write_bool(1266, self.FCJGHHILDEK)?;
         }
-        os.write_repeated_packed_uint32(1927, &self.finished_target_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,16 +149,16 @@ impl ::protobuf::Message for JCKGBFJJFFC {
 
     fn clear(&mut self) {
         self.PAIAEPJIDPE.clear();
-        self.FCJGHHILDEK = false;
         self.finished_target_list.clear();
+        self.FCJGHHILDEK = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JCKGBFJJFFC {
         static instance: JCKGBFJJFFC = JCKGBFJJFFC {
             PAIAEPJIDPE: ::protobuf::MessageField::none(),
-            FCJGHHILDEK: false,
             finished_target_list: ::std::vec::Vec::new(),
+            FCJGHHILDEK: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for JCKGBFJJFFC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JCKGBFJJFFC.proto\x1a\x11PMMOFOBCINL.proto\"\x93\x01\n\x0bJCKGBFJJ\
-    FFC\x12.\n\x0bPAIAEPJIDPE\x18\x08\x20\x01(\x0b2\x0c.PMMOFOBCINLR\x0bPAIA\
-    EPJIDPE\x12!\n\x0bFCJGHHILDEK\x18\xc8\t\x20\x01(\x08R\x0bFCJGHHILDEK\x12\
-    1\n\x14finished_target_list\x18\x87\x0f\x20\x03(\rR\x12finishedTargetLis\
-    tb\x06proto3\
+    \n\x11JCKGBFJJFFC.proto\x1a\x11PMMOFOBCINL.proto\"\x92\x01\n\x0bJCKGBFJJ\
+    FFC\x12.\n\x0bPAIAEPJIDPE\x18\x03\x20\x01(\x0b2\x0c.PMMOFOBCINLR\x0bPAIA\
+    EPJIDPE\x120\n\x14finished_target_list\x18p\x20\x03(\rR\x12finishedTarge\
+    tList\x12!\n\x0bFCJGHHILDEK\x18\xf2\t\x20\x01(\x08R\x0bFCJGHHILDEKb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

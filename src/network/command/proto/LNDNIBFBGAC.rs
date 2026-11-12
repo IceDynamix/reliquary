@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LNDNIBFBGAC {
     // message fields
-    // @@protoc_insertion_point(field:LNDNIBFBGAC.MDKFLGDEJCN)
-    pub MDKFLGDEJCN: u32,
+    // @@protoc_insertion_point(field:LNDNIBFBGAC.total_damage)
+    pub total_damage: i32,
     // @@protoc_insertion_point(field:LNDNIBFBGAC.KDMPKIPAIDJ)
     pub KDMPKIPAIDJ: i32,
     // @@protoc_insertion_point(field:LNDNIBFBGAC.item_id)
     pub item_id: u32,
     // @@protoc_insertion_point(field:LNDNIBFBGAC.PDEMOPHANLA)
     pub PDEMOPHANLA: i32,
-    // @@protoc_insertion_point(field:LNDNIBFBGAC.total_damage)
-    pub total_damage: i32,
+    // @@protoc_insertion_point(field:LNDNIBFBGAC.MDKFLGDEJCN)
+    pub MDKFLGDEJCN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LNDNIBFBGAC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl LNDNIBFBGAC {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDKFLGDEJCN",
-            |m: &LNDNIBFBGAC| { &m.MDKFLGDEJCN },
-            |m: &mut LNDNIBFBGAC| { &mut m.MDKFLGDEJCN },
+            "total_damage",
+            |m: &LNDNIBFBGAC| { &m.total_damage },
+            |m: &mut LNDNIBFBGAC| { &mut m.total_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KDMPKIPAIDJ",
@@ -78,9 +78,9 @@ impl LNDNIBFBGAC {
             |m: &mut LNDNIBFBGAC| { &mut m.PDEMOPHANLA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_damage",
-            |m: &LNDNIBFBGAC| { &m.total_damage },
-            |m: &mut LNDNIBFBGAC| { &mut m.total_damage },
+            "MDKFLGDEJCN",
+            |m: &LNDNIBFBGAC| { &m.MDKFLGDEJCN },
+            |m: &mut LNDNIBFBGAC| { &mut m.MDKFLGDEJCN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LNDNIBFBGAC>(
             "LNDNIBFBGAC",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for LNDNIBFBGAC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.MDKFLGDEJCN = is.read_uint32()?;
+                48 => {
+                    self.total_damage = is.read_int32()?;
                 },
-                40 => {
+                64 => {
                     self.KDMPKIPAIDJ = is.read_int32()?;
                 },
-                72 => {
+                88 => {
                     self.item_id = is.read_uint32()?;
                 },
-                80 => {
+                96 => {
                     self.PDEMOPHANLA = is.read_int32()?;
                 },
-                112 => {
-                    self.total_damage = is.read_int32()?;
+                104 => {
+                    self.MDKFLGDEJCN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for LNDNIBFBGAC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MDKFLGDEJCN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MDKFLGDEJCN);
+        if self.total_damage != 0 {
+            my_size += ::protobuf::rt::int32_size(6, self.total_damage);
         }
         if self.KDMPKIPAIDJ != 0 {
-            my_size += ::protobuf::rt::int32_size(5, self.KDMPKIPAIDJ);
+            my_size += ::protobuf::rt::int32_size(8, self.KDMPKIPAIDJ);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.item_id);
         }
         if self.PDEMOPHANLA != 0 {
-            my_size += ::protobuf::rt::int32_size(10, self.PDEMOPHANLA);
+            my_size += ::protobuf::rt::int32_size(12, self.PDEMOPHANLA);
         }
-        if self.total_damage != 0 {
-            my_size += ::protobuf::rt::int32_size(14, self.total_damage);
+        if self.MDKFLGDEJCN != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.MDKFLGDEJCN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for LNDNIBFBGAC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MDKFLGDEJCN != 0 {
-            os.write_uint32(2, self.MDKFLGDEJCN)?;
+        if self.total_damage != 0 {
+            os.write_int32(6, self.total_damage)?;
         }
         if self.KDMPKIPAIDJ != 0 {
-            os.write_int32(5, self.KDMPKIPAIDJ)?;
+            os.write_int32(8, self.KDMPKIPAIDJ)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(9, self.item_id)?;
+            os.write_uint32(11, self.item_id)?;
         }
         if self.PDEMOPHANLA != 0 {
-            os.write_int32(10, self.PDEMOPHANLA)?;
+            os.write_int32(12, self.PDEMOPHANLA)?;
         }
-        if self.total_damage != 0 {
-            os.write_int32(14, self.total_damage)?;
+        if self.MDKFLGDEJCN != 0 {
+            os.write_uint32(13, self.MDKFLGDEJCN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for LNDNIBFBGAC {
     }
 
     fn clear(&mut self) {
-        self.MDKFLGDEJCN = 0;
+        self.total_damage = 0;
         self.KDMPKIPAIDJ = 0;
         self.item_id = 0;
         self.PDEMOPHANLA = 0;
-        self.total_damage = 0;
+        self.MDKFLGDEJCN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LNDNIBFBGAC {
         static instance: LNDNIBFBGAC = LNDNIBFBGAC {
-            MDKFLGDEJCN: 0,
+            total_damage: 0,
             KDMPKIPAIDJ: 0,
             item_id: 0,
             PDEMOPHANLA: 0,
-            total_damage: 0,
+            MDKFLGDEJCN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for LNDNIBFBGAC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LNDNIBFBGAC.proto\"\xaf\x01\n\x0bLNDNIBFBGAC\x12\x20\n\x0bMDKFLGDE\
-    JCN\x18\x02\x20\x01(\rR\x0bMDKFLGDEJCN\x12\x20\n\x0bKDMPKIPAIDJ\x18\x05\
-    \x20\x01(\x05R\x0bKDMPKIPAIDJ\x12\x17\n\x07item_id\x18\t\x20\x01(\rR\x06\
-    itemId\x12\x20\n\x0bPDEMOPHANLA\x18\n\x20\x01(\x05R\x0bPDEMOPHANLA\x12!\
-    \n\x0ctotal_damage\x18\x0e\x20\x01(\x05R\x0btotalDamageb\x06proto3\
+    \n\x11LNDNIBFBGAC.proto\"\xaf\x01\n\x0bLNDNIBFBGAC\x12!\n\x0ctotal_damag\
+    e\x18\x06\x20\x01(\x05R\x0btotalDamage\x12\x20\n\x0bKDMPKIPAIDJ\x18\x08\
+    \x20\x01(\x05R\x0bKDMPKIPAIDJ\x12\x17\n\x07item_id\x18\x0b\x20\x01(\rR\
+    \x06itemId\x12\x20\n\x0bPDEMOPHANLA\x18\x0c\x20\x01(\x05R\x0bPDEMOPHANLA\
+    \x12\x20\n\x0bMDKFLGDEJCN\x18\r\x20\x01(\rR\x0bMDKFLGDEJCNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

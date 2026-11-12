@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HIDCLKLDHLE {
     // message fields
-    // @@protoc_insertion_point(field:HIDCLKLDHLE.NNIAKOLKDFP)
-    pub NNIAKOLKDFP: ::std::vec::Vec<super::OOMNNODJGPH::OOMNNODJGPH>,
-    // @@protoc_insertion_point(field:HIDCLKLDHLE.CAOFMHOMMHF)
-    pub CAOFMHOMMHF: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
     // @@protoc_insertion_point(field:HIDCLKLDHLE.POLADDGLAEH)
     pub POLADDGLAEH: ::protobuf::MessageField<super::JIEKJDGEGDN::JIEKJDGEGDN>,
     // @@protoc_insertion_point(field:HIDCLKLDHLE.HHNNEGILEFB)
     pub HHNNEGILEFB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HIDCLKLDHLE.CAOFMHOMMHF)
+    pub CAOFMHOMMHF: ::std::vec::Vec<super::KVP::KVP>,
+    // @@protoc_insertion_point(field:HIDCLKLDHLE.NNIAKOLKDFP)
+    pub NNIAKOLKDFP: ::std::vec::Vec<super::OOMNNODJGPH::OOMNNODJGPH>,
     // special fields
     // @@protoc_insertion_point(special_field:HIDCLKLDHLE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,16 +55,6 @@ impl HIDCLKLDHLE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NNIAKOLKDFP",
-            |m: &HIDCLKLDHLE| { &m.NNIAKOLKDFP },
-            |m: &mut HIDCLKLDHLE| { &mut m.NNIAKOLKDFP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CAOFMHOMMHF",
-            |m: &HIDCLKLDHLE| { &m.CAOFMHOMMHF },
-            |m: &mut HIDCLKLDHLE| { &mut m.CAOFMHOMMHF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JIEKJDGEGDN::JIEKJDGEGDN>(
             "POLADDGLAEH",
             |m: &HIDCLKLDHLE| { &m.POLADDGLAEH },
@@ -74,6 +64,16 @@ impl HIDCLKLDHLE {
             "HHNNEGILEFB",
             |m: &HIDCLKLDHLE| { &m.HHNNEGILEFB },
             |m: &mut HIDCLKLDHLE| { &mut m.HHNNEGILEFB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CAOFMHOMMHF",
+            |m: &HIDCLKLDHLE| { &m.CAOFMHOMMHF },
+            |m: &mut HIDCLKLDHLE| { &mut m.CAOFMHOMMHF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NNIAKOLKDFP",
+            |m: &HIDCLKLDHLE| { &m.NNIAKOLKDFP },
+            |m: &mut HIDCLKLDHLE| { &mut m.NNIAKOLKDFP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HIDCLKLDHLE>(
             "HIDCLKLDHLE",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for HIDCLKLDHLE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.NNIAKOLKDFP.push(is.read_message()?);
-                },
-                58 => {
-                    self.CAOFMHOMMHF.push(is.read_message()?);
-                },
-                90 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.POLADDGLAEH)?;
                 },
-                114 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.HHNNEGILEFB)?;
                 },
-                112 => {
+                80 => {
                     self.HHNNEGILEFB.push(is.read_uint32()?);
+                },
+                98 => {
+                    self.CAOFMHOMMHF.push(is.read_message()?);
+                },
+                106 => {
+                    self.NNIAKOLKDFP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,35 +120,35 @@ impl ::protobuf::Message for HIDCLKLDHLE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.NNIAKOLKDFP {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.CAOFMHOMMHF {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if let Some(v) = self.POLADDGLAEH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.HHNNEGILEFB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.HHNNEGILEFB);
+        for value in &self.CAOFMHOMMHF {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.NNIAKOLKDFP {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.NNIAKOLKDFP {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        for v in &self.CAOFMHOMMHF {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
         if let Some(v) = self.POLADDGLAEH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        os.write_repeated_packed_uint32(14, &self.HHNNEGILEFB)?;
+        os.write_repeated_packed_uint32(10, &self.HHNNEGILEFB)?;
+        for v in &self.CAOFMHOMMHF {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
+        for v in &self.NNIAKOLKDFP {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,19 +166,19 @@ impl ::protobuf::Message for HIDCLKLDHLE {
     }
 
     fn clear(&mut self) {
-        self.NNIAKOLKDFP.clear();
-        self.CAOFMHOMMHF.clear();
         self.POLADDGLAEH.clear();
         self.HHNNEGILEFB.clear();
+        self.CAOFMHOMMHF.clear();
+        self.NNIAKOLKDFP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HIDCLKLDHLE {
         static instance: HIDCLKLDHLE = HIDCLKLDHLE {
-            NNIAKOLKDFP: ::std::vec::Vec::new(),
-            CAOFMHOMMHF: ::std::vec::Vec::new(),
             POLADDGLAEH: ::protobuf::MessageField::none(),
             HHNNEGILEFB: ::std::vec::Vec::new(),
+            CAOFMHOMMHF: ::std::vec::Vec::new(),
+            NNIAKOLKDFP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for HIDCLKLDHLE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HIDCLKLDHLE.proto\x1a\x11APAMFCKFHLL.proto\x1a\x11JIEKJDGEGDN.prot\
-    o\x1a\x11OOMNNODJGPH.proto\"\xbf\x01\n\x0bHIDCLKLDHLE\x12.\n\x0bNNIAKOLK\
-    DFP\x18\x06\x20\x03(\x0b2\x0c.OOMNNODJGPHR\x0bNNIAKOLKDFP\x12.\n\x0bCAOF\
-    MHOMMHF\x18\x07\x20\x03(\x0b2\x0c.APAMFCKFHLLR\x0bCAOFMHOMMHF\x12.\n\x0b\
-    POLADDGLAEH\x18\x0b\x20\x01(\x0b2\x0c.JIEKJDGEGDNR\x0bPOLADDGLAEH\x12\
-    \x20\n\x0bHHNNEGILEFB\x18\x0e\x20\x03(\rR\x0bHHNNEGILEFBb\x06proto3\
+    \n\x11HIDCLKLDHLE.proto\x1a\x11JIEKJDGEGDN.proto\x1a\tKVP.proto\x1a\x11O\
+    OMNNODJGPH.proto\"\xb7\x01\n\x0bHIDCLKLDHLE\x12.\n\x0bPOLADDGLAEH\x18\
+    \x03\x20\x01(\x0b2\x0c.JIEKJDGEGDNR\x0bPOLADDGLAEH\x12\x20\n\x0bHHNNEGIL\
+    EFB\x18\n\x20\x03(\rR\x0bHHNNEGILEFB\x12&\n\x0bCAOFMHOMMHF\x18\x0c\x20\
+    \x03(\x0b2\x04.KVPR\x0bCAOFMHOMMHF\x12.\n\x0bNNIAKOLKDFP\x18\r\x20\x03(\
+    \x0b2\x0c.OOMNNODJGPHR\x0bNNIAKOLKDFPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,8 +226,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::APAMFCKFHLL::file_descriptor().clone());
             deps.push(super::JIEKJDGEGDN::file_descriptor().clone());
+            deps.push(super::KVP::file_descriptor().clone());
             deps.push(super::OOMNNODJGPH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HIDCLKLDHLE::generated_message_descriptor_data());

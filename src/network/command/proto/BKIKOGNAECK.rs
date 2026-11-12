@@ -79,10 +79,10 @@ impl ::protobuf::Message for BKIKOGNAECK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                48 => {
                     self.PEBCBLBLMPH = is.read_uint32()?;
                 },
-                40 => {
+                88 => {
                     self.DNMFNFCLOOM = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for BKIKOGNAECK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PEBCBLBLMPH != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.PEBCBLBLMPH);
+            my_size += ::protobuf::rt::uint32_size(6, self.PEBCBLBLMPH);
         }
         if self.DNMFNFCLOOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.DNMFNFCLOOM);
+            my_size += ::protobuf::rt::uint32_size(11, self.DNMFNFCLOOM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for BKIKOGNAECK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PEBCBLBLMPH != 0 {
-            os.write_uint32(4, self.PEBCBLBLMPH)?;
+            os.write_uint32(6, self.PEBCBLBLMPH)?;
         }
         if self.DNMFNFCLOOM != 0 {
-            os.write_uint32(5, self.DNMFNFCLOOM)?;
+            os.write_uint32(11, self.DNMFNFCLOOM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for BKIKOGNAECK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BKIKOGNAECK.proto\"Q\n\x0bBKIKOGNAECK\x12\x20\n\x0bPEBCBLBLMPH\x18\
-    \x04\x20\x01(\rR\x0bPEBCBLBLMPH\x12\x20\n\x0bDNMFNFCLOOM\x18\x05\x20\x01\
+    \x06\x20\x01(\rR\x0bPEBCBLBLMPH\x12\x20\n\x0bDNMFNFCLOOM\x18\x0b\x20\x01\
     (\rR\x0bDNMFNFCLOOMb\x06proto3\
 ";
 

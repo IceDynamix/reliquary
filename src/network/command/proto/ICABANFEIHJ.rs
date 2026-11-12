@@ -79,10 +79,10 @@ impl ::protobuf::Message for ICABANFEIHJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                42 => {
                     self.NILEKCAGIMK.push(is.read_message()?);
                 },
-                18 => {
+                58 => {
                     self.LCJFDCHINHL.push(is.read_message()?);
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for ICABANFEIHJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.NILEKCAGIMK {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         for v in &self.LCJFDCHINHL {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for ICABANFEIHJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ICABANFEIHJ.proto\x1a\x11LGFLGGDMAGD.proto\x1a\x11MOOGIHHBHFG.prot\
-    o\"m\n\x0bICABANFEIHJ\x12.\n\x0bNILEKCAGIMK\x18\x01\x20\x03(\x0b2\x0c.LG\
-    FLGGDMAGDR\x0bNILEKCAGIMK\x12.\n\x0bLCJFDCHINHL\x18\x02\x20\x03(\x0b2\
+    o\"m\n\x0bICABANFEIHJ\x12.\n\x0bNILEKCAGIMK\x18\x05\x20\x03(\x0b2\x0c.LG\
+    FLGGDMAGDR\x0bNILEKCAGIMK\x12.\n\x0bLCJFDCHINHL\x18\x07\x20\x03(\x0b2\
     \x0c.MOOGIHHBHFGR\x0bLCJFDCHINHLb\x06proto3\
 ";
 

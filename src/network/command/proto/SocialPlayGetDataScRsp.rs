@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SocialPlayGetDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SocialPlayGetDataScRsp.AKDPEJABLPI)
-    pub AKDPEJABLPI: ::std::vec::Vec<super::JBJNJPAOCDA::JBJNJPAOCDA>,
-    // @@protoc_insertion_point(field:SocialPlayGetDataScRsp.NDDJFLPBHBL)
-    pub NDDJFLPBHBL: ::protobuf::MessageField<super::HAIFIDAHGJG::HAIFIDAHGJG>,
-    // @@protoc_insertion_point(field:SocialPlayGetDataScRsp.ELDIONMAAHO)
-    pub ELDIONMAAHO: ::protobuf::MessageField<super::KPBCIIFIAGI::KPBCIIFIAGI>,
     // @@protoc_insertion_point(field:SocialPlayGetDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SocialPlayGetDataScRsp.NDDJFLPBHBL)
+    pub NDDJFLPBHBL: ::protobuf::MessageField<super::HAIFIDAHGJG::HAIFIDAHGJG>,
+    // @@protoc_insertion_point(field:SocialPlayGetDataScRsp.AKDPEJABLPI)
+    pub AKDPEJABLPI: ::std::vec::Vec<super::JBJNJPAOCDA::JBJNJPAOCDA>,
+    // @@protoc_insertion_point(field:SocialPlayGetDataScRsp.ELDIONMAAHO)
+    pub ELDIONMAAHO: ::protobuf::MessageField<super::KPBCIIFIAGI::KPBCIIFIAGI>,
     // special fields
     // @@protoc_insertion_point(special_field:SocialPlayGetDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl SocialPlayGetDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AKDPEJABLPI",
-            |m: &SocialPlayGetDataScRsp| { &m.AKDPEJABLPI },
-            |m: &mut SocialPlayGetDataScRsp| { &mut m.AKDPEJABLPI },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SocialPlayGetDataScRsp| { &m.retcode },
+            |m: &mut SocialPlayGetDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HAIFIDAHGJG::HAIFIDAHGJG>(
             "NDDJFLPBHBL",
             |m: &SocialPlayGetDataScRsp| { &m.NDDJFLPBHBL },
             |m: &mut SocialPlayGetDataScRsp| { &mut m.NDDJFLPBHBL },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AKDPEJABLPI",
+            |m: &SocialPlayGetDataScRsp| { &m.AKDPEJABLPI },
+            |m: &mut SocialPlayGetDataScRsp| { &mut m.AKDPEJABLPI },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KPBCIIFIAGI::KPBCIIFIAGI>(
             "ELDIONMAAHO",
             |m: &SocialPlayGetDataScRsp| { &m.ELDIONMAAHO },
             |m: &mut SocialPlayGetDataScRsp| { &mut m.ELDIONMAAHO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SocialPlayGetDataScRsp| { &m.retcode },
-            |m: &mut SocialPlayGetDataScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SocialPlayGetDataScRsp>(
             "SocialPlayGetDataScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for SocialPlayGetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.AKDPEJABLPI.push(is.read_message()?);
+                40 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                58 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NDDJFLPBHBL)?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELDIONMAAHO)?;
+                82 => {
+                    self.AKDPEJABLPI.push(is.read_message()?);
                 },
-                96 => {
-                    self.retcode = is.read_uint32()?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELDIONMAAHO)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,20 +117,20 @@ impl ::protobuf::Message for SocialPlayGetDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.AKDPEJABLPI {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
         if let Some(v) = self.NDDJFLPBHBL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.AKDPEJABLPI {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if let Some(v) = self.ELDIONMAAHO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,17 +138,17 @@ impl ::protobuf::Message for SocialPlayGetDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.AKDPEJABLPI {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
-        if let Some(v) = self.NDDJFLPBHBL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if let Some(v) = self.ELDIONMAAHO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
+        }
+        if let Some(v) = self.NDDJFLPBHBL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        for v in &self.AKDPEJABLPI {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
+        if let Some(v) = self.ELDIONMAAHO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for SocialPlayGetDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.AKDPEJABLPI.clear();
-        self.NDDJFLPBHBL.clear();
-        self.ELDIONMAAHO.clear();
         self.retcode = 0;
+        self.NDDJFLPBHBL.clear();
+        self.AKDPEJABLPI.clear();
+        self.ELDIONMAAHO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SocialPlayGetDataScRsp {
         static instance: SocialPlayGetDataScRsp = SocialPlayGetDataScRsp {
-            AKDPEJABLPI: ::std::vec::Vec::new(),
-            NDDJFLPBHBL: ::protobuf::MessageField::none(),
-            ELDIONMAAHO: ::protobuf::MessageField::none(),
             retcode: 0,
+            NDDJFLPBHBL: ::protobuf::MessageField::none(),
+            AKDPEJABLPI: ::std::vec::Vec::new(),
+            ELDIONMAAHO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -206,11 +206,11 @@ impl ::protobuf::reflect::ProtobufValue for SocialPlayGetDataScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSocialPlayGetDataScRsp.proto\x1a\x11HAIFIDAHGJG.proto\x1a\x11JBJNJ\
     PAOCDA.proto\x1a\x11KPBCIIFIAGI.proto\"\xc2\x01\n\x16SocialPlayGetDataSc\
-    Rsp\x12.\n\x0bAKDPEJABLPI\x18\x04\x20\x03(\x0b2\x0c.JBJNJPAOCDAR\x0bAKDP\
-    EJABLPI\x12.\n\x0bNDDJFLPBHBL\x18\x07\x20\x01(\x0b2\x0c.HAIFIDAHGJGR\x0b\
-    NDDJFLPBHBL\x12.\n\x0bELDIONMAAHO\x18\x0b\x20\x01(\x0b2\x0c.KPBCIIFIAGIR\
-    \x0bELDIONMAAHO\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06\
-    proto3\
+    Rsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12.\n\x0bNDDJFL\
+    PBHBL\x18\x06\x20\x01(\x0b2\x0c.HAIFIDAHGJGR\x0bNDDJFLPBHBL\x12.\n\x0bAK\
+    DPEJABLPI\x18\n\x20\x03(\x0b2\x0c.JBJNJPAOCDAR\x0bAKDPEJABLPI\x12.\n\x0b\
+    ELDIONMAAHO\x18\x0c\x20\x01(\x0b2\x0c.KPBCIIFIAGIR\x0bELDIONMAAHOb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

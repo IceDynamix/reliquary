@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DLBGONGJBNC {
     // message fields
-    // @@protoc_insertion_point(field:DLBGONGJBNC.FMEHKPKHGJA)
-    pub FMEHKPKHGJA: u32,
     // @@protoc_insertion_point(field:DLBGONGJBNC.PNGHFKLCNBE)
     pub PNGHFKLCNBE: u32,
+    // @@protoc_insertion_point(field:DLBGONGJBNC.FMEHKPKHGJA)
+    pub FMEHKPKHGJA: u32,
     // @@protoc_insertion_point(field:DLBGONGJBNC.ODFEDCPLNEM)
     pub ODFEDCPLNEM: u32,
     // @@protoc_insertion_point(field:DLBGONGJBNC.DGGCFDKJDPO)
@@ -56,14 +56,14 @@ impl DLBGONGJBNC {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FMEHKPKHGJA",
-            |m: &DLBGONGJBNC| { &m.FMEHKPKHGJA },
-            |m: &mut DLBGONGJBNC| { &mut m.FMEHKPKHGJA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PNGHFKLCNBE",
             |m: &DLBGONGJBNC| { &m.PNGHFKLCNBE },
             |m: &mut DLBGONGJBNC| { &mut m.PNGHFKLCNBE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FMEHKPKHGJA",
+            |m: &DLBGONGJBNC| { &m.FMEHKPKHGJA },
+            |m: &mut DLBGONGJBNC| { &mut m.FMEHKPKHGJA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ODFEDCPLNEM",
@@ -93,13 +93,13 @@ impl ::protobuf::Message for DLBGONGJBNC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.FMEHKPKHGJA = is.read_uint32()?;
-                },
                 40 => {
                     self.PNGHFKLCNBE = is.read_uint32()?;
                 },
-                56 => {
+                72 => {
+                    self.FMEHKPKHGJA = is.read_uint32()?;
+                },
+                88 => {
                     self.ODFEDCPLNEM = is.read_uint32()?;
                 },
                 96 => {
@@ -117,14 +117,14 @@ impl ::protobuf::Message for DLBGONGJBNC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FMEHKPKHGJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FMEHKPKHGJA);
-        }
         if self.PNGHFKLCNBE != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.PNGHFKLCNBE);
         }
+        if self.FMEHKPKHGJA != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.FMEHKPKHGJA);
+        }
         if self.ODFEDCPLNEM != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.ODFEDCPLNEM);
+            my_size += ::protobuf::rt::uint32_size(11, self.ODFEDCPLNEM);
         }
         if self.DGGCFDKJDPO != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.DGGCFDKJDPO);
@@ -135,14 +135,14 @@ impl ::protobuf::Message for DLBGONGJBNC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FMEHKPKHGJA != 0 {
-            os.write_uint32(2, self.FMEHKPKHGJA)?;
-        }
         if self.PNGHFKLCNBE != 0 {
             os.write_uint32(5, self.PNGHFKLCNBE)?;
         }
+        if self.FMEHKPKHGJA != 0 {
+            os.write_uint32(9, self.FMEHKPKHGJA)?;
+        }
         if self.ODFEDCPLNEM != 0 {
-            os.write_uint32(7, self.ODFEDCPLNEM)?;
+            os.write_uint32(11, self.ODFEDCPLNEM)?;
         }
         if self.DGGCFDKJDPO != 0 {
             os.write_uint32(12, self.DGGCFDKJDPO)?;
@@ -164,8 +164,8 @@ impl ::protobuf::Message for DLBGONGJBNC {
     }
 
     fn clear(&mut self) {
-        self.FMEHKPKHGJA = 0;
         self.PNGHFKLCNBE = 0;
+        self.FMEHKPKHGJA = 0;
         self.ODFEDCPLNEM = 0;
         self.DGGCFDKJDPO = 0;
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for DLBGONGJBNC {
 
     fn default_instance() -> &'static DLBGONGJBNC {
         static instance: DLBGONGJBNC = DLBGONGJBNC {
-            FMEHKPKHGJA: 0,
             PNGHFKLCNBE: 0,
+            FMEHKPKHGJA: 0,
             ODFEDCPLNEM: 0,
             DGGCFDKJDPO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -201,9 +201,9 @@ impl ::protobuf::reflect::ProtobufValue for DLBGONGJBNC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DLBGONGJBNC.proto\"\x95\x01\n\x0bDLBGONGJBNC\x12\x20\n\x0bFMEHKPKH\
-    GJA\x18\x02\x20\x01(\rR\x0bFMEHKPKHGJA\x12\x20\n\x0bPNGHFKLCNBE\x18\x05\
-    \x20\x01(\rR\x0bPNGHFKLCNBE\x12\x20\n\x0bODFEDCPLNEM\x18\x07\x20\x01(\rR\
+    \n\x11DLBGONGJBNC.proto\"\x95\x01\n\x0bDLBGONGJBNC\x12\x20\n\x0bPNGHFKLC\
+    NBE\x18\x05\x20\x01(\rR\x0bPNGHFKLCNBE\x12\x20\n\x0bFMEHKPKHGJA\x18\t\
+    \x20\x01(\rR\x0bFMEHKPKHGJA\x12\x20\n\x0bODFEDCPLNEM\x18\x0b\x20\x01(\rR\
     \x0bODFEDCPLNEM\x12\x20\n\x0bDGGCFDKJDPO\x18\x0c\x20\x01(\rR\x0bDGGCFDKJ\
     DPOb\x06proto3\
 ";

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ALBLEFHHJIC {
     // message fields
-    // @@protoc_insertion_point(field:ALBLEFHHJIC.avatar_type)
-    pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
     // @@protoc_insertion_point(field:ALBLEFHHJIC.id)
     pub id: u32,
+    // @@protoc_insertion_point(field:ALBLEFHHJIC.avatar_type)
+    pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
     // @@protoc_insertion_point(field:ALBLEFHHJIC.slot)
     pub slot: u32,
     // @@protoc_insertion_point(field:ALBLEFHHJIC.level)
@@ -56,14 +56,14 @@ impl ALBLEFHHJIC {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_type",
-            |m: &ALBLEFHHJIC| { &m.avatar_type },
-            |m: &mut ALBLEFHHJIC| { &mut m.avatar_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
             |m: &ALBLEFHHJIC| { &m.id },
             |m: &mut ALBLEFHHJIC| { &mut m.id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_type",
+            |m: &ALBLEFHHJIC| { &m.avatar_type },
+            |m: &mut ALBLEFHHJIC| { &mut m.avatar_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "slot",
@@ -93,11 +93,11 @@ impl ::protobuf::Message for ALBLEFHHJIC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.avatar_type = is.read_enum_or_unknown()?;
-                },
-                40 => {
+                24 => {
                     self.id = is.read_uint32()?;
+                },
+                32 => {
+                    self.avatar_type = is.read_enum_or_unknown()?;
                 },
                 56 => {
                     self.slot = is.read_uint32()?;
@@ -117,11 +117,11 @@ impl ::protobuf::Message for ALBLEFHHJIC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
-            my_size += ::protobuf::rt::int32_size(1, self.avatar_type.value());
-        }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.id);
+            my_size += ::protobuf::rt::uint32_size(3, self.id);
+        }
+        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
+            my_size += ::protobuf::rt::int32_size(4, self.avatar_type.value());
         }
         if self.slot != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.slot);
@@ -135,11 +135,11 @@ impl ::protobuf::Message for ALBLEFHHJIC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
-        }
         if self.id != 0 {
-            os.write_uint32(5, self.id)?;
+            os.write_uint32(3, self.id)?;
+        }
+        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         if self.slot != 0 {
             os.write_uint32(7, self.slot)?;
@@ -164,8 +164,8 @@ impl ::protobuf::Message for ALBLEFHHJIC {
     }
 
     fn clear(&mut self) {
-        self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None);
         self.id = 0;
+        self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None);
         self.slot = 0;
         self.level = 0;
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for ALBLEFHHJIC {
 
     fn default_instance() -> &'static ALBLEFHHJIC {
         static instance: ALBLEFHHJIC = ALBLEFHHJIC {
-            avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
             id: 0,
+            avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
             slot: 0,
             level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -201,9 +201,9 @@ impl ::protobuf::reflect::ProtobufValue for ALBLEFHHJIC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ALBLEFHHJIC.proto\x1a\x10AvatarType.proto\"u\n\x0bALBLEFHHJIC\x12,\
-    \n\x0bavatar_type\x18\x01\x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\
-    \x0e\n\x02id\x18\x05\x20\x01(\rR\x02id\x12\x12\n\x04slot\x18\x07\x20\x01\
+    \n\x11ALBLEFHHJIC.proto\x1a\x10AvatarType.proto\"u\n\x0bALBLEFHHJIC\x12\
+    \x0e\n\x02id\x18\x03\x20\x01(\rR\x02id\x12,\n\x0bavatar_type\x18\x04\x20\
+    \x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\x12\n\x04slot\x18\x07\x20\x01\
     (\rR\x04slot\x12\x14\n\x05level\x18\x0b\x20\x01(\rR\x05levelb\x06proto3\
 ";
 

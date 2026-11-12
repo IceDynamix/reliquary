@@ -34,8 +34,8 @@ pub struct PKDNDNABKII {
     pub npc_id: u32,
     // @@protoc_insertion_point(field:PKDNDNABKII.pos_index)
     pub pos_index: u32,
-    // @@protoc_insertion_point(field:PKDNDNABKII.H_76492770)
-    pub H_76492770: ::std::vec::Vec<super::ACFLKPFDHIM::ACFLKPFDHIM>,
+    // @@protoc_insertion_point(field:PKDNDNABKII.H_37e3a39e)
+    pub H_37e3a39e: ::std::vec::Vec<super::ACFLKPFDHIM::ACFLKPFDHIM>,
     // special fields
     // @@protoc_insertion_point(special_field:PKDNDNABKII.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -71,9 +71,9 @@ impl PKDNDNABKII {
             |m: &mut PKDNDNABKII| { &mut m.pos_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_76492770",
-            |m: &PKDNDNABKII| { &m.H_76492770 },
-            |m: &mut PKDNDNABKII| { &mut m.H_76492770 },
+            "H_37e3a39e",
+            |m: &PKDNDNABKII| { &m.H_37e3a39e },
+            |m: &mut PKDNDNABKII| { &mut m.H_37e3a39e },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PKDNDNABKII>(
             "PKDNDNABKII",
@@ -103,7 +103,7 @@ impl ::protobuf::Message for PKDNDNABKII {
                     self.pos_index = is.read_uint32()?;
                 },
                 34 => {
-                    self.H_76492770.push(is.read_message()?);
+                    self.H_37e3a39e.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -126,7 +126,7 @@ impl ::protobuf::Message for PKDNDNABKII {
         if self.pos_index != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.pos_index);
         }
-        for value in &self.H_76492770 {
+        for value in &self.H_37e3a39e {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -145,7 +145,7 @@ impl ::protobuf::Message for PKDNDNABKII {
         if self.pos_index != 0 {
             os.write_uint32(3, self.pos_index)?;
         }
-        for v in &self.H_76492770 {
+        for v in &self.H_37e3a39e {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -168,7 +168,7 @@ impl ::protobuf::Message for PKDNDNABKII {
         self.unique_id = 0;
         self.npc_id = 0;
         self.pos_index = 0;
-        self.H_76492770.clear();
+        self.H_37e3a39e.clear();
         self.special_fields.clear();
     }
 
@@ -177,7 +177,7 @@ impl ::protobuf::Message for PKDNDNABKII {
             unique_id: 0,
             npc_id: 0,
             pos_index: 0,
-            H_76492770: ::std::vec::Vec::new(),
+            H_37e3a39e: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,8 +205,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PKDNDNABKII.proto\x1a\x11ACFLKPFDHIM.proto\"\x8b\x01\n\x0bPKDNDNAB\
     KII\x12\x1b\n\tunique_id\x18\x01\x20\x01(\rR\x08uniqueId\x12\x15\n\x06np\
     c_id\x18\x02\x20\x01(\rR\x05npcId\x12\x1b\n\tpos_index\x18\x03\x20\x01(\
-    \rR\x08posIndex\x12+\n\nH_76492770\x18\x04\x20\x03(\x0b2\x0c.ACFLKPFDHIM\
-    R\tH76492770b\x06proto3\
+    \rR\x08posIndex\x12+\n\nH_37e3a39e\x18\x04\x20\x03(\x0b2\x0c.ACFLKPFDHIM\
+    R\tH37e3a39eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

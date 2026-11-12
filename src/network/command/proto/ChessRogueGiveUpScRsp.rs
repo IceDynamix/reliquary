@@ -30,14 +30,14 @@ pub struct ChessRogueGiveUpScRsp {
     // message fields
     // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.AEFMMOHKCHJ)
     pub AEFMMOHKCHJ: ::protobuf::MessageField<super::AEMAPGKPPJA::AEMAPGKPPJA>,
-    // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.LFLCDNGALME)
-    pub LFLCDNGALME: ::protobuf::MessageField<super::PPAGCEGGCAK::PPAGCEGGCAK>,
-    // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.IHNENEGKEPO)
-    pub IHNENEGKEPO: ::protobuf::MessageField<super::HIMJKAMHLMJ::HIMJKAMHLMJ>,
-    // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.MINFCKLKLNJ)
-    pub MINFCKLKLNJ: ::protobuf::MessageField<super::OGHPKFMNNHL::OGHPKFMNNHL>,
     // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.stage_info)
     pub stage_info: ::protobuf::MessageField<super::MANINNKMFHG::MANINNKMFHG>,
+    // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.LFLCDNGALME)
+    pub LFLCDNGALME: ::protobuf::MessageField<super::PPAGCEGGCAK::PPAGCEGGCAK>,
+    // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.MINFCKLKLNJ)
+    pub MINFCKLKLNJ: ::protobuf::MessageField<super::OGHPKFMNNHL::OGHPKFMNNHL>,
+    // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.IHNENEGKEPO)
+    pub IHNENEGKEPO: ::protobuf::MessageField<super::HIMJKAMHLMJ::HIMJKAMHLMJ>,
     // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -64,25 +64,25 @@ impl ChessRogueGiveUpScRsp {
             |m: &ChessRogueGiveUpScRsp| { &m.AEFMMOHKCHJ },
             |m: &mut ChessRogueGiveUpScRsp| { &mut m.AEFMMOHKCHJ },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MANINNKMFHG::MANINNKMFHG>(
+            "stage_info",
+            |m: &ChessRogueGiveUpScRsp| { &m.stage_info },
+            |m: &mut ChessRogueGiveUpScRsp| { &mut m.stage_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PPAGCEGGCAK::PPAGCEGGCAK>(
             "LFLCDNGALME",
             |m: &ChessRogueGiveUpScRsp| { &m.LFLCDNGALME },
             |m: &mut ChessRogueGiveUpScRsp| { &mut m.LFLCDNGALME },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HIMJKAMHLMJ::HIMJKAMHLMJ>(
-            "IHNENEGKEPO",
-            |m: &ChessRogueGiveUpScRsp| { &m.IHNENEGKEPO },
-            |m: &mut ChessRogueGiveUpScRsp| { &mut m.IHNENEGKEPO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OGHPKFMNNHL::OGHPKFMNNHL>(
             "MINFCKLKLNJ",
             |m: &ChessRogueGiveUpScRsp| { &m.MINFCKLKLNJ },
             |m: &mut ChessRogueGiveUpScRsp| { &mut m.MINFCKLKLNJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MANINNKMFHG::MANINNKMFHG>(
-            "stage_info",
-            |m: &ChessRogueGiveUpScRsp| { &m.stage_info },
-            |m: &mut ChessRogueGiveUpScRsp| { &mut m.stage_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HIMJKAMHLMJ::HIMJKAMHLMJ>(
+            "IHNENEGKEPO",
+            |m: &ChessRogueGiveUpScRsp| { &m.IHNENEGKEPO },
+            |m: &mut ChessRogueGiveUpScRsp| { &mut m.IHNENEGKEPO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -107,20 +107,20 @@ impl ::protobuf::Message for ChessRogueGiveUpScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AEFMMOHKCHJ)?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LFLCDNGALME)?;
-                },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IHNENEGKEPO)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
                 },
                 66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LFLCDNGALME)?;
+                },
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MINFCKLKLNJ)?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IHNENEGKEPO)?;
                 },
                 112 => {
                     self.retcode = is.read_uint32()?;
@@ -141,11 +141,11 @@ impl ::protobuf::Message for ChessRogueGiveUpScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.LFLCDNGALME.as_ref() {
+        if let Some(v) = self.stage_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.IHNENEGKEPO.as_ref() {
+        if let Some(v) = self.LFLCDNGALME.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -153,7 +153,7 @@ impl ::protobuf::Message for ChessRogueGiveUpScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.stage_info.as_ref() {
+        if let Some(v) = self.IHNENEGKEPO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -167,19 +167,19 @@ impl ::protobuf::Message for ChessRogueGiveUpScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.AEFMMOHKCHJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if let Some(v) = self.LFLCDNGALME.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if let Some(v) = self.IHNENEGKEPO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if let Some(v) = self.MINFCKLKLNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.stage_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if let Some(v) = self.LFLCDNGALME.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if let Some(v) = self.MINFCKLKLNJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if let Some(v) = self.IHNENEGKEPO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(14, self.retcode)?;
@@ -202,10 +202,10 @@ impl ::protobuf::Message for ChessRogueGiveUpScRsp {
 
     fn clear(&mut self) {
         self.AEFMMOHKCHJ.clear();
-        self.LFLCDNGALME.clear();
-        self.IHNENEGKEPO.clear();
-        self.MINFCKLKLNJ.clear();
         self.stage_info.clear();
+        self.LFLCDNGALME.clear();
+        self.MINFCKLKLNJ.clear();
+        self.IHNENEGKEPO.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
@@ -213,10 +213,10 @@ impl ::protobuf::Message for ChessRogueGiveUpScRsp {
     fn default_instance() -> &'static ChessRogueGiveUpScRsp {
         static instance: ChessRogueGiveUpScRsp = ChessRogueGiveUpScRsp {
             AEFMMOHKCHJ: ::protobuf::MessageField::none(),
-            LFLCDNGALME: ::protobuf::MessageField::none(),
-            IHNENEGKEPO: ::protobuf::MessageField::none(),
-            MINFCKLKLNJ: ::protobuf::MessageField::none(),
             stage_info: ::protobuf::MessageField::none(),
+            LFLCDNGALME: ::protobuf::MessageField::none(),
+            MINFCKLKLNJ: ::protobuf::MessageField::none(),
+            IHNENEGKEPO: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -245,12 +245,12 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bChessRogueGiveUpScRsp.proto\x1a\x11AEMAPGKPPJA.proto\x1a\x11HIMJKA\
     MHLMJ.proto\x1a\x11MANINNKMFHG.proto\x1a\x11OGHPKFMNNHL.proto\x1a\x11PPA\
     GCEGGCAK.proto\"\x9e\x02\n\x15ChessRogueGiveUpScRsp\x12.\n\x0bAEFMMOHKCH\
-    J\x18\x04\x20\x01(\x0b2\x0c.AEMAPGKPPJAR\x0bAEFMMOHKCHJ\x12.\n\x0bLFLCDN\
-    GALME\x18\x06\x20\x01(\x0b2\x0c.PPAGCEGGCAKR\x0bLFLCDNGALME\x12.\n\x0bIH\
-    NENEGKEPO\x18\x07\x20\x01(\x0b2\x0c.HIMJKAMHLMJR\x0bIHNENEGKEPO\x12.\n\
-    \x0bMINFCKLKLNJ\x18\x08\x20\x01(\x0b2\x0c.OGHPKFMNNHLR\x0bMINFCKLKLNJ\
-    \x12+\n\nstage_info\x18\t\x20\x01(\x0b2\x0c.MANINNKMFHGR\tstageInfo\x12\
-    \x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
+    J\x18\x02\x20\x01(\x0b2\x0c.AEMAPGKPPJAR\x0bAEFMMOHKCHJ\x12+\n\nstage_in\
+    fo\x18\x03\x20\x01(\x0b2\x0c.MANINNKMFHGR\tstageInfo\x12.\n\x0bLFLCDNGAL\
+    ME\x18\x08\x20\x01(\x0b2\x0c.PPAGCEGGCAKR\x0bLFLCDNGALME\x12.\n\x0bMINFC\
+    KLKLNJ\x18\n\x20\x01(\x0b2\x0c.OGHPKFMNNHLR\x0bMINFCKLKLNJ\x12.\n\x0bIHN\
+    ENEGKEPO\x18\r\x20\x01(\x0b2\x0c.HIMJKAMHLMJR\x0bIHNENEGKEPO\x12\x18\n\
+    \x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

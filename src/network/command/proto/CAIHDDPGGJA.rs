@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CAIHDDPGGJA {
     // message fields
-    // @@protoc_insertion_point(field:CAIHDDPGGJA.GNAMNBDIEKG)
-    pub GNAMNBDIEKG: u32,
-    // @@protoc_insertion_point(field:CAIHDDPGGJA.stt)
-    pub stt: ::protobuf::MessageField<super::HCAJDCFFEAE::HCAJDCFFEAE>,
     // @@protoc_insertion_point(field:CAIHDDPGGJA.rank)
     pub rank: u32,
-    // @@protoc_insertion_point(field:CAIHDDPGGJA.JKIHICLOPKM)
-    pub JKIHICLOPKM: u32,
-    // @@protoc_insertion_point(field:CAIHDDPGGJA.end_reason)
-    pub end_reason: ::protobuf::EnumOrUnknown<super::HPICFNLLMCO::HPICFNLLMCO>,
-    // @@protoc_insertion_point(field:CAIHDDPGGJA.time)
-    pub time: u32,
     // @@protoc_insertion_point(field:CAIHDDPGGJA.IPMHDPKNJLI)
     pub IPMHDPKNJLI: u32,
+    // @@protoc_insertion_point(field:CAIHDDPGGJA.time)
+    pub time: u32,
+    // @@protoc_insertion_point(field:CAIHDDPGGJA.stt)
+    pub stt: ::protobuf::MessageField<super::HCAJDCFFEAE::HCAJDCFFEAE>,
+    // @@protoc_insertion_point(field:CAIHDDPGGJA.end_reason)
+    pub end_reason: ::protobuf::EnumOrUnknown<super::HPICFNLLMCO::HPICFNLLMCO>,
+    // @@protoc_insertion_point(field:CAIHDDPGGJA.JKIHICLOPKM)
+    pub JKIHICLOPKM: u32,
+    // @@protoc_insertion_point(field:CAIHDDPGGJA.GNAMNBDIEKG)
+    pub GNAMNBDIEKG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CAIHDDPGGJA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,9 +62,19 @@ impl CAIHDDPGGJA {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNAMNBDIEKG",
-            |m: &CAIHDDPGGJA| { &m.GNAMNBDIEKG },
-            |m: &mut CAIHDDPGGJA| { &mut m.GNAMNBDIEKG },
+            "rank",
+            |m: &CAIHDDPGGJA| { &m.rank },
+            |m: &mut CAIHDDPGGJA| { &mut m.rank },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IPMHDPKNJLI",
+            |m: &CAIHDDPGGJA| { &m.IPMHDPKNJLI },
+            |m: &mut CAIHDDPGGJA| { &mut m.IPMHDPKNJLI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "time",
+            |m: &CAIHDDPGGJA| { &m.time },
+            |m: &mut CAIHDDPGGJA| { &mut m.time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HCAJDCFFEAE::HCAJDCFFEAE>(
             "stt",
@@ -72,9 +82,9 @@ impl CAIHDDPGGJA {
             |m: &mut CAIHDDPGGJA| { &mut m.stt },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &CAIHDDPGGJA| { &m.rank },
-            |m: &mut CAIHDDPGGJA| { &mut m.rank },
+            "end_reason",
+            |m: &CAIHDDPGGJA| { &m.end_reason },
+            |m: &mut CAIHDDPGGJA| { &mut m.end_reason },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JKIHICLOPKM",
@@ -82,19 +92,9 @@ impl CAIHDDPGGJA {
             |m: &mut CAIHDDPGGJA| { &mut m.JKIHICLOPKM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "end_reason",
-            |m: &CAIHDDPGGJA| { &m.end_reason },
-            |m: &mut CAIHDDPGGJA| { &mut m.end_reason },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "time",
-            |m: &CAIHDDPGGJA| { &m.time },
-            |m: &mut CAIHDDPGGJA| { &mut m.time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPMHDPKNJLI",
-            |m: &CAIHDDPGGJA| { &m.IPMHDPKNJLI },
-            |m: &mut CAIHDDPGGJA| { &mut m.IPMHDPKNJLI },
+            "GNAMNBDIEKG",
+            |m: &CAIHDDPGGJA| { &m.GNAMNBDIEKG },
+            |m: &mut CAIHDDPGGJA| { &mut m.GNAMNBDIEKG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CAIHDDPGGJA>(
             "CAIHDDPGGJA",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for CAIHDDPGGJA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.GNAMNBDIEKG = is.read_uint32()?;
-                },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
-                },
-                56 => {
+                24 => {
                     self.rank = is.read_uint32()?;
                 },
-                72 => {
-                    self.JKIHICLOPKM = is.read_uint32()?;
+                48 => {
+                    self.IPMHDPKNJLI = is.read_uint32()?;
                 },
-                88 => {
+                64 => {
+                    self.time = is.read_uint32()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
+                },
+                96 => {
                     self.end_reason = is.read_enum_or_unknown()?;
                 },
                 104 => {
-                    self.time = is.read_uint32()?;
+                    self.JKIHICLOPKM = is.read_uint32()?;
                 },
-                112 => {
-                    self.IPMHDPKNJLI = is.read_uint32()?;
+                120 => {
+                    self.GNAMNBDIEKG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,27 +147,27 @@ impl ::protobuf::Message for CAIHDDPGGJA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GNAMNBDIEKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.GNAMNBDIEKG);
+        if self.rank != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.rank);
+        }
+        if self.IPMHDPKNJLI != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.IPMHDPKNJLI);
+        }
+        if self.time != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.time);
         }
         if let Some(v) = self.stt.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.rank);
+        if self.end_reason != ::protobuf::EnumOrUnknown::new(super::HPICFNLLMCO::HPICFNLLMCO::HPICFNLLMCO_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(12, self.end_reason.value());
         }
         if self.JKIHICLOPKM != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.JKIHICLOPKM);
+            my_size += ::protobuf::rt::uint32_size(13, self.JKIHICLOPKM);
         }
-        if self.end_reason != ::protobuf::EnumOrUnknown::new(super::HPICFNLLMCO::HPICFNLLMCO::HPICFNLLMCO_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(11, self.end_reason.value());
-        }
-        if self.time != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.time);
-        }
-        if self.IPMHDPKNJLI != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.IPMHDPKNJLI);
+        if self.GNAMNBDIEKG != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.GNAMNBDIEKG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,26 +175,26 @@ impl ::protobuf::Message for CAIHDDPGGJA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GNAMNBDIEKG != 0 {
-            os.write_uint32(1, self.GNAMNBDIEKG)?;
-        }
-        if let Some(v) = self.stt.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
         if self.rank != 0 {
-            os.write_uint32(7, self.rank)?;
-        }
-        if self.JKIHICLOPKM != 0 {
-            os.write_uint32(9, self.JKIHICLOPKM)?;
-        }
-        if self.end_reason != ::protobuf::EnumOrUnknown::new(super::HPICFNLLMCO::HPICFNLLMCO::HPICFNLLMCO_NLCDGIPGFDJ) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.end_reason))?;
-        }
-        if self.time != 0 {
-            os.write_uint32(13, self.time)?;
+            os.write_uint32(3, self.rank)?;
         }
         if self.IPMHDPKNJLI != 0 {
-            os.write_uint32(14, self.IPMHDPKNJLI)?;
+            os.write_uint32(6, self.IPMHDPKNJLI)?;
+        }
+        if self.time != 0 {
+            os.write_uint32(8, self.time)?;
+        }
+        if let Some(v) = self.stt.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if self.end_reason != ::protobuf::EnumOrUnknown::new(super::HPICFNLLMCO::HPICFNLLMCO::HPICFNLLMCO_NLCDGIPGFDJ) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.end_reason))?;
+        }
+        if self.JKIHICLOPKM != 0 {
+            os.write_uint32(13, self.JKIHICLOPKM)?;
+        }
+        if self.GNAMNBDIEKG != 0 {
+            os.write_uint32(15, self.GNAMNBDIEKG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -213,25 +213,25 @@ impl ::protobuf::Message for CAIHDDPGGJA {
     }
 
     fn clear(&mut self) {
-        self.GNAMNBDIEKG = 0;
-        self.stt.clear();
         self.rank = 0;
-        self.JKIHICLOPKM = 0;
-        self.end_reason = ::protobuf::EnumOrUnknown::new(super::HPICFNLLMCO::HPICFNLLMCO::HPICFNLLMCO_NLCDGIPGFDJ);
-        self.time = 0;
         self.IPMHDPKNJLI = 0;
+        self.time = 0;
+        self.stt.clear();
+        self.end_reason = ::protobuf::EnumOrUnknown::new(super::HPICFNLLMCO::HPICFNLLMCO::HPICFNLLMCO_NLCDGIPGFDJ);
+        self.JKIHICLOPKM = 0;
+        self.GNAMNBDIEKG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CAIHDDPGGJA {
         static instance: CAIHDDPGGJA = CAIHDDPGGJA {
-            GNAMNBDIEKG: 0,
-            stt: ::protobuf::MessageField::none(),
             rank: 0,
-            JKIHICLOPKM: 0,
-            end_reason: ::protobuf::EnumOrUnknown::from_i32(0),
-            time: 0,
             IPMHDPKNJLI: 0,
+            time: 0,
+            stt: ::protobuf::MessageField::none(),
+            end_reason: ::protobuf::EnumOrUnknown::from_i32(0),
+            JKIHICLOPKM: 0,
+            GNAMNBDIEKG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,12 +257,12 @@ impl ::protobuf::reflect::ProtobufValue for CAIHDDPGGJA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CAIHDDPGGJA.proto\x1a\x11HCAJDCFFEAE.proto\x1a\x11HPICFNLLMCO.prot\
-    o\"\xe8\x01\n\x0bCAIHDDPGGJA\x12\x20\n\x0bGNAMNBDIEKG\x18\x01\x20\x01(\r\
-    R\x0bGNAMNBDIEKG\x12\x1e\n\x03stt\x18\x02\x20\x01(\x0b2\x0c.HCAJDCFFEAER\
-    \x03stt\x12\x12\n\x04rank\x18\x07\x20\x01(\rR\x04rank\x12\x20\n\x0bJKIHI\
-    CLOPKM\x18\t\x20\x01(\rR\x0bJKIHICLOPKM\x12+\n\nend_reason\x18\x0b\x20\
-    \x01(\x0e2\x0c.HPICFNLLMCOR\tendReason\x12\x12\n\x04time\x18\r\x20\x01(\
-    \rR\x04time\x12\x20\n\x0bIPMHDPKNJLI\x18\x0e\x20\x01(\rR\x0bIPMHDPKNJLIb\
+    o\"\xe8\x01\n\x0bCAIHDDPGGJA\x12\x12\n\x04rank\x18\x03\x20\x01(\rR\x04ra\
+    nk\x12\x20\n\x0bIPMHDPKNJLI\x18\x06\x20\x01(\rR\x0bIPMHDPKNJLI\x12\x12\n\
+    \x04time\x18\x08\x20\x01(\rR\x04time\x12\x1e\n\x03stt\x18\t\x20\x01(\x0b\
+    2\x0c.HCAJDCFFEAER\x03stt\x12+\n\nend_reason\x18\x0c\x20\x01(\x0e2\x0c.H\
+    PICFNLLMCOR\tendReason\x12\x20\n\x0bJKIHICLOPKM\x18\r\x20\x01(\rR\x0bJKI\
+    HICLOPKM\x12\x20\n\x0bGNAMNBDIEKG\x18\x0f\x20\x01(\rR\x0bGNAMNBDIEKGb\
     \x06proto3\
 ";
 

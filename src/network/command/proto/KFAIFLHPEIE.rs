@@ -45,55 +45,6 @@ impl KFAIFLHPEIE {
         ::std::default::Default::default()
     }
 
-    // .JCMKKEKMHNC NPBKAADBHHC = 7;
-
-    pub fn NPBKAADBHHC(&self) -> &super::JCMKKEKMHNC::JCMKKEKMHNC {
-        match self.MMCGBGDJIPN {
-            ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(ref v)) => v,
-            _ => <super::JCMKKEKMHNC::JCMKKEKMHNC as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_NPBKAADBHHC(&mut self) {
-        self.MMCGBGDJIPN = ::std::option::Option::None;
-    }
-
-    pub fn has_NPBKAADBHHC(&self) -> bool {
-        match self.MMCGBGDJIPN {
-            ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NPBKAADBHHC(&mut self, v: super::JCMKKEKMHNC::JCMKKEKMHNC) {
-        self.MMCGBGDJIPN = ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_NPBKAADBHHC(&mut self) -> &mut super::JCMKKEKMHNC::JCMKKEKMHNC {
-        if let ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(_)) = self.MMCGBGDJIPN {
-        } else {
-            self.MMCGBGDJIPN = ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(super::JCMKKEKMHNC::JCMKKEKMHNC::new()));
-        }
-        match self.MMCGBGDJIPN {
-            ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_NPBKAADBHHC(&mut self) -> super::JCMKKEKMHNC::JCMKKEKMHNC {
-        if self.has_NPBKAADBHHC() {
-            match self.MMCGBGDJIPN.take() {
-                ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::JCMKKEKMHNC::JCMKKEKMHNC::new()
-        }
-    }
-
     // .DAFHOKGICNG HNPBCGILAJP = 11;
 
     pub fn HNPBCGILAJP(&self) -> &super::DAFHOKGICNG::DAFHOKGICNG {
@@ -143,22 +94,71 @@ impl KFAIFLHPEIE {
         }
     }
 
+    // .JCMKKEKMHNC NPBKAADBHHC = 15;
+
+    pub fn NPBKAADBHHC(&self) -> &super::JCMKKEKMHNC::JCMKKEKMHNC {
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(ref v)) => v,
+            _ => <super::JCMKKEKMHNC::JCMKKEKMHNC as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_NPBKAADBHHC(&mut self) {
+        self.MMCGBGDJIPN = ::std::option::Option::None;
+    }
+
+    pub fn has_NPBKAADBHHC(&self) -> bool {
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NPBKAADBHHC(&mut self, v: super::JCMKKEKMHNC::JCMKKEKMHNC) {
+        self.MMCGBGDJIPN = ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_NPBKAADBHHC(&mut self) -> &mut super::JCMKKEKMHNC::JCMKKEKMHNC {
+        if let ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(_)) = self.MMCGBGDJIPN {
+        } else {
+            self.MMCGBGDJIPN = ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(super::JCMKKEKMHNC::JCMKKEKMHNC::new()));
+        }
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_NPBKAADBHHC(&mut self) -> super::JCMKKEKMHNC::JCMKKEKMHNC {
+        if self.has_NPBKAADBHHC() {
+            match self.MMCGBGDJIPN.take() {
+                ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::JCMKKEKMHNC::JCMKKEKMHNC::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JCMKKEKMHNC::JCMKKEKMHNC>(
-            "NPBKAADBHHC",
-            KFAIFLHPEIE::has_NPBKAADBHHC,
-            KFAIFLHPEIE::NPBKAADBHHC,
-            KFAIFLHPEIE::mut_NPBKAADBHHC,
-            KFAIFLHPEIE::set_NPBKAADBHHC,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DAFHOKGICNG::DAFHOKGICNG>(
             "HNPBCGILAJP",
             KFAIFLHPEIE::has_HNPBCGILAJP,
             KFAIFLHPEIE::HNPBCGILAJP,
             KFAIFLHPEIE::mut_HNPBCGILAJP,
             KFAIFLHPEIE::set_HNPBCGILAJP,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JCMKKEKMHNC::JCMKKEKMHNC>(
+            "NPBKAADBHHC",
+            KFAIFLHPEIE::has_NPBKAADBHHC,
+            KFAIFLHPEIE::NPBKAADBHHC,
+            KFAIFLHPEIE::mut_NPBKAADBHHC,
+            KFAIFLHPEIE::set_NPBKAADBHHC,
         ));
         oneofs.push(kfaiflhpeie::MMCGBGDJIPN::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KFAIFLHPEIE>(
@@ -179,11 +179,11 @@ impl ::protobuf::Message for KFAIFLHPEIE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.MMCGBGDJIPN = ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(is.read_message()?));
-                },
                 90 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::HNPBCGILAJP(is.read_message()?));
+                },
+                122 => {
+                    self.MMCGBGDJIPN = ::std::option::Option::Some(kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -199,11 +199,11 @@ impl ::protobuf::Message for KFAIFLHPEIE {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
-                &kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(ref v) => {
+                &kfaiflhpeie::MMCGBGDJIPN::HNPBCGILAJP(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &kfaiflhpeie::MMCGBGDJIPN::HNPBCGILAJP(ref v) => {
+                &kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -217,11 +217,11 @@ impl ::protobuf::Message for KFAIFLHPEIE {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
-                &kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-                },
                 &kfaiflhpeie::MMCGBGDJIPN::HNPBCGILAJP(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                },
+                &kfaiflhpeie::MMCGBGDJIPN::NPBKAADBHHC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
             };
         }
@@ -280,10 +280,10 @@ pub mod kfaiflhpeie {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:KFAIFLHPEIE.MMCGBGDJIPN)
     pub enum MMCGBGDJIPN {
-        // @@protoc_insertion_point(oneof_field:KFAIFLHPEIE.NPBKAADBHHC)
-        NPBKAADBHHC(super::super::JCMKKEKMHNC::JCMKKEKMHNC),
         // @@protoc_insertion_point(oneof_field:KFAIFLHPEIE.HNPBCGILAJP)
         HNPBCGILAJP(super::super::DAFHOKGICNG::DAFHOKGICNG),
+        // @@protoc_insertion_point(oneof_field:KFAIFLHPEIE.NPBKAADBHHC)
+        NPBKAADBHHC(super::super::JCMKKEKMHNC::JCMKKEKMHNC),
     }
 
     impl ::protobuf::Oneof for MMCGBGDJIPN {
@@ -305,9 +305,9 @@ pub mod kfaiflhpeie {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KFAIFLHPEIE.proto\x1a\x11DAFHOKGICNG.proto\x1a\x11JCMKKEKMHNC.prot\
-    o\"\x80\x01\n\x0bKFAIFLHPEIE\x120\n\x0bNPBKAADBHHC\x18\x07\x20\x01(\x0b2\
-    \x0c.JCMKKEKMHNCH\0R\x0bNPBKAADBHHC\x120\n\x0bHNPBCGILAJP\x18\x0b\x20\
-    \x01(\x0b2\x0c.DAFHOKGICNGH\0R\x0bHNPBCGILAJPB\r\n\x0bMMCGBGDJIPNb\x06pr\
+    o\"\x80\x01\n\x0bKFAIFLHPEIE\x120\n\x0bHNPBCGILAJP\x18\x0b\x20\x01(\x0b2\
+    \x0c.DAFHOKGICNGH\0R\x0bHNPBCGILAJP\x120\n\x0bNPBKAADBHHC\x18\x0f\x20\
+    \x01(\x0b2\x0c.JCMKKEKMHNCH\0R\x0bNPBKAADBHHCB\r\n\x0bMMCGBGDJIPNb\x06pr\
     oto3\
 ";
 

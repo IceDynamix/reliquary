@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MatchThreeV2LevelEndScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MatchThreeV2LevelEndScRsp.OEIBHLMDJKA)
-    pub OEIBHLMDJKA: ::protobuf::MessageField<super::HDKJPKPEJFO::HDKJPKPEJFO>,
     // @@protoc_insertion_point(field:MatchThreeV2LevelEndScRsp.JNAOKJKFLHL)
     pub JNAOKJKFLHL: u32,
-    // @@protoc_insertion_point(field:MatchThreeV2LevelEndScRsp.AFLCNNAJAGB)
-    pub AFLCNNAJAGB: u32,
     // @@protoc_insertion_point(field:MatchThreeV2LevelEndScRsp.level_id)
     pub level_id: u32,
     // @@protoc_insertion_point(field:MatchThreeV2LevelEndScRsp.IEGCHPIHPJN)
     pub IEGCHPIHPJN: ::protobuf::MessageField<super::KPCHPLEJCKC::KPCHPLEJCKC>,
-    // @@protoc_insertion_point(field:MatchThreeV2LevelEndScRsp.DOBNEFKPMPB)
-    pub DOBNEFKPMPB: ::std::vec::Vec<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:MatchThreeV2LevelEndScRsp.AFLCNNAJAGB)
+    pub AFLCNNAJAGB: u32,
     // @@protoc_insertion_point(field:MatchThreeV2LevelEndScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:MatchThreeV2LevelEndScRsp.DOBNEFKPMPB)
+    pub DOBNEFKPMPB: ::std::vec::Vec<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:MatchThreeV2LevelEndScRsp.OEIBHLMDJKA)
+    pub OEIBHLMDJKA: ::protobuf::MessageField<super::HDKJPKPEJFO::HDKJPKPEJFO>,
     // @@protoc_insertion_point(field:MatchThreeV2LevelEndScRsp.DBDIGIEPMBB)
     pub DBDIGIEPMBB: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
@@ -63,20 +63,10 @@ impl MatchThreeV2LevelEndScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HDKJPKPEJFO::HDKJPKPEJFO>(
-            "OEIBHLMDJKA",
-            |m: &MatchThreeV2LevelEndScRsp| { &m.OEIBHLMDJKA },
-            |m: &mut MatchThreeV2LevelEndScRsp| { &mut m.OEIBHLMDJKA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JNAOKJKFLHL",
             |m: &MatchThreeV2LevelEndScRsp| { &m.JNAOKJKFLHL },
             |m: &mut MatchThreeV2LevelEndScRsp| { &mut m.JNAOKJKFLHL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AFLCNNAJAGB",
-            |m: &MatchThreeV2LevelEndScRsp| { &m.AFLCNNAJAGB },
-            |m: &mut MatchThreeV2LevelEndScRsp| { &mut m.AFLCNNAJAGB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
@@ -88,15 +78,25 @@ impl MatchThreeV2LevelEndScRsp {
             |m: &MatchThreeV2LevelEndScRsp| { &m.IEGCHPIHPJN },
             |m: &mut MatchThreeV2LevelEndScRsp| { &mut m.IEGCHPIHPJN },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DOBNEFKPMPB",
-            |m: &MatchThreeV2LevelEndScRsp| { &m.DOBNEFKPMPB },
-            |m: &mut MatchThreeV2LevelEndScRsp| { &mut m.DOBNEFKPMPB },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AFLCNNAJAGB",
+            |m: &MatchThreeV2LevelEndScRsp| { &m.AFLCNNAJAGB },
+            |m: &mut MatchThreeV2LevelEndScRsp| { &mut m.AFLCNNAJAGB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MatchThreeV2LevelEndScRsp| { &m.retcode },
             |m: &mut MatchThreeV2LevelEndScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DOBNEFKPMPB",
+            |m: &MatchThreeV2LevelEndScRsp| { &m.DOBNEFKPMPB },
+            |m: &mut MatchThreeV2LevelEndScRsp| { &mut m.DOBNEFKPMPB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HDKJPKPEJFO::HDKJPKPEJFO>(
+            "OEIBHLMDJKA",
+            |m: &MatchThreeV2LevelEndScRsp| { &m.OEIBHLMDJKA },
+            |m: &mut MatchThreeV2LevelEndScRsp| { &mut m.OEIBHLMDJKA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "DBDIGIEPMBB",
@@ -121,28 +121,28 @@ impl ::protobuf::Message for MatchThreeV2LevelEndScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OEIBHLMDJKA)?;
-                },
-                32 => {
+                8 => {
                     self.JNAOKJKFLHL = is.read_uint32()?;
                 },
-                40 => {
-                    self.AFLCNNAJAGB = is.read_uint32()?;
-                },
-                48 => {
+                16 => {
                     self.level_id = is.read_uint32()?;
                 },
-                58 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IEGCHPIHPJN)?;
                 },
-                74 => {
-                    self.DOBNEFKPMPB.push(is.read_message()?);
+                48 => {
+                    self.AFLCNNAJAGB = is.read_uint32()?;
                 },
-                96 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                66 => {
+                    self.DOBNEFKPMPB.push(is.read_message()?);
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OEIBHLMDJKA)?;
+                },
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DBDIGIEPMBB)?;
                 },
                 tag => {
@@ -157,29 +157,29 @@ impl ::protobuf::Message for MatchThreeV2LevelEndScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.JNAOKJKFLHL != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.JNAOKJKFLHL);
-        }
-        if self.AFLCNNAJAGB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.AFLCNNAJAGB);
+            my_size += ::protobuf::rt::uint32_size(1, self.JNAOKJKFLHL);
         }
         if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.level_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.level_id);
         }
         if let Some(v) = self.IEGCHPIHPJN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.AFLCNNAJAGB != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.AFLCNNAJAGB);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
         for value in &self.DOBNEFKPMPB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.DBDIGIEPMBB.as_ref() {
             let len = v.compute_size();
@@ -191,29 +191,29 @@ impl ::protobuf::Message for MatchThreeV2LevelEndScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
         if self.JNAOKJKFLHL != 0 {
-            os.write_uint32(4, self.JNAOKJKFLHL)?;
-        }
-        if self.AFLCNNAJAGB != 0 {
-            os.write_uint32(5, self.AFLCNNAJAGB)?;
+            os.write_uint32(1, self.JNAOKJKFLHL)?;
         }
         if self.level_id != 0 {
-            os.write_uint32(6, self.level_id)?;
+            os.write_uint32(2, self.level_id)?;
         }
         if let Some(v) = self.IEGCHPIHPJN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if self.AFLCNNAJAGB != 0 {
+            os.write_uint32(6, self.AFLCNNAJAGB)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
         }
         for v in &self.DOBNEFKPMPB {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if let Some(v) = self.DBDIGIEPMBB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -232,26 +232,26 @@ impl ::protobuf::Message for MatchThreeV2LevelEndScRsp {
     }
 
     fn clear(&mut self) {
-        self.OEIBHLMDJKA.clear();
         self.JNAOKJKFLHL = 0;
-        self.AFLCNNAJAGB = 0;
         self.level_id = 0;
         self.IEGCHPIHPJN.clear();
-        self.DOBNEFKPMPB.clear();
+        self.AFLCNNAJAGB = 0;
         self.retcode = 0;
+        self.DOBNEFKPMPB.clear();
+        self.OEIBHLMDJKA.clear();
         self.DBDIGIEPMBB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MatchThreeV2LevelEndScRsp {
         static instance: MatchThreeV2LevelEndScRsp = MatchThreeV2LevelEndScRsp {
-            OEIBHLMDJKA: ::protobuf::MessageField::none(),
             JNAOKJKFLHL: 0,
-            AFLCNNAJAGB: 0,
             level_id: 0,
             IEGCHPIHPJN: ::protobuf::MessageField::none(),
-            DOBNEFKPMPB: ::std::vec::Vec::new(),
+            AFLCNNAJAGB: 0,
             retcode: 0,
+            DOBNEFKPMPB: ::std::vec::Vec::new(),
+            OEIBHLMDJKA: ::protobuf::MessageField::none(),
             DBDIGIEPMBB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -279,14 +279,14 @@ impl ::protobuf::reflect::ProtobufValue for MatchThreeV2LevelEndScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fMatchThreeV2LevelEndScRsp.proto\x1a\x11HDKJPKPEJFO.proto\x1a\x0eIt\
     emList.proto\x1a\x11KPCHPLEJCKC.proto\"\xce\x02\n\x19MatchThreeV2LevelEn\
-    dScRsp\x12.\n\x0bOEIBHLMDJKA\x18\x02\x20\x01(\x0b2\x0c.HDKJPKPEJFOR\x0bO\
-    EIBHLMDJKA\x12\x20\n\x0bJNAOKJKFLHL\x18\x04\x20\x01(\rR\x0bJNAOKJKFLHL\
-    \x12\x20\n\x0bAFLCNNAJAGB\x18\x05\x20\x01(\rR\x0bAFLCNNAJAGB\x12\x19\n\
-    \x08level_id\x18\x06\x20\x01(\rR\x07levelId\x12.\n\x0bIEGCHPIHPJN\x18\
-    \x07\x20\x01(\x0b2\x0c.KPCHPLEJCKCR\x0bIEGCHPIHPJN\x12+\n\x0bDOBNEFKPMPB\
-    \x18\t\x20\x03(\x0b2\t.ItemListR\x0bDOBNEFKPMPB\x12\x18\n\x07retcode\x18\
-    \x0c\x20\x01(\rR\x07retcode\x12+\n\x0bDBDIGIEPMBB\x18\r\x20\x01(\x0b2\t.\
-    ItemListR\x0bDBDIGIEPMBBb\x06proto3\
+    dScRsp\x12\x20\n\x0bJNAOKJKFLHL\x18\x01\x20\x01(\rR\x0bJNAOKJKFLHL\x12\
+    \x19\n\x08level_id\x18\x02\x20\x01(\rR\x07levelId\x12.\n\x0bIEGCHPIHPJN\
+    \x18\x03\x20\x01(\x0b2\x0c.KPCHPLEJCKCR\x0bIEGCHPIHPJN\x12\x20\n\x0bAFLC\
+    NNAJAGB\x18\x06\x20\x01(\rR\x0bAFLCNNAJAGB\x12\x18\n\x07retcode\x18\x07\
+    \x20\x01(\rR\x07retcode\x12+\n\x0bDOBNEFKPMPB\x18\x08\x20\x03(\x0b2\t.It\
+    emListR\x0bDOBNEFKPMPB\x12.\n\x0bOEIBHLMDJKA\x18\n\x20\x01(\x0b2\x0c.HDK\
+    JPKPEJFOR\x0bOEIBHLMDJKA\x12+\n\x0bDBDIGIEPMBB\x18\x0b\x20\x01(\x0b2\t.I\
+    temListR\x0bDBDIGIEPMBBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

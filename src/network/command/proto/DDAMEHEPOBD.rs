@@ -28,12 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DDAMEHEPOBD {
     // message fields
-    // @@protoc_insertion_point(field:DDAMEHEPOBD.CKJAKKNOHEK)
-    pub CKJAKKNOHEK: ::std::vec::Vec<super::MBPDIPLJMKN::MBPDIPLJMKN>,
     // @@protoc_insertion_point(field:DDAMEHEPOBD.unique_id)
     pub unique_id: u32,
     // @@protoc_insertion_point(field:DDAMEHEPOBD.pos_index)
     pub pos_index: u32,
+    // @@protoc_insertion_point(field:DDAMEHEPOBD.source)
+    pub source: u32,
+    // @@protoc_insertion_point(field:DDAMEHEPOBD.CKJAKKNOHEK)
+    pub CKJAKKNOHEK: ::std::vec::Vec<super::MBPDIPLJMKN::MBPDIPLJMKN>,
     // @@protoc_insertion_point(field:DDAMEHEPOBD.LCLPEJHEAID)
     pub LCLPEJHEAID: u32,
     // special fields
@@ -53,13 +55,8 @@ impl DDAMEHEPOBD {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CKJAKKNOHEK",
-            |m: &DDAMEHEPOBD| { &m.CKJAKKNOHEK },
-            |m: &mut DDAMEHEPOBD| { &mut m.CKJAKKNOHEK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
             |m: &DDAMEHEPOBD| { &m.unique_id },
@@ -69,6 +66,16 @@ impl DDAMEHEPOBD {
             "pos_index",
             |m: &DDAMEHEPOBD| { &m.pos_index },
             |m: &mut DDAMEHEPOBD| { &mut m.pos_index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "source",
+            |m: &DDAMEHEPOBD| { &m.source },
+            |m: &mut DDAMEHEPOBD| { &mut m.source },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CKJAKKNOHEK",
+            |m: &DDAMEHEPOBD| { &m.CKJAKKNOHEK },
+            |m: &mut DDAMEHEPOBD| { &mut m.CKJAKKNOHEK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LCLPEJHEAID",
@@ -93,16 +100,19 @@ impl ::protobuf::Message for DDAMEHEPOBD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.CKJAKKNOHEK.push(is.read_message()?);
-                },
-                80 => {
+                32 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                96 => {
+                40 => {
                     self.pos_index = is.read_uint32()?;
                 },
-                104 => {
+                64 => {
+                    self.source = is.read_uint32()?;
+                },
+                82 => {
+                    self.CKJAKKNOHEK.push(is.read_message()?);
+                },
+                88 => {
                     self.LCLPEJHEAID = is.read_uint32()?;
                 },
                 tag => {
@@ -117,18 +127,21 @@ impl ::protobuf::Message for DDAMEHEPOBD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.unique_id);
+        }
+        if self.pos_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.pos_index);
+        }
+        if self.source != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.source);
+        }
         for value in &self.CKJAKKNOHEK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.unique_id);
-        }
-        if self.pos_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.pos_index);
-        }
         if self.LCLPEJHEAID != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LCLPEJHEAID);
+            my_size += ::protobuf::rt::uint32_size(11, self.LCLPEJHEAID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +149,20 @@ impl ::protobuf::Message for DDAMEHEPOBD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CKJAKKNOHEK {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         if self.unique_id != 0 {
-            os.write_uint32(10, self.unique_id)?;
+            os.write_uint32(4, self.unique_id)?;
         }
         if self.pos_index != 0 {
-            os.write_uint32(12, self.pos_index)?;
+            os.write_uint32(5, self.pos_index)?;
         }
+        if self.source != 0 {
+            os.write_uint32(8, self.source)?;
+        }
+        for v in &self.CKJAKKNOHEK {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
         if self.LCLPEJHEAID != 0 {
-            os.write_uint32(13, self.LCLPEJHEAID)?;
+            os.write_uint32(11, self.LCLPEJHEAID)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +181,20 @@ impl ::protobuf::Message for DDAMEHEPOBD {
     }
 
     fn clear(&mut self) {
-        self.CKJAKKNOHEK.clear();
         self.unique_id = 0;
         self.pos_index = 0;
+        self.source = 0;
+        self.CKJAKKNOHEK.clear();
         self.LCLPEJHEAID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DDAMEHEPOBD {
         static instance: DDAMEHEPOBD = DDAMEHEPOBD {
-            CKJAKKNOHEK: ::std::vec::Vec::new(),
             unique_id: 0,
             pos_index: 0,
+            source: 0,
+            CKJAKKNOHEK: ::std::vec::Vec::new(),
             LCLPEJHEAID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,11 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for DDAMEHEPOBD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DDAMEHEPOBD.proto\x1a\x11MBPDIPLJMKN.proto\"\x99\x01\n\x0bDDAMEHEP\
-    OBD\x12.\n\x0bCKJAKKNOHEK\x18\x02\x20\x03(\x0b2\x0c.MBPDIPLJMKNR\x0bCKJA\
-    KKNOHEK\x12\x1b\n\tunique_id\x18\n\x20\x01(\rR\x08uniqueId\x12\x1b\n\tpo\
-    s_index\x18\x0c\x20\x01(\rR\x08posIndex\x12\x20\n\x0bLCLPEJHEAID\x18\r\
-    \x20\x01(\rR\x0bLCLPEJHEAIDb\x06proto3\
+    \n\x11DDAMEHEPOBD.proto\x1a\x11MBPDIPLJMKN.proto\"\xb1\x01\n\x0bDDAMEHEP\
+    OBD\x12\x1b\n\tunique_id\x18\x04\x20\x01(\rR\x08uniqueId\x12\x1b\n\tpos_\
+    index\x18\x05\x20\x01(\rR\x08posIndex\x12\x16\n\x06source\x18\x08\x20\
+    \x01(\rR\x06source\x12.\n\x0bCKJAKKNOHEK\x18\n\x20\x03(\x0b2\x0c.MBPDIPL\
+    JMKNR\x0bCKJAKKNOHEK\x12\x20\n\x0bLCLPEJHEAID\x18\x0b\x20\x01(\rR\x0bLCL\
+    PEJHEAIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

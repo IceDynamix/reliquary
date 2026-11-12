@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PFMAAAJFLOA {
     // message fields
-    // @@protoc_insertion_point(field:PFMAAAJFLOA.LOGLBCPNAEL)
-    pub LOGLBCPNAEL: u32,
     // @@protoc_insertion_point(field:PFMAAAJFLOA.LHHJFMMCBAF)
     pub LHHJFMMCBAF: u32,
+    // @@protoc_insertion_point(field:PFMAAAJFLOA.LOGLBCPNAEL)
+    pub LOGLBCPNAEL: u32,
     // message oneof groups
     pub HGEOKHHJAIE: ::std::option::Option<pfmaaajfloa::HGEOKHHJAIE>,
     // special fields
@@ -50,32 +50,7 @@ impl PFMAAAJFLOA {
         ::std::default::Default::default()
     }
 
-    // uint32 FJLCMPAPIGA = 4;
-
-    pub fn FJLCMPAPIGA(&self) -> u32 {
-        match self.HGEOKHHJAIE {
-            ::std::option::Option::Some(pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_FJLCMPAPIGA(&mut self) {
-        self.HGEOKHHJAIE = ::std::option::Option::None;
-    }
-
-    pub fn has_FJLCMPAPIGA(&self) -> bool {
-        match self.HGEOKHHJAIE {
-            ::std::option::Option::Some(pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_FJLCMPAPIGA(&mut self, v: u32) {
-        self.HGEOKHHJAIE = ::std::option::Option::Some(pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(v))
-    }
-
-    // .NKGAIPKINJE EBEMKMGCCGJ = 14;
+    // .NKGAIPKINJE EBEMKMGCCGJ = 8;
 
     pub fn EBEMKMGCCGJ(&self) -> &super::NKGAIPKINJE::NKGAIPKINJE {
         match self.HGEOKHHJAIE {
@@ -124,24 +99,43 @@ impl PFMAAAJFLOA {
         }
     }
 
+    // uint32 FJLCMPAPIGA = 12;
+
+    pub fn FJLCMPAPIGA(&self) -> u32 {
+        match self.HGEOKHHJAIE {
+            ::std::option::Option::Some(pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_FJLCMPAPIGA(&mut self) {
+        self.HGEOKHHJAIE = ::std::option::Option::None;
+    }
+
+    pub fn has_FJLCMPAPIGA(&self) -> bool {
+        match self.HGEOKHHJAIE {
+            ::std::option::Option::Some(pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_FJLCMPAPIGA(&mut self, v: u32) {
+        self.HGEOKHHJAIE = ::std::option::Option::Some(pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(v))
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOGLBCPNAEL",
-            |m: &PFMAAAJFLOA| { &m.LOGLBCPNAEL },
-            |m: &mut PFMAAAJFLOA| { &mut m.LOGLBCPNAEL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LHHJFMMCBAF",
             |m: &PFMAAAJFLOA| { &m.LHHJFMMCBAF },
             |m: &mut PFMAAAJFLOA| { &mut m.LHHJFMMCBAF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "FJLCMPAPIGA",
-            PFMAAAJFLOA::has_FJLCMPAPIGA,
-            PFMAAAJFLOA::FJLCMPAPIGA,
-            PFMAAAJFLOA::set_FJLCMPAPIGA,
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LOGLBCPNAEL",
+            |m: &PFMAAAJFLOA| { &m.LOGLBCPNAEL },
+            |m: &mut PFMAAAJFLOA| { &mut m.LOGLBCPNAEL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NKGAIPKINJE::NKGAIPKINJE>(
             "EBEMKMGCCGJ",
@@ -149,6 +143,12 @@ impl PFMAAAJFLOA {
             PFMAAAJFLOA::EBEMKMGCCGJ,
             PFMAAAJFLOA::mut_EBEMKMGCCGJ,
             PFMAAAJFLOA::set_EBEMKMGCCGJ,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "FJLCMPAPIGA",
+            PFMAAAJFLOA::has_FJLCMPAPIGA,
+            PFMAAAJFLOA::FJLCMPAPIGA,
+            PFMAAAJFLOA::set_FJLCMPAPIGA,
         ));
         oneofs.push(pfmaaajfloa::HGEOKHHJAIE::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PFMAAAJFLOA>(
@@ -169,17 +169,17 @@ impl ::protobuf::Message for PFMAAAJFLOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.LOGLBCPNAEL = is.read_uint32()?;
-                },
-                120 => {
+                16 => {
                     self.LHHJFMMCBAF = is.read_uint32()?;
                 },
-                32 => {
-                    self.HGEOKHHJAIE = ::std::option::Option::Some(pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(is.read_uint32()?));
+                104 => {
+                    self.LOGLBCPNAEL = is.read_uint32()?;
                 },
-                114 => {
+                66 => {
                     self.HGEOKHHJAIE = ::std::option::Option::Some(pfmaaajfloa::HGEOKHHJAIE::EBEMKMGCCGJ(is.read_message()?));
+                },
+                96 => {
+                    self.HGEOKHHJAIE = ::std::option::Option::Some(pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(is.read_uint32()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -193,20 +193,20 @@ impl ::protobuf::Message for PFMAAAJFLOA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LOGLBCPNAEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LOGLBCPNAEL);
-        }
         if self.LHHJFMMCBAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.LHHJFMMCBAF);
+            my_size += ::protobuf::rt::uint32_size(2, self.LHHJFMMCBAF);
+        }
+        if self.LOGLBCPNAEL != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.LOGLBCPNAEL);
         }
         if let ::std::option::Option::Some(ref v) = self.HGEOKHHJAIE {
             match v {
-                &pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(v) => {
-                    my_size += ::protobuf::rt::uint32_size(4, v);
-                },
                 &pfmaaajfloa::HGEOKHHJAIE::EBEMKMGCCGJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(v) => {
+                    my_size += ::protobuf::rt::uint32_size(12, v);
                 },
             };
         }
@@ -216,19 +216,19 @@ impl ::protobuf::Message for PFMAAAJFLOA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LOGLBCPNAEL != 0 {
-            os.write_uint32(1, self.LOGLBCPNAEL)?;
-        }
         if self.LHHJFMMCBAF != 0 {
-            os.write_uint32(15, self.LHHJFMMCBAF)?;
+            os.write_uint32(2, self.LHHJFMMCBAF)?;
+        }
+        if self.LOGLBCPNAEL != 0 {
+            os.write_uint32(13, self.LOGLBCPNAEL)?;
         }
         if let ::std::option::Option::Some(ref v) = self.HGEOKHHJAIE {
             match v {
-                &pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(v) => {
-                    os.write_uint32(4, v)?;
-                },
                 &pfmaaajfloa::HGEOKHHJAIE::EBEMKMGCCGJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                },
+                &pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(v) => {
+                    os.write_uint32(12, v)?;
                 },
             };
         }
@@ -249,8 +249,8 @@ impl ::protobuf::Message for PFMAAAJFLOA {
     }
 
     fn clear(&mut self) {
-        self.LOGLBCPNAEL = 0;
         self.LHHJFMMCBAF = 0;
+        self.LOGLBCPNAEL = 0;
         self.HGEOKHHJAIE = ::std::option::Option::None;
         self.HGEOKHHJAIE = ::std::option::Option::None;
         self.special_fields.clear();
@@ -258,8 +258,8 @@ impl ::protobuf::Message for PFMAAAJFLOA {
 
     fn default_instance() -> &'static PFMAAAJFLOA {
         static instance: PFMAAAJFLOA = PFMAAAJFLOA {
-            LOGLBCPNAEL: 0,
             LHHJFMMCBAF: 0,
+            LOGLBCPNAEL: 0,
             HGEOKHHJAIE: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -291,10 +291,10 @@ pub mod pfmaaajfloa {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:PFMAAAJFLOA.HGEOKHHJAIE)
     pub enum HGEOKHHJAIE {
-        // @@protoc_insertion_point(oneof_field:PFMAAAJFLOA.FJLCMPAPIGA)
-        FJLCMPAPIGA(u32),
         // @@protoc_insertion_point(oneof_field:PFMAAAJFLOA.EBEMKMGCCGJ)
         EBEMKMGCCGJ(super::super::NKGAIPKINJE::NKGAIPKINJE),
+        // @@protoc_insertion_point(oneof_field:PFMAAAJFLOA.FJLCMPAPIGA)
+        FJLCMPAPIGA(u32),
     }
 
     impl ::protobuf::Oneof for HGEOKHHJAIE {
@@ -316,11 +316,11 @@ pub mod pfmaaajfloa {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PFMAAAJFLOA.proto\x1a\x11NKGAIPKINJE.proto\"\xb6\x01\n\x0bPFMAAAJF\
-    LOA\x12\x20\n\x0bLOGLBCPNAEL\x18\x01\x20\x01(\rR\x0bLOGLBCPNAEL\x12\x20\
-    \n\x0bLHHJFMMCBAF\x18\x0f\x20\x01(\rR\x0bLHHJFMMCBAF\x12\"\n\x0bFJLCMPAP\
-    IGA\x18\x04\x20\x01(\rH\0R\x0bFJLCMPAPIGA\x120\n\x0bEBEMKMGCCGJ\x18\x0e\
-    \x20\x01(\x0b2\x0c.NKGAIPKINJEH\0R\x0bEBEMKMGCCGJB\r\n\x0bHGEOKHHJAIEb\
-    \x06proto3\
+    LOA\x12\x20\n\x0bLHHJFMMCBAF\x18\x02\x20\x01(\rR\x0bLHHJFMMCBAF\x12\x20\
+    \n\x0bLOGLBCPNAEL\x18\r\x20\x01(\rR\x0bLOGLBCPNAEL\x120\n\x0bEBEMKMGCCGJ\
+    \x18\x08\x20\x01(\x0b2\x0c.NKGAIPKINJEH\0R\x0bEBEMKMGCCGJ\x12\"\n\x0bFJL\
+    CMPAPIGA\x18\x0c\x20\x01(\rH\0R\x0bFJLCMPAPIGAB\r\n\x0bHGEOKHHJAIEb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

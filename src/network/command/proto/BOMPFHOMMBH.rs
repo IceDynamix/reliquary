@@ -89,10 +89,10 @@ impl ::protobuf::Message for BOMPFHOMMBH {
                 8 => {
                     self.num = is.read_uint32()?;
                 },
-                88 => {
+                16 => {
                     self.MCLLALGABAB = is.read_uint32()?;
                 },
-                112 => {
+                48 => {
                     self.item_id = is.read_uint32()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for BOMPFHOMMBH {
             my_size += ::protobuf::rt::uint32_size(1, self.num);
         }
         if self.MCLLALGABAB != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MCLLALGABAB);
+            my_size += ::protobuf::rt::uint32_size(2, self.MCLLALGABAB);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.item_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,10 +126,10 @@ impl ::protobuf::Message for BOMPFHOMMBH {
             os.write_uint32(1, self.num)?;
         }
         if self.MCLLALGABAB != 0 {
-            os.write_uint32(11, self.MCLLALGABAB)?;
+            os.write_uint32(2, self.MCLLALGABAB)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(14, self.item_id)?;
+            os.write_uint32(6, self.item_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for BOMPFHOMMBH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BOMPFHOMMBH.proto\"Z\n\x0bBOMPFHOMMBH\x12\x10\n\x03num\x18\x01\x20\
-    \x01(\rR\x03num\x12\x20\n\x0bMCLLALGABAB\x18\x0b\x20\x01(\rR\x0bMCLLALGA\
-    BAB\x12\x17\n\x07item_id\x18\x0e\x20\x01(\rR\x06itemIdb\x06proto3\
+    \x01(\rR\x03num\x12\x20\n\x0bMCLLALGABAB\x18\x02\x20\x01(\rR\x0bMCLLALGA\
+    BAB\x12\x17\n\x07item_id\x18\x06\x20\x01(\rR\x06itemIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

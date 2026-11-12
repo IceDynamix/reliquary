@@ -79,7 +79,7 @@ impl ::protobuf::Message for NpcMeetByPerformanceStatus {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                40 => {
                     self.performance_id = is.read_uint32()?;
                 },
                 48 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for NpcMeetByPerformanceStatus {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.performance_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.performance_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.performance_id);
         }
         if self.OKPLPEELPBC != false {
             my_size += 1 + 1;
@@ -110,7 +110,7 @@ impl ::protobuf::Message for NpcMeetByPerformanceStatus {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.performance_id != 0 {
-            os.write_uint32(3, self.performance_id)?;
+            os.write_uint32(5, self.performance_id)?;
         }
         if self.OKPLPEELPBC != false {
             os.write_bool(6, self.OKPLPEELPBC)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for NpcMeetByPerformanceStatus {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20NpcMeetByPerformanceStatus.proto\"e\n\x1aNpcMeetByPerformanceStatu\
-    s\x12%\n\x0eperformance_id\x18\x03\x20\x01(\rR\rperformanceId\x12\x20\n\
+    s\x12%\n\x0eperformance_id\x18\x05\x20\x01(\rR\rperformanceId\x12\x20\n\
     \x0bOKPLPEELPBC\x18\x06\x20\x01(\x08R\x0bOKPLPEELPBCb\x06proto3\
 ";
 

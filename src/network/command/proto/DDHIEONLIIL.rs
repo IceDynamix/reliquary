@@ -30,10 +30,10 @@ pub struct DDHIEONLIIL {
     // message fields
     // @@protoc_insertion_point(field:DDHIEONLIIL.HEMOHFJJMJG)
     pub HEMOHFJJMJG: u64,
-    // @@protoc_insertion_point(field:DDHIEONLIIL.DDKGKOFAGMH)
-    pub DDKGKOFAGMH: bool,
     // @@protoc_insertion_point(field:DDHIEONLIIL.is_taken_reward)
     pub is_taken_reward: bool,
+    // @@protoc_insertion_point(field:DDHIEONLIIL.DDKGKOFAGMH)
+    pub DDKGKOFAGMH: bool,
     // special fields
     // @@protoc_insertion_point(special_field:DDHIEONLIIL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl DDHIEONLIIL {
             |m: &mut DDHIEONLIIL| { &mut m.HEMOHFJJMJG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DDKGKOFAGMH",
-            |m: &DDHIEONLIIL| { &m.DDKGKOFAGMH },
-            |m: &mut DDHIEONLIIL| { &mut m.DDKGKOFAGMH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_taken_reward",
             |m: &DDHIEONLIIL| { &m.is_taken_reward },
             |m: &mut DDHIEONLIIL| { &mut m.is_taken_reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DDKGKOFAGMH",
+            |m: &DDHIEONLIIL| { &m.DDKGKOFAGMH },
+            |m: &mut DDHIEONLIIL| { &mut m.DDKGKOFAGMH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DDHIEONLIIL>(
             "DDHIEONLIIL",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for DDHIEONLIIL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.HEMOHFJJMJG = is.read_uint64()?;
-                },
                 16 => {
-                    self.DDKGKOFAGMH = is.read_bool()?;
+                    self.HEMOHFJJMJG = is.read_uint64()?;
                 },
                 40 => {
                     self.is_taken_reward = is.read_bool()?;
+                },
+                72 => {
+                    self.DDKGKOFAGMH = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,12 +108,12 @@ impl ::protobuf::Message for DDHIEONLIIL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HEMOHFJJMJG != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.HEMOHFJJMJG);
-        }
-        if self.DDKGKOFAGMH != false {
-            my_size += 1 + 1;
+            my_size += ::protobuf::rt::uint64_size(2, self.HEMOHFJJMJG);
         }
         if self.is_taken_reward != false {
+            my_size += 1 + 1;
+        }
+        if self.DDKGKOFAGMH != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -123,13 +123,13 @@ impl ::protobuf::Message for DDHIEONLIIL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HEMOHFJJMJG != 0 {
-            os.write_uint64(1, self.HEMOHFJJMJG)?;
-        }
-        if self.DDKGKOFAGMH != false {
-            os.write_bool(2, self.DDKGKOFAGMH)?;
+            os.write_uint64(2, self.HEMOHFJJMJG)?;
         }
         if self.is_taken_reward != false {
             os.write_bool(5, self.is_taken_reward)?;
+        }
+        if self.DDKGKOFAGMH != false {
+            os.write_bool(9, self.DDKGKOFAGMH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for DDHIEONLIIL {
 
     fn clear(&mut self) {
         self.HEMOHFJJMJG = 0;
-        self.DDKGKOFAGMH = false;
         self.is_taken_reward = false;
+        self.DDKGKOFAGMH = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DDHIEONLIIL {
         static instance: DDHIEONLIIL = DDHIEONLIIL {
             HEMOHFJJMJG: 0,
-            DDKGKOFAGMH: false,
             is_taken_reward: false,
+            DDKGKOFAGMH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for DDHIEONLIIL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DDHIEONLIIL.proto\"y\n\x0bDDHIEONLIIL\x12\x20\n\x0bHEMOHFJJMJG\x18\
-    \x01\x20\x01(\x04R\x0bHEMOHFJJMJG\x12\x20\n\x0bDDKGKOFAGMH\x18\x02\x20\
-    \x01(\x08R\x0bDDKGKOFAGMH\x12&\n\x0fis_taken_reward\x18\x05\x20\x01(\x08\
-    R\risTakenRewardb\x06proto3\
+    \x02\x20\x01(\x04R\x0bHEMOHFJJMJG\x12&\n\x0fis_taken_reward\x18\x05\x20\
+    \x01(\x08R\risTakenReward\x12\x20\n\x0bDDKGKOFAGMH\x18\t\x20\x01(\x08R\
+    \x0bDDKGKOFAGMHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

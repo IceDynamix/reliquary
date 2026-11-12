@@ -34,6 +34,8 @@ pub struct ALIMNHEENPP {
     pub IEBNOGOOEMO: ::std::vec::Vec<super::BCCONKJHDJL::BCCONKJHDJL>,
     // @@protoc_insertion_point(field:ALIMNHEENPP.ININNFJHJCM)
     pub ININNFJHJCM: u32,
+    // @@protoc_insertion_point(field:ALIMNHEENPP.LNGPEJNADAH)
+    pub LNGPEJNADAH: ::std::vec::Vec<super::BDNAPDDNGFL::BDNAPDDNGFL>,
     // special fields
     // @@protoc_insertion_point(special_field:ALIMNHEENPP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,7 +53,7 @@ impl ALIMNHEENPP {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "role_star",
@@ -67,6 +69,11 @@ impl ALIMNHEENPP {
             "ININNFJHJCM",
             |m: &ALIMNHEENPP| { &m.ININNFJHJCM },
             |m: &mut ALIMNHEENPP| { &mut m.ININNFJHJCM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LNGPEJNADAH",
+            |m: &ALIMNHEENPP| { &m.LNGPEJNADAH },
+            |m: &mut ALIMNHEENPP| { &mut m.LNGPEJNADAH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ALIMNHEENPP>(
             "ALIMNHEENPP",
@@ -95,6 +102,9 @@ impl ::protobuf::Message for ALIMNHEENPP {
                 24 => {
                     self.ININNFJHJCM = is.read_uint32()?;
                 },
+                34 => {
+                    self.LNGPEJNADAH.push(is.read_message()?);
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -117,6 +127,10 @@ impl ::protobuf::Message for ALIMNHEENPP {
         if self.ININNFJHJCM != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.ININNFJHJCM);
         }
+        for value in &self.LNGPEJNADAH {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -132,6 +146,9 @@ impl ::protobuf::Message for ALIMNHEENPP {
         if self.ININNFJHJCM != 0 {
             os.write_uint32(3, self.ININNFJHJCM)?;
         }
+        for v in &self.LNGPEJNADAH {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -152,6 +169,7 @@ impl ::protobuf::Message for ALIMNHEENPP {
         self.role_star = 0;
         self.IEBNOGOOEMO.clear();
         self.ININNFJHJCM = 0;
+        self.LNGPEJNADAH.clear();
         self.special_fields.clear();
     }
 
@@ -160,6 +178,7 @@ impl ::protobuf::Message for ALIMNHEENPP {
             role_star: 0,
             IEBNOGOOEMO: ::std::vec::Vec::new(),
             ININNFJHJCM: 0,
+            LNGPEJNADAH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for ALIMNHEENPP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ALIMNHEENPP.proto\x1a\x11BCCONKJHDJL.proto\"|\n\x0bALIMNHEENPP\x12\
-    \x1b\n\trole_star\x18\x01\x20\x01(\rR\x08roleStar\x12.\n\x0bIEBNOGOOEMO\
-    \x18\x02\x20\x03(\x0b2\x0c.BCCONKJHDJLR\x0bIEBNOGOOEMO\x12\x20\n\x0bININ\
-    NFJHJCM\x18\x03\x20\x01(\rR\x0bININNFJHJCMb\x06proto3\
+    \n\x11ALIMNHEENPP.proto\x1a\x11BCCONKJHDJL.proto\x1a\x11BDNAPDDNGFL.prot\
+    o\"\xac\x01\n\x0bALIMNHEENPP\x12\x1b\n\trole_star\x18\x01\x20\x01(\rR\
+    \x08roleStar\x12.\n\x0bIEBNOGOOEMO\x18\x02\x20\x03(\x0b2\x0c.BCCONKJHDJL\
+    R\x0bIEBNOGOOEMO\x12\x20\n\x0bININNFJHJCM\x18\x03\x20\x01(\rR\x0bININNFJ\
+    HJCM\x12.\n\x0bLNGPEJNADAH\x18\x04\x20\x03(\x0b2\x0c.BDNAPDDNGFLR\x0bLNG\
+    PEJNADAHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -204,8 +225,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
+            let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::BCCONKJHDJL::file_descriptor().clone());
+            deps.push(super::BDNAPDDNGFL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ALIMNHEENPP::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

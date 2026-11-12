@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HKOEAOPNEAC {
     // message fields
-    // @@protoc_insertion_point(field:HKOEAOPNEAC.CEIIGJEOIAD)
-    pub CEIIGJEOIAD: bool,
     // @@protoc_insertion_point(field:HKOEAOPNEAC.GPNJGMEPMMD)
     pub GPNJGMEPMMD: u32,
-    // @@protoc_insertion_point(field:HKOEAOPNEAC.maze_group_list)
-    pub maze_group_list: ::std::vec::Vec<super::BHPBJOMBCAD::BHPBJOMBCAD>,
-    // @@protoc_insertion_point(field:HKOEAOPNEAC.KMNDBEPFMGN)
-    pub KMNDBEPFMGN: u32,
-    // @@protoc_insertion_point(field:HKOEAOPNEAC.JAEDKHMMPIH)
-    pub JAEDKHMMPIH: u32,
     // @@protoc_insertion_point(field:HKOEAOPNEAC.CANJGJIDKHK)
     pub CANJGJIDKHK: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:HKOEAOPNEAC.DGGCFDKJDPO)
     pub DGGCFDKJDPO: u32,
+    // @@protoc_insertion_point(field:HKOEAOPNEAC.maze_group_list)
+    pub maze_group_list: ::std::vec::Vec<super::BHPBJOMBCAD::BHPBJOMBCAD>,
+    // @@protoc_insertion_point(field:HKOEAOPNEAC.KMNDBEPFMGN)
+    pub KMNDBEPFMGN: u32,
+    // @@protoc_insertion_point(field:HKOEAOPNEAC.CEIIGJEOIAD)
+    pub CEIIGJEOIAD: bool,
+    // @@protoc_insertion_point(field:HKOEAOPNEAC.JAEDKHMMPIH)
+    pub JAEDKHMMPIH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HKOEAOPNEAC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,14 +62,19 @@ impl HKOEAOPNEAC {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CEIIGJEOIAD",
-            |m: &HKOEAOPNEAC| { &m.CEIIGJEOIAD },
-            |m: &mut HKOEAOPNEAC| { &mut m.CEIIGJEOIAD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GPNJGMEPMMD",
             |m: &HKOEAOPNEAC| { &m.GPNJGMEPMMD },
             |m: &mut HKOEAOPNEAC| { &mut m.GPNJGMEPMMD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "CANJGJIDKHK",
+            |m: &HKOEAOPNEAC| { &m.CANJGJIDKHK },
+            |m: &mut HKOEAOPNEAC| { &mut m.CANJGJIDKHK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DGGCFDKJDPO",
+            |m: &HKOEAOPNEAC| { &m.DGGCFDKJDPO },
+            |m: &mut HKOEAOPNEAC| { &mut m.DGGCFDKJDPO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "maze_group_list",
@@ -82,19 +87,14 @@ impl HKOEAOPNEAC {
             |m: &mut HKOEAOPNEAC| { &mut m.KMNDBEPFMGN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CEIIGJEOIAD",
+            |m: &HKOEAOPNEAC| { &m.CEIIGJEOIAD },
+            |m: &mut HKOEAOPNEAC| { &mut m.CEIIGJEOIAD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JAEDKHMMPIH",
             |m: &HKOEAOPNEAC| { &m.JAEDKHMMPIH },
             |m: &mut HKOEAOPNEAC| { &mut m.JAEDKHMMPIH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "CANJGJIDKHK",
-            |m: &HKOEAOPNEAC| { &m.CANJGJIDKHK },
-            |m: &mut HKOEAOPNEAC| { &mut m.CANJGJIDKHK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGGCFDKJDPO",
-            |m: &HKOEAOPNEAC| { &m.DGGCFDKJDPO },
-            |m: &mut HKOEAOPNEAC| { &mut m.DGGCFDKJDPO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HKOEAOPNEAC>(
             "HKOEAOPNEAC",
@@ -114,11 +114,14 @@ impl ::protobuf::Message for HKOEAOPNEAC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.CEIIGJEOIAD = is.read_bool()?;
-                },
-                32 => {
+                8 => {
                     self.GPNJGMEPMMD = is.read_uint32()?;
+                },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CANJGJIDKHK)?;
+                },
+                24 => {
+                    self.DGGCFDKJDPO = is.read_uint32()?;
                 },
                 42 => {
                     self.maze_group_list.push(is.read_message()?);
@@ -126,14 +129,11 @@ impl ::protobuf::Message for HKOEAOPNEAC {
                 48 => {
                     self.KMNDBEPFMGN = is.read_uint32()?;
                 },
-                64 => {
-                    self.JAEDKHMMPIH = is.read_uint32()?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CANJGJIDKHK)?;
+                80 => {
+                    self.CEIIGJEOIAD = is.read_bool()?;
                 },
                 96 => {
-                    self.DGGCFDKJDPO = is.read_uint32()?;
+                    self.JAEDKHMMPIH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,11 +147,15 @@ impl ::protobuf::Message for HKOEAOPNEAC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CEIIGJEOIAD != false {
-            my_size += 1 + 1;
-        }
         if self.GPNJGMEPMMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GPNJGMEPMMD);
+            my_size += ::protobuf::rt::uint32_size(1, self.GPNJGMEPMMD);
+        }
+        if let Some(v) = self.CANJGJIDKHK.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.DGGCFDKJDPO != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.DGGCFDKJDPO);
         }
         for value in &self.maze_group_list {
             let len = value.compute_size();
@@ -160,15 +164,11 @@ impl ::protobuf::Message for HKOEAOPNEAC {
         if self.KMNDBEPFMGN != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.KMNDBEPFMGN);
         }
+        if self.CEIIGJEOIAD != false {
+            my_size += 1 + 1;
+        }
         if self.JAEDKHMMPIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.JAEDKHMMPIH);
-        }
-        if let Some(v) = self.CANJGJIDKHK.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.DGGCFDKJDPO != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.DGGCFDKJDPO);
+            my_size += ::protobuf::rt::uint32_size(12, self.JAEDKHMMPIH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -176,11 +176,14 @@ impl ::protobuf::Message for HKOEAOPNEAC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CEIIGJEOIAD != false {
-            os.write_bool(3, self.CEIIGJEOIAD)?;
-        }
         if self.GPNJGMEPMMD != 0 {
-            os.write_uint32(4, self.GPNJGMEPMMD)?;
+            os.write_uint32(1, self.GPNJGMEPMMD)?;
+        }
+        if let Some(v) = self.CANJGJIDKHK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if self.DGGCFDKJDPO != 0 {
+            os.write_uint32(3, self.DGGCFDKJDPO)?;
         }
         for v in &self.maze_group_list {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
@@ -188,14 +191,11 @@ impl ::protobuf::Message for HKOEAOPNEAC {
         if self.KMNDBEPFMGN != 0 {
             os.write_uint32(6, self.KMNDBEPFMGN)?;
         }
+        if self.CEIIGJEOIAD != false {
+            os.write_bool(10, self.CEIIGJEOIAD)?;
+        }
         if self.JAEDKHMMPIH != 0 {
-            os.write_uint32(8, self.JAEDKHMMPIH)?;
-        }
-        if let Some(v) = self.CANJGJIDKHK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if self.DGGCFDKJDPO != 0 {
-            os.write_uint32(12, self.DGGCFDKJDPO)?;
+            os.write_uint32(12, self.JAEDKHMMPIH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -214,25 +214,25 @@ impl ::protobuf::Message for HKOEAOPNEAC {
     }
 
     fn clear(&mut self) {
-        self.CEIIGJEOIAD = false;
         self.GPNJGMEPMMD = 0;
-        self.maze_group_list.clear();
-        self.KMNDBEPFMGN = 0;
-        self.JAEDKHMMPIH = 0;
         self.CANJGJIDKHK.clear();
         self.DGGCFDKJDPO = 0;
+        self.maze_group_list.clear();
+        self.KMNDBEPFMGN = 0;
+        self.CEIIGJEOIAD = false;
+        self.JAEDKHMMPIH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HKOEAOPNEAC {
         static instance: HKOEAOPNEAC = HKOEAOPNEAC {
-            CEIIGJEOIAD: false,
             GPNJGMEPMMD: 0,
-            maze_group_list: ::std::vec::Vec::new(),
-            KMNDBEPFMGN: 0,
-            JAEDKHMMPIH: 0,
             CANJGJIDKHK: ::protobuf::MessageField::none(),
             DGGCFDKJDPO: 0,
+            maze_group_list: ::std::vec::Vec::new(),
+            KMNDBEPFMGN: 0,
+            CEIIGJEOIAD: false,
+            JAEDKHMMPIH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -258,13 +258,13 @@ impl ::protobuf::reflect::ProtobufValue for HKOEAOPNEAC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HKOEAOPNEAC.proto\x1a\x11BHPBJOMBCAD.proto\x1a\x12ItemCostData.pro\
-    to\"\x9e\x02\n\x0bHKOEAOPNEAC\x12\x20\n\x0bCEIIGJEOIAD\x18\x03\x20\x01(\
-    \x08R\x0bCEIIGJEOIAD\x12\x20\n\x0bGPNJGMEPMMD\x18\x04\x20\x01(\rR\x0bGPN\
-    JGMEPMMD\x124\n\x0fmaze_group_list\x18\x05\x20\x03(\x0b2\x0c.BHPBJOMBCAD\
-    R\rmazeGroupList\x12\x20\n\x0bKMNDBEPFMGN\x18\x06\x20\x01(\rR\x0bKMNDBEP\
-    FMGN\x12\x20\n\x0bJAEDKHMMPIH\x18\x08\x20\x01(\rR\x0bJAEDKHMMPIH\x12/\n\
-    \x0bCANJGJIDKHK\x18\n\x20\x01(\x0b2\r.ItemCostDataR\x0bCANJGJIDKHK\x12\
-    \x20\n\x0bDGGCFDKJDPO\x18\x0c\x20\x01(\rR\x0bDGGCFDKJDPOb\x06proto3\
+    to\"\x9e\x02\n\x0bHKOEAOPNEAC\x12\x20\n\x0bGPNJGMEPMMD\x18\x01\x20\x01(\
+    \rR\x0bGPNJGMEPMMD\x12/\n\x0bCANJGJIDKHK\x18\x02\x20\x01(\x0b2\r.ItemCos\
+    tDataR\x0bCANJGJIDKHK\x12\x20\n\x0bDGGCFDKJDPO\x18\x03\x20\x01(\rR\x0bDG\
+    GCFDKJDPO\x124\n\x0fmaze_group_list\x18\x05\x20\x03(\x0b2\x0c.BHPBJOMBCA\
+    DR\rmazeGroupList\x12\x20\n\x0bKMNDBEPFMGN\x18\x06\x20\x01(\rR\x0bKMNDBE\
+    PFMGN\x12\x20\n\x0bCEIIGJEOIAD\x18\n\x20\x01(\x08R\x0bCEIIGJEOIAD\x12\
+    \x20\n\x0bJAEDKHMMPIH\x18\x0c\x20\x01(\rR\x0bJAEDKHMMPIHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

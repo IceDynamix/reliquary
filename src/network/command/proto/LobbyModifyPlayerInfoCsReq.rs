@@ -86,10 +86,10 @@ impl ::protobuf::Message for LobbyModifyPlayerInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JIDKDPPPDPF)?;
                 },
-                96 => {
+                72 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
                 112 => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for LobbyModifyPlayerInfoCsReq {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::LobbyModifyType::LobbyModifyType::LobbyModifyType_None) {
-            my_size += ::protobuf::rt::int32_size(12, self.type_.value());
+            my_size += ::protobuf::rt::int32_size(9, self.type_.value());
         }
         if self.GMGJFJCDGGN != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.GMGJFJCDGGN);
@@ -124,10 +124,10 @@ impl ::protobuf::Message for LobbyModifyPlayerInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.JIDKDPPPDPF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::LobbyModifyType::LobbyModifyType::LobbyModifyType_None) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         if self.GMGJFJCDGGN != 0 {
             os.write_uint32(14, self.GMGJFJCDGGN)?;
@@ -186,8 +186,8 @@ impl ::protobuf::reflect::ProtobufValue for LobbyModifyPlayerInfoCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20LobbyModifyPlayerInfoCsReq.proto\x1a\x16LobbyGameExtInfo.proto\x1a\
     \x15LobbyModifyType.proto\"\x99\x01\n\x1aLobbyModifyPlayerInfoCsReq\x123\
-    \n\x0bJIDKDPPPDPF\x18\n\x20\x01(\x0b2\x11.LobbyGameExtInfoR\x0bJIDKDPPPD\
-    PF\x12$\n\x04type\x18\x0c\x20\x01(\x0e2\x10.LobbyModifyTypeR\x04type\x12\
+    \n\x0bJIDKDPPPDPF\x18\x05\x20\x01(\x0b2\x11.LobbyGameExtInfoR\x0bJIDKDPP\
+    PDPF\x12$\n\x04type\x18\t\x20\x01(\x0e2\x10.LobbyModifyTypeR\x04type\x12\
     \x20\n\x0bGMGJFJCDGGN\x18\x0e\x20\x01(\rR\x0bGMGJFJCDGGNb\x06proto3\
 ";
 

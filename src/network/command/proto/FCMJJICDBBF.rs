@@ -30,13 +30,13 @@ pub enum FCMJJICDBBF {
     // @@protoc_insertion_point(enum_value:FCMJJICDBBF.FCMJJICDBBF_NLCDGIPGFDJ)
     FCMJJICDBBF_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:FCMJJICDBBF.FCMJJICDBBF_ALKBIGLEJNE)
-    FCMJJICDBBF_ALKBIGLEJNE = 9490,
-    // @@protoc_insertion_point(enum_value:FCMJJICDBBF.FCMJJICDBBF_FOBJAPGIBBA)
-    FCMJJICDBBF_FOBJAPGIBBA = 9488,
-    // @@protoc_insertion_point(enum_value:FCMJJICDBBF.FCMJJICDBBF_DHEGHHEKKIA)
-    FCMJJICDBBF_DHEGHHEKKIA = 9496,
+    FCMJJICDBBF_ALKBIGLEJNE = 9495,
     // @@protoc_insertion_point(enum_value:FCMJJICDBBF.FCMJJICDBBF_FFLBBFNFNNH)
-    FCMJJICDBBF_FFLBBFNFNNH = 9497,
+    FCMJJICDBBF_FFLBBFNFNNH = 9484,
+    // @@protoc_insertion_point(enum_value:FCMJJICDBBF.FCMJJICDBBF_DHEGHHEKKIA)
+    FCMJJICDBBF_DHEGHHEKKIA = 9488,
+    // @@protoc_insertion_point(enum_value:FCMJJICDBBF.FCMJJICDBBF_FOBJAPGIBBA)
+    FCMJJICDBBF_FOBJAPGIBBA = 9500,
 }
 
 impl ::protobuf::Enum for FCMJJICDBBF {
@@ -49,10 +49,10 @@ impl ::protobuf::Enum for FCMJJICDBBF {
     fn from_i32(value: i32) -> ::std::option::Option<FCMJJICDBBF> {
         match value {
             0 => ::std::option::Option::Some(FCMJJICDBBF::FCMJJICDBBF_NLCDGIPGFDJ),
-            9490 => ::std::option::Option::Some(FCMJJICDBBF::FCMJJICDBBF_ALKBIGLEJNE),
-            9488 => ::std::option::Option::Some(FCMJJICDBBF::FCMJJICDBBF_FOBJAPGIBBA),
-            9496 => ::std::option::Option::Some(FCMJJICDBBF::FCMJJICDBBF_DHEGHHEKKIA),
-            9497 => ::std::option::Option::Some(FCMJJICDBBF::FCMJJICDBBF_FFLBBFNFNNH),
+            9495 => ::std::option::Option::Some(FCMJJICDBBF::FCMJJICDBBF_ALKBIGLEJNE),
+            9484 => ::std::option::Option::Some(FCMJJICDBBF::FCMJJICDBBF_FFLBBFNFNNH),
+            9488 => ::std::option::Option::Some(FCMJJICDBBF::FCMJJICDBBF_DHEGHHEKKIA),
+            9500 => ::std::option::Option::Some(FCMJJICDBBF::FCMJJICDBBF_FOBJAPGIBBA),
             _ => ::std::option::Option::None
         }
     }
@@ -61,9 +61,9 @@ impl ::protobuf::Enum for FCMJJICDBBF {
         match str {
             "FCMJJICDBBF_NLCDGIPGFDJ" => ::std::option::Option::Some(FCMJJICDBBF::FCMJJICDBBF_NLCDGIPGFDJ),
             "FCMJJICDBBF_ALKBIGLEJNE" => ::std::option::Option::Some(FCMJJICDBBF::FCMJJICDBBF_ALKBIGLEJNE),
-            "FCMJJICDBBF_FOBJAPGIBBA" => ::std::option::Option::Some(FCMJJICDBBF::FCMJJICDBBF_FOBJAPGIBBA),
-            "FCMJJICDBBF_DHEGHHEKKIA" => ::std::option::Option::Some(FCMJJICDBBF::FCMJJICDBBF_DHEGHHEKKIA),
             "FCMJJICDBBF_FFLBBFNFNNH" => ::std::option::Option::Some(FCMJJICDBBF::FCMJJICDBBF_FFLBBFNFNNH),
+            "FCMJJICDBBF_DHEGHHEKKIA" => ::std::option::Option::Some(FCMJJICDBBF::FCMJJICDBBF_DHEGHHEKKIA),
+            "FCMJJICDBBF_FOBJAPGIBBA" => ::std::option::Option::Some(FCMJJICDBBF::FCMJJICDBBF_FOBJAPGIBBA),
             _ => ::std::option::Option::None
         }
     }
@@ -71,9 +71,9 @@ impl ::protobuf::Enum for FCMJJICDBBF {
     const VALUES: &'static [FCMJJICDBBF] = &[
         FCMJJICDBBF::FCMJJICDBBF_NLCDGIPGFDJ,
         FCMJJICDBBF::FCMJJICDBBF_ALKBIGLEJNE,
-        FCMJJICDBBF::FCMJJICDBBF_FOBJAPGIBBA,
-        FCMJJICDBBF::FCMJJICDBBF_DHEGHHEKKIA,
         FCMJJICDBBF::FCMJJICDBBF_FFLBBFNFNNH,
+        FCMJJICDBBF::FCMJJICDBBF_DHEGHHEKKIA,
+        FCMJJICDBBF::FCMJJICDBBF_FOBJAPGIBBA,
     ];
 }
 
@@ -87,9 +87,9 @@ impl ::protobuf::EnumFull for FCMJJICDBBF {
         let index = match self {
             FCMJJICDBBF::FCMJJICDBBF_NLCDGIPGFDJ => 0,
             FCMJJICDBBF::FCMJJICDBBF_ALKBIGLEJNE => 1,
-            FCMJJICDBBF::FCMJJICDBBF_FOBJAPGIBBA => 2,
+            FCMJJICDBBF::FCMJJICDBBF_FFLBBFNFNNH => 2,
             FCMJJICDBBF::FCMJJICDBBF_DHEGHHEKKIA => 3,
-            FCMJJICDBBF::FCMJJICDBBF_FFLBBFNFNNH => 4,
+            FCMJJICDBBF::FCMJJICDBBF_FOBJAPGIBBA => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,9 +109,9 @@ impl FCMJJICDBBF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FCMJJICDBBF.proto*\xa2\x01\n\x0bFCMJJICDBBF\x12\x1b\n\x17FCMJJICDB\
-    BF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17FCMJJICDBBF_ALKBIGLEJNE\x10\x92J\x12\
-    \x1c\n\x17FCMJJICDBBF_FOBJAPGIBBA\x10\x90J\x12\x1c\n\x17FCMJJICDBBF_DHEG\
-    HHEKKIA\x10\x98J\x12\x1c\n\x17FCMJJICDBBF_FFLBBFNFNNH\x10\x99Jb\x06proto\
+    BF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17FCMJJICDBBF_ALKBIGLEJNE\x10\x97J\x12\
+    \x1c\n\x17FCMJJICDBBF_FFLBBFNFNNH\x10\x8cJ\x12\x1c\n\x17FCMJJICDBBF_DHEG\
+    HHEKKIA\x10\x90J\x12\x1c\n\x17FCMJJICDBBF_FOBJAPGIBBA\x10\x9cJb\x06proto\
     3\
 ";
 

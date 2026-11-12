@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FateRinStartHouguMapFightCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FateRinStartHouguMapFightCsReq.JBIFGIHHMNO)
-    pub JBIFGIHHMNO: bool,
     // @@protoc_insertion_point(field:FateRinStartHouguMapFightCsReq.CCOOCEEAKFI)
     pub CCOOCEEAKFI: u32,
+    // @@protoc_insertion_point(field:FateRinStartHouguMapFightCsReq.JBIFGIHHMNO)
+    pub JBIFGIHHMNO: bool,
     // special fields
     // @@protoc_insertion_point(special_field:FateRinStartHouguMapFightCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FateRinStartHouguMapFightCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JBIFGIHHMNO",
-            |m: &FateRinStartHouguMapFightCsReq| { &m.JBIFGIHHMNO },
-            |m: &mut FateRinStartHouguMapFightCsReq| { &mut m.JBIFGIHHMNO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CCOOCEEAKFI",
             |m: &FateRinStartHouguMapFightCsReq| { &m.CCOOCEEAKFI },
             |m: &mut FateRinStartHouguMapFightCsReq| { &mut m.CCOOCEEAKFI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JBIFGIHHMNO",
+            |m: &FateRinStartHouguMapFightCsReq| { &m.JBIFGIHHMNO },
+            |m: &mut FateRinStartHouguMapFightCsReq| { &mut m.JBIFGIHHMNO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FateRinStartHouguMapFightCsReq>(
             "FateRinStartHouguMapFightCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FateRinStartHouguMapFightCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.JBIFGIHHMNO = is.read_bool()?;
-                },
-                112 => {
+                16 => {
                     self.CCOOCEEAKFI = is.read_uint32()?;
+                },
+                56 => {
+                    self.JBIFGIHHMNO = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FateRinStartHouguMapFightCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.CCOOCEEAKFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.CCOOCEEAKFI);
+        }
         if self.JBIFGIHHMNO != false {
             my_size += 1 + 1;
-        }
-        if self.CCOOCEEAKFI != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CCOOCEEAKFI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FateRinStartHouguMapFightCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JBIFGIHHMNO != false {
-            os.write_bool(4, self.JBIFGIHHMNO)?;
-        }
         if self.CCOOCEEAKFI != 0 {
-            os.write_uint32(14, self.CCOOCEEAKFI)?;
+            os.write_uint32(2, self.CCOOCEEAKFI)?;
+        }
+        if self.JBIFGIHHMNO != false {
+            os.write_bool(7, self.JBIFGIHHMNO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FateRinStartHouguMapFightCsReq {
     }
 
     fn clear(&mut self) {
-        self.JBIFGIHHMNO = false;
         self.CCOOCEEAKFI = 0;
+        self.JBIFGIHHMNO = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FateRinStartHouguMapFightCsReq {
         static instance: FateRinStartHouguMapFightCsReq = FateRinStartHouguMapFightCsReq {
-            JBIFGIHHMNO: false,
             CCOOCEEAKFI: 0,
+            JBIFGIHHMNO: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FateRinStartHouguMapFightCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$FateRinStartHouguMapFightCsReq.proto\"d\n\x1eFateRinStartHouguMapFigh\
-    tCsReq\x12\x20\n\x0bJBIFGIHHMNO\x18\x04\x20\x01(\x08R\x0bJBIFGIHHMNO\x12\
-    \x20\n\x0bCCOOCEEAKFI\x18\x0e\x20\x01(\rR\x0bCCOOCEEAKFIb\x06proto3\
+    tCsReq\x12\x20\n\x0bCCOOCEEAKFI\x18\x02\x20\x01(\rR\x0bCCOOCEEAKFI\x12\
+    \x20\n\x0bJBIFGIHHMNO\x18\x07\x20\x01(\x08R\x0bJBIFGIHHMNOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

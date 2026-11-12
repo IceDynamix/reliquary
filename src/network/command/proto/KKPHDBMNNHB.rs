@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KKPHDBMNNHB {
     // message fields
-    // @@protoc_insertion_point(field:KKPHDBMNNHB.IBGMBIILIPB)
-    pub IBGMBIILIPB: ::std::vec::Vec<super::HDLCAPDIKJI::HDLCAPDIKJI>,
-    // @@protoc_insertion_point(field:KKPHDBMNNHB.MNHPDBEDJLB)
-    pub MNHPDBEDJLB: u32,
-    // @@protoc_insertion_point(field:KKPHDBMNNHB.IKOKEPJGHAF)
-    pub IKOKEPJGHAF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:KKPHDBMNNHB.CEDKBKPCCDJ)
-    pub CEDKBKPCCDJ: u64,
-    // @@protoc_insertion_point(field:KKPHDBMNNHB.is_win)
-    pub is_win: bool,
-    // @@protoc_insertion_point(field:KKPHDBMNNHB.IDIPBEPCIFG)
-    pub IDIPBEPCIFG: u32,
     // @@protoc_insertion_point(field:KKPHDBMNNHB.stage_id)
     pub stage_id: u32,
+    // @@protoc_insertion_point(field:KKPHDBMNNHB.is_win)
+    pub is_win: bool,
     // @@protoc_insertion_point(field:KKPHDBMNNHB.PBNNCINCGGC)
     pub PBNNCINCGGC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:KKPHDBMNNHB.IKOKEPJGHAF)
+    pub IKOKEPJGHAF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:KKPHDBMNNHB.IBGMBIILIPB)
+    pub IBGMBIILIPB: ::std::vec::Vec<super::HDLCAPDIKJI::HDLCAPDIKJI>,
+    // @@protoc_insertion_point(field:KKPHDBMNNHB.IDIPBEPCIFG)
+    pub IDIPBEPCIFG: u32,
+    // @@protoc_insertion_point(field:KKPHDBMNNHB.MNHPDBEDJLB)
+    pub MNHPDBEDJLB: u32,
+    // @@protoc_insertion_point(field:KKPHDBMNNHB.CEDKBKPCCDJ)
+    pub CEDKBKPCCDJ: u64,
     // special fields
     // @@protoc_insertion_point(special_field:KKPHDBMNNHB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,30 +63,30 @@ impl KKPHDBMNNHB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IBGMBIILIPB",
-            |m: &KKPHDBMNNHB| { &m.IBGMBIILIPB },
-            |m: &mut KKPHDBMNNHB| { &mut m.IBGMBIILIPB },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "stage_id",
+            |m: &KKPHDBMNNHB| { &m.stage_id },
+            |m: &mut KKPHDBMNNHB| { &mut m.stage_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MNHPDBEDJLB",
-            |m: &KKPHDBMNNHB| { &m.MNHPDBEDJLB },
-            |m: &mut KKPHDBMNNHB| { &mut m.MNHPDBEDJLB },
+            "is_win",
+            |m: &KKPHDBMNNHB| { &m.is_win },
+            |m: &mut KKPHDBMNNHB| { &mut m.is_win },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PBNNCINCGGC",
+            |m: &KKPHDBMNNHB| { &m.PBNNCINCGGC },
+            |m: &mut KKPHDBMNNHB| { &mut m.PBNNCINCGGC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IKOKEPJGHAF",
             |m: &KKPHDBMNNHB| { &m.IKOKEPJGHAF },
             |m: &mut KKPHDBMNNHB| { &mut m.IKOKEPJGHAF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CEDKBKPCCDJ",
-            |m: &KKPHDBMNNHB| { &m.CEDKBKPCCDJ },
-            |m: &mut KKPHDBMNNHB| { &mut m.CEDKBKPCCDJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_win",
-            |m: &KKPHDBMNNHB| { &m.is_win },
-            |m: &mut KKPHDBMNNHB| { &mut m.is_win },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IBGMBIILIPB",
+            |m: &KKPHDBMNNHB| { &m.IBGMBIILIPB },
+            |m: &mut KKPHDBMNNHB| { &mut m.IBGMBIILIPB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IDIPBEPCIFG",
@@ -94,14 +94,14 @@ impl KKPHDBMNNHB {
             |m: &mut KKPHDBMNNHB| { &mut m.IDIPBEPCIFG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_id",
-            |m: &KKPHDBMNNHB| { &m.stage_id },
-            |m: &mut KKPHDBMNNHB| { &mut m.stage_id },
+            "MNHPDBEDJLB",
+            |m: &KKPHDBMNNHB| { &m.MNHPDBEDJLB },
+            |m: &mut KKPHDBMNNHB| { &mut m.MNHPDBEDJLB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PBNNCINCGGC",
-            |m: &KKPHDBMNNHB| { &m.PBNNCINCGGC },
-            |m: &mut KKPHDBMNNHB| { &mut m.PBNNCINCGGC },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CEDKBKPCCDJ",
+            |m: &KKPHDBMNNHB| { &m.CEDKBKPCCDJ },
+            |m: &mut KKPHDBMNNHB| { &mut m.CEDKBKPCCDJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KKPHDBMNNHB>(
             "KKPHDBMNNHB",
@@ -121,35 +121,35 @@ impl ::protobuf::Message for KKPHDBMNNHB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.IBGMBIILIPB.push(is.read_message()?);
-                },
-                24 => {
-                    self.MNHPDBEDJLB = is.read_uint32()?;
-                },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IKOKEPJGHAF)?;
-                },
-                32 => {
-                    self.IKOKEPJGHAF.push(is.read_uint32()?);
-                },
-                56 => {
-                    self.CEDKBKPCCDJ = is.read_uint64()?;
-                },
-                64 => {
-                    self.is_win = is.read_bool()?;
-                },
-                104 => {
-                    self.IDIPBEPCIFG = is.read_uint32()?;
-                },
-                112 => {
+                8 => {
                     self.stage_id = is.read_uint32()?;
                 },
-                122 => {
+                16 => {
+                    self.is_win = is.read_bool()?;
+                },
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.PBNNCINCGGC)?;
                 },
-                120 => {
+                24 => {
                     self.PBNNCINCGGC.push(is.read_uint32()?);
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IKOKEPJGHAF)?;
+                },
+                40 => {
+                    self.IKOKEPJGHAF.push(is.read_uint32()?);
+                },
+                50 => {
+                    self.IBGMBIILIPB.push(is.read_message()?);
+                },
+                56 => {
+                    self.IDIPBEPCIFG = is.read_uint32()?;
+                },
+                104 => {
+                    self.MNHPDBEDJLB = is.read_uint32()?;
+                },
+                120 => {
+                    self.CEDKBKPCCDJ = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -163,53 +163,53 @@ impl ::protobuf::Message for KKPHDBMNNHB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.IBGMBIILIPB {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.MNHPDBEDJLB != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.MNHPDBEDJLB);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.IKOKEPJGHAF);
-        if self.CEDKBKPCCDJ != 0 {
-            my_size += ::protobuf::rt::uint64_size(7, self.CEDKBKPCCDJ);
+        if self.stage_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.stage_id);
         }
         if self.is_win != false {
             my_size += 1 + 1;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.PBNNCINCGGC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.IKOKEPJGHAF);
+        for value in &self.IBGMBIILIPB {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.IDIPBEPCIFG != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.IDIPBEPCIFG);
+            my_size += ::protobuf::rt::uint32_size(7, self.IDIPBEPCIFG);
         }
-        if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.stage_id);
+        if self.MNHPDBEDJLB != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.MNHPDBEDJLB);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.PBNNCINCGGC);
+        if self.CEDKBKPCCDJ != 0 {
+            my_size += ::protobuf::rt::uint64_size(15, self.CEDKBKPCCDJ);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IBGMBIILIPB {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
-        if self.MNHPDBEDJLB != 0 {
-            os.write_uint32(3, self.MNHPDBEDJLB)?;
-        }
-        os.write_repeated_packed_uint32(4, &self.IKOKEPJGHAF)?;
-        if self.CEDKBKPCCDJ != 0 {
-            os.write_uint64(7, self.CEDKBKPCCDJ)?;
+        if self.stage_id != 0 {
+            os.write_uint32(1, self.stage_id)?;
         }
         if self.is_win != false {
-            os.write_bool(8, self.is_win)?;
+            os.write_bool(2, self.is_win)?;
         }
+        os.write_repeated_packed_uint32(3, &self.PBNNCINCGGC)?;
+        os.write_repeated_packed_uint32(5, &self.IKOKEPJGHAF)?;
+        for v in &self.IBGMBIILIPB {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
         if self.IDIPBEPCIFG != 0 {
-            os.write_uint32(13, self.IDIPBEPCIFG)?;
+            os.write_uint32(7, self.IDIPBEPCIFG)?;
         }
-        if self.stage_id != 0 {
-            os.write_uint32(14, self.stage_id)?;
+        if self.MNHPDBEDJLB != 0 {
+            os.write_uint32(13, self.MNHPDBEDJLB)?;
         }
-        os.write_repeated_packed_uint32(15, &self.PBNNCINCGGC)?;
+        if self.CEDKBKPCCDJ != 0 {
+            os.write_uint64(15, self.CEDKBKPCCDJ)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -227,27 +227,27 @@ impl ::protobuf::Message for KKPHDBMNNHB {
     }
 
     fn clear(&mut self) {
-        self.IBGMBIILIPB.clear();
-        self.MNHPDBEDJLB = 0;
-        self.IKOKEPJGHAF.clear();
-        self.CEDKBKPCCDJ = 0;
-        self.is_win = false;
-        self.IDIPBEPCIFG = 0;
         self.stage_id = 0;
+        self.is_win = false;
         self.PBNNCINCGGC.clear();
+        self.IKOKEPJGHAF.clear();
+        self.IBGMBIILIPB.clear();
+        self.IDIPBEPCIFG = 0;
+        self.MNHPDBEDJLB = 0;
+        self.CEDKBKPCCDJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KKPHDBMNNHB {
         static instance: KKPHDBMNNHB = KKPHDBMNNHB {
-            IBGMBIILIPB: ::std::vec::Vec::new(),
-            MNHPDBEDJLB: 0,
-            IKOKEPJGHAF: ::std::vec::Vec::new(),
-            CEDKBKPCCDJ: 0,
-            is_win: false,
-            IDIPBEPCIFG: 0,
             stage_id: 0,
+            is_win: false,
             PBNNCINCGGC: ::std::vec::Vec::new(),
+            IKOKEPJGHAF: ::std::vec::Vec::new(),
+            IBGMBIILIPB: ::std::vec::Vec::new(),
+            IDIPBEPCIFG: 0,
+            MNHPDBEDJLB: 0,
+            CEDKBKPCCDJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -273,13 +273,13 @@ impl ::protobuf::reflect::ProtobufValue for KKPHDBMNNHB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KKPHDBMNNHB.proto\x1a\x11HDLCAPDIKJI.proto\"\x99\x02\n\x0bKKPHDBMN\
-    NHB\x12.\n\x0bIBGMBIILIPB\x18\x02\x20\x03(\x0b2\x0c.HDLCAPDIKJIR\x0bIBGM\
-    BIILIPB\x12\x20\n\x0bMNHPDBEDJLB\x18\x03\x20\x01(\rR\x0bMNHPDBEDJLB\x12\
-    \x20\n\x0bIKOKEPJGHAF\x18\x04\x20\x03(\rR\x0bIKOKEPJGHAF\x12\x20\n\x0bCE\
-    DKBKPCCDJ\x18\x07\x20\x01(\x04R\x0bCEDKBKPCCDJ\x12\x15\n\x06is_win\x18\
-    \x08\x20\x01(\x08R\x05isWin\x12\x20\n\x0bIDIPBEPCIFG\x18\r\x20\x01(\rR\
-    \x0bIDIPBEPCIFG\x12\x19\n\x08stage_id\x18\x0e\x20\x01(\rR\x07stageId\x12\
-    \x20\n\x0bPBNNCINCGGC\x18\x0f\x20\x03(\rR\x0bPBNNCINCGGCb\x06proto3\
+    NHB\x12\x19\n\x08stage_id\x18\x01\x20\x01(\rR\x07stageId\x12\x15\n\x06is\
+    _win\x18\x02\x20\x01(\x08R\x05isWin\x12\x20\n\x0bPBNNCINCGGC\x18\x03\x20\
+    \x03(\rR\x0bPBNNCINCGGC\x12\x20\n\x0bIKOKEPJGHAF\x18\x05\x20\x03(\rR\x0b\
+    IKOKEPJGHAF\x12.\n\x0bIBGMBIILIPB\x18\x06\x20\x03(\x0b2\x0c.HDLCAPDIKJIR\
+    \x0bIBGMBIILIPB\x12\x20\n\x0bIDIPBEPCIFG\x18\x07\x20\x01(\rR\x0bIDIPBEPC\
+    IFG\x12\x20\n\x0bMNHPDBEDJLB\x18\r\x20\x01(\rR\x0bMNHPDBEDJLB\x12\x20\n\
+    \x0bCEDKBKPCCDJ\x18\x0f\x20\x01(\x04R\x0bCEDKBKPCCDJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

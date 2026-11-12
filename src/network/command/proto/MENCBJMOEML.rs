@@ -72,7 +72,7 @@ impl ::protobuf::Message for MENCBJMOEML {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                64 => {
                     self.FIEOPKNBHKJ = is.read_uint64()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for MENCBJMOEML {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FIEOPKNBHKJ != 0 {
-            my_size += ::protobuf::rt::uint64_size(12, self.FIEOPKNBHKJ);
+            my_size += ::protobuf::rt::uint64_size(8, self.FIEOPKNBHKJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for MENCBJMOEML {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FIEOPKNBHKJ != 0 {
-            os.write_uint64(12, self.FIEOPKNBHKJ)?;
+            os.write_uint64(8, self.FIEOPKNBHKJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for MENCBJMOEML {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MENCBJMOEML.proto\"/\n\x0bMENCBJMOEML\x12\x20\n\x0bFIEOPKNBHKJ\x18\
-    \x0c\x20\x01(\x04R\x0bFIEOPKNBHKJb\x06proto3\
+    \x08\x20\x01(\x04R\x0bFIEOPKNBHKJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

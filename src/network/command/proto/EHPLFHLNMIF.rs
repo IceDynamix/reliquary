@@ -86,13 +86,13 @@ impl ::protobuf::Message for EHPLFHLNMIF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                64 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                17 => {
+                81 => {
                     self.damage = is.read_double()?;
                 },
-                56 => {
+                88 => {
                     self.avatar_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for EHPLFHLNMIF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.avatar_id);
         }
         if self.damage != 0. {
             my_size += 1 + 8;
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
-            my_size += ::protobuf::rt::int32_size(7, self.avatar_type.value());
+            my_size += ::protobuf::rt::int32_size(11, self.avatar_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for EHPLFHLNMIF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_id != 0 {
-            os.write_uint32(1, self.avatar_id)?;
+            os.write_uint32(8, self.avatar_id)?;
         }
         if self.damage != 0. {
-            os.write_double(2, self.damage)?;
+            os.write_double(10, self.damage)?;
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for EHPLFHLNMIF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EHPLFHLNMIF.proto\x1a\x10AvatarType.proto\"p\n\x0bEHPLFHLNMIF\x12\
-    \x1b\n\tavatar_id\x18\x01\x20\x01(\rR\x08avatarId\x12\x16\n\x06damage\
-    \x18\x02\x20\x01(\x01R\x06damage\x12,\n\x0bavatar_type\x18\x07\x20\x01(\
+    \x1b\n\tavatar_id\x18\x08\x20\x01(\rR\x08avatarId\x12\x16\n\x06damage\
+    \x18\n\x20\x01(\x01R\x06damage\x12,\n\x0bavatar_type\x18\x0b\x20\x01(\
     \x0e2\x0b.AvatarTypeR\navatarTypeb\x06proto3\
 ";
 

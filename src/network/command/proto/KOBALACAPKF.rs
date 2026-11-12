@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KOBALACAPKF {
     // message fields
-    // @@protoc_insertion_point(field:KOBALACAPKF.HGKCEEOONGA)
-    pub HGKCEEOONGA: ::std::vec::Vec<super::ICMJACOKIPI::ICMJACOKIPI>,
-    // @@protoc_insertion_point(field:KOBALACAPKF.finished_target_list)
-    pub finished_target_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KOBALACAPKF.challenge_id)
     pub challenge_id: u32,
+    // @@protoc_insertion_point(field:KOBALACAPKF.HGKCEEOONGA)
+    pub HGKCEEOONGA: ::std::vec::Vec<super::ICMJACOKIPI::ICMJACOKIPI>,
     // @@protoc_insertion_point(field:KOBALACAPKF.FCJGHHILDEK)
     pub FCJGHHILDEK: bool,
+    // @@protoc_insertion_point(field:KOBALACAPKF.finished_target_list)
+    pub finished_target_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:KOBALACAPKF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl KOBALACAPKF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HGKCEEOONGA",
-            |m: &KOBALACAPKF| { &m.HGKCEEOONGA },
-            |m: &mut KOBALACAPKF| { &mut m.HGKCEEOONGA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "finished_target_list",
-            |m: &KOBALACAPKF| { &m.finished_target_list },
-            |m: &mut KOBALACAPKF| { &mut m.finished_target_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "challenge_id",
             |m: &KOBALACAPKF| { &m.challenge_id },
             |m: &mut KOBALACAPKF| { &mut m.challenge_id },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HGKCEEOONGA",
+            |m: &KOBALACAPKF| { &m.HGKCEEOONGA },
+            |m: &mut KOBALACAPKF| { &mut m.HGKCEEOONGA },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FCJGHHILDEK",
             |m: &KOBALACAPKF| { &m.FCJGHHILDEK },
             |m: &mut KOBALACAPKF| { &mut m.FCJGHHILDEK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "finished_target_list",
+            |m: &KOBALACAPKF| { &m.finished_target_list },
+            |m: &mut KOBALACAPKF| { &mut m.finished_target_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KOBALACAPKF>(
             "KOBALACAPKF",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for KOBALACAPKF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.HGKCEEOONGA.push(is.read_message()?);
-                },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
-                },
-                48 => {
-                    self.finished_target_list.push(is.read_uint32()?);
-                },
-                72 => {
+                32 => {
                     self.challenge_id = is.read_uint32()?;
+                },
+                74 => {
+                    self.HGKCEEOONGA.push(is.read_message()?);
                 },
                 96 => {
                     self.FCJGHHILDEK = is.read_bool()?;
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
+                },
+                120 => {
+                    self.finished_target_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,33 +120,33 @@ impl ::protobuf::Message for KOBALACAPKF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.challenge_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.challenge_id);
+        }
         for value in &self.HGKCEEOONGA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.finished_target_list);
-        if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.challenge_id);
-        }
         if self.FCJGHHILDEK != false {
             my_size += 1 + 1;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.finished_target_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HGKCEEOONGA {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
-        os.write_repeated_packed_uint32(6, &self.finished_target_list)?;
         if self.challenge_id != 0 {
-            os.write_uint32(9, self.challenge_id)?;
+            os.write_uint32(4, self.challenge_id)?;
         }
+        for v in &self.HGKCEEOONGA {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         if self.FCJGHHILDEK != false {
             os.write_bool(12, self.FCJGHHILDEK)?;
         }
+        os.write_repeated_packed_uint32(15, &self.finished_target_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,19 +164,19 @@ impl ::protobuf::Message for KOBALACAPKF {
     }
 
     fn clear(&mut self) {
-        self.HGKCEEOONGA.clear();
-        self.finished_target_list.clear();
         self.challenge_id = 0;
+        self.HGKCEEOONGA.clear();
         self.FCJGHHILDEK = false;
+        self.finished_target_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KOBALACAPKF {
         static instance: KOBALACAPKF = KOBALACAPKF {
-            HGKCEEOONGA: ::std::vec::Vec::new(),
-            finished_target_list: ::std::vec::Vec::new(),
             challenge_id: 0,
+            HGKCEEOONGA: ::std::vec::Vec::new(),
             FCJGHHILDEK: false,
+            finished_target_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for KOBALACAPKF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KOBALACAPKF.proto\x1a\x11ICMJACOKIPI.proto\"\xb4\x01\n\x0bKOBALACA\
-    PKF\x12.\n\x0bHGKCEEOONGA\x18\x01\x20\x03(\x0b2\x0c.ICMJACOKIPIR\x0bHGKC\
-    EEOONGA\x120\n\x14finished_target_list\x18\x06\x20\x03(\rR\x12finishedTa\
-    rgetList\x12!\n\x0cchallenge_id\x18\t\x20\x01(\rR\x0bchallengeId\x12\x20\
-    \n\x0bFCJGHHILDEK\x18\x0c\x20\x01(\x08R\x0bFCJGHHILDEKb\x06proto3\
+    PKF\x12!\n\x0cchallenge_id\x18\x04\x20\x01(\rR\x0bchallengeId\x12.\n\x0b\
+    HGKCEEOONGA\x18\t\x20\x03(\x0b2\x0c.ICMJACOKIPIR\x0bHGKCEEOONGA\x12\x20\
+    \n\x0bFCJGHHILDEK\x18\x0c\x20\x01(\x08R\x0bFCJGHHILDEK\x120\n\x14finishe\
+    d_target_list\x18\x0f\x20\x03(\rR\x12finishedTargetListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

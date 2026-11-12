@@ -79,7 +79,7 @@ impl ::protobuf::Message for TakeKilledPunkLordMonsterScoreCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KHOLBEGBFOM)?;
                 },
                 64 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for TakeKilledPunkLordMonsterScoreCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.KHOLBEGBFOM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.LOMGNMFAPGE != false {
             os.write_bool(8, self.LOMGNMFAPGE)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for TakeKilledPunkLordMonsterScoreCsReq 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)TakeKilledPunkLordMonsterScoreCsReq.proto\x1a\x11CDCCPHILOCC.proto\"w\
-    \n#TakeKilledPunkLordMonsterScoreCsReq\x12.\n\x0bKHOLBEGBFOM\x18\x01\x20\
+    \n#TakeKilledPunkLordMonsterScoreCsReq\x12.\n\x0bKHOLBEGBFOM\x18\x02\x20\
     \x01(\x0b2\x0c.CDCCPHILOCCR\x0bKHOLBEGBFOM\x12\x20\n\x0bLOMGNMFAPGE\x18\
     \x08\x20\x01(\x08R\x0bLOMGNMFAPGEb\x06proto3\
 ";

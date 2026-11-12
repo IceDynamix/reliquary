@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FPHPFJLAJDK {
     // message fields
-    // @@protoc_insertion_point(field:FPHPFJLAJDK.LKMEMKLGIIK)
-    pub LKMEMKLGIIK: u32,
     // @@protoc_insertion_point(field:FPHPFJLAJDK.unique_id)
     pub unique_id: u32,
+    // @@protoc_insertion_point(field:FPHPFJLAJDK.LKMEMKLGIIK)
+    pub LKMEMKLGIIK: u32,
     // @@protoc_insertion_point(field:FPHPFJLAJDK.pos_index)
     pub pos_index: u32,
     // special fields
@@ -54,14 +54,14 @@ impl FPHPFJLAJDK {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LKMEMKLGIIK",
-            |m: &FPHPFJLAJDK| { &m.LKMEMKLGIIK },
-            |m: &mut FPHPFJLAJDK| { &mut m.LKMEMKLGIIK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
             |m: &FPHPFJLAJDK| { &m.unique_id },
             |m: &mut FPHPFJLAJDK| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LKMEMKLGIIK",
+            |m: &FPHPFJLAJDK| { &m.LKMEMKLGIIK },
+            |m: &mut FPHPFJLAJDK| { &mut m.LKMEMKLGIIK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "pos_index",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for FPHPFJLAJDK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.LKMEMKLGIIK = is.read_uint32()?;
-                },
-                88 => {
+                56 => {
                     self.unique_id = is.read_uint32()?;
+                },
+                104 => {
+                    self.LKMEMKLGIIK = is.read_uint32()?;
                 },
                 112 => {
                     self.pos_index = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for FPHPFJLAJDK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LKMEMKLGIIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LKMEMKLGIIK);
-        }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.unique_id);
+        }
+        if self.LKMEMKLGIIK != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.LKMEMKLGIIK);
         }
         if self.pos_index != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.pos_index);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for FPHPFJLAJDK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LKMEMKLGIIK != 0 {
-            os.write_uint32(6, self.LKMEMKLGIIK)?;
-        }
         if self.unique_id != 0 {
-            os.write_uint32(11, self.unique_id)?;
+            os.write_uint32(7, self.unique_id)?;
+        }
+        if self.LKMEMKLGIIK != 0 {
+            os.write_uint32(13, self.LKMEMKLGIIK)?;
         }
         if self.pos_index != 0 {
             os.write_uint32(14, self.pos_index)?;
@@ -148,16 +148,16 @@ impl ::protobuf::Message for FPHPFJLAJDK {
     }
 
     fn clear(&mut self) {
-        self.LKMEMKLGIIK = 0;
         self.unique_id = 0;
+        self.LKMEMKLGIIK = 0;
         self.pos_index = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FPHPFJLAJDK {
         static instance: FPHPFJLAJDK = FPHPFJLAJDK {
-            LKMEMKLGIIK: 0,
             unique_id: 0,
+            LKMEMKLGIIK: 0,
             pos_index: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for FPHPFJLAJDK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FPHPFJLAJDK.proto\"i\n\x0bFPHPFJLAJDK\x12\x20\n\x0bLKMEMKLGIIK\x18\
-    \x06\x20\x01(\rR\x0bLKMEMKLGIIK\x12\x1b\n\tunique_id\x18\x0b\x20\x01(\rR\
-    \x08uniqueId\x12\x1b\n\tpos_index\x18\x0e\x20\x01(\rR\x08posIndexb\x06pr\
-    oto3\
+    \n\x11FPHPFJLAJDK.proto\"i\n\x0bFPHPFJLAJDK\x12\x1b\n\tunique_id\x18\x07\
+    \x20\x01(\rR\x08uniqueId\x12\x20\n\x0bLKMEMKLGIIK\x18\r\x20\x01(\rR\x0bL\
+    KMEMKLGIIK\x12\x1b\n\tpos_index\x18\x0e\x20\x01(\rR\x08posIndexb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

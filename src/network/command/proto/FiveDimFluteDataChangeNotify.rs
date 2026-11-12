@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FiveDimFluteDataChangeNotify {
     // message fields
-    // @@protoc_insertion_point(field:FiveDimFluteDataChangeNotify.AOBGMMAIMHJ)
-    pub AOBGMMAIMHJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:FiveDimFluteDataChangeNotify.NFOBNDJIEPL)
     pub NFOBNDJIEPL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:FiveDimFluteDataChangeNotify.AOBGMMAIMHJ)
+    pub AOBGMMAIMHJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:FiveDimFluteDataChangeNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FiveDimFluteDataChangeNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AOBGMMAIMHJ",
-            |m: &FiveDimFluteDataChangeNotify| { &m.AOBGMMAIMHJ },
-            |m: &mut FiveDimFluteDataChangeNotify| { &mut m.AOBGMMAIMHJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NFOBNDJIEPL",
             |m: &FiveDimFluteDataChangeNotify| { &m.NFOBNDJIEPL },
             |m: &mut FiveDimFluteDataChangeNotify| { &mut m.NFOBNDJIEPL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AOBGMMAIMHJ",
+            |m: &FiveDimFluteDataChangeNotify| { &m.AOBGMMAIMHJ },
+            |m: &mut FiveDimFluteDataChangeNotify| { &mut m.AOBGMMAIMHJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FiveDimFluteDataChangeNotify>(
             "FiveDimFluteDataChangeNotify",
@@ -80,16 +80,16 @@ impl ::protobuf::Message for FiveDimFluteDataChangeNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.AOBGMMAIMHJ)?;
-                },
-                8 => {
-                    self.AOBGMMAIMHJ.push(is.read_uint32()?);
-                },
-                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.NFOBNDJIEPL)?;
                 },
-                104 => {
+                8 => {
                     self.NFOBNDJIEPL.push(is.read_uint32()?);
+                },
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AOBGMMAIMHJ)?;
+                },
+                48 => {
+                    self.AOBGMMAIMHJ.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for FiveDimFluteDataChangeNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.AOBGMMAIMHJ);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.NFOBNDJIEPL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.NFOBNDJIEPL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.AOBGMMAIMHJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.AOBGMMAIMHJ)?;
-        os.write_repeated_packed_uint32(13, &self.NFOBNDJIEPL)?;
+        os.write_repeated_packed_uint32(1, &self.NFOBNDJIEPL)?;
+        os.write_repeated_packed_uint32(6, &self.AOBGMMAIMHJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for FiveDimFluteDataChangeNotify {
     }
 
     fn clear(&mut self) {
-        self.AOBGMMAIMHJ.clear();
         self.NFOBNDJIEPL.clear();
+        self.AOBGMMAIMHJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FiveDimFluteDataChangeNotify {
         static instance: FiveDimFluteDataChangeNotify = FiveDimFluteDataChangeNotify {
-            AOBGMMAIMHJ: ::std::vec::Vec::new(),
             NFOBNDJIEPL: ::std::vec::Vec::new(),
+            AOBGMMAIMHJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,8 +164,8 @@ impl ::protobuf::reflect::ProtobufValue for FiveDimFluteDataChangeNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"FiveDimFluteDataChangeNotify.proto\"b\n\x1cFiveDimFluteDataChangeNot\
-    ify\x12\x20\n\x0bAOBGMMAIMHJ\x18\x01\x20\x03(\rR\x0bAOBGMMAIMHJ\x12\x20\
-    \n\x0bNFOBNDJIEPL\x18\r\x20\x03(\rR\x0bNFOBNDJIEPLb\x06proto3\
+    ify\x12\x20\n\x0bNFOBNDJIEPL\x18\x01\x20\x03(\rR\x0bNFOBNDJIEPL\x12\x20\
+    \n\x0bAOBGMMAIMHJ\x18\x06\x20\x03(\rR\x0bAOBGMMAIMHJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

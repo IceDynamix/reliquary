@@ -86,13 +86,13 @@ impl ::protobuf::Message for InteractPropScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                56 => {
+                104 => {
                     self.prop_state = is.read_uint32()?;
                 },
-                80 => {
+                120 => {
                     self.prop_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for InteractPropScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if self.prop_state != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.prop_state);
+            my_size += ::protobuf::rt::uint32_size(13, self.prop_state);
         }
         if self.prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.prop_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for InteractPropScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if self.prop_state != 0 {
-            os.write_uint32(7, self.prop_state)?;
+            os.write_uint32(13, self.prop_state)?;
         }
         if self.prop_entity_id != 0 {
-            os.write_uint32(10, self.prop_entity_id)?;
+            os.write_uint32(15, self.prop_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for InteractPropScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17InteractPropScRsp.proto\"r\n\x11InteractPropScRsp\x12\x18\n\x07ret\
-    code\x18\x04\x20\x01(\rR\x07retcode\x12\x1d\n\nprop_state\x18\x07\x20\
-    \x01(\rR\tpropState\x12$\n\x0eprop_entity_id\x18\n\x20\x01(\rR\x0cpropEn\
-    tityIdb\x06proto3\
+    code\x18\x08\x20\x01(\rR\x07retcode\x12\x1d\n\nprop_state\x18\r\x20\x01(\
+    \rR\tpropState\x12$\n\x0eprop_entity_id\x18\x0f\x20\x01(\rR\x0cpropEntit\
+    yIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

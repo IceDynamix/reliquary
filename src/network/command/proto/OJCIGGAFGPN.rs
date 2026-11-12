@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum OJCIGGAFGPN {
     // @@protoc_insertion_point(enum_value:OJCIGGAFGPN.OJCIGGAFGPN_NLCDGIPGFDJ)
     OJCIGGAFGPN_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:OJCIGGAFGPN.OJCIGGAFGPN_HNAJMPLBNLF)
-    OJCIGGAFGPN_HNAJMPLBNLF = 7331,
-    // @@protoc_insertion_point(enum_value:OJCIGGAFGPN.OJCIGGAFGPN_OBHHEJONGKJ)
-    OJCIGGAFGPN_OBHHEJONGKJ = 7306,
-    // @@protoc_insertion_point(enum_value:OJCIGGAFGPN.OJCIGGAFGPN_JFMFEFGAIBK)
-    OJCIGGAFGPN_JFMFEFGAIBK = 7334,
     // @@protoc_insertion_point(enum_value:OJCIGGAFGPN.OJCIGGAFGPN_AMBKBNMKIGP)
-    OJCIGGAFGPN_AMBKBNMKIGP = 7332,
+    OJCIGGAFGPN_AMBKBNMKIGP = 7335,
+    // @@protoc_insertion_point(enum_value:OJCIGGAFGPN.OJCIGGAFGPN_OBHHEJONGKJ)
+    OJCIGGAFGPN_OBHHEJONGKJ = 7338,
+    // @@protoc_insertion_point(enum_value:OJCIGGAFGPN.OJCIGGAFGPN_HNAJMPLBNLF)
+    OJCIGGAFGPN_HNAJMPLBNLF = 7350,
+    // @@protoc_insertion_point(enum_value:OJCIGGAFGPN.OJCIGGAFGPN_JFMFEFGAIBK)
+    OJCIGGAFGPN_JFMFEFGAIBK = 7342,
     // @@protoc_insertion_point(enum_value:OJCIGGAFGPN.OJCIGGAFGPN_KMDMCLGPIBC)
-    OJCIGGAFGPN_KMDMCLGPIBC = 7320,
+    OJCIGGAFGPN_KMDMCLGPIBC = 7348,
     // @@protoc_insertion_point(enum_value:OJCIGGAFGPN.OJCIGGAFGPN_PFNIJFANCIE)
-    OJCIGGAFGPN_PFNIJFANCIE = 7316,
+    OJCIGGAFGPN_PFNIJFANCIE = 7334,
 }
 
 impl ::protobuf::Enum for OJCIGGAFGPN {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for OJCIGGAFGPN {
     fn from_i32(value: i32) -> ::std::option::Option<OJCIGGAFGPN> {
         match value {
             0 => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_NLCDGIPGFDJ),
-            7331 => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_HNAJMPLBNLF),
-            7306 => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_OBHHEJONGKJ),
-            7334 => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_JFMFEFGAIBK),
-            7332 => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_AMBKBNMKIGP),
-            7320 => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_KMDMCLGPIBC),
-            7316 => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_PFNIJFANCIE),
+            7335 => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_AMBKBNMKIGP),
+            7338 => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_OBHHEJONGKJ),
+            7350 => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_HNAJMPLBNLF),
+            7342 => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_JFMFEFGAIBK),
+            7348 => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_KMDMCLGPIBC),
+            7334 => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_PFNIJFANCIE),
             _ => ::std::option::Option::None
         }
     }
@@ -66,10 +66,10 @@ impl ::protobuf::Enum for OJCIGGAFGPN {
     fn from_str(str: &str) -> ::std::option::Option<OJCIGGAFGPN> {
         match str {
             "OJCIGGAFGPN_NLCDGIPGFDJ" => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_NLCDGIPGFDJ),
-            "OJCIGGAFGPN_HNAJMPLBNLF" => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_HNAJMPLBNLF),
-            "OJCIGGAFGPN_OBHHEJONGKJ" => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_OBHHEJONGKJ),
-            "OJCIGGAFGPN_JFMFEFGAIBK" => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_JFMFEFGAIBK),
             "OJCIGGAFGPN_AMBKBNMKIGP" => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_AMBKBNMKIGP),
+            "OJCIGGAFGPN_OBHHEJONGKJ" => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_OBHHEJONGKJ),
+            "OJCIGGAFGPN_HNAJMPLBNLF" => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_HNAJMPLBNLF),
+            "OJCIGGAFGPN_JFMFEFGAIBK" => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_JFMFEFGAIBK),
             "OJCIGGAFGPN_KMDMCLGPIBC" => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_KMDMCLGPIBC),
             "OJCIGGAFGPN_PFNIJFANCIE" => ::std::option::Option::Some(OJCIGGAFGPN::OJCIGGAFGPN_PFNIJFANCIE),
             _ => ::std::option::Option::None
@@ -78,10 +78,10 @@ impl ::protobuf::Enum for OJCIGGAFGPN {
 
     const VALUES: &'static [OJCIGGAFGPN] = &[
         OJCIGGAFGPN::OJCIGGAFGPN_NLCDGIPGFDJ,
-        OJCIGGAFGPN::OJCIGGAFGPN_HNAJMPLBNLF,
-        OJCIGGAFGPN::OJCIGGAFGPN_OBHHEJONGKJ,
-        OJCIGGAFGPN::OJCIGGAFGPN_JFMFEFGAIBK,
         OJCIGGAFGPN::OJCIGGAFGPN_AMBKBNMKIGP,
+        OJCIGGAFGPN::OJCIGGAFGPN_OBHHEJONGKJ,
+        OJCIGGAFGPN::OJCIGGAFGPN_HNAJMPLBNLF,
+        OJCIGGAFGPN::OJCIGGAFGPN_JFMFEFGAIBK,
         OJCIGGAFGPN::OJCIGGAFGPN_KMDMCLGPIBC,
         OJCIGGAFGPN::OJCIGGAFGPN_PFNIJFANCIE,
     ];
@@ -96,10 +96,10 @@ impl ::protobuf::EnumFull for OJCIGGAFGPN {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             OJCIGGAFGPN::OJCIGGAFGPN_NLCDGIPGFDJ => 0,
-            OJCIGGAFGPN::OJCIGGAFGPN_HNAJMPLBNLF => 1,
+            OJCIGGAFGPN::OJCIGGAFGPN_AMBKBNMKIGP => 1,
             OJCIGGAFGPN::OJCIGGAFGPN_OBHHEJONGKJ => 2,
-            OJCIGGAFGPN::OJCIGGAFGPN_JFMFEFGAIBK => 3,
-            OJCIGGAFGPN::OJCIGGAFGPN_AMBKBNMKIGP => 4,
+            OJCIGGAFGPN::OJCIGGAFGPN_HNAJMPLBNLF => 3,
+            OJCIGGAFGPN::OJCIGGAFGPN_JFMFEFGAIBK => 4,
             OJCIGGAFGPN::OJCIGGAFGPN_KMDMCLGPIBC => 5,
             OJCIGGAFGPN::OJCIGGAFGPN_PFNIJFANCIE => 6,
         };
@@ -121,11 +121,11 @@ impl OJCIGGAFGPN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OJCIGGAFGPN.proto*\xde\x01\n\x0bOJCIGGAFGPN\x12\x1b\n\x17OJCIGGAFG\
-    PN_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17OJCIGGAFGPN_HNAJMPLBNLF\x10\xa39\x12\
-    \x1c\n\x17OJCIGGAFGPN_OBHHEJONGKJ\x10\x8a9\x12\x1c\n\x17OJCIGGAFGPN_JFMF\
-    EFGAIBK\x10\xa69\x12\x1c\n\x17OJCIGGAFGPN_AMBKBNMKIGP\x10\xa49\x12\x1c\n\
-    \x17OJCIGGAFGPN_KMDMCLGPIBC\x10\x989\x12\x1c\n\x17OJCIGGAFGPN_PFNIJFANCI\
-    E\x10\x949b\x06proto3\
+    PN_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17OJCIGGAFGPN_AMBKBNMKIGP\x10\xa79\x12\
+    \x1c\n\x17OJCIGGAFGPN_OBHHEJONGKJ\x10\xaa9\x12\x1c\n\x17OJCIGGAFGPN_HNAJ\
+    MPLBNLF\x10\xb69\x12\x1c\n\x17OJCIGGAFGPN_JFMFEFGAIBK\x10\xae9\x12\x1c\n\
+    \x17OJCIGGAFGPN_KMDMCLGPIBC\x10\xb49\x12\x1c\n\x17OJCIGGAFGPN_PFNIJFANCI\
+    E\x10\xa69b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

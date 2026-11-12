@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChenLingMoveEntityCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChenLingMoveEntityCsReq.GAJFFBBMMEN)
-    pub GAJFFBBMMEN: ::protobuf::MessageField<super::PFPPACPMFDJ::PFPPACPMFDJ>,
     // @@protoc_insertion_point(field:ChenLingMoveEntityCsReq.BFCNALJDHMP)
     pub BFCNALJDHMP: u32,
+    // @@protoc_insertion_point(field:ChenLingMoveEntityCsReq.GAJFFBBMMEN)
+    pub GAJFFBBMMEN: ::protobuf::MessageField<super::PFPPACPMFDJ::PFPPACPMFDJ>,
     // special fields
     // @@protoc_insertion_point(special_field:ChenLingMoveEntityCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl ChenLingMoveEntityCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PFPPACPMFDJ::PFPPACPMFDJ>(
-            "GAJFFBBMMEN",
-            |m: &ChenLingMoveEntityCsReq| { &m.GAJFFBBMMEN },
-            |m: &mut ChenLingMoveEntityCsReq| { &mut m.GAJFFBBMMEN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BFCNALJDHMP",
             |m: &ChenLingMoveEntityCsReq| { &m.BFCNALJDHMP },
             |m: &mut ChenLingMoveEntityCsReq| { &mut m.BFCNALJDHMP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PFPPACPMFDJ::PFPPACPMFDJ>(
+            "GAJFFBBMMEN",
+            |m: &ChenLingMoveEntityCsReq| { &m.GAJFFBBMMEN },
+            |m: &mut ChenLingMoveEntityCsReq| { &mut m.GAJFFBBMMEN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChenLingMoveEntityCsReq>(
             "ChenLingMoveEntityCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChenLingMoveEntityCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GAJFFBBMMEN)?;
-                },
-                88 => {
+                80 => {
                     self.BFCNALJDHMP = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GAJFFBBMMEN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for ChenLingMoveEntityCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.BFCNALJDHMP != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.BFCNALJDHMP);
+        }
         if let Some(v) = self.GAJFFBBMMEN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.BFCNALJDHMP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.BFCNALJDHMP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ChenLingMoveEntityCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GAJFFBBMMEN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if self.BFCNALJDHMP != 0 {
-            os.write_uint32(11, self.BFCNALJDHMP)?;
+            os.write_uint32(10, self.BFCNALJDHMP)?;
+        }
+        if let Some(v) = self.GAJFFBBMMEN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ChenLingMoveEntityCsReq {
     }
 
     fn clear(&mut self) {
-        self.GAJFFBBMMEN.clear();
         self.BFCNALJDHMP = 0;
+        self.GAJFFBBMMEN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChenLingMoveEntityCsReq {
         static instance: ChenLingMoveEntityCsReq = ChenLingMoveEntityCsReq {
-            GAJFFBBMMEN: ::protobuf::MessageField::none(),
             BFCNALJDHMP: 0,
+            GAJFFBBMMEN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for ChenLingMoveEntityCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dChenLingMoveEntityCsReq.proto\x1a\x11PFPPACPMFDJ.proto\"k\n\x17Che\
-    nLingMoveEntityCsReq\x12.\n\x0bGAJFFBBMMEN\x18\x06\x20\x01(\x0b2\x0c.PFP\
-    PACPMFDJR\x0bGAJFFBBMMEN\x12\x20\n\x0bBFCNALJDHMP\x18\x0b\x20\x01(\rR\
-    \x0bBFCNALJDHMPb\x06proto3\
+    nLingMoveEntityCsReq\x12\x20\n\x0bBFCNALJDHMP\x18\n\x20\x01(\rR\x0bBFCNA\
+    LJDHMP\x12.\n\x0bGAJFFBBMMEN\x18\x0e\x20\x01(\x0b2\x0c.PFPPACPMFDJR\x0bG\
+    AJFFBBMMENb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,12 +30,12 @@ pub struct AEBNHMHDMNP {
     // message fields
     // @@protoc_insertion_point(field:AEBNHMHDMNP.MAKNHDAOFIA)
     pub MAKNHDAOFIA: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:AEBNHMHDMNP.GOAOPDMAFFG)
-    pub GOAOPDMAFFG: u32,
-    // @@protoc_insertion_point(field:AEBNHMHDMNP.EDEDHAEIOBH)
-    pub EDEDHAEIOBH: u32,
     // @@protoc_insertion_point(field:AEBNHMHDMNP.BNKNMJHHMDN)
     pub BNKNMJHHMDN: u32,
+    // @@protoc_insertion_point(field:AEBNHMHDMNP.EDEDHAEIOBH)
+    pub EDEDHAEIOBH: u32,
+    // @@protoc_insertion_point(field:AEBNHMHDMNP.GOAOPDMAFFG)
+    pub GOAOPDMAFFG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AEBNHMHDMNP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,9 +61,9 @@ impl AEBNHMHDMNP {
             |m: &mut AEBNHMHDMNP| { &mut m.MAKNHDAOFIA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GOAOPDMAFFG",
-            |m: &AEBNHMHDMNP| { &m.GOAOPDMAFFG },
-            |m: &mut AEBNHMHDMNP| { &mut m.GOAOPDMAFFG },
+            "BNKNMJHHMDN",
+            |m: &AEBNHMHDMNP| { &m.BNKNMJHHMDN },
+            |m: &mut AEBNHMHDMNP| { &mut m.BNKNMJHHMDN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EDEDHAEIOBH",
@@ -71,9 +71,9 @@ impl AEBNHMHDMNP {
             |m: &mut AEBNHMHDMNP| { &mut m.EDEDHAEIOBH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BNKNMJHHMDN",
-            |m: &AEBNHMHDMNP| { &m.BNKNMJHHMDN },
-            |m: &mut AEBNHMHDMNP| { &mut m.BNKNMJHHMDN },
+            "GOAOPDMAFFG",
+            |m: &AEBNHMHDMNP| { &m.GOAOPDMAFFG },
+            |m: &mut AEBNHMHDMNP| { &mut m.GOAOPDMAFFG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AEBNHMHDMNP>(
             "AEBNHMHDMNP",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for AEBNHMHDMNP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.MAKNHDAOFIA)?;
                 },
-                24 => {
+                16 => {
                     self.MAKNHDAOFIA.push(is.read_uint32()?);
                 },
-                48 => {
-                    self.GOAOPDMAFFG = is.read_uint32()?;
+                80 => {
+                    self.BNKNMJHHMDN = is.read_uint32()?;
                 },
-                64 => {
+                96 => {
                     self.EDEDHAEIOBH = is.read_uint32()?;
                 },
-                104 => {
-                    self.BNKNMJHHMDN = is.read_uint32()?;
+                112 => {
+                    self.GOAOPDMAFFG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for AEBNHMHDMNP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.MAKNHDAOFIA);
-        if self.GOAOPDMAFFG != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.GOAOPDMAFFG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.MAKNHDAOFIA);
+        if self.BNKNMJHHMDN != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.BNKNMJHHMDN);
         }
         if self.EDEDHAEIOBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.EDEDHAEIOBH);
+            my_size += ::protobuf::rt::uint32_size(12, self.EDEDHAEIOBH);
         }
-        if self.BNKNMJHHMDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BNKNMJHHMDN);
+        if self.GOAOPDMAFFG != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.GOAOPDMAFFG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for AEBNHMHDMNP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.MAKNHDAOFIA)?;
-        if self.GOAOPDMAFFG != 0 {
-            os.write_uint32(6, self.GOAOPDMAFFG)?;
+        os.write_repeated_packed_uint32(2, &self.MAKNHDAOFIA)?;
+        if self.BNKNMJHHMDN != 0 {
+            os.write_uint32(10, self.BNKNMJHHMDN)?;
         }
         if self.EDEDHAEIOBH != 0 {
-            os.write_uint32(8, self.EDEDHAEIOBH)?;
+            os.write_uint32(12, self.EDEDHAEIOBH)?;
         }
-        if self.BNKNMJHHMDN != 0 {
-            os.write_uint32(13, self.BNKNMJHHMDN)?;
+        if self.GOAOPDMAFFG != 0 {
+            os.write_uint32(14, self.GOAOPDMAFFG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for AEBNHMHDMNP {
 
     fn clear(&mut self) {
         self.MAKNHDAOFIA.clear();
-        self.GOAOPDMAFFG = 0;
-        self.EDEDHAEIOBH = 0;
         self.BNKNMJHHMDN = 0;
+        self.EDEDHAEIOBH = 0;
+        self.GOAOPDMAFFG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AEBNHMHDMNP {
         static instance: AEBNHMHDMNP = AEBNHMHDMNP {
             MAKNHDAOFIA: ::std::vec::Vec::new(),
-            GOAOPDMAFFG: 0,
-            EDEDHAEIOBH: 0,
             BNKNMJHHMDN: 0,
+            EDEDHAEIOBH: 0,
+            GOAOPDMAFFG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for AEBNHMHDMNP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AEBNHMHDMNP.proto\"\x95\x01\n\x0bAEBNHMHDMNP\x12\x20\n\x0bMAKNHDAO\
-    FIA\x18\x03\x20\x03(\rR\x0bMAKNHDAOFIA\x12\x20\n\x0bGOAOPDMAFFG\x18\x06\
-    \x20\x01(\rR\x0bGOAOPDMAFFG\x12\x20\n\x0bEDEDHAEIOBH\x18\x08\x20\x01(\rR\
-    \x0bEDEDHAEIOBH\x12\x20\n\x0bBNKNMJHHMDN\x18\r\x20\x01(\rR\x0bBNKNMJHHMD\
-    Nb\x06proto3\
+    FIA\x18\x02\x20\x03(\rR\x0bMAKNHDAOFIA\x12\x20\n\x0bBNKNMJHHMDN\x18\n\
+    \x20\x01(\rR\x0bBNKNMJHHMDN\x12\x20\n\x0bEDEDHAEIOBH\x18\x0c\x20\x01(\rR\
+    \x0bEDEDHAEIOBH\x12\x20\n\x0bGOAOPDMAFFG\x18\x0e\x20\x01(\rR\x0bGOAOPDMA\
+    FFGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

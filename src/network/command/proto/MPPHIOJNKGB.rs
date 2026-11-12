@@ -89,10 +89,10 @@ impl ::protobuf::Message for MPPHIOJNKGB {
                 8 => {
                     self.uid = is.read_uint32()?;
                 },
-                32 => {
+                72 => {
                     self.score_id = is.read_uint32()?;
                 },
-                58 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
                 tag => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for MPPHIOJNKGB {
             my_size += ::protobuf::rt::uint32_size(1, self.uid);
         }
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.score_id);
         }
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
@@ -127,10 +127,10 @@ impl ::protobuf::Message for MPPHIOJNKGB {
             os.write_uint32(1, self.uid)?;
         }
         if self.score_id != 0 {
-            os.write_uint32(4, self.score_id)?;
+            os.write_uint32(9, self.score_id)?;
         }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for MPPHIOJNKGB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MPPHIOJNKGB.proto\x1a\x11PNCNGIAMLCA.proto\"`\n\x0bMPPHIOJNKGB\x12\
-    \x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\x12\x19\n\x08score_id\x18\x04\
-    \x20\x01(\rR\x07scoreId\x12$\n\x06lineup\x18\x07\x20\x01(\x0b2\x0c.PNCNG\
-    IAMLCAR\x06lineupb\x06proto3\
+    \x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\x12\x19\n\x08score_id\x18\t\x20\
+    \x01(\rR\x07scoreId\x12$\n\x06lineup\x18\n\x20\x01(\x0b2\x0c.PNCNGIAMLCA\
+    R\x06lineupb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

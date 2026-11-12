@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetHipplenInheritScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetHipplenInheritScRsp.H_0b0e9102)
+    pub H_0b0e9102: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetHipplenInheritScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetHipplenInheritScRsp.H_9f60ad73)
-    pub H_9f60ad73: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetHipplenInheritScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetHipplenInheritScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "H_0b0e9102",
+            |m: &GetHipplenInheritScRsp| { &m.H_0b0e9102 },
+            |m: &mut GetHipplenInheritScRsp| { &mut m.H_0b0e9102 },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetHipplenInheritScRsp| { &m.retcode },
             |m: &mut GetHipplenInheritScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_9f60ad73",
-            |m: &GetHipplenInheritScRsp| { &m.H_9f60ad73 },
-            |m: &mut GetHipplenInheritScRsp| { &mut m.H_9f60ad73 },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetHipplenInheritScRsp>(
             "GetHipplenInheritScRsp",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for GetHipplenInheritScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.H_0b0e9102)?;
+                },
+                48 => {
+                    self.H_0b0e9102.push(is.read_uint32()?);
+                },
+                64 => {
                     self.retcode = is.read_uint32()?;
-                },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.H_9f60ad73)?;
-                },
-                112 => {
-                    self.H_9f60ad73.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GetHipplenInheritScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.H_0b0e9102);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.H_9f60ad73);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(6, &self.H_0b0e9102)?;
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(14, &self.H_9f60ad73)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for GetHipplenInheritScRsp {
     }
 
     fn clear(&mut self) {
+        self.H_0b0e9102.clear();
         self.retcode = 0;
-        self.H_9f60ad73.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetHipplenInheritScRsp {
         static instance: GetHipplenInheritScRsp = GetHipplenInheritScRsp {
+            H_0b0e9102: ::std::vec::Vec::new(),
             retcode: 0,
-            H_9f60ad73: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for GetHipplenInheritScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cGetHipplenInheritScRsp.proto\"Q\n\x16GetHipplenInheritScRsp\x12\
-    \x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x1d\n\nH_9f60ad73\
-    \x18\x0e\x20\x03(\rR\tH9f60ad73b\x06proto3\
+    \x1d\n\nH_0b0e9102\x18\x06\x20\x03(\rR\tH0b0e9102\x12\x18\n\x07retcode\
+    \x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,24 +29,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CFGEBHKAEHB {
     // @@protoc_insertion_point(enum_value:CFGEBHKAEHB.CFGEBHKAEHB_NLCDGIPGFDJ)
     CFGEBHKAEHB_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CFGEBHKAEHB.CFGEBHKAEHB_NKLEGIGBOFE)
-    CFGEBHKAEHB_NKLEGIGBOFE = 856,
-    // @@protoc_insertion_point(enum_value:CFGEBHKAEHB.CFGEBHKAEHB_FCLOLINPLNI)
-    CFGEBHKAEHB_FCLOLINPLNI = 816,
-    // @@protoc_insertion_point(enum_value:CFGEBHKAEHB.CFGEBHKAEHB_PGAFBFPOJGF)
-    CFGEBHKAEHB_PGAFBFPOJGF = 825,
     // @@protoc_insertion_point(enum_value:CFGEBHKAEHB.CFGEBHKAEHB_PCCBLDPKNKH)
-    CFGEBHKAEHB_PCCBLDPKNKH = 875,
+    CFGEBHKAEHB_PCCBLDPKNKH = 887,
     // @@protoc_insertion_point(enum_value:CFGEBHKAEHB.CFGEBHKAEHB_PELMIHDCFIL)
-    CFGEBHKAEHB_PELMIHDCFIL = 858,
+    CFGEBHKAEHB_PELMIHDCFIL = 859,
     // @@protoc_insertion_point(enum_value:CFGEBHKAEHB.CFGEBHKAEHB_EPNKGIBMBOM)
-    CFGEBHKAEHB_EPNKGIBMBOM = 860,
-    // @@protoc_insertion_point(enum_value:CFGEBHKAEHB.CFGEBHKAEHB_KPMKIALICNC)
-    CFGEBHKAEHB_KPMKIALICNC = 805,
+    CFGEBHKAEHB_EPNKGIBMBOM = 805,
     // @@protoc_insertion_point(enum_value:CFGEBHKAEHB.CFGEBHKAEHB_GLMALNLNPPI)
-    CFGEBHKAEHB_GLMALNLNPPI = 883,
+    CFGEBHKAEHB_GLMALNLNPPI = 806,
+    // @@protoc_insertion_point(enum_value:CFGEBHKAEHB.CFGEBHKAEHB_FCLOLINPLNI)
+    CFGEBHKAEHB_FCLOLINPLNI = 871,
+    // @@protoc_insertion_point(enum_value:CFGEBHKAEHB.CFGEBHKAEHB_KPMKIALICNC)
+    CFGEBHKAEHB_KPMKIALICNC = 831,
+    // @@protoc_insertion_point(enum_value:CFGEBHKAEHB.CFGEBHKAEHB_NKLEGIGBOFE)
+    CFGEBHKAEHB_NKLEGIGBOFE = 818,
     // @@protoc_insertion_point(enum_value:CFGEBHKAEHB.CFGEBHKAEHB_BKPBLKEGOEL)
-    CFGEBHKAEHB_BKPBLKEGOEL = 834,
+    CFGEBHKAEHB_BKPBLKEGOEL = 874,
+    // @@protoc_insertion_point(enum_value:CFGEBHKAEHB.CFGEBHKAEHB_PGAFBFPOJGF)
+    CFGEBHKAEHB_PGAFBFPOJGF = 819,
 }
 
 impl ::protobuf::Enum for CFGEBHKAEHB {
@@ -59,15 +59,15 @@ impl ::protobuf::Enum for CFGEBHKAEHB {
     fn from_i32(value: i32) -> ::std::option::Option<CFGEBHKAEHB> {
         match value {
             0 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_NLCDGIPGFDJ),
-            856 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_NKLEGIGBOFE),
-            816 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_FCLOLINPLNI),
-            825 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_PGAFBFPOJGF),
-            875 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_PCCBLDPKNKH),
-            858 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_PELMIHDCFIL),
-            860 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_EPNKGIBMBOM),
-            805 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_KPMKIALICNC),
-            883 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_GLMALNLNPPI),
-            834 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_BKPBLKEGOEL),
+            887 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_PCCBLDPKNKH),
+            859 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_PELMIHDCFIL),
+            805 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_EPNKGIBMBOM),
+            806 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_GLMALNLNPPI),
+            871 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_FCLOLINPLNI),
+            831 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_KPMKIALICNC),
+            818 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_NKLEGIGBOFE),
+            874 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_BKPBLKEGOEL),
+            819 => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_PGAFBFPOJGF),
             _ => ::std::option::Option::None
         }
     }
@@ -75,30 +75,30 @@ impl ::protobuf::Enum for CFGEBHKAEHB {
     fn from_str(str: &str) -> ::std::option::Option<CFGEBHKAEHB> {
         match str {
             "CFGEBHKAEHB_NLCDGIPGFDJ" => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_NLCDGIPGFDJ),
-            "CFGEBHKAEHB_NKLEGIGBOFE" => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_NKLEGIGBOFE),
-            "CFGEBHKAEHB_FCLOLINPLNI" => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_FCLOLINPLNI),
-            "CFGEBHKAEHB_PGAFBFPOJGF" => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_PGAFBFPOJGF),
             "CFGEBHKAEHB_PCCBLDPKNKH" => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_PCCBLDPKNKH),
             "CFGEBHKAEHB_PELMIHDCFIL" => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_PELMIHDCFIL),
             "CFGEBHKAEHB_EPNKGIBMBOM" => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_EPNKGIBMBOM),
-            "CFGEBHKAEHB_KPMKIALICNC" => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_KPMKIALICNC),
             "CFGEBHKAEHB_GLMALNLNPPI" => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_GLMALNLNPPI),
+            "CFGEBHKAEHB_FCLOLINPLNI" => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_FCLOLINPLNI),
+            "CFGEBHKAEHB_KPMKIALICNC" => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_KPMKIALICNC),
+            "CFGEBHKAEHB_NKLEGIGBOFE" => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_NKLEGIGBOFE),
             "CFGEBHKAEHB_BKPBLKEGOEL" => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_BKPBLKEGOEL),
+            "CFGEBHKAEHB_PGAFBFPOJGF" => ::std::option::Option::Some(CFGEBHKAEHB::CFGEBHKAEHB_PGAFBFPOJGF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CFGEBHKAEHB] = &[
         CFGEBHKAEHB::CFGEBHKAEHB_NLCDGIPGFDJ,
-        CFGEBHKAEHB::CFGEBHKAEHB_NKLEGIGBOFE,
-        CFGEBHKAEHB::CFGEBHKAEHB_FCLOLINPLNI,
-        CFGEBHKAEHB::CFGEBHKAEHB_PGAFBFPOJGF,
         CFGEBHKAEHB::CFGEBHKAEHB_PCCBLDPKNKH,
         CFGEBHKAEHB::CFGEBHKAEHB_PELMIHDCFIL,
         CFGEBHKAEHB::CFGEBHKAEHB_EPNKGIBMBOM,
-        CFGEBHKAEHB::CFGEBHKAEHB_KPMKIALICNC,
         CFGEBHKAEHB::CFGEBHKAEHB_GLMALNLNPPI,
+        CFGEBHKAEHB::CFGEBHKAEHB_FCLOLINPLNI,
+        CFGEBHKAEHB::CFGEBHKAEHB_KPMKIALICNC,
+        CFGEBHKAEHB::CFGEBHKAEHB_NKLEGIGBOFE,
         CFGEBHKAEHB::CFGEBHKAEHB_BKPBLKEGOEL,
+        CFGEBHKAEHB::CFGEBHKAEHB_PGAFBFPOJGF,
     ];
 }
 
@@ -111,15 +111,15 @@ impl ::protobuf::EnumFull for CFGEBHKAEHB {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CFGEBHKAEHB::CFGEBHKAEHB_NLCDGIPGFDJ => 0,
-            CFGEBHKAEHB::CFGEBHKAEHB_NKLEGIGBOFE => 1,
-            CFGEBHKAEHB::CFGEBHKAEHB_FCLOLINPLNI => 2,
-            CFGEBHKAEHB::CFGEBHKAEHB_PGAFBFPOJGF => 3,
-            CFGEBHKAEHB::CFGEBHKAEHB_PCCBLDPKNKH => 4,
-            CFGEBHKAEHB::CFGEBHKAEHB_PELMIHDCFIL => 5,
-            CFGEBHKAEHB::CFGEBHKAEHB_EPNKGIBMBOM => 6,
-            CFGEBHKAEHB::CFGEBHKAEHB_KPMKIALICNC => 7,
-            CFGEBHKAEHB::CFGEBHKAEHB_GLMALNLNPPI => 8,
-            CFGEBHKAEHB::CFGEBHKAEHB_BKPBLKEGOEL => 9,
+            CFGEBHKAEHB::CFGEBHKAEHB_PCCBLDPKNKH => 1,
+            CFGEBHKAEHB::CFGEBHKAEHB_PELMIHDCFIL => 2,
+            CFGEBHKAEHB::CFGEBHKAEHB_EPNKGIBMBOM => 3,
+            CFGEBHKAEHB::CFGEBHKAEHB_GLMALNLNPPI => 4,
+            CFGEBHKAEHB::CFGEBHKAEHB_FCLOLINPLNI => 5,
+            CFGEBHKAEHB::CFGEBHKAEHB_KPMKIALICNC => 6,
+            CFGEBHKAEHB::CFGEBHKAEHB_NKLEGIGBOFE => 7,
+            CFGEBHKAEHB::CFGEBHKAEHB_BKPBLKEGOEL => 8,
+            CFGEBHKAEHB::CFGEBHKAEHB_PGAFBFPOJGF => 9,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -139,13 +139,13 @@ impl CFGEBHKAEHB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CFGEBHKAEHB.proto*\xb8\x02\n\x0bCFGEBHKAEHB\x12\x1b\n\x17CFGEBHKAE\
-    HB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17CFGEBHKAEHB_NKLEGIGBOFE\x10\xd8\x06\
-    \x12\x1c\n\x17CFGEBHKAEHB_FCLOLINPLNI\x10\xb0\x06\x12\x1c\n\x17CFGEBHKAE\
-    HB_PGAFBFPOJGF\x10\xb9\x06\x12\x1c\n\x17CFGEBHKAEHB_PCCBLDPKNKH\x10\xeb\
-    \x06\x12\x1c\n\x17CFGEBHKAEHB_PELMIHDCFIL\x10\xda\x06\x12\x1c\n\x17CFGEB\
-    HKAEHB_EPNKGIBMBOM\x10\xdc\x06\x12\x1c\n\x17CFGEBHKAEHB_KPMKIALICNC\x10\
-    \xa5\x06\x12\x1c\n\x17CFGEBHKAEHB_GLMALNLNPPI\x10\xf3\x06\x12\x1c\n\x17C\
-    FGEBHKAEHB_BKPBLKEGOEL\x10\xc2\x06b\x06proto3\
+    HB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17CFGEBHKAEHB_PCCBLDPKNKH\x10\xf7\x06\
+    \x12\x1c\n\x17CFGEBHKAEHB_PELMIHDCFIL\x10\xdb\x06\x12\x1c\n\x17CFGEBHKAE\
+    HB_EPNKGIBMBOM\x10\xa5\x06\x12\x1c\n\x17CFGEBHKAEHB_GLMALNLNPPI\x10\xa6\
+    \x06\x12\x1c\n\x17CFGEBHKAEHB_FCLOLINPLNI\x10\xe7\x06\x12\x1c\n\x17CFGEB\
+    HKAEHB_KPMKIALICNC\x10\xbf\x06\x12\x1c\n\x17CFGEBHKAEHB_NKLEGIGBOFE\x10\
+    \xb2\x06\x12\x1c\n\x17CFGEBHKAEHB_BKPBLKEGOEL\x10\xea\x06\x12\x1c\n\x17C\
+    FGEBHKAEHB_PGAFBFPOJGF\x10\xb3\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -93,16 +93,16 @@ impl ::protobuf::Message for HOKCDEEABII {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNMADMBFEDB)?;
                 },
-                66 => {
+                58 => {
                     self.IEDKELDFHLP.push(is.read_message()?);
                 },
-                72 => {
+                64 => {
                     self.FJPEIFMFPAN = is.read_uint32()?;
                 },
-                80 => {
+                96 => {
                     self.IDCJPIJHNCL = is.read_uint32()?;
                 },
                 tag => {
@@ -126,10 +126,10 @@ impl ::protobuf::Message for HOKCDEEABII {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.FJPEIFMFPAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.FJPEIFMFPAN);
+            my_size += ::protobuf::rt::uint32_size(8, self.FJPEIFMFPAN);
         }
         if self.IDCJPIJHNCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IDCJPIJHNCL);
+            my_size += ::protobuf::rt::uint32_size(12, self.IDCJPIJHNCL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,16 +138,16 @@ impl ::protobuf::Message for HOKCDEEABII {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.KNMADMBFEDB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         for v in &self.IEDKELDFHLP {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if self.FJPEIFMFPAN != 0 {
-            os.write_uint32(9, self.FJPEIFMFPAN)?;
+            os.write_uint32(8, self.FJPEIFMFPAN)?;
         }
         if self.IDCJPIJHNCL != 0 {
-            os.write_uint32(10, self.IDCJPIJHNCL)?;
+            os.write_uint32(12, self.IDCJPIJHNCL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for HOKCDEEABII {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HOKCDEEABII.proto\x1a\x11CNLAOMCKFKD.proto\x1a\x11ECDINHEHKOJ.prot\
-    o\"\xb1\x01\n\x0bHOKCDEEABII\x12.\n\x0bKNMADMBFEDB\x18\x05\x20\x01(\x0b2\
-    \x0c.ECDINHEHKOJR\x0bKNMADMBFEDB\x12.\n\x0bIEDKELDFHLP\x18\x08\x20\x03(\
-    \x0b2\x0c.CNLAOMCKFKDR\x0bIEDKELDFHLP\x12\x20\n\x0bFJPEIFMFPAN\x18\t\x20\
-    \x01(\rR\x0bFJPEIFMFPAN\x12\x20\n\x0bIDCJPIJHNCL\x18\n\x20\x01(\rR\x0bID\
-    CJPIJHNCLb\x06proto3\
+    o\"\xb1\x01\n\x0bHOKCDEEABII\x12.\n\x0bKNMADMBFEDB\x18\x04\x20\x01(\x0b2\
+    \x0c.ECDINHEHKOJR\x0bKNMADMBFEDB\x12.\n\x0bIEDKELDFHLP\x18\x07\x20\x03(\
+    \x0b2\x0c.CNLAOMCKFKDR\x0bIEDKELDFHLP\x12\x20\n\x0bFJPEIFMFPAN\x18\x08\
+    \x20\x01(\rR\x0bFJPEIFMFPAN\x12\x20\n\x0bIDCJPIJHNCL\x18\x0c\x20\x01(\rR\
+    \x0bIDCJPIJHNCLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

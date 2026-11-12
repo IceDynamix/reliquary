@@ -86,13 +86,13 @@ impl ::protobuf::Message for SpaceZooOpCatteryCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                32 => {
                     self.OCKGDJCGKLH = is.read_uint32()?;
                 },
-                88 => {
+                40 => {
                     self.op_type = is.read_uint32()?;
                 },
-                120 => {
+                56 => {
                     self.FEPDLPHPHGI = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for SpaceZooOpCatteryCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.OCKGDJCGKLH != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.OCKGDJCGKLH);
+            my_size += ::protobuf::rt::uint32_size(4, self.OCKGDJCGKLH);
         }
         if self.op_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.op_type);
+            my_size += ::protobuf::rt::uint32_size(5, self.op_type);
         }
         if self.FEPDLPHPHGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.FEPDLPHPHGI);
+            my_size += ::protobuf::rt::uint32_size(7, self.FEPDLPHPHGI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SpaceZooOpCatteryCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OCKGDJCGKLH != 0 {
-            os.write_uint32(2, self.OCKGDJCGKLH)?;
+            os.write_uint32(4, self.OCKGDJCGKLH)?;
         }
         if self.op_type != 0 {
-            os.write_uint32(11, self.op_type)?;
+            os.write_uint32(5, self.op_type)?;
         }
         if self.FEPDLPHPHGI != 0 {
-            os.write_uint32(15, self.FEPDLPHPHGI)?;
+            os.write_uint32(7, self.FEPDLPHPHGI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooOpCatteryCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSpaceZooOpCatteryCsReq.proto\"u\n\x16SpaceZooOpCatteryCsReq\x12\
-    \x20\n\x0bOCKGDJCGKLH\x18\x02\x20\x01(\rR\x0bOCKGDJCGKLH\x12\x17\n\x07op\
-    _type\x18\x0b\x20\x01(\rR\x06opType\x12\x20\n\x0bFEPDLPHPHGI\x18\x0f\x20\
+    \x20\n\x0bOCKGDJCGKLH\x18\x04\x20\x01(\rR\x0bOCKGDJCGKLH\x12\x17\n\x07op\
+    _type\x18\x05\x20\x01(\rR\x06opType\x12\x20\n\x0bFEPDLPHPHGI\x18\x07\x20\
     \x01(\rR\x0bFEPDLPHPHGIb\x06proto3\
 ";
 

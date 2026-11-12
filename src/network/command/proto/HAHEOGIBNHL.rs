@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HAHEOGIBNHL {
     // message fields
-    // @@protoc_insertion_point(field:HAHEOGIBNHL.MJNENEAAOAE)
-    pub MJNENEAAOAE: u64,
     // @@protoc_insertion_point(field:HAHEOGIBNHL.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:HAHEOGIBNHL.MJNENEAAOAE)
+    pub MJNENEAAOAE: u64,
     // special fields
     // @@protoc_insertion_point(special_field:HAHEOGIBNHL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl HAHEOGIBNHL {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MJNENEAAOAE",
-            |m: &HAHEOGIBNHL| { &m.MJNENEAAOAE },
-            |m: &mut HAHEOGIBNHL| { &mut m.MJNENEAAOAE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &HAHEOGIBNHL| { &m.retcode },
             |m: &mut HAHEOGIBNHL| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MJNENEAAOAE",
+            |m: &HAHEOGIBNHL| { &m.MJNENEAAOAE },
+            |m: &mut HAHEOGIBNHL| { &mut m.MJNENEAAOAE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HAHEOGIBNHL>(
             "HAHEOGIBNHL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HAHEOGIBNHL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.MJNENEAAOAE = is.read_uint64()?;
-                },
-                88 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
+                },
+                112 => {
+                    self.MJNENEAAOAE = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for HAHEOGIBNHL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MJNENEAAOAE != 0 {
-            my_size += ::protobuf::rt::uint64_size(10, self.MJNENEAAOAE);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
+        if self.MJNENEAAOAE != 0 {
+            my_size += ::protobuf::rt::uint64_size(14, self.MJNENEAAOAE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for HAHEOGIBNHL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MJNENEAAOAE != 0 {
-            os.write_uint64(10, self.MJNENEAAOAE)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
+        }
+        if self.MJNENEAAOAE != 0 {
+            os.write_uint64(14, self.MJNENEAAOAE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for HAHEOGIBNHL {
     }
 
     fn clear(&mut self) {
-        self.MJNENEAAOAE = 0;
         self.retcode = 0;
+        self.MJNENEAAOAE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HAHEOGIBNHL {
         static instance: HAHEOGIBNHL = HAHEOGIBNHL {
-            MJNENEAAOAE: 0,
             retcode: 0,
+            MJNENEAAOAE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HAHEOGIBNHL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HAHEOGIBNHL.proto\"I\n\x0bHAHEOGIBNHL\x12\x20\n\x0bMJNENEAAOAE\x18\
-    \n\x20\x01(\x04R\x0bMJNENEAAOAE\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    \n\x11HAHEOGIBNHL.proto\"I\n\x0bHAHEOGIBNHL\x12\x18\n\x07retcode\x18\x04\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bMJNENEAAOAE\x18\x0e\x20\x01(\x04R\
+    \x0bMJNENEAAOAEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

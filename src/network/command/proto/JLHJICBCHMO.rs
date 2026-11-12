@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JLHJICBCHMO {
     // message fields
-    // @@protoc_insertion_point(field:JLHJICBCHMO.BJIBCOHEGIJ)
-    pub BJIBCOHEGIJ: u32,
     // @@protoc_insertion_point(field:JLHJICBCHMO.HLCPFLOPGBM)
     pub HLCPFLOPGBM: ::protobuf::MessageField<super::KOFMGCNIMIN::KOFMGCNIMIN>,
+    // @@protoc_insertion_point(field:JLHJICBCHMO.BJIBCOHEGIJ)
+    pub BJIBCOHEGIJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JLHJICBCHMO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl JLHJICBCHMO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BJIBCOHEGIJ",
-            |m: &JLHJICBCHMO| { &m.BJIBCOHEGIJ },
-            |m: &mut JLHJICBCHMO| { &mut m.BJIBCOHEGIJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KOFMGCNIMIN::KOFMGCNIMIN>(
             "HLCPFLOPGBM",
             |m: &JLHJICBCHMO| { &m.HLCPFLOPGBM },
             |m: &mut JLHJICBCHMO| { &mut m.HLCPFLOPGBM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BJIBCOHEGIJ",
+            |m: &JLHJICBCHMO| { &m.BJIBCOHEGIJ },
+            |m: &mut JLHJICBCHMO| { &mut m.BJIBCOHEGIJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JLHJICBCHMO>(
             "JLHJICBCHMO",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for JLHJICBCHMO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.BJIBCOHEGIJ = is.read_uint32()?;
-                },
-                114 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HLCPFLOPGBM)?;
+                },
+                72 => {
+                    self.BJIBCOHEGIJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for JLHJICBCHMO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BJIBCOHEGIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.BJIBCOHEGIJ);
-        }
         if let Some(v) = self.HLCPFLOPGBM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.BJIBCOHEGIJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.BJIBCOHEGIJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for JLHJICBCHMO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BJIBCOHEGIJ != 0 {
-            os.write_uint32(1, self.BJIBCOHEGIJ)?;
-        }
         if let Some(v) = self.HLCPFLOPGBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if self.BJIBCOHEGIJ != 0 {
+            os.write_uint32(9, self.BJIBCOHEGIJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for JLHJICBCHMO {
     }
 
     fn clear(&mut self) {
-        self.BJIBCOHEGIJ = 0;
         self.HLCPFLOPGBM.clear();
+        self.BJIBCOHEGIJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JLHJICBCHMO {
         static instance: JLHJICBCHMO = JLHJICBCHMO {
-            BJIBCOHEGIJ: 0,
             HLCPFLOPGBM: ::protobuf::MessageField::none(),
+            BJIBCOHEGIJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for JLHJICBCHMO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JLHJICBCHMO.proto\x1a\x11KOFMGCNIMIN.proto\"_\n\x0bJLHJICBCHMO\x12\
-    \x20\n\x0bBJIBCOHEGIJ\x18\x01\x20\x01(\rR\x0bBJIBCOHEGIJ\x12.\n\x0bHLCPF\
-    LOPGBM\x18\x0e\x20\x01(\x0b2\x0c.KOFMGCNIMINR\x0bHLCPFLOPGBMb\x06proto3\
+    .\n\x0bHLCPFLOPGBM\x18\x03\x20\x01(\x0b2\x0c.KOFMGCNIMINR\x0bHLCPFLOPGBM\
+    \x12\x20\n\x0bBJIBCOHEGIJ\x18\t\x20\x01(\rR\x0bBJIBCOHEGIJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for NEBJABOEDND {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                24 => {
                     self.score_id = is.read_uint32()?;
                 },
-                120 => {
+                112 => {
                     self.rank = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for NEBJABOEDND {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.score_id);
         }
         if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.rank);
+            my_size += ::protobuf::rt::uint32_size(14, self.rank);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for NEBJABOEDND {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.score_id != 0 {
-            os.write_uint32(6, self.score_id)?;
+            os.write_uint32(3, self.score_id)?;
         }
         if self.rank != 0 {
-            os.write_uint32(15, self.rank)?;
+            os.write_uint32(14, self.rank)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for NEBJABOEDND {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NEBJABOEDND.proto\"<\n\x0bNEBJABOEDND\x12\x19\n\x08score_id\x18\
-    \x06\x20\x01(\rR\x07scoreId\x12\x12\n\x04rank\x18\x0f\x20\x01(\rR\x04ran\
+    \x03\x20\x01(\rR\x07scoreId\x12\x12\n\x04rank\x18\x0e\x20\x01(\rR\x04ran\
     kb\x06proto3\
 ";
 

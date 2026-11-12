@@ -79,7 +79,7 @@ impl ::protobuf::Message for OKKEJHPLMLA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                96 => {
                     self.OOFKOIMLCPA = is.read_bool()?;
                 },
                 120 => {
@@ -110,7 +110,7 @@ impl ::protobuf::Message for OKKEJHPLMLA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OOFKOIMLCPA != false {
-            os.write_bool(3, self.OOFKOIMLCPA)?;
+            os.write_bool(12, self.OOFKOIMLCPA)?;
         }
         if self.JALHKMEOOPN != 0 {
             os.write_uint32(15, self.JALHKMEOOPN)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for OKKEJHPLMLA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OKKEJHPLMLA.proto\"Q\n\x0bOKKEJHPLMLA\x12\x20\n\x0bOOFKOIMLCPA\x18\
-    \x03\x20\x01(\x08R\x0bOOFKOIMLCPA\x12\x20\n\x0bJALHKMEOOPN\x18\x0f\x20\
+    \x0c\x20\x01(\x08R\x0bOOFKOIMLCPA\x12\x20\n\x0bJALHKMEOOPN\x18\x0f\x20\
     \x01(\rR\x0bJALHKMEOOPNb\x06proto3\
 ";
 

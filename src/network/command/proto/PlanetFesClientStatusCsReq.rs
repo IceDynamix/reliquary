@@ -72,7 +72,7 @@ impl ::protobuf::Message for PlanetFesClientStatusCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                112 => {
                     self.CAGCHKJHMPD = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for PlanetFesClientStatusCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CAGCHKJHMPD != false {
-            os.write_bool(10, self.CAGCHKJHMPD)?;
+            os.write_bool(14, self.CAGCHKJHMPD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesClientStatusCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20PlanetFesClientStatusCsReq.proto\">\n\x1aPlanetFesClientStatusCsRe\
-    q\x12\x20\n\x0bCAGCHKJHMPD\x18\n\x20\x01(\x08R\x0bCAGCHKJHMPDb\x06proto3\
+    q\x12\x20\n\x0bCAGCHKJHMPD\x18\x0e\x20\x01(\x08R\x0bCAGCHKJHMPDb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

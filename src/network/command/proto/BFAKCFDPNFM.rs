@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BFAKCFDPNFM {
     // message fields
-    // @@protoc_insertion_point(field:BFAKCFDPNFM.BBEKBJPHEJK)
-    pub BBEKBJPHEJK: ::protobuf::MessageField<super::HBONEFMPKKO::HBONEFMPKKO>,
     // @@protoc_insertion_point(field:BFAKCFDPNFM.has_passed)
     pub has_passed: bool,
+    // @@protoc_insertion_point(field:BFAKCFDPNFM.BBEKBJPHEJK)
+    pub BBEKBJPHEJK: ::protobuf::MessageField<super::HBONEFMPKKO::HBONEFMPKKO>,
     // special fields
     // @@protoc_insertion_point(special_field:BFAKCFDPNFM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl BFAKCFDPNFM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HBONEFMPKKO::HBONEFMPKKO>(
-            "BBEKBJPHEJK",
-            |m: &BFAKCFDPNFM| { &m.BBEKBJPHEJK },
-            |m: &mut BFAKCFDPNFM| { &mut m.BBEKBJPHEJK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "has_passed",
             |m: &BFAKCFDPNFM| { &m.has_passed },
             |m: &mut BFAKCFDPNFM| { &mut m.has_passed },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HBONEFMPKKO::HBONEFMPKKO>(
+            "BBEKBJPHEJK",
+            |m: &BFAKCFDPNFM| { &m.BBEKBJPHEJK },
+            |m: &mut BFAKCFDPNFM| { &mut m.BBEKBJPHEJK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BFAKCFDPNFM>(
             "BFAKCFDPNFM",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BFAKCFDPNFM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBEKBJPHEJK)?;
-                },
-                120 => {
+                32 => {
                     self.has_passed = is.read_bool()?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBEKBJPHEJK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for BFAKCFDPNFM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.has_passed != false {
+            my_size += 1 + 1;
+        }
         if let Some(v) = self.BBEKBJPHEJK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.has_passed != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for BFAKCFDPNFM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BBEKBJPHEJK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
         if self.has_passed != false {
-            os.write_bool(15, self.has_passed)?;
+            os.write_bool(4, self.has_passed)?;
+        }
+        if let Some(v) = self.BBEKBJPHEJK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for BFAKCFDPNFM {
     }
 
     fn clear(&mut self) {
-        self.BBEKBJPHEJK.clear();
         self.has_passed = false;
+        self.BBEKBJPHEJK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BFAKCFDPNFM {
         static instance: BFAKCFDPNFM = BFAKCFDPNFM {
-            BBEKBJPHEJK: ::protobuf::MessageField::none(),
             has_passed: false,
+            BBEKBJPHEJK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for BFAKCFDPNFM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BFAKCFDPNFM.proto\x1a\x11HBONEFMPKKO.proto\"\\\n\x0bBFAKCFDPNFM\
-    \x12.\n\x0bBBEKBJPHEJK\x18\x04\x20\x01(\x0b2\x0c.HBONEFMPKKOR\x0bBBEKBJP\
-    HEJK\x12\x1d\n\nhas_passed\x18\x0f\x20\x01(\x08R\thasPassedb\x06proto3\
+    \x12\x1d\n\nhas_passed\x18\x04\x20\x01(\x08R\thasPassed\x12.\n\x0bBBEKBJ\
+    PHEJK\x18\x05\x20\x01(\x0b2\x0c.HBONEFMPKKOR\x0bBBEKBJPHEJKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

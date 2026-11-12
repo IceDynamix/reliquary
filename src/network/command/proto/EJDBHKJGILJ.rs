@@ -30,15 +30,15 @@ pub enum EJDBHKJGILJ {
     // @@protoc_insertion_point(enum_value:EJDBHKJGILJ.EJDBHKJGILJ_NLCDGIPGFDJ)
     EJDBHKJGILJ_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:EJDBHKJGILJ.EJDBHKJGILJ_BFPIFBHDFIG)
-    EJDBHKJGILJ_BFPIFBHDFIG = 10297,
-    // @@protoc_insertion_point(enum_value:EJDBHKJGILJ.EJDBHKJGILJ_DHAHBODKCNL)
-    EJDBHKJGILJ_DHAHBODKCNL = 10288,
-    // @@protoc_insertion_point(enum_value:EJDBHKJGILJ.EJDBHKJGILJ_ENLGGGIGPHN)
-    EJDBHKJGILJ_ENLGGGIGPHN = 10296,
+    EJDBHKJGILJ_BFPIFBHDFIG = 10284,
     // @@protoc_insertion_point(enum_value:EJDBHKJGILJ.EJDBHKJGILJ_JFAGHPFEIPF)
-    EJDBHKJGILJ_JFAGHPFEIPF = 10284,
+    EJDBHKJGILJ_JFAGHPFEIPF = 10296,
+    // @@protoc_insertion_point(enum_value:EJDBHKJGILJ.EJDBHKJGILJ_DHAHBODKCNL)
+    EJDBHKJGILJ_DHAHBODKCNL = 10300,
     // @@protoc_insertion_point(enum_value:EJDBHKJGILJ.EJDBHKJGILJ_GLLBPMOMAEI)
-    EJDBHKJGILJ_GLLBPMOMAEI = 10290,
+    EJDBHKJGILJ_GLLBPMOMAEI = 10295,
+    // @@protoc_insertion_point(enum_value:EJDBHKJGILJ.EJDBHKJGILJ_ENLGGGIGPHN)
+    EJDBHKJGILJ_ENLGGGIGPHN = 10288,
 }
 
 impl ::protobuf::Enum for EJDBHKJGILJ {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for EJDBHKJGILJ {
     fn from_i32(value: i32) -> ::std::option::Option<EJDBHKJGILJ> {
         match value {
             0 => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_NLCDGIPGFDJ),
-            10297 => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_BFPIFBHDFIG),
-            10288 => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_DHAHBODKCNL),
-            10296 => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_ENLGGGIGPHN),
-            10284 => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_JFAGHPFEIPF),
-            10290 => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_GLLBPMOMAEI),
+            10284 => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_BFPIFBHDFIG),
+            10296 => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_JFAGHPFEIPF),
+            10300 => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_DHAHBODKCNL),
+            10295 => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_GLLBPMOMAEI),
+            10288 => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_ENLGGGIGPHN),
             _ => ::std::option::Option::None
         }
     }
@@ -64,10 +64,10 @@ impl ::protobuf::Enum for EJDBHKJGILJ {
         match str {
             "EJDBHKJGILJ_NLCDGIPGFDJ" => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_NLCDGIPGFDJ),
             "EJDBHKJGILJ_BFPIFBHDFIG" => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_BFPIFBHDFIG),
-            "EJDBHKJGILJ_DHAHBODKCNL" => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_DHAHBODKCNL),
-            "EJDBHKJGILJ_ENLGGGIGPHN" => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_ENLGGGIGPHN),
             "EJDBHKJGILJ_JFAGHPFEIPF" => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_JFAGHPFEIPF),
+            "EJDBHKJGILJ_DHAHBODKCNL" => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_DHAHBODKCNL),
             "EJDBHKJGILJ_GLLBPMOMAEI" => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_GLLBPMOMAEI),
+            "EJDBHKJGILJ_ENLGGGIGPHN" => ::std::option::Option::Some(EJDBHKJGILJ::EJDBHKJGILJ_ENLGGGIGPHN),
             _ => ::std::option::Option::None
         }
     }
@@ -75,10 +75,10 @@ impl ::protobuf::Enum for EJDBHKJGILJ {
     const VALUES: &'static [EJDBHKJGILJ] = &[
         EJDBHKJGILJ::EJDBHKJGILJ_NLCDGIPGFDJ,
         EJDBHKJGILJ::EJDBHKJGILJ_BFPIFBHDFIG,
-        EJDBHKJGILJ::EJDBHKJGILJ_DHAHBODKCNL,
-        EJDBHKJGILJ::EJDBHKJGILJ_ENLGGGIGPHN,
         EJDBHKJGILJ::EJDBHKJGILJ_JFAGHPFEIPF,
+        EJDBHKJGILJ::EJDBHKJGILJ_DHAHBODKCNL,
         EJDBHKJGILJ::EJDBHKJGILJ_GLLBPMOMAEI,
+        EJDBHKJGILJ::EJDBHKJGILJ_ENLGGGIGPHN,
     ];
 }
 
@@ -92,10 +92,10 @@ impl ::protobuf::EnumFull for EJDBHKJGILJ {
         let index = match self {
             EJDBHKJGILJ::EJDBHKJGILJ_NLCDGIPGFDJ => 0,
             EJDBHKJGILJ::EJDBHKJGILJ_BFPIFBHDFIG => 1,
-            EJDBHKJGILJ::EJDBHKJGILJ_DHAHBODKCNL => 2,
-            EJDBHKJGILJ::EJDBHKJGILJ_ENLGGGIGPHN => 3,
-            EJDBHKJGILJ::EJDBHKJGILJ_JFAGHPFEIPF => 4,
-            EJDBHKJGILJ::EJDBHKJGILJ_GLLBPMOMAEI => 5,
+            EJDBHKJGILJ::EJDBHKJGILJ_JFAGHPFEIPF => 2,
+            EJDBHKJGILJ::EJDBHKJGILJ_DHAHBODKCNL => 3,
+            EJDBHKJGILJ::EJDBHKJGILJ_GLLBPMOMAEI => 4,
+            EJDBHKJGILJ::EJDBHKJGILJ_ENLGGGIGPHN => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,10 +115,10 @@ impl EJDBHKJGILJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EJDBHKJGILJ.proto*\xc0\x01\n\x0bEJDBHKJGILJ\x12\x1b\n\x17EJDBHKJGI\
-    LJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17EJDBHKJGILJ_BFPIFBHDFIG\x10\xb9P\x12\
-    \x1c\n\x17EJDBHKJGILJ_DHAHBODKCNL\x10\xb0P\x12\x1c\n\x17EJDBHKJGILJ_ENLG\
-    GGIGPHN\x10\xb8P\x12\x1c\n\x17EJDBHKJGILJ_JFAGHPFEIPF\x10\xacP\x12\x1c\n\
-    \x17EJDBHKJGILJ_GLLBPMOMAEI\x10\xb2Pb\x06proto3\
+    LJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17EJDBHKJGILJ_BFPIFBHDFIG\x10\xacP\x12\
+    \x1c\n\x17EJDBHKJGILJ_JFAGHPFEIPF\x10\xb8P\x12\x1c\n\x17EJDBHKJGILJ_DHAH\
+    BODKCNL\x10\xbcP\x12\x1c\n\x17EJDBHKJGILJ_GLLBPMOMAEI\x10\xb7P\x12\x1c\n\
+    \x17EJDBHKJGILJ_ENLGGGIGPHN\x10\xb0Pb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

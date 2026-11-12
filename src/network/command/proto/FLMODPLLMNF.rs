@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FLMODPLLMNF {
     // message fields
-    // @@protoc_insertion_point(field:FLMODPLLMNF.GIFOENLDCHO)
-    pub GIFOENLDCHO: ::std::string::String,
     // @@protoc_insertion_point(field:FLMODPLLMNF.NMELIDCDKAK)
     pub NMELIDCDKAK: u32,
+    // @@protoc_insertion_point(field:FLMODPLLMNF.GIFOENLDCHO)
+    pub GIFOENLDCHO: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:FLMODPLLMNF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FLMODPLLMNF {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GIFOENLDCHO",
-            |m: &FLMODPLLMNF| { &m.GIFOENLDCHO },
-            |m: &mut FLMODPLLMNF| { &mut m.GIFOENLDCHO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NMELIDCDKAK",
             |m: &FLMODPLLMNF| { &m.NMELIDCDKAK },
             |m: &mut FLMODPLLMNF| { &mut m.NMELIDCDKAK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GIFOENLDCHO",
+            |m: &FLMODPLLMNF| { &m.GIFOENLDCHO },
+            |m: &mut FLMODPLLMNF| { &mut m.GIFOENLDCHO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FLMODPLLMNF>(
             "FLMODPLLMNF",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FLMODPLLMNF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.NMELIDCDKAK = is.read_uint32()?;
+                },
                 18 => {
                     self.GIFOENLDCHO = is.read_string()?;
-                },
-                64 => {
-                    self.NMELIDCDKAK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FLMODPLLMNF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.NMELIDCDKAK != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.NMELIDCDKAK);
+        }
         if !self.GIFOENLDCHO.is_empty() {
             my_size += ::protobuf::rt::string_size(2, &self.GIFOENLDCHO);
-        }
-        if self.NMELIDCDKAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.NMELIDCDKAK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FLMODPLLMNF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.NMELIDCDKAK != 0 {
+            os.write_uint32(1, self.NMELIDCDKAK)?;
+        }
         if !self.GIFOENLDCHO.is_empty() {
             os.write_string(2, &self.GIFOENLDCHO)?;
-        }
-        if self.NMELIDCDKAK != 0 {
-            os.write_uint32(8, self.NMELIDCDKAK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FLMODPLLMNF {
     }
 
     fn clear(&mut self) {
-        self.GIFOENLDCHO.clear();
         self.NMELIDCDKAK = 0;
+        self.GIFOENLDCHO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FLMODPLLMNF {
         static instance: FLMODPLLMNF = FLMODPLLMNF {
-            GIFOENLDCHO: ::std::string::String::new(),
             NMELIDCDKAK: 0,
+            GIFOENLDCHO: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FLMODPLLMNF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FLMODPLLMNF.proto\"Q\n\x0bFLMODPLLMNF\x12\x20\n\x0bGIFOENLDCHO\x18\
-    \x02\x20\x01(\tR\x0bGIFOENLDCHO\x12\x20\n\x0bNMELIDCDKAK\x18\x08\x20\x01\
-    (\rR\x0bNMELIDCDKAKb\x06proto3\
+    \n\x11FLMODPLLMNF.proto\"Q\n\x0bFLMODPLLMNF\x12\x20\n\x0bNMELIDCDKAK\x18\
+    \x01\x20\x01(\rR\x0bNMELIDCDKAK\x12\x20\n\x0bGIFOENLDCHO\x18\x02\x20\x01\
+    (\tR\x0bGIFOENLDCHOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

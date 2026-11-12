@@ -93,16 +93,16 @@ impl ::protobuf::Message for AJNJDDFGFJL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                56 => {
                     self.level = is.read_uint32()?;
                 },
-                88 => {
+                64 => {
                     self.IEPAPOPIFHH = is.read_uint64()?;
                 },
-                104 => {
+                72 => {
                     self.HCBADDHNIDG = is.read_uint32()?;
                 },
-                112 => {
+                88 => {
                     self.BFCNALJDHMP = is.read_uint32()?;
                 },
                 tag => {
@@ -118,16 +118,16 @@ impl ::protobuf::Message for AJNJDDFGFJL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.level);
+            my_size += ::protobuf::rt::uint32_size(7, self.level);
         }
         if self.IEPAPOPIFHH != 0 {
-            my_size += ::protobuf::rt::uint64_size(11, self.IEPAPOPIFHH);
+            my_size += ::protobuf::rt::uint64_size(8, self.IEPAPOPIFHH);
         }
         if self.HCBADDHNIDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.HCBADDHNIDG);
+            my_size += ::protobuf::rt::uint32_size(9, self.HCBADDHNIDG);
         }
         if self.BFCNALJDHMP != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.BFCNALJDHMP);
+            my_size += ::protobuf::rt::uint32_size(11, self.BFCNALJDHMP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for AJNJDDFGFJL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(2, self.level)?;
+            os.write_uint32(7, self.level)?;
         }
         if self.IEPAPOPIFHH != 0 {
-            os.write_uint64(11, self.IEPAPOPIFHH)?;
+            os.write_uint64(8, self.IEPAPOPIFHH)?;
         }
         if self.HCBADDHNIDG != 0 {
-            os.write_uint32(13, self.HCBADDHNIDG)?;
+            os.write_uint32(9, self.HCBADDHNIDG)?;
         }
         if self.BFCNALJDHMP != 0 {
-            os.write_uint32(14, self.BFCNALJDHMP)?;
+            os.write_uint32(11, self.BFCNALJDHMP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -202,9 +202,9 @@ impl ::protobuf::reflect::ProtobufValue for AJNJDDFGFJL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AJNJDDFGFJL.proto\"\x89\x01\n\x0bAJNJDDFGFJL\x12\x14\n\x05level\
-    \x18\x02\x20\x01(\rR\x05level\x12\x20\n\x0bIEPAPOPIFHH\x18\x0b\x20\x01(\
-    \x04R\x0bIEPAPOPIFHH\x12\x20\n\x0bHCBADDHNIDG\x18\r\x20\x01(\rR\x0bHCBAD\
-    DHNIDG\x12\x20\n\x0bBFCNALJDHMP\x18\x0e\x20\x01(\rR\x0bBFCNALJDHMPb\x06p\
+    \x18\x07\x20\x01(\rR\x05level\x12\x20\n\x0bIEPAPOPIFHH\x18\x08\x20\x01(\
+    \x04R\x0bIEPAPOPIFHH\x12\x20\n\x0bHCBADDHNIDG\x18\t\x20\x01(\rR\x0bHCBAD\
+    DHNIDG\x12\x20\n\x0bBFCNALJDHMP\x18\x0b\x20\x01(\rR\x0bBFCNALJDHMPb\x06p\
     roto3\
 ";
 

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChenLingUseHandCardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChenLingUseHandCardCsReq.GAJFFBBMMEN)
-    pub GAJFFBBMMEN: ::protobuf::MessageField<super::PFPPACPMFDJ::PFPPACPMFDJ>,
     // @@protoc_insertion_point(field:ChenLingUseHandCardCsReq.FGIHKKKOGJD)
     pub FGIHKKKOGJD: u32,
+    // @@protoc_insertion_point(field:ChenLingUseHandCardCsReq.GAJFFBBMMEN)
+    pub GAJFFBBMMEN: ::protobuf::MessageField<super::PFPPACPMFDJ::PFPPACPMFDJ>,
     // special fields
     // @@protoc_insertion_point(special_field:ChenLingUseHandCardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl ChenLingUseHandCardCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PFPPACPMFDJ::PFPPACPMFDJ>(
-            "GAJFFBBMMEN",
-            |m: &ChenLingUseHandCardCsReq| { &m.GAJFFBBMMEN },
-            |m: &mut ChenLingUseHandCardCsReq| { &mut m.GAJFFBBMMEN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FGIHKKKOGJD",
             |m: &ChenLingUseHandCardCsReq| { &m.FGIHKKKOGJD },
             |m: &mut ChenLingUseHandCardCsReq| { &mut m.FGIHKKKOGJD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PFPPACPMFDJ::PFPPACPMFDJ>(
+            "GAJFFBBMMEN",
+            |m: &ChenLingUseHandCardCsReq| { &m.GAJFFBBMMEN },
+            |m: &mut ChenLingUseHandCardCsReq| { &mut m.GAJFFBBMMEN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChenLingUseHandCardCsReq>(
             "ChenLingUseHandCardCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChenLingUseHandCardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GAJFFBBMMEN)?;
-                },
-                96 => {
+                40 => {
                     self.FGIHKKKOGJD = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GAJFFBBMMEN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for ChenLingUseHandCardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FGIHKKKOGJD != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.FGIHKKKOGJD);
+        }
         if let Some(v) = self.GAJFFBBMMEN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.FGIHKKKOGJD != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FGIHKKKOGJD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ChenLingUseHandCardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GAJFFBBMMEN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if self.FGIHKKKOGJD != 0 {
-            os.write_uint32(12, self.FGIHKKKOGJD)?;
+            os.write_uint32(5, self.FGIHKKKOGJD)?;
+        }
+        if let Some(v) = self.GAJFFBBMMEN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ChenLingUseHandCardCsReq {
     }
 
     fn clear(&mut self) {
-        self.GAJFFBBMMEN.clear();
         self.FGIHKKKOGJD = 0;
+        self.GAJFFBBMMEN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChenLingUseHandCardCsReq {
         static instance: ChenLingUseHandCardCsReq = ChenLingUseHandCardCsReq {
-            GAJFFBBMMEN: ::protobuf::MessageField::none(),
             FGIHKKKOGJD: 0,
+            GAJFFBBMMEN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for ChenLingUseHandCardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eChenLingUseHandCardCsReq.proto\x1a\x11PFPPACPMFDJ.proto\"l\n\x18Ch\
-    enLingUseHandCardCsReq\x12.\n\x0bGAJFFBBMMEN\x18\x06\x20\x01(\x0b2\x0c.P\
-    FPPACPMFDJR\x0bGAJFFBBMMEN\x12\x20\n\x0bFGIHKKKOGJD\x18\x0c\x20\x01(\rR\
-    \x0bFGIHKKKOGJDb\x06proto3\
+    enLingUseHandCardCsReq\x12\x20\n\x0bFGIHKKKOGJD\x18\x05\x20\x01(\rR\x0bF\
+    GIHKKKOGJD\x12.\n\x0bGAJFFBBMMEN\x18\x0f\x20\x01(\x0b2\x0c.PFPPACPMFDJR\
+    \x0bGAJFFBBMMENb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

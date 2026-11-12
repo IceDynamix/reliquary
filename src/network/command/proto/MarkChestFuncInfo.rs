@@ -86,13 +86,13 @@ impl ::protobuf::Message for MarkChestFuncInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
                     self.mark_time = is.read_int64()?;
                 },
-                16 => {
+                64 => {
                     self.func_id = is.read_uint32()?;
                 },
-                42 => {
+                106 => {
                     self.mark_chest_info_list.push(is.read_message()?);
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for MarkChestFuncInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.mark_time != 0 {
-            my_size += ::protobuf::rt::int64_size(1, self.mark_time);
+            my_size += ::protobuf::rt::int64_size(4, self.mark_time);
         }
         if self.func_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.func_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.func_id);
         }
         for value in &self.mark_chest_info_list {
             let len = value.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for MarkChestFuncInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.mark_time != 0 {
-            os.write_int64(1, self.mark_time)?;
+            os.write_int64(4, self.mark_time)?;
         }
         if self.func_id != 0 {
-            os.write_uint32(2, self.func_id)?;
+            os.write_uint32(8, self.func_id)?;
         }
         for v in &self.mark_chest_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for MarkChestFuncInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17MarkChestFuncInfo.proto\x1a\x13MarkChestInfo.proto\"\x8a\x01\n\x11\
-    MarkChestFuncInfo\x12\x1b\n\tmark_time\x18\x01\x20\x01(\x03R\x08markTime\
-    \x12\x17\n\x07func_id\x18\x02\x20\x01(\rR\x06funcId\x12?\n\x14mark_chest\
-    _info_list\x18\x05\x20\x03(\x0b2\x0e.MarkChestInfoR\x11markChestInfoList\
-    b\x06proto3\
+    MarkChestFuncInfo\x12\x1b\n\tmark_time\x18\x04\x20\x01(\x03R\x08markTime\
+    \x12\x17\n\x07func_id\x18\x08\x20\x01(\rR\x06funcId\x12?\n\x14mark_chest\
+    _info_list\x18\r\x20\x03(\x0b2\x0e.MarkChestInfoR\x11markChestInfoListb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

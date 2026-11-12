@@ -28,32 +28,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KELKOMPBONA {
     // message fields
-    // @@protoc_insertion_point(field:KELKOMPBONA.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:KELKOMPBONA.COJOIFPPCIJ)
-    pub COJOIFPPCIJ: i32,
-    // @@protoc_insertion_point(field:KELKOMPBONA.FGECDDFBFOJ)
-    pub FGECDDFBFOJ: u32,
-    // @@protoc_insertion_point(field:KELKOMPBONA.H_603b4ee2)
-    pub H_603b4ee2: u32,
-    // @@protoc_insertion_point(field:KELKOMPBONA.EBMJGPMHDMK)
-    pub EBMJGPMHDMK: u32,
-    // @@protoc_insertion_point(field:KELKOMPBONA.MBNBFBNKLGH)
-    pub MBNBFBNKLGH: u32,
+    // @@protoc_insertion_point(field:KELKOMPBONA.exp)
+    pub exp: u32,
     // @@protoc_insertion_point(field:KELKOMPBONA.unique_id)
     pub unique_id: u32,
     // @@protoc_insertion_point(field:KELKOMPBONA.DIECMLHJCFE)
     pub DIECMLHJCFE: u32,
-    // @@protoc_insertion_point(field:KELKOMPBONA.status)
-    pub status: ::protobuf::EnumOrUnknown<super::KPEPGHLKNFG::KPEPGHLKNFG>,
+    // @@protoc_insertion_point(field:KELKOMPBONA.EBMJGPMHDMK)
+    pub EBMJGPMHDMK: u32,
+    // @@protoc_insertion_point(field:KELKOMPBONA.MBNBFBNKLGH)
+    pub MBNBFBNKLGH: u32,
     // @@protoc_insertion_point(field:KELKOMPBONA.hp)
     pub hp: i32,
-    // @@protoc_insertion_point(field:KELKOMPBONA.index)
-    pub index: u32,
+    // @@protoc_insertion_point(field:KELKOMPBONA.FGECDDFBFOJ)
+    pub FGECDDFBFOJ: u32,
     // @@protoc_insertion_point(field:KELKOMPBONA.DKHCOHKFKFA)
     pub DKHCOHKFKFA: u32,
-    // @@protoc_insertion_point(field:KELKOMPBONA.exp)
-    pub exp: u32,
+    // @@protoc_insertion_point(field:KELKOMPBONA.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:KELKOMPBONA.status)
+    pub status: ::protobuf::EnumOrUnknown<super::KPEPGHLKNFG::KPEPGHLKNFG>,
+    // @@protoc_insertion_point(field:KELKOMPBONA.H_a45cd9b1)
+    pub H_a45cd9b1: u32,
+    // @@protoc_insertion_point(field:KELKOMPBONA.COJOIFPPCIJ)
+    pub COJOIFPPCIJ: i32,
+    // @@protoc_insertion_point(field:KELKOMPBONA.index)
+    pub index: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KELKOMPBONA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -74,34 +74,9 @@ impl KELKOMPBONA {
         let mut fields = ::std::vec::Vec::with_capacity(13);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &KELKOMPBONA| { &m.level },
-            |m: &mut KELKOMPBONA| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "COJOIFPPCIJ",
-            |m: &KELKOMPBONA| { &m.COJOIFPPCIJ },
-            |m: &mut KELKOMPBONA| { &mut m.COJOIFPPCIJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FGECDDFBFOJ",
-            |m: &KELKOMPBONA| { &m.FGECDDFBFOJ },
-            |m: &mut KELKOMPBONA| { &mut m.FGECDDFBFOJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "H_603b4ee2",
-            |m: &KELKOMPBONA| { &m.H_603b4ee2 },
-            |m: &mut KELKOMPBONA| { &mut m.H_603b4ee2 },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EBMJGPMHDMK",
-            |m: &KELKOMPBONA| { &m.EBMJGPMHDMK },
-            |m: &mut KELKOMPBONA| { &mut m.EBMJGPMHDMK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBNBFBNKLGH",
-            |m: &KELKOMPBONA| { &m.MBNBFBNKLGH },
-            |m: &mut KELKOMPBONA| { &mut m.MBNBFBNKLGH },
+            "exp",
+            |m: &KELKOMPBONA| { &m.exp },
+            |m: &mut KELKOMPBONA| { &mut m.exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
@@ -114,9 +89,14 @@ impl KELKOMPBONA {
             |m: &mut KELKOMPBONA| { &mut m.DIECMLHJCFE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &KELKOMPBONA| { &m.status },
-            |m: &mut KELKOMPBONA| { &mut m.status },
+            "EBMJGPMHDMK",
+            |m: &KELKOMPBONA| { &m.EBMJGPMHDMK },
+            |m: &mut KELKOMPBONA| { &mut m.EBMJGPMHDMK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MBNBFBNKLGH",
+            |m: &KELKOMPBONA| { &m.MBNBFBNKLGH },
+            |m: &mut KELKOMPBONA| { &mut m.MBNBFBNKLGH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "hp",
@@ -124,9 +104,9 @@ impl KELKOMPBONA {
             |m: &mut KELKOMPBONA| { &mut m.hp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "index",
-            |m: &KELKOMPBONA| { &m.index },
-            |m: &mut KELKOMPBONA| { &mut m.index },
+            "FGECDDFBFOJ",
+            |m: &KELKOMPBONA| { &m.FGECDDFBFOJ },
+            |m: &mut KELKOMPBONA| { &mut m.FGECDDFBFOJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DKHCOHKFKFA",
@@ -134,9 +114,29 @@ impl KELKOMPBONA {
             |m: &mut KELKOMPBONA| { &mut m.DKHCOHKFKFA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &KELKOMPBONA| { &m.exp },
-            |m: &mut KELKOMPBONA| { &mut m.exp },
+            "level",
+            |m: &KELKOMPBONA| { &m.level },
+            |m: &mut KELKOMPBONA| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "status",
+            |m: &KELKOMPBONA| { &m.status },
+            |m: &mut KELKOMPBONA| { &mut m.status },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "H_a45cd9b1",
+            |m: &KELKOMPBONA| { &m.H_a45cd9b1 },
+            |m: &mut KELKOMPBONA| { &mut m.H_a45cd9b1 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "COJOIFPPCIJ",
+            |m: &KELKOMPBONA| { &m.COJOIFPPCIJ },
+            |m: &mut KELKOMPBONA| { &mut m.COJOIFPPCIJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "index",
+            |m: &KELKOMPBONA| { &m.index },
+            |m: &mut KELKOMPBONA| { &mut m.index },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KELKOMPBONA>(
             "KELKOMPBONA",
@@ -157,43 +157,43 @@ impl ::protobuf::Message for KELKOMPBONA {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.level = is.read_uint32()?;
+                    self.exp = is.read_uint32()?;
                 },
                 16 => {
-                    self.COJOIFPPCIJ = is.read_int32()?;
-                },
-                40 => {
-                    self.FGECDDFBFOJ = is.read_uint32()?;
-                },
-                48 => {
-                    self.H_603b4ee2 = is.read_uint32()?;
-                },
-                56 => {
-                    self.EBMJGPMHDMK = is.read_uint32()?;
-                },
-                64 => {
-                    self.MBNBFBNKLGH = is.read_uint32()?;
-                },
-                72 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                80 => {
+                24 => {
                     self.DIECMLHJCFE = is.read_uint32()?;
                 },
-                88 => {
-                    self.status = is.read_enum_or_unknown()?;
+                32 => {
+                    self.EBMJGPMHDMK = is.read_uint32()?;
                 },
-                96 => {
+                40 => {
+                    self.MBNBFBNKLGH = is.read_uint32()?;
+                },
+                56 => {
                     self.hp = is.read_int32()?;
                 },
-                104 => {
-                    self.index = is.read_uint32()?;
+                64 => {
+                    self.FGECDDFBFOJ = is.read_uint32()?;
                 },
-                112 => {
+                72 => {
                     self.DKHCOHKFKFA = is.read_uint32()?;
                 },
+                80 => {
+                    self.level = is.read_uint32()?;
+                },
+                96 => {
+                    self.status = is.read_enum_or_unknown()?;
+                },
+                104 => {
+                    self.H_a45cd9b1 = is.read_uint32()?;
+                },
+                112 => {
+                    self.COJOIFPPCIJ = is.read_int32()?;
+                },
                 120 => {
-                    self.exp = is.read_uint32()?;
+                    self.index = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -207,44 +207,44 @@ impl ::protobuf::Message for KELKOMPBONA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.level);
-        }
-        if self.COJOIFPPCIJ != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.COJOIFPPCIJ);
-        }
-        if self.FGECDDFBFOJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.FGECDDFBFOJ);
-        }
-        if self.H_603b4ee2 != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.H_603b4ee2);
-        }
-        if self.EBMJGPMHDMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.EBMJGPMHDMK);
-        }
-        if self.MBNBFBNKLGH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MBNBFBNKLGH);
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.exp);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.unique_id);
         }
         if self.DIECMLHJCFE != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.DIECMLHJCFE);
+            my_size += ::protobuf::rt::uint32_size(3, self.DIECMLHJCFE);
         }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::KPEPGHLKNFG::KPEPGHLKNFG::KPEPGHLKNFG_LCNJHOKLMPN) {
-            my_size += ::protobuf::rt::int32_size(11, self.status.value());
+        if self.EBMJGPMHDMK != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.EBMJGPMHDMK);
+        }
+        if self.MBNBFBNKLGH != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.MBNBFBNKLGH);
         }
         if self.hp != 0 {
-            my_size += ::protobuf::rt::int32_size(12, self.hp);
+            my_size += ::protobuf::rt::int32_size(7, self.hp);
         }
-        if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.index);
+        if self.FGECDDFBFOJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.FGECDDFBFOJ);
         }
         if self.DKHCOHKFKFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DKHCOHKFKFA);
+            my_size += ::protobuf::rt::uint32_size(9, self.DKHCOHKFKFA);
         }
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.exp);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.level);
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::KPEPGHLKNFG::KPEPGHLKNFG::KPEPGHLKNFG_LCNJHOKLMPN) {
+            my_size += ::protobuf::rt::int32_size(12, self.status.value());
+        }
+        if self.H_a45cd9b1 != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.H_a45cd9b1);
+        }
+        if self.COJOIFPPCIJ != 0 {
+            my_size += ::protobuf::rt::int32_size(14, self.COJOIFPPCIJ);
+        }
+        if self.index != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -252,44 +252,44 @@ impl ::protobuf::Message for KELKOMPBONA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(1, self.level)?;
-        }
-        if self.COJOIFPPCIJ != 0 {
-            os.write_int32(2, self.COJOIFPPCIJ)?;
-        }
-        if self.FGECDDFBFOJ != 0 {
-            os.write_uint32(5, self.FGECDDFBFOJ)?;
-        }
-        if self.H_603b4ee2 != 0 {
-            os.write_uint32(6, self.H_603b4ee2)?;
-        }
-        if self.EBMJGPMHDMK != 0 {
-            os.write_uint32(7, self.EBMJGPMHDMK)?;
-        }
-        if self.MBNBFBNKLGH != 0 {
-            os.write_uint32(8, self.MBNBFBNKLGH)?;
+        if self.exp != 0 {
+            os.write_uint32(1, self.exp)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(9, self.unique_id)?;
+            os.write_uint32(2, self.unique_id)?;
         }
         if self.DIECMLHJCFE != 0 {
-            os.write_uint32(10, self.DIECMLHJCFE)?;
+            os.write_uint32(3, self.DIECMLHJCFE)?;
         }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::KPEPGHLKNFG::KPEPGHLKNFG::KPEPGHLKNFG_LCNJHOKLMPN) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        if self.EBMJGPMHDMK != 0 {
+            os.write_uint32(4, self.EBMJGPMHDMK)?;
+        }
+        if self.MBNBFBNKLGH != 0 {
+            os.write_uint32(5, self.MBNBFBNKLGH)?;
         }
         if self.hp != 0 {
-            os.write_int32(12, self.hp)?;
+            os.write_int32(7, self.hp)?;
         }
-        if self.index != 0 {
-            os.write_uint32(13, self.index)?;
+        if self.FGECDDFBFOJ != 0 {
+            os.write_uint32(8, self.FGECDDFBFOJ)?;
         }
         if self.DKHCOHKFKFA != 0 {
-            os.write_uint32(14, self.DKHCOHKFKFA)?;
+            os.write_uint32(9, self.DKHCOHKFKFA)?;
         }
-        if self.exp != 0 {
-            os.write_uint32(15, self.exp)?;
+        if self.level != 0 {
+            os.write_uint32(10, self.level)?;
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::KPEPGHLKNFG::KPEPGHLKNFG::KPEPGHLKNFG_LCNJHOKLMPN) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
+        if self.H_a45cd9b1 != 0 {
+            os.write_uint32(13, self.H_a45cd9b1)?;
+        }
+        if self.COJOIFPPCIJ != 0 {
+            os.write_int32(14, self.COJOIFPPCIJ)?;
+        }
+        if self.index != 0 {
+            os.write_uint32(15, self.index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -308,37 +308,37 @@ impl ::protobuf::Message for KELKOMPBONA {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
-        self.COJOIFPPCIJ = 0;
-        self.FGECDDFBFOJ = 0;
-        self.H_603b4ee2 = 0;
-        self.EBMJGPMHDMK = 0;
-        self.MBNBFBNKLGH = 0;
+        self.exp = 0;
         self.unique_id = 0;
         self.DIECMLHJCFE = 0;
-        self.status = ::protobuf::EnumOrUnknown::new(super::KPEPGHLKNFG::KPEPGHLKNFG::KPEPGHLKNFG_LCNJHOKLMPN);
+        self.EBMJGPMHDMK = 0;
+        self.MBNBFBNKLGH = 0;
         self.hp = 0;
-        self.index = 0;
+        self.FGECDDFBFOJ = 0;
         self.DKHCOHKFKFA = 0;
-        self.exp = 0;
+        self.level = 0;
+        self.status = ::protobuf::EnumOrUnknown::new(super::KPEPGHLKNFG::KPEPGHLKNFG::KPEPGHLKNFG_LCNJHOKLMPN);
+        self.H_a45cd9b1 = 0;
+        self.COJOIFPPCIJ = 0;
+        self.index = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KELKOMPBONA {
         static instance: KELKOMPBONA = KELKOMPBONA {
-            level: 0,
-            COJOIFPPCIJ: 0,
-            FGECDDFBFOJ: 0,
-            H_603b4ee2: 0,
-            EBMJGPMHDMK: 0,
-            MBNBFBNKLGH: 0,
+            exp: 0,
             unique_id: 0,
             DIECMLHJCFE: 0,
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
+            EBMJGPMHDMK: 0,
+            MBNBFBNKLGH: 0,
             hp: 0,
-            index: 0,
+            FGECDDFBFOJ: 0,
             DKHCOHKFKFA: 0,
-            exp: 0,
+            level: 0,
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
+            H_a45cd9b1: 0,
+            COJOIFPPCIJ: 0,
+            index: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -364,17 +364,17 @@ impl ::protobuf::reflect::ProtobufValue for KELKOMPBONA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KELKOMPBONA.proto\x1a\x11KPEPGHLKNFG.proto\"\x89\x03\n\x0bKELKOMPB\
-    ONA\x12\x14\n\x05level\x18\x01\x20\x01(\rR\x05level\x12\x20\n\x0bCOJOIFP\
-    PCIJ\x18\x02\x20\x01(\x05R\x0bCOJOIFPPCIJ\x12\x20\n\x0bFGECDDFBFOJ\x18\
-    \x05\x20\x01(\rR\x0bFGECDDFBFOJ\x12\x1d\n\nH_603b4ee2\x18\x06\x20\x01(\r\
-    R\tH603b4ee2\x12\x20\n\x0bEBMJGPMHDMK\x18\x07\x20\x01(\rR\x0bEBMJGPMHDMK\
-    \x12\x20\n\x0bMBNBFBNKLGH\x18\x08\x20\x01(\rR\x0bMBNBFBNKLGH\x12\x1b\n\t\
-    unique_id\x18\t\x20\x01(\rR\x08uniqueId\x12\x20\n\x0bDIECMLHJCFE\x18\n\
-    \x20\x01(\rR\x0bDIECMLHJCFE\x12$\n\x06status\x18\x0b\x20\x01(\x0e2\x0c.K\
-    PEPGHLKNFGR\x06status\x12\x0e\n\x02hp\x18\x0c\x20\x01(\x05R\x02hp\x12\
-    \x14\n\x05index\x18\r\x20\x01(\rR\x05index\x12\x20\n\x0bDKHCOHKFKFA\x18\
-    \x0e\x20\x01(\rR\x0bDKHCOHKFKFA\x12\x10\n\x03exp\x18\x0f\x20\x01(\rR\x03\
-    expb\x06proto3\
+    ONA\x12\x10\n\x03exp\x18\x01\x20\x01(\rR\x03exp\x12\x1b\n\tunique_id\x18\
+    \x02\x20\x01(\rR\x08uniqueId\x12\x20\n\x0bDIECMLHJCFE\x18\x03\x20\x01(\r\
+    R\x0bDIECMLHJCFE\x12\x20\n\x0bEBMJGPMHDMK\x18\x04\x20\x01(\rR\x0bEBMJGPM\
+    HDMK\x12\x20\n\x0bMBNBFBNKLGH\x18\x05\x20\x01(\rR\x0bMBNBFBNKLGH\x12\x0e\
+    \n\x02hp\x18\x07\x20\x01(\x05R\x02hp\x12\x20\n\x0bFGECDDFBFOJ\x18\x08\
+    \x20\x01(\rR\x0bFGECDDFBFOJ\x12\x20\n\x0bDKHCOHKFKFA\x18\t\x20\x01(\rR\
+    \x0bDKHCOHKFKFA\x12\x14\n\x05level\x18\n\x20\x01(\rR\x05level\x12$\n\x06\
+    status\x18\x0c\x20\x01(\x0e2\x0c.KPEPGHLKNFGR\x06status\x12\x1d\n\nH_a45\
+    cd9b1\x18\r\x20\x01(\rR\tHA45cd9b1\x12\x20\n\x0bCOJOIFPPCIJ\x18\x0e\x20\
+    \x01(\x05R\x0bCOJOIFPPCIJ\x12\x14\n\x05index\x18\x0f\x20\x01(\rR\x05inde\
+    xb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

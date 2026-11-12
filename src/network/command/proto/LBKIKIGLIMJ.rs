@@ -79,13 +79,13 @@ impl ::protobuf::Message for LBKIKIGLIMJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.MJGBLEBKMDH)?;
                 },
-                40 => {
+                32 => {
                     self.MJGBLEBKMDH.push(is.read_uint32()?);
                 },
-                56 => {
+                112 => {
                     self.LGIPILAKIKB = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for LBKIKIGLIMJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.MJGBLEBKMDH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.MJGBLEBKMDH);
         if self.LGIPILAKIKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.LGIPILAKIKB);
+            my_size += ::protobuf::rt::uint32_size(14, self.LGIPILAKIKB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for LBKIKIGLIMJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.MJGBLEBKMDH)?;
+        os.write_repeated_packed_uint32(4, &self.MJGBLEBKMDH)?;
         if self.LGIPILAKIKB != 0 {
-            os.write_uint32(7, self.LGIPILAKIKB)?;
+            os.write_uint32(14, self.LGIPILAKIKB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for LBKIKIGLIMJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LBKIKIGLIMJ.proto\"Q\n\x0bLBKIKIGLIMJ\x12\x20\n\x0bMJGBLEBKMDH\x18\
-    \x05\x20\x03(\rR\x0bMJGBLEBKMDH\x12\x20\n\x0bLGIPILAKIKB\x18\x07\x20\x01\
+    \x04\x20\x03(\rR\x0bMJGBLEBKMDH\x12\x20\n\x0bLGIPILAKIKB\x18\x0e\x20\x01\
     (\rR\x0bLGIPILAKIKBb\x06proto3\
 ";
 

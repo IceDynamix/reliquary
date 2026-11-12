@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EOHAFICJPIP {
     // message fields
-    // @@protoc_insertion_point(field:EOHAFICJPIP.CPOCELOLNHL)
-    pub CPOCELOLNHL: u32,
-    // @@protoc_insertion_point(field:EOHAFICJPIP.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:EOHAFICJPIP.NLGNNDIFGGF)
     pub NLGNNDIFGGF: u32,
+    // @@protoc_insertion_point(field:EOHAFICJPIP.id)
+    pub id: u32,
+    // @@protoc_insertion_point(field:EOHAFICJPIP.CPOCELOLNHL)
+    pub CPOCELOLNHL: u32,
     // @@protoc_insertion_point(field:EOHAFICJPIP.DDCLCNPONOH)
     pub DDCLCNPONOH: u32,
     // special fields
@@ -56,9 +56,9 @@ impl EOHAFICJPIP {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CPOCELOLNHL",
-            |m: &EOHAFICJPIP| { &m.CPOCELOLNHL },
-            |m: &mut EOHAFICJPIP| { &mut m.CPOCELOLNHL },
+            "NLGNNDIFGGF",
+            |m: &EOHAFICJPIP| { &m.NLGNNDIFGGF },
+            |m: &mut EOHAFICJPIP| { &mut m.NLGNNDIFGGF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
@@ -66,9 +66,9 @@ impl EOHAFICJPIP {
             |m: &mut EOHAFICJPIP| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLGNNDIFGGF",
-            |m: &EOHAFICJPIP| { &m.NLGNNDIFGGF },
-            |m: &mut EOHAFICJPIP| { &mut m.NLGNNDIFGGF },
+            "CPOCELOLNHL",
+            |m: &EOHAFICJPIP| { &m.CPOCELOLNHL },
+            |m: &mut EOHAFICJPIP| { &mut m.CPOCELOLNHL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DDCLCNPONOH",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for EOHAFICJPIP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.CPOCELOLNHL = is.read_uint32()?;
-                },
-                16 => {
-                    self.id = is.read_uint32()?;
-                },
-                64 => {
+                32 => {
                     self.NLGNNDIFGGF = is.read_uint32()?;
                 },
-                112 => {
+                64 => {
+                    self.id = is.read_uint32()?;
+                },
+                88 => {
+                    self.CPOCELOLNHL = is.read_uint32()?;
+                },
+                104 => {
                     self.DDCLCNPONOH = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for EOHAFICJPIP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CPOCELOLNHL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.CPOCELOLNHL);
+        if self.NLGNNDIFGGF != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.NLGNNDIFGGF);
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.id);
+            my_size += ::protobuf::rt::uint32_size(8, self.id);
         }
-        if self.NLGNNDIFGGF != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.NLGNNDIFGGF);
+        if self.CPOCELOLNHL != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.CPOCELOLNHL);
         }
         if self.DDCLCNPONOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DDCLCNPONOH);
+            my_size += ::protobuf::rt::uint32_size(13, self.DDCLCNPONOH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for EOHAFICJPIP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CPOCELOLNHL != 0 {
-            os.write_uint32(1, self.CPOCELOLNHL)?;
+        if self.NLGNNDIFGGF != 0 {
+            os.write_uint32(4, self.NLGNNDIFGGF)?;
         }
         if self.id != 0 {
-            os.write_uint32(2, self.id)?;
+            os.write_uint32(8, self.id)?;
         }
-        if self.NLGNNDIFGGF != 0 {
-            os.write_uint32(8, self.NLGNNDIFGGF)?;
+        if self.CPOCELOLNHL != 0 {
+            os.write_uint32(11, self.CPOCELOLNHL)?;
         }
         if self.DDCLCNPONOH != 0 {
-            os.write_uint32(14, self.DDCLCNPONOH)?;
+            os.write_uint32(13, self.DDCLCNPONOH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for EOHAFICJPIP {
     }
 
     fn clear(&mut self) {
-        self.CPOCELOLNHL = 0;
-        self.id = 0;
         self.NLGNNDIFGGF = 0;
+        self.id = 0;
+        self.CPOCELOLNHL = 0;
         self.DDCLCNPONOH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EOHAFICJPIP {
         static instance: EOHAFICJPIP = EOHAFICJPIP {
-            CPOCELOLNHL: 0,
-            id: 0,
             NLGNNDIFGGF: 0,
+            id: 0,
+            CPOCELOLNHL: 0,
             DDCLCNPONOH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for EOHAFICJPIP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EOHAFICJPIP.proto\"\x83\x01\n\x0bEOHAFICJPIP\x12\x20\n\x0bCPOCELOL\
-    NHL\x18\x01\x20\x01(\rR\x0bCPOCELOLNHL\x12\x0e\n\x02id\x18\x02\x20\x01(\
-    \rR\x02id\x12\x20\n\x0bNLGNNDIFGGF\x18\x08\x20\x01(\rR\x0bNLGNNDIFGGF\
-    \x12\x20\n\x0bDDCLCNPONOH\x18\x0e\x20\x01(\rR\x0bDDCLCNPONOHb\x06proto3\
+    \n\x11EOHAFICJPIP.proto\"\x83\x01\n\x0bEOHAFICJPIP\x12\x20\n\x0bNLGNNDIF\
+    GGF\x18\x04\x20\x01(\rR\x0bNLGNNDIFGGF\x12\x0e\n\x02id\x18\x08\x20\x01(\
+    \rR\x02id\x12\x20\n\x0bCPOCELOLNHL\x18\x0b\x20\x01(\rR\x0bCPOCELOLNHL\
+    \x12\x20\n\x0bDDCLCNPONOH\x18\r\x20\x01(\rR\x0bDDCLCNPONOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

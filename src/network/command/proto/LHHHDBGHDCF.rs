@@ -30,16 +30,16 @@ pub struct LHHHDBGHDCF {
     // message fields
     // @@protoc_insertion_point(field:LHHHDBGHDCF.BFNEPPCNOOI)
     pub BFNEPPCNOOI: u32,
-    // @@protoc_insertion_point(field:LHHHDBGHDCF.GBIPEDLCOKN)
-    pub GBIPEDLCOKN: bool,
-    // @@protoc_insertion_point(field:LHHHDBGHDCF.GINLMPFAECN)
-    pub GINLMPFAECN: ::protobuf::MessageField<super::HKGJBAGOHFH::HKGJBAGOHFH>,
     // @@protoc_insertion_point(field:LHHHDBGHDCF.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:LHHHDBGHDCF.PFHKACLAMFG)
-    pub PFHKACLAMFG: ::protobuf::MessageField<super::JEFCEGFBOAF::JEFCEGFBOAF>,
+    // @@protoc_insertion_point(field:LHHHDBGHDCF.GINLMPFAECN)
+    pub GINLMPFAECN: ::protobuf::MessageField<super::HKGJBAGOHFH::HKGJBAGOHFH>,
     // @@protoc_insertion_point(field:LHHHDBGHDCF.KEMIMHMOHIE)
     pub KEMIMHMOHIE: ::protobuf::MessageField<super::CLHIJOAKJCE::CLHIJOAKJCE>,
+    // @@protoc_insertion_point(field:LHHHDBGHDCF.PFHKACLAMFG)
+    pub PFHKACLAMFG: ::protobuf::MessageField<super::JEFCEGFBOAF::JEFCEGFBOAF>,
+    // @@protoc_insertion_point(field:LHHHDBGHDCF.GBIPEDLCOKN)
+    pub GBIPEDLCOKN: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LHHHDBGHDCF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,29 +65,29 @@ impl LHHHDBGHDCF {
             |m: &mut LHHHDBGHDCF| { &mut m.BFNEPPCNOOI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GBIPEDLCOKN",
-            |m: &LHHHDBGHDCF| { &m.GBIPEDLCOKN },
-            |m: &mut LHHHDBGHDCF| { &mut m.GBIPEDLCOKN },
+            "retcode",
+            |m: &LHHHDBGHDCF| { &m.retcode },
+            |m: &mut LHHHDBGHDCF| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HKGJBAGOHFH::HKGJBAGOHFH>(
             "GINLMPFAECN",
             |m: &LHHHDBGHDCF| { &m.GINLMPFAECN },
             |m: &mut LHHHDBGHDCF| { &mut m.GINLMPFAECN },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &LHHHDBGHDCF| { &m.retcode },
-            |m: &mut LHHHDBGHDCF| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CLHIJOAKJCE::CLHIJOAKJCE>(
+            "KEMIMHMOHIE",
+            |m: &LHHHDBGHDCF| { &m.KEMIMHMOHIE },
+            |m: &mut LHHHDBGHDCF| { &mut m.KEMIMHMOHIE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JEFCEGFBOAF::JEFCEGFBOAF>(
             "PFHKACLAMFG",
             |m: &LHHHDBGHDCF| { &m.PFHKACLAMFG },
             |m: &mut LHHHDBGHDCF| { &mut m.PFHKACLAMFG },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CLHIJOAKJCE::CLHIJOAKJCE>(
-            "KEMIMHMOHIE",
-            |m: &LHHHDBGHDCF| { &m.KEMIMHMOHIE },
-            |m: &mut LHHHDBGHDCF| { &mut m.KEMIMHMOHIE },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GBIPEDLCOKN",
+            |m: &LHHHDBGHDCF| { &m.GBIPEDLCOKN },
+            |m: &mut LHHHDBGHDCF| { &mut m.GBIPEDLCOKN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LHHHDBGHDCF>(
             "LHHHDBGHDCF",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for LHHHDBGHDCF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                24 => {
                     self.BFNEPPCNOOI = is.read_uint32()?;
-                },
-                16 => {
-                    self.GBIPEDLCOKN = is.read_bool()?;
-                },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GINLMPFAECN)?;
                 },
                 48 => {
                     self.retcode = is.read_uint32()?;
                 },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GINLMPFAECN)?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KEMIMHMOHIE)?;
+                },
                 82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PFHKACLAMFG)?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KEMIMHMOHIE)?;
+                104 => {
+                    self.GBIPEDLCOKN = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,25 +138,25 @@ impl ::protobuf::Message for LHHHDBGHDCF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BFNEPPCNOOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.BFNEPPCNOOI);
-        }
-        if self.GBIPEDLCOKN != false {
-            my_size += 1 + 1;
-        }
-        if let Some(v) = self.GINLMPFAECN.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(3, self.BFNEPPCNOOI);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
-        if let Some(v) = self.PFHKACLAMFG.as_ref() {
+        if let Some(v) = self.GINLMPFAECN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.KEMIMHMOHIE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.PFHKACLAMFG.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.GBIPEDLCOKN != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -165,22 +165,22 @@ impl ::protobuf::Message for LHHHDBGHDCF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BFNEPPCNOOI != 0 {
-            os.write_uint32(1, self.BFNEPPCNOOI)?;
-        }
-        if self.GBIPEDLCOKN != false {
-            os.write_bool(2, self.GBIPEDLCOKN)?;
-        }
-        if let Some(v) = self.GINLMPFAECN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            os.write_uint32(3, self.BFNEPPCNOOI)?;
         }
         if self.retcode != 0 {
             os.write_uint32(6, self.retcode)?;
         }
+        if let Some(v) = self.GINLMPFAECN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if let Some(v) = self.KEMIMHMOHIE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
         if let Some(v) = self.PFHKACLAMFG.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if let Some(v) = self.KEMIMHMOHIE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if self.GBIPEDLCOKN != false {
+            os.write_bool(13, self.GBIPEDLCOKN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -200,22 +200,22 @@ impl ::protobuf::Message for LHHHDBGHDCF {
 
     fn clear(&mut self) {
         self.BFNEPPCNOOI = 0;
-        self.GBIPEDLCOKN = false;
-        self.GINLMPFAECN.clear();
         self.retcode = 0;
-        self.PFHKACLAMFG.clear();
+        self.GINLMPFAECN.clear();
         self.KEMIMHMOHIE.clear();
+        self.PFHKACLAMFG.clear();
+        self.GBIPEDLCOKN = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LHHHDBGHDCF {
         static instance: LHHHDBGHDCF = LHHHDBGHDCF {
             BFNEPPCNOOI: 0,
-            GBIPEDLCOKN: false,
-            GINLMPFAECN: ::protobuf::MessageField::none(),
             retcode: 0,
-            PFHKACLAMFG: ::protobuf::MessageField::none(),
+            GINLMPFAECN: ::protobuf::MessageField::none(),
             KEMIMHMOHIE: ::protobuf::MessageField::none(),
+            PFHKACLAMFG: ::protobuf::MessageField::none(),
+            GBIPEDLCOKN: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -242,12 +242,12 @@ impl ::protobuf::reflect::ProtobufValue for LHHHDBGHDCF {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LHHHDBGHDCF.proto\x1a\x11CLHIJOAKJCE.proto\x1a\x11HKGJBAGOHFH.prot\
     o\x1a\x11JEFCEGFBOAF.proto\"\xfb\x01\n\x0bLHHHDBGHDCF\x12\x20\n\x0bBFNEP\
-    PCNOOI\x18\x01\x20\x01(\rR\x0bBFNEPPCNOOI\x12\x20\n\x0bGBIPEDLCOKN\x18\
-    \x02\x20\x01(\x08R\x0bGBIPEDLCOKN\x12.\n\x0bGINLMPFAECN\x18\x04\x20\x01(\
-    \x0b2\x0c.HKGJBAGOHFHR\x0bGINLMPFAECN\x12\x18\n\x07retcode\x18\x06\x20\
-    \x01(\rR\x07retcode\x12.\n\x0bPFHKACLAMFG\x18\n\x20\x01(\x0b2\x0c.JEFCEG\
-    FBOAFR\x0bPFHKACLAMFG\x12.\n\x0bKEMIMHMOHIE\x18\x0f\x20\x01(\x0b2\x0c.CL\
-    HIJOAKJCER\x0bKEMIMHMOHIEb\x06proto3\
+    PCNOOI\x18\x03\x20\x01(\rR\x0bBFNEPPCNOOI\x12\x18\n\x07retcode\x18\x06\
+    \x20\x01(\rR\x07retcode\x12.\n\x0bGINLMPFAECN\x18\x07\x20\x01(\x0b2\x0c.\
+    HKGJBAGOHFHR\x0bGINLMPFAECN\x12.\n\x0bKEMIMHMOHIE\x18\x08\x20\x01(\x0b2\
+    \x0c.CLHIJOAKJCER\x0bKEMIMHMOHIE\x12.\n\x0bPFHKACLAMFG\x18\n\x20\x01(\
+    \x0b2\x0c.JEFCEGFBOAFR\x0bPFHKACLAMFG\x12\x20\n\x0bGBIPEDLCOKN\x18\r\x20\
+    \x01(\x08R\x0bGBIPEDLCOKNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

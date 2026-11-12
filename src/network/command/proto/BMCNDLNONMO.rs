@@ -30,10 +30,10 @@ pub struct BMCNDLNONMO {
     // message fields
     // @@protoc_insertion_point(field:BMCNDLNONMO.FCHLCANJIGL)
     pub FCHLCANJIGL: u64,
-    // @@protoc_insertion_point(field:BMCNDLNONMO.OOPCPMANCBO)
-    pub OOPCPMANCBO: ::protobuf::MessageField<super::KIJEFIIBBGG::KIJEFIIBBGG>,
     // @@protoc_insertion_point(field:BMCNDLNONMO.NFMKOFNEKLA)
     pub NFMKOFNEKLA: ::protobuf::EnumOrUnknown<super::RogueModifierSourceType::RogueModifierSourceType>,
+    // @@protoc_insertion_point(field:BMCNDLNONMO.OOPCPMANCBO)
+    pub OOPCPMANCBO: ::protobuf::MessageField<super::KIJEFIIBBGG::KIJEFIIBBGG>,
     // message oneof groups
     pub KKNBOACNCON: ::std::option::Option<bmcndlnonmo::KKNBOACNCON>,
     // special fields
@@ -52,7 +52,7 @@ impl BMCNDLNONMO {
         ::std::default::Default::default()
     }
 
-    // .AEBNHMHDMNP HLOLGKAFHEO = 4;
+    // .AEBNHMHDMNP HLOLGKAFHEO = 3;
 
     pub fn HLOLGKAFHEO(&self) -> &super::AEBNHMHDMNP::AEBNHMHDMNP {
         match self.KKNBOACNCON {
@@ -98,6 +98,55 @@ impl BMCNDLNONMO {
             }
         } else {
             super::AEBNHMHDMNP::AEBNHMHDMNP::new()
+        }
+    }
+
+    // .AIBNHPAGDOL LEJPOHHGBMB = 6;
+
+    pub fn LEJPOHHGBMB(&self) -> &super::AIBNHPAGDOL::AIBNHPAGDOL {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(ref v)) => v,
+            _ => <super::AIBNHPAGDOL::AIBNHPAGDOL as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LEJPOHHGBMB(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_LEJPOHHGBMB(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LEJPOHHGBMB(&mut self, v: super::AIBNHPAGDOL::AIBNHPAGDOL) {
+        self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LEJPOHHGBMB(&mut self) -> &mut super::AIBNHPAGDOL::AIBNHPAGDOL {
+        if let ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(super::AIBNHPAGDOL::AIBNHPAGDOL::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LEJPOHHGBMB(&mut self) -> super::AIBNHPAGDOL::AIBNHPAGDOL {
+        if self.has_LEJPOHHGBMB() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::AIBNHPAGDOL::AIBNHPAGDOL::new()
         }
     }
 
@@ -150,104 +199,6 @@ impl BMCNDLNONMO {
         }
     }
 
-    // .AIBNHPAGDOL LEJPOHHGBMB = 11;
-
-    pub fn LEJPOHHGBMB(&self) -> &super::AIBNHPAGDOL::AIBNHPAGDOL {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(ref v)) => v,
-            _ => <super::AIBNHPAGDOL::AIBNHPAGDOL as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_LEJPOHHGBMB(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_LEJPOHHGBMB(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_LEJPOHHGBMB(&mut self, v: super::AIBNHPAGDOL::AIBNHPAGDOL) {
-        self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_LEJPOHHGBMB(&mut self) -> &mut super::AIBNHPAGDOL::AIBNHPAGDOL {
-        if let ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(super::AIBNHPAGDOL::AIBNHPAGDOL::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_LEJPOHHGBMB(&mut self) -> super::AIBNHPAGDOL::AIBNHPAGDOL {
-        if self.has_LEJPOHHGBMB() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::AIBNHPAGDOL::AIBNHPAGDOL::new()
-        }
-    }
-
-    // .EOLKILAIAKL DADPADFFJMG = 12;
-
-    pub fn DADPADFFJMG(&self) -> &super::EOLKILAIAKL::EOLKILAIAKL {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(ref v)) => v,
-            _ => <super::EOLKILAIAKL::EOLKILAIAKL as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_DADPADFFJMG(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_DADPADFFJMG(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_DADPADFFJMG(&mut self, v: super::EOLKILAIAKL::EOLKILAIAKL) {
-        self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_DADPADFFJMG(&mut self) -> &mut super::EOLKILAIAKL::EOLKILAIAKL {
-        if let ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(super::EOLKILAIAKL::EOLKILAIAKL::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_DADPADFFJMG(&mut self) -> super::EOLKILAIAKL::EOLKILAIAKL {
-        if self.has_DADPADFFJMG() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::EOLKILAIAKL::EOLKILAIAKL::new()
-        }
-    }
-
     // .HFJKOCDOAEH GGJOKFEOEBK = 13;
 
     pub fn GGJOKFEOEBK(&self) -> &super::HFJKOCDOAEH::HFJKOCDOAEH {
@@ -297,6 +248,55 @@ impl BMCNDLNONMO {
         }
     }
 
+    // .EOLKILAIAKL DADPADFFJMG = 15;
+
+    pub fn DADPADFFJMG(&self) -> &super::EOLKILAIAKL::EOLKILAIAKL {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(ref v)) => v,
+            _ => <super::EOLKILAIAKL::EOLKILAIAKL as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_DADPADFFJMG(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_DADPADFFJMG(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_DADPADFFJMG(&mut self, v: super::EOLKILAIAKL::EOLKILAIAKL) {
+        self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_DADPADFFJMG(&mut self) -> &mut super::EOLKILAIAKL::EOLKILAIAKL {
+        if let ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(super::EOLKILAIAKL::EOLKILAIAKL::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_DADPADFFJMG(&mut self) -> super::EOLKILAIAKL::EOLKILAIAKL {
+        if self.has_DADPADFFJMG() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::EOLKILAIAKL::EOLKILAIAKL::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
@@ -305,15 +305,15 @@ impl BMCNDLNONMO {
             |m: &BMCNDLNONMO| { &m.FCHLCANJIGL },
             |m: &mut BMCNDLNONMO| { &mut m.FCHLCANJIGL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KIJEFIIBBGG::KIJEFIIBBGG>(
-            "OOPCPMANCBO",
-            |m: &BMCNDLNONMO| { &m.OOPCPMANCBO },
-            |m: &mut BMCNDLNONMO| { &mut m.OOPCPMANCBO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NFMKOFNEKLA",
             |m: &BMCNDLNONMO| { &m.NFMKOFNEKLA },
             |m: &mut BMCNDLNONMO| { &mut m.NFMKOFNEKLA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KIJEFIIBBGG::KIJEFIIBBGG>(
+            "OOPCPMANCBO",
+            |m: &BMCNDLNONMO| { &m.OOPCPMANCBO },
+            |m: &mut BMCNDLNONMO| { &mut m.OOPCPMANCBO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AEBNHMHDMNP::AEBNHMHDMNP>(
             "HLOLGKAFHEO",
@@ -322,13 +322,6 @@ impl BMCNDLNONMO {
             BMCNDLNONMO::mut_HLOLGKAFHEO,
             BMCNDLNONMO::set_HLOLGKAFHEO,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FGHIMGPGBNF::FGHIMGPGBNF>(
-            "NLGJFIGPENF",
-            BMCNDLNONMO::has_NLGJFIGPENF,
-            BMCNDLNONMO::NLGJFIGPENF,
-            BMCNDLNONMO::mut_NLGJFIGPENF,
-            BMCNDLNONMO::set_NLGJFIGPENF,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AIBNHPAGDOL::AIBNHPAGDOL>(
             "LEJPOHHGBMB",
             BMCNDLNONMO::has_LEJPOHHGBMB,
@@ -336,12 +329,12 @@ impl BMCNDLNONMO {
             BMCNDLNONMO::mut_LEJPOHHGBMB,
             BMCNDLNONMO::set_LEJPOHHGBMB,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EOLKILAIAKL::EOLKILAIAKL>(
-            "DADPADFFJMG",
-            BMCNDLNONMO::has_DADPADFFJMG,
-            BMCNDLNONMO::DADPADFFJMG,
-            BMCNDLNONMO::mut_DADPADFFJMG,
-            BMCNDLNONMO::set_DADPADFFJMG,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FGHIMGPGBNF::FGHIMGPGBNF>(
+            "NLGJFIGPENF",
+            BMCNDLNONMO::has_NLGJFIGPENF,
+            BMCNDLNONMO::NLGJFIGPENF,
+            BMCNDLNONMO::mut_NLGJFIGPENF,
+            BMCNDLNONMO::set_NLGJFIGPENF,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HFJKOCDOAEH::HFJKOCDOAEH>(
             "GGJOKFEOEBK",
@@ -349,6 +342,13 @@ impl BMCNDLNONMO {
             BMCNDLNONMO::GGJOKFEOEBK,
             BMCNDLNONMO::mut_GGJOKFEOEBK,
             BMCNDLNONMO::set_GGJOKFEOEBK,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EOLKILAIAKL::EOLKILAIAKL>(
+            "DADPADFFJMG",
+            BMCNDLNONMO::has_DADPADFFJMG,
+            BMCNDLNONMO::DADPADFFJMG,
+            BMCNDLNONMO::mut_DADPADFFJMG,
+            BMCNDLNONMO::set_DADPADFFJMG,
         ));
         oneofs.push(bmcndlnonmo::KKNBOACNCON::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BMCNDLNONMO>(
@@ -369,29 +369,29 @@ impl ::protobuf::Message for BMCNDLNONMO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                16 => {
                     self.FCHLCANJIGL = is.read_uint64()?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OOPCPMANCBO)?;
-                },
-                112 => {
+                40 => {
                     self.NFMKOFNEKLA = is.read_enum_or_unknown()?;
                 },
-                34 => {
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OOPCPMANCBO)?;
+                },
+                26 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::HLOLGKAFHEO(is.read_message()?));
+                },
+                50 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(is.read_message()?));
                 },
                 58 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::NLGJFIGPENF(is.read_message()?));
                 },
-                90 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(is.read_message()?));
-                },
-                98 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(is.read_message()?));
-                },
                 106 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::GGJOKFEOEBK(is.read_message()?));
+                },
+                122 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -406,14 +406,14 @@ impl ::protobuf::Message for BMCNDLNONMO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FCHLCANJIGL != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.FCHLCANJIGL);
+            my_size += ::protobuf::rt::uint64_size(2, self.FCHLCANJIGL);
+        }
+        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceNone) {
+            my_size += ::protobuf::rt::int32_size(5, self.NFMKOFNEKLA.value());
         }
         if let Some(v) = self.OOPCPMANCBO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceNone) {
-            my_size += ::protobuf::rt::int32_size(14, self.NFMKOFNEKLA.value());
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
@@ -421,19 +421,19 @@ impl ::protobuf::Message for BMCNDLNONMO {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &bmcndlnonmo::KKNBOACNCON::NLGJFIGPENF(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
                 &bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(ref v) => {
+                &bmcndlnonmo::KKNBOACNCON::NLGJFIGPENF(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &bmcndlnonmo::KKNBOACNCON::GGJOKFEOEBK(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -446,30 +446,30 @@ impl ::protobuf::Message for BMCNDLNONMO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FCHLCANJIGL != 0 {
-            os.write_uint64(6, self.FCHLCANJIGL)?;
-        }
-        if let Some(v) = self.OOPCPMANCBO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            os.write_uint64(2, self.FCHLCANJIGL)?;
         }
         if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceNone) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
+        }
+        if let Some(v) = self.OOPCPMANCBO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &bmcndlnonmo::KKNBOACNCON::HLOLGKAFHEO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                },
+                &bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
                 &bmcndlnonmo::KKNBOACNCON::NLGJFIGPENF(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
-                &bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-                },
-                &bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-                },
                 &bmcndlnonmo::KKNBOACNCON::GGJOKFEOEBK(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                },
+                &bmcndlnonmo::KKNBOACNCON::DADPADFFJMG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
             };
         }
@@ -491,8 +491,8 @@ impl ::protobuf::Message for BMCNDLNONMO {
 
     fn clear(&mut self) {
         self.FCHLCANJIGL = 0;
-        self.OOPCPMANCBO.clear();
         self.NFMKOFNEKLA = ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceNone);
+        self.OOPCPMANCBO.clear();
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
@@ -504,8 +504,8 @@ impl ::protobuf::Message for BMCNDLNONMO {
     fn default_instance() -> &'static BMCNDLNONMO {
         static instance: BMCNDLNONMO = BMCNDLNONMO {
             FCHLCANJIGL: 0,
-            OOPCPMANCBO: ::protobuf::MessageField::none(),
             NFMKOFNEKLA: ::protobuf::EnumOrUnknown::from_i32(0),
+            OOPCPMANCBO: ::protobuf::MessageField::none(),
             KKNBOACNCON: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -539,14 +539,14 @@ pub mod bmcndlnonmo {
     pub enum KKNBOACNCON {
         // @@protoc_insertion_point(oneof_field:BMCNDLNONMO.HLOLGKAFHEO)
         HLOLGKAFHEO(super::super::AEBNHMHDMNP::AEBNHMHDMNP),
-        // @@protoc_insertion_point(oneof_field:BMCNDLNONMO.NLGJFIGPENF)
-        NLGJFIGPENF(super::super::FGHIMGPGBNF::FGHIMGPGBNF),
         // @@protoc_insertion_point(oneof_field:BMCNDLNONMO.LEJPOHHGBMB)
         LEJPOHHGBMB(super::super::AIBNHPAGDOL::AIBNHPAGDOL),
-        // @@protoc_insertion_point(oneof_field:BMCNDLNONMO.DADPADFFJMG)
-        DADPADFFJMG(super::super::EOLKILAIAKL::EOLKILAIAKL),
+        // @@protoc_insertion_point(oneof_field:BMCNDLNONMO.NLGJFIGPENF)
+        NLGJFIGPENF(super::super::FGHIMGPGBNF::FGHIMGPGBNF),
         // @@protoc_insertion_point(oneof_field:BMCNDLNONMO.GGJOKFEOEBK)
         GGJOKFEOEBK(super::super::HFJKOCDOAEH::HFJKOCDOAEH),
+        // @@protoc_insertion_point(oneof_field:BMCNDLNONMO.DADPADFFJMG)
+        DADPADFFJMG(super::super::EOLKILAIAKL::EOLKILAIAKL),
     }
 
     impl ::protobuf::Oneof for KKNBOACNCON {
@@ -570,16 +570,16 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BMCNDLNONMO.proto\x1a\x11AEBNHMHDMNP.proto\x1a\x11AIBNHPAGDOL.prot\
     o\x1a\x11EOLKILAIAKL.proto\x1a\x11FGHIMGPGBNF.proto\x1a\x11HFJKOCDOAEH.p\
     roto\x1a\x11KIJEFIIBBGG.proto\x1a\x1dRogueModifierSourceType.proto\"\xa4\
-    \x03\n\x0bBMCNDLNONMO\x12\x20\n\x0bFCHLCANJIGL\x18\x06\x20\x01(\x04R\x0b\
-    FCHLCANJIGL\x12.\n\x0bOOPCPMANCBO\x18\n\x20\x01(\x0b2\x0c.KIJEFIIBBGGR\
-    \x0bOOPCPMANCBO\x12:\n\x0bNFMKOFNEKLA\x18\x0e\x20\x01(\x0e2\x18.RogueMod\
-    ifierSourceTypeR\x0bNFMKOFNEKLA\x120\n\x0bHLOLGKAFHEO\x18\x04\x20\x01(\
-    \x0b2\x0c.AEBNHMHDMNPH\0R\x0bHLOLGKAFHEO\x120\n\x0bNLGJFIGPENF\x18\x07\
-    \x20\x01(\x0b2\x0c.FGHIMGPGBNFH\0R\x0bNLGJFIGPENF\x120\n\x0bLEJPOHHGBMB\
-    \x18\x0b\x20\x01(\x0b2\x0c.AIBNHPAGDOLH\0R\x0bLEJPOHHGBMB\x120\n\x0bDADP\
-    ADFFJMG\x18\x0c\x20\x01(\x0b2\x0c.EOLKILAIAKLH\0R\x0bDADPADFFJMG\x120\n\
-    \x0bGGJOKFEOEBK\x18\r\x20\x01(\x0b2\x0c.HFJKOCDOAEHH\0R\x0bGGJOKFEOEBKB\
-    \r\n\x0bKKNBOACNCONb\x06proto3\
+    \x03\n\x0bBMCNDLNONMO\x12\x20\n\x0bFCHLCANJIGL\x18\x02\x20\x01(\x04R\x0b\
+    FCHLCANJIGL\x12:\n\x0bNFMKOFNEKLA\x18\x05\x20\x01(\x0e2\x18.RogueModifie\
+    rSourceTypeR\x0bNFMKOFNEKLA\x12.\n\x0bOOPCPMANCBO\x18\x08\x20\x01(\x0b2\
+    \x0c.KIJEFIIBBGGR\x0bOOPCPMANCBO\x120\n\x0bHLOLGKAFHEO\x18\x03\x20\x01(\
+    \x0b2\x0c.AEBNHMHDMNPH\0R\x0bHLOLGKAFHEO\x120\n\x0bLEJPOHHGBMB\x18\x06\
+    \x20\x01(\x0b2\x0c.AIBNHPAGDOLH\0R\x0bLEJPOHHGBMB\x120\n\x0bNLGJFIGPENF\
+    \x18\x07\x20\x01(\x0b2\x0c.FGHIMGPGBNFH\0R\x0bNLGJFIGPENF\x120\n\x0bGGJO\
+    KFEOEBK\x18\r\x20\x01(\x0b2\x0c.HFJKOCDOAEHH\0R\x0bGGJOKFEOEBK\x120\n\
+    \x0bDADPADFFJMG\x18\x0f\x20\x01(\x0b2\x0c.EOLKILAIAKLH\0R\x0bDADPADFFJMG\
+    B\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

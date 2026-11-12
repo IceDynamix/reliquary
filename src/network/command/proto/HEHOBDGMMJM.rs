@@ -28,8 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HEHOBDGMMJM {
     // message fields
-    // @@protoc_insertion_point(field:HEHOBDGMMJM.H_4ebfc4ff)
-    pub H_4ebfc4ff: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HEHOBDGMMJM.GLJPGNPPAFP)
+    pub GLJPGNPPAFP: bool,
+    // @@protoc_insertion_point(field:HEHOBDGMMJM.H_7caab6c0)
+    pub H_7caab6c0: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:HEHOBDGMMJM.trait_id)
     pub trait_id: u32,
     // special fields
@@ -49,12 +51,17 @@ impl HEHOBDGMMJM {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GLJPGNPPAFP",
+            |m: &HEHOBDGMMJM| { &m.GLJPGNPPAFP },
+            |m: &mut HEHOBDGMMJM| { &mut m.GLJPGNPPAFP },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_4ebfc4ff",
-            |m: &HEHOBDGMMJM| { &m.H_4ebfc4ff },
-            |m: &mut HEHOBDGMMJM| { &mut m.H_4ebfc4ff },
+            "H_7caab6c0",
+            |m: &HEHOBDGMMJM| { &m.H_7caab6c0 },
+            |m: &mut HEHOBDGMMJM| { &mut m.H_7caab6c0 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "trait_id",
@@ -79,13 +86,16 @@ impl ::protobuf::Message for HEHOBDGMMJM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.H_4ebfc4ff)?;
+                72 => {
+                    self.GLJPGNPPAFP = is.read_bool()?;
                 },
-                48 => {
-                    self.H_4ebfc4ff.push(is.read_uint32()?);
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.H_7caab6c0)?;
                 },
-                96 => {
+                80 => {
+                    self.H_7caab6c0.push(is.read_uint32()?);
+                },
+                112 => {
                     self.trait_id = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +110,12 @@ impl ::protobuf::Message for HEHOBDGMMJM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.H_4ebfc4ff);
+        if self.GLJPGNPPAFP != false {
+            my_size += 1 + 1;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.H_7caab6c0);
         if self.trait_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.trait_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.trait_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +123,12 @@ impl ::protobuf::Message for HEHOBDGMMJM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.H_4ebfc4ff)?;
+        if self.GLJPGNPPAFP != false {
+            os.write_bool(9, self.GLJPGNPPAFP)?;
+        }
+        os.write_repeated_packed_uint32(10, &self.H_7caab6c0)?;
         if self.trait_id != 0 {
-            os.write_uint32(12, self.trait_id)?;
+            os.write_uint32(14, self.trait_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -131,14 +147,16 @@ impl ::protobuf::Message for HEHOBDGMMJM {
     }
 
     fn clear(&mut self) {
-        self.H_4ebfc4ff.clear();
+        self.GLJPGNPPAFP = false;
+        self.H_7caab6c0.clear();
         self.trait_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HEHOBDGMMJM {
         static instance: HEHOBDGMMJM = HEHOBDGMMJM {
-            H_4ebfc4ff: ::std::vec::Vec::new(),
+            GLJPGNPPAFP: false,
+            H_7caab6c0: ::std::vec::Vec::new(),
             trait_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -164,9 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for HEHOBDGMMJM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HEHOBDGMMJM.proto\"G\n\x0bHEHOBDGMMJM\x12\x1d\n\nH_4ebfc4ff\x18\
-    \x06\x20\x03(\rR\tH4ebfc4ff\x12\x19\n\x08trait_id\x18\x0c\x20\x01(\rR\
-    \x07traitIdb\x06proto3\
+    \n\x11HEHOBDGMMJM.proto\"i\n\x0bHEHOBDGMMJM\x12\x20\n\x0bGLJPGNPPAFP\x18\
+    \t\x20\x01(\x08R\x0bGLJPGNPPAFP\x12\x1d\n\nH_7caab6c0\x18\n\x20\x03(\rR\
+    \tH7caab6c0\x12\x19\n\x08trait_id\x18\x0e\x20\x01(\rR\x07traitIdb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

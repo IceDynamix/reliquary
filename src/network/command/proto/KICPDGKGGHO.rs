@@ -30,10 +30,10 @@ pub struct KICPDGKGGHO {
     // message fields
     // @@protoc_insertion_point(field:KICPDGKGGHO.config_id)
     pub config_id: u32,
-    // @@protoc_insertion_point(field:KICPDGKGGHO.unique_id)
-    pub unique_id: u64,
     // @@protoc_insertion_point(field:KICPDGKGGHO.KABJOHKOEFN)
     pub KABJOHKOEFN: ::std::vec::Vec<super::IEDAMBICKBB::IEDAMBICKBB>,
+    // @@protoc_insertion_point(field:KICPDGKGGHO.unique_id)
+    pub unique_id: u64,
     // @@protoc_insertion_point(field:KICPDGKGGHO.source)
     pub source: ::protobuf::MessageField<super::OBEBKODGODB::OBEBKODGODB>,
     // special fields
@@ -60,15 +60,15 @@ impl KICPDGKGGHO {
             |m: &KICPDGKGGHO| { &m.config_id },
             |m: &mut KICPDGKGGHO| { &mut m.config_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &KICPDGKGGHO| { &m.unique_id },
-            |m: &mut KICPDGKGGHO| { &mut m.unique_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KABJOHKOEFN",
             |m: &KICPDGKGGHO| { &m.KABJOHKOEFN },
             |m: &mut KICPDGKGGHO| { &mut m.KABJOHKOEFN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unique_id",
+            |m: &KICPDGKGGHO| { &m.unique_id },
+            |m: &mut KICPDGKGGHO| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OBEBKODGODB::OBEBKODGODB>(
             "source",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for KICPDGKGGHO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                16 => {
                     self.config_id = is.read_uint32()?;
                 },
-                48 => {
-                    self.unique_id = is.read_uint64()?;
-                },
-                98 => {
+                58 => {
                     self.KABJOHKOEFN.push(is.read_message()?);
                 },
-                114 => {
+                72 => {
+                    self.unique_id = is.read_uint64()?;
+                },
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.source)?;
                 },
                 tag => {
@@ -118,15 +118,15 @@ impl ::protobuf::Message for KICPDGKGGHO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.config_id);
-        }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.config_id);
         }
         for value in &self.KABJOHKOEFN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(9, self.unique_id);
+        }
         if let Some(v) = self.source.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -138,16 +138,16 @@ impl ::protobuf::Message for KICPDGKGGHO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.config_id != 0 {
-            os.write_uint32(5, self.config_id)?;
-        }
-        if self.unique_id != 0 {
-            os.write_uint64(6, self.unique_id)?;
+            os.write_uint32(2, self.config_id)?;
         }
         for v in &self.KABJOHKOEFN {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
+        if self.unique_id != 0 {
+            os.write_uint64(9, self.unique_id)?;
+        }
         if let Some(v) = self.source.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::Message for KICPDGKGGHO {
 
     fn clear(&mut self) {
         self.config_id = 0;
-        self.unique_id = 0;
         self.KABJOHKOEFN.clear();
+        self.unique_id = 0;
         self.source.clear();
         self.special_fields.clear();
     }
@@ -176,8 +176,8 @@ impl ::protobuf::Message for KICPDGKGGHO {
     fn default_instance() -> &'static KICPDGKGGHO {
         static instance: KICPDGKGGHO = KICPDGKGGHO {
             config_id: 0,
-            unique_id: 0,
             KABJOHKOEFN: ::std::vec::Vec::new(),
+            unique_id: 0,
             source: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for KICPDGKGGHO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KICPDGKGGHO.proto\x1a\x11IEDAMBICKBB.proto\x1a\x11OBEBKODGODB.prot\
-    o\"\x9d\x01\n\x0bKICPDGKGGHO\x12\x1b\n\tconfig_id\x18\x05\x20\x01(\rR\
-    \x08configId\x12\x1b\n\tunique_id\x18\x06\x20\x01(\x04R\x08uniqueId\x12.\
-    \n\x0bKABJOHKOEFN\x18\x0c\x20\x03(\x0b2\x0c.IEDAMBICKBBR\x0bKABJOHKOEFN\
-    \x12$\n\x06source\x18\x0e\x20\x01(\x0b2\x0c.OBEBKODGODBR\x06sourceb\x06p\
+    o\"\x9d\x01\n\x0bKICPDGKGGHO\x12\x1b\n\tconfig_id\x18\x02\x20\x01(\rR\
+    \x08configId\x12.\n\x0bKABJOHKOEFN\x18\x07\x20\x03(\x0b2\x0c.IEDAMBICKBB\
+    R\x0bKABJOHKOEFN\x12\x1b\n\tunique_id\x18\t\x20\x01(\x04R\x08uniqueId\
+    \x12$\n\x06source\x18\x0b\x20\x01(\x0b2\x0c.OBEBKODGODBR\x06sourceb\x06p\
     roto3\
 ";
 

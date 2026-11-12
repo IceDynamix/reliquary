@@ -82,7 +82,7 @@ impl ::protobuf::Message for RotateMapInfo {
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELFDIEFKCMH)?;
                 },
-                34 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MIACNFDGKCE)?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for RotateMapInfo {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if let Some(v) = self.MIACNFDGKCE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,8 +169,8 @@ impl ::protobuf::reflect::ProtobufValue for RotateMapInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13RotateMapInfo.proto\x1a\x0cVector.proto\x1a\rVector4.proto\"f\n\rR\
     otateMapInfo\x12)\n\x0bELFDIEFKCMH\x18\x01\x20\x01(\x0b2\x07.VectorR\x0b\
-    ELFDIEFKCMH\x12*\n\x0bMIACNFDGKCE\x18\x04\x20\x01(\x0b2\x08.Vector4R\x0b\
-    MIACNFDGKCEb\x06proto3\
+    ELFDIEFKCMH\x12*\n\x0bMIACNFDGKCE\x18\r\x20\x01(\x0b2\x08.Vector4R\x0bMI\
+    ACNFDGKCEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

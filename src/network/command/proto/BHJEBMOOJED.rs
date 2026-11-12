@@ -28,6 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BHJEBMOOJED {
     // message fields
+    // @@protoc_insertion_point(field:BHJEBMOOJED.is_new)
+    pub is_new: bool,
     // @@protoc_insertion_point(field:BHJEBMOOJED.item_list)
     pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
@@ -47,8 +49,13 @@ impl BHJEBMOOJED {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_new",
+            |m: &BHJEBMOOJED| { &m.is_new },
+            |m: &mut BHJEBMOOJED| { &mut m.is_new },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "item_list",
             |m: &BHJEBMOOJED| { &m.item_list },
@@ -72,7 +79,10 @@ impl ::protobuf::Message for BHJEBMOOJED {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                24 => {
+                    self.is_new = is.read_bool()?;
+                },
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
                 },
                 tag => {
@@ -87,6 +97,9 @@ impl ::protobuf::Message for BHJEBMOOJED {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.is_new != false {
+            my_size += 1 + 1;
+        }
         if let Some(v) = self.item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -97,8 +110,11 @@ impl ::protobuf::Message for BHJEBMOOJED {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.is_new != false {
+            os.write_bool(3, self.is_new)?;
+        }
         if let Some(v) = self.item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,12 +133,14 @@ impl ::protobuf::Message for BHJEBMOOJED {
     }
 
     fn clear(&mut self) {
+        self.is_new = false;
         self.item_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BHJEBMOOJED {
         static instance: BHJEBMOOJED = BHJEBMOOJED {
+            is_new: false,
             item_list: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -148,8 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for BHJEBMOOJED {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BHJEBMOOJED.proto\x1a\x0eItemList.proto\"5\n\x0bBHJEBMOOJED\x12&\n\
-    \titem_list\x18\x0c\x20\x01(\x0b2\t.ItemListR\x08itemListb\x06proto3\
+    \n\x11BHJEBMOOJED.proto\x1a\x0eItemList.proto\"L\n\x0bBHJEBMOOJED\x12\
+    \x15\n\x06is_new\x18\x03\x20\x01(\x08R\x05isNew\x12&\n\titem_list\x18\n\
+    \x20\x01(\x0b2\t.ItemListR\x08itemListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

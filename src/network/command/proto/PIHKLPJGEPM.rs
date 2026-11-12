@@ -89,7 +89,7 @@ impl ::protobuf::Message for PIHKLPJGEPM {
                 24 => {
                     self.exp = is.read_uint32()?;
                 },
-                72 => {
+                64 => {
                     self.level = is.read_uint32()?;
                 },
                 104 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for PIHKLPJGEPM {
             my_size += ::protobuf::rt::uint32_size(3, self.exp);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.level);
+            my_size += ::protobuf::rt::uint32_size(8, self.level);
         }
         if self.HFMKLAPEKFA != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.HFMKLAPEKFA);
@@ -126,7 +126,7 @@ impl ::protobuf::Message for PIHKLPJGEPM {
             os.write_uint32(3, self.exp)?;
         }
         if self.level != 0 {
-            os.write_uint32(9, self.level)?;
+            os.write_uint32(8, self.level)?;
         }
         if self.HFMKLAPEKFA != 0 {
             os.write_uint32(13, self.HFMKLAPEKFA)?;
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for PIHKLPJGEPM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PIHKLPJGEPM.proto\"W\n\x0bPIHKLPJGEPM\x12\x10\n\x03exp\x18\x03\x20\
-    \x01(\rR\x03exp\x12\x14\n\x05level\x18\t\x20\x01(\rR\x05level\x12\x20\n\
-    \x0bHFMKLAPEKFA\x18\r\x20\x01(\rR\x0bHFMKLAPEKFAb\x06proto3\
+    \x01(\rR\x03exp\x12\x14\n\x05level\x18\x08\x20\x01(\rR\x05level\x12\x20\
+    \n\x0bHFMKLAPEKFA\x18\r\x20\x01(\rR\x0bHFMKLAPEKFAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

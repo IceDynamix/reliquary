@@ -79,10 +79,10 @@ impl ::protobuf::Message for ContentPackageInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                8 => {
                     self.content_id = is.read_uint32()?;
                 },
-                104 => {
+                88 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ContentPackageInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.content_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.content_id);
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::ContentPackageStatus::ContentPackageStatus::ContentPackageStatus_None) {
-            my_size += ::protobuf::rt::int32_size(13, self.status.value());
+            my_size += ::protobuf::rt::int32_size(11, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ContentPackageInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.content_id != 0 {
-            os.write_uint32(10, self.content_id)?;
+            os.write_uint32(1, self.content_id)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::ContentPackageStatus::ContentPackageStatus::ContentPackageStatus_None) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for ContentPackageInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ContentPackageInfo.proto\x1a\x1aContentPackageStatus.proto\"b\n\
-    \x12ContentPackageInfo\x12\x1d\n\ncontent_id\x18\n\x20\x01(\rR\tcontentI\
-    d\x12-\n\x06status\x18\r\x20\x01(\x0e2\x15.ContentPackageStatusR\x06stat\
-    usb\x06proto3\
+    \x12ContentPackageInfo\x12\x1d\n\ncontent_id\x18\x01\x20\x01(\rR\tconten\
+    tId\x12-\n\x06status\x18\x0b\x20\x01(\x0e2\x15.ContentPackageStatusR\x06\
+    statusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateGameFormationCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpdateGameFormationCsReq.dice_slot_id)
-    pub dice_slot_id: u32,
-    // @@protoc_insertion_point(field:UpdateGameFormationCsReq.name)
-    pub name: ::std::string::String,
-    // @@protoc_insertion_point(field:UpdateGameFormationCsReq.MILBDIPBJGP)
-    pub MILBDIPBJGP: ::std::string::String,
-    // @@protoc_insertion_point(field:UpdateGameFormationCsReq.KFPMJKCOJAJ)
-    pub KFPMJKCOJAJ: ::std::string::String,
     // @@protoc_insertion_point(field:UpdateGameFormationCsReq.KLLEKHPJGLE)
     pub KLLEKHPJGLE: bool,
+    // @@protoc_insertion_point(field:UpdateGameFormationCsReq.name)
+    pub name: ::std::string::String,
+    // @@protoc_insertion_point(field:UpdateGameFormationCsReq.dice_slot_id)
+    pub dice_slot_id: u32,
+    // @@protoc_insertion_point(field:UpdateGameFormationCsReq.KFPMJKCOJAJ)
+    pub KFPMJKCOJAJ: ::std::string::String,
     // @@protoc_insertion_point(field:UpdateGameFormationCsReq.JLFIAFKGCOJ)
     pub JLFIAFKGCOJ: ::std::vec::Vec<u8>,
+    // @@protoc_insertion_point(field:UpdateGameFormationCsReq.MILBDIPBJGP)
+    pub MILBDIPBJGP: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateGameFormationCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,9 +60,9 @@ impl UpdateGameFormationCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "dice_slot_id",
-            |m: &UpdateGameFormationCsReq| { &m.dice_slot_id },
-            |m: &mut UpdateGameFormationCsReq| { &mut m.dice_slot_id },
+            "KLLEKHPJGLE",
+            |m: &UpdateGameFormationCsReq| { &m.KLLEKHPJGLE },
+            |m: &mut UpdateGameFormationCsReq| { &mut m.KLLEKHPJGLE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "name",
@@ -70,9 +70,9 @@ impl UpdateGameFormationCsReq {
             |m: &mut UpdateGameFormationCsReq| { &mut m.name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MILBDIPBJGP",
-            |m: &UpdateGameFormationCsReq| { &m.MILBDIPBJGP },
-            |m: &mut UpdateGameFormationCsReq| { &mut m.MILBDIPBJGP },
+            "dice_slot_id",
+            |m: &UpdateGameFormationCsReq| { &m.dice_slot_id },
+            |m: &mut UpdateGameFormationCsReq| { &mut m.dice_slot_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KFPMJKCOJAJ",
@@ -80,14 +80,14 @@ impl UpdateGameFormationCsReq {
             |m: &mut UpdateGameFormationCsReq| { &mut m.KFPMJKCOJAJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KLLEKHPJGLE",
-            |m: &UpdateGameFormationCsReq| { &m.KLLEKHPJGLE },
-            |m: &mut UpdateGameFormationCsReq| { &mut m.KLLEKHPJGLE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JLFIAFKGCOJ",
             |m: &UpdateGameFormationCsReq| { &m.JLFIAFKGCOJ },
             |m: &mut UpdateGameFormationCsReq| { &mut m.JLFIAFKGCOJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MILBDIPBJGP",
+            |m: &UpdateGameFormationCsReq| { &m.MILBDIPBJGP },
+            |m: &mut UpdateGameFormationCsReq| { &mut m.MILBDIPBJGP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateGameFormationCsReq>(
             "UpdateGameFormationCsReq",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for UpdateGameFormationCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.dice_slot_id = is.read_uint32()?;
+                16 => {
+                    self.KLLEKHPJGLE = is.read_bool()?;
                 },
-                58 => {
+                34 => {
                     self.name = is.read_string()?;
                 },
+                56 => {
+                    self.dice_slot_id = is.read_uint32()?;
+                },
                 66 => {
-                    self.MILBDIPBJGP = is.read_string()?;
-                },
-                82 => {
                     self.KFPMJKCOJAJ = is.read_string()?;
-                },
-                88 => {
-                    self.KLLEKHPJGLE = is.read_bool()?;
                 },
                 98 => {
                     self.JLFIAFKGCOJ = is.read_bytes()?;
+                },
+                122 => {
+                    self.MILBDIPBJGP = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,23 +137,23 @@ impl ::protobuf::Message for UpdateGameFormationCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.dice_slot_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.dice_slot_id);
-        }
-        if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.name);
-        }
-        if !self.MILBDIPBJGP.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.MILBDIPBJGP);
-        }
-        if !self.KFPMJKCOJAJ.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.KFPMJKCOJAJ);
-        }
         if self.KLLEKHPJGLE != false {
             my_size += 1 + 1;
         }
+        if !self.name.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.name);
+        }
+        if self.dice_slot_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.dice_slot_id);
+        }
+        if !self.KFPMJKCOJAJ.is_empty() {
+            my_size += ::protobuf::rt::string_size(8, &self.KFPMJKCOJAJ);
+        }
         if !self.JLFIAFKGCOJ.is_empty() {
             my_size += ::protobuf::rt::bytes_size(12, &self.JLFIAFKGCOJ);
+        }
+        if !self.MILBDIPBJGP.is_empty() {
+            my_size += ::protobuf::rt::string_size(15, &self.MILBDIPBJGP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,23 +161,23 @@ impl ::protobuf::Message for UpdateGameFormationCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.dice_slot_id != 0 {
-            os.write_uint32(1, self.dice_slot_id)?;
+        if self.KLLEKHPJGLE != false {
+            os.write_bool(2, self.KLLEKHPJGLE)?;
         }
         if !self.name.is_empty() {
-            os.write_string(7, &self.name)?;
+            os.write_string(4, &self.name)?;
         }
-        if !self.MILBDIPBJGP.is_empty() {
-            os.write_string(8, &self.MILBDIPBJGP)?;
+        if self.dice_slot_id != 0 {
+            os.write_uint32(7, self.dice_slot_id)?;
         }
         if !self.KFPMJKCOJAJ.is_empty() {
-            os.write_string(10, &self.KFPMJKCOJAJ)?;
-        }
-        if self.KLLEKHPJGLE != false {
-            os.write_bool(11, self.KLLEKHPJGLE)?;
+            os.write_string(8, &self.KFPMJKCOJAJ)?;
         }
         if !self.JLFIAFKGCOJ.is_empty() {
             os.write_bytes(12, &self.JLFIAFKGCOJ)?;
+        }
+        if !self.MILBDIPBJGP.is_empty() {
+            os.write_string(15, &self.MILBDIPBJGP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for UpdateGameFormationCsReq {
     }
 
     fn clear(&mut self) {
-        self.dice_slot_id = 0;
-        self.name.clear();
-        self.MILBDIPBJGP.clear();
-        self.KFPMJKCOJAJ.clear();
         self.KLLEKHPJGLE = false;
+        self.name.clear();
+        self.dice_slot_id = 0;
+        self.KFPMJKCOJAJ.clear();
         self.JLFIAFKGCOJ.clear();
+        self.MILBDIPBJGP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateGameFormationCsReq {
         static instance: UpdateGameFormationCsReq = UpdateGameFormationCsReq {
-            dice_slot_id: 0,
-            name: ::std::string::String::new(),
-            MILBDIPBJGP: ::std::string::String::new(),
-            KFPMJKCOJAJ: ::std::string::String::new(),
             KLLEKHPJGLE: false,
+            name: ::std::string::String::new(),
+            dice_slot_id: 0,
+            KFPMJKCOJAJ: ::std::string::String::new(),
             JLFIAFKGCOJ: ::std::vec::Vec::new(),
+            MILBDIPBJGP: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,12 +238,12 @@ impl ::protobuf::reflect::ProtobufValue for UpdateGameFormationCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eUpdateGameFormationCsReq.proto\"\xd8\x01\n\x18UpdateGameFormationC\
-    sReq\x12\x20\n\x0cdice_slot_id\x18\x01\x20\x01(\rR\ndiceSlotId\x12\x12\n\
-    \x04name\x18\x07\x20\x01(\tR\x04name\x12\x20\n\x0bMILBDIPBJGP\x18\x08\
-    \x20\x01(\tR\x0bMILBDIPBJGP\x12\x20\n\x0bKFPMJKCOJAJ\x18\n\x20\x01(\tR\
-    \x0bKFPMJKCOJAJ\x12\x20\n\x0bKLLEKHPJGLE\x18\x0b\x20\x01(\x08R\x0bKLLEKH\
-    PJGLE\x12\x20\n\x0bJLFIAFKGCOJ\x18\x0c\x20\x01(\x0cR\x0bJLFIAFKGCOJb\x06\
-    proto3\
+    sReq\x12\x20\n\x0bKLLEKHPJGLE\x18\x02\x20\x01(\x08R\x0bKLLEKHPJGLE\x12\
+    \x12\n\x04name\x18\x04\x20\x01(\tR\x04name\x12\x20\n\x0cdice_slot_id\x18\
+    \x07\x20\x01(\rR\ndiceSlotId\x12\x20\n\x0bKFPMJKCOJAJ\x18\x08\x20\x01(\t\
+    R\x0bKFPMJKCOJAJ\x12\x20\n\x0bJLFIAFKGCOJ\x18\x0c\x20\x01(\x0cR\x0bJLFIA\
+    FKGCOJ\x12\x20\n\x0bMILBDIPBJGP\x18\x0f\x20\x01(\tR\x0bMILBDIPBJGPb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

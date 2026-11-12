@@ -79,10 +79,10 @@ impl ::protobuf::Message for SetBlindBoxPetLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                24 => {
                     self.CGBJOAJEMKN = is.read_enum_or_unknown()?;
                 },
-                106 => {
+                42 => {
                     self.POJGKJENENA.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SetBlindBoxPetLineupCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CGBJOAJEMKN != ::protobuf::EnumOrUnknown::new(super::HENPKNCKGGI::HENPKNCKGGI::HENPKNCKGGI_CDCCIOFMCGN) {
-            my_size += ::protobuf::rt::int32_size(10, self.CGBJOAJEMKN.value());
+            my_size += ::protobuf::rt::int32_size(3, self.CGBJOAJEMKN.value());
         }
         for value in &self.POJGKJENENA {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SetBlindBoxPetLineupCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CGBJOAJEMKN != ::protobuf::EnumOrUnknown::new(super::HENPKNCKGGI::HENPKNCKGGI::HENPKNCKGGI_CDCCIOFMCGN) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.CGBJOAJEMKN))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.CGBJOAJEMKN))?;
         }
         for v in &self.POJGKJENENA {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for SetBlindBoxPetLineupCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fSetBlindBoxPetLineupCsReq.proto\x1a\x11EPFJLNKPEPK.proto\x1a\x11HE\
     NPKNCKGGI.proto\"{\n\x19SetBlindBoxPetLineupCsReq\x12.\n\x0bCGBJOAJEMKN\
-    \x18\n\x20\x01(\x0e2\x0c.HENPKNCKGGIR\x0bCGBJOAJEMKN\x12.\n\x0bPOJGKJENE\
-    NA\x18\r\x20\x03(\x0b2\x0c.EPFJLNKPEPKR\x0bPOJGKJENENAb\x06proto3\
+    \x18\x03\x20\x01(\x0e2\x0c.HENPKNCKGGIR\x0bCGBJOAJEMKN\x12.\n\x0bPOJGKJE\
+    NENA\x18\x05\x20\x03(\x0b2\x0c.EPFJLNKPEPKR\x0bPOJGKJENENAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

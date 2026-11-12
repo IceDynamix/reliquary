@@ -72,7 +72,7 @@ impl ::protobuf::Message for OpenRelicBoxCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MCLLALGABAB)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for OpenRelicBoxCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MCLLALGABAB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for OpenRelicBoxCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17OpenRelicBoxCsReq.proto\x1a\x11HGABLJFOKDG.proto\"C\n\x11OpenRelic\
-    BoxCsReq\x12.\n\x0bMCLLALGABAB\x18\x07\x20\x01(\x0b2\x0c.HGABLJFOKDGR\
-    \x0bMCLLALGABABb\x06proto3\
+    BoxCsReq\x12.\n\x0bMCLLALGABAB\x18\n\x20\x01(\x0b2\x0c.HGABLJFOKDGR\x0bM\
+    CLLALGABABb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

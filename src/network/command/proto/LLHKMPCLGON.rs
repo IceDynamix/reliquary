@@ -30,9 +30,9 @@ pub enum LLHKMPCLGON {
     // @@protoc_insertion_point(enum_value:LLHKMPCLGON.LLHKMPCLGON_NLCDGIPGFDJ)
     LLHKMPCLGON_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:LLHKMPCLGON.LLHKMPCLGON_GCPCAGGGNOH)
-    LLHKMPCLGON_GCPCAGGGNOH = 7626,
+    LLHKMPCLGON_GCPCAGGGNOH = 7627,
     // @@protoc_insertion_point(enum_value:LLHKMPCLGON.LLHKMPCLGON_KJLNDFCMEOH)
-    LLHKMPCLGON_KJLNDFCMEOH = 7627,
+    LLHKMPCLGON_KJLNDFCMEOH = 7626,
 }
 
 impl ::protobuf::Enum for LLHKMPCLGON {
@@ -45,8 +45,8 @@ impl ::protobuf::Enum for LLHKMPCLGON {
     fn from_i32(value: i32) -> ::std::option::Option<LLHKMPCLGON> {
         match value {
             0 => ::std::option::Option::Some(LLHKMPCLGON::LLHKMPCLGON_NLCDGIPGFDJ),
-            7626 => ::std::option::Option::Some(LLHKMPCLGON::LLHKMPCLGON_GCPCAGGGNOH),
-            7627 => ::std::option::Option::Some(LLHKMPCLGON::LLHKMPCLGON_KJLNDFCMEOH),
+            7627 => ::std::option::Option::Some(LLHKMPCLGON::LLHKMPCLGON_GCPCAGGGNOH),
+            7626 => ::std::option::Option::Some(LLHKMPCLGON::LLHKMPCLGON_KJLNDFCMEOH),
             _ => ::std::option::Option::None
         }
     }
@@ -97,8 +97,8 @@ impl LLHKMPCLGON {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LLHKMPCLGON.proto*f\n\x0bLLHKMPCLGON\x12\x1b\n\x17LLHKMPCLGON_NLCD\
-    GIPGFDJ\x10\0\x12\x1c\n\x17LLHKMPCLGON_GCPCAGGGNOH\x10\xca;\x12\x1c\n\
-    \x17LLHKMPCLGON_KJLNDFCMEOH\x10\xcb;b\x06proto3\
+    GIPGFDJ\x10\0\x12\x1c\n\x17LLHKMPCLGON_GCPCAGGGNOH\x10\xcb;\x12\x1c\n\
+    \x17LLHKMPCLGON_KJLNDFCMEOH\x10\xca;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

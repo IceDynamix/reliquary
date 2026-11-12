@@ -27,6 +27,8 @@ macro_rules! proto_rqa {
         pub mod AvatarPathData;
         pub mod AvatarPathSkillTree;
         pub mod AvatarSync;
+        pub mod BoxRelic;
+        pub mod ConfirmRelicBoxScRsp;
         pub mod DoGachaScRsp;
         pub mod EquipRelic;
         pub mod Equipment;
@@ -37,11 +39,13 @@ macro_rules! proto_rqa {
         pub mod GetAvatarDataScRsp;
         pub mod GetBagScRsp;
         pub mod GetGachaInfoScRsp;
+        pub mod GetRelicBoxDataScRsp;
         pub mod GroupStatus;
         pub mod HeadFrameInfo;
         pub mod HeadIconData;
         pub mod Item;
         pub mod ItemList;
+        pub mod KVP;
         pub mod Material;
         pub mod MessageGroupStatus;
         pub mod MessageSectionStatus;
@@ -49,6 +53,7 @@ macro_rules! proto_rqa {
         pub mod MissionCustomValue;
         pub mod MissionStatus;
         pub mod MissionSync;
+        pub mod OpenRelicBoxScRsp;
         pub mod PileItem;
         pub mod PlayerBasicInfo;
         pub mod PlayerLoginScRsp;
@@ -63,13 +68,18 @@ macro_rules! proto_rqa {
         pub mod TurnFoodSwitch;
         pub mod WaitDelResource;
 
-        // Untranslated dependencies
-        pub mod APAMFCKFHLL;
+    // Untranslated dependencies
+        pub mod BDFGBPHEPDI;
+        pub mod BEBNHPCBMPF;
         pub mod BKGPJOBNMKJ;
         pub mod CCHMHOONEGG;
         pub mod CFMDKNCDDAL;
         pub mod CJLCPMDGIBO;
+        pub mod DPJCBHKGFOK;
+        pub mod HGABLJFOKDG;
         pub mod IAIDGGGMBPJ;
+        pub mod JBOAAPIDOIC;
+        pub mod JFIIIHFBLPA;
         pub mod LHCBKDNHGCG;
         pub mod MJBANFPPEFH;
         pub mod NEIMLKNMDBM;

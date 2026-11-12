@@ -82,7 +82,7 @@ impl ::protobuf::Message for PixAirUnlockPlaneScRsp {
                 32 => {
                     self.plane_id = is.read_uint32()?;
                 },
-                112 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for PixAirUnlockPlaneScRsp {
             my_size += ::protobuf::rt::uint32_size(4, self.plane_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for PixAirUnlockPlaneScRsp {
             os.write_uint32(4, self.plane_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for PixAirUnlockPlaneScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cPixAirUnlockPlaneScRsp.proto\"M\n\x16PixAirUnlockPlaneScRsp\x12\
     \x19\n\x08plane_id\x18\x04\x20\x01(\rR\x07planeId\x12\x18\n\x07retcode\
-    \x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

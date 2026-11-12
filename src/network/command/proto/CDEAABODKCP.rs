@@ -28,20 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CDEAABODKCP {
     // message fields
-    // @@protoc_insertion_point(field:CDEAABODKCP.pos_index)
-    pub pos_index: u32,
-    // @@protoc_insertion_point(field:CDEAABODKCP.unique_id)
-    pub unique_id: u32,
+    // @@protoc_insertion_point(field:CDEAABODKCP.role_star)
+    pub role_star: u32,
     // @@protoc_insertion_point(field:CDEAABODKCP.PNJIPHJJONG)
     pub PNJIPHJJONG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CDEAABODKCP.id)
     pub id: u32,
+    // @@protoc_insertion_point(field:CDEAABODKCP.unique_id)
+    pub unique_id: u32,
+    // @@protoc_insertion_point(field:CDEAABODKCP.pos_index)
+    pub pos_index: u32,
     // @@protoc_insertion_point(field:CDEAABODKCP.convert_property_to_fixpoint)
     pub convert_property_to_fixpoint: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:CDEAABODKCP.role_star)
-    pub role_star: u32,
-    // @@protoc_insertion_point(field:CDEAABODKCP.H_873d123e)
-    pub H_873d123e: ::std::collections::HashMap<::std::string::String, u32>,
+    // @@protoc_insertion_point(field:CDEAABODKCP.BABNHPDGNGB)
+    pub BABNHPDGNGB: ::std::collections::HashMap<::std::string::String, u32>,
+    // @@protoc_insertion_point(field:CDEAABODKCP.H_c6d28428)
+    pub H_c6d28428: ::std::collections::HashMap<::std::string::String, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:CDEAABODKCP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,17 +61,12 @@ impl CDEAABODKCP {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(7);
+        let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pos_index",
-            |m: &CDEAABODKCP| { &m.pos_index },
-            |m: &mut CDEAABODKCP| { &mut m.pos_index },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &CDEAABODKCP| { &m.unique_id },
-            |m: &mut CDEAABODKCP| { &mut m.unique_id },
+            "role_star",
+            |m: &CDEAABODKCP| { &m.role_star },
+            |m: &mut CDEAABODKCP| { &mut m.role_star },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PNJIPHJJONG",
@@ -81,20 +78,30 @@ impl CDEAABODKCP {
             |m: &CDEAABODKCP| { &m.id },
             |m: &mut CDEAABODKCP| { &mut m.id },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unique_id",
+            |m: &CDEAABODKCP| { &m.unique_id },
+            |m: &mut CDEAABODKCP| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "pos_index",
+            |m: &CDEAABODKCP| { &m.pos_index },
+            |m: &mut CDEAABODKCP| { &mut m.pos_index },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "convert_property_to_fixpoint",
             |m: &CDEAABODKCP| { &m.convert_property_to_fixpoint },
             |m: &mut CDEAABODKCP| { &mut m.convert_property_to_fixpoint },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "role_star",
-            |m: &CDEAABODKCP| { &m.role_star },
-            |m: &mut CDEAABODKCP| { &mut m.role_star },
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "BABNHPDGNGB",
+            |m: &CDEAABODKCP| { &m.BABNHPDGNGB },
+            |m: &mut CDEAABODKCP| { &mut m.BABNHPDGNGB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "H_873d123e",
-            |m: &CDEAABODKCP| { &m.H_873d123e },
-            |m: &mut CDEAABODKCP| { &mut m.H_873d123e },
+            "H_c6d28428",
+            |m: &CDEAABODKCP| { &m.H_c6d28428 },
+            |m: &mut CDEAABODKCP| { &mut m.H_c6d28428 },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CDEAABODKCP>(
             "CDEAABODKCP",
@@ -114,20 +121,23 @@ impl ::protobuf::Message for CDEAABODKCP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.pos_index = is.read_uint32()?;
-                },
                 24 => {
-                    self.unique_id = is.read_uint32()?;
+                    self.role_star = is.read_uint32()?;
                 },
-                50 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.PNJIPHJJONG)?;
                 },
-                48 => {
+                32 => {
                     self.PNJIPHJJONG.push(is.read_uint32()?);
                 },
-                56 => {
+                40 => {
                     self.id = is.read_uint32()?;
+                },
+                48 => {
+                    self.unique_id = is.read_uint32()?;
+                },
+                56 => {
+                    self.pos_index = is.read_uint32()?;
                 },
                 66 => {
                     let len = is.read_raw_varint32()?;
@@ -144,10 +154,7 @@ impl ::protobuf::Message for CDEAABODKCP {
                     is.pop_limit(old_limit);
                     self.convert_property_to_fixpoint.insert(key, value);
                 },
-                80 => {
-                    self.role_star = is.read_uint32()?;
-                },
-                90 => {
+                82 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -160,7 +167,22 @@ impl ::protobuf::Message for CDEAABODKCP {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.H_873d123e.insert(key, value);
+                    self.BABNHPDGNGB.insert(key, value);
+                },
+                122 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            10 => key = is.read_string()?,
+                            16 => value = is.read_uint32()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.H_c6d28428.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -174,15 +196,18 @@ impl ::protobuf::Message for CDEAABODKCP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.pos_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.pos_index);
+        if self.role_star != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.role_star);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.PNJIPHJJONG);
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.id);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.unique_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.PNJIPHJJONG);
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.id);
+        if self.pos_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.pos_index);
         }
         for (k, v) in &self.convert_property_to_fixpoint {
             let mut entry_size = 0;
@@ -190,10 +215,13 @@ impl ::protobuf::Message for CDEAABODKCP {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.role_star != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.role_star);
-        }
-        for (k, v) in &self.H_873d123e {
+        for (k, v) in &self.BABNHPDGNGB {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::string_size(1, &k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
+        for (k, v) in &self.H_c6d28428 {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -205,15 +233,18 @@ impl ::protobuf::Message for CDEAABODKCP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.pos_index != 0 {
-            os.write_uint32(1, self.pos_index)?;
+        if self.role_star != 0 {
+            os.write_uint32(3, self.role_star)?;
+        }
+        os.write_repeated_packed_uint32(4, &self.PNJIPHJJONG)?;
+        if self.id != 0 {
+            os.write_uint32(5, self.id)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(3, self.unique_id)?;
+            os.write_uint32(6, self.unique_id)?;
         }
-        os.write_repeated_packed_uint32(6, &self.PNJIPHJJONG)?;
-        if self.id != 0 {
-            os.write_uint32(7, self.id)?;
+        if self.pos_index != 0 {
+            os.write_uint32(7, self.pos_index)?;
         }
         for (k, v) in &self.convert_property_to_fixpoint {
             let mut entry_size = 0;
@@ -224,14 +255,20 @@ impl ::protobuf::Message for CDEAABODKCP {
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.role_star != 0 {
-            os.write_uint32(10, self.role_star)?;
-        }
-        for (k, v) in &self.H_873d123e {
+        for (k, v) in &self.BABNHPDGNGB {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(90)?; // Tag.
+            os.write_raw_varint32(82)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_string(1, &k)?;
+            os.write_uint32(2, *v)?;
+        };
+        for (k, v) in &self.H_c6d28428 {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::string_size(1, &k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            os.write_raw_varint32(122)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_string(1, &k)?;
             os.write_uint32(2, *v)?;
@@ -253,13 +290,14 @@ impl ::protobuf::Message for CDEAABODKCP {
     }
 
     fn clear(&mut self) {
-        self.pos_index = 0;
-        self.unique_id = 0;
+        self.role_star = 0;
         self.PNJIPHJJONG.clear();
         self.id = 0;
+        self.unique_id = 0;
+        self.pos_index = 0;
         self.convert_property_to_fixpoint.clear();
-        self.role_star = 0;
-        self.H_873d123e.clear();
+        self.BABNHPDGNGB.clear();
+        self.H_c6d28428.clear();
         self.special_fields.clear();
     }
 
@@ -287,18 +325,21 @@ impl ::protobuf::reflect::ProtobufValue for CDEAABODKCP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CDEAABODKCP.proto\"\xcc\x03\n\x0bCDEAABODKCP\x12\x1b\n\tpos_index\
-    \x18\x01\x20\x01(\rR\x08posIndex\x12\x1b\n\tunique_id\x18\x03\x20\x01(\r\
-    R\x08uniqueId\x12\x20\n\x0bPNJIPHJJONG\x18\x06\x20\x03(\rR\x0bPNJIPHJJON\
-    G\x12\x0e\n\x02id\x18\x07\x20\x01(\rR\x02id\x12l\n\x1cconvert_property_t\
-    o_fixpoint\x18\x08\x20\x03(\x0b2+.CDEAABODKCP.ConvertPropertyToFixpointE\
-    ntryR\x19convertPropertyToFixpoint\x12\x1b\n\trole_star\x18\n\x20\x01(\r\
-    R\x08roleStar\x12:\n\nH_873d123e\x18\x0b\x20\x03(\x0b2\x1b.CDEAABODKCP.H\
-    873d123eEntryR\tH873d123e\x1aL\n\x1eConvertPropertyToFixpointEntry\x12\
-    \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\
-    \x01(\rR\x05value:\x028\x01\x1a<\n\x0eH873d123eEntry\x12\x10\n\x03key\
-    \x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05va\
-    lue:\x028\x01b\x06proto3\
+    \n\x11CDEAABODKCP.proto\"\xcd\x04\n\x0bCDEAABODKCP\x12\x1b\n\trole_star\
+    \x18\x03\x20\x01(\rR\x08roleStar\x12\x20\n\x0bPNJIPHJJONG\x18\x04\x20\
+    \x03(\rR\x0bPNJIPHJJONG\x12\x0e\n\x02id\x18\x05\x20\x01(\rR\x02id\x12\
+    \x1b\n\tunique_id\x18\x06\x20\x01(\rR\x08uniqueId\x12\x1b\n\tpos_index\
+    \x18\x07\x20\x01(\rR\x08posIndex\x12l\n\x1cconvert_property_to_fixpoint\
+    \x18\x08\x20\x03(\x0b2+.CDEAABODKCP.ConvertPropertyToFixpointEntryR\x19c\
+    onvertPropertyToFixpoint\x12?\n\x0bBABNHPDGNGB\x18\n\x20\x03(\x0b2\x1d.C\
+    DEAABODKCP.BABNHPDGNGBEntryR\x0bBABNHPDGNGB\x12:\n\nH_c6d28428\x18\x0f\
+    \x20\x03(\x0b2\x1b.CDEAABODKCP.HC6d28428EntryR\tHC6d28428\x1aL\n\x1eConv\
+    ertPropertyToFixpointEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\
+    \x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01\x1a>\n\x10BAB\
+    NHPDGNGBEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05v\
+    alue\x18\x02\x20\x01(\rR\x05value:\x028\x01\x1a<\n\x0eHC6d28428Entry\x12\
+    \x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\
+    \x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

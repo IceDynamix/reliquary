@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CCMKDHLEIGE {
     // @@protoc_insertion_point(enum_value:CCMKDHLEIGE.CCMKDHLEIGE_NLCDGIPGFDJ)
     CCMKDHLEIGE_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CCMKDHLEIGE.CCMKDHLEIGE_HFNKIJKCADD)
-    CCMKDHLEIGE_HFNKIJKCADD = 10168,
     // @@protoc_insertion_point(enum_value:CCMKDHLEIGE.CCMKDHLEIGE_DDJHNKGPLCG)
-    CCMKDHLEIGE_DDJHNKGPLCG = 10177,
+    CCMKDHLEIGE_DDJHNKGPLCG = 10164,
+    // @@protoc_insertion_point(enum_value:CCMKDHLEIGE.CCMKDHLEIGE_HFNKIJKCADD)
+    CCMKDHLEIGE_HFNKIJKCADD = 10180,
 }
 
 impl ::protobuf::Enum for CCMKDHLEIGE {
@@ -45,8 +45,8 @@ impl ::protobuf::Enum for CCMKDHLEIGE {
     fn from_i32(value: i32) -> ::std::option::Option<CCMKDHLEIGE> {
         match value {
             0 => ::std::option::Option::Some(CCMKDHLEIGE::CCMKDHLEIGE_NLCDGIPGFDJ),
-            10168 => ::std::option::Option::Some(CCMKDHLEIGE::CCMKDHLEIGE_HFNKIJKCADD),
-            10177 => ::std::option::Option::Some(CCMKDHLEIGE::CCMKDHLEIGE_DDJHNKGPLCG),
+            10164 => ::std::option::Option::Some(CCMKDHLEIGE::CCMKDHLEIGE_DDJHNKGPLCG),
+            10180 => ::std::option::Option::Some(CCMKDHLEIGE::CCMKDHLEIGE_HFNKIJKCADD),
             _ => ::std::option::Option::None
         }
     }
@@ -54,16 +54,16 @@ impl ::protobuf::Enum for CCMKDHLEIGE {
     fn from_str(str: &str) -> ::std::option::Option<CCMKDHLEIGE> {
         match str {
             "CCMKDHLEIGE_NLCDGIPGFDJ" => ::std::option::Option::Some(CCMKDHLEIGE::CCMKDHLEIGE_NLCDGIPGFDJ),
-            "CCMKDHLEIGE_HFNKIJKCADD" => ::std::option::Option::Some(CCMKDHLEIGE::CCMKDHLEIGE_HFNKIJKCADD),
             "CCMKDHLEIGE_DDJHNKGPLCG" => ::std::option::Option::Some(CCMKDHLEIGE::CCMKDHLEIGE_DDJHNKGPLCG),
+            "CCMKDHLEIGE_HFNKIJKCADD" => ::std::option::Option::Some(CCMKDHLEIGE::CCMKDHLEIGE_HFNKIJKCADD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CCMKDHLEIGE] = &[
         CCMKDHLEIGE::CCMKDHLEIGE_NLCDGIPGFDJ,
-        CCMKDHLEIGE::CCMKDHLEIGE_HFNKIJKCADD,
         CCMKDHLEIGE::CCMKDHLEIGE_DDJHNKGPLCG,
+        CCMKDHLEIGE::CCMKDHLEIGE_HFNKIJKCADD,
     ];
 }
 
@@ -76,8 +76,8 @@ impl ::protobuf::EnumFull for CCMKDHLEIGE {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CCMKDHLEIGE::CCMKDHLEIGE_NLCDGIPGFDJ => 0,
-            CCMKDHLEIGE::CCMKDHLEIGE_HFNKIJKCADD => 1,
-            CCMKDHLEIGE::CCMKDHLEIGE_DDJHNKGPLCG => 2,
+            CCMKDHLEIGE::CCMKDHLEIGE_DDJHNKGPLCG => 1,
+            CCMKDHLEIGE::CCMKDHLEIGE_HFNKIJKCADD => 2,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -97,8 +97,8 @@ impl CCMKDHLEIGE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CCMKDHLEIGE.proto*f\n\x0bCCMKDHLEIGE\x12\x1b\n\x17CCMKDHLEIGE_NLCD\
-    GIPGFDJ\x10\0\x12\x1c\n\x17CCMKDHLEIGE_HFNKIJKCADD\x10\xb8O\x12\x1c\n\
-    \x17CCMKDHLEIGE_DDJHNKGPLCG\x10\xc1Ob\x06proto3\
+    GIPGFDJ\x10\0\x12\x1c\n\x17CCMKDHLEIGE_DDJHNKGPLCG\x10\xb4O\x12\x1c\n\
+    \x17CCMKDHLEIGE_HFNKIJKCADD\x10\xc4Ob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,26 +28,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CIEEKOEECHB {
     // message fields
-    // @@protoc_insertion_point(field:CIEEKOEECHB.OOJOMKDMBBM)
-    pub OOJOMKDMBBM: ::std::vec::Vec<super::FLLJIHLMKDI::FLLJIHLMKDI>,
-    // @@protoc_insertion_point(field:CIEEKOEECHB.stage_index)
-    pub stage_index: u32,
-    // @@protoc_insertion_point(field:CIEEKOEECHB.challenge_id)
-    pub challenge_id: u32,
-    // @@protoc_insertion_point(field:CIEEKOEECHB.MLOGJKEOCPP)
-    pub MLOGJKEOCPP: bool,
+    // @@protoc_insertion_point(field:CIEEKOEECHB.avatar_list)
+    pub avatar_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CIEEKOEECHB.EAFICCLCLLA)
     pub EAFICCLCLLA: u32,
     // @@protoc_insertion_point(field:CIEEKOEECHB.EJEFDFEFOMH)
     pub EJEFDFEFOMH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:CIEEKOEECHB.HODLKBMKMCF)
-    pub HODLKBMKMCF: u32,
-    // @@protoc_insertion_point(field:CIEEKOEECHB.avatar_list)
-    pub avatar_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:CIEEKOEECHB.LFFBKJBJJDD)
-    pub LFFBKJBJJDD: u32,
     // @@protoc_insertion_point(field:CIEEKOEECHB.IFHHFBIJOFC)
     pub IFHHFBIJOFC: u32,
+    // @@protoc_insertion_point(field:CIEEKOEECHB.MLOGJKEOCPP)
+    pub MLOGJKEOCPP: bool,
+    // @@protoc_insertion_point(field:CIEEKOEECHB.challenge_id)
+    pub challenge_id: u32,
+    // @@protoc_insertion_point(field:CIEEKOEECHB.HODLKBMKMCF)
+    pub HODLKBMKMCF: u32,
+    // @@protoc_insertion_point(field:CIEEKOEECHB.OOJOMKDMBBM)
+    pub OOJOMKDMBBM: ::std::vec::Vec<super::FLLJIHLMKDI::FLLJIHLMKDI>,
+    // @@protoc_insertion_point(field:CIEEKOEECHB.LFFBKJBJJDD)
+    pub LFFBKJBJJDD: u32,
+    // @@protoc_insertion_point(field:CIEEKOEECHB.stage_index)
+    pub stage_index: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CIEEKOEECHB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -68,24 +68,9 @@ impl CIEEKOEECHB {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OOJOMKDMBBM",
-            |m: &CIEEKOEECHB| { &m.OOJOMKDMBBM },
-            |m: &mut CIEEKOEECHB| { &mut m.OOJOMKDMBBM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_index",
-            |m: &CIEEKOEECHB| { &m.stage_index },
-            |m: &mut CIEEKOEECHB| { &mut m.stage_index },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_id",
-            |m: &CIEEKOEECHB| { &m.challenge_id },
-            |m: &mut CIEEKOEECHB| { &mut m.challenge_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLOGJKEOCPP",
-            |m: &CIEEKOEECHB| { &m.MLOGJKEOCPP },
-            |m: &mut CIEEKOEECHB| { &mut m.MLOGJKEOCPP },
+            "avatar_list",
+            |m: &CIEEKOEECHB| { &m.avatar_list },
+            |m: &mut CIEEKOEECHB| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EAFICCLCLLA",
@@ -98,14 +83,29 @@ impl CIEEKOEECHB {
             |m: &mut CIEEKOEECHB| { &mut m.EJEFDFEFOMH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFHHFBIJOFC",
+            |m: &CIEEKOEECHB| { &m.IFHHFBIJOFC },
+            |m: &mut CIEEKOEECHB| { &mut m.IFHHFBIJOFC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MLOGJKEOCPP",
+            |m: &CIEEKOEECHB| { &m.MLOGJKEOCPP },
+            |m: &mut CIEEKOEECHB| { &mut m.MLOGJKEOCPP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "challenge_id",
+            |m: &CIEEKOEECHB| { &m.challenge_id },
+            |m: &mut CIEEKOEECHB| { &mut m.challenge_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HODLKBMKMCF",
             |m: &CIEEKOEECHB| { &m.HODLKBMKMCF },
             |m: &mut CIEEKOEECHB| { &mut m.HODLKBMKMCF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &CIEEKOEECHB| { &m.avatar_list },
-            |m: &mut CIEEKOEECHB| { &mut m.avatar_list },
+            "OOJOMKDMBBM",
+            |m: &CIEEKOEECHB| { &m.OOJOMKDMBBM },
+            |m: &mut CIEEKOEECHB| { &mut m.OOJOMKDMBBM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LFFBKJBJJDD",
@@ -113,9 +113,9 @@ impl CIEEKOEECHB {
             |m: &mut CIEEKOEECHB| { &mut m.LFFBKJBJJDD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFHHFBIJOFC",
-            |m: &CIEEKOEECHB| { &m.IFHHFBIJOFC },
-            |m: &mut CIEEKOEECHB| { &mut m.IFHHFBIJOFC },
+            "stage_index",
+            |m: &CIEEKOEECHB| { &m.stage_index },
+            |m: &mut CIEEKOEECHB| { &mut m.stage_index },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CIEEKOEECHB>(
             "CIEEKOEECHB",
@@ -136,40 +136,40 @@ impl ::protobuf::Message for CIEEKOEECHB {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.OOJOMKDMBBM.push(is.read_message()?);
+                    is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
                 },
-                16 => {
-                    self.stage_index = is.read_uint32()?;
+                8 => {
+                    self.avatar_list.push(is.read_uint32()?);
+                },
+                24 => {
+                    self.EAFICCLCLLA = is.read_uint32()?;
+                },
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EJEFDFEFOMH)?;
                 },
                 32 => {
-                    self.challenge_id = is.read_uint32()?;
+                    self.EJEFDFEFOMH.push(is.read_uint32()?);
                 },
-                48 => {
+                56 => {
+                    self.IFHHFBIJOFC = is.read_uint32()?;
+                },
+                64 => {
                     self.MLOGJKEOCPP = is.read_bool()?;
                 },
                 72 => {
-                    self.EAFICCLCLLA = is.read_uint32()?;
-                },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EJEFDFEFOMH)?;
-                },
-                80 => {
-                    self.EJEFDFEFOMH.push(is.read_uint32()?);
+                    self.challenge_id = is.read_uint32()?;
                 },
                 88 => {
                     self.HODLKBMKMCF = is.read_uint32()?;
                 },
                 98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
-                },
-                96 => {
-                    self.avatar_list.push(is.read_uint32()?);
+                    self.OOJOMKDMBBM.push(is.read_message()?);
                 },
                 104 => {
                     self.LFFBKJBJJDD = is.read_uint32()?;
                 },
                 120 => {
-                    self.IFHHFBIJOFC = is.read_uint32()?;
+                    self.stage_index = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -183,32 +183,32 @@ impl ::protobuf::Message for CIEEKOEECHB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.OOJOMKDMBBM {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.stage_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.stage_index);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.avatar_list);
+        if self.EAFICCLCLLA != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.EAFICCLCLLA);
         }
-        if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.challenge_id);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.EJEFDFEFOMH);
+        if self.IFHHFBIJOFC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.IFHHFBIJOFC);
         }
         if self.MLOGJKEOCPP != false {
             my_size += 1 + 1;
         }
-        if self.EAFICCLCLLA != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.EAFICCLCLLA);
+        if self.challenge_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.challenge_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.EJEFDFEFOMH);
         if self.HODLKBMKMCF != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.HODLKBMKMCF);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.avatar_list);
+        for value in &self.OOJOMKDMBBM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.LFFBKJBJJDD != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.LFFBKJBJJDD);
         }
-        if self.IFHHFBIJOFC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.IFHHFBIJOFC);
+        if self.stage_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.stage_index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -216,31 +216,31 @@ impl ::protobuf::Message for CIEEKOEECHB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.OOJOMKDMBBM {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
-        if self.stage_index != 0 {
-            os.write_uint32(2, self.stage_index)?;
+        os.write_repeated_packed_uint32(1, &self.avatar_list)?;
+        if self.EAFICCLCLLA != 0 {
+            os.write_uint32(3, self.EAFICCLCLLA)?;
         }
-        if self.challenge_id != 0 {
-            os.write_uint32(4, self.challenge_id)?;
+        os.write_repeated_packed_uint32(4, &self.EJEFDFEFOMH)?;
+        if self.IFHHFBIJOFC != 0 {
+            os.write_uint32(7, self.IFHHFBIJOFC)?;
         }
         if self.MLOGJKEOCPP != false {
-            os.write_bool(6, self.MLOGJKEOCPP)?;
+            os.write_bool(8, self.MLOGJKEOCPP)?;
         }
-        if self.EAFICCLCLLA != 0 {
-            os.write_uint32(9, self.EAFICCLCLLA)?;
+        if self.challenge_id != 0 {
+            os.write_uint32(9, self.challenge_id)?;
         }
-        os.write_repeated_packed_uint32(10, &self.EJEFDFEFOMH)?;
         if self.HODLKBMKMCF != 0 {
             os.write_uint32(11, self.HODLKBMKMCF)?;
         }
-        os.write_repeated_packed_uint32(12, &self.avatar_list)?;
+        for v in &self.OOJOMKDMBBM {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
         if self.LFFBKJBJJDD != 0 {
             os.write_uint32(13, self.LFFBKJBJJDD)?;
         }
-        if self.IFHHFBIJOFC != 0 {
-            os.write_uint32(15, self.IFHHFBIJOFC)?;
+        if self.stage_index != 0 {
+            os.write_uint32(15, self.stage_index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -259,31 +259,31 @@ impl ::protobuf::Message for CIEEKOEECHB {
     }
 
     fn clear(&mut self) {
-        self.OOJOMKDMBBM.clear();
-        self.stage_index = 0;
-        self.challenge_id = 0;
-        self.MLOGJKEOCPP = false;
+        self.avatar_list.clear();
         self.EAFICCLCLLA = 0;
         self.EJEFDFEFOMH.clear();
-        self.HODLKBMKMCF = 0;
-        self.avatar_list.clear();
-        self.LFFBKJBJJDD = 0;
         self.IFHHFBIJOFC = 0;
+        self.MLOGJKEOCPP = false;
+        self.challenge_id = 0;
+        self.HODLKBMKMCF = 0;
+        self.OOJOMKDMBBM.clear();
+        self.LFFBKJBJJDD = 0;
+        self.stage_index = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CIEEKOEECHB {
         static instance: CIEEKOEECHB = CIEEKOEECHB {
-            OOJOMKDMBBM: ::std::vec::Vec::new(),
-            stage_index: 0,
-            challenge_id: 0,
-            MLOGJKEOCPP: false,
+            avatar_list: ::std::vec::Vec::new(),
             EAFICCLCLLA: 0,
             EJEFDFEFOMH: ::std::vec::Vec::new(),
-            HODLKBMKMCF: 0,
-            avatar_list: ::std::vec::Vec::new(),
-            LFFBKJBJJDD: 0,
             IFHHFBIJOFC: 0,
+            MLOGJKEOCPP: false,
+            challenge_id: 0,
+            HODLKBMKMCF: 0,
+            OOJOMKDMBBM: ::std::vec::Vec::new(),
+            LFFBKJBJJDD: 0,
+            stage_index: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -309,15 +309,15 @@ impl ::protobuf::reflect::ProtobufValue for CIEEKOEECHB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CIEEKOEECHB.proto\x1a\x11FLLJIHLMKDI.proto\"\xee\x02\n\x0bCIEEKOEE\
-    CHB\x12.\n\x0bOOJOMKDMBBM\x18\x01\x20\x03(\x0b2\x0c.FLLJIHLMKDIR\x0bOOJO\
-    MKDMBBM\x12\x1f\n\x0bstage_index\x18\x02\x20\x01(\rR\nstageIndex\x12!\n\
-    \x0cchallenge_id\x18\x04\x20\x01(\rR\x0bchallengeId\x12\x20\n\x0bMLOGJKE\
-    OCPP\x18\x06\x20\x01(\x08R\x0bMLOGJKEOCPP\x12\x20\n\x0bEAFICCLCLLA\x18\t\
-    \x20\x01(\rR\x0bEAFICCLCLLA\x12\x20\n\x0bEJEFDFEFOMH\x18\n\x20\x03(\rR\
-    \x0bEJEFDFEFOMH\x12\x20\n\x0bHODLKBMKMCF\x18\x0b\x20\x01(\rR\x0bHODLKBMK\
-    MCF\x12\x1f\n\x0bavatar_list\x18\x0c\x20\x03(\rR\navatarList\x12\x20\n\
-    \x0bLFFBKJBJJDD\x18\r\x20\x01(\rR\x0bLFFBKJBJJDD\x12\x20\n\x0bIFHHFBIJOF\
-    C\x18\x0f\x20\x01(\rR\x0bIFHHFBIJOFCb\x06proto3\
+    CHB\x12\x1f\n\x0bavatar_list\x18\x01\x20\x03(\rR\navatarList\x12\x20\n\
+    \x0bEAFICCLCLLA\x18\x03\x20\x01(\rR\x0bEAFICCLCLLA\x12\x20\n\x0bEJEFDFEF\
+    OMH\x18\x04\x20\x03(\rR\x0bEJEFDFEFOMH\x12\x20\n\x0bIFHHFBIJOFC\x18\x07\
+    \x20\x01(\rR\x0bIFHHFBIJOFC\x12\x20\n\x0bMLOGJKEOCPP\x18\x08\x20\x01(\
+    \x08R\x0bMLOGJKEOCPP\x12!\n\x0cchallenge_id\x18\t\x20\x01(\rR\x0bchallen\
+    geId\x12\x20\n\x0bHODLKBMKMCF\x18\x0b\x20\x01(\rR\x0bHODLKBMKMCF\x12.\n\
+    \x0bOOJOMKDMBBM\x18\x0c\x20\x03(\x0b2\x0c.FLLJIHLMKDIR\x0bOOJOMKDMBBM\
+    \x12\x20\n\x0bLFFBKJBJJDD\x18\r\x20\x01(\rR\x0bLFFBKJBJJDD\x12\x1f\n\x0b\
+    stage_index\x18\x0f\x20\x01(\rR\nstageIndexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JGDOHOFOFOF {
     // message fields
-    // @@protoc_insertion_point(field:JGDOHOFOFOF.HEOHMOFNOIH)
-    pub HEOHMOFNOIH: u32,
-    // @@protoc_insertion_point(field:JGDOHOFOFOF.IEBIKNPNPNO)
-    pub IEBIKNPNPNO: bool,
-    // @@protoc_insertion_point(field:JGDOHOFOFOF.EBAAFDHEPLO)
-    pub EBAAFDHEPLO: u64,
     // @@protoc_insertion_point(field:JGDOHOFOFOF.summoned_pet_id)
     pub summoned_pet_id: u32,
+    // @@protoc_insertion_point(field:JGDOHOFOFOF.EBAAFDHEPLO)
+    pub EBAAFDHEPLO: u64,
+    // @@protoc_insertion_point(field:JGDOHOFOFOF.IEBIKNPNPNO)
+    pub IEBIKNPNPNO: bool,
+    // @@protoc_insertion_point(field:JGDOHOFOFOF.HEOHMOFNOIH)
+    pub HEOHMOFNOIH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JGDOHOFOFOF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,14 +56,9 @@ impl JGDOHOFOFOF {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HEOHMOFNOIH",
-            |m: &JGDOHOFOFOF| { &m.HEOHMOFNOIH },
-            |m: &mut JGDOHOFOFOF| { &mut m.HEOHMOFNOIH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IEBIKNPNPNO",
-            |m: &JGDOHOFOFOF| { &m.IEBIKNPNPNO },
-            |m: &mut JGDOHOFOFOF| { &mut m.IEBIKNPNPNO },
+            "summoned_pet_id",
+            |m: &JGDOHOFOFOF| { &m.summoned_pet_id },
+            |m: &mut JGDOHOFOFOF| { &mut m.summoned_pet_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EBAAFDHEPLO",
@@ -71,9 +66,14 @@ impl JGDOHOFOFOF {
             |m: &mut JGDOHOFOFOF| { &mut m.EBAAFDHEPLO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "summoned_pet_id",
-            |m: &JGDOHOFOFOF| { &m.summoned_pet_id },
-            |m: &mut JGDOHOFOFOF| { &mut m.summoned_pet_id },
+            "IEBIKNPNPNO",
+            |m: &JGDOHOFOFOF| { &m.IEBIKNPNPNO },
+            |m: &mut JGDOHOFOFOF| { &mut m.IEBIKNPNPNO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HEOHMOFNOIH",
+            |m: &JGDOHOFOFOF| { &m.HEOHMOFNOIH },
+            |m: &mut JGDOHOFOFOF| { &mut m.HEOHMOFNOIH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JGDOHOFOFOF>(
             "JGDOHOFOFOF",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for JGDOHOFOFOF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.HEOHMOFNOIH = is.read_uint32()?;
+                8 => {
+                    self.summoned_pet_id = is.read_uint32()?;
                 },
-                80 => {
-                    self.IEBIKNPNPNO = is.read_bool()?;
-                },
-                104 => {
+                48 => {
                     self.EBAAFDHEPLO = is.read_uint64()?;
                 },
-                112 => {
-                    self.summoned_pet_id = is.read_uint32()?;
+                72 => {
+                    self.IEBIKNPNPNO = is.read_bool()?;
+                },
+                80 => {
+                    self.HEOHMOFNOIH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for JGDOHOFOFOF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HEOHMOFNOIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.HEOHMOFNOIH);
+        if self.summoned_pet_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.summoned_pet_id);
+        }
+        if self.EBAAFDHEPLO != 0 {
+            my_size += ::protobuf::rt::uint64_size(6, self.EBAAFDHEPLO);
         }
         if self.IEBIKNPNPNO != false {
             my_size += 1 + 1;
         }
-        if self.EBAAFDHEPLO != 0 {
-            my_size += ::protobuf::rt::uint64_size(13, self.EBAAFDHEPLO);
-        }
-        if self.summoned_pet_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.summoned_pet_id);
+        if self.HEOHMOFNOIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.HEOHMOFNOIH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for JGDOHOFOFOF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HEOHMOFNOIH != 0 {
-            os.write_uint32(7, self.HEOHMOFNOIH)?;
-        }
-        if self.IEBIKNPNPNO != false {
-            os.write_bool(10, self.IEBIKNPNPNO)?;
+        if self.summoned_pet_id != 0 {
+            os.write_uint32(1, self.summoned_pet_id)?;
         }
         if self.EBAAFDHEPLO != 0 {
-            os.write_uint64(13, self.EBAAFDHEPLO)?;
+            os.write_uint64(6, self.EBAAFDHEPLO)?;
         }
-        if self.summoned_pet_id != 0 {
-            os.write_uint32(14, self.summoned_pet_id)?;
+        if self.IEBIKNPNPNO != false {
+            os.write_bool(9, self.IEBIKNPNPNO)?;
+        }
+        if self.HEOHMOFNOIH != 0 {
+            os.write_uint32(10, self.HEOHMOFNOIH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for JGDOHOFOFOF {
     }
 
     fn clear(&mut self) {
-        self.HEOHMOFNOIH = 0;
-        self.IEBIKNPNPNO = false;
-        self.EBAAFDHEPLO = 0;
         self.summoned_pet_id = 0;
+        self.EBAAFDHEPLO = 0;
+        self.IEBIKNPNPNO = false;
+        self.HEOHMOFNOIH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JGDOHOFOFOF {
         static instance: JGDOHOFOFOF = JGDOHOFOFOF {
-            HEOHMOFNOIH: 0,
-            IEBIKNPNPNO: false,
-            EBAAFDHEPLO: 0,
             summoned_pet_id: 0,
+            EBAAFDHEPLO: 0,
+            IEBIKNPNPNO: false,
+            HEOHMOFNOIH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for JGDOHOFOFOF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JGDOHOFOFOF.proto\"\x9b\x01\n\x0bJGDOHOFOFOF\x12\x20\n\x0bHEOHMOFN\
-    OIH\x18\x07\x20\x01(\rR\x0bHEOHMOFNOIH\x12\x20\n\x0bIEBIKNPNPNO\x18\n\
-    \x20\x01(\x08R\x0bIEBIKNPNPNO\x12\x20\n\x0bEBAAFDHEPLO\x18\r\x20\x01(\
-    \x04R\x0bEBAAFDHEPLO\x12&\n\x0fsummoned_pet_id\x18\x0e\x20\x01(\rR\rsumm\
-    onedPetIdb\x06proto3\
+    \n\x11JGDOHOFOFOF.proto\"\x9b\x01\n\x0bJGDOHOFOFOF\x12&\n\x0fsummoned_pe\
+    t_id\x18\x01\x20\x01(\rR\rsummonedPetId\x12\x20\n\x0bEBAAFDHEPLO\x18\x06\
+    \x20\x01(\x04R\x0bEBAAFDHEPLO\x12\x20\n\x0bIEBIKNPNPNO\x18\t\x20\x01(\
+    \x08R\x0bIEBIKNPNPNO\x12\x20\n\x0bHEOHMOFNOIH\x18\n\x20\x01(\rR\x0bHEOHM\
+    OFNOIHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

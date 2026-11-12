@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FDECDCEDPNM {
     // message fields
-    // @@protoc_insertion_point(field:FDECDCEDPNM.is_new)
-    pub is_new: bool,
+    // @@protoc_insertion_point(field:FDECDCEDPNM.ICCCHCCDKND)
+    pub ICCCHCCDKND: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:FDECDCEDPNM.id)
     pub id: u32,
     // @@protoc_insertion_point(field:FDECDCEDPNM.BGMFEHBEABC)
     pub BGMFEHBEABC: u32,
-    // @@protoc_insertion_point(field:FDECDCEDPNM.ICCCHCCDKND)
-    pub ICCCHCCDKND: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:FDECDCEDPNM.is_new)
+    pub is_new: bool,
     // special fields
     // @@protoc_insertion_point(special_field:FDECDCEDPNM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,10 +55,10 @@ impl FDECDCEDPNM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_new",
-            |m: &FDECDCEDPNM| { &m.is_new },
-            |m: &mut FDECDCEDPNM| { &mut m.is_new },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ICCCHCCDKND",
+            |m: &FDECDCEDPNM| { &m.ICCCHCCDKND },
+            |m: &mut FDECDCEDPNM| { &mut m.ICCCHCCDKND },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
@@ -70,10 +70,10 @@ impl FDECDCEDPNM {
             |m: &FDECDCEDPNM| { &m.BGMFEHBEABC },
             |m: &mut FDECDCEDPNM| { &mut m.BGMFEHBEABC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ICCCHCCDKND",
-            |m: &FDECDCEDPNM| { &m.ICCCHCCDKND },
-            |m: &mut FDECDCEDPNM| { &mut m.ICCCHCCDKND },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_new",
+            |m: &FDECDCEDPNM| { &m.is_new },
+            |m: &mut FDECDCEDPNM| { &mut m.is_new },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FDECDCEDPNM>(
             "FDECDCEDPNM",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for FDECDCEDPNM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.is_new = is.read_bool()?;
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ICCCHCCDKND)?;
+                },
+                16 => {
+                    self.ICCCHCCDKND.push(is.read_uint32()?);
                 },
                 64 => {
                     self.id = is.read_uint32()?;
                 },
-                72 => {
+                88 => {
                     self.BGMFEHBEABC = is.read_uint32()?;
                 },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ICCCHCCDKND)?;
-                },
-                120 => {
-                    self.ICCCHCCDKND.push(is.read_uint32()?);
+                104 => {
+                    self.is_new = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,32 +120,32 @@ impl ::protobuf::Message for FDECDCEDPNM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_new != false {
-            my_size += 1 + 1;
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.ICCCHCCDKND);
         if self.id != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.id);
         }
         if self.BGMFEHBEABC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BGMFEHBEABC);
+            my_size += ::protobuf::rt::uint32_size(11, self.BGMFEHBEABC);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.ICCCHCCDKND);
+        if self.is_new != false {
+            my_size += 1 + 1;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_new != false {
-            os.write_bool(7, self.is_new)?;
-        }
+        os.write_repeated_packed_uint32(2, &self.ICCCHCCDKND)?;
         if self.id != 0 {
             os.write_uint32(8, self.id)?;
         }
         if self.BGMFEHBEABC != 0 {
-            os.write_uint32(9, self.BGMFEHBEABC)?;
+            os.write_uint32(11, self.BGMFEHBEABC)?;
         }
-        os.write_repeated_packed_uint32(15, &self.ICCCHCCDKND)?;
+        if self.is_new != false {
+            os.write_bool(13, self.is_new)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,19 +163,19 @@ impl ::protobuf::Message for FDECDCEDPNM {
     }
 
     fn clear(&mut self) {
-        self.is_new = false;
+        self.ICCCHCCDKND.clear();
         self.id = 0;
         self.BGMFEHBEABC = 0;
-        self.ICCCHCCDKND.clear();
+        self.is_new = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FDECDCEDPNM {
         static instance: FDECDCEDPNM = FDECDCEDPNM {
-            is_new: false,
+            ICCCHCCDKND: ::std::vec::Vec::new(),
             id: 0,
             BGMFEHBEABC: 0,
-            ICCCHCCDKND: ::std::vec::Vec::new(),
+            is_new: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for FDECDCEDPNM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FDECDCEDPNM.proto\"x\n\x0bFDECDCEDPNM\x12\x15\n\x06is_new\x18\x07\
-    \x20\x01(\x08R\x05isNew\x12\x0e\n\x02id\x18\x08\x20\x01(\rR\x02id\x12\
-    \x20\n\x0bBGMFEHBEABC\x18\t\x20\x01(\rR\x0bBGMFEHBEABC\x12\x20\n\x0bICCC\
-    HCCDKND\x18\x0f\x20\x03(\rR\x0bICCCHCCDKNDb\x06proto3\
+    \n\x11FDECDCEDPNM.proto\"x\n\x0bFDECDCEDPNM\x12\x20\n\x0bICCCHCCDKND\x18\
+    \x02\x20\x03(\rR\x0bICCCHCCDKND\x12\x0e\n\x02id\x18\x08\x20\x01(\rR\x02i\
+    d\x12\x20\n\x0bBGMFEHBEABC\x18\x0b\x20\x01(\rR\x0bBGMFEHBEABC\x12\x15\n\
+    \x06is_new\x18\r\x20\x01(\x08R\x05isNewb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

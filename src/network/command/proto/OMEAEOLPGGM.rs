@@ -82,7 +82,7 @@ impl ::protobuf::Message for OMEAEOLPGGM {
                 66 => {
                     self.HNFFFDEGOEB.push(is.read_message()?);
                 },
-                104 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for OMEAEOLPGGM {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for OMEAEOLPGGM {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for OMEAEOLPGGM {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OMEAEOLPGGM.proto\x1a\x11FOEPMKFEJMK.proto\"W\n\x0bOMEAEOLPGGM\x12\
     .\n\x0bHNFFFDEGOEB\x18\x08\x20\x03(\x0b2\x0c.FOEPMKFEJMKR\x0bHNFFFDEGOEB\
-    \x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChenLingFinishBattleScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChenLingFinishBattleScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:ChenLingFinishBattleScRsp.BFLLJJBHLDF)
-    pub BFLLJJBHLDF: ::protobuf::MessageField<super::DFEGGFFOMKI::DFEGGFFOMKI>,
-    // @@protoc_insertion_point(field:ChenLingFinishBattleScRsp.cur_hp)
-    pub cur_hp: u32,
     // @@protoc_insertion_point(field:ChenLingFinishBattleScRsp.PPCKLBHFCCA)
     pub PPCKLBHFCCA: ::std::vec::Vec<super::OGGELMMFPKP::OGGELMMFPKP>,
-    // @@protoc_insertion_point(field:ChenLingFinishBattleScRsp.is_win)
-    pub is_win: bool,
     // @@protoc_insertion_point(field:ChenLingFinishBattleScRsp.DDCLCNPONOH)
     pub DDCLCNPONOH: u32,
+    // @@protoc_insertion_point(field:ChenLingFinishBattleScRsp.BFLLJJBHLDF)
+    pub BFLLJJBHLDF: ::protobuf::MessageField<super::DFEGGFFOMKI::DFEGGFFOMKI>,
     // @@protoc_insertion_point(field:ChenLingFinishBattleScRsp.DAOMHGBDEJH)
     pub DAOMHGBDEJH: bool,
+    // @@protoc_insertion_point(field:ChenLingFinishBattleScRsp.cur_hp)
+    pub cur_hp: u32,
+    // @@protoc_insertion_point(field:ChenLingFinishBattleScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:ChenLingFinishBattleScRsp.is_win)
+    pub is_win: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ChenLingFinishBattleScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,10 +61,15 @@ impl ChenLingFinishBattleScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PPCKLBHFCCA",
+            |m: &ChenLingFinishBattleScRsp| { &m.PPCKLBHFCCA },
+            |m: &mut ChenLingFinishBattleScRsp| { &mut m.PPCKLBHFCCA },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ChenLingFinishBattleScRsp| { &m.retcode },
-            |m: &mut ChenLingFinishBattleScRsp| { &mut m.retcode },
+            "DDCLCNPONOH",
+            |m: &ChenLingFinishBattleScRsp| { &m.DDCLCNPONOH },
+            |m: &mut ChenLingFinishBattleScRsp| { &mut m.DDCLCNPONOH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFEGGFFOMKI::DFEGGFFOMKI>(
             "BFLLJJBHLDF",
@@ -72,29 +77,24 @@ impl ChenLingFinishBattleScRsp {
             |m: &mut ChenLingFinishBattleScRsp| { &mut m.BFLLJJBHLDF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DAOMHGBDEJH",
+            |m: &ChenLingFinishBattleScRsp| { &m.DAOMHGBDEJH },
+            |m: &mut ChenLingFinishBattleScRsp| { &mut m.DAOMHGBDEJH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_hp",
             |m: &ChenLingFinishBattleScRsp| { &m.cur_hp },
             |m: &mut ChenLingFinishBattleScRsp| { &mut m.cur_hp },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PPCKLBHFCCA",
-            |m: &ChenLingFinishBattleScRsp| { &m.PPCKLBHFCCA },
-            |m: &mut ChenLingFinishBattleScRsp| { &mut m.PPCKLBHFCCA },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &ChenLingFinishBattleScRsp| { &m.retcode },
+            |m: &mut ChenLingFinishBattleScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_win",
             |m: &ChenLingFinishBattleScRsp| { &m.is_win },
             |m: &mut ChenLingFinishBattleScRsp| { &mut m.is_win },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DDCLCNPONOH",
-            |m: &ChenLingFinishBattleScRsp| { &m.DDCLCNPONOH },
-            |m: &mut ChenLingFinishBattleScRsp| { &mut m.DDCLCNPONOH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DAOMHGBDEJH",
-            |m: &ChenLingFinishBattleScRsp| { &m.DAOMHGBDEJH },
-            |m: &mut ChenLingFinishBattleScRsp| { &mut m.DAOMHGBDEJH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChenLingFinishBattleScRsp>(
             "ChenLingFinishBattleScRsp",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for ChenLingFinishBattleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BFLLJJBHLDF)?;
-                },
-                40 => {
-                    self.cur_hp = is.read_uint32()?;
-                },
-                50 => {
                     self.PPCKLBHFCCA.push(is.read_message()?);
                 },
-                72 => {
-                    self.is_win = is.read_bool()?;
-                },
-                96 => {
+                32 => {
                     self.DDCLCNPONOH = is.read_uint32()?;
                 },
-                120 => {
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BFLLJJBHLDF)?;
+                },
+                72 => {
                     self.DAOMHGBDEJH = is.read_bool()?;
+                },
+                96 => {
+                    self.cur_hp = is.read_uint32()?;
+                },
+                112 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                120 => {
+                    self.is_win = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,27 +147,27 @@ impl ::protobuf::Message for ChenLingFinishBattleScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        for value in &self.PPCKLBHFCCA {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.DDCLCNPONOH != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.DDCLCNPONOH);
         }
         if let Some(v) = self.BFLLJJBHLDF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.cur_hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.cur_hp);
-        }
-        for value in &self.PPCKLBHFCCA {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.is_win != false {
+        if self.DAOMHGBDEJH != false {
             my_size += 1 + 1;
         }
-        if self.DDCLCNPONOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.DDCLCNPONOH);
+        if self.cur_hp != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.cur_hp);
         }
-        if self.DAOMHGBDEJH != false {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+        }
+        if self.is_win != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -176,26 +176,26 @@ impl ::protobuf::Message for ChenLingFinishBattleScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+        for v in &self.PPCKLBHFCCA {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
+        if self.DDCLCNPONOH != 0 {
+            os.write_uint32(4, self.DDCLCNPONOH)?;
         }
         if let Some(v) = self.BFLLJJBHLDF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        if self.cur_hp != 0 {
-            os.write_uint32(5, self.cur_hp)?;
-        }
-        for v in &self.PPCKLBHFCCA {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        if self.is_win != false {
-            os.write_bool(9, self.is_win)?;
-        }
-        if self.DDCLCNPONOH != 0 {
-            os.write_uint32(12, self.DDCLCNPONOH)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.DAOMHGBDEJH != false {
-            os.write_bool(15, self.DAOMHGBDEJH)?;
+            os.write_bool(9, self.DAOMHGBDEJH)?;
+        }
+        if self.cur_hp != 0 {
+            os.write_uint32(12, self.cur_hp)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
+        }
+        if self.is_win != false {
+            os.write_bool(15, self.is_win)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -214,25 +214,25 @@ impl ::protobuf::Message for ChenLingFinishBattleScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.BFLLJJBHLDF.clear();
-        self.cur_hp = 0;
         self.PPCKLBHFCCA.clear();
-        self.is_win = false;
         self.DDCLCNPONOH = 0;
+        self.BFLLJJBHLDF.clear();
         self.DAOMHGBDEJH = false;
+        self.cur_hp = 0;
+        self.retcode = 0;
+        self.is_win = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChenLingFinishBattleScRsp {
         static instance: ChenLingFinishBattleScRsp = ChenLingFinishBattleScRsp {
-            retcode: 0,
-            BFLLJJBHLDF: ::protobuf::MessageField::none(),
-            cur_hp: 0,
             PPCKLBHFCCA: ::std::vec::Vec::new(),
-            is_win: false,
             DDCLCNPONOH: 0,
+            BFLLJJBHLDF: ::protobuf::MessageField::none(),
             DAOMHGBDEJH: false,
+            cur_hp: 0,
+            retcode: 0,
+            is_win: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -258,13 +258,13 @@ impl ::protobuf::reflect::ProtobufValue for ChenLingFinishBattleScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fChenLingFinishBattleScRsp.proto\x1a\x11DFEGGFFOMKI.proto\x1a\x11OG\
-    GELMMFPKP.proto\"\x87\x02\n\x19ChenLingFinishBattleScRsp\x12\x18\n\x07re\
-    tcode\x18\x02\x20\x01(\rR\x07retcode\x12.\n\x0bBFLLJJBHLDF\x18\x03\x20\
-    \x01(\x0b2\x0c.DFEGGFFOMKIR\x0bBFLLJJBHLDF\x12\x15\n\x06cur_hp\x18\x05\
-    \x20\x01(\rR\x05curHp\x12.\n\x0bPPCKLBHFCCA\x18\x06\x20\x03(\x0b2\x0c.OG\
-    GELMMFPKPR\x0bPPCKLBHFCCA\x12\x15\n\x06is_win\x18\t\x20\x01(\x08R\x05isW\
-    in\x12\x20\n\x0bDDCLCNPONOH\x18\x0c\x20\x01(\rR\x0bDDCLCNPONOH\x12\x20\n\
-    \x0bDAOMHGBDEJH\x18\x0f\x20\x01(\x08R\x0bDAOMHGBDEJHb\x06proto3\
+    GELMMFPKP.proto\"\x87\x02\n\x19ChenLingFinishBattleScRsp\x12.\n\x0bPPCKL\
+    BHFCCA\x18\x03\x20\x03(\x0b2\x0c.OGGELMMFPKPR\x0bPPCKLBHFCCA\x12\x20\n\
+    \x0bDDCLCNPONOH\x18\x04\x20\x01(\rR\x0bDDCLCNPONOH\x12.\n\x0bBFLLJJBHLDF\
+    \x18\x05\x20\x01(\x0b2\x0c.DFEGGFFOMKIR\x0bBFLLJJBHLDF\x12\x20\n\x0bDAOM\
+    HGBDEJH\x18\t\x20\x01(\x08R\x0bDAOMHGBDEJH\x12\x15\n\x06cur_hp\x18\x0c\
+    \x20\x01(\rR\x05curHp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcod\
+    e\x12\x15\n\x06is_win\x18\x0f\x20\x01(\x08R\x05isWinb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

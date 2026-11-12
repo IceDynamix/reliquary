@@ -79,10 +79,10 @@ impl ::protobuf::Message for JOFCAOFIHCD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                8 => {
                     self.KNDIIBJEIDG = is.read_uint32()?;
                 },
-                88 => {
+                56 => {
                     self.MFHHLBDKNIM = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for JOFCAOFIHCD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KNDIIBJEIDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.KNDIIBJEIDG);
+            my_size += ::protobuf::rt::uint32_size(1, self.KNDIIBJEIDG);
         }
         if self.MFHHLBDKNIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MFHHLBDKNIM);
+            my_size += ::protobuf::rt::uint32_size(7, self.MFHHLBDKNIM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for JOFCAOFIHCD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KNDIIBJEIDG != 0 {
-            os.write_uint32(7, self.KNDIIBJEIDG)?;
+            os.write_uint32(1, self.KNDIIBJEIDG)?;
         }
         if self.MFHHLBDKNIM != 0 {
-            os.write_uint32(11, self.MFHHLBDKNIM)?;
+            os.write_uint32(7, self.MFHHLBDKNIM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for JOFCAOFIHCD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JOFCAOFIHCD.proto\"Q\n\x0bJOFCAOFIHCD\x12\x20\n\x0bKNDIIBJEIDG\x18\
-    \x07\x20\x01(\rR\x0bKNDIIBJEIDG\x12\x20\n\x0bMFHHLBDKNIM\x18\x0b\x20\x01\
+    \x01\x20\x01(\rR\x0bKNDIIBJEIDG\x12\x20\n\x0bMFHHLBDKNIM\x18\x07\x20\x01\
     (\rR\x0bMFHHLBDKNIMb\x06proto3\
 ";
 

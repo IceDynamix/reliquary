@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AcceptMultipleExpeditionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:AcceptMultipleExpeditionScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:AcceptMultipleExpeditionScRsp.BJMGDBCHEAN)
     pub BJMGDBCHEAN: i64,
+    // @@protoc_insertion_point(field:AcceptMultipleExpeditionScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:AcceptMultipleExpeditionScRsp.accept_multi_expedition)
     pub accept_multi_expedition: ::std::vec::Vec<super::ExpeditionInfo::ExpeditionInfo>,
     // @@protoc_insertion_point(field:AcceptMultipleExpeditionScRsp.DJOBNPIAEJP)
@@ -56,14 +56,14 @@ impl AcceptMultipleExpeditionScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &AcceptMultipleExpeditionScRsp| { &m.retcode },
-            |m: &mut AcceptMultipleExpeditionScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BJMGDBCHEAN",
             |m: &AcceptMultipleExpeditionScRsp| { &m.BJMGDBCHEAN },
             |m: &mut AcceptMultipleExpeditionScRsp| { &mut m.BJMGDBCHEAN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &AcceptMultipleExpeditionScRsp| { &m.retcode },
+            |m: &mut AcceptMultipleExpeditionScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "accept_multi_expedition",
@@ -93,13 +93,13 @@ impl ::protobuf::Message for AcceptMultipleExpeditionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                40 => {
+                8 => {
                     self.BJMGDBCHEAN = is.read_int64()?;
                 },
-                98 => {
+                48 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                90 => {
                     self.accept_multi_expedition.push(is.read_message()?);
                 },
                 106 => {
@@ -117,11 +117,11 @@ impl ::protobuf::Message for AcceptMultipleExpeditionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
-        }
         if self.BJMGDBCHEAN != 0 {
-            my_size += ::protobuf::rt::int64_size(5, self.BJMGDBCHEAN);
+            my_size += ::protobuf::rt::int64_size(1, self.BJMGDBCHEAN);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         for value in &self.accept_multi_expedition {
             let len = value.compute_size();
@@ -137,14 +137,14 @@ impl ::protobuf::Message for AcceptMultipleExpeditionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
-        }
         if self.BJMGDBCHEAN != 0 {
-            os.write_int64(5, self.BJMGDBCHEAN)?;
+            os.write_int64(1, self.BJMGDBCHEAN)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
         }
         for v in &self.accept_multi_expedition {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         for v in &self.DJOBNPIAEJP {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
@@ -166,8 +166,8 @@ impl ::protobuf::Message for AcceptMultipleExpeditionScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.BJMGDBCHEAN = 0;
+        self.retcode = 0;
         self.accept_multi_expedition.clear();
         self.DJOBNPIAEJP.clear();
         self.special_fields.clear();
@@ -175,8 +175,8 @@ impl ::protobuf::Message for AcceptMultipleExpeditionScRsp {
 
     fn default_instance() -> &'static AcceptMultipleExpeditionScRsp {
         static instance: AcceptMultipleExpeditionScRsp = AcceptMultipleExpeditionScRsp {
-            retcode: 0,
             BJMGDBCHEAN: 0,
+            retcode: 0,
             accept_multi_expedition: ::std::vec::Vec::new(),
             DJOBNPIAEJP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -204,12 +204,12 @@ impl ::protobuf::reflect::ProtobufValue for AcceptMultipleExpeditionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#AcceptMultipleExpeditionScRsp.proto\x1a\x14ExpeditionInfo.proto\x1a\
-    \x0eItemList.proto\"\xd1\x01\n\x1dAcceptMultipleExpeditionScRsp\x12\x18\
-    \n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bBJMGDBCHEAN\
-    \x18\x05\x20\x01(\x03R\x0bBJMGDBCHEAN\x12G\n\x17accept_multi_expedition\
-    \x18\x0c\x20\x03(\x0b2\x0f.ExpeditionInfoR\x15acceptMultiExpedition\x12+\
-    \n\x0bDJOBNPIAEJP\x18\r\x20\x03(\x0b2\t.ItemListR\x0bDJOBNPIAEJPb\x06pro\
-    to3\
+    \x0eItemList.proto\"\xd1\x01\n\x1dAcceptMultipleExpeditionScRsp\x12\x20\
+    \n\x0bBJMGDBCHEAN\x18\x01\x20\x01(\x03R\x0bBJMGDBCHEAN\x12\x18\n\x07retc\
+    ode\x18\x06\x20\x01(\rR\x07retcode\x12G\n\x17accept_multi_expedition\x18\
+    \x0b\x20\x03(\x0b2\x0f.ExpeditionInfoR\x15acceptMultiExpedition\x12+\n\
+    \x0bDJOBNPIAEJP\x18\r\x20\x03(\x0b2\t.ItemListR\x0bDJOBNPIAEJPb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

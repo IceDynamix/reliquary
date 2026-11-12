@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DLCJPINDIAC {
     // message fields
-    // @@protoc_insertion_point(field:DLCJPINDIAC.uid)
-    pub uid: u32,
     // @@protoc_insertion_point(field:DLCJPINDIAC.PPOAGPGEAFH)
     pub PPOAGPGEAFH: u32,
+    // @@protoc_insertion_point(field:DLCJPINDIAC.uid)
+    pub uid: u32,
     // message oneof groups
     pub KKNBOACNCON: ::std::option::Option<dlcjpindiac::KKNBOACNCON>,
     // special fields
@@ -50,56 +50,7 @@ impl DLCJPINDIAC {
         ::std::default::Default::default()
     }
 
-    // .PLICOOFLBIB KCICNNFJEAC = 2;
-
-    pub fn KCICNNFJEAC(&self) -> &super::PLICOOFLBIB::PLICOOFLBIB {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(ref v)) => v,
-            _ => <super::PLICOOFLBIB::PLICOOFLBIB as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_KCICNNFJEAC(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_KCICNNFJEAC(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_KCICNNFJEAC(&mut self, v: super::PLICOOFLBIB::PLICOOFLBIB) {
-        self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_KCICNNFJEAC(&mut self) -> &mut super::PLICOOFLBIB::PLICOOFLBIB {
-        if let ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(super::PLICOOFLBIB::PLICOOFLBIB::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_KCICNNFJEAC(&mut self) -> super::PLICOOFLBIB::PLICOOFLBIB {
-        if self.has_KCICNNFJEAC() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::PLICOOFLBIB::PLICOOFLBIB::new()
-        }
-    }
-
-    // .GKJHNGLHOBA ONNAKPKDLHO = 3;
+    // .GKJHNGLHOBA ONNAKPKDLHO = 1;
 
     pub fn ONNAKPKDLHO(&self) -> &super::GKJHNGLHOBA::GKJHNGLHOBA {
         match self.KKNBOACNCON {
@@ -148,7 +99,56 @@ impl DLCJPINDIAC {
         }
     }
 
-    // .BCKBEMGGGIF LENBIENEFIB = 6;
+    // .PLICOOFLBIB KCICNNFJEAC = 5;
+
+    pub fn KCICNNFJEAC(&self) -> &super::PLICOOFLBIB::PLICOOFLBIB {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(ref v)) => v,
+            _ => <super::PLICOOFLBIB::PLICOOFLBIB as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_KCICNNFJEAC(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_KCICNNFJEAC(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_KCICNNFJEAC(&mut self, v: super::PLICOOFLBIB::PLICOOFLBIB) {
+        self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_KCICNNFJEAC(&mut self) -> &mut super::PLICOOFLBIB::PLICOOFLBIB {
+        if let ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(super::PLICOOFLBIB::PLICOOFLBIB::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_KCICNNFJEAC(&mut self) -> super::PLICOOFLBIB::PLICOOFLBIB {
+        if self.has_KCICNNFJEAC() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::PLICOOFLBIB::PLICOOFLBIB::new()
+        }
+    }
+
+    // .BCKBEMGGGIF LENBIENEFIB = 7;
 
     pub fn LENBIENEFIB(&self) -> &super::BCKBEMGGGIF::BCKBEMGGGIF {
         match self.KKNBOACNCON {
@@ -197,7 +197,7 @@ impl DLCJPINDIAC {
         }
     }
 
-    // .DGLBOFKGGLL BJKBADEMEOE = 12;
+    // .DGLBOFKGGLL BJKBADEMEOE = 8;
 
     pub fn BJKBADEMEOE(&self) -> &super::DGLBOFKGGLL::DGLBOFKGGLL {
         match self.KKNBOACNCON {
@@ -250,21 +250,14 @@ impl DLCJPINDIAC {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &DLCJPINDIAC| { &m.uid },
-            |m: &mut DLCJPINDIAC| { &mut m.uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PPOAGPGEAFH",
             |m: &DLCJPINDIAC| { &m.PPOAGPGEAFH },
             |m: &mut DLCJPINDIAC| { &mut m.PPOAGPGEAFH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PLICOOFLBIB::PLICOOFLBIB>(
-            "KCICNNFJEAC",
-            DLCJPINDIAC::has_KCICNNFJEAC,
-            DLCJPINDIAC::KCICNNFJEAC,
-            DLCJPINDIAC::mut_KCICNNFJEAC,
-            DLCJPINDIAC::set_KCICNNFJEAC,
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uid",
+            |m: &DLCJPINDIAC| { &m.uid },
+            |m: &mut DLCJPINDIAC| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GKJHNGLHOBA::GKJHNGLHOBA>(
             "ONNAKPKDLHO",
@@ -272,6 +265,13 @@ impl DLCJPINDIAC {
             DLCJPINDIAC::ONNAKPKDLHO,
             DLCJPINDIAC::mut_ONNAKPKDLHO,
             DLCJPINDIAC::set_ONNAKPKDLHO,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PLICOOFLBIB::PLICOOFLBIB>(
+            "KCICNNFJEAC",
+            DLCJPINDIAC::has_KCICNNFJEAC,
+            DLCJPINDIAC::KCICNNFJEAC,
+            DLCJPINDIAC::mut_KCICNNFJEAC,
+            DLCJPINDIAC::set_KCICNNFJEAC,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BCKBEMGGGIF::BCKBEMGGGIF>(
             "LENBIENEFIB",
@@ -306,22 +306,22 @@ impl ::protobuf::Message for DLCJPINDIAC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.uid = is.read_uint32()?;
-                },
-                104 => {
+                32 => {
                     self.PPOAGPGEAFH = is.read_uint32()?;
                 },
-                18 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(is.read_message()?));
+                48 => {
+                    self.uid = is.read_uint32()?;
                 },
-                26 => {
+                10 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::ONNAKPKDLHO(is.read_message()?));
                 },
-                50 => {
+                42 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(is.read_message()?));
+                },
+                58 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::LENBIENEFIB(is.read_message()?));
                 },
-                98 => {
+                66 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::BJKBADEMEOE(is.read_message()?));
                 },
                 tag => {
@@ -336,19 +336,19 @@ impl ::protobuf::Message for DLCJPINDIAC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.uid);
-        }
         if self.PPOAGPGEAFH != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.PPOAGPGEAFH);
+            my_size += ::protobuf::rt::uint32_size(4, self.PPOAGPGEAFH);
+        }
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.uid);
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(ref v) => {
+                &dlcjpindiac::KKNBOACNCON::ONNAKPKDLHO(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &dlcjpindiac::KKNBOACNCON::ONNAKPKDLHO(ref v) => {
+                &dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -368,25 +368,25 @@ impl ::protobuf::Message for DLCJPINDIAC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.uid != 0 {
-            os.write_uint32(8, self.uid)?;
-        }
         if self.PPOAGPGEAFH != 0 {
-            os.write_uint32(13, self.PPOAGPGEAFH)?;
+            os.write_uint32(4, self.PPOAGPGEAFH)?;
+        }
+        if self.uid != 0 {
+            os.write_uint32(6, self.uid)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-                },
                 &dlcjpindiac::KKNBOACNCON::ONNAKPKDLHO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                },
+                &dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
                 &dlcjpindiac::KKNBOACNCON::LENBIENEFIB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
                 &dlcjpindiac::KKNBOACNCON::BJKBADEMEOE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
             };
         }
@@ -407,8 +407,8 @@ impl ::protobuf::Message for DLCJPINDIAC {
     }
 
     fn clear(&mut self) {
-        self.uid = 0;
         self.PPOAGPGEAFH = 0;
+        self.uid = 0;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
@@ -418,8 +418,8 @@ impl ::protobuf::Message for DLCJPINDIAC {
 
     fn default_instance() -> &'static DLCJPINDIAC {
         static instance: DLCJPINDIAC = DLCJPINDIAC {
-            uid: 0,
             PPOAGPGEAFH: 0,
+            uid: 0,
             KKNBOACNCON: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -451,10 +451,10 @@ pub mod dlcjpindiac {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:DLCJPINDIAC.KKNBOACNCON)
     pub enum KKNBOACNCON {
-        // @@protoc_insertion_point(oneof_field:DLCJPINDIAC.KCICNNFJEAC)
-        KCICNNFJEAC(super::super::PLICOOFLBIB::PLICOOFLBIB),
         // @@protoc_insertion_point(oneof_field:DLCJPINDIAC.ONNAKPKDLHO)
         ONNAKPKDLHO(super::super::GKJHNGLHOBA::GKJHNGLHOBA),
+        // @@protoc_insertion_point(oneof_field:DLCJPINDIAC.KCICNNFJEAC)
+        KCICNNFJEAC(super::super::PLICOOFLBIB::PLICOOFLBIB),
         // @@protoc_insertion_point(oneof_field:DLCJPINDIAC.LENBIENEFIB)
         LENBIENEFIB(super::super::BCKBEMGGGIF::BCKBEMGGGIF),
         // @@protoc_insertion_point(oneof_field:DLCJPINDIAC.BJKBADEMEOE)
@@ -481,13 +481,13 @@ pub mod dlcjpindiac {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DLCJPINDIAC.proto\x1a\x11BCKBEMGGGIF.proto\x1a\x11DGLBOFKGGLL.prot\
     o\x1a\x11GKJHNGLHOBA.proto\x1a\x11PLICOOFLBIB.proto\"\x98\x02\n\x0bDLCJP\
-    INDIAC\x12\x10\n\x03uid\x18\x08\x20\x01(\rR\x03uid\x12\x20\n\x0bPPOAGPGE\
-    AFH\x18\r\x20\x01(\rR\x0bPPOAGPGEAFH\x120\n\x0bKCICNNFJEAC\x18\x02\x20\
-    \x01(\x0b2\x0c.PLICOOFLBIBH\0R\x0bKCICNNFJEAC\x120\n\x0bONNAKPKDLHO\x18\
-    \x03\x20\x01(\x0b2\x0c.GKJHNGLHOBAH\0R\x0bONNAKPKDLHO\x120\n\x0bLENBIENE\
-    FIB\x18\x06\x20\x01(\x0b2\x0c.BCKBEMGGGIFH\0R\x0bLENBIENEFIB\x120\n\x0bB\
-    JKBADEMEOE\x18\x0c\x20\x01(\x0b2\x0c.DGLBOFKGGLLH\0R\x0bBJKBADEMEOEB\r\n\
-    \x0bKKNBOACNCONb\x06proto3\
+    INDIAC\x12\x20\n\x0bPPOAGPGEAFH\x18\x04\x20\x01(\rR\x0bPPOAGPGEAFH\x12\
+    \x10\n\x03uid\x18\x06\x20\x01(\rR\x03uid\x120\n\x0bONNAKPKDLHO\x18\x01\
+    \x20\x01(\x0b2\x0c.GKJHNGLHOBAH\0R\x0bONNAKPKDLHO\x120\n\x0bKCICNNFJEAC\
+    \x18\x05\x20\x01(\x0b2\x0c.PLICOOFLBIBH\0R\x0bKCICNNFJEAC\x120\n\x0bLENB\
+    IENEFIB\x18\x07\x20\x01(\x0b2\x0c.BCKBEMGGGIFH\0R\x0bLENBIENEFIB\x120\n\
+    \x0bBJKBADEMEOE\x18\x08\x20\x01(\x0b2\x0c.DGLBOFKGGLLH\0R\x0bBJKBADEMEOE\
+    B\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

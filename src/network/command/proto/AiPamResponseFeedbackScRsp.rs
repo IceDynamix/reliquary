@@ -32,10 +32,10 @@ pub struct AiPamResponseFeedbackScRsp {
     pub IAJAOMAKAHA: bool,
     // @@protoc_insertion_point(field:AiPamResponseFeedbackScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:AiPamResponseFeedbackScRsp.BDPIMPJOJBK)
-    pub BDPIMPJOJBK: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
     // @@protoc_insertion_point(field:AiPamResponseFeedbackScRsp.NMMJBGFDNAI)
     pub NMMJBGFDNAI: bool,
+    // @@protoc_insertion_point(field:AiPamResponseFeedbackScRsp.BDPIMPJOJBK)
+    pub BDPIMPJOJBK: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
     // special fields
     // @@protoc_insertion_point(special_field:AiPamResponseFeedbackScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl AiPamResponseFeedbackScRsp {
             |m: &mut AiPamResponseFeedbackScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDPIMPJOJBK",
-            |m: &AiPamResponseFeedbackScRsp| { &m.BDPIMPJOJBK },
-            |m: &mut AiPamResponseFeedbackScRsp| { &mut m.BDPIMPJOJBK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NMMJBGFDNAI",
             |m: &AiPamResponseFeedbackScRsp| { &m.NMMJBGFDNAI },
             |m: &mut AiPamResponseFeedbackScRsp| { &mut m.NMMJBGFDNAI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BDPIMPJOJBK",
+            |m: &AiPamResponseFeedbackScRsp| { &m.BDPIMPJOJBK },
+            |m: &mut AiPamResponseFeedbackScRsp| { &mut m.BDPIMPJOJBK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AiPamResponseFeedbackScRsp>(
             "AiPamResponseFeedbackScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for AiPamResponseFeedbackScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                56 => {
                     self.IAJAOMAKAHA = is.read_bool()?;
                 },
-                16 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                64 => {
-                    self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
-                },
-                120 => {
+                72 => {
                     self.NMMJBGFDNAI = is.read_bool()?;
+                },
+                80 => {
+                    self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,13 +121,13 @@ impl ::protobuf::Message for AiPamResponseFeedbackScRsp {
             my_size += 1 + 1;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
-        }
-        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(8, self.BDPIMPJOJBK.value());
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if self.NMMJBGFDNAI != false {
             my_size += 1 + 1;
+        }
+        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(10, self.BDPIMPJOJBK.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for AiPamResponseFeedbackScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IAJAOMAKAHA != false {
-            os.write_bool(1, self.IAJAOMAKAHA)?;
+            os.write_bool(7, self.IAJAOMAKAHA)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
-        }
-        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
+            os.write_uint32(8, self.retcode)?;
         }
         if self.NMMJBGFDNAI != false {
-            os.write_bool(15, self.NMMJBGFDNAI)?;
+            os.write_bool(9, self.NMMJBGFDNAI)?;
+        }
+        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for AiPamResponseFeedbackScRsp {
     fn clear(&mut self) {
         self.IAJAOMAKAHA = false;
         self.retcode = 0;
-        self.BDPIMPJOJBK = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
         self.NMMJBGFDNAI = false;
+        self.BDPIMPJOJBK = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
@@ -175,8 +175,8 @@ impl ::protobuf::Message for AiPamResponseFeedbackScRsp {
         static instance: AiPamResponseFeedbackScRsp = AiPamResponseFeedbackScRsp {
             IAJAOMAKAHA: false,
             retcode: 0,
-            BDPIMPJOJBK: ::protobuf::EnumOrUnknown::from_i32(0),
             NMMJBGFDNAI: false,
+            BDPIMPJOJBK: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for AiPamResponseFeedbackScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20AiPamResponseFeedbackScRsp.proto\x1a\x11FKNKNLGMACL.proto\"\xaa\
-    \x01\n\x1aAiPamResponseFeedbackScRsp\x12\x20\n\x0bIAJAOMAKAHA\x18\x01\
-    \x20\x01(\x08R\x0bIAJAOMAKAHA\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\
-    \x07retcode\x12.\n\x0bBDPIMPJOJBK\x18\x08\x20\x01(\x0e2\x0c.FKNKNLGMACLR\
-    \x0bBDPIMPJOJBK\x12\x20\n\x0bNMMJBGFDNAI\x18\x0f\x20\x01(\x08R\x0bNMMJBG\
-    FDNAIb\x06proto3\
+    \x01\n\x1aAiPamResponseFeedbackScRsp\x12\x20\n\x0bIAJAOMAKAHA\x18\x07\
+    \x20\x01(\x08R\x0bIAJAOMAKAHA\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\
+    \x07retcode\x12\x20\n\x0bNMMJBGFDNAI\x18\t\x20\x01(\x08R\x0bNMMJBGFDNAI\
+    \x12.\n\x0bBDPIMPJOJBK\x18\n\x20\x01(\x0e2\x0c.FKNKNLGMACLR\x0bBDPIMPJOJ\
+    BKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

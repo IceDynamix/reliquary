@@ -79,10 +79,10 @@ impl ::protobuf::Message for GMGABLBKJMC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                24 => {
                     self.LMIODAHFGOA = is.read_enum_or_unknown()?;
                 },
-                80 => {
+                88 => {
                     self.display_value = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GMGABLBKJMC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LMIODAHFGOA != ::protobuf::EnumOrUnknown::new(super::FDICBBEGKEO::FDICBBEGKEO::FDICBBEGKEO_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(7, self.LMIODAHFGOA.value());
+            my_size += ::protobuf::rt::int32_size(3, self.LMIODAHFGOA.value());
         }
         if self.display_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.display_value);
+            my_size += ::protobuf::rt::uint32_size(11, self.display_value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GMGABLBKJMC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LMIODAHFGOA != ::protobuf::EnumOrUnknown::new(super::FDICBBEGKEO::FDICBBEGKEO::FDICBBEGKEO_NLCDGIPGFDJ) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.LMIODAHFGOA))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.LMIODAHFGOA))?;
         }
         if self.display_value != 0 {
-            os.write_uint32(10, self.display_value)?;
+            os.write_uint32(11, self.display_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GMGABLBKJMC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GMGABLBKJMC.proto\x1a\x11FDICBBEGKEO.proto\"b\n\x0bGMGABLBKJMC\x12\
-    .\n\x0bLMIODAHFGOA\x18\x07\x20\x01(\x0e2\x0c.FDICBBEGKEOR\x0bLMIODAHFGOA\
-    \x12#\n\rdisplay_value\x18\n\x20\x01(\rR\x0cdisplayValueb\x06proto3\
+    .\n\x0bLMIODAHFGOA\x18\x03\x20\x01(\x0e2\x0c.FDICBBEGKEOR\x0bLMIODAHFGOA\
+    \x12#\n\rdisplay_value\x18\x0b\x20\x01(\rR\x0cdisplayValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

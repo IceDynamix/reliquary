@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ADNCPPCPLLH {
     // message fields
-    // @@protoc_insertion_point(field:ADNCPPCPLLH.HAFOKMHCGFM)
-    pub HAFOKMHCGFM: u32,
     // @@protoc_insertion_point(field:ADNCPPCPLLH.GKKNMDDNOJF)
     pub GKKNMDDNOJF: u32,
     // @@protoc_insertion_point(field:ADNCPPCPLLH.event_id)
     pub event_id: u32,
+    // @@protoc_insertion_point(field:ADNCPPCPLLH.HAFOKMHCGFM)
+    pub HAFOKMHCGFM: u32,
     // @@protoc_insertion_point(field:ADNCPPCPLLH.MJMJOMDLOHI)
     pub MJMJOMDLOHI: ::std::vec::Vec<u32>,
     // special fields
@@ -56,11 +56,6 @@ impl ADNCPPCPLLH {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HAFOKMHCGFM",
-            |m: &ADNCPPCPLLH| { &m.HAFOKMHCGFM },
-            |m: &mut ADNCPPCPLLH| { &mut m.HAFOKMHCGFM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GKKNMDDNOJF",
             |m: &ADNCPPCPLLH| { &m.GKKNMDDNOJF },
             |m: &mut ADNCPPCPLLH| { &mut m.GKKNMDDNOJF },
@@ -69,6 +64,11 @@ impl ADNCPPCPLLH {
             "event_id",
             |m: &ADNCPPCPLLH| { &m.event_id },
             |m: &mut ADNCPPCPLLH| { &mut m.event_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HAFOKMHCGFM",
+            |m: &ADNCPPCPLLH| { &m.HAFOKMHCGFM },
+            |m: &mut ADNCPPCPLLH| { &mut m.HAFOKMHCGFM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MJMJOMDLOHI",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for ADNCPPCPLLH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.HAFOKMHCGFM = is.read_uint32()?;
-                },
-                56 => {
+                8 => {
                     self.GKKNMDDNOJF = is.read_uint32()?;
                 },
-                64 => {
+                48 => {
                     self.event_id = is.read_uint32()?;
                 },
-                90 => {
+                56 => {
+                    self.HAFOKMHCGFM = is.read_uint32()?;
+                },
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.MJMJOMDLOHI)?;
                 },
-                88 => {
+                112 => {
                     self.MJMJOMDLOHI.push(is.read_uint32()?);
                 },
                 tag => {
@@ -120,32 +120,32 @@ impl ::protobuf::Message for ADNCPPCPLLH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HAFOKMHCGFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HAFOKMHCGFM);
-        }
         if self.GKKNMDDNOJF != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.GKKNMDDNOJF);
+            my_size += ::protobuf::rt::uint32_size(1, self.GKKNMDDNOJF);
         }
         if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.event_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.event_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.MJMJOMDLOHI);
+        if self.HAFOKMHCGFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.HAFOKMHCGFM);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.MJMJOMDLOHI);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HAFOKMHCGFM != 0 {
-            os.write_uint32(2, self.HAFOKMHCGFM)?;
-        }
         if self.GKKNMDDNOJF != 0 {
-            os.write_uint32(7, self.GKKNMDDNOJF)?;
+            os.write_uint32(1, self.GKKNMDDNOJF)?;
         }
         if self.event_id != 0 {
-            os.write_uint32(8, self.event_id)?;
+            os.write_uint32(6, self.event_id)?;
         }
-        os.write_repeated_packed_uint32(11, &self.MJMJOMDLOHI)?;
+        if self.HAFOKMHCGFM != 0 {
+            os.write_uint32(7, self.HAFOKMHCGFM)?;
+        }
+        os.write_repeated_packed_uint32(14, &self.MJMJOMDLOHI)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,18 +163,18 @@ impl ::protobuf::Message for ADNCPPCPLLH {
     }
 
     fn clear(&mut self) {
-        self.HAFOKMHCGFM = 0;
         self.GKKNMDDNOJF = 0;
         self.event_id = 0;
+        self.HAFOKMHCGFM = 0;
         self.MJMJOMDLOHI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ADNCPPCPLLH {
         static instance: ADNCPPCPLLH = ADNCPPCPLLH {
-            HAFOKMHCGFM: 0,
             GKKNMDDNOJF: 0,
             event_id: 0,
+            HAFOKMHCGFM: 0,
             MJMJOMDLOHI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for ADNCPPCPLLH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ADNCPPCPLLH.proto\"\x8e\x01\n\x0bADNCPPCPLLH\x12\x20\n\x0bHAFOKMHC\
-    GFM\x18\x02\x20\x01(\rR\x0bHAFOKMHCGFM\x12\x20\n\x0bGKKNMDDNOJF\x18\x07\
-    \x20\x01(\rR\x0bGKKNMDDNOJF\x12\x19\n\x08event_id\x18\x08\x20\x01(\rR\
-    \x07eventId\x12\x20\n\x0bMJMJOMDLOHI\x18\x0b\x20\x03(\rR\x0bMJMJOMDLOHIb\
-    \x06proto3\
+    \n\x11ADNCPPCPLLH.proto\"\x8e\x01\n\x0bADNCPPCPLLH\x12\x20\n\x0bGKKNMDDN\
+    OJF\x18\x01\x20\x01(\rR\x0bGKKNMDDNOJF\x12\x19\n\x08event_id\x18\x06\x20\
+    \x01(\rR\x07eventId\x12\x20\n\x0bHAFOKMHCGFM\x18\x07\x20\x01(\rR\x0bHAFO\
+    KMHCGFM\x12\x20\n\x0bMJMJOMDLOHI\x18\x0e\x20\x03(\rR\x0bMJMJOMDLOHIb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

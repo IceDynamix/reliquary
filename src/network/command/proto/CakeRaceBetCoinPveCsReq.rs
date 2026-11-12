@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CakeRaceBetCoinPveCsReq {
     // message fields
-    // @@protoc_insertion_point(field:CakeRaceBetCoinPveCsReq.OPNGHDENCAB)
-    pub OPNGHDENCAB: u32,
     // @@protoc_insertion_point(field:CakeRaceBetCoinPveCsReq.LOPNADHJKBF)
     pub LOPNADHJKBF: u32,
+    // @@protoc_insertion_point(field:CakeRaceBetCoinPveCsReq.OPNGHDENCAB)
+    pub OPNGHDENCAB: u32,
     // message oneof groups
     pub FGIMLNIJINE: ::std::option::Option<cake_race_bet_coin_pve_cs_req::FGIMLNIJINE>,
     // special fields
@@ -99,32 +99,7 @@ impl CakeRaceBetCoinPveCsReq {
         }
     }
 
-    // bool MAGPAGCHOHP = 5;
-
-    pub fn MAGPAGCHOHP(&self) -> bool {
-        match self.FGIMLNIJINE {
-            ::std::option::Option::Some(cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::MAGPAGCHOHP(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_MAGPAGCHOHP(&mut self) {
-        self.FGIMLNIJINE = ::std::option::Option::None;
-    }
-
-    pub fn has_MAGPAGCHOHP(&self) -> bool {
-        match self.FGIMLNIJINE {
-            ::std::option::Option::Some(cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::MAGPAGCHOHP(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_MAGPAGCHOHP(&mut self, v: bool) {
-        self.FGIMLNIJINE = ::std::option::Option::Some(cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::MAGPAGCHOHP(v))
-    }
-
-    // bool PIKEOHHECCA = 10;
+    // bool PIKEOHHECCA = 3;
 
     pub fn PIKEOHHECCA(&self) -> bool {
         match self.FGIMLNIJINE {
@@ -149,7 +124,32 @@ impl CakeRaceBetCoinPveCsReq {
         self.FGIMLNIJINE = ::std::option::Option::Some(cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::PIKEOHHECCA(v))
     }
 
-    // .ICDBHMEPNDB BOEJNBKDJLM = 12;
+    // bool MAGPAGCHOHP = 11;
+
+    pub fn MAGPAGCHOHP(&self) -> bool {
+        match self.FGIMLNIJINE {
+            ::std::option::Option::Some(cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::MAGPAGCHOHP(v)) => v,
+            _ => false,
+        }
+    }
+
+    pub fn clear_MAGPAGCHOHP(&mut self) {
+        self.FGIMLNIJINE = ::std::option::Option::None;
+    }
+
+    pub fn has_MAGPAGCHOHP(&self) -> bool {
+        match self.FGIMLNIJINE {
+            ::std::option::Option::Some(cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::MAGPAGCHOHP(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_MAGPAGCHOHP(&mut self, v: bool) {
+        self.FGIMLNIJINE = ::std::option::Option::Some(cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::MAGPAGCHOHP(v))
+    }
+
+    // .ICDBHMEPNDB BOEJNBKDJLM = 13;
 
     pub fn BOEJNBKDJLM(&self) -> &super::ICDBHMEPNDB::ICDBHMEPNDB {
         match self.FGIMLNIJINE {
@@ -198,7 +198,7 @@ impl CakeRaceBetCoinPveCsReq {
         }
     }
 
-    // uint32 BCFPLAPCFPL = 13;
+    // uint32 BCFPLAPCFPL = 15;
 
     pub fn BCFPLAPCFPL(&self) -> u32 {
         match self.FGIMLNIJINE {
@@ -227,14 +227,14 @@ impl CakeRaceBetCoinPveCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OPNGHDENCAB",
-            |m: &CakeRaceBetCoinPveCsReq| { &m.OPNGHDENCAB },
-            |m: &mut CakeRaceBetCoinPveCsReq| { &mut m.OPNGHDENCAB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LOPNADHJKBF",
             |m: &CakeRaceBetCoinPveCsReq| { &m.LOPNADHJKBF },
             |m: &mut CakeRaceBetCoinPveCsReq| { &mut m.LOPNADHJKBF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OPNGHDENCAB",
+            |m: &CakeRaceBetCoinPveCsReq| { &m.OPNGHDENCAB },
+            |m: &mut CakeRaceBetCoinPveCsReq| { &mut m.OPNGHDENCAB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EMJCPFCMOMK::EMJCPFCMOMK>(
             "KMOLBEGKLNI",
@@ -244,16 +244,16 @@ impl CakeRaceBetCoinPveCsReq {
             CakeRaceBetCoinPveCsReq::set_KMOLBEGKLNI,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "MAGPAGCHOHP",
-            CakeRaceBetCoinPveCsReq::has_MAGPAGCHOHP,
-            CakeRaceBetCoinPveCsReq::MAGPAGCHOHP,
-            CakeRaceBetCoinPveCsReq::set_MAGPAGCHOHP,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "PIKEOHHECCA",
             CakeRaceBetCoinPveCsReq::has_PIKEOHHECCA,
             CakeRaceBetCoinPveCsReq::PIKEOHHECCA,
             CakeRaceBetCoinPveCsReq::set_PIKEOHHECCA,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "MAGPAGCHOHP",
+            CakeRaceBetCoinPveCsReq::has_MAGPAGCHOHP,
+            CakeRaceBetCoinPveCsReq::MAGPAGCHOHP,
+            CakeRaceBetCoinPveCsReq::set_MAGPAGCHOHP,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ICDBHMEPNDB::ICDBHMEPNDB>(
             "BOEJNBKDJLM",
@@ -287,25 +287,25 @@ impl ::protobuf::Message for CakeRaceBetCoinPveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.OPNGHDENCAB = is.read_uint32()?;
+                8 => {
+                    self.LOPNADHJKBF = is.read_uint32()?;
                 },
                 32 => {
-                    self.LOPNADHJKBF = is.read_uint32()?;
+                    self.OPNGHDENCAB = is.read_uint32()?;
                 },
                 18 => {
                     self.FGIMLNIJINE = ::std::option::Option::Some(cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::KMOLBEGKLNI(is.read_message()?));
                 },
-                40 => {
-                    self.FGIMLNIJINE = ::std::option::Option::Some(cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::MAGPAGCHOHP(is.read_bool()?));
-                },
-                80 => {
+                24 => {
                     self.FGIMLNIJINE = ::std::option::Option::Some(cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::PIKEOHHECCA(is.read_bool()?));
                 },
-                98 => {
+                88 => {
+                    self.FGIMLNIJINE = ::std::option::Option::Some(cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::MAGPAGCHOHP(is.read_bool()?));
+                },
+                106 => {
                     self.FGIMLNIJINE = ::std::option::Option::Some(cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::BOEJNBKDJLM(is.read_message()?));
                 },
-                104 => {
+                120 => {
                     self.FGIMLNIJINE = ::std::option::Option::Some(cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::BCFPLAPCFPL(is.read_uint32()?));
                 },
                 tag => {
@@ -320,11 +320,11 @@ impl ::protobuf::Message for CakeRaceBetCoinPveCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OPNGHDENCAB != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.OPNGHDENCAB);
-        }
         if self.LOPNADHJKBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LOPNADHJKBF);
+            my_size += ::protobuf::rt::uint32_size(1, self.LOPNADHJKBF);
+        }
+        if self.OPNGHDENCAB != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.OPNGHDENCAB);
         }
         if let ::std::option::Option::Some(ref v) = self.FGIMLNIJINE {
             match v {
@@ -332,10 +332,10 @@ impl ::protobuf::Message for CakeRaceBetCoinPveCsReq {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::MAGPAGCHOHP(v) => {
+                &cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::PIKEOHHECCA(v) => {
                     my_size += 1 + 1;
                 },
-                &cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::PIKEOHHECCA(v) => {
+                &cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::MAGPAGCHOHP(v) => {
                     my_size += 1 + 1;
                 },
                 &cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::BOEJNBKDJLM(ref v) => {
@@ -343,7 +343,7 @@ impl ::protobuf::Message for CakeRaceBetCoinPveCsReq {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::BCFPLAPCFPL(v) => {
-                    my_size += ::protobuf::rt::uint32_size(13, v);
+                    my_size += ::protobuf::rt::uint32_size(15, v);
                 },
             };
         }
@@ -353,28 +353,28 @@ impl ::protobuf::Message for CakeRaceBetCoinPveCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OPNGHDENCAB != 0 {
-            os.write_uint32(3, self.OPNGHDENCAB)?;
-        }
         if self.LOPNADHJKBF != 0 {
-            os.write_uint32(4, self.LOPNADHJKBF)?;
+            os.write_uint32(1, self.LOPNADHJKBF)?;
+        }
+        if self.OPNGHDENCAB != 0 {
+            os.write_uint32(4, self.OPNGHDENCAB)?;
         }
         if let ::std::option::Option::Some(ref v) = self.FGIMLNIJINE {
             match v {
                 &cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::KMOLBEGKLNI(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
-                &cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::MAGPAGCHOHP(v) => {
-                    os.write_bool(5, v)?;
-                },
                 &cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::PIKEOHHECCA(v) => {
-                    os.write_bool(10, v)?;
+                    os.write_bool(3, v)?;
+                },
+                &cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::MAGPAGCHOHP(v) => {
+                    os.write_bool(11, v)?;
                 },
                 &cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::BOEJNBKDJLM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
                 &cake_race_bet_coin_pve_cs_req::FGIMLNIJINE::BCFPLAPCFPL(v) => {
-                    os.write_uint32(13, v)?;
+                    os.write_uint32(15, v)?;
                 },
             };
         }
@@ -395,8 +395,8 @@ impl ::protobuf::Message for CakeRaceBetCoinPveCsReq {
     }
 
     fn clear(&mut self) {
-        self.OPNGHDENCAB = 0;
         self.LOPNADHJKBF = 0;
+        self.OPNGHDENCAB = 0;
         self.FGIMLNIJINE = ::std::option::Option::None;
         self.FGIMLNIJINE = ::std::option::Option::None;
         self.FGIMLNIJINE = ::std::option::Option::None;
@@ -407,8 +407,8 @@ impl ::protobuf::Message for CakeRaceBetCoinPveCsReq {
 
     fn default_instance() -> &'static CakeRaceBetCoinPveCsReq {
         static instance: CakeRaceBetCoinPveCsReq = CakeRaceBetCoinPveCsReq {
-            OPNGHDENCAB: 0,
             LOPNADHJKBF: 0,
+            OPNGHDENCAB: 0,
             FGIMLNIJINE: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -442,10 +442,10 @@ pub mod cake_race_bet_coin_pve_cs_req {
     pub enum FGIMLNIJINE {
         // @@protoc_insertion_point(oneof_field:CakeRaceBetCoinPveCsReq.KMOLBEGKLNI)
         KMOLBEGKLNI(super::super::EMJCPFCMOMK::EMJCPFCMOMK),
-        // @@protoc_insertion_point(oneof_field:CakeRaceBetCoinPveCsReq.MAGPAGCHOHP)
-        MAGPAGCHOHP(bool),
         // @@protoc_insertion_point(oneof_field:CakeRaceBetCoinPveCsReq.PIKEOHHECCA)
         PIKEOHHECCA(bool),
+        // @@protoc_insertion_point(oneof_field:CakeRaceBetCoinPveCsReq.MAGPAGCHOHP)
+        MAGPAGCHOHP(bool),
         // @@protoc_insertion_point(oneof_field:CakeRaceBetCoinPveCsReq.BOEJNBKDJLM)
         BOEJNBKDJLM(super::super::ICDBHMEPNDB::ICDBHMEPNDB),
         // @@protoc_insertion_point(oneof_field:CakeRaceBetCoinPveCsReq.BCFPLAPCFPL)
@@ -471,13 +471,13 @@ pub mod cake_race_bet_coin_pve_cs_req {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dCakeRaceBetCoinPveCsReq.proto\x1a\x11EMJCPFCMOMK.proto\x1a\x11ICDB\
-    HMEPNDB.proto\"\xbc\x02\n\x17CakeRaceBetCoinPveCsReq\x12\x20\n\x0bOPNGHD\
-    ENCAB\x18\x03\x20\x01(\rR\x0bOPNGHDENCAB\x12\x20\n\x0bLOPNADHJKBF\x18\
-    \x04\x20\x01(\rR\x0bLOPNADHJKBF\x120\n\x0bKMOLBEGKLNI\x18\x02\x20\x01(\
-    \x0b2\x0c.EMJCPFCMOMKH\0R\x0bKMOLBEGKLNI\x12\"\n\x0bMAGPAGCHOHP\x18\x05\
-    \x20\x01(\x08H\0R\x0bMAGPAGCHOHP\x12\"\n\x0bPIKEOHHECCA\x18\n\x20\x01(\
-    \x08H\0R\x0bPIKEOHHECCA\x120\n\x0bBOEJNBKDJLM\x18\x0c\x20\x01(\x0b2\x0c.\
-    ICDBHMEPNDBH\0R\x0bBOEJNBKDJLM\x12\"\n\x0bBCFPLAPCFPL\x18\r\x20\x01(\rH\
+    HMEPNDB.proto\"\xbc\x02\n\x17CakeRaceBetCoinPveCsReq\x12\x20\n\x0bLOPNAD\
+    HJKBF\x18\x01\x20\x01(\rR\x0bLOPNADHJKBF\x12\x20\n\x0bOPNGHDENCAB\x18\
+    \x04\x20\x01(\rR\x0bOPNGHDENCAB\x120\n\x0bKMOLBEGKLNI\x18\x02\x20\x01(\
+    \x0b2\x0c.EMJCPFCMOMKH\0R\x0bKMOLBEGKLNI\x12\"\n\x0bPIKEOHHECCA\x18\x03\
+    \x20\x01(\x08H\0R\x0bPIKEOHHECCA\x12\"\n\x0bMAGPAGCHOHP\x18\x0b\x20\x01(\
+    \x08H\0R\x0bMAGPAGCHOHP\x120\n\x0bBOEJNBKDJLM\x18\r\x20\x01(\x0b2\x0c.IC\
+    DBHMEPNDBH\0R\x0bBOEJNBKDJLM\x12\"\n\x0bBCFPLAPCFPL\x18\x0f\x20\x01(\rH\
     \0R\x0bBCFPLAPCFPLB\r\n\x0bFGIMLNIJINEb\x06proto3\
 ";
 

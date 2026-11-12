@@ -79,7 +79,7 @@ impl ::protobuf::Message for DEFFFLGJAEM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                8 => {
                     self.OKPLPEELPBC = is.read_bool()?;
                 },
                 112 => {
@@ -110,7 +110,7 @@ impl ::protobuf::Message for DEFFFLGJAEM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OKPLPEELPBC != false {
-            os.write_bool(11, self.OKPLPEELPBC)?;
+            os.write_bool(1, self.OKPLPEELPBC)?;
         }
         if self.DOOACEHOPEE != 0 {
             os.write_uint32(14, self.DOOACEHOPEE)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for DEFFFLGJAEM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DEFFFLGJAEM.proto\"Q\n\x0bDEFFFLGJAEM\x12\x20\n\x0bOKPLPEELPBC\x18\
-    \x0b\x20\x01(\x08R\x0bOKPLPEELPBC\x12\x20\n\x0bDOOACEHOPEE\x18\x0e\x20\
+    \x01\x20\x01(\x08R\x0bOKPLPEELPBC\x12\x20\n\x0bDOOACEHOPEE\x18\x0e\x20\
     \x01(\rR\x0bDOOACEHOPEEb\x06proto3\
 ";
 

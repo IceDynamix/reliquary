@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EPFJLNKPEPK {
     // message fields
-    // @@protoc_insertion_point(field:EPFJLNKPEPK.EBAAFDHEPLO)
-    pub EBAAFDHEPLO: u64,
     // @@protoc_insertion_point(field:EPFJLNKPEPK.slot)
     pub slot: u32,
+    // @@protoc_insertion_point(field:EPFJLNKPEPK.EBAAFDHEPLO)
+    pub EBAAFDHEPLO: u64,
     // special fields
     // @@protoc_insertion_point(special_field:EPFJLNKPEPK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl EPFJLNKPEPK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EBAAFDHEPLO",
-            |m: &EPFJLNKPEPK| { &m.EBAAFDHEPLO },
-            |m: &mut EPFJLNKPEPK| { &mut m.EBAAFDHEPLO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "slot",
             |m: &EPFJLNKPEPK| { &m.slot },
             |m: &mut EPFJLNKPEPK| { &mut m.slot },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EBAAFDHEPLO",
+            |m: &EPFJLNKPEPK| { &m.EBAAFDHEPLO },
+            |m: &mut EPFJLNKPEPK| { &mut m.EBAAFDHEPLO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EPFJLNKPEPK>(
             "EPFJLNKPEPK",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EPFJLNKPEPK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.EBAAFDHEPLO = is.read_uint64()?;
+                48 => {
+                    self.slot = is.read_uint32()?;
                 },
                 80 => {
-                    self.slot = is.read_uint32()?;
+                    self.EBAAFDHEPLO = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for EPFJLNKPEPK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EBAAFDHEPLO != 0 {
-            my_size += ::protobuf::rt::uint64_size(9, self.EBAAFDHEPLO);
-        }
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.slot);
+            my_size += ::protobuf::rt::uint32_size(6, self.slot);
+        }
+        if self.EBAAFDHEPLO != 0 {
+            my_size += ::protobuf::rt::uint64_size(10, self.EBAAFDHEPLO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for EPFJLNKPEPK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EBAAFDHEPLO != 0 {
-            os.write_uint64(9, self.EBAAFDHEPLO)?;
-        }
         if self.slot != 0 {
-            os.write_uint32(10, self.slot)?;
+            os.write_uint32(6, self.slot)?;
+        }
+        if self.EBAAFDHEPLO != 0 {
+            os.write_uint64(10, self.EBAAFDHEPLO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for EPFJLNKPEPK {
     }
 
     fn clear(&mut self) {
-        self.EBAAFDHEPLO = 0;
         self.slot = 0;
+        self.EBAAFDHEPLO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EPFJLNKPEPK {
         static instance: EPFJLNKPEPK = EPFJLNKPEPK {
-            EBAAFDHEPLO: 0,
             slot: 0,
+            EBAAFDHEPLO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for EPFJLNKPEPK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EPFJLNKPEPK.proto\"C\n\x0bEPFJLNKPEPK\x12\x20\n\x0bEBAAFDHEPLO\x18\
-    \t\x20\x01(\x04R\x0bEBAAFDHEPLO\x12\x12\n\x04slot\x18\n\x20\x01(\rR\x04s\
-    lotb\x06proto3\
+    \n\x11EPFJLNKPEPK.proto\"C\n\x0bEPFJLNKPEPK\x12\x12\n\x04slot\x18\x06\
+    \x20\x01(\rR\x04slot\x12\x20\n\x0bEBAAFDHEPLO\x18\n\x20\x01(\x04R\x0bEBA\
+    AFDHEPLOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

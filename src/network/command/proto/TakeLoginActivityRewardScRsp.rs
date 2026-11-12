@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeLoginActivityRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.panel_id)
+    pub panel_id: u32,
     // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.id)
     pub id: u32,
     // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.take_days)
     pub take_days: u32,
-    // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.panel_id)
-    pub panel_id: u32,
+    // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
@@ -58,9 +58,9 @@ impl TakeLoginActivityRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TakeLoginActivityRewardScRsp| { &m.retcode },
-            |m: &mut TakeLoginActivityRewardScRsp| { &mut m.retcode },
+            "panel_id",
+            |m: &TakeLoginActivityRewardScRsp| { &m.panel_id },
+            |m: &mut TakeLoginActivityRewardScRsp| { &mut m.panel_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
@@ -73,9 +73,9 @@ impl TakeLoginActivityRewardScRsp {
             |m: &mut TakeLoginActivityRewardScRsp| { &mut m.take_days },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "panel_id",
-            |m: &TakeLoginActivityRewardScRsp| { &m.panel_id },
-            |m: &mut TakeLoginActivityRewardScRsp| { &mut m.panel_id },
+            "retcode",
+            |m: &TakeLoginActivityRewardScRsp| { &m.retcode },
+            |m: &mut TakeLoginActivityRewardScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
@@ -101,18 +101,18 @@ impl ::protobuf::Message for TakeLoginActivityRewardScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                24 => {
-                    self.id = is.read_uint32()?;
-                },
-                40 => {
-                    self.take_days = is.read_uint32()?;
-                },
-                64 => {
                     self.panel_id = is.read_uint32()?;
                 },
-                82 => {
+                16 => {
+                    self.id = is.read_uint32()?;
+                },
+                32 => {
+                    self.take_days = is.read_uint32()?;
+                },
+                80 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
@@ -127,17 +127,17 @@ impl ::protobuf::Message for TakeLoginActivityRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        if self.panel_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.panel_id);
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.id);
+            my_size += ::protobuf::rt::uint32_size(2, self.id);
         }
         if self.take_days != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.take_days);
+            my_size += ::protobuf::rt::uint32_size(4, self.take_days);
         }
-        if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.panel_id);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
@@ -149,20 +149,20 @@ impl ::protobuf::Message for TakeLoginActivityRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+        if self.panel_id != 0 {
+            os.write_uint32(1, self.panel_id)?;
         }
         if self.id != 0 {
-            os.write_uint32(3, self.id)?;
+            os.write_uint32(2, self.id)?;
         }
         if self.take_days != 0 {
-            os.write_uint32(5, self.take_days)?;
+            os.write_uint32(4, self.take_days)?;
         }
-        if self.panel_id != 0 {
-            os.write_uint32(8, self.panel_id)?;
+        if self.retcode != 0 {
+            os.write_uint32(10, self.retcode)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for TakeLoginActivityRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
+        self.panel_id = 0;
         self.id = 0;
         self.take_days = 0;
-        self.panel_id = 0;
+        self.retcode = 0;
         self.reward.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeLoginActivityRewardScRsp {
         static instance: TakeLoginActivityRewardScRsp = TakeLoginActivityRewardScRsp {
-            retcode: 0,
+            panel_id: 0,
             id: 0,
             take_days: 0,
-            panel_id: 0,
+            retcode: 0,
             reward: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeLoginActivityRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakeLoginActivityRewardScRsp.proto\x1a\x0eItemList.proto\"\xa3\x01\n\
-    \x1cTakeLoginActivityRewardScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\r\
-    R\x07retcode\x12\x0e\n\x02id\x18\x03\x20\x01(\rR\x02id\x12\x1b\n\ttake_d\
-    ays\x18\x05\x20\x01(\rR\x08takeDays\x12\x19\n\x08panel_id\x18\x08\x20\
-    \x01(\rR\x07panelId\x12!\n\x06reward\x18\n\x20\x01(\x0b2\t.ItemListR\x06\
-    rewardb\x06proto3\
+    \x1cTakeLoginActivityRewardScRsp\x12\x19\n\x08panel_id\x18\x01\x20\x01(\
+    \rR\x07panelId\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\x12\x1b\n\ttake\
+    _days\x18\x04\x20\x01(\rR\x08takeDays\x12\x18\n\x07retcode\x18\n\x20\x01\
+    (\rR\x07retcode\x12!\n\x06reward\x18\r\x20\x01(\x0b2\t.ItemListR\x06rewa\
+    rdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishChenLingGameBoyCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishChenLingGameBoyCsReq.CJKAGEDKAFL)
-    pub CJKAGEDKAFL: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:FinishChenLingGameBoyCsReq.BOHDCEOOLBA)
-    pub BOHDCEOOLBA: bool,
-    // @@protoc_insertion_point(field:FinishChenLingGameBoyCsReq.IJCJBDDGGJF)
-    pub IJCJBDDGGJF: u32,
     // @@protoc_insertion_point(field:FinishChenLingGameBoyCsReq.BEJCJJCLJHL)
     pub BEJCJJCLJHL: u64,
+    // @@protoc_insertion_point(field:FinishChenLingGameBoyCsReq.IJCJBDDGGJF)
+    pub IJCJBDDGGJF: u32,
+    // @@protoc_insertion_point(field:FinishChenLingGameBoyCsReq.BOHDCEOOLBA)
+    pub BOHDCEOOLBA: bool,
+    // @@protoc_insertion_point(field:FinishChenLingGameBoyCsReq.CJKAGEDKAFL)
+    pub CJKAGEDKAFL: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:FinishChenLingGameBoyCsReq.HOPOJGBFGEG)
     pub HOPOJGBFGEG: bool,
     // special fields
@@ -57,15 +57,10 @@ impl FinishChenLingGameBoyCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CJKAGEDKAFL",
-            |m: &FinishChenLingGameBoyCsReq| { &m.CJKAGEDKAFL },
-            |m: &mut FinishChenLingGameBoyCsReq| { &mut m.CJKAGEDKAFL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BOHDCEOOLBA",
-            |m: &FinishChenLingGameBoyCsReq| { &m.BOHDCEOOLBA },
-            |m: &mut FinishChenLingGameBoyCsReq| { &mut m.BOHDCEOOLBA },
+            "BEJCJJCLJHL",
+            |m: &FinishChenLingGameBoyCsReq| { &m.BEJCJJCLJHL },
+            |m: &mut FinishChenLingGameBoyCsReq| { &mut m.BEJCJJCLJHL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IJCJBDDGGJF",
@@ -73,9 +68,14 @@ impl FinishChenLingGameBoyCsReq {
             |m: &mut FinishChenLingGameBoyCsReq| { &mut m.IJCJBDDGGJF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BEJCJJCLJHL",
-            |m: &FinishChenLingGameBoyCsReq| { &m.BEJCJJCLJHL },
-            |m: &mut FinishChenLingGameBoyCsReq| { &mut m.BEJCJJCLJHL },
+            "BOHDCEOOLBA",
+            |m: &FinishChenLingGameBoyCsReq| { &m.BOHDCEOOLBA },
+            |m: &mut FinishChenLingGameBoyCsReq| { &mut m.BOHDCEOOLBA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CJKAGEDKAFL",
+            |m: &FinishChenLingGameBoyCsReq| { &m.CJKAGEDKAFL },
+            |m: &mut FinishChenLingGameBoyCsReq| { &mut m.CJKAGEDKAFL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HOPOJGBFGEG",
@@ -100,22 +100,22 @@ impl ::protobuf::Message for FinishChenLingGameBoyCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CJKAGEDKAFL)?;
-                },
-                8 => {
-                    self.CJKAGEDKAFL.push(is.read_uint32()?);
-                },
                 40 => {
-                    self.BOHDCEOOLBA = is.read_bool()?;
+                    self.BEJCJJCLJHL = is.read_uint64()?;
                 },
-                48 => {
+                56 => {
                     self.IJCJBDDGGJF = is.read_uint32()?;
                 },
                 72 => {
-                    self.BEJCJJCLJHL = is.read_uint64()?;
+                    self.BOHDCEOOLBA = is.read_bool()?;
                 },
-                80 => {
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CJKAGEDKAFL)?;
+                },
+                88 => {
+                    self.CJKAGEDKAFL.push(is.read_uint32()?);
+                },
+                104 => {
                     self.HOPOJGBFGEG = is.read_bool()?;
                 },
                 tag => {
@@ -130,16 +130,16 @@ impl ::protobuf::Message for FinishChenLingGameBoyCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.CJKAGEDKAFL);
+        if self.BEJCJJCLJHL != 0 {
+            my_size += ::protobuf::rt::uint64_size(5, self.BEJCJJCLJHL);
+        }
+        if self.IJCJBDDGGJF != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.IJCJBDDGGJF);
+        }
         if self.BOHDCEOOLBA != false {
             my_size += 1 + 1;
         }
-        if self.IJCJBDDGGJF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IJCJBDDGGJF);
-        }
-        if self.BEJCJJCLJHL != 0 {
-            my_size += ::protobuf::rt::uint64_size(9, self.BEJCJJCLJHL);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.CJKAGEDKAFL);
         if self.HOPOJGBFGEG != false {
             my_size += 1 + 1;
         }
@@ -149,18 +149,18 @@ impl ::protobuf::Message for FinishChenLingGameBoyCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.CJKAGEDKAFL)?;
-        if self.BOHDCEOOLBA != false {
-            os.write_bool(5, self.BOHDCEOOLBA)?;
+        if self.BEJCJJCLJHL != 0 {
+            os.write_uint64(5, self.BEJCJJCLJHL)?;
         }
         if self.IJCJBDDGGJF != 0 {
-            os.write_uint32(6, self.IJCJBDDGGJF)?;
+            os.write_uint32(7, self.IJCJBDDGGJF)?;
         }
-        if self.BEJCJJCLJHL != 0 {
-            os.write_uint64(9, self.BEJCJJCLJHL)?;
+        if self.BOHDCEOOLBA != false {
+            os.write_bool(9, self.BOHDCEOOLBA)?;
         }
+        os.write_repeated_packed_uint32(11, &self.CJKAGEDKAFL)?;
         if self.HOPOJGBFGEG != false {
-            os.write_bool(10, self.HOPOJGBFGEG)?;
+            os.write_bool(13, self.HOPOJGBFGEG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -179,20 +179,20 @@ impl ::protobuf::Message for FinishChenLingGameBoyCsReq {
     }
 
     fn clear(&mut self) {
-        self.CJKAGEDKAFL.clear();
-        self.BOHDCEOOLBA = false;
-        self.IJCJBDDGGJF = 0;
         self.BEJCJJCLJHL = 0;
+        self.IJCJBDDGGJF = 0;
+        self.BOHDCEOOLBA = false;
+        self.CJKAGEDKAFL.clear();
         self.HOPOJGBFGEG = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishChenLingGameBoyCsReq {
         static instance: FinishChenLingGameBoyCsReq = FinishChenLingGameBoyCsReq {
-            CJKAGEDKAFL: ::std::vec::Vec::new(),
-            BOHDCEOOLBA: false,
-            IJCJBDDGGJF: 0,
             BEJCJJCLJHL: 0,
+            IJCJBDDGGJF: 0,
+            BOHDCEOOLBA: false,
+            CJKAGEDKAFL: ::std::vec::Vec::new(),
             HOPOJGBFGEG: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for FinishChenLingGameBoyCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20FinishChenLingGameBoyCsReq.proto\"\xc6\x01\n\x1aFinishChenLingGame\
-    BoyCsReq\x12\x20\n\x0bCJKAGEDKAFL\x18\x01\x20\x03(\rR\x0bCJKAGEDKAFL\x12\
-    \x20\n\x0bBOHDCEOOLBA\x18\x05\x20\x01(\x08R\x0bBOHDCEOOLBA\x12\x20\n\x0b\
-    IJCJBDDGGJF\x18\x06\x20\x01(\rR\x0bIJCJBDDGGJF\x12\x20\n\x0bBEJCJJCLJHL\
-    \x18\t\x20\x01(\x04R\x0bBEJCJJCLJHL\x12\x20\n\x0bHOPOJGBFGEG\x18\n\x20\
-    \x01(\x08R\x0bHOPOJGBFGEGb\x06proto3\
+    BoyCsReq\x12\x20\n\x0bBEJCJJCLJHL\x18\x05\x20\x01(\x04R\x0bBEJCJJCLJHL\
+    \x12\x20\n\x0bIJCJBDDGGJF\x18\x07\x20\x01(\rR\x0bIJCJBDDGGJF\x12\x20\n\
+    \x0bBOHDCEOOLBA\x18\t\x20\x01(\x08R\x0bBOHDCEOOLBA\x12\x20\n\x0bCJKAGEDK\
+    AFL\x18\x0b\x20\x03(\rR\x0bCJKAGEDKAFL\x12\x20\n\x0bHOPOJGBFGEG\x18\r\
+    \x20\x01(\x08R\x0bHOPOJGBFGEGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

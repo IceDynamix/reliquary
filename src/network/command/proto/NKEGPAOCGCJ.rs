@@ -30,10 +30,10 @@ pub struct NKEGPAOCGCJ {
     // message fields
     // @@protoc_insertion_point(field:NKEGPAOCGCJ.IHAOMLEPHOM)
     pub IHAOMLEPHOM: u32,
-    // @@protoc_insertion_point(field:NKEGPAOCGCJ.LOPNADHJKBF)
-    pub LOPNADHJKBF: u32,
     // @@protoc_insertion_point(field:NKEGPAOCGCJ.FKMFHAAJMMF)
     pub FKMFHAAJMMF: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:NKEGPAOCGCJ.LOPNADHJKBF)
+    pub LOPNADHJKBF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NKEGPAOCGCJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl NKEGPAOCGCJ {
             |m: &NKEGPAOCGCJ| { &m.IHAOMLEPHOM },
             |m: &mut NKEGPAOCGCJ| { &mut m.IHAOMLEPHOM },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOPNADHJKBF",
-            |m: &NKEGPAOCGCJ| { &m.LOPNADHJKBF },
-            |m: &mut NKEGPAOCGCJ| { &mut m.LOPNADHJKBF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "FKMFHAAJMMF",
             |m: &NKEGPAOCGCJ| { &m.FKMFHAAJMMF },
             |m: &mut NKEGPAOCGCJ| { &mut m.FKMFHAAJMMF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LOPNADHJKBF",
+            |m: &NKEGPAOCGCJ| { &m.LOPNADHJKBF },
+            |m: &mut NKEGPAOCGCJ| { &mut m.LOPNADHJKBF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NKEGPAOCGCJ>(
             "NKEGPAOCGCJ",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for NKEGPAOCGCJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                72 => {
                     self.IHAOMLEPHOM = is.read_uint32()?;
                 },
-                88 => {
-                    self.LOPNADHJKBF = is.read_uint32()?;
-                },
-                114 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FKMFHAAJMMF)?;
+                },
+                120 => {
+                    self.LOPNADHJKBF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for NKEGPAOCGCJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IHAOMLEPHOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IHAOMLEPHOM);
-        }
-        if self.LOPNADHJKBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LOPNADHJKBF);
+            my_size += ::protobuf::rt::uint32_size(9, self.IHAOMLEPHOM);
         }
         if let Some(v) = self.FKMFHAAJMMF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.LOPNADHJKBF != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.LOPNADHJKBF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for NKEGPAOCGCJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IHAOMLEPHOM != 0 {
-            os.write_uint32(6, self.IHAOMLEPHOM)?;
-        }
-        if self.LOPNADHJKBF != 0 {
-            os.write_uint32(11, self.LOPNADHJKBF)?;
+            os.write_uint32(9, self.IHAOMLEPHOM)?;
         }
         if let Some(v) = self.FKMFHAAJMMF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if self.LOPNADHJKBF != 0 {
+            os.write_uint32(15, self.LOPNADHJKBF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for NKEGPAOCGCJ {
 
     fn clear(&mut self) {
         self.IHAOMLEPHOM = 0;
-        self.LOPNADHJKBF = 0;
         self.FKMFHAAJMMF.clear();
+        self.LOPNADHJKBF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NKEGPAOCGCJ {
         static instance: NKEGPAOCGCJ = NKEGPAOCGCJ {
             IHAOMLEPHOM: 0,
-            LOPNADHJKBF: 0,
             FKMFHAAJMMF: ::protobuf::MessageField::none(),
+            LOPNADHJKBF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for NKEGPAOCGCJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NKEGPAOCGCJ.proto\x1a\x12ItemCostData.proto\"\x82\x01\n\x0bNKEGPAO\
-    CGCJ\x12\x20\n\x0bIHAOMLEPHOM\x18\x06\x20\x01(\rR\x0bIHAOMLEPHOM\x12\x20\
-    \n\x0bLOPNADHJKBF\x18\x0b\x20\x01(\rR\x0bLOPNADHJKBF\x12/\n\x0bFKMFHAAJM\
-    MF\x18\x0e\x20\x01(\x0b2\r.ItemCostDataR\x0bFKMFHAAJMMFb\x06proto3\
+    CGCJ\x12\x20\n\x0bIHAOMLEPHOM\x18\t\x20\x01(\rR\x0bIHAOMLEPHOM\x12/\n\
+    \x0bFKMFHAAJMMF\x18\n\x20\x01(\x0b2\r.ItemCostDataR\x0bFKMFHAAJMMF\x12\
+    \x20\n\x0bLOPNADHJKBF\x18\x0f\x20\x01(\rR\x0bLOPNADHJKBFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

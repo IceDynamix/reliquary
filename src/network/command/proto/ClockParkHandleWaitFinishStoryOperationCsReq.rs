@@ -50,105 +50,7 @@ impl ClockParkHandleWaitFinishStoryOperationCsReq {
         ::std::default::Default::default()
     }
 
-    // .KJAIAGDNPGC JFAJEBGKPEH = 4;
-
-    pub fn JFAJEBGKPEH(&self) -> &super::KJAIAGDNPGC::KJAIAGDNPGC {
-        match self.LIMEOJAMBPK {
-            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(ref v)) => v,
-            _ => <super::KJAIAGDNPGC::KJAIAGDNPGC as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_JFAJEBGKPEH(&mut self) {
-        self.LIMEOJAMBPK = ::std::option::Option::None;
-    }
-
-    pub fn has_JFAJEBGKPEH(&self) -> bool {
-        match self.LIMEOJAMBPK {
-            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_JFAJEBGKPEH(&mut self, v: super::KJAIAGDNPGC::KJAIAGDNPGC) {
-        self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_JFAJEBGKPEH(&mut self) -> &mut super::KJAIAGDNPGC::KJAIAGDNPGC {
-        if let ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(_)) = self.LIMEOJAMBPK {
-        } else {
-            self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(super::KJAIAGDNPGC::KJAIAGDNPGC::new()));
-        }
-        match self.LIMEOJAMBPK {
-            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_JFAJEBGKPEH(&mut self) -> super::KJAIAGDNPGC::KJAIAGDNPGC {
-        if self.has_JFAJEBGKPEH() {
-            match self.LIMEOJAMBPK.take() {
-                ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::KJAIAGDNPGC::KJAIAGDNPGC::new()
-        }
-    }
-
-    // .NKOCCGLHOML IKNEKEJEGLM = 6;
-
-    pub fn IKNEKEJEGLM(&self) -> &super::NKOCCGLHOML::NKOCCGLHOML {
-        match self.LIMEOJAMBPK {
-            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(ref v)) => v,
-            _ => <super::NKOCCGLHOML::NKOCCGLHOML as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_IKNEKEJEGLM(&mut self) {
-        self.LIMEOJAMBPK = ::std::option::Option::None;
-    }
-
-    pub fn has_IKNEKEJEGLM(&self) -> bool {
-        match self.LIMEOJAMBPK {
-            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_IKNEKEJEGLM(&mut self, v: super::NKOCCGLHOML::NKOCCGLHOML) {
-        self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_IKNEKEJEGLM(&mut self) -> &mut super::NKOCCGLHOML::NKOCCGLHOML {
-        if let ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(_)) = self.LIMEOJAMBPK {
-        } else {
-            self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(super::NKOCCGLHOML::NKOCCGLHOML::new()));
-        }
-        match self.LIMEOJAMBPK {
-            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_IKNEKEJEGLM(&mut self) -> super::NKOCCGLHOML::NKOCCGLHOML {
-        if self.has_IKNEKEJEGLM() {
-            match self.LIMEOJAMBPK.take() {
-                ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::NKOCCGLHOML::NKOCCGLHOML::new()
-        }
-    }
-
-    // .IGJLLHMJKPC EJLKEGLKGDN = 8;
+    // .IGJLLHMJKPC EJLKEGLKGDN = 1;
 
     pub fn EJLKEGLKGDN(&self) -> &super::IGJLLHMJKPC::IGJLLHMJKPC {
         match self.LIMEOJAMBPK {
@@ -197,7 +99,56 @@ impl ClockParkHandleWaitFinishStoryOperationCsReq {
         }
     }
 
-    // .CAMLFNCBFHI KBOGLMPLNAI = 9;
+    // .KJAIAGDNPGC JFAJEBGKPEH = 2;
+
+    pub fn JFAJEBGKPEH(&self) -> &super::KJAIAGDNPGC::KJAIAGDNPGC {
+        match self.LIMEOJAMBPK {
+            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(ref v)) => v,
+            _ => <super::KJAIAGDNPGC::KJAIAGDNPGC as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_JFAJEBGKPEH(&mut self) {
+        self.LIMEOJAMBPK = ::std::option::Option::None;
+    }
+
+    pub fn has_JFAJEBGKPEH(&self) -> bool {
+        match self.LIMEOJAMBPK {
+            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_JFAJEBGKPEH(&mut self, v: super::KJAIAGDNPGC::KJAIAGDNPGC) {
+        self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_JFAJEBGKPEH(&mut self) -> &mut super::KJAIAGDNPGC::KJAIAGDNPGC {
+        if let ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(_)) = self.LIMEOJAMBPK {
+        } else {
+            self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(super::KJAIAGDNPGC::KJAIAGDNPGC::new()));
+        }
+        match self.LIMEOJAMBPK {
+            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_JFAJEBGKPEH(&mut self) -> super::KJAIAGDNPGC::KJAIAGDNPGC {
+        if self.has_JFAJEBGKPEH() {
+            match self.LIMEOJAMBPK.take() {
+                ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::KJAIAGDNPGC::KJAIAGDNPGC::new()
+        }
+    }
+
+    // .CAMLFNCBFHI KBOGLMPLNAI = 6;
 
     pub fn KBOGLMPLNAI(&self) -> &super::CAMLFNCBFHI::CAMLFNCBFHI {
         match self.LIMEOJAMBPK {
@@ -246,32 +197,7 @@ impl ClockParkHandleWaitFinishStoryOperationCsReq {
         }
     }
 
-    // uint32 GIGAEFCKIAK = 10;
-
-    pub fn GIGAEFCKIAK(&self) -> u32 {
-        match self.LIMEOJAMBPK {
-            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::GIGAEFCKIAK(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_GIGAEFCKIAK(&mut self) {
-        self.LIMEOJAMBPK = ::std::option::Option::None;
-    }
-
-    pub fn has_GIGAEFCKIAK(&self) -> bool {
-        match self.LIMEOJAMBPK {
-            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::GIGAEFCKIAK(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_GIGAEFCKIAK(&mut self, v: u32) {
-        self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::GIGAEFCKIAK(v))
-    }
-
-    // .AJNKADCOKOL ACIOPOIJNEF = 12;
+    // .AJNKADCOKOL ACIOPOIJNEF = 9;
 
     pub fn ACIOPOIJNEF(&self) -> &super::AJNKADCOKOL::AJNKADCOKOL {
         match self.LIMEOJAMBPK {
@@ -318,6 +244,80 @@ impl ClockParkHandleWaitFinishStoryOperationCsReq {
         } else {
             super::AJNKADCOKOL::AJNKADCOKOL::new()
         }
+    }
+
+    // .AIGEDICFHCE DIKEDLHGDJJ = 10;
+
+    pub fn DIKEDLHGDJJ(&self) -> &super::AIGEDICFHCE::AIGEDICFHCE {
+        match self.LIMEOJAMBPK {
+            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(ref v)) => v,
+            _ => <super::AIGEDICFHCE::AIGEDICFHCE as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_DIKEDLHGDJJ(&mut self) {
+        self.LIMEOJAMBPK = ::std::option::Option::None;
+    }
+
+    pub fn has_DIKEDLHGDJJ(&self) -> bool {
+        match self.LIMEOJAMBPK {
+            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_DIKEDLHGDJJ(&mut self, v: super::AIGEDICFHCE::AIGEDICFHCE) {
+        self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_DIKEDLHGDJJ(&mut self) -> &mut super::AIGEDICFHCE::AIGEDICFHCE {
+        if let ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(_)) = self.LIMEOJAMBPK {
+        } else {
+            self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(super::AIGEDICFHCE::AIGEDICFHCE::new()));
+        }
+        match self.LIMEOJAMBPK {
+            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_DIKEDLHGDJJ(&mut self) -> super::AIGEDICFHCE::AIGEDICFHCE {
+        if self.has_DIKEDLHGDJJ() {
+            match self.LIMEOJAMBPK.take() {
+                ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::AIGEDICFHCE::AIGEDICFHCE::new()
+        }
+    }
+
+    // uint32 GIGAEFCKIAK = 12;
+
+    pub fn GIGAEFCKIAK(&self) -> u32 {
+        match self.LIMEOJAMBPK {
+            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::GIGAEFCKIAK(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_GIGAEFCKIAK(&mut self) {
+        self.LIMEOJAMBPK = ::std::option::Option::None;
+    }
+
+    pub fn has_GIGAEFCKIAK(&self) -> bool {
+        match self.LIMEOJAMBPK {
+            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::GIGAEFCKIAK(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_GIGAEFCKIAK(&mut self, v: u32) {
+        self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::GIGAEFCKIAK(v))
     }
 
     // .MOEMKBLCKKO MLHNHAFPLKD = 13;
@@ -369,52 +369,52 @@ impl ClockParkHandleWaitFinishStoryOperationCsReq {
         }
     }
 
-    // .AIGEDICFHCE DIKEDLHGDJJ = 14;
+    // .NKOCCGLHOML IKNEKEJEGLM = 14;
 
-    pub fn DIKEDLHGDJJ(&self) -> &super::AIGEDICFHCE::AIGEDICFHCE {
+    pub fn IKNEKEJEGLM(&self) -> &super::NKOCCGLHOML::NKOCCGLHOML {
         match self.LIMEOJAMBPK {
-            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(ref v)) => v,
-            _ => <super::AIGEDICFHCE::AIGEDICFHCE as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(ref v)) => v,
+            _ => <super::NKOCCGLHOML::NKOCCGLHOML as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_DIKEDLHGDJJ(&mut self) {
+    pub fn clear_IKNEKEJEGLM(&mut self) {
         self.LIMEOJAMBPK = ::std::option::Option::None;
     }
 
-    pub fn has_DIKEDLHGDJJ(&self) -> bool {
+    pub fn has_IKNEKEJEGLM(&self) -> bool {
         match self.LIMEOJAMBPK {
-            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(..)) => true,
+            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_DIKEDLHGDJJ(&mut self, v: super::AIGEDICFHCE::AIGEDICFHCE) {
-        self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(v))
+    pub fn set_IKNEKEJEGLM(&mut self, v: super::NKOCCGLHOML::NKOCCGLHOML) {
+        self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_DIKEDLHGDJJ(&mut self) -> &mut super::AIGEDICFHCE::AIGEDICFHCE {
-        if let ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(_)) = self.LIMEOJAMBPK {
+    pub fn mut_IKNEKEJEGLM(&mut self) -> &mut super::NKOCCGLHOML::NKOCCGLHOML {
+        if let ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(_)) = self.LIMEOJAMBPK {
         } else {
-            self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(super::AIGEDICFHCE::AIGEDICFHCE::new()));
+            self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(super::NKOCCGLHOML::NKOCCGLHOML::new()));
         }
         match self.LIMEOJAMBPK {
-            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(ref mut v)) => v,
+            ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_DIKEDLHGDJJ(&mut self) -> super::AIGEDICFHCE::AIGEDICFHCE {
-        if self.has_DIKEDLHGDJJ() {
+    pub fn take_IKNEKEJEGLM(&mut self) -> super::NKOCCGLHOML::NKOCCGLHOML {
+        if self.has_IKNEKEJEGLM() {
             match self.LIMEOJAMBPK.take() {
-                ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(v)) => v,
+                ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::AIGEDICFHCE::AIGEDICFHCE::new()
+            super::NKOCCGLHOML::NKOCCGLHOML::new()
         }
     }
 
@@ -431,26 +431,19 @@ impl ClockParkHandleWaitFinishStoryOperationCsReq {
             |m: &ClockParkHandleWaitFinishStoryOperationCsReq| { &m.JGPHDBDHKKO },
             |m: &mut ClockParkHandleWaitFinishStoryOperationCsReq| { &mut m.JGPHDBDHKKO },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KJAIAGDNPGC::KJAIAGDNPGC>(
-            "JFAJEBGKPEH",
-            ClockParkHandleWaitFinishStoryOperationCsReq::has_JFAJEBGKPEH,
-            ClockParkHandleWaitFinishStoryOperationCsReq::JFAJEBGKPEH,
-            ClockParkHandleWaitFinishStoryOperationCsReq::mut_JFAJEBGKPEH,
-            ClockParkHandleWaitFinishStoryOperationCsReq::set_JFAJEBGKPEH,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NKOCCGLHOML::NKOCCGLHOML>(
-            "IKNEKEJEGLM",
-            ClockParkHandleWaitFinishStoryOperationCsReq::has_IKNEKEJEGLM,
-            ClockParkHandleWaitFinishStoryOperationCsReq::IKNEKEJEGLM,
-            ClockParkHandleWaitFinishStoryOperationCsReq::mut_IKNEKEJEGLM,
-            ClockParkHandleWaitFinishStoryOperationCsReq::set_IKNEKEJEGLM,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IGJLLHMJKPC::IGJLLHMJKPC>(
             "EJLKEGLKGDN",
             ClockParkHandleWaitFinishStoryOperationCsReq::has_EJLKEGLKGDN,
             ClockParkHandleWaitFinishStoryOperationCsReq::EJLKEGLKGDN,
             ClockParkHandleWaitFinishStoryOperationCsReq::mut_EJLKEGLKGDN,
             ClockParkHandleWaitFinishStoryOperationCsReq::set_EJLKEGLKGDN,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KJAIAGDNPGC::KJAIAGDNPGC>(
+            "JFAJEBGKPEH",
+            ClockParkHandleWaitFinishStoryOperationCsReq::has_JFAJEBGKPEH,
+            ClockParkHandleWaitFinishStoryOperationCsReq::JFAJEBGKPEH,
+            ClockParkHandleWaitFinishStoryOperationCsReq::mut_JFAJEBGKPEH,
+            ClockParkHandleWaitFinishStoryOperationCsReq::set_JFAJEBGKPEH,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CAMLFNCBFHI::CAMLFNCBFHI>(
             "KBOGLMPLNAI",
@@ -459,18 +452,25 @@ impl ClockParkHandleWaitFinishStoryOperationCsReq {
             ClockParkHandleWaitFinishStoryOperationCsReq::mut_KBOGLMPLNAI,
             ClockParkHandleWaitFinishStoryOperationCsReq::set_KBOGLMPLNAI,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "GIGAEFCKIAK",
-            ClockParkHandleWaitFinishStoryOperationCsReq::has_GIGAEFCKIAK,
-            ClockParkHandleWaitFinishStoryOperationCsReq::GIGAEFCKIAK,
-            ClockParkHandleWaitFinishStoryOperationCsReq::set_GIGAEFCKIAK,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AJNKADCOKOL::AJNKADCOKOL>(
             "ACIOPOIJNEF",
             ClockParkHandleWaitFinishStoryOperationCsReq::has_ACIOPOIJNEF,
             ClockParkHandleWaitFinishStoryOperationCsReq::ACIOPOIJNEF,
             ClockParkHandleWaitFinishStoryOperationCsReq::mut_ACIOPOIJNEF,
             ClockParkHandleWaitFinishStoryOperationCsReq::set_ACIOPOIJNEF,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AIGEDICFHCE::AIGEDICFHCE>(
+            "DIKEDLHGDJJ",
+            ClockParkHandleWaitFinishStoryOperationCsReq::has_DIKEDLHGDJJ,
+            ClockParkHandleWaitFinishStoryOperationCsReq::DIKEDLHGDJJ,
+            ClockParkHandleWaitFinishStoryOperationCsReq::mut_DIKEDLHGDJJ,
+            ClockParkHandleWaitFinishStoryOperationCsReq::set_DIKEDLHGDJJ,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "GIGAEFCKIAK",
+            ClockParkHandleWaitFinishStoryOperationCsReq::has_GIGAEFCKIAK,
+            ClockParkHandleWaitFinishStoryOperationCsReq::GIGAEFCKIAK,
+            ClockParkHandleWaitFinishStoryOperationCsReq::set_GIGAEFCKIAK,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MOEMKBLCKKO::MOEMKBLCKKO>(
             "MLHNHAFPLKD",
@@ -479,12 +479,12 @@ impl ClockParkHandleWaitFinishStoryOperationCsReq {
             ClockParkHandleWaitFinishStoryOperationCsReq::mut_MLHNHAFPLKD,
             ClockParkHandleWaitFinishStoryOperationCsReq::set_MLHNHAFPLKD,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AIGEDICFHCE::AIGEDICFHCE>(
-            "DIKEDLHGDJJ",
-            ClockParkHandleWaitFinishStoryOperationCsReq::has_DIKEDLHGDJJ,
-            ClockParkHandleWaitFinishStoryOperationCsReq::DIKEDLHGDJJ,
-            ClockParkHandleWaitFinishStoryOperationCsReq::mut_DIKEDLHGDJJ,
-            ClockParkHandleWaitFinishStoryOperationCsReq::set_DIKEDLHGDJJ,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NKOCCGLHOML::NKOCCGLHOML>(
+            "IKNEKEJEGLM",
+            ClockParkHandleWaitFinishStoryOperationCsReq::has_IKNEKEJEGLM,
+            ClockParkHandleWaitFinishStoryOperationCsReq::IKNEKEJEGLM,
+            ClockParkHandleWaitFinishStoryOperationCsReq::mut_IKNEKEJEGLM,
+            ClockParkHandleWaitFinishStoryOperationCsReq::set_IKNEKEJEGLM,
         ));
         oneofs.push(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClockParkHandleWaitFinishStoryOperationCsReq>(
@@ -505,35 +505,35 @@ impl ::protobuf::Message for ClockParkHandleWaitFinishStoryOperationCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                24 => {
                     self.script_id = is.read_uint32()?;
                 },
-                88 => {
+                64 => {
                     self.JGPHDBDHKKO = is.read_uint32()?;
                 },
-                34 => {
+                10 => {
+                    self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::EJLKEGLKGDN(is.read_message()?));
+                },
+                18 => {
                     self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(is.read_message()?));
                 },
                 50 => {
-                    self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(is.read_message()?));
-                },
-                66 => {
-                    self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::EJLKEGLKGDN(is.read_message()?));
-                },
-                74 => {
                     self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::KBOGLMPLNAI(is.read_message()?));
                 },
-                80 => {
-                    self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::GIGAEFCKIAK(is.read_uint32()?));
-                },
-                98 => {
+                74 => {
                     self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::ACIOPOIJNEF(is.read_message()?));
+                },
+                82 => {
+                    self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(is.read_message()?));
+                },
+                96 => {
+                    self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::GIGAEFCKIAK(is.read_uint32()?));
                 },
                 106 => {
                     self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::MLHNHAFPLKD(is.read_message()?));
                 },
                 114 => {
-                    self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(is.read_message()?));
+                    self.LIMEOJAMBPK = ::std::option::Option::Some(clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -548,22 +548,18 @@ impl ::protobuf::Message for ClockParkHandleWaitFinishStoryOperationCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.script_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.script_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.script_id);
         }
         if self.JGPHDBDHKKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JGPHDBDHKKO);
+            my_size += ::protobuf::rt::uint32_size(8, self.JGPHDBDHKKO);
         }
         if let ::std::option::Option::Some(ref v) = self.LIMEOJAMBPK {
             match v {
-                &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
                 &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::EJLKEGLKGDN(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -571,18 +567,22 @@ impl ::protobuf::Message for ClockParkHandleWaitFinishStoryOperationCsReq {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::GIGAEFCKIAK(v) => {
-                    my_size += ::protobuf::rt::uint32_size(10, v);
-                },
                 &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::ACIOPOIJNEF(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::GIGAEFCKIAK(v) => {
+                    my_size += ::protobuf::rt::uint32_size(12, v);
                 },
                 &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::MLHNHAFPLKD(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(ref v) => {
+                &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -595,35 +595,35 @@ impl ::protobuf::Message for ClockParkHandleWaitFinishStoryOperationCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.script_id != 0 {
-            os.write_uint32(2, self.script_id)?;
+            os.write_uint32(3, self.script_id)?;
         }
         if self.JGPHDBDHKKO != 0 {
-            os.write_uint32(11, self.JGPHDBDHKKO)?;
+            os.write_uint32(8, self.JGPHDBDHKKO)?;
         }
         if let ::std::option::Option::Some(ref v) = self.LIMEOJAMBPK {
             match v {
-                &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-                },
-                &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-                },
                 &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::EJLKEGLKGDN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                },
+                &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::JFAJEBGKPEH(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::KBOGLMPLNAI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-                },
-                &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::GIGAEFCKIAK(v) => {
-                    os.write_uint32(10, v)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
                 &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::ACIOPOIJNEF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                },
+                &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                },
+                &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::GIGAEFCKIAK(v) => {
+                    os.write_uint32(12, v)?;
                 },
                 &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::MLHNHAFPLKD(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
-                &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::DIKEDLHGDJJ(ref v) => {
+                &clock_park_handle_wait_finish_story_operation_cs_req::LIMEOJAMBPK::IKNEKEJEGLM(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
@@ -693,22 +693,22 @@ pub mod clock_park_handle_wait_finish_story_operation_cs_req {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:ClockParkHandleWaitFinishStoryOperationCsReq.LIMEOJAMBPK)
     pub enum LIMEOJAMBPK {
-        // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitFinishStoryOperationCsReq.JFAJEBGKPEH)
-        JFAJEBGKPEH(super::super::KJAIAGDNPGC::KJAIAGDNPGC),
-        // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitFinishStoryOperationCsReq.IKNEKEJEGLM)
-        IKNEKEJEGLM(super::super::NKOCCGLHOML::NKOCCGLHOML),
         // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitFinishStoryOperationCsReq.EJLKEGLKGDN)
         EJLKEGLKGDN(super::super::IGJLLHMJKPC::IGJLLHMJKPC),
+        // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitFinishStoryOperationCsReq.JFAJEBGKPEH)
+        JFAJEBGKPEH(super::super::KJAIAGDNPGC::KJAIAGDNPGC),
         // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitFinishStoryOperationCsReq.KBOGLMPLNAI)
         KBOGLMPLNAI(super::super::CAMLFNCBFHI::CAMLFNCBFHI),
-        // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitFinishStoryOperationCsReq.GIGAEFCKIAK)
-        GIGAEFCKIAK(u32),
         // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitFinishStoryOperationCsReq.ACIOPOIJNEF)
         ACIOPOIJNEF(super::super::AJNKADCOKOL::AJNKADCOKOL),
-        // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitFinishStoryOperationCsReq.MLHNHAFPLKD)
-        MLHNHAFPLKD(super::super::MOEMKBLCKKO::MOEMKBLCKKO),
         // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitFinishStoryOperationCsReq.DIKEDLHGDJJ)
         DIKEDLHGDJJ(super::super::AIGEDICFHCE::AIGEDICFHCE),
+        // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitFinishStoryOperationCsReq.GIGAEFCKIAK)
+        GIGAEFCKIAK(u32),
+        // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitFinishStoryOperationCsReq.MLHNHAFPLKD)
+        MLHNHAFPLKD(super::super::MOEMKBLCKKO::MOEMKBLCKKO),
+        // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitFinishStoryOperationCsReq.IKNEKEJEGLM)
+        IKNEKEJEGLM(super::super::NKOCCGLHOML::NKOCCGLHOML),
     }
 
     impl ::protobuf::Oneof for LIMEOJAMBPK {
@@ -733,17 +733,17 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     .proto\x1a\x11AJNKADCOKOL.proto\x1a\x11CAMLFNCBFHI.proto\x1a\x11IGJLLHMJ\
     KPC.proto\x1a\x11KJAIAGDNPGC.proto\x1a\x11MOEMKBLCKKO.proto\x1a\x11NKOCC\
     GLHOML.proto\"\xfe\x03\n,ClockParkHandleWaitFinishStoryOperationCsReq\
-    \x12\x1b\n\tscript_id\x18\x02\x20\x01(\rR\x08scriptId\x12\x20\n\x0bJGPHD\
-    BDHKKO\x18\x0b\x20\x01(\rR\x0bJGPHDBDHKKO\x120\n\x0bJFAJEBGKPEH\x18\x04\
-    \x20\x01(\x0b2\x0c.KJAIAGDNPGCH\0R\x0bJFAJEBGKPEH\x120\n\x0bIKNEKEJEGLM\
-    \x18\x06\x20\x01(\x0b2\x0c.NKOCCGLHOMLH\0R\x0bIKNEKEJEGLM\x120\n\x0bEJLK\
-    EGLKGDN\x18\x08\x20\x01(\x0b2\x0c.IGJLLHMJKPCH\0R\x0bEJLKEGLKGDN\x120\n\
-    \x0bKBOGLMPLNAI\x18\t\x20\x01(\x0b2\x0c.CAMLFNCBFHIH\0R\x0bKBOGLMPLNAI\
-    \x12\"\n\x0bGIGAEFCKIAK\x18\n\x20\x01(\rH\0R\x0bGIGAEFCKIAK\x120\n\x0bAC\
-    IOPOIJNEF\x18\x0c\x20\x01(\x0b2\x0c.AJNKADCOKOLH\0R\x0bACIOPOIJNEF\x120\
+    \x12\x1b\n\tscript_id\x18\x03\x20\x01(\rR\x08scriptId\x12\x20\n\x0bJGPHD\
+    BDHKKO\x18\x08\x20\x01(\rR\x0bJGPHDBDHKKO\x120\n\x0bEJLKEGLKGDN\x18\x01\
+    \x20\x01(\x0b2\x0c.IGJLLHMJKPCH\0R\x0bEJLKEGLKGDN\x120\n\x0bJFAJEBGKPEH\
+    \x18\x02\x20\x01(\x0b2\x0c.KJAIAGDNPGCH\0R\x0bJFAJEBGKPEH\x120\n\x0bKBOG\
+    LMPLNAI\x18\x06\x20\x01(\x0b2\x0c.CAMLFNCBFHIH\0R\x0bKBOGLMPLNAI\x120\n\
+    \x0bACIOPOIJNEF\x18\t\x20\x01(\x0b2\x0c.AJNKADCOKOLH\0R\x0bACIOPOIJNEF\
+    \x120\n\x0bDIKEDLHGDJJ\x18\n\x20\x01(\x0b2\x0c.AIGEDICFHCEH\0R\x0bDIKEDL\
+    HGDJJ\x12\"\n\x0bGIGAEFCKIAK\x18\x0c\x20\x01(\rH\0R\x0bGIGAEFCKIAK\x120\
     \n\x0bMLHNHAFPLKD\x18\r\x20\x01(\x0b2\x0c.MOEMKBLCKKOH\0R\x0bMLHNHAFPLKD\
-    \x120\n\x0bDIKEDLHGDJJ\x18\x0e\x20\x01(\x0b2\x0c.AIGEDICFHCEH\0R\x0bDIKE\
-    DLHGDJJB\r\n\x0bLIMEOJAMBPKb\x06proto3\
+    \x120\n\x0bIKNEKEJEGLM\x18\x0e\x20\x01(\x0b2\x0c.NKOCCGLHOMLH\0R\x0bIKNE\
+    KEJEGLMB\r\n\x0bLIMEOJAMBPKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

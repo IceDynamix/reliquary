@@ -72,7 +72,7 @@ impl ::protobuf::Message for GetFriendRankingInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                104 => {
                     self.GJNMHILINHC = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for GetFriendRankingInfoCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
-            my_size += ::protobuf::rt::int32_size(7, self.GJNMHILINHC.value());
+            my_size += ::protobuf::rt::int32_size(13, self.GJNMHILINHC.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GetFriendRankingInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.GJNMHILINHC))?;
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.GJNMHILINHC))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendRankingInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetFriendRankingInfoCsReq.proto\x1a\x13FightGameMode.proto\"M\n\
-    \x19GetFriendRankingInfoCsReq\x120\n\x0bGJNMHILINHC\x18\x07\x20\x01(\x0e\
-    2\x0e.FightGameModeR\x0bGJNMHILINHCb\x06proto3\
+    \x19GetFriendRankingInfoCsReq\x120\n\x0bGJNMHILINHC\x18\r\x20\x01(\x0e2\
+    \x0e.FightGameModeR\x0bGJNMHILINHCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

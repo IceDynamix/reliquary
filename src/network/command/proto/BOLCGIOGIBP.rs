@@ -30,18 +30,18 @@ pub struct BOLCGIOGIBP {
     // message fields
     // @@protoc_insertion_point(field:BOLCGIOGIBP.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:BOLCGIOGIBP.LLEPGPKGBGM)
-    pub LLEPGPKGBGM: u32,
-    // @@protoc_insertion_point(field:BOLCGIOGIBP.map_id)
-    pub map_id: u32,
-    // @@protoc_insertion_point(field:BOLCGIOGIBP.max_score)
-    pub max_score: u32,
-    // @@protoc_insertion_point(field:BOLCGIOGIBP.FMCPHDJEIDC)
-    pub FMCPHDJEIDC: u32,
     // @@protoc_insertion_point(field:BOLCGIOGIBP.EFBOOJGNKOH)
     pub EFBOOJGNKOH: u32,
     // @@protoc_insertion_point(field:BOLCGIOGIBP.AAMKNOOMEOO)
     pub AAMKNOOMEOO: u32,
+    // @@protoc_insertion_point(field:BOLCGIOGIBP.LLEPGPKGBGM)
+    pub LLEPGPKGBGM: u32,
+    // @@protoc_insertion_point(field:BOLCGIOGIBP.map_id)
+    pub map_id: u32,
+    // @@protoc_insertion_point(field:BOLCGIOGIBP.FMCPHDJEIDC)
+    pub FMCPHDJEIDC: u32,
+    // @@protoc_insertion_point(field:BOLCGIOGIBP.max_score)
+    pub max_score: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BOLCGIOGIBP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -67,6 +67,16 @@ impl BOLCGIOGIBP {
             |m: &mut BOLCGIOGIBP| { &mut m.reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EFBOOJGNKOH",
+            |m: &BOLCGIOGIBP| { &m.EFBOOJGNKOH },
+            |m: &mut BOLCGIOGIBP| { &mut m.EFBOOJGNKOH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AAMKNOOMEOO",
+            |m: &BOLCGIOGIBP| { &m.AAMKNOOMEOO },
+            |m: &mut BOLCGIOGIBP| { &mut m.AAMKNOOMEOO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LLEPGPKGBGM",
             |m: &BOLCGIOGIBP| { &m.LLEPGPKGBGM },
             |m: &mut BOLCGIOGIBP| { &mut m.LLEPGPKGBGM },
@@ -77,24 +87,14 @@ impl BOLCGIOGIBP {
             |m: &mut BOLCGIOGIBP| { &mut m.map_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_score",
-            |m: &BOLCGIOGIBP| { &m.max_score },
-            |m: &mut BOLCGIOGIBP| { &mut m.max_score },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FMCPHDJEIDC",
             |m: &BOLCGIOGIBP| { &m.FMCPHDJEIDC },
             |m: &mut BOLCGIOGIBP| { &mut m.FMCPHDJEIDC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EFBOOJGNKOH",
-            |m: &BOLCGIOGIBP| { &m.EFBOOJGNKOH },
-            |m: &mut BOLCGIOGIBP| { &mut m.EFBOOJGNKOH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AAMKNOOMEOO",
-            |m: &BOLCGIOGIBP| { &m.AAMKNOOMEOO },
-            |m: &mut BOLCGIOGIBP| { &mut m.AAMKNOOMEOO },
+            "max_score",
+            |m: &BOLCGIOGIBP| { &m.max_score },
+            |m: &mut BOLCGIOGIBP| { &mut m.max_score },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BOLCGIOGIBP>(
             "BOLCGIOGIBP",
@@ -117,23 +117,23 @@ impl ::protobuf::Message for BOLCGIOGIBP {
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                16 => {
-                    self.LLEPGPKGBGM = is.read_uint32()?;
-                },
                 24 => {
-                    self.map_id = is.read_uint32()?;
-                },
-                40 => {
-                    self.max_score = is.read_uint32()?;
-                },
-                88 => {
-                    self.FMCPHDJEIDC = is.read_uint32()?;
-                },
-                104 => {
                     self.EFBOOJGNKOH = is.read_uint32()?;
                 },
-                120 => {
+                32 => {
                     self.AAMKNOOMEOO = is.read_uint32()?;
+                },
+                48 => {
+                    self.LLEPGPKGBGM = is.read_uint32()?;
+                },
+                88 => {
+                    self.map_id = is.read_uint32()?;
+                },
+                112 => {
+                    self.FMCPHDJEIDC = is.read_uint32()?;
+                },
+                120 => {
+                    self.max_score = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -151,23 +151,23 @@ impl ::protobuf::Message for BOLCGIOGIBP {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.LLEPGPKGBGM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.LLEPGPKGBGM);
-        }
-        if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.map_id);
-        }
-        if self.max_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.max_score);
-        }
-        if self.FMCPHDJEIDC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.FMCPHDJEIDC);
-        }
         if self.EFBOOJGNKOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EFBOOJGNKOH);
+            my_size += ::protobuf::rt::uint32_size(3, self.EFBOOJGNKOH);
         }
         if self.AAMKNOOMEOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.AAMKNOOMEOO);
+            my_size += ::protobuf::rt::uint32_size(4, self.AAMKNOOMEOO);
+        }
+        if self.LLEPGPKGBGM != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LLEPGPKGBGM);
+        }
+        if self.map_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.map_id);
+        }
+        if self.FMCPHDJEIDC != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.FMCPHDJEIDC);
+        }
+        if self.max_score != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.max_score);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -178,23 +178,23 @@ impl ::protobuf::Message for BOLCGIOGIBP {
         if let Some(v) = self.reward.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if self.LLEPGPKGBGM != 0 {
-            os.write_uint32(2, self.LLEPGPKGBGM)?;
-        }
-        if self.map_id != 0 {
-            os.write_uint32(3, self.map_id)?;
-        }
-        if self.max_score != 0 {
-            os.write_uint32(5, self.max_score)?;
-        }
-        if self.FMCPHDJEIDC != 0 {
-            os.write_uint32(11, self.FMCPHDJEIDC)?;
-        }
         if self.EFBOOJGNKOH != 0 {
-            os.write_uint32(13, self.EFBOOJGNKOH)?;
+            os.write_uint32(3, self.EFBOOJGNKOH)?;
         }
         if self.AAMKNOOMEOO != 0 {
-            os.write_uint32(15, self.AAMKNOOMEOO)?;
+            os.write_uint32(4, self.AAMKNOOMEOO)?;
+        }
+        if self.LLEPGPKGBGM != 0 {
+            os.write_uint32(6, self.LLEPGPKGBGM)?;
+        }
+        if self.map_id != 0 {
+            os.write_uint32(11, self.map_id)?;
+        }
+        if self.FMCPHDJEIDC != 0 {
+            os.write_uint32(14, self.FMCPHDJEIDC)?;
+        }
+        if self.max_score != 0 {
+            os.write_uint32(15, self.max_score)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -214,24 +214,24 @@ impl ::protobuf::Message for BOLCGIOGIBP {
 
     fn clear(&mut self) {
         self.reward.clear();
-        self.LLEPGPKGBGM = 0;
-        self.map_id = 0;
-        self.max_score = 0;
-        self.FMCPHDJEIDC = 0;
         self.EFBOOJGNKOH = 0;
         self.AAMKNOOMEOO = 0;
+        self.LLEPGPKGBGM = 0;
+        self.map_id = 0;
+        self.FMCPHDJEIDC = 0;
+        self.max_score = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BOLCGIOGIBP {
         static instance: BOLCGIOGIBP = BOLCGIOGIBP {
             reward: ::protobuf::MessageField::none(),
-            LLEPGPKGBGM: 0,
-            map_id: 0,
-            max_score: 0,
-            FMCPHDJEIDC: 0,
             EFBOOJGNKOH: 0,
             AAMKNOOMEOO: 0,
+            LLEPGPKGBGM: 0,
+            map_id: 0,
+            FMCPHDJEIDC: 0,
+            max_score: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -258,11 +258,11 @@ impl ::protobuf::reflect::ProtobufValue for BOLCGIOGIBP {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BOLCGIOGIBP.proto\x1a\x0eItemList.proto\"\xec\x01\n\x0bBOLCGIOGIBP\
     \x12!\n\x06reward\x18\x01\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x20\n\
-    \x0bLLEPGPKGBGM\x18\x02\x20\x01(\rR\x0bLLEPGPKGBGM\x12\x15\n\x06map_id\
-    \x18\x03\x20\x01(\rR\x05mapId\x12\x1b\n\tmax_score\x18\x05\x20\x01(\rR\
-    \x08maxScore\x12\x20\n\x0bFMCPHDJEIDC\x18\x0b\x20\x01(\rR\x0bFMCPHDJEIDC\
-    \x12\x20\n\x0bEFBOOJGNKOH\x18\r\x20\x01(\rR\x0bEFBOOJGNKOH\x12\x20\n\x0b\
-    AAMKNOOMEOO\x18\x0f\x20\x01(\rR\x0bAAMKNOOMEOOb\x06proto3\
+    \x0bEFBOOJGNKOH\x18\x03\x20\x01(\rR\x0bEFBOOJGNKOH\x12\x20\n\x0bAAMKNOOM\
+    EOO\x18\x04\x20\x01(\rR\x0bAAMKNOOMEOO\x12\x20\n\x0bLLEPGPKGBGM\x18\x06\
+    \x20\x01(\rR\x0bLLEPGPKGBGM\x12\x15\n\x06map_id\x18\x0b\x20\x01(\rR\x05m\
+    apId\x12\x20\n\x0bFMCPHDJEIDC\x18\x0e\x20\x01(\rR\x0bFMCPHDJEIDC\x12\x1b\
+    \n\tmax_score\x18\x0f\x20\x01(\rR\x08maxScoreb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
