@@ -27,6 +27,7 @@ macro_rules! proto_rqa {
         pub mod AvatarPathData;
         pub mod AvatarPathSkillTree;
         pub mod AvatarSync;
+        pub mod BoxRelic;
         pub mod ConfirmRelicBoxScRsp;
         pub mod DoGachaScRsp;
         pub mod EquipRelic;
@@ -87,7 +88,6 @@ macro_rules! proto_rqa {
         pub mod NLLLAAEJOBP;
         pub mod OCKCHBDFGNL;
         pub mod ONHKODAFEMH;
-        pub mod PNGBDDIBCDD;
     };
 }
 
