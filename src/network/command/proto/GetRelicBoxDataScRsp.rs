@@ -30,10 +30,10 @@ pub struct GetRelicBoxDataScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.OAJFAFIDKPI)
-    pub OAJFAFIDKPI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.relic_id_list)
+    pub relic_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.NJFEFOFPKPF)
-    pub NJFEFOFPKPF: ::protobuf::MessageField<super::PNGBDDIBCDD::PNGBDDIBCDD>,
+    pub NJFEFOFPKPF: ::protobuf::MessageField<super::BoxRelic::BoxRelic>,
     // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.state)
     pub state: ::protobuf::EnumOrUnknown<super::BDFGBPHEPDI::BDFGBPHEPDI>,
     // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.EBDIOJPDJIH)
@@ -69,11 +69,11 @@ impl GetRelicBoxDataScRsp {
             |m: &mut GetRelicBoxDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OAJFAFIDKPI",
-            |m: &GetRelicBoxDataScRsp| { &m.OAJFAFIDKPI },
-            |m: &mut GetRelicBoxDataScRsp| { &mut m.OAJFAFIDKPI },
+            "relic_id_list",
+            |m: &GetRelicBoxDataScRsp| { &m.relic_id_list },
+            |m: &mut GetRelicBoxDataScRsp| { &mut m.relic_id_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PNGBDDIBCDD::PNGBDDIBCDD>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BoxRelic::BoxRelic>(
             "NJFEFOFPKPF",
             |m: &GetRelicBoxDataScRsp| { &m.NJFEFOFPKPF },
             |m: &mut GetRelicBoxDataScRsp| { &mut m.NJFEFOFPKPF },
@@ -125,10 +125,10 @@ impl ::protobuf::Message for GetRelicBoxDataScRsp {
                     self.retcode = is.read_uint32()?;
                 },
                 50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OAJFAFIDKPI)?;
+                    is.read_repeated_packed_uint32_into(&mut self.relic_id_list)?;
                 },
                 48 => {
-                    self.OAJFAFIDKPI.push(is.read_uint32()?);
+                    self.relic_id_list.push(is.read_uint32()?);
                 },
                 58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NJFEFOFPKPF)?;
@@ -163,7 +163,7 @@ impl ::protobuf::Message for GetRelicBoxDataScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.OAJFAFIDKPI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.relic_id_list);
         if let Some(v) = self.NJFEFOFPKPF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -195,7 +195,7 @@ impl ::protobuf::Message for GetRelicBoxDataScRsp {
         if self.retcode != 0 {
             os.write_uint32(1, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(6, &self.OAJFAFIDKPI)?;
+        os.write_repeated_packed_uint32(6, &self.relic_id_list)?;
         if let Some(v) = self.NJFEFOFPKPF.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
@@ -232,7 +232,7 @@ impl ::protobuf::Message for GetRelicBoxDataScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.OAJFAFIDKPI.clear();
+        self.relic_id_list.clear();
         self.NJFEFOFPKPF.clear();
         self.state = ::protobuf::EnumOrUnknown::new(super::BDFGBPHEPDI::BDFGBPHEPDI::BDFGBPHEPDI_PDKLDMNAJBO);
         self.EBDIOJPDJIH.clear();
@@ -245,7 +245,7 @@ impl ::protobuf::Message for GetRelicBoxDataScRsp {
     fn default_instance() -> &'static GetRelicBoxDataScRsp {
         static instance: GetRelicBoxDataScRsp = GetRelicBoxDataScRsp {
             retcode: 0,
-            OAJFAFIDKPI: ::std::vec::Vec::new(),
+            relic_id_list: ::std::vec::Vec::new(),
             NJFEFOFPKPF: ::protobuf::MessageField::none(),
             state: ::protobuf::EnumOrUnknown::from_i32(0),
             EBDIOJPDJIH: ::std::vec::Vec::new(),
@@ -277,16 +277,16 @@ impl ::protobuf::reflect::ProtobufValue for GetRelicBoxDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aGetRelicBoxDataScRsp.proto\x1a\x11BDFGBPHEPDI.proto\x1a\x11BEBNHPC\
-    BMPF.proto\x1a\x11DPJCBHKGFOK.proto\x1a\x11HGABLJFOKDG.proto\x1a\x11PNGB\
-    DDIBCDD.proto\"\xd8\x02\n\x14GetRelicBoxDataScRsp\x12\x18\n\x07retcode\
-    \x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bOAJFAFIDKPI\x18\x06\x20\x03\
-    (\rR\x0bOAJFAFIDKPI\x12.\n\x0bNJFEFOFPKPF\x18\x07\x20\x01(\x0b2\x0c.PNGB\
-    DDIBCDDR\x0bNJFEFOFPKPF\x12\"\n\x05state\x18\x08\x20\x01(\x0e2\x0c.BDFGB\
-    PHEPDIR\x05state\x12.\n\x0bEBDIOJPDJIH\x18\t\x20\x03(\x0b2\x0c.BEBNHPCBM\
-    PFR\x0bEBDIOJPDJIH\x12.\n\x0bMCLLALGABAB\x18\r\x20\x01(\x0b2\x0c.HGABLJF\
-    OKDGR\x0bMCLLALGABAB\x12.\n\x0bAHNPPGMFOKN\x18\x0e\x20\x01(\x0b2\x0c.DPJ\
-    CBHKGFOKR\x0bAHNPPGMFOKN\x12\x20\n\x0bMFLMHFLMCPO\x18\x0f\x20\x01(\rR\
-    \x0bMFLMHFLMCPOb\x06proto3\
+    BMPF.proto\x1a\x0eBoxRelic.proto\x1a\x11DPJCBHKGFOK.proto\x1a\x11HGABLJF\
+    OKDG.proto\"\xd7\x02\n\x14GetRelicBoxDataScRsp\x12\x18\n\x07retcode\x18\
+    \x01\x20\x01(\rR\x07retcode\x12\"\n\rrelic_id_list\x18\x06\x20\x03(\rR\
+    \x0brelicIdList\x12+\n\x0bNJFEFOFPKPF\x18\x07\x20\x01(\x0b2\t.BoxRelicR\
+    \x0bNJFEFOFPKPF\x12\"\n\x05state\x18\x08\x20\x01(\x0e2\x0c.BDFGBPHEPDIR\
+    \x05state\x12.\n\x0bEBDIOJPDJIH\x18\t\x20\x03(\x0b2\x0c.BEBNHPCBMPFR\x0b\
+    EBDIOJPDJIH\x12.\n\x0bMCLLALGABAB\x18\r\x20\x01(\x0b2\x0c.HGABLJFOKDGR\
+    \x0bMCLLALGABAB\x12.\n\x0bAHNPPGMFOKN\x18\x0e\x20\x01(\x0b2\x0c.DPJCBHKG\
+    FOKR\x0bAHNPPGMFOKN\x12\x20\n\x0bMFLMHFLMCPO\x18\x0f\x20\x01(\rR\x0bMFLM\
+    HFLMCPOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -306,9 +306,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             let mut deps = ::std::vec::Vec::with_capacity(5);
             deps.push(super::BDFGBPHEPDI::file_descriptor().clone());
             deps.push(super::BEBNHPCBMPF::file_descriptor().clone());
+            deps.push(super::BoxRelic::file_descriptor().clone());
             deps.push(super::DPJCBHKGFOK::file_descriptor().clone());
             deps.push(super::HGABLJFOKDG::file_descriptor().clone());
-            deps.push(super::PNGBDDIBCDD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetRelicBoxDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

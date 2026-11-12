@@ -30,8 +30,8 @@ pub struct ConfirmRelicBoxScRsp {
     // message fields
     // @@protoc_insertion_point(field:ConfirmRelicBoxScRsp.HMBNJLNBLIF)
     pub HMBNJLNBLIF: u32,
-    // @@protoc_insertion_point(field:ConfirmRelicBoxScRsp.OAJFAFIDKPI)
-    pub OAJFAFIDKPI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ConfirmRelicBoxScRsp.relic_id_list)
+    pub relic_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ConfirmRelicBoxScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:ConfirmRelicBoxScRsp.BBNIFADMHHO)
@@ -61,9 +61,9 @@ impl ConfirmRelicBoxScRsp {
             |m: &mut ConfirmRelicBoxScRsp| { &mut m.HMBNJLNBLIF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OAJFAFIDKPI",
-            |m: &ConfirmRelicBoxScRsp| { &m.OAJFAFIDKPI },
-            |m: &mut ConfirmRelicBoxScRsp| { &mut m.OAJFAFIDKPI },
+            "relic_id_list",
+            |m: &ConfirmRelicBoxScRsp| { &m.relic_id_list },
+            |m: &mut ConfirmRelicBoxScRsp| { &mut m.relic_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -97,10 +97,10 @@ impl ::protobuf::Message for ConfirmRelicBoxScRsp {
                     self.HMBNJLNBLIF = is.read_uint32()?;
                 },
                 82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OAJFAFIDKPI)?;
+                    is.read_repeated_packed_uint32_into(&mut self.relic_id_list)?;
                 },
                 80 => {
-                    self.OAJFAFIDKPI.push(is.read_uint32()?);
+                    self.relic_id_list.push(is.read_uint32()?);
                 },
                 96 => {
                     self.retcode = is.read_uint32()?;
@@ -123,7 +123,7 @@ impl ::protobuf::Message for ConfirmRelicBoxScRsp {
         if self.HMBNJLNBLIF != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.HMBNJLNBLIF);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.OAJFAFIDKPI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.relic_id_list);
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
@@ -139,7 +139,7 @@ impl ::protobuf::Message for ConfirmRelicBoxScRsp {
         if self.HMBNJLNBLIF != 0 {
             os.write_uint32(1, self.HMBNJLNBLIF)?;
         }
-        os.write_repeated_packed_uint32(10, &self.OAJFAFIDKPI)?;
+        os.write_repeated_packed_uint32(10, &self.relic_id_list)?;
         if self.retcode != 0 {
             os.write_uint32(12, self.retcode)?;
         }
@@ -164,7 +164,7 @@ impl ::protobuf::Message for ConfirmRelicBoxScRsp {
 
     fn clear(&mut self) {
         self.HMBNJLNBLIF = 0;
-        self.OAJFAFIDKPI.clear();
+        self.relic_id_list.clear();
         self.retcode = 0;
         self.BBNIFADMHHO = false;
         self.special_fields.clear();
@@ -173,7 +173,7 @@ impl ::protobuf::Message for ConfirmRelicBoxScRsp {
     fn default_instance() -> &'static ConfirmRelicBoxScRsp {
         static instance: ConfirmRelicBoxScRsp = ConfirmRelicBoxScRsp {
             HMBNJLNBLIF: 0,
-            OAJFAFIDKPI: ::std::vec::Vec::new(),
+            relic_id_list: ::std::vec::Vec::new(),
             retcode: 0,
             BBNIFADMHHO: false,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -200,9 +200,9 @@ impl ::protobuf::reflect::ProtobufValue for ConfirmRelicBoxScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aConfirmRelicBoxScRsp.proto\"\x96\x01\n\x14ConfirmRelicBoxScRsp\x12\
-    \x20\n\x0bHMBNJLNBLIF\x18\x01\x20\x01(\rR\x0bHMBNJLNBLIF\x12\x20\n\x0bOA\
-    JFAFIDKPI\x18\n\x20\x03(\rR\x0bOAJFAFIDKPI\x12\x18\n\x07retcode\x18\x0c\
+    \n\x1aConfirmRelicBoxScRsp.proto\"\x98\x01\n\x14ConfirmRelicBoxScRsp\x12\
+    \x20\n\x0bHMBNJLNBLIF\x18\x01\x20\x01(\rR\x0bHMBNJLNBLIF\x12\"\n\rrelic_\
+    id_list\x18\n\x20\x03(\rR\x0brelicIdList\x12\x18\n\x07retcode\x18\x0c\
     \x20\x01(\rR\x07retcode\x12\x20\n\x0bBBNIFADMHHO\x18\x0e\x20\x01(\x08R\
     \x0bBBNIFADMHHOb\x06proto3\
 ";

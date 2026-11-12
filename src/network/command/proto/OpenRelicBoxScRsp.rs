@@ -33,7 +33,7 @@ pub struct OpenRelicBoxScRsp {
     // @@protoc_insertion_point(field:OpenRelicBoxScRsp.GNLAAIDFOJF)
     pub GNLAAIDFOJF: u32,
     // @@protoc_insertion_point(field:OpenRelicBoxScRsp.LCMADDIMION)
-    pub LCMADDIMION: ::protobuf::MessageField<super::PNGBDDIBCDD::PNGBDDIBCDD>,
+    pub LCMADDIMION: ::protobuf::MessageField<super::BoxRelic::BoxRelic>,
     // special fields
     // @@protoc_insertion_point(special_field:OpenRelicBoxScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,7 +63,7 @@ impl OpenRelicBoxScRsp {
             |m: &OpenRelicBoxScRsp| { &m.GNLAAIDFOJF },
             |m: &mut OpenRelicBoxScRsp| { &mut m.GNLAAIDFOJF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PNGBDDIBCDD::PNGBDDIBCDD>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BoxRelic::BoxRelic>(
             "LCMADDIMION",
             |m: &OpenRelicBoxScRsp| { &m.LCMADDIMION },
             |m: &mut OpenRelicBoxScRsp| { &mut m.LCMADDIMION },
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for OpenRelicBoxScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17OpenRelicBoxScRsp.proto\x1a\x11PNGBDDIBCDD.proto\"\x7f\n\x11OpenRe\
-    licBoxScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\
-    \n\x0bGNLAAIDFOJF\x18\x03\x20\x01(\rR\x0bGNLAAIDFOJF\x12.\n\x0bLCMADDIMI\
-    ON\x18\x0e\x20\x01(\x0b2\x0c.PNGBDDIBCDDR\x0bLCMADDIMIONb\x06proto3\
+    \n\x17OpenRelicBoxScRsp.proto\x1a\x0eBoxRelic.proto\"|\n\x11OpenRelicBox\
+    ScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bG\
+    NLAAIDFOJF\x18\x03\x20\x01(\rR\x0bGNLAAIDFOJF\x12+\n\x0bLCMADDIMION\x18\
+    \x0e\x20\x01(\x0b2\t.BoxRelicR\x0bLCMADDIMIONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PNGBDDIBCDD::file_descriptor().clone());
+            deps.push(super::BoxRelic::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OpenRelicBoxScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

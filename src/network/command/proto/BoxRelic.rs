@@ -18,41 +18,41 @@
 #![allow(unused_results)]
 #![allow(unused_mut)]
 
-//! Generated file from `PNGBDDIBCDD.proto`
+//! Generated file from `BoxRelic.proto`
 
 /// Generated files are compatible only with the same version
 /// of protobuf runtime.
 const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 
-// @@protoc_insertion_point(message:PNGBDDIBCDD)
+// @@protoc_insertion_point(message:BoxRelic)
 #[derive(PartialEq,Clone,Default,Debug)]
-pub struct PNGBDDIBCDD {
+pub struct BoxRelic {
     // message fields
-    // @@protoc_insertion_point(field:PNGBDDIBCDD.level)
+    // @@protoc_insertion_point(field:BoxRelic.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:PNGBDDIBCDD.sub_affix_list)
+    // @@protoc_insertion_point(field:BoxRelic.sub_affix_list)
     pub sub_affix_list: ::std::vec::Vec<super::RelicAffix::RelicAffix>,
-    // @@protoc_insertion_point(field:PNGBDDIBCDD.type)
+    // @@protoc_insertion_point(field:BoxRelic.type)
     pub type_: u32,
-    // @@protoc_insertion_point(field:PNGBDDIBCDD.main_affix_id)
+    // @@protoc_insertion_point(field:BoxRelic.main_affix_id)
     pub main_affix_id: u32,
-    // @@protoc_insertion_point(field:PNGBDDIBCDD.exp)
+    // @@protoc_insertion_point(field:BoxRelic.exp)
     pub exp: u32,
-    // @@protoc_insertion_point(field:PNGBDDIBCDD.tid)
+    // @@protoc_insertion_point(field:BoxRelic.tid)
     pub tid: u32,
     // special fields
-    // @@protoc_insertion_point(special_field:PNGBDDIBCDD.special_fields)
+    // @@protoc_insertion_point(special_field:BoxRelic.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
 }
 
-impl<'a> ::std::default::Default for &'a PNGBDDIBCDD {
-    fn default() -> &'a PNGBDDIBCDD {
-        <PNGBDDIBCDD as ::protobuf::Message>::default_instance()
+impl<'a> ::std::default::Default for &'a BoxRelic {
+    fn default() -> &'a BoxRelic {
+        <BoxRelic as ::protobuf::Message>::default_instance()
     }
 }
 
-impl PNGBDDIBCDD {
-    pub fn new() -> PNGBDDIBCDD {
+impl BoxRelic {
+    pub fn new() -> BoxRelic {
         ::std::default::Default::default()
     }
 
@@ -61,44 +61,44 @@ impl PNGBDDIBCDD {
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
-            |m: &PNGBDDIBCDD| { &m.level },
-            |m: &mut PNGBDDIBCDD| { &mut m.level },
+            |m: &BoxRelic| { &m.level },
+            |m: &mut BoxRelic| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "sub_affix_list",
-            |m: &PNGBDDIBCDD| { &m.sub_affix_list },
-            |m: &mut PNGBDDIBCDD| { &mut m.sub_affix_list },
+            |m: &BoxRelic| { &m.sub_affix_list },
+            |m: &mut BoxRelic| { &mut m.sub_affix_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "type",
-            |m: &PNGBDDIBCDD| { &m.type_ },
-            |m: &mut PNGBDDIBCDD| { &mut m.type_ },
+            |m: &BoxRelic| { &m.type_ },
+            |m: &mut BoxRelic| { &mut m.type_ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "main_affix_id",
-            |m: &PNGBDDIBCDD| { &m.main_affix_id },
-            |m: &mut PNGBDDIBCDD| { &mut m.main_affix_id },
+            |m: &BoxRelic| { &m.main_affix_id },
+            |m: &mut BoxRelic| { &mut m.main_affix_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exp",
-            |m: &PNGBDDIBCDD| { &m.exp },
-            |m: &mut PNGBDDIBCDD| { &mut m.exp },
+            |m: &BoxRelic| { &m.exp },
+            |m: &mut BoxRelic| { &mut m.exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "tid",
-            |m: &PNGBDDIBCDD| { &m.tid },
-            |m: &mut PNGBDDIBCDD| { &mut m.tid },
+            |m: &BoxRelic| { &m.tid },
+            |m: &mut BoxRelic| { &mut m.tid },
         ));
-        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PNGBDDIBCDD>(
-            "PNGBDDIBCDD",
+        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BoxRelic>(
+            "BoxRelic",
             fields,
             oneofs,
         )
     }
 }
 
-impl ::protobuf::Message for PNGBDDIBCDD {
-    const NAME: &'static str = "PNGBDDIBCDD";
+impl ::protobuf::Message for BoxRelic {
+    const NAME: &'static str = "BoxRelic";
 
     fn is_initialized(&self) -> bool {
         true
@@ -192,8 +192,8 @@ impl ::protobuf::Message for PNGBDDIBCDD {
         &mut self.special_fields
     }
 
-    fn new() -> PNGBDDIBCDD {
-        PNGBDDIBCDD::new()
+    fn new() -> BoxRelic {
+        BoxRelic::new()
     }
 
     fn clear(&mut self) {
@@ -206,8 +206,8 @@ impl ::protobuf::Message for PNGBDDIBCDD {
         self.special_fields.clear();
     }
 
-    fn default_instance() -> &'static PNGBDDIBCDD {
-        static instance: PNGBDDIBCDD = PNGBDDIBCDD {
+    fn default_instance() -> &'static BoxRelic {
+        static instance: BoxRelic = BoxRelic {
             level: 0,
             sub_affix_list: ::std::vec::Vec::new(),
             type_: 0,
@@ -220,28 +220,28 @@ impl ::protobuf::Message for PNGBDDIBCDD {
     }
 }
 
-impl ::protobuf::MessageFull for PNGBDDIBCDD {
+impl ::protobuf::MessageFull for BoxRelic {
     fn descriptor() -> ::protobuf::reflect::MessageDescriptor {
         static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::MessageDescriptor> = ::protobuf::rt::Lazy::new();
-        descriptor.get(|| file_descriptor().message_by_package_relative_name("PNGBDDIBCDD").unwrap()).clone()
+        descriptor.get(|| file_descriptor().message_by_package_relative_name("BoxRelic").unwrap()).clone()
     }
 }
 
-impl ::std::fmt::Display for PNGBDDIBCDD {
+impl ::std::fmt::Display for BoxRelic {
     fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
         ::protobuf::text_format::fmt(self, f)
     }
 }
 
-impl ::protobuf::reflect::ProtobufValue for PNGBDDIBCDD {
+impl ::protobuf::reflect::ProtobufValue for BoxRelic {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PNGBDDIBCDD.proto\x1a\x10RelicAffix.proto\"\xb2\x01\n\x0bPNGBDDIBC\
-    DD\x12\x14\n\x05level\x18\x04\x20\x01(\rR\x05level\x121\n\x0esub_affix_l\
-    ist\x18\x08\x20\x03(\x0b2\x0b.RelicAffixR\x0csubAffixList\x12\x12\n\x04t\
-    ype\x18\t\x20\x01(\rR\x04type\x12\"\n\rmain_affix_id\x18\x0b\x20\x01(\rR\
+    \n\x0eBoxRelic.proto\x1a\x10RelicAffix.proto\"\xaf\x01\n\x08BoxRelic\x12\
+    \x14\n\x05level\x18\x04\x20\x01(\rR\x05level\x121\n\x0esub_affix_list\
+    \x18\x08\x20\x03(\x0b2\x0b.RelicAffixR\x0csubAffixList\x12\x12\n\x04type\
+    \x18\t\x20\x01(\rR\x04type\x12\"\n\rmain_affix_id\x18\x0b\x20\x01(\rR\
     \x0bmainAffixId\x12\x10\n\x03exp\x18\x0e\x20\x01(\rR\x03exp\x12\x10\n\
     \x03tid\x18\x0f\x20\x01(\rR\x03tidb\x06proto3\
 ";
@@ -263,7 +263,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             let mut deps = ::std::vec::Vec::with_capacity(1);
             deps.push(super::RelicAffix::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
-            messages.push(PNGBDDIBCDD::generated_message_descriptor_data());
+            messages.push(BoxRelic::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);
             ::protobuf::reflect::GeneratedFileDescriptor::new_generated(
                 file_descriptor_proto(),
