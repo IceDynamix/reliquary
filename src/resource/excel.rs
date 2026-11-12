@@ -107,6 +107,7 @@ pub struct AvatarExRankConfig {
     pub DPPHHNMHPAK: String,
     pub NNFEGHLLEPH: Vec<String>,
     pub NNACKOBKFGE: Vec<Float>,
+    #[serde(default)]
     pub NJNDLOFDBHB: u32,
     pub ODEKADIBFAO: u32,
     pub PKBNJLOLPBM: ItemQuantity
