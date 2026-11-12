@@ -91,6 +91,28 @@ pub struct AvatarConfig {
 }
 
 #[derive(Resource, Deserialize, Serialize, Debug)]
+pub struct AvatarExRankConfig {
+    #[resource_key]
+    /// Affinitive Eidolon ID
+    pub PHFMCACHFIJ: u32,
+    /// Avatar ID
+    pub ACCJKGEKHKP: u32,
+    pub OIBKPJEGPOK: TextMapEntry,
+    pub OENAMINOLLF: String,
+    pub NMAHGFAPENI: String,
+    pub AGOHEFBOPNO: TextMapEntry,
+    pub BDECHFIJBFA: Vec<u32>,
+    pub OLOIFNNLKJP: String,
+    pub AIAFHMFPFMN: String,
+    pub DPPHHNMHPAK: String,
+    pub NNFEGHLLEPH: Vec<String>,
+    pub NNACKOBKFGE: Vec<Float>,
+    pub NJNDLOFDBHB: u32,
+    pub ODEKADIBFAO: u32,
+    pub PKBNJLOLPBM: ItemQuantity
+}
+
+#[derive(Resource, Deserialize, Serialize, Debug)]
 pub struct EquipmentConfig {
     #[resource_key]
     pub EquipmentID: u32,
